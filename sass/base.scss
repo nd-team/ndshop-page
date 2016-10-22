@@ -1,0 +1,468 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*!
+ * CONTENTS
+ *
+ * SETTINGS
+ * variables......................变量集中存储文件
+ * mixin..........................mixin集中存储文件
+ * 
+ * TOOLS
+ *
+ * COMPONENTS
+ * base..........................内置浏览器重置样式文件
+ *
+ * BUSINESS
+ *
+ * BASE
+ *
+ */
+
+
+@import "layout/variables", "layout/mixin";
+
+$browser-minimum-versions: ("ie": "6");
+
+
+//浏览器重置样式
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, span, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+html, body{
+    line-height: 1;
+    font-size: 62.5%;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q, blockquote {
+    quotes: none;
+}
+a img{
+    border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+i{
+    font-style: normal;
+}
+a{
+
+    color: #666;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        color: #35b5ff;
+    }
+}
+
+
+
+/*清除浮动样式*/
+.clearfix{
+    &:before,&:after {
+         content:"";
+         display: table;
+     }
+    &:after {
+        clear:both;
+        overflow: hidden;
+    }
+}
+/*header-top start*/
+.header-top{
+    width: 100%;
+    height: 30px;
+    background-color: #f3f3f3;
+    line-height: 30px;
+    @include body;
+    @at-root .wrap{
+        width: $wrap-width;
+        margin: 0 auto;
+    }
+    .top-add{
+        float: left;
+    }
+    .header-top-r{
+        float: right;
+        display:block;
+        width:auto;
+        height:inherit;
+        line-height:inherit;
+        li{ 
+            float: left;
+            padding: {
+                right: 12px;
+            }
+            @extend .header-top-r;
+            cursor:pointer;
+            position:relative;
+            &.top_r{
+                line-height: 30px;
+                .top-line{
+                    padding-left: 10px;
+                    border:{
+                        left:1px;
+                        style:solid;
+                        color: #ddd;
+                    }
+                   .phone-sc-icon{
+                        width: 15px;
+                        height: 20px;
+                        display:inline-block;
+                        vertical-align: middle;
+                        padding-right: 2px;
+                   } 
+                }
+               
+            }
+            .red{
+                color: red;
+                text-decoration: underline;
+                padding-left: 12px;                                                        
+            }
+            .on-red:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .more-icon{
+                $height: 12px;
+                display:block;
+                height:$height;
+                line-height:$height;
+                float:right;
+                font-family: $main-sec-ff;
+                margin:{
+                    left:5px;
+                    top:8px;
+                }
+            }
+        }
+    }
+}
+
+
+.header-ls {
+    width: 100%;
+    height:80px;
+    margin: {
+        top:17px;
+        bottom:30px;
+    }
+    .header-lg {
+        position: relative;
+        z-index: 12;
+        float: left;
+        width: 290px;
+        height: 62px;
+        float: left;
+        .logo {
+            display: block;
+            width: 185px;
+            height: 44px;
+            background-image: url('/images/head/logo.png');
+            background-repeat:no-repeat;
+            text-indent: -2000px;
+            padding-left: 45px;
+        }
+    }
+
+    .search-wrap {
+        float: left;
+        height: 44px;
+        .search-strip {
+            width: 427px;
+            height: 40px;
+            line-height:40px;
+            color: #666;
+            padding: 4px;
+            @include box-size;
+            margin-bottom: 4px;
+            float: left;
+            border:{
+                color: #e2e2e2;
+                style: solid;
+                top:{
+                    width:1px;
+                }
+                bottom: {
+                    width: 1px;
+                }
+                left: {
+                    width: 1px;
+                }
+                right: 0 none;
+            }
+            outline: 0;
+            font:{
+                family: $headline-ff;
+                size: 16px;
+            }
+        }
+        .button{
+            float: left;
+            width: 87px;
+            height: 40px;
+            background: #3db1fa;
+            border: 0 none;
+            line-height: 1;
+            color: $white;
+            font:{
+                family: $headline-ff;
+                size: 16px;
+            }
+            cursor: pointer;
+            i{
+                top: 0;
+                left: 0;
+                width: 82px;
+                height: 36px;
+                display: block;
+                position: absolute;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .shopping-cart {
+        float: right;
+        width: 115px;
+        height: 40px;
+        background-color: #fd5d5f;
+        margin-right: 135px;
+        cursor: pointer;
+
+        line-height: 40px;
+
+        .shopping-cart-icon{
+            width: 17px;
+            height: 13px;
+            display: inline-block;
+            vertical-align: middle;
+            // background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
+        }
+        a{
+            color: $white;
+            &.my-cart{
+                font-size: 14px;
+                color: $white;
+                text-align: center;
+            }
+        }
+
+        }
+
+
+    .search-hot {
+        width: 514px;
+        line-height: 20px;
+        overflow: hidden;
+        span{
+            color:#999;
+            font:{
+                size: 14px;
+            }
+        }
+        a{
+            color:#999;
+            font:{
+                size: 14px;
+            }
+            &:hover{
+                @extend .red;
+                cursor: pointer;
+            }
+            &.red {
+                color: red;
+            }
+        }
+    }
+}
+
+/*header-top end*/
+
+/*nav start*/
+.nav-box{
+    width:100%;
+    height: 40px;
+    overflow: hidden;
+    clear: both;
+    border: {
+        bottom:2px;
+        style: solid;
+        color: #33b5ff;
+    }
+    .top-nav{
+        display:block;
+        float:left;
+        li{
+            float: left;
+            height:40px;
+            font:{
+                family:$main-sec-ff;
+                size:16px;
+            }
+            color:#333;
+            line-height:40px;
+            text-align:center;
+            cursor:pointer;
+            overflow:hidden;
+            &.main-nav{
+                padding: 0 0 0 80px;
+                a{
+                    color:#333;
+                    font: {
+                        size:16px;
+                    }
+                    &:hover{
+                        color: #35b5ff;
+                    }
+                }
+            }
+            .all-goods{
+                width: 228px;
+                height: 40px;
+                display: block;
+                background-color: #0071b3;
+                color: $white;
+                font:{
+                    size: 17px;
+                    family: $main-sec-ff;
+                }
+            }
+
+        }
+    }
+}
+/*nav end*/
+
+footer{
+    width: 100%;
+    height: 100%;
+}
+
+//service start
+    .service{
+        width: 100%;
+        height: 100px;
+        background-color: #fbfbfb;
+        margin: 60px 0 40px;
+        .service-top{
+            height:100px;
+            .service-pic{
+                display:inline-block;
+                img{
+                    width: 212px;
+                    height:53px;
+                    display:inline-block;
+                }
+                line-height: 145px;
+                text-align: center;
+                padding-right: 55px;
+                }
+        
+        }
+    }
+
+    //shop guid
+.service-center{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family:$main-sec-ff;
+    dl{
+        float: left;
+        text-align: left;
+        width: 140px;
+        &.shop-all{
+
+            width: 240px;
+
+        }
+        dt{
+            line-height: 36px;
+            color:#333;
+            font: {
+                size:18px;
+                weight:bold;
+                family:$main-sec-ff;
+            }
+        }
+        dd{
+            line-height: 26px;
+            color:#333;
+            font:{
+                size:14px;
+                family:$main-sec-ff;
+            }
+        }
+
+    }
+}
+//service end
+
+
+//footer start
+
+    .footer{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 30px;
+        .foot-link{
+            padding-top: 15px;
+            border:{
+                top:1px;
+                style:solid;
+                color:#ccc;
+            }
+           
+            color:#666666;
+            font:{
+                size:14px;
+                family:$main-sec-ff;
+                
+            }
+            a{
+                padding-right: 5px;
+            }
+        
+        }
+        .autocation{
+            margin-top: 25px;
+            a{
+                margin: 0 14px;
+            }
+        }
+    }
+//footer end

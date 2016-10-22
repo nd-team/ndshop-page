@@ -1,0 +1,30 @@
+
+@mixin body{
+  font-size: 12px;
+  color: #666;
+}
+@mixin box-size{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// @mixin rounded($vert, $horz, $radius: 10px) {
+// 　　　　border-#{$vert}-#{$horz}-radius: $radius;
+// 　　　　-moz-border-radius-#{$vert}#{$horz}: $radius;
+// 　　　　-webkit-border-#{$vert}-#{$horz}-radius: $radius;
+// }
+@mixin rounded($radius: 20px) {
+　　　　-moz-border-top-left-radius: $radius;
+　　　　-webkit-border-top-left-radius: $radius;
+　　　　-o-border-top-left-radius: $radius;
+        border-top-left-radius: $radius;
+}
+@mixin pie-clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @include has-layout;
+}
