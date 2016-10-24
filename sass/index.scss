@@ -5,88 +5,91 @@
 .sidebar-box{
   width: 100%;
   height:480px;
-  //overflow: hidden;
-  clear: both;
+  // overflow: hidden;
+  clear:both;
   .sidebar-menu{
     width: 228px;
     height:480px;
     background-color: #33b5ff;
     float: left;
     font-family: $main-sec-ff;
-    .sidebar-ul{
+    .sidebar-ul {
       width: 228px;
       margin-top: -1px;
-      .sidebar-list{
+      .sidebar-list {
         position: relative;
-        cursor:pointer;
-        &:hover{
+        cursor: pointer;
+        &:hover {
           background-color: #FFF;
-          border:{
-            left:1px;
-            style:solid;
-            color:#33b5ff;
+          border: {
+            left: 1px;
+            style: solid;
+            color: #33b5ff;
           }
-          &:last-child{
-            border-bottom:1px solid #33b5ff;
+          &:last-child {
+            border-bottom: 1px solid #33b5ff;
           }
-          .sidebar-menu-list{
-            .nav-icon{
+          .sidebar-menu-list {
+            .nav-icon {
               background-color: #33b5ff;
             }
-            h2{
-              color:#33b5ff;
+            h2 {
+              color: #33b5ff;
             }
-            .samll-menu{
-              
-              a{
-                color:#33b5ff;
+            .samll-menu {
+
+              a {
+                color: #33b5ff;
               }
             }
-            
+
           }
-          .house-elec-pw{
-            display:block;
+          .same-pw{
+            display: block;
           }
+          //.house-elec-pw ,.gift-bags-pw,.beauty-care-pw,.phone-digital-pw,.store-food-pw,.sport-fitness-pw{
+          //  display: block;
+          //}
         }
-        .sidebar-menu-list{
+        .sidebar-menu-list {
           width: 202px;
           margin: 0 auto;
           position: relative;
-          border:{
-            bottom:1px;
+          border: {
+            bottom: 1px;
             style: solid;
             color: $white;
           }
-          padding:{
-            top:9px;
+          padding: {
+            top: 9px;
           }
           color: $white;
-          h2{
-            color:$white;
-            font:{
-              size:16px;
+          h2 {
+            color: $white;
+            font: {
+              size: 16px;
             }
-            .nav-icon{
+            .nav-icon {
               height: 15px;
               width: 15px;
               display: inline-block;
               background-color: $white;
             }
           }
-          .samll-menu{
+          .samll-menu {
             line-height: 18px;
             padding: 9px 28px 9px 16px;
 
-            a{
+            a {
               color: $white;
               font-size: 12px;
               padding-right: 3px;
-              &.sport{
+              &.sport {
                 padding-right: 5px;
               }
             }
           }
-          .jiantou{
+          .jiantou {
             position: absolute;
             z-index: 1;
             top: 35px;
@@ -99,249 +102,173 @@
           }
 
         }
-        .menu-last{
+        .menu-last {
           border-bottom: 0 none;
         }
-
-        //家用电器弹窗开始
-        .house-elec-pw{
+        //左侧菜单栏公共样式开始
+        .same-pw{
           width: 670px;
-          height: 434px;
           position: absolute;
-          top: 1px;
           left: 227px;
           background-color: #fff;
           z-index: 101;
           border: {
-            right:2px;
+            right: 2px;
             bottom: 1px;
             style: solid;
             color: #33b5ff;
           }
-          display:none;
-          .house-mt{
+          display: none;
+          .same-mt{
             width: 620px;
             margin: 15px auto 0;
             overflow: hidden;
-          }
-          .large-house{
-            height:auto;
-            margin-bottom: 10px;
-            span{
-              width: 73px;
-              float: left;
-              display:inline-block;
-              margin-right: 10px;
-              text-align: right;
-              font: {
-                size: 12px;
-                weight: bold;
-              }
-              a{
-                padding-left: 5px;
-              }
-              @include box-size
-            }
-            .large-house-ul{
-              width: 515px;
-              float: left;
-              border:{
-                bottom:1px;
-                style:solid;
-                color:#ededed;
-              }
+            .same-auto{
+              height: auto;
               margin-bottom: 10px;
-
-              .large-house-list{
-
-                .house-boderl{
-                  display: inline-block;
-                  border:{
-                    left: 1px;
-                    style:solid;
-                    color: #e1e1e1;
-                  }
-                  padding-left: 14px;
-                  margin:{
-                    right: 10px;
-                    bottom: 10px;
-                  }
-                  font-size: 12px;
-
+              span {
+                width: 73px;
+                float: left;
+                display: inline-block;
+                margin-right: 10px;
+                text-align: right;
+                font: {
+                  size: 12px;
+                  weight: bold;
                 }
-                .boder-no{
-                  border-left: 0;
+                a {
+                  padding-left: 5px;
+                }
+                @include box-size
+              }
+              .same-ul{
+                float: left;
+                border: {
+                  bottom: 1px;
+                  style: solid;
+                  color: #ededed;
+                }
+                margin-bottom: 10px;
+                .same-list{
+                  .same-boderl{
+                    display: inline-block;
+                    border: {
+                      left: 1px;
+                      style: solid;
+                      color: #e1e1e1;
+                    }
+                    padding-left: 14px;
+                    margin: {
+                      right: 10px;
+                      bottom: 10px;
+                    }
+                    font-size: 12px;
+                  }
+                  .same-boder-no {
+                    border-left: 0;
+                  }
                 }
               }
+              .same-border-bottom {
+                border-bottom: 0 none;
+                margin-bottom: 0;
+              }
             }
-            .border-bottom{
-              border-bottom: 0 none;
-              margin-bottom: 0;
-            }
+          }
+        }
+        //左侧菜单栏公共样式结束
 
+        //家用电器弹窗开始
+        .house-elec-pw {
+          height: 434px;
+          top: 1px;
+
+          .same-mt{
+            .same-auto{
+              .large-house-ul {
+                width: 515px;
+              }
+            }
           }
         }
         //家用电器弹窗结束
 
         //服饰鞋包弹窗开始
-        .gift-bags-pw{
-          width: 670px;
+        .gift-bags-pw {
           height: 469px;
-          position: absolute;
           top: -80px;
-          left: 227px;
-          background-color: #fff;
-          z-index: 100;
-          border: {
-            right:2px;
-            bottom: 1px;
-            style: solid;
-            color: #33b5ff;
-          }
-          display:none;
-          .gift-mt{
-            width: 620px;
-            margin: 15px auto 0;
-            overflow: hidden;
-          }
-          .large-bags{
-            height:auto;
-            margin-bottom: 10px;
-            span{
-              width: 73px;
-              float: left;
-              display:inline-block;
-              margin-right: 10px;
-              text-align: right;
-              font: {
-                size: 12px;
-                weight: bold;
-              }
-              a{
-                padding-left: 5px;
-              }
-              @include box-size
-            }
-            .large-bags-ul{
-              width: 524px;
-              float: left;
-              border:{
-                bottom:1px;
-                style:solid;
-                color:#ededed;
-              }
-              margin-bottom: 10px;
-
-              .large-bags-list{
-
-                .gift-boderl{
-                  display: inline-block;
-                  border:{
-                    left: 1px;
-                    style:solid;
-                    color: #e1e1e1;
-                  }
-                  padding-left: 14px;
-                  margin:{
-                    right: 10px;
-                    bottom: 10px;
-                  }
-                  font-size: 12px;
-
-                }
-                .boder-no{
-                  border-left: 0;
-                }
+          .same-mt {
+            .same-auto {
+              .large-bags-ul {
+                width: 524px;
               }
             }
-            .border-bottom{
-              border-bottom: 0 none;
-              margin-bottom: 0;
-            }
-
           }
         }
         //服饰鞋包弹窗结束
 
         //个护美妆弹窗开始
-        .beauty-care-pw{
-          width: 670px;
+        .beauty-care-pw {
           height: 316px;
-          position: absolute;
           top: -161px;
-          left: 227px;
-          background-color: #fff;
-          z-index: 100;
+          .same-mt {
+            .same-auto {
+              .large-beauty-ul {
+                width: 514px;
+
+              }
+            }
+          }
+
+        }
+        //个护美妆弹窗结束
+
+        //手机数码弹窗开始
+        .phone-digital-pw {
+          height: 466px;
+          top: -242px;
+          .same-mt {
+            .same-auto {
+              .large-phone-ul {
+                width: 530px;
+              }
+            }
+          }
+        }
+        //手机数码弹窗结束
+
+        //百货食品弹窗开始
+        .store-food-pw {
+          height: 448px;
+          top: -323px;
+          .same-mt {
+            .same-auto {
+              .large-store-ul {
+                width: 532px;
+              }
+            }
+          }
+        }
+        //百货食品弹窗结束
+
+        //运动健身弹窗开始
+        .sport-fitness-pw {
+          height: 392px;
+          top: -314px;
           border: {
-            right:2px;
-            bottom: 1px;
+            top:2px;
             style: solid;
             color: #33b5ff;
           }
-          display:none;
-          .beauty-mt{
-            width: 620px;
-            margin: 15px auto 0;
-            overflow: hidden;
-          }
-          .large-beauty{
-            height:auto;
-            margin-bottom: 10px;
-            span{
-              width: 73px;
-              float: left;
-              display:inline-block;
-              margin-right: 10px;
-              text-align: right;
-              font: {
-                size: 12px;
-                weight: bold;
-              }
-              a{
-                padding-left: 5px;
-              }
-              @include box-size
-            }
-            .large-beauty-ul{
-              width: 514px;
-              float: left;
-              border:{
-                bottom:1px;
-                style:solid;
-                color:#ededed;
-              }
-              margin-bottom: 10px;
-
-              .large-beauty-list{
-
-                .beauty-boderl{
-                  display: inline-block;
-                  border:{
-                    left: 1px;
-                    style:solid;
-                    color: #e1e1e1;
-                  }
-                  padding-left: 14px;
-                  margin:{
-                    right: 10px;
-                    bottom: 10px;
-                  }
-                  font-size: 12px;
-
-                }
-                .boder-no{
-                  border-left: 0;
-                }
+          .same-mt {
+            .same-auto {
+              .large-sport-ul {
+                width: 532px;
               }
             }
-            .border-bottom{
-              border-bottom: 0 none;
-              margin-bottom: 0;
-            }
-
           }
         }
-        //个护美妆弹窗结束
+        //运动健身弹窗结束
       }
     }
   }
@@ -1856,19 +1783,19 @@
           }
         }
       }
-  }
 
-  .sport-brand{
-    width:$width;
-    a{
-      display: inline-block;
-      margin:{
-        bottom:15px;
-      }
-      &.sport-img01{
-        width:$width;
-        height: 184px;
+    .sport-brand{
+      width:$width;
+      a{
         display: inline-block;
+        margin:{
+          bottom:15px;
+        }
+        &.sport-img01{
+          width:$width;
+          height: 184px;
+          display: inline-block;
+        }
       }
     }
   }
