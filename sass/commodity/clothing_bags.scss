@@ -1,3 +1,4 @@
+
 @import "../layout/clothing_sidebar","../layout/variables", "../layout/mixin";
 
 .header-ls {
@@ -133,9 +134,20 @@
 /*右侧图片结束*/
 
 
-//container
-#container{
+//特色主题
+.featured-clothing{
   width: 100%;
-  height:600px;
-  background-color: #fcf;
+  height: auto;
+  margin-top: 35px;
+  .clothing-themes{
+    overflow: hidden;
+
+    .featured-themes{
+      color:#ffb340;
+      font:{
+        family:$main-sec-ff;
+        size:20px;
+      }
+    }
+  }
 }
