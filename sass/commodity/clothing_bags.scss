@@ -1,6 +1,9 @@
 
 @import "../layout/clothing_sidebar","../layout/variables", "../layout/mixin";
 
+#content{
+  background-color: #f6f6f6;
+}
 .header-ls {
   width: 100%;
   height:80px;
@@ -90,6 +93,7 @@
   height: 480px;
   .right-word{
     clear: both;
+    background-color: #FFF;
     .right-text{
       float: left;
       padding:{
@@ -134,7 +138,7 @@
 /*右侧图片结束*/
 
 
-//特色主题
+//特色主题开始
 .featured-clothing{
   width: 100%;
   height: auto;
@@ -143,11 +147,222 @@
     overflow: hidden;
 
     .featured-themes{
+      line-height: 40px;
       color:#ffb340;
       font:{
         family:$main-sec-ff;
         size:20px;
       }
     }
+    .themes-img{
+      $height:345px;
+      height: $height;
+      border: {
+        top:1px;
+        style:solid;
+        color:#ffb340;
+      }
+      overflow: hidden;
+      li{
+        height: $height;
+        float: left;
+        &:nth-child(3){
+          width: 174px;
+        }
+        a{
+          display: block;
+        }
+      }
+    }
   }
 }
+//特色主题结束
+
+//国际品牌与原创品牌开始
+  .brand{
+    width: 100%;
+    height: auto;
+    margin: {
+      top:45px;
+      bottom: 20px;
+    }
+    .brand-tab{
+      span{
+        width: 128px;
+        height: 45px;
+        line-height: 45px;
+        display: inline-block;
+        a{
+          @extend span;
+          text-align: center;
+          color: #fe8f19;
+          font:{
+            size:20px;
+            family: $main-sec-ff;
+          }
+          &.current{
+            color: #fff;
+            background-color: #ff8f18;
+            display: inline-block;
+          }
+          &:hover{
+            color: #fff;
+            background-color: #ff8f18;
+            display: inline-block;
+          }
+
+        }
+      }
+
+    }
+    .brand-pic{
+
+      border: {
+        top:1px;
+        style: solid;
+        color: #fe8f19;
+      }
+      li{
+        position: relative;
+        float: left;
+        .brand-li01{
+          width: 183px;
+          height: 350px;
+          display: block;
+        }
+        .brand-text{
+          position: absolute;
+          bottom: 0;
+          width: 170px;
+          height: 47px;
+          background: rgba(255,255,255,0.5);
+          padding:{
+          top: 10px;
+          left: 12px;
+          }
+          cursor: pointer;
+          span{
+            display: block;
+            font-family: $main-sec-ff;
+
+            &.brand-sale{
+              color: #333;
+              font-size: 18px;
+            }
+            &.brand-member{
+              color: #df0000;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+//international brand
+.nation-brand{
+  width: 100%;
+  height: auto;
+  margin-bottom: 55px;
+  .brand-bg{
+    background-color: #fff;
+    .brand-img{
+      display: inline-block;
+      width: 132px;
+      height: 54px;
+      background-color: #fff;
+      img{
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+//国际品牌与原创品牌结束
+
+
+.exclusive-new{
+  width: 100%;
+  height:auto;
+  margin-bottom: 50px;
+  .exclusive-products{
+
+    .products-title{
+      color:#ff8a08;
+      font:{
+        family: $main-sec-ff;
+        size: 20px;
+      }
+      line-height: 40px;
+    }
+
+    .exclusive-picture{
+      width: 100%;
+      overflow: hidden;
+      li{
+        float: left;
+
+        &:first-child{
+          width: 916px;
+        }
+        .exclusive-top{
+          display: inline-block;
+          .top-pic01{
+            width: 360px;
+            @extend .exclusive-top;
+          }
+          .top-pic{
+            width: 179px;
+            @extend .exclusive-top;
+          }
+
+        }
+        .exclusive-bottom{
+          background-color: #fff;
+
+          .bottom-pic{
+            display: inline-block;
+            width: 178px;
+            height: 167px;
+          }
+        }
+
+        .exclusive-right{
+          display:inline-block;
+          width: 184px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.women{
+  width: 100%;
+  height: 600px;
+  background-color: #fcf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
