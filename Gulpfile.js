@@ -10,7 +10,6 @@ var sassLint = require('gulp-sass-lint');//sass代码规范检查
 var fontIcon = require("gulp-font-icon");//svg转font-icon
 
 
-
 gulp.task('sass', ()=> {
     return gulp.src('./sass/**/*.scss')
         .pipe(sourcemaps.init())
