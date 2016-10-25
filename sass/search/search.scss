@@ -1,0 +1,159 @@
+@import "../layout/variables", "../layout/mixin";
+#content{
+  .breadcrumb{
+    height:40px;
+    line-height:40px;
+    margin-bottom:23px;
+    .breadpath{
+      font-family:$main-sec-ff;
+    }
+  }
+  #search-opt{
+    .opt-list{
+      border-bottom:1px solid #ddd;
+      .opt-tit{
+        float:left;
+        width:110px;
+        height:36px;
+        line-height:36px;
+        background:#f6f6f6;
+        text-indent:20px;
+        font-weight:bold;
+      }
+      .opt-con{
+        float:left;
+        width:960px;
+        height:36px;
+        line-height:36px;
+        li{
+          float:left;
+          padding:0 20px;
+          a{
+            color:#0071b2
+          }
+        }
+      }
+      .brand-tit{
+        height:89px;
+        line-height:89px;
+      }
+      .brand-con{
+        li{
+          width:135px;
+          height:40px;
+          text-align:center;
+          border:1px solid #ddd;
+          line-height:40px;
+          padding:0;
+          img{
+            vertical-align:middle;
+          }
+        }
+      }
+    }
+  }
+  .sear-filter{
+    margin-top:20px;
+    height:30px;
+    line-height:30px;
+    background:#f6f6f6;
+    padding:0 20px;
+    li{
+      float:left;
+      border:1px solid #ddd;
+      border-right:none;
+      height:22px;
+      line-height:22px;
+      &:last-child{
+        border-right:1px solid #ddd;
+      }
+      a{
+        display:inline-block;
+        height:22px;
+        line-height:22px;
+        padding:0 10px;
+      }
+    }
+  }
+  .sear-deliver{
+    color:#666;
+    height:30px;
+    line-height:30px;
+    padding:0 20px;
+    border-bottom:1px solid #ddd;
+  }
+  .sear-pro{
+    font-family:$headline-ff;
+    width:213px;
+    height:345px;
+    padding:0 10px;
+    margin:10px 20px;
+    float:left;
+    img{
+      padding:0 5px;
+      width:200px;
+      height:186px;
+    }
+    .pro-price{
+      color:#dc0000;
+      font-size:16px;
+      font-weight:bold;
+      margin:10px 0;
+    }
+    p{
+      color:#666;
+      width:200px;
+      line-height:16px;
+      margin:5px 0;
+      strong{
+        color:#0071b2;
+      }
+    }
+    .add-cart{
+      display:block;
+      width:198px;
+      height:28px;
+      text-align:center;
+      line-height:28px;
+      border:1px solid #ddd;
+      color:#dd1212;
+      margin:15px 7px;
+    }
+
+  }
+  .sear-page{
+    width:750px;
+    height:25px;
+    line-height:25px;
+    margin:0 auto;
+    button{
+      float:left;
+      height:27px;
+      line-height:21px;
+      margin:0 10px;
+    }
+    p{
+      float:left;
+      margin:0 10px;
+    }
+    ul{
+      float:left;
+      margin:0 25px;
+      li{
+        float:left;
+        a{
+          display:inline-block;
+          width:35px;
+          text-align:center;
+          border:1px solid #ddd;
+          margin:0 5px;
+        }
+      }
+    }
+
+    .jump-page{
+      float:left;
+      margin-left:30px;
+    }
+  }
+}
