@@ -58,5 +58,4 @@ gulp.watch("**/*.html").on('change', bsReload);
 gulp.watch("js/**/*.js").on('change', bsReload);
 });
 
-
 gulp.task('default', ['serve']);
