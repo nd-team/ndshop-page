@@ -91,9 +91,7 @@
                     .same-pw{
                         display: block;
                     }
-                    //.house-elec-pw ,.gift-bags-pw,.beauty-care-pw,.phone-digital-pw,.store-food-pw,.sport-fitness-pw{
-                    //  display: block;
-                    //}
+
                 }
                 .clothing-menu-list {
                     width: 202px;
@@ -102,10 +100,10 @@
                     border: {
                         bottom: 1px;
                         style: solid;
-                        color: #fff;
+                        color: #ffc96f;
                     }
                     padding: {
-                        top: 9px;
+                        top: 6px;
                     }
                     color: #fff;
                     h2 {
@@ -121,22 +119,20 @@
                         }
                     }
                     .nav-clothing {
-                        line-height: 18px;
-                        padding: 9px 28px 9px 16px;
+                        line-height: 20px;
+                        padding: 8px 22px 8px 16px;
                         color: #fff;
                         a {
                             color: #fff;
                             font-size: 12px;
-                            padding-right: 3px;
-                            &.sport {
-                                padding-right: 5px;
-                            }
+                            padding-right: 5px;
+                    
                         }
                     }
                     .arrow {
                         position: absolute;
                         z-index: 1;
-                        top: 35px;
+                        top: 45px;
                         right: 8px;
                         width: 5px;
                         height: 8px;
