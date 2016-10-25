@@ -21,13 +21,13 @@ gulp.task('sass', ()=> {
             browsers: ['last 2 versions', 'Android >= 4.0'],
             cascade: true, //是否美化属性值
             remove:true //是否去掉不必要的前缀
-          }))
+        }))
         .pipe(gulp.dest(__dirname+"/css"))
         .pipe(bs.reload({stream: true}));//异步加载样式,不刷新浏览器
 });
 
 gulp.task('jshint', ()=> {
-      return gulp.src('./js/**/*.js')
+    return gulp.src('./js/**/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
@@ -43,7 +43,7 @@ gulp.task("fontIcon", ()=> {
     return gulp.src(["./font-icon/**/*.svg"])
         .pipe(fontIcon({
             fontName: "myfont",
-            fontAlias: "mf"
+            fontAlias: "nd"
         }))
         .pipe(gulp.dest(__dirname+"/font/icons"));
 });
@@ -51,13 +51,13 @@ gulp.task("fontIcon", ()=> {
 gulp.task('serve', ['sass'], ()=> {
 
     bs.init({
-        server: './',
-        startPath:'index.html'
-    });
+    server: './',
+    startPath:'index.html'
+});
 
-    gulp.watch('./sass/**/*.scss', ['sass']);
-    gulp.watch("*.html").on('change', bsReload);
-    gulp.watch("js/**/*.js").on('change', bsReload);
+gulp.watch('./sass/**/*.scss', ['sass']);
+gulp.watch("**/*.html").on('change', bsReload);
+gulp.watch("js/**/*.js").on('change', bsReload);
 });
 
 
