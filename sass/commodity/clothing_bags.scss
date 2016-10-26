@@ -281,7 +281,7 @@
 
 //国际品牌与原创品牌结束
 
-
+//独家新品部分开始
 .exclusive-new{
   width: 100%;
   height:auto;
@@ -337,16 +337,142 @@
   }
 }
 
+//独家新品部分结束
 
-
-
-.women{
+//女装内衣部分开始
+.women-underwear{
   width: 100%;
-  height: 600px;
-  background-color: #fcf;
+  height: auto;
+  overflow: hidden;
+  .women-content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .women-title{
+      color:#ff8a08;
+      font:{
+        family: $main-sec-ff;
+        size: 20px;
+      }
+      line-height: 38px;
+    }
+    .women-show{
+      width: 100%;
+      border: {
+        top: 1px;
+        style: solid;
+        color: #ff8a08;
+      }
+      .women-left{
+        width: 316px;
+      }
+      .women-right{
+        //width: 785px;
+      }
+      .women-show-time{
+        float: left;
+        .women-list{
+          width: 332px;
+
+        .women-menu{
+          width: 145px;
+          float: left;
+          padding:{
+            top:20px;
+            left:20px;
+          }
+          font-family: $main-sec-ff;
+          span{
+            line-height: 26px;
+            font-size: 20px;
+            color: #333;
+          }
+          p{
+            line-height: 22px;
+            a{
+              display: inline-block;
+              width: 66px;
+              &:hover{
+                @extend .red-color;
+              }
+            }
+            @at-root .red-color{
+              color: red;
+            }
+          }
+        }
+
+      }
+      .women-show-top{
+        width: 100%;
+        height: 413px;
+        .pic-right{
+          border-right:1px solid #ececec;
+        }
+        p{
+          float: left;
+          &.women-pict{
+            width: 188px;
+          }
+          &.women-pic02{
+            width: 202px;
+          }
+
+          a{
+            display: block;
+
+            &.women-bottom{
+              height: 206px;
+              border-bottom:1px solid #ececec;
+            }
+          }
+      }
+
+      }
+
+       .women-show-bottom{
+         width: 100%;
+         height: 206px;
+         border-bottom:1px solid #ececec;
+          a{
+            display: inline-block;
+            &.bottom-pic{
+              width: 186px;
+            }
+            &.bottom-pic02{
+              width: 205px;
+            }
+            &.bottom-pic03{
+              width: 379px;
+            }
+          }
+
+       }
+      }
+    }
+  }
+}
+.women-brand{
+  width: 100%;
+  height: auto;
+  margin-bottom: 55px;
+  .brand-bg{
+    background-color: #fff;
+    .brand-img{
+      display: inline-block;
+      width: 152px;
+      height:60px;
+      img{
+        vertical-align: middle;
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
-
+//女装内衣部分结束
 
 
 
