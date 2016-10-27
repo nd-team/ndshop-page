@@ -139,6 +139,238 @@
   background-color: #fcf;
 }
 
+//热门原创品牌开始
+.hot-brand{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 50px 0 40px;
+
+  .hot-tabs{
+
+    span{
+      display: inline-block;
+      width: 128px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      &.cur{
+        display: inline-block;
+        background-color: #ff729b;
+        a{
+          color: #fff;
+        }
+      }
+      &:hover{
+        @extend .cur;
+      }
+      a{
+        color: #ff729b;
+        font:{
+          size: 20px;
+          family: $main-sec-ff;
+        }
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .hot-brand-banner{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    border-top:1px solid #ff8f18;
+    .hot-tab-pic{
+      float: left;
+      vertical-align: bottom;
+
+      &:first-child{
+        margin-right: 5px;
+      }
+      .hot-pic{
+        display: block;
+        margin-top: 12.5px;
+        margin-right:1.5px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+
+  }
+}
+
+//热门原创品牌结束
+
+//Features Beauty Gallery start
+.features-beauty{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  .features-title{
+    line-height: 40px;
+    h3{
+        color:#ff729b;
+        font:{
+          size:20px;
+          family:$main-sec-ff
+        }
+      }
+    }
+  .features-beauty-pic{
+    li{
+
+      a{
+        width: 263px;
+        height: 134px;
+        display: inline-block;
+        margin-right: 10px;
+        &.features-picture{
+          margin-top: 12px;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+
+}
+//Features Beauty Gallery end
+
+//luxury purchase start
+.luxury-purchase{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 40px 0;
+
+  .luxurious-title{
+    line-height: 36px;
+    h3{
+      color:#ff729b;
+      font:{
+        size: 20px;
+        family: $main-sec-ff;
+      }
+    }
+  }
+
+  .luxury-product{
+    width: 100%;
+    li{
+
+      &.luxury-borderb{
+
+        border-bottom: 1px solid #eee;
+      }
+      a{
+        display:block;
+        float: left;
+        &.luxury-beauty{
+          width:540px;
+       }
+
+      }
+      .luxury-top{
+        display: inline-block;
+        border: {
+          top:1px;
+          bottom: 1px;
+          style: solid;
+          color:#eee;
+        }
+        .luxury-goods{
+          width: 279px;
+          height: 399px;
+          border-right:1px solid #eee;
+        }
+      }
+
+      .luxury-cosmetic{
+        float: left;
+        width: 274px;
+        height: 307px;
+        border: {
+          left: 1px;
+          right: 1px;
+          style: solid;
+          color: #eee;
+        }
+        a{
+          display: block;
+          &:last-child{
+            border-top:1px solid #eee;
+          }
+          img{
+            width: 270px;
+          }
+        }
+      }
+
+      .luxury-set{
+        width: 272px;
+        height: 307px;
+        border-right:1px solid #eee;
+
+        img{
+          width: 272px;
+        }
+      }
+
+      .luxury-rejoice{
+        width: 276px;
+        height: 307px;
+        border-right:1px solid #eee;
+      }
+    }
+  }
+}
+//luxury purchase enf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
