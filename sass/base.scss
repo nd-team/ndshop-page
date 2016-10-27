@@ -75,6 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 i{
     font-style: normal;
+    font-famliy:'myfont';
 }
 a{
 
@@ -180,7 +181,6 @@ a{
         bottom:30px;
     }
     .header-lg {
-        position: relative;
         z-index: 12;
         float: left;
         width: 290px;
