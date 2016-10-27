@@ -1,0 +1,102 @@
+@import "../layout/_variables", "../layout/_mixin";
+.technological{
+  background:url("/images/cart/buzou01.png") no-repeat;
+  width: 484px;
+  padding-top: 23px;
+  overflow: hidden;
+  height: 42px;
+  float: right;
+  margin-top: 3px;
+  li{
+     width: 160px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    float: left;
+    color: #ff7777;
+    &.t1{
+       color: #e4cccc;
+    }
+    &.t3{
+      color: #d5d5d5;
+    }
+  }
+  }
+/*
+Fill in the check order information*/
+.checkout{
+
+    .information-title{
+      height: 30px;
+         h2{
+           font:{
+             size: 16px;
+             family:$main-sec-ff;
+           }
+           color: #333;
+         }
+    }
+  .receiving{
+
+     width: 1100px;
+     height: 626px;
+     border: 1px solid #ddd;
+    .receiving-all{
+       width: 1050px;
+      margin: 0 auto;
+    .receipt-title{
+      height: 94px;
+      padding: 20px 0 0 20px;
+      border-bottom: 1px solid #ddd;
+       strong{
+         font:{
+           size: 14px;
+           family: 'SimSun';
+         }
+         color: #333;
+       }
+      p{
+        font:{
+          size: 12px;
+        }
+        color: #666;
+        padding: 25px 0 0 20px;
+      }
+
+      ul{
+        margin-top: 15px;
+        li{
+          width: 80px;
+          height: 30px;
+          border: 1px solid #ddd;
+          float: left;
+          margin-left: 10px;
+          text-align: center;
+          line-height: 30px;
+          &.r-now{
+            background:url("/images/cart/zaixian_bg.png") no-repeat;
+            width: 88px;
+            height: 38px;
+            line-height: 38px;
+           // padding: 5px 6px 410px 3px;
+            display: block;
+            border: 0px;
+             a{
+               color: $white;
+             }
+          }
+
+          a{
+            font-size: 12px;
+            font-family: 'SimSun';
+            color: #666;
+
+          }
+
+        }
+      }
+
+    }
+    }
+  }
+}

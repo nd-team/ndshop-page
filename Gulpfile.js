@@ -7,7 +7,7 @@ var sourcemaps = require('gulp-sourcemaps');//调试sass
 var autoprefixer = require('gulp-autoprefixer');//浏览器兼容前缀
 var jshint = require('gulp-jshint');//js代码规范检查
 var sassLint = require('gulp-sass-lint');//sass代码规范检查
-var fontIcon = require("gulp-font-icon");//svg转font-icon
+//var fontIcon = require("gulp-font-icon");//svg转font-icon
 
 
 
