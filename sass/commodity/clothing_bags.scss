@@ -371,35 +371,39 @@
           float: left;
           .same-list{
             width: 330px;
-            .same-menu{
-              width: 145px;
-              float: left;
-              padding:{
-                top:20px;
-                left:20px;
-                bottom: 2px;
-              }
+            .same-menu-box{
+              height: 207px;
               font-family: $main-sec-ff;
               background-color: #fff;
-              span{
-                line-height: 26px;
-                font-size: 20px;
-                color: #333;
-              }
-              p{
-                line-height: 22px;
-                a{
-                  display: inline-block;
-                  width: 66px;
-                  &:hover{
-                    @extend .red-color;
-                  }
+              overflow: hidden;
+              .same-menu{
+                width: 145px;
+                float: left;
+                padding:{
+                  top:10px;
+                  left:20px;
                 }
-                @at-root .red-color{
-                  color: red;
+                span{
+                  line-height: 26px;
+                  font-size: 20px;
+                  color: #333;
+                }
+                p{
+                  line-height: 22px;
+                  a{
+                    display: inline-block;
+                    width: 66px;
+                    &:hover{
+                      @extend .red-color;
+                    }
+                  }
+                  @at-root .red-color{
+                    color: red;
+                  }
                 }
               }
             }
+
           }
           //women right picture start
           .women-show-top{
@@ -458,6 +462,7 @@
           }
           .man-show-lis{
             float: left;
+            height: 620px;
             a{
               display: block;
             }
@@ -489,60 +494,94 @@
           //man right picture end
 
           //shoes right picture start
-          .shoe-pic{
-            .shoe-pic01{
-              display: inline-block;
-              width: 384px;
-            }
-            .shoe-pic02{
-              display: inline-block;
-              width: 182px;
-              border-left:1px solid #ececec;
-            }
 
-            .shoe-pic-bottom{
-              float: left;
-              .shoe-wram{
-                display: block;
-                width: 186px;
-                height: 206px;
-                border-right:1px solid #ececec;
+            .shoe-pic{
+              .shoe-pic01{
+                display: inline-block;
+                width: 384px;
               }
-              .shoe-bd{
+              .shoe-pic02{
+                display: inline-block;
+                width: 182px;
                 border-left:1px solid #ececec;
-                &:first-child{
-                  border-bottom:1px solid #ececec;
+              }
+
+              .shoe-pic-bottom{
+                float: left;
+                .shoe-wram{
+                  display: block;
+                  width: 186px;
+                  height: 207px;
+                  border-right:1px solid #ececec;
                 }
-              }
-              .shoe-women{
-                width: 197px;
-                display: block;
+                .shoe-bd{
+                  border-left:1px solid #ececec;
+                  &:first-child{
+                    border-bottom:1px solid #ececec;
+                  }
+                }
+                .shoe-women{
+                  width: 197px;
+                  display: block;
+
+                }
 
               }
-
             }
-          }
+
+
           //shoes right picture end
 
           //Trends luggage start
           .bags-pic{
 
+            &:first-child{
+              height: 415px;
+            }
             .bags-top{
               float: left;
-
               .bags-pic01{
                 display: block;
+
+                height: 206px;
+                border-right:1px solid #ececec;
+                &:last-child{
+                  border-top:1px solid #ececec;
+                  width: 200px;
+                }
+
               }
               .bags-pic02{
                 display: inline-block;
-                width: 187px;
+                width: 182px;
+                &:last-child{
+                  border-left:1px solid #ececec;
+                }
               }
               .bags-pic03{
-                display: block;
+                 display:block;
+
+               }
+            }
+            a{
+              display: inline-block;
+              &.bags-pic04{
+              width: 384px;
+            }
+              &.bags-pic05{
+                width: 180px;
+                &:last-child{
+                  border-left:1px solid #ececec;
+                }
               }
             }
-          }
 
+
+          }
+          .bags-hei{
+            height: 206px;
+            border-top:1px solid #ececec;
+          }
           //Trends luggage end
         }
       }
