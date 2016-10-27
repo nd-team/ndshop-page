@@ -1,0 +1,195 @@
+@import "../layout/variables", "../layout/mixin";
+i{
+  font-family:'myfont';
+}
+#cart{
+  /*input表单垂直居中*/
+  input[type='checkbox']{
+    vertical-align:-2px;
+  }
+  color:#666;
+  //全部商品
+  h3{
+    float:left;
+    font-size:16px;
+    color:#ee3642;
+    padding:2px 5px;
+    border-bottom:2px solid #ee3642;
+    font-family:$main-sec-ff;
+  }
+  .cart-deliver{
+    float:right;
+  }
+
+  //购物车表头
+  .cart-thead{
+    width:100%;
+    height:40px;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    line-height:40px;
+    background:#f6f6f6;
+    padding:0 10px;
+    li{
+      float:left;
+    }
+  }
+//设置各表格宽度
+  .cart-chos{
+    width:130px;
+  }
+  .cart-pro{
+    width:410px;
+  }
+  .cart-price{
+    width:120px;
+    p{
+      margin:7px 0;
+    }
+  }
+  .cart-num{
+    width:120px;
+    text-align:center;
+  }
+  .cart-sta{
+    width:190px;
+    text-align:center;
+    p{
+      color:#e22d2d;
+      font-weight:bold;
+      margin:7px;
+    }
+  }
+  .cart-oper{
+    width:120px;
+    a{
+      display:block;
+      margin:7px;
+    }
+  }
+
+  //购物车商品列表
+  .cart-list{
+    margin-bottom:20px;
+    font-family:$headline-ff;
+    .cart-shop{
+      height:30px;
+      line-height:30px;
+      padding:0 10px;
+      .nd-shop{
+        color:#35b5ff;
+        font-size:18px;
+        vertical-align:-3px;
+      }
+    }
+    .cart-main{
+      width:100%;
+      height:90px;
+      background:#fff5ef;
+      border-top:1px solid #ddd;
+      padding:20px 10px;
+      color:#727272;
+      li{
+        float:left;
+        p{
+          line-height:18px;
+        }
+      }
+      .cart-chos{
+        input{
+          float:left;
+        }
+        img{
+          width:88px;
+          height:91px;
+        }
+      }
+      .pro-title{
+        width:220px;
+        float:left;
+        a{
+          display:block;
+          margin:7px 0;
+          color:#cfcfcf;
+          &.title-info{
+            color:#727272;
+            line-height:16px;
+            &:hover{
+              color:#3db1fa;
+            }
+          }
+        }
+      }
+      .pro-info{
+        float:left;
+        margin:7px 48px;
+      }
+      .addnum{
+
+        border:1px solid #c4c4c4;
+        height:17px;
+        display:inline-block;
+        padding:0;
+        a{
+          width:14px;
+          height:15px;
+          text-align:center;
+          line-height:17px;
+          display:inline-block;
+
+        }
+        input{
+          height:15px;
+          border:none;
+          text-align:center;
+          outline:none;
+          border-right:1px solid #c4c4c4;
+          border-left:1px solid #c4c4c4;
+        }
+      }
+
+    }
+  }
+  //购物车底部：结算等
+  .cart-foot{
+    height:50px;
+    line-height:50px;
+    .cart-foot-oper{
+      float:left;
+      input{
+        padding-top:10px;
+      }
+      a{
+        margin-left:30px;
+      }
+    }
+    .cart-foot-set{
+      float:right;
+      p{
+        float:left;
+        margin-right:25px;
+        span{
+          font-weight:bold;
+          color:#828282;
+        }
+        .number{
+          color:#248efb;
+        }
+        .total{
+          color:#eb2929;
+          font-size:16px;
+        }
+      }
+      a{
+        font-size:16px;
+        width:115px;
+        text-align:center;
+        background:#eb2929;
+        display:inline-block;
+        color:#ffffff;
+        font-weight:bold;
+      }
+    }
+  }
+
+}
