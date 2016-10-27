@@ -7,7 +7,7 @@ var sourcemaps = require('gulp-sourcemaps');//调试sass
 var autoprefixer = require('gulp-autoprefixer');//浏览器兼容前缀
 var jshint = require('gulp-jshint');//js代码规范检查
 var sassLint = require('gulp-sass-lint');//sass代码规范检查
-var fontIcon = require("gulp-font-icon");//svg转font-icon
+var svgSymbols = require('gulp-svg-symbols');//svg图标字体
 
 gulp.task('sass', ()=> {
     return gulp.src('./sass/**/*.scss')
@@ -37,25 +37,23 @@ gulp.task('sasshint', ()=> {
         .pipe(sassLint.failOnError());
 });
 
-gulp.task("fontIcon", ()=> {
-    return gulp.src(["./font-icon/**/*.svg"])
-        .pipe(fontIcon({
-            fontName: "myfont",
-            fontAlias: "nd"
-        }))
-        .pipe(gulp.dest(__dirname+"/font/icons"));
+gulp.task("svg",function (){
+   return gulp.src("./font-icon/**/*.svg")
+            .pipe(svgSymbols())
+            .pipe(gulp.dest("font/icons"));
 });
 
 gulp.task('serve', ['sass'], ()=> {
 
     bs.init({
-    server: './',
-    startPath:'index.html'
-});
+        server: './',
+        startPath:'index.html'
+    });
 
-gulp.watch('./sass/**/*.scss', ['sass']);
-gulp.watch("**/*.html").on('change', bsReload);
-gulp.watch("js/**/*.js").on('change', bsReload);
+    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch("pages/**/*.html").on('change', bsReload);
+    gulp.watch("index.html").on('change', bsReload);
+    gulp.watch("js/**/*.js").on('change', bsReload);
 });
 
 gulp.task('default', ['serve']);
