@@ -46,6 +46,9 @@
                     font: {
                         size:16px;
                     }
+                    &:hover{
+                        color:#ff729c !important;
+                    }
                 }
             }
         }
@@ -117,7 +120,7 @@
                         }
                     }
                     .nav-beauty {
-                        line-height: 20px;
+                        line-height: 18px;
                         padding: 8px 22px 8px 16px;
                         color: #fff;
                         a {
