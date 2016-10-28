@@ -1,0 +1,102 @@
+@import "../layout/variables", "../layout/mixin";
+#coll-head{
+  font-family:'Microsoft YaHei';
+  .header-lg{
+    width:210px;
+  }
+  .myshop{
+    float:left;
+    height:40px;
+    width:80px;
+    text-align:center;
+    margin-right:40px;
+    h2{
+      font-size:16px;
+      color:#666;
+      margin:5px 0;
+    }
+    a{
+      width:80px;
+      height:18px;
+      color:#33b5ff;
+      border:1px solid #33b5ff;
+      border-radius:10px;
+      display:inline-block;
+      line-height:18px;
+    }
+  }
+  .topnav{
+    li{
+      float:left;
+      margin:0 40px;
+      height:40px;
+      line-height:40px;
+      a{
+        font-size:16px;
+        font-weight:bold;
+      }
+    }
+  }
+  .search-wrap{
+    margin-left:40px;
+    input{
+      width:144px;
+    }
+  }
+  .shopping-cart{
+    margin:0;
+  }
+}
+
+#coll-sidebar{
+  font-family:'Microsoft YaHei';
+  float:left;
+  .menu{
+    h3{
+      font-size:16px;
+      color:#333;
+    }
+    .submenu{
+      padding-left:16px;
+      a{
+        display:block;
+        margin:20px 0;
+        font-size:14px;
+      }
+    }
+  }
+}
+.coll-main{
+  float:right;
+  width:1000px;
+  h3{
+    font-size:14px;
+  }
+  .coll-filter{
+    height:100px;
+    border-top:1px solid #ededed;
+    border-bottom:1px solid #ededed;
+    padding:20px 0;
+    margin:10px 0;
+    >a{
+      margin-right:40px;
+      color:#333;
+    }
+    .search{
+      float:right;
+    }
+    dl{
+      height:40px;
+      line-height:40px;
+      dt{
+        float:left;
+      }
+      dd{
+        float:left;
+        a{
+          color:#35b5ff;
+        }
+      }
+    }
+  }
+}

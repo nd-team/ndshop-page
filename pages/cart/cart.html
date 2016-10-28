@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>购物车</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/cart/cart.css" />
+    <link rel="stylesheet" href="/font/icons/myfont.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/cart/cart.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="wrap cleafix">
+            <div class="top-add">
+                <span>运送至：<a href="javascript:void(0)">广州</a></span>
+            </div>
+            <ul class="header-top-r">
+                <li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
+                <li class="top_r">
+                    <span class="top-line on-red">我的订单<a class="more-icon">&or;</a></span>
+                </li>
+                <li class="top_r">
+                    <span class="top-line on-red">我的商城<a class="more-icon">&or;</a></span>
+                </li>
+                <li class="top_r">
+						<span class="top-line on-red">
+							<i class="phone-sc-icon"></i>手机商城
+						</span>
+                </li>
+                <li class="top_r"><span class="top-line on-red">客户服务<a class="more-icon">&or;</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-ls">
+        <div class="wrap cleafix">
+            <div class="header-lg">
+                <a href="javascript:void(0)" class="logo" title="NdShop">NdShop</a>
+            </div>
+            <div class="search-wrap">
+                <input type="text" class="search-strip" value="" />
+                <button onclick="search('key');return false;" class="button">
+                    <i></i>搜索
+                </button>
+            </div>
+            <div class="shopping-cart">
+                <i class="shopping-cart-icon"></i>
+                <a class="my-cart">我的购物车</a>
+                <a>&gt;</a>
+            </div>
+            <div class="search-hot">
+                <span>热门搜索:</span>
+                <a class="red">情侣套装</a>
+                <a>轻薄羽绒</a>
+                <a>连衣裙</a>
+                <a>拖鞋</a>
+                <a>旅行套装</a>
+                <a>爱奇艺会员</a>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--左侧菜单栏-->
+
+<!--内容-->
+<div id="content" class="clearfix">
+    <div class="wrap clearfix" id="cart">
+        <div class="clearfix">
+            <h3>全部商品4</h3>
+            <div class="cart-deliver">
+                配送至：
+                <select >
+                    <option value="">广东广州白云区</option>
+                </select>
+            </div>
+
+        </div>
+
+        <ul class="cart-thead">
+            <li class="cart-chos"><input type="checkbox">全选</li>
+            <li class="cart-pro">商品</li>
+            <li class="cart-price">单价（元）</li>
+            <li class="cart-num">数量</li>
+            <li class="cart-sta">小计</li>
+            <li class="cart-oper">操作</li>
+        </ul>
+        <div class="cart-list">
+            <div class="cart-shop">
+                <input type="checkbox">
+                <span> <i class="nd-shop"></i> 熊本宝宝的旗舰店</span>
+            </div>
+
+            <ul class="cart-main">
+                <li class="cart-chos">
+                    <input type="checkbox">
+                    <a href="javascript:void(0) ">
+                        <img src="/images/shop/details/mac01.png" alt="">
+                    </a>
+
+                </li>
+                <li class="cart-pro">
+                    <div class="pro-title">
+                        <a href="javascript:void(0) " class="title-info">
+                            Apple iPhone 6s (A1700) 16G 玫瑰金色 移动联通电信4G手机
+                        </a>
+                        <a href="javascript:void(0) "> 购买礼品包装</a>
+                        <a href="javascript:void(0) "> 购买增值保障</a>
+                    </div>
+                    <div class="pro-info">
+                        <p>颜色：土豪金</p>
+                        <p>尺寸：6.0英寸</p>
+                    </div>
+                </li>
+                <li class="cart-price"><p>9288.00</p></li>
+                <li class="cart-num">
+                    <span class="addnum">
+                        <a href="javascript:void(0) " class="num-reduce">-</a><input type="text" size="3" value="1"><a href="javascript:void(0) " class="num-add">+</a>
+                    </span>
+                </li>
+                <li class="cart-sta">
+                    <p>9288.00</p>
+                </li>
+                <li class="cart-oper">
+                    <a href="javascript:void(0) ">删除</a>
+                    <a href="javascript:void(0) ">移动到我的关注</a>
+                </li>
+
+            </ul>
+            <ul class="cart-main">
+                <li class="cart-chos">
+                    <input type="checkbox">
+                    <a href="javascript:void(0) ">
+                        <img src="/images/shop/details/mac01.png" alt="">
+                    </a>
+
+                </li>
+                <li class="cart-pro">
+                    <div class="pro-title">
+                        <a href="javascript:void(0) " class="title-info">
+                            Apple iPhone 6s (A1700) 16G 玫瑰金色 移动联通电信4G手机
+                        </a>
+                        <a href="javascript:void(0) "> 购买礼品包装</a>
+                        <a href="javascript:void(0) "> 购买增值保障</a>
+                    </div>
+                    <div class="pro-info">
+                        <p>颜色：土豪金</p>
+                        <p>尺寸：6.0英寸</p>
+                    </div>
+                </li>
+                <li class="cart-price"><p>9288.00</p></li>
+                <li class="cart-num">
+                    <span class="addnum">
+                        <a href="javascript:void(0) " class="num-reduce">-</a><input type="text" size="3" value="1"><a href="javascript:void(0) " class="num-add">+</a>
+                    </span>
+                </li>
+                <li class="cart-sta">
+                    <p>9288.00</p>
+                </li>
+                <li class="cart-oper">
+                    <a href="javascript:void(0) ">删除</a>
+                    <a href="javascript:void(0) ">移动到我的关注</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="cart-list">
+            <div class="cart-shop">
+                <input type="checkbox">
+                <span> <i class="nd-shop"></i> 熊本宝宝的旗舰店</span>
+            </div>
+
+            <ul class="cart-main">
+                <li class="cart-chos">
+                    <input type="checkbox">
+                    <a href="javascript:void(0) ">
+                        <img src="/images/shop/details/mac01.png" alt="">
+                    </a>
+
+                </li>
+                <li class="cart-pro">
+                    <div class="pro-title">
+                        <a href="javascript:void(0) " class="title-info">
+                            Apple iPhone 6s (A1700) 16G 玫瑰金色 移动联通电信4G手机
+                        </a>
+                        <a href="javascript:void(0) "> 购买礼品包装</a>
+                        <a href="javascript:void(0) "> 购买增值保障</a>
+                    </div>
+                    <div class="pro-info">
+                        <p>颜色：土豪金</p>
+                        <p>尺寸：6.0英寸</p>
+                    </div>
+                </li>
+                <li class="cart-price"><p>9288.33</p></li>
+                <li class="cart-num">
+                    <span class="addnum">
+                        <a href="javascript:void(0) " class="num-reduce">-</a><input type="text" size="3" value="1"><a href="javascript:void(0) " class="num-add">+</a>
+                    </span>
+                </li>
+                <li class="cart-sta">
+                    <p>9288.00</p>
+                </li>
+                <li class="cart-oper">
+                    <a href="javascript:void(0) ">删除</a>
+                    <a href="javascript:void(0) ">移动到我的关注</a>
+                </li>
+
+            </ul>
+            <ul class="cart-main">
+                <li class="cart-chos">
+                    <input type="checkbox">
+                    <a href="javascript:void(0) ">
+                        <img src="/images/shop/details/mac01.png" alt="">
+                    </a>
+
+                </li>
+                <li class="cart-pro">
+                    <div class="pro-title">
+                        <a href="javascript:void(0) " class="title-info">
+                            Apple iPhone 6s (A1700) 16G 玫瑰金色 移动联通电信4G手机
+                        </a>
+                        <a href="javascript:void(0) "> 购买礼品包装</a>
+                        <a href="javascript:void(0) "> 购买增值保障</a>
+                    </div>
+                    <div class="pro-info">
+                        <p>颜色：土豪金</p>
+                        <p>尺寸：6.0英寸</p>
+                    </div>
+                </li>
+                <li class="cart-price"><p>9288.00</p></li>
+                <li class="cart-num">
+                    <span class="addnum">
+                        <a href="javascript:void(0) " class="num-reduce">-</a><input type="text" size="3" value="1"><a href="javascript:void(0) " class="num-add">+</a>
+                    </span>
+                </li>
+                <li class="cart-sta">
+                    <p>9288.00</p>
+                </li>
+                <li class="cart-oper">
+                    <a href="javascript:void(0) ">删除</a>
+                    <a href="javascript:void(0) ">移动到我的关注</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="cart-foot">
+            <div class="cart-foot-oper">
+                <input type="checkbox">全选
+                <a href="javascript:void(0)">删除选中的商品</a>
+                <a href="javascript:void(0)">移到我的关注</a>
+            </div>
+            <div class="cart-foot-set">
+                <p>已选择 <span class="number">2</span> 件商品</p>
+                <p>总价：<span class="total">￥18426.00</span> </p>
+                <a href="javascript:void(0)">去结算</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <!-- service shop start-->
+    <div class="service cleafix">
+        <div class="wrap">
+            <div class="service-top">
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/fly.png" alt="" /></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/earth.png" alt="" /></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/suifei.png" alt="" /></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/taobao.png" alt="" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="service-center">
+        <div class="wrap cleafix">
+            <dl class="shop-all">
+                <dt>购物指南</dt>
+                <dd><a href="javascript:void(0)">购物流程</a></dd>
+                <dd><a href="javascript:void(0)">会员介绍</a></dd>
+                <dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
+                <dd><a href="javascript:void(0)">常见问题</a></dd>
+                <dd><a href="javascript:void(0)">大家电</a></dd>
+                <dd><a href="javascript:void(0)">联系客服</a></dd>
+            </dl>
+            <dl class="shop-all">
+                <dt>配送方式</dt>
+                <dd><a href="javascript:void(0)">上门自提</a></dd>
+                <dd><a href="javascript:void(0)">211显示达</a></dd>
+                <dd><a href="javascript:void(0)">配送服务咨询</a></dd>
+                <dd><a href="javascript:void(0)">配送费收取标准</a></dd>
+                <dd><a href="javascript:void(0)">海外配送</a></dd>
+            </dl>
+            <dl class="shop-all">
+                <dt>支付方式</dt>
+                <dd><a href="javascript:void(0)">货到收款</a></dd>
+                <dd><a href="javascript:void(0)">在线支付</a></dd>
+                <dd><a href="javascript:void(0)">分期付款</a></dd>
+                <dd><a href="javascript:void(0)">邮局汇款</a></dd>
+                <dd><a href="javascript:void(0)">公司转账</a></dd>
+
+            </dl>
+            <dl class="shop-all">
+                <dt>售后服务</dt>
+                <dd><a href="javascript:void(0)">售后政策</a></dd>
+                <dd><a href="javascript:void(0)">价格保护</a></dd>
+                <dd><a href="javascript:void(0)">退款说明</a></dd>
+                <dd><a href="javascript:void(0)">返修、退换货</a></dd>
+                <dd><a href="javascript:void(0)">取消订单</a></dd>
+            </dl>
+            <dl>
+                <dt>特色服务</dt>
+                <dd><a href="javascript:void(0)">夺宝岛</a></dd>
+                <dd><a href="javascript:void(0)">DIY装机</a></dd>
+                <dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
+                <dd><a href="javascript:void(0)">常见问题</a></dd>
+                <dd><a href="javascript:void(0)">大家电</a></dd>
+            </dl>
+        </div>
+    </div>
+    <!-- service shop end-->
+
+    <!--under footer start-->
+    <div class="footer">
+        <div class="wrap">
+            <div class="foot-link">
+                <a href="javascript:void(0)">关于我们</a>|
+                <a href="javascript:void(0)">联系我们</a>|
+                <a href="javascript:void(0)">联系客服</a>|
+                <a href="javascript:void(0)">商家入驻</a>|
+                <a href="javascript:void(0)">营销中心</a>|
+                <a href="javascript:void(0)">手机商城</a>|
+                <a href="javascript:void(0)">友情链接</a>|
+                <a href="javascript:void(0)">销售联盟</a>|
+                <a href="javascript:void(0)">ENGLISH SITE</a>|
+                <a href="javascript:void(0)">CONTACT US</a>
+            </div>
+            <div class="autocation">
+                <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt="" /></a>
+            </div>
+        </div>
+
+    </div>
+    <!--under footer end-->
+</footer>
+<!--big footer end-->
+
+</body>
+</html>
