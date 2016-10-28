@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>购物车</title>
+    <title>我的订单</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/cart/collection.css" />
-    <link rel="stylesheet" href="/font/icons/myfont.css">
+    <link rel="stylesheet" href="/css/orders/allorders.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/cart/collection.js"></script>
 </head>
 <body>
 <header>
@@ -79,7 +77,7 @@
 
 <!--内容-->
 <div id="content" class="clearfix wrap">
-    <div id="coll-sidebar" class="clearfix">
+    <div id="order-sidebar" class="clearfix">
         <div class="menu">
             <h3>订单中心</h3>
             <div class="submenu">
@@ -94,152 +92,70 @@
                 <a href="javascript:void(0) ">我的足迹</a>
             </div>
         </div>
+        <div class="menu">
+            <h3>优惠中心</h3>
+            <div class="submenu">
+                <a href="javascript:void(0) ">我的优惠券</a>
+                <a href="javascript:void(0) ">商城积分</a>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>退款维权</h3>
+            <div class="submenu">
+                <a href="javascript:void(0) ">退款管理</a>
+                <a href="javascript:void(0) ">售后服务</a>
+                <a href="javascript:void(0) ">投诉管理</a>
+                <a href="javascript:void(0) ">咨询回复</a>
+            </div>
+        </div>
     </div>
-    <div class="coll-main clearfix">
-        <h3>我的收藏</h3>
-        <div class="coll-filter">
-            <div class="coll-proshop">
-                <a href="javascript:void(0) " class="active">收藏的商品</a>
-                <a href="javascript:void(0) ">收藏的店铺</a>
+    <div class="order-main clearfix">
+        <h3>我的订单</h3>
+        <div class="order-nav clearfix">
+            <ul>
+                <li class="active">
+                    <a href="javascript:void(0)">全部订单</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">待支付</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">待发货</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">待收货</a>
+                </li>
+            </ul>
+            <div class="order-recycle">
+                <a href="javascript:void(0)">订单回收站</a>
             </div>
-            <div class="search">
-                <input type="text" placeholder="请输入商品名称" size="10"> <button>搜索</button>
-            </div>
-            <dl class="sortfil">
-                <dt >分类筛选：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">厨房小电（1）</a>
-                    <a href="javascript:void(0) ">厨房卫浴（1）</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>全部商品<span>(2)</span>：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">降价</a>
-                    <a href="javascript:void(0) ">促销</a>
-                </dd>
-            </dl>
         </div>
-        <ul class=" addpay">
-            <li>
-                <a href="javascript:void(0)"><input type="checkbox"> 全选</a>
+        <div class="order-search clearfix">
+            <p>
+                <input type="text" placeholder="商品名称/商品编号/订单号"><a href="javascript:void(0) ">订单搜索</a>
+
+            </p>
+            <select name="" id="">
+                <option value="">筛选更多</option>
+            </select>
+        </div>
+        <ul class="order-thead">
+            <li class="order-all">全部订单</li>
+            <li class="order-deatil">订单详情</li>
+            <li class="order-price">单价</li>
+            <li class="order-num">数量</li>
+            <li class="order-oper">操作</li>
+            <li class="order-sta">金额</li>
+            <li class="order-dealtype">
+                <select >
+                    <option value="">交易状态</option>
+                </select>
             </li>
-            <li>
-                <a href="javascript:void(0)">加入购物车</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">取消关注</a>
-            </li>
+            <li class="order-dealoper">交易操作</li>
         </ul>
-        <div class="coll-prolist">
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>300人评价</span>
-                    <span>好评度94%</span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>300人评价</span>
-                    <span>好评度94%</span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>300人评价</span>
-                    <span>好评度94%</span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>300人评价</span>
-                    <span>好评度94%</span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>300人评价</span>
-                    <span>好评度94%</span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>300人评价</span>
-                    <span>好评度94%</span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-        </div>
     </div>
 
-    <div class="coll-page clearfix">
+    <div class="order-page clearfix">
         <button class="lastpage">&lt; 上一页</button>
         <ul >
             <li >
