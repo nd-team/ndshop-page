@@ -1,5 +1,10 @@
 @import "../layout/_variables", "../layout/_mixin";
 $ser-f: '宋体';
+@mixin underline($border:1px solid #d4d4d4){
+  border-top:$border;
+  border-left:$border;
+  border-right:$border;
+}
 .header-lg {
   width: 185px !important;
 }
@@ -98,10 +103,13 @@ $ser-f: '宋体';
         margin-top: 22px;
         /*所有银行*/
         .bank-cd{
-          // width: 960px;
-          margin-top: 40px;
+         margin-top: 40px;
           .q-card{
-            display: block;
+           // display: block;
+            border-top:0;
+            min-height:100px;
+            background-color:#fff;
+            display:none;
 
             ul {
               margin-left: 62px;
@@ -112,19 +120,16 @@ $ser-f: '宋体';
                 height: 40px;
                 line-height: 40px;
                 border: 1px solid #d4d4d4;
-                margin:0 40px 20px 0px;
+                margin: 0 40px 20px 0px;
                 float: left;
                 text-align: center;
+                background:$white;
 
                 a{
-                  // line-height: 40px;
-                  display:inline-block;
+                   display:inline-block;
                   vertical-align:middle;
                 }
                 img{
-                  // text-align: center;
-                  // line-height: 40px;
-                  // padding: 8px 5px 5px 10px;
                   padding-top: 7px;
                 }
                 button{
@@ -136,7 +141,7 @@ $ser-f: '宋体';
                   font:{
                     family: $main-sec-ff;
                     size: 14px;
-                  }
+                   }
                 }
 
               }
@@ -151,48 +156,28 @@ $ser-f: '宋体';
           line-height: 34px;
           border-bottom: 1px solid #d4d4d4;
           margin-left: 38px;
-          h1{
-            font:{
-              size: 14px;
-              family: $headline-ff;
-            }
-            width: 109px;
-            height: 34px;
-            text-align: center;
-            color: #4d4d4d;
-            border: 1px solid #d4d4d4;
-            border-bottom: 0px;
-            //border-left: 1px solid #d4d4d4;
-            //border-right: 1px solid #d4d4d4;
-            background: white;
-            float: left;
-            cursor: pointer;
-            position: relative;
-            left: -1px;
+          li{
+            width:109px;
+            height:34px;
+            float:left;
+            margin:0 20px 0 0;
+            border:1px solid #d4d4d4;
+            line-height:35px;
+            text-align:center;
+            cursor:pointer;
+            font-size:14px;
+            font-family:$main-sec-ff;
+            background: #f6f6f6;
+            border:0px;
 
-            .on{
-
-               // border-bottom: 1px solid white;
+            &.quick-pay{
+              @include underline(1px solid #d4d4d4);
+              cursor:pointer;
+              color:black;
+              text-shadow:0 1px 0 $white;
+              background:$white;
             }
 
-
-            &.quick-payment{
-              height: 34px;
-              background-color: white;
-              border-top: 1px solid #d4d4d4;
-              border-bottom: 1px solid white;
-               }
-
-            &.e-currency-payment{
-              height: 34px;
-              //display: inline-block;
-              background: #f6f6f6;
-              margin-left: 20px;
-              border: 0px;
-              //border-left: 1px solid #d4d4d4;
-              //border-right: 1px solid #d4d4d4;
-              //
-            }
           }
 
         }
@@ -220,43 +205,38 @@ $ser-f: '宋体';
   /*其他支付方式*/
   .other-pay{
     @include box-shadow(0 2px 16px rgba(236,236,236,.9));
-    width: 1100px;
+    width: 1100-55px;
     height: 126px;
     margin-top: 40px;
     padding: 20px 0 0 55px;
-
-    //input[type=checkbox] {
-    //visibility: hidden;
-    //}
-    /* .carts-checkbox{
-       margin: 0 10px 0 0;
-       input{
-           position: absolute;
-           z-index: 0;
-         left: -20px;
-         top:-20px;
-         background: blue;
-       }
-       label{
-         background-position:0 -20px;
-         z-index: 1;
-         width: 18px;
-         height: 18px;
-         line-height: 200em;
-         overflow: hidden;
-         cursor: pointer;
-       }
-     }*/
     color: #4d4d4d;
     font:{
       family:$main-sec-ff;
       size: 18px;
     }
-    input{
-      width: 18px;
-      height: 18px;
-      background: red;
+    .checked-cart{
+         position: relative;
+         float: left;
+         display: inline-block;
+         width: 18px;
+         height: 18px;
+     input{
+          position: absolute;
+          z-index: 0;
+         width: 18px;
+         height: 18px;
+         left:-15px;
+         }
+      label{
+        background-position: 0 0px;
+        position: relative;
+        z-index: 1;
+        float: left;
+        width: 18px;
+        height: 18px;
+        }
     }
+
     .mode{
       color: #4d4d4d;
     }

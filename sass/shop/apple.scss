@@ -120,7 +120,7 @@ i{
                   text-align: left;
                   @extend .all;
                   margin:0 0 0 8px;
-                 font-family:'Microsoft YaHei';
+                 font-family:$main-sec-ff;
                  font-size: 14px;
                  background: #40bbff;
                  color: $white;
@@ -137,8 +137,7 @@ i{
                    font-family: 'myfont';
                    color: $white;
                    padding: 0 9px 0 59px;
-                   //padding-left: 45px;
-                 }
+                  }
                }
                .left-search-hot{
                  @extend .left-search;
@@ -237,7 +236,9 @@ i{
               color:$white;
             }
 
+           &.active{
 
+           }
           }
         }
       }
@@ -306,7 +307,7 @@ i{
             padding: 9px 11px;
             background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fdfdfd), to(#e9e9e9));
             margin: 0 3px 0 0;
-            &:hover{
+            &:active{
               background:#1dbdf7;
                color: $white;
              }
@@ -339,7 +340,23 @@ i{
             border-left: #626262 solid 8px;
             border-right: transparent solid 8px;
             display: block;
+             &:hover{
+                @extend .nextbuttons;
+                border-left: #1dbdf7 solid 8px;
+             }
+
             }
+
+          &:active{
+            background:#1dbdf7;
+            color: $white;
+            .nextbuttons {
+              @extend .nextbuttons;
+              border-left: $white solid 8px;
+            }
+          }
+
+
         }
         .listnum3{
           @extend .listnum;
@@ -353,6 +370,7 @@ i{
         input{
            width: 30px;
            height: 20px;
+          border: 1px solid #e8e8e8;
         }
 
 

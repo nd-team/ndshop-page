@@ -8,7 +8,9 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="/css/base.css" />
     <link rel="stylesheet" type="text/css" href="/css/cart/settlement.css" />
-    <script src="../../js/shop/jquery.js"></script>
+    <script src="/js/shop/jquery.js"></script>
+    <script src="/js/shop/shop.js"></script>
+    <script src="../../js/shop/shop.js"></script>
 
 
 </head>
@@ -66,150 +68,47 @@
                <div class="card-square"><span></span></div>
                  <h2>银行卡</h2>
 
-                 <!--<script>
-                     $(function(){
-                         $(".card-tab-title h1").click(function  () {
-                             var index=$(this).index(".card-tab-title h1");
-                             $(this).addClass("quick-payment").siblings().removeClass("quick-payment");
-                             $($(".q-card")[index]).show().siblings().hide();
-                         })
-                         $(".yScrollListInList1 ul").css({width:$(".yScrollListInList1 ul li").length*(160+84)+"px"});
-                         $(".yScrollListInList2 ul").css({width:$(".yScrollListInList2 ul li").length*(160+84)+"px"});
-                         var numwidth=(160+84)*5;
-                         $(".q-card").click(function(){
-                             var obj=$(this).parent(".q-card").find("ul");
-                             if (!(obj.is(":animated"))) {
-                                 var lefts=parseInt(obj.css("left").slice(0,-2));
-                                 if(lefts<30){
-                                     obj.animate({left:lefts+numwidth},1000);
-                                 }
-                             }
-                         })
 
-                     })
-                 </script>-->
-
-
-                <!-- <div class="card-tab">
-                     <div class="card-tab-title">
-                         <h1 class="quick-payment"><i></i>快捷支付</h1>
-                         <h1 class="e-currency-payment">网银支付</h1>
-                     </div>
-
-                     <div class="bank-cd">
-                          <div class="q-card yScrollListInList1">
-                     <ul>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/中国银行.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/中国工商银行.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/建设银行.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/招商银行.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/中国农业银行.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/交通银行.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/农村信用合作社.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/兴业银行.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/中国邮政.png"/></a></li>
-                         <li><a href="javascript:void(0)"><img src="/images/cart/光大银行.png"/></a></li>
-                         <li><button>更多银行</button></li>
-                     </ul>
-                          </div>
-
-                     </div>
-
-                     </div>
-                     -->
                  <script type="text/javascript">
-                 $(function(){
-                     $(".card-tab-title h1").click(function  () {
-                         var index=$(this).index(".card-tab-title h1");
-                         $(this).addClass("quick-payment").siblings().removeClass("quick-payment");
-                         $($(".yScrollListInList")[index]).show().siblings().hide();
-                     })
-                     $(".yScrollListInList1 ul").css({width:$(".yScrollListInList1 ul li").length*(160+84)+"px"});
-                     $(".yScrollListInList2 ul").css({width:$(".yScrollListInList2 ul li").length*(160+84)+"px"});
-                     var numwidth=(160+84)*5;
-                     $(".yScrollListInList").click(function(){
-                         var obj=$(this).parent(".yScrollListInList").find("ul");
-                         if (!(obj.is(":animated"))) {
-                             var lefts=parseInt(obj.css("left").slice(0,-2));
-                             if(lefts<30){
-                                 obj.animate({left:lefts+numwidth},1000);
-                             }
-                         }
-                     })
 
-                 })
-             </script>
-                 <!--<style>
-                     .yScrollList{width:1198px;height:263px;border:1px solid #dcdcdc;background:#ffffff;margin:25px auto 0;}
-                     .yScrollListTitle h1.yth1click{height:42px;border-top:2px solid #e9630a;top:-5px;}
-                     .yScrollListIn{width:100%;height:224px;position:relative;}
-                     .yScrollListInList{display:none;width:1138px;height:224px;position:absolute;padding:0 30px;left:0;top:0;overflow:hidden;}
-                     .yScrollListInList .yScrollListbtn{cursor:pointer;position:absolute;width:13px;height:19px;top:96px;}
-                     .yScrollListInList .yScrollListbtnr{background-position:-14px 0;right:5px;}
-                     .yScrollListInList .yScrollListbtnl{left:5px;}
-                     .yScrollListInList ul{width:2238px;height:224px;position:absolute;top:0;left:30px;overflow:hidden;}
-                     .yScrollListInList ul li{width:160px;height:224px;float:left;margin-right:84px;}
-                     .yScrollListInList ul li img{width:140px;height:140px;display:block;margin-left:10px;margin-top:12px;}
-                     .yScrollListInList ul li p{text-align:center;font-size:12px;color:#666666;line-height:18px;padding:7px 10px 0;width:140px;height:36px;overflow:hidden;}
-                     .yScrollListInList ul li p:hover{color:#e9630a;text-decoration:underline;}
-                     .yScrollListInList ul li span{color:#e9630a;font-size:12px;text-align:center;display:block;line-height:24px;}
+                 </script>
 
-                 </style>-->
+
 
                  <div class="card-tab">
-                     <div class="card-tab-title">
-                         <h1 class="quick-payment"><i></i>快捷支付</h1>
-                         <h1 class="e-currency-payment">网银支付</h1>
-                     </div>
-
+                     <ul class="card-tab-title">
+                         <li class="quick-pay">快捷支付</li>
+                         <li>网银支付</li>
+                     </ul>
                      <div class="bank-cd">
-                         <div class="q-card">
-                             <!--<div class="yScrollListIn">
-                                 <div class="yScrollListInList yScrollListInList1" style="display:block;">-->
-                                     <ul>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/中国银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/中国工商银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/建设银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/招商银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/中国农业银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/交通银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/农村信用合作社.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/兴业银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/中国邮政.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/光大银行.png"/></a></li>
-                                         <li><button>更多银行</button></li>
-                                     </ul>
-                                 </div>
-
-                                <!-- <div class="yScrollListInList yScrollListInList2">
-                                     <ul>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/中国银行.png"/></a>1</li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/中国工商银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/建设银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/招商银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/中国农业银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/交通银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/农村信用合作社.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/兴业银行.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/中国邮政.png"/></a></li>
-                                         <li><a href="javascript:void(0)"><img src="/images/cart/光大银行.png"/></a></li>
-                                         <li><button>更多银行</button></li>
-                                     </ul>
-                                 </div>-->
-
-                             </div>
+                         <div class="q-card" style="display:block;">
+                             <ul>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/中国银行.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/中国工商银行.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/建设银行.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/招商银行.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/中国农业银行.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/交通银行.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/农村信用合作社.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/兴业银行.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/中国邮政.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/光大银行.png"/></a></li>
+                                 <li><button>更多银行</button></li>
+                             </ul>
                          </div>
-
-
-
-
+                         <div class="q-card"><ul><li><a href="javascript:void(0)">123</a></li></ul></div>
+                     </div>
+                 </div>
 
                      </div>
                     <button class="pay-immediately">立即支付</button>
                 </div>
                 <!--其他支付方式-->
-        <div class="other-pay">
+      <div class="other-pay">
+            <div class="checked-cart">
             <input type="checkbox">
+            <label></label>
+            </div>
             <a href="javascript:void(0)" class="mode">其他支付方式</a>
             <div class="other">
             <a href="javascript:void(0)">微信支付</a>|

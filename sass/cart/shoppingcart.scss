@@ -9,6 +9,14 @@
        family: $main-sec-ff;
        size: 20px;
     }
+    i{
+       width: 33px;
+       height: 33px;
+       background: #0dbc77;
+       display: block;
+       float: left;
+       margin:-5px 8px 0 22px;
+    }
   }
   .cart-commodity{
     margin-top: 19px;
@@ -40,7 +48,6 @@
           margin-top: 26px;
            button{
              border: 0px;
-             //margin-bottom: 11px;
              margin: 0 0 11px 703px;
              cursor: pointer;
              font:{
@@ -100,7 +107,6 @@
         img{
         width:147px;
         margin-left: 47px;
-        //text-align: center;
         }
       }
       p{
@@ -135,6 +141,15 @@
         font-size: 14px;
         font-family: $main-sec-ff;
         margin-left:39px;
+        i{
+          width: 24px;
+          height: 24px;
+          background: #31b5ff;
+          display: inline-block;
+          vertical-align: middle;
+          overflow: hidden;
+          margin-right: 8px;
+        }
       }
     }
   }

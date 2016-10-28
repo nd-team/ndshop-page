@@ -8,6 +8,9 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/shop/details_macbook.css" />
+    <link rel="stylesheet" href="/font/icons/myfont.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/shop/details_macbook.js"></script>
 </head>
 <body>
 <header>
@@ -104,13 +107,13 @@
                 <a href="javascript:void(0)" class="right">&gt;</a>
             </div>
             <div class=" share">
-                <a href="javascript:void(0)" >分享</a>
-                <a href="javascript:void(0)" >收藏此商品</a>
+                <a href="javascript:void(0)" ><i class="nd-next"></i>分享</a>
+                <a href="javascript:void(0)" ><i class="nd-next"></i>收藏此商品</a>
             </div>
         </div>
         <!--商品信息-->
         <div class="proinfo-main">
-            <h2>Apple MacBook Pro 13.3英寸笔记本电脑 银色（Core i5 处理器/8GB内存/256GB SSD闪存/Retina屏 MF840CH）</h2>
+            <h2><a href="javascript:void(0) ">Apple MacBook Pro 13.3英寸笔记本电脑 银色（Core i5 处理器/8GB内存/256GB SSD闪存/Retina屏 MF840CH）</a></h2>
             <p class="activities">【PC成交价9788元，APP成交价9758元】教师节特惠！放狠价！！神券满10000减1000元！还送价值199元内胆包！数量有限！先到先得！</p>
             <div class="proinfo-price">
                 <dl>
@@ -135,17 +138,17 @@
                     <span>有货</span>
                 </dd>
             </dl>
-            <dl class="proinfo-edition">
+            <dl class="choice proinfo-edition">
                 <dt >版本：</dt>
                 <dd>
-                    <a href="javascript:void(0) ">13.3英寸</a>
+                    <a href="javascript:void(0) " class="active">13.3英寸</a>
                     <a href="javascript:void(0) ">15.4英寸</a>
                 </dd>
             </dl>
-            <dl class="proinfo-choose">
+            <dl class="choice proinfo-choose">
                 <dt>选择版本：</dt>
                 <dd>
-                    <a href="javascript:void(0) ">双核i5/8G内存/128G闪存</a>
+                    <a href="javascript:void(0) " class="active">双核i5/8G内存/128G闪存</a>
                     <a href="javascript:void(0) ">双核i5/8G内存/256G闪存</a>
                     <a href="javascript:void(0) ">双核i5/8G内存/512G闪存</a>
                     <a href="javascript:void(0) ">双核i5/16G内存/512G闪存</a>
@@ -154,10 +157,10 @@
                     <a href="javascript:void(0) ">定制：双核i5/8G内存/256G闪存</a>
                 </dd>
             </dl>
-            <dl >
+            <dl class="choice">
                 <dt>选择版本：</dt>
                 <dd>
-                    <a href="javascript:void(0) ">优惠套装1</a>
+                    <a href="javascript:void(0) " class="active">优惠套装1</a>
                     <a href="javascript:void(0) ">优惠套装2</a>
                 </dd>
             </dl>
@@ -166,13 +169,13 @@
                 <dd>
                     <input type="text" value="1">
                     <span>
-                        <a href="javascript:void(0) ">+</a>
-                        <a href="javascript:void(0) ">-</a>
+                        <a href="javascript:void(0)" class="num-add">+</a>
+                        <a href="javascript:void(0)" class="num-reduce">-</a>
                     </span>
                 </dd>
             </dl>
             <div class="add-cart">
-                <a href="javascript:void(0) ">加入购物车</a>
+                <a href="javascript:void(0) "><i class="nd-shopping"></i>加入购物车</a>
                 <p>温馨提示：支持7天无理由退货</p>
             </div>
         </div>
@@ -184,27 +187,27 @@
         <div class="prodetail clearfix">
             <ul class="pronav-tabs ">
                 <li>
-                    <a href="javascript:void(0)">商品介绍</a>
+                    <a href="javascript:void(0)" class="active" title="pro-intro">商品介绍</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">规格与包装</a>
+                    <a href="javascript:void(0)" title="pro-spec">规格与包装</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">售后服务</a>
+                    <a href="javascript:void(0)" title="pro-afterser">售后服务</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">商品评价</a>
+                    <a href="javascript:void(0)" title="pro-rate">商品评价</a>
                 </li>
             </ul>
             <!--商品介绍-->
-            <div class="protabs pro-intro">
+            <div class=" pro-intro">
                 <div>
                     <div class="sidebar">
                         <div class="myshop">
                             <h2>熊本宝宝的旗舰店</h2>
                             <div class="shopbtn">
-                                <a href="javascript:void(0) ">进店逛逛</a>
-                                <a href="javascript:void(0) ">关注店铺</a>
+                                <a href="javascript:void(0) "> <i class="nd-shop"></i>进店逛逛</a>
+                                <a href="javascript:void(0) " ><i class="nd-shop"></i>关注店铺</a>
                             </div>
                         </div>
                     </div>
@@ -386,7 +389,7 @@
                     <p>向您保证所售商品均为正品行货，与您亲临商场选购的商品享受相同的质量保证。本站为您提供具有竞争力的商品价格和服务保障，请放心购买！</p>
                 </div>
             </div>
-            <div class="pro-rate">
+            <div class="protabs pro-rate">
                 <h3>商品评价</h3>
                 <div class="clearfix pro-rateinfo">
                     <div class="pro-rate-good">

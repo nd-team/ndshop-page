@@ -3,14 +3,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="icons/myfont.css" />
+		<link rel="stylesheet" type="text/css" href="icons/svg-symbols.css" />
 	</head>
-	<style>
-		*{
-			  font-family: 'myfont';
-		  }
-	</style>
+	<script>
+		var ajax = new XMLHttpRequest();
+		ajax.open("GET", "icons/svg-symbols.svg", true);
+		ajax.onload = function(e) {
+			document.body.insertAdjacentHTML("afterBegin", '<div style="display:none;">' + ajax.responseText + '</div>');
+		}
+		ajax.send();
+	</script>
 	<body>
-		<i class="mf-search"></i>
+		<svg role="img" class="search">
+			<use xlink:href="#search"></use>
+		</svg>
 	</body>
 </html>
