@@ -212,7 +212,7 @@
   overflow: hidden;
 
   .features-title{
-    line-height: 40px;
+    line-height: 42px;
     h3{
         color:#ff729b;
         font:{
@@ -248,10 +248,10 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  margin: 40px 0;
+  margin-top: 40px;
 
   .luxurious-title{
-    line-height: 36px;
+    line-height: 42px;
     h3{
       color:#ff729b;
       font:{
@@ -260,7 +260,6 @@
       }
     }
   }
-
   .luxury-product{
     width: 100%;
     li{
@@ -308,7 +307,7 @@
             border-top:1px solid #eee;
           }
           img{
-            width: 270px;
+            width: 274px;
             height: 150px;
           }
         }
@@ -332,7 +331,202 @@
     }
   }
 }
-//luxury purchase enf
+//luxury purchase end
+
+//商品点击轮播部分开始
+.same-rotation{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  .luxury-product-auto{
+    width: 100%;
+    height: 117px;
+    border-bottom:1px solid #ededed;
+    position: relative;
+    padding-top: 20px;
+
+    .arrow-left{
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: rgba(255, 255,255,255);
+      border:{
+        width: 0 0 2px 2px;
+        style: solid;
+        color:#dddddd;
+      }
+      transform:rotateZ(45deg);
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      margin-top: -5px;
+      cursor: pointer;
+    }
+    .arrow-right{
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: rgba(255, 255,255,255);
+      border:{
+        width: 0 0 2px 2px;
+        style: solid;
+        color:#dddddd;
+      }
+      transform:rotateZ(-135deg);
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -5px;
+      cursor: pointer;
+    }
+    .luxury-product-pd{
+      padding-left: 20px;
+      width: 254px;
+    }
+    .luxury-product-foreword{
+      width: 274px;
+      .luxury-product-text{
+        padding-left: 20px;
+      }
+    }
+    .luxury-product-introduction{
+      float: left;
+
+      .luxury-product-picture{
+        float: left;
+        //width: 100px;
+        a{
+          img{
+            text-align: center;
+          }
+        }
+      }
+
+      .luxury-product-text{
+        float: left;
+        padding-left: 20px;
+        .luxury-product-name{
+          color: #666;
+          line-height: 18px;
+        }
+        .luxury-product-price{
+          color: #999;
+          padding:10px 0 15px;
+
+          .red{
+            color: red;
+            text-decoration: underline;
+          }
+        }
+        .luxury-blue{
+          display: block;
+          color:#76c2e6;
+        }
+      }
+    }
+
+    .daily-same-style{
+      width: 260px;
+    }
+    .daily-same-first{
+      width: 280px;
+      margin-left: 40px;
+    }
+    .daily-same-one{
+      width: 290px;
+      margin-left: 40px;
+    }
+    .daily-same-series{
+      width: 256px;
+    }
+
+    //Perfume essential oil part start
+    .daily-same-brand{
+      margin-left: 30px;
+      text-align: center;
+      display: inline-block;
+      line-height: 60px;
+    }
+    //Perfume essential oil part end
+
+  }
+}
+
+//商品点击轮播部分结束
+
+//生活用品的公共样式开始
+.daily-same{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 60px;
+  .same-title{
+    line-height: 42px;
+    font: {
+      size: 20px;
+      family: $main-sec-ff;
+    }
+    color: #ff729b;
+  }
+
+  .daily-same-pic{
+    width: 100%;
+    height: 400px;
+    border-top:1px solid #ff729c;
+    
+    li{
+      float: left;
+      height: 400px;
+      &.daily-same-last{
+
+        .daily-brand{
+          display: block;
+          width: 320px;
+
+        }
+        .daily-brand04{
+          border-bottom:1px solid #eee;
+        }
+        .daily-brand05{
+          border-top:1px solid #eee;
+        }
+      }
+
+      &.daily-same-size{
+        width: 554px;
+        .daily-same-fragrant{
+          height: 268px;
+          a{
+            display: inline-block;
+            &.daily-same-pic02{
+              width: 366px;
+            }
+            &.daily-same-pic03{
+              width: 181px;
+              height: 268px;
+              border: {
+                right: 1px;
+                bottom: 1px;
+                style: solid;
+                color: #eee;
+              }
+            }
+          }
+        }
+
+        .daily-same-water{
+          .daily-same-pic04{
+            display: inline-block;
+            width: 274px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//生活用品的公共样式结束
 
 
 
