@@ -161,6 +161,7 @@ i{
                @extend .left-side-top;
                height: auto;
                margin-top: 8px;
+               padding:0 0 15px 8px;
                .c-title{
                  color: #656565;
                  height:32px;
@@ -169,41 +170,50 @@ i{
                  border-bottom: 2px solid #33b7f8;
 
                }
-               .ipad{
-                   h2{
-                     @extend .all;
-                     color: #636363;
-                     text-indent: 2.0em;
-                     background: #f6f6f6;
-                   }
-                 ul{
-                   li{
-                     @extend .all;
-                     border-bottom: 1px dashed #c4c4c4;
-                     a{
-                       font-family:$main-sec-ff;
-                       padding-left: 20px;
-                       color: #696969;
-                       }
-                   }
-                 }
-               }
+               .store-duty{
+                  li{
+                    width:181px;
+                    margin-top:10px;
 
-               .iphone{
-                   @extend .ipad;
-               }
-               .Mac{
-                 @extend .ipad;
-               }
-               .parts{
-                 @extend .ipad;
+                    a{
+                      padding-left: 39px;
+                      color: #6d6d6d;
+                      font-size:12px;
+                      font-family:$main-sec-ff;
+                      display: block;
+                      height:30px;
+                      line-height: 30px;
+                      position: relative;
+                    }
+                    .inactive{
+                      background:url(/images/off.png) no-repeat #f6f6f6 14px center;
+                    }
+                    .store-inactive{
+                      background:url(/images/on.png) no-repeat #f6f6f6 14px center;
+                    }
+                    ul{
+                      display: none;
+                      li {
+                        border-bottom:1px dashed #c4c4c4;
+                        a{
+                          padding-left:10px;
+                          color:#696969;
+                          display:list-item;
+                          list-style-type:square;
+                          margin-left:2.5em;
+
+
+                       }
+                      }
+                    }
+                  }
                }
 
              }
 
 
            }
-
+/*right*/
     .right-side{
           width: 892px;
           border:$border;
@@ -236,8 +246,8 @@ i{
               color:$white;
             }
 
-           &.active{
-
+           &:active{
+              @extend .current;
            }
           }
         }

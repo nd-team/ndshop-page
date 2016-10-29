@@ -10,7 +10,26 @@ window.onload = function(){
         })
     })
 
-/*店铺banner*/
+
+    /*店铺内页*/
+
+    $('.inactive').click(function(){
+        if($(this).siblings('ul').css('display')=='none'){
+            $(this).parent('li').siblings('li').removeClass('store-inactive');
+            $(this).addClass('store-inactive');
+            $(this).siblings('ul').slideDown(100).children('li');
+
+        }else{
+            $(this).removeClass('store-inactive');
+            $(this).siblings('ul').slideUp(100);
+
+
+        }
+    })
+
+
+
+    /*店铺banner*/
     $(".banner-shop").hover(function(){
             $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
         },
@@ -26,11 +45,14 @@ window.onload = function(){
         trigger: "click",
         startFun: function(i) {
             var curLi = jQuery(".banner-shop .bd li").eq(i);
-            if ( !! curLi.attr("_src")) {
+            if ( ! curLi.attr("_src")) {
                 //.css("background-image", curLi.attr("_src")).removeAttr("_src")
             }
         }
     });
+
+
+
 
 
 }

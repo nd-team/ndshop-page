@@ -92,21 +92,17 @@
   }
   ul{
     width: 1100px;
-    height: 610px;
-    border:1px dashed #dfdfdf;
-    border-top:0px;
-    border-right: 0px;
     li{
       width: 260px;
-      height: 281px;
       float: left;
-      border-right:1px dashed #dfdfdf;
-      border-top:1px dashed #dfdfdf;
-      padding: 15px 2px 7px 12px;
+      margin: -1px 0 0 -1px;
+      border: 1px dashed #cacaca;
+      overflow: hidden;
+      padding: 15px 2px 20px 12px;
       a{
         img{
         width:147px;
-        margin-left: 47px;
+        margin-left: 260-147-32-32px;
         }
       }
       p{
@@ -117,7 +113,7 @@
 
             }
            color: #333;
-        line-height: 1.4em;
+           line-height: 1.4em;
         }
 
         &:nth-of-type(even){
@@ -141,6 +137,7 @@
         font-size: 14px;
         font-family: $main-sec-ff;
         margin-left:39px;
+        cursor: pointer;
         i{
           width: 24px;
           height: 24px;

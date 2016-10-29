@@ -12,7 +12,7 @@
   float: right;
   margin-top: 3px;
   li{
-     width: 160px;
+    width: 160px;
     height: 23px;
     line-height: 23px;
     text-align: center;
@@ -55,13 +55,13 @@ Fill in the check order information*/
 
      width: 1100px;
      height: 700px;
-     border: 1px solid #ddd;
+    $border: 1px solid #ddd !global;
+    border: $border;
     .receiving-all{
        width: 1050px;
       margin: 0 auto;
      .receipt-title{
       height: 94px;
-      //padding: 20px 0 0 20px;
       border-bottom: 1px solid #ddd;
        @extend  %receipt-inform;
       p{
@@ -86,14 +86,14 @@ Fill in the check order information*/
           a{
            width: 80px;
             height: 30px;
-            border: 1px solid #ddd;
+            border: $border;
             line-height: 30px;
             display: block;
             border: 0px;
              &.r-now{
               width: 80px;
               height: 30px;
-              border: 1px solid #ddd;
+              border: $border;
               background: #33b5ff;
               line-height: 30px;
               display: block;
@@ -110,8 +110,11 @@ Fill in the check order information*/
           }
 
           a{
-            font-size: 12px;
-            font-family: 'SimSun';
+            font{
+              size: 12px;
+              family: 'SimSun';
+            }
+
             color: #666;
 
           }
@@ -207,11 +210,11 @@ Fill in the check order information*/
           .p-price{
             width: 18px;
             text-align: center;
+            color: #e12d2c;
             float: $float;
             padding: 0px 0 10px;
-            color: #e12d2c;
-          }
-
+            font-weight: 700;
+           }
 
         }
      }
@@ -247,10 +250,10 @@ Fill in the check order information*/
                 margin-bottom: 12px;
               }
          input{
-            width: 458px;
+           width: 458px;
            height: 20px;
            line-height: 20px;
-            border: 1px solid #999;
+           border: 1px solid #999;
            padding-left: 14px;
          }
       }
