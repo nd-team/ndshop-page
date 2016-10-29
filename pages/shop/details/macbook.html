@@ -8,8 +8,9 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/shop/details_macbook.css" />
-    <link rel="stylesheet" href="/font/icons/myfont.css">
+    <!--<link rel="stylesheet" href="/font/icons/svg-symbols.css">-->
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/common.js"></script>
     <script src="/js/shop/details_macbook.js"></script>
 </head>
 <body>
@@ -87,28 +88,45 @@
     <div class="wrap clearfix">
         <!--图片放大-->
         <div class="proinfo-img">
-            <div class="bigimg"></div>
+            <div class="bigimg">
+                <a href="javascript:void(0)" >
+                    <img src="/images/shop/details/mac01.png" data-img="pic1" class="hover">
+                    <img src="/images/shop/details/mac02.png" data-img="pic2" >
+                    <img src="/images/shop/details/mac03.png" data-img="pic3" >
+                    <img src="/images/shop/details/mac05.png" data-img="pic4" >
+                </a>
+            </div>
             <div class="clearfix imglist">
                 <a href="javascript:void(0)" class="left" >&lt;</a>
                 <ul>
-                    <li>
-                        <a href="javascript:void(0)"><img src="/images/shop/details/mac01.png" ></a>
+                    <li class="current">
+                        <a href="javascript:void(0)" data-img="pic1"><img src="/images/shop/details/mac01.png" ></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="/images/shop/details/mac02.png" ></a>
+                        <a href="javascript:void(0)" data-img="pic2"><img src="/images/shop/details/mac02.png" ></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="/images/shop/details/mac03.png"></a>
+                        <a href="javascript:void(0)" data-img="pic3"><img src="/images/shop/details/mac03.png"></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="/images/shop/details/mac05.png"></a>
+                        <a href="javascript:void(0)" data-img="pic4"><img src="/images/shop/details/mac05.png"></a>
                     </li>
                 </ul>
                 <a href="javascript:void(0)" class="right">&gt;</a>
             </div>
             <div class=" share">
-                <a href="javascript:void(0)" ><i class="nd-next"></i>分享</a>
-                <a href="javascript:void(0)" ><i class="nd-next"></i>收藏此商品</a>
+                <a href="javascript:void(0)" >
+                    <svg role="img" class="hot">
+                        <use xlink:href="#hot"></use>
+                    </svg>
+                    分享
+                </a>
+                <a href="javascript:void(0)" >
+                    <svg role="img" class="hot">
+                        <use xlink:href="#hot"></use>
+                    </svg>
+                    收藏此商品
+                </a>
             </div>
         </div>
         <!--商品信息-->
@@ -175,7 +193,12 @@
                 </dd>
             </dl>
             <div class="add-cart">
-                <a href="javascript:void(0) "><i class="nd-shopping"></i>加入购物车</a>
+                <a href="javascript:void(0) ">
+                    <svg role="img" class="hot">
+                    <use xlink:href="#hot"></use>
+                </svg>
+                    加入购物车
+                </a>
                 <p>温馨提示：支持7天无理由退货</p>
             </div>
         </div>
@@ -561,6 +584,25 @@
                         <p>MacBook Pro 13.3英寸</p>
                     </div>
                 </div>
+                <div class="rate-list-page">
+                    <button class="lastpage" >上一页</button>
+                    <ul >
+                        <li>
+                            <a href="javascript:void(0)" class="active">1</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">2</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">3</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">4</a>
+                        </li>
+                    </ul>
+                    <button class="nextpage">下一页</button>
+                </div>
+
             </div>
         </div>
     </div>
