@@ -1,6 +1,7 @@
 @import "../layout/variables", "../layout/mixin";
-i{
-  font-family:'myfont';
+svg{
+  width:20px;
+  height:16px;
 }
 #content{
   .breadcrumb{
@@ -18,6 +19,20 @@ i{
       width:470px;
       height:450px;
       border:1px solid #e5e5e5;
+      a{
+        display:table-cell;
+        vertical-align:middle;
+        height:450px;
+        padding:20px;
+        img{
+          width:430px;
+          display:none;
+          &.hover{
+            display:block;
+          }
+        }
+
+      }
     }
     .imglist{
       margin-top:20px;
@@ -39,6 +54,9 @@ i{
         border:1px solid #e5e5e5;
         margin:0 12px;
         display:table;
+        &.current{
+          border:1px solid #ff0003;
+        }
         a{
           display:table-cell;
           vertical-align:bottom;
@@ -55,6 +73,9 @@ i{
       a{
         float:right;
         margin:0 20px 0;
+        svg{
+          vertical-align:bottom;
+        }
       }
     }
   }
@@ -143,11 +164,13 @@ i{
         line-height:40px;
       }
       dd{
+        border:1px solid #ddd;
         input{
           width:45px;
           height:28px;
           text-align:center;
           outline:none;
+
         }
         span{
           float:right;
@@ -158,7 +181,11 @@ i{
             text-align:center;
             line-height:15px;
             display:block;
-            border-left:none;
+            border:none;
+            border-left:1px solid #ddd;
+            &:first-child{
+              border-bottom:1px solid #ddd;
+            }
           }
         }
 
@@ -176,10 +203,11 @@ i{
         background:#ee0000;
         font-size:16px;
         font-weight:bold;
-        i{
-          padding:0 10px;
-          //font-size:20px;
-          vertical-align:-3px;
+        svg{
+          width:25px;
+          height:25px;
+          vertical-align:-6px;
+          margin-left:10px;
         }
       }
       p{
@@ -190,7 +218,6 @@ i{
     }
     .choice{
       dd{
-
         a{
           &.active{
             border:2px solid #ea0407;
@@ -488,6 +515,42 @@ i{
           .ratepic{
             img{
               width:100px;
+            }
+          }
+        }
+      }
+      .rate-list-page{
+        width:350px;
+        margin:20px 0;
+        float:right;
+        button{
+          float:left;
+          width:50px;
+          height:24px;
+          line-height:20px;
+          font-size:12px;
+          padding:0;
+          margin:0 10px;
+          background:#ededed;
+          outline:none;
+          color:#666;
+        }
+        ul{
+          li{
+            float:left;
+            a{
+              display:inline-block;
+              width:28px;
+              height:24px;
+              text-align:center;
+              line-height:24px;
+              border:1px solid #ededed;
+              border-radius:1px;
+              margin:0 3px;
+              &.active{
+                border:none;
+                color:#3db1fa;
+              }
             }
           }
         }

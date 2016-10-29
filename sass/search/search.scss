@@ -28,6 +28,7 @@
         li{
           float:left;
           padding:0 20px;
+
           a{
             color:#0071b2
           }
@@ -45,6 +46,9 @@
           border:1px solid #ddd;
           line-height:40px;
           padding:0;
+          &.active{
+            border:1px solid #ff0003;
+          }
           img{
             vertical-align:middle;
           }
@@ -52,26 +56,46 @@
       }
     }
   }
-  .sear-filter{
-    margin-top:20px;
+  .sear-filcon{
+    background:#f6f6f6;
     height:30px;
     line-height:30px;
-    background:#f6f6f6;
-    padding:0 20px;
-    li{
+    margin-top:20px;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+
+    .sear-filter{
+      padding:3px 20px 0;
       float:left;
-      border:1px solid #ddd;
-      border-right:none;
-      height:22px;
-      line-height:22px;
-      &:last-child{
-        border-right:1px solid #ddd;
-      }
-      a{
-        display:inline-block;
+      li{
+        float:left;
+        border:1px solid #ddd;
+        border-right:none;
         height:22px;
         line-height:22px;
-        padding:0 10px;
+        &:last-child{
+          border-right:1px solid #ddd;
+        }
+        &.active{
+          background:#E32121;
+          a{
+            color:#fff;
+          }
+        }
+        a{
+          display:inline-block;
+          height:22px;
+          line-height:22px;
+          padding:0 10px;
+        }
+      }
+    }
+    .sear-pronum{
+      float:right;
+      color:#999;
+      padding:0 10px;
+      span{
+        color:#666;
       }
     }
   }
@@ -141,12 +165,23 @@
       margin:0 25px;
       li{
         float:left;
+        border:1px solid #ddd;
+        width:33px;
+        text-align:center;
+        margin:0 5px;
+
         a{
           display:inline-block;
-          width:35px;
-          text-align:center;
-          border:1px solid #ddd;
+          width:14px;
           margin:0 5px;
+        }
+        &.active{
+          border:none;
+          a{
+            color:#3db1fa;
+            border-bottom:1px solid #3db1fa;
+          }
+
         }
       }
     }
@@ -154,6 +189,12 @@
     .jump-page{
       float:left;
       margin-left:30px;
+      input{
+        border:1px solid #ddd;
+        width:30px;
+        height:20px;
+        text-align:center;
+      }
     }
   }
 }
