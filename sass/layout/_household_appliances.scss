@@ -8,7 +8,7 @@
     border: {
         bottom:2px;
         style: solid;
-        color: #ff8f19;
+        color: #fe437a;
     }
     .top-nav{
         display:block;
@@ -21,14 +21,13 @@
             }
             color:#333;
             line-height:40px;
-            text-align:center;
             cursor:pointer;
             overflow:hidden;
             &.all-goods{
                 width: 213px;
                 height: 45px;
                 display: block;
-                background-color: #ffa242;
+                background-color: #d72640;
                 text-align: left;
                 padding-left: 15px;
                 a{
@@ -48,62 +47,61 @@
                         size:16px;
                     }
                     &:hover{
-                        color: #ff8f19 !important;
+                        color:#ff729c !important;
                     }
                 }
             }
-
         }
     }
 }
 /*nav end*/
 
 //左侧菜单栏开始
-.sidebar-clothing{
+.sidebar-household{
     width: 100%;
     height:480px;
     // overflow: hidden;
     clear:both;
-    .clothing-menu{
+    .household-menu{
         width: 228px;
         height:480px;
-        background-color: #ffb142;
+        background-color: #f8546d;
         float: left;
         font-family: Microsoft YaHei;
-        .clothing-ul {
+        .household-ul {
             position: relative;
             width: 228px;
             margin-top: -1px;
-            .clothing-list {
+            .household-list {
                 position: relative;
                 cursor: pointer;
                 &:hover {
-                    background-color: #ff8f19;
+                    background-color: #ca142d;
                     border: {
                         left: 1px;
                         style: solid;
-                        color: #ffb142;
+                        color: #f8546d;
                     }
                     &:last-child {
-                        border-bottom: 1px solid #ffb142;
+                        border-bottom: 1px solid #fa98a7;
                     }
-                    .clothing-menu-list {
+                    .household-menu-list {
                         .nav-icon {
                             background-color: #fff;
                         }
                     }
-                    .clothing-same-pw{
+                    .household-same-pw{
                         display: block;
                     }
                 }
-                .clothing-menu-list {
+                .household-menu-list {
                     width: 202px;
                     margin: 0 auto;
                     position: relative;
                     border: {
                         bottom: 1px;
                         style: solid;
-                        color: #ffc96f;
+                        color: #febecf
                     }
                     padding: {
                         top: 6px;
@@ -121,7 +119,7 @@
                             background-color: #fff;
                         }
                     }
-                    .nav-clothing {
+                    .nav-household {
                         line-height: 18px;
                         padding: 8px 22px 8px 16px;
                         color: #fff;
@@ -129,7 +127,12 @@
                             color: #fff;
                             font-size: 12px;
                             padding-right: 5px;
-                    
+                            &.mouth{
+                                padding-right:12px;
+                            }
+                            &.body-save{
+                                padding-right: 16px;
+                            }
                         }
                     }
                     .arrow {
@@ -150,9 +153,9 @@
                 }
 
                 //服饰箱包弹窗样式开始
-                .clothing-same-pw{
-                    width: 357px;
-                    height: 333px;
+                .household-same-pw{
+                    width: 190px;
+                    height: 343px;
                     background-color: #fff;
                     position: absolute;
                     left: 228px;
@@ -161,21 +164,24 @@
                         right: 2px;
                         bottom: 2px;
                         style: solid;
-                        color: #ffb142;
+                        color: #ff427a;
                     }
                     z-index: 100;
                     display: none;
-                    .women-mt{
-                        border-bottom:1px solid #ebebeb;
-                        .women-list-top{
-                            padding:20px;
+                    .household-mt{
+                        padding:20px;
+                        .household-list-top{
+
                             .shop-same-list{
-                                margin-bottom: 9px;
+                                margin-bottom: 10px;
                                 display: inline-block;
                                 a{
                                     display: inline-block;
-                                    width:76px;
+                                    width:72px;
                                     color: #333;
+                                    &:hover{
+                                        color:#ff427a;
+                                    }
                                 }
                                 &:last-child{
                                     margin-bottom: 0;
@@ -188,6 +194,7 @@
                             top:10px;
                             left: 20px;
                         }
+
                         .same-brand-pic{
                             margin-bottom: 5px;
                             .same-bimg{
