@@ -138,7 +138,7 @@
                 a {
                   padding-left: 5px;
                 }
-                @include box-size
+                @include box-size;
               }
               .same-ul{
                 float: left;
@@ -327,45 +327,7 @@
   height: 480px;
   .right-word{
     clear: both;
-    .right-text{
-      float: left;
-      padding:{
-        top:7px;
-        left: 6px;
-      }
-      line-height: 20px;
-      font:{
-        family: $main-sec-ff;
-      }
-      .big-w{
-        color: #333;
-        font:{
-          size:16px;
-          weight: bold;
-        }
-      }
-      .samll-w{
-        color: #f00;
-        font-size: 15px;
-      }
-      .samllx-w{
-        @extend .samll-w;
-        font-size: 12px;
-      }
-    }
-    .hot-pic{
-      display: inline-block;
-      float: right;
-      margin-right: 8px;
-    }
-    .right-img{
-      display: inline-block;
-      img{
-        width: 148px;
-        height: 105px;
-        margin-left:40px;
-      }
-    }
+    height: 160px;
   }
 }
 /*右侧图片结束*/
