@@ -8,7 +8,8 @@ var autoprefixer = require('gulp-autoprefixer');//浏览器兼容前缀
 var jshint = require('gulp-jshint');//js代码规范检查
 var sassLint = require('gulp-sass-lint');//sass代码规范检查
 var svgSymbols = require('gulp-svg-symbols');//svg图标字体
-var path          = require('path');
+var path = require('path');
+
 
 gulp.task('sass', ()=> {
     return gulp.src('./sass/**/*.scss')
