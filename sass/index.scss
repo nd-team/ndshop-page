@@ -138,7 +138,7 @@
                 a {
                   padding-left: 5px;
                 }
-                @include box-size
+                @include box-size;
               }
               .same-ul{
                 float: left;
