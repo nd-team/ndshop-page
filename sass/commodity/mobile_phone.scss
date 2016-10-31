@@ -1,333 +1,205 @@
 @import "../layout/mobile_sidebar","../layout/variables", "../layout/mixin";
 
-#content{
-  background-color: #f6f6f6;
-}
-
-//热销商品部分开始
-.household-hot{
+//今日热门部分样式开始
+.today-popular{
   width: 100%;
   height: auto;
-  margin-top: 26px;
   overflow: hidden;
-
-  .household-title{
-    line-height: 42px;
-    color: #fa546c;
-    font:{
-      size: 20px;
-      family: $main-sec-ff;
-    }
+  margin-top: 66px;
+  .today-title{
+    @include mobile-title;
   }
-
-  .household-show-pic{
-    border-top: 1px solid #d52740;
-    height: 330px;
-
-    li{
-      position: relative;
-      float: left;
-      .household-hot-picture{
-        width: 275px;
-        height: 330px;
-        display: block;
-      }
-
-      .household-hot-show{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 260px;
-        height: 105px;
-        background-color: rgba(0,0,0,0.4);
-        padding: {
-          top: 20px;
-          left: 15px;
-          bottom: 10px;
-        }
-        color: #fff;
-        font-size: 14px;
-        font-family: $main-sec-ff;
-        cursor: pointer;
-        h4{
-          line-height: 32px;
-          font: {
-            size: 20px;
-            weight: bold;
-          }
-        }
-        .household-hot-text{
-          padding-bottom: 10px;
-        }
-      }
-    }
-  }
-}
-//热销商品部分结束
-
-//品牌旗舰店部分开始开始
-.household-brand-store{
-  width: 100%;
-  height:auto;
-  overflow: hidden;
-  margin-top: 30px;
-  .brand-title{
-    line-height: 42px;
-    color: #f7536c;
-    font:{
-      size: 20px;
-      family: $main-sec-ff;
-    }
-  }
-  .household-brand-show{
+  .popular-tab{
     width: 100%;
-    height: auto;
-    border-top:1px solid #d52740;
-    background-color: #fff;
+    height: 39px;
+    border-top: 1px solid #1e856a;
+    background-color: #f1f3f2;
     overflow: hidden;
-    .brand-store-left{
+    .popular-tab-title{
       float: left;
-
-      .brand-show-top{
-        padding-top: 15px;
+      width: 275px;
+      text-align: center;
+      line-height: 39px;
+      font:{
+        size: 18px;
+        family: $main-sec-ff;
+      }
+      cursor: pointer;
+      &.popular-tab-current{
+        background-color: #43b999;
         a{
-          display: inline-block;
-          margin-right: 10px;
+          color: #fff;
         }
       }
-    }
-
-    .brand-store-right{
-      float: right;
-      margin-top: 15px;
-      padding-right: 10px;
-      li{
-        margin-bottom: 5px;
+      a{
+        color: #43B999;
       }
     }
   }
-}
-//品牌旗舰店部分开始结束
-
-//品质生活部分样式开始
-.household-quality-life{
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  margin-top: 40px;
-
-  .quality-life-title{
-    line-height: 30px;
-    color: #f6546b;
-    font:{
-      size: 20px;
-      family: $main-sec-ff;
-    }
-  }
-
-  .quality-life-same{
-    width: 100%;
+  
+  .popular-detail{
+    height: 295px;
     overflow: hidden;
-    border-top: 1px solid #d52740;
-    border-bottom: 1px solid #ededed;
-    height: 517px;
-    margin-top: 10px;
-    .same-select{
+    border: {
+      left: 1px;
+      bottom: 1px;
+      right: 1px;
+      style: solid;
+      color: #ededed;
+    }
+    li{
       float: left;
-      width: 209px;
-    }
+      width: 218px;
+      height: 295px;
+      cursor: pointer;
+      &.popular-detail-list{
+        border-left:1px solid #ededed;
+      }
+      &:hover{
+        .now-buy{
+          display: block;
+        }
+      }
+      .popular-detail-pic{
+        display: block;
+        margin: 30px auto 10px;
+        width: 170px;
+        height: 135px;
 
-    .same-life-brand{
-      float: left;
-      .same-life-pic{
-        width: 100%;
-        height: 334px;
-        overflow: hidden;
-        li{
-          float: left;
-          &.same-life-banner{
-            width: 419px;
-            position: relative;
-            .same-picture-auto{
-              width: 419px;
-              height: 334px;
-            }
-            .same-life-circle{
-              position: absolute;
-              left: 50%;
-              bottom: 10px;
-              width: 90px;
-              margin-left: -18px;
-              span{
-                width: 10px;
-                height: 10px;
-                background-color: rgba(0,0,0,.5);
-                display: inline-block;
-                border-radius: 50%;
-                cursor: pointer;
-                &.same-gray02{
-                  background-color: rgba(0,0,0,.2);
-                }
-                &.same-gray03{
-                  background-color: rgba(0,0,0,.1);
-                }
-              }
+      }
+      .popular-detail-text{
+        width: 206px;
+        margin: 0 auto;
+        line-height: 20px;
+        color: #666;
+        span{
+          display: block;
 
-            }
-          }
-          &.same-life-banner02{
-            width: 175px;
-          }
-          &.same-life-banner03{
-            width: 297px;
-            a{
-              display: block;
+          &.money-red{
+            padding: 15px 0 7px;
+            color: red;
+            font:{
+              size: 16px;
+              weight: bold;
+              family: $main-sec-ff;
             }
           }
         }
       }
-      
-      .same-brand-rotation{
-        width: 891px;
-        height: 184px;
-        background-color: #fff;
-        position: relative;
-
-
-        .household-button{
-          .arrow-l{
-            display: block;
-            width: 20px;
-            height: 20px;
-            background: rgba(255, 255,255,255);
-            border:{
-              width: 0 0 2px 2px;
-              style: solid;
-              color:#555;
-            }
-            transform:rotateZ(45deg);
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            margin-top: -20px;
-            cursor: pointer;
-          }
-
-          .arrow-r{
-            display: block;
-            width: 20px;
-            height: 20px;
-            background: rgba(255, 255,255,255);
-            border:{
-              width: 0 0 2px 2px;
-              style: solid;
-              color:#555;
-            }
-            transform:rotateZ(-135deg);
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            margin-top: -20px;
-            cursor: pointer;
-          }
-        }
-        .household-auto-pic01{
-          margin-left: 50px;
-        }
-
-        .household-product-show{
-          width: 254px;
-          padding: 30px 0;
-          height: 130px;
-          float: left;
-          .household-auto-pic{
-            display: block;
-            width: 132px;
-            height: 129px;
-            float: left;
-            vertical-align: middle;
-          }
-          .household-auto-text{
-            float: left;
-            vertical-align: middle;
-            margin: 22px 0;
-            span{
-              display: block;
-              color: #333;
-              line-height: 18px;
-            }
-            strong{
-              line-height: 30px;
-              color: red;
-              font:{
-                family: $main-sec-ff;
-                size: 14px;
-              }
-            }
-          }
-
-        }
-
-        .household-auto-pic02{
-          margin: 0 20px;
-          .household-auto-pic{
-            margin-right: 32px;
-          }
-        }
-
-        .household-auto-circle{
-          position: absolute;
-          left: 50%;
-          bottom: 10px;
-          width: 90px;
-          margin-left: -15px;
-          span{
-            width: 10px;
-            height: 10px;
-            background-color: rgba(0,0,0,.5);
-            display: inline-block;
-            border-radius: 50%;
-            cursor: pointer;
-            margin-right: 5px;
-            &.same-current02{
-              background-color: rgba(0,0,0,.2);
-            }
-            &.same-current03{
-              background-color: rgba(0,0,0,.1);
-            }
-          }
-
-        }
-      }
-    }
-  }
-
-  .quality-life-blue{
-    border-top: 1px solid #008d8e;
-  }
-  .quality-life-purpose{
-    border-top: 1px solid #322e47;
-
-    .same-life-brand{
-      .same-brand-rotation{
-        .household-auto-padding{
-          padding-top: 5px;
-          margin-left: 50px;
-          .household-auto-pic{
-            width: 110px;
-          }
-          .household-auto-text{
-            margin: 50px 0;
+      .now-buy{
+        width: 218px;
+        height: 40px;
+        background-color: #e6233f;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        display: none;
+        a{
+          color: #fff;
+          font:{
+            size: 14px;
+            family: $main-sec-ff;
           }
         }
       }
     }
-
-
   }
 }
+//今日热门部分样式结束
 
-//品质生活部分样式结束
+//主题购部分样式开始
+.theme-purchase{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 60px;
+
+  .theme-title{
+    @include mobile-title;
+  }
+
+  .mobile-theme{
+    width: 100%;
+    height: 369px;
+    border-top:1px solid #208468;
+    li{
+      float: left;
+      a{
+        display: block;
+
+        &.theme-pic01{
+          width: 220px;
+        }
+        &.theme-pic02{
+          height: 183px;
+          width: 330px;
+        }
+      }
+    }
+  }
+}
+//主题购部分样式结束
+
+//品牌旗舰店部分样式开始
+.mobile-brand-store {
+  width: 100%;
+  height: 365px;
+  overflow: hidden;
+  margin-top: 50px;
+  background-color: #fcf;
+
+  .store-title {
+    @include mobile-title;
+  }
+}
+//品牌旗舰店部分样式结束
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //service

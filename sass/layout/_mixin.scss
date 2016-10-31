@@ -9,11 +9,6 @@
   box-sizing: border-box;
 }
 
-// @mixin rounded($vert, $horz, $radius: 10px) {
-// 　　　　border-#{$vert}-#{$horz}-radius: $radius;
-// 　　　　-moz-border-radius-#{$vert}#{$horz}: $radius;
-// 　　　　-webkit-border-#{$vert}-#{$horz}-radius: $radius;
-// }
 @mixin rounded($radius: 20px) {
 　　　　-moz-border-top-left-radius: $radius;
 　　　　-webkit-border-top-left-radius: $radius;
@@ -28,3 +23,27 @@
   }
   @include has-layout;
 }
+
+@mixin mobile-title{
+  line-height: 42px;
+  color: #43B999;
+  font: {
+    size: 20px;
+    family: "Microsoft YaHei";
+  }
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

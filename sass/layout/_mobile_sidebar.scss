@@ -35,7 +35,7 @@
 
 }
 
-/*家用电器导航start*/
+/*手机数码导航start*/
 .nav-box{
     width:100%;
     height: 40px;
@@ -93,23 +93,23 @@
 /*nav end*/
 
 //左侧菜单栏开始
-.sidebar-household{
+.sidebar-mobile{
     width: 100%;
     height:480px;
     // overflow: hidden;
     clear:both;
-    .household-menu{
+    .mobile-menu{
         width: 228px;
         height:481px;
         background-color: #43b999;
         float: left;
-        font-family: Microsoft YaHei;
+        font-family: "Microsoft YaHei";
         margin-top: -2px;
-        .household-ul {
+        .mobile-ul {
             position: relative;
             width: 228px;
             margin-top: -1px;
-            .household-list {
+            .mobile-list {
                 position: relative;
                 cursor: pointer;
                 &:hover {
@@ -122,18 +122,18 @@
                     &:last-child {
                         border-bottom: 1px solid #43b999;
                     }
-                    .household-menu-list {
+                    .mobile-menu-list {
 
                         border-bottom:0;
                         .nav-icon {
                             background-color: #fff;
                         }
                     }
-                    .household-same-pw{
+                    .mobile-same-pw{
                         display: block;
                     }
                 }
-                .household-menu-list {
+                .mobile-menu-list {
                     width: 202px;
                     margin: 0 auto;
                     position: relative;
@@ -158,21 +158,23 @@
                             background-color: #fff;
                         }
                     }
-                    .nav-household {
+                    .nav-mobile {
                         line-height: 18px;
                         padding: 8px 22px 8px 16px;
                         color: #fff;
                         a {
                             color: #fff;
                             font-size: 12px;
-                            padding-right: 4px;
+                            padding-right: 10px;
 
-                            &.electricity{
-                                padding-right: 15px;
+                            &.mobile-report{
+                                padding-right: 4px;
                             }
-
-                            &.kitchen-machine{
-                                padding-right:12px;
+                            &.mobile-fitting{
+                                padding-right: 8px;
+                            }
+                            &.computer-machine{
+                                padding-right: 12px;
                             }
                         }
                     }
@@ -194,7 +196,7 @@
                 }
 
                 //家用电器弹窗样式开始
-                .household-same-pw{
+                .mobile-same-pw{
                     width: 620px;
                     height: 270px;
                     background-color: #fff;
@@ -209,7 +211,7 @@
                     }
                     z-index: 100;
                    display: none;
-                    .household-mt{
+                    .mobile-mt{
                         padding:{
                             top:20px;
                             right: 10px;
@@ -217,14 +219,14 @@
                             left:20px;
                         }
 
-                        .household-auto-all{
+                        .mobile-auto-all{
                             width: 360px;
                             overflow: hidden;
                             float: left;
-                            .household-left{
+                            .mobile-left{
                                 width: 100%;
                                 overflow: hidden;
-                                .household-ele{
+                                .mobile-ele{
                                     float: left;
                                     width: 73px;
                                     text-align: right;
@@ -235,11 +237,11 @@
                                     }
                                 }
                                 
-                                .household-left-text{
+                                .mobile-left-text{
                                     float: left;
                                     padding-bottom: 10px;
-                                    .household-word{
-                                        .household-bd{
+                                    .mobile-word{
+                                        .mobile-bd{
                                             display: inline-block;
                                             padding-left: 12px;
                                             border: {
@@ -253,7 +255,7 @@
                                             }
                                             font-size: 12px;
                                         }
-                                        .household-border-no{
+                                        .mobile-border-no{
                                             border-left:0;
                                         }
                                     }
@@ -261,7 +263,7 @@
 
                             }
                         }
-                        .household-right{
+                        .mobile-right{
                             float: right;
                             border-left:1px solid #e0e0e0;
                             padding-left: 15px;
