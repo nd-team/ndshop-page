@@ -38,18 +38,17 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     vertical-align: baseline;
 
 }
 html, body{
-    line-height: 1;
+    //line-height: 1;
     font-size: 12px;
 }
 ol, ul {
@@ -67,14 +66,15 @@ caption, th, td {
 q, blockquote {
     quotes: none;
 }
-a img{
+img{
     border: none;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block;
 }
 i{
     font-style: normal;
+    font-famliy:'myfont';
 }
 a{
 
@@ -180,7 +180,6 @@ a{
         bottom:30px;
     }
     .header-lg {
-        position: relative;
         z-index: 12;
         float: left;
         width: 290px;
@@ -388,7 +387,7 @@ footer{
                 }
                 line-height: 145px;
                 text-align: center;
-                padding-right: 55px;
+                width: 270px;
                 }
         
         }
