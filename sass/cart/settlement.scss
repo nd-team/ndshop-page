@@ -1,0 +1,252 @@
+@import "../layout/_variables", "../layout/_mixin";
+$ser-f: '宋体';
+@mixin underline($border:1px solid #d4d4d4){
+  border-top:$border;
+  border-left:$border;
+  border-right:$border;
+}
+.header-lg {
+  width: 185px !important;
+}
+.cashier {
+  width: 125px;
+  height: auto;
+  margin: 17px 17px 0 0;
+  float: left;
+  text-align: center;
+  font: {
+    family: $main-sec-ff;
+    size: 18px;
+    weight: bold;
+  }
+  color: #4a4a4a;
+}
+.order-number {
+  width:$wrap-width;
+  margin: 0px auto;
+  clear: both;
+  p:nth-child(1){
+    font-size: 14px;
+    span:nth-of-type(odd){
+      font-family:$ser-f;
+      color: #565656;
+
+
+    }
+    span:nth-of-type(even){
+      color: #848484;
+      padding-left: 630px;
+      b{
+        font:{
+          size: 16px;
+          family: 'MyriadnPro Regular';
+        }
+        color: #D10000;
+      }
+
+    }
+  }
+  p:nth-child(2){
+    color: #848484;
+    margin-top: 10px;
+    font:{
+      size: 12px;
+      family:$ser-f;
+    }
+
+  }
+}
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+.intermediate{
+
+  .bank-card{
+    height: 446px;
+    // border: 1px solid #32b4ff;
+
+    @include box-shadow(0 2px 16px rgba(236,236,236,.9));
+    .bank-cont{
+      width: 1004px;
+      height: 298px;
+      border: 1px solid #32b4ff;
+      margin: 22px auto ;
+      //margin-top: 22px;
+      padding: 20px 0 20px 30px;
+
+      .card-square {
+        width: 18px;
+        height: 18px;
+        margin-right: 14px;
+        border: 1px solid #de4b5b;
+        float: left;
+
+        span {
+          width: 16px;
+          height: 16px;
+          background: #de4b5b;
+          display: block;
+          margin: 1px auto;
+        }
+      }
+      h2 {
+
+        font: {
+          family: $main-sec-ff;
+          size: 18px;
+        }
+      }
+
+      .card-tab{
+        width: 954px;
+        margin-top: 22px;
+        /*所有银行*/
+        .bank-cd{
+         margin-top: 40px;
+          .q-card{
+           // display: block;
+            border-top:0;
+            min-height:100px;
+            background-color:#fff;
+            display:none;
+
+            ul {
+              margin-left: 62px;
+              height: 200px;
+              overflow:hidden;
+              li{
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid #d4d4d4;
+                margin: 0 40px 20px 0px;
+                float: left;
+                text-align: center;
+                background:$white;
+
+                a{
+                   display:inline-block;
+                  vertical-align:middle;
+                }
+                img{
+                  padding-top: 7px;
+                }
+                button{
+                  width:150px;
+                  height: 40px;
+                  background: #E0EFFF;
+                  color: #238EFA;
+                  border: 0px;
+                  cursor: pointer;
+                  font:{
+                    family: $main-sec-ff;
+                    size: 14px;
+                   }
+                }
+
+              }
+            }
+
+          }
+        }
+
+        .card-tab-title{
+          width: 100%;
+          height:34px ;
+          line-height: 34px;
+          border-bottom: 1px solid #d4d4d4;
+          margin-left: 38px;
+          li{
+            width:109px;
+            height:34px;
+            float:left;
+            margin:0 20px 0 0;
+            border:1px solid #d4d4d4;
+            line-height:35px;
+            text-align:center;
+            cursor:pointer;
+            font-size:14px;
+            font-family:$main-sec-ff;
+            background: #f6f6f6;
+            border:0px;
+
+            &.quick-pay{
+              @include underline(1px solid #d4d4d4);
+              cursor:pointer;
+              color:black;
+              text-shadow:0 1px 0 $white;
+              background:$white;
+            }
+
+          }
+
+        }
+      }
+
+    }
+    .pay-immediately{
+      width: 150px;
+      height: 40px;
+      border: 0px;
+      background-color: #e34659;
+      border-radius: 5px;
+      cursor: pointer;
+      color: $white;
+      margin-left: 96px;
+      @include box-shadow(0 2px 16px rgba(202,202,202,.9));
+      font:{
+        family:$main-sec-ff;
+        size: 16px;
+        weight:bold;
+      }
+    }
+  }
+
+  /*其他支付方式*/
+  .other-pay{
+    @include box-shadow(0 2px 16px rgba(236,236,236,.9));
+    width: 1100-55px;
+    height: 126px;
+    margin-top: 40px;
+    padding: 20px 0 0 55px;
+    color: #4d4d4d;
+    font:{
+      family:$main-sec-ff;
+      size: 18px;
+    }
+    .checked-cart{
+         position: relative;
+         float: left;
+         display: inline-block;
+         width: 18px;
+         height: 18px;
+     input{
+          position: absolute;
+          z-index: 0;
+         width: 18px;
+         height: 18px;
+         left:-15px;
+         }
+      label{
+        background-position: 0 0px;
+        position: relative;
+        z-index: 1;
+        float: left;
+        width: 18px;
+        height: 18px;
+        }
+    }
+
+    .mode{
+      color: #4d4d4d;
+    }
+
+    .other{
+      margin: 30px 0 0 25px;
+      a{
+        padding: 0 19px 0 16px;
+      }
+    }
+  }
+}

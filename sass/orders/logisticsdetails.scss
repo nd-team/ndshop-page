@@ -1,0 +1,76 @@
+@import "../layout/_variables", "../layout/_mixin";
+$border:1px solid #ddd;
+$border1:1px dashed #ddd;
+.logistics-details{
+       font:{
+          //family: 'SimHei ';
+          family:'黑体' ;
+          size: 14px;
+       }
+   .bread-path{
+        line-height: 24px;
+        margin: 30px 0 10px 0;
+        color: #828282;
+        a{
+            margin: 0 10px;
+          &:nth-of-type(3){
+               color: black;
+          }
+        }
+   }
+
+  .Product-delivery{
+    border-left:$border;
+    border-right:$border;
+    border-bottom: 1px dashed #ddd;
+    border-top: 3px solid #30bafb;
+    .log-list{
+         width: 285px;
+         border-right: 1px solid #ddd;
+      ul{
+         li{
+           
+           &:nth-of-type(1){
+             color: #6a6a6a;
+             text-align: center;
+             padding: 22px 0 48px 0;
+           }
+           &:nth-of-type(2){
+             font:{
+                size: 26px;
+             }
+             color: #25bdff;
+             margin-left: 47px;
+             line-height: 68-26px;
+             i{
+               width: 58px;
+               height: 68px;
+               background:url("../../images/orders/正在出库.png") no-repeat !important;
+               display: inline-block;
+               margin-right: 16px;
+
+             }
+
+           }
+           &:nth-of-type(3){
+             button {
+               width: 100px;
+               height: 27px;
+               background: $white;
+               color: #fb5e5e;
+               border: 1px solid #fb5e5e;
+               border-radius:3px;
+               margin-right: 27px;
+             }
+             padding: 49px 0 20px 50px;
+           }
+
+         }
+      }
+    }
+  }
+/*express way*/
+.express-way{
+
+}
+}
