@@ -24,6 +24,22 @@
             text-align:center;
             cursor:pointer;
             overflow:hidden;
+            &.all-goods{
+                width: 213px;
+                height: 45px;
+                display: block;
+                background-color: #ffa242;
+                text-align: left;
+                padding-left: 15px;
+                a{
+                    color: #fff;
+                    font:{
+                        size: 17px;
+                    }
+
+                }
+                z-index: 100;
+            }
             &.main-nav{
                 padding: 0 0 0 80px;
                 a{
@@ -35,17 +51,6 @@
                         color: #ff8f19 !important;
                     }
                 }
-            }
-            .all-goods{
-                width: 228px;
-                height: 45px;
-                display: block;
-                background-color: #ffa242;
-                color: #fff;
-                font:{
-                    size: 17px;
-                }
-                z-index: 100;
             }
 
         }
@@ -66,6 +71,7 @@
         float: left;
         font-family: Microsoft YaHei;
         .clothing-ul {
+            position: relative;
             width: 228px;
             margin-top: -1px;
             .clothing-list {
@@ -82,16 +88,14 @@
                         border-bottom: 1px solid #ffb142;
                     }
                     .clothing-menu-list {
+                        border-bottom:0;
                         .nav-icon {
                             background-color: #fff;
                         }
-
-
                     }
-                    .same-pw{
+                    .clothing-same-pw{
                         display: block;
                     }
-
                 }
                 .clothing-menu-list {
                     width: 202px;
@@ -119,7 +123,7 @@
                         }
                     }
                     .nav-clothing {
-                        line-height: 20px;
+                        line-height: 18px;
                         padding: 8px 22px 8px 16px;
                         color: #fff;
                         a {
@@ -146,8 +150,87 @@
                     border-bottom: 0 none;
                 }
 
+                //服饰箱包弹窗样式开始
+                .clothing-same-pw{
+                    width: 357px;
+                    height: 333px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 228px;
+                    top: 0;
+                    border:{
+                        right: 2px;
+                        bottom: 2px;
+                        style: solid;
+                        color: #ffb142;
+                    }
+                    z-index: 100;
+                    display: none;
+                    .women-mt{
+                        border-bottom:1px solid #ebebeb;
+                        .women-list-top{
+                            padding:20px;
+                            .shop-same-list{
+                                margin-bottom: 9px;
+                                display: inline-block;
+                                a{
+                                    display: inline-block;
+                                    width:76px;
+                                    color: #333;
+                                }
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    .same-pw-brand{
+                        margin:{
+                            top:10px;
+                            left: 20px;
+                        }
+                        .same-brand-pic{
+                            margin-bottom: 5px;
+                            .same-bimg{
+                                display: inline-block;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+                //服饰箱包弹窗样式结束
             }
         }
     }
 }
 //左侧菜单栏结束
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

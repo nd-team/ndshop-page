@@ -1,0 +1,482 @@
+@import "../layout/variables", "../layout/mixin";
+#coll-head{
+  background:#33b6ff;
+
+  margin-bottom:30px;
+  .header-lg{
+    width:210px;
+    height:80px;
+    .logo{
+      margin:18px 0;
+      background:url("/images/orders/logo.png") no-repeat;
+    }
+  }
+
+  .topnav{
+    li{
+      float:left;
+      margin:0 40px;
+      height:80px;
+      line-height:80px;
+      a{
+        font-size:16px;
+        color:#fff;
+      }
+    }
+  }
+  .search-wrap{
+    margin:24px 0 0 170px;
+    height:32px;
+    input{
+      width:144px;
+      height:32px;
+      padding:0;
+      margin:0;
+      border:0;
+      text-indent:5px;
+    }
+    button{
+      width:56px;
+      height:32px;
+      background:#fff;
+      padding:0;
+      color:#333;
+    }
+  }
+  .shopping-cart{
+    width:140px;
+    height:32px;
+    background:#fff;
+    margin:24px 0;
+    line-height:32px;
+    a{
+      color:#666;
+      vertical-align:top;
+    }
+  }
+}
+
+#order-sidebar{
+  font-family:'Microsoft YaHei';
+  float:left;
+  .menu{
+    margin:0 0 30px;
+    h3{
+      font-size:16px;
+      color:#363636;
+    }
+    .submenu{
+      a{
+        display:block;
+        margin:12px 0;
+        font-size:14px;
+      }
+    }
+  }
+}
+
+.order-main{
+  font-family:'Microsoft YaHei';
+  float:right;
+  width:950px;
+  color:#666;
+  h3{
+    height:40px;
+    line-height:40px;
+    background:#f5f5f5;
+    text-indent:20px;
+
+  }
+  .order-nav{
+    float:left;
+    width:100%;
+    border-bottom:1px solid #ddd;
+    height:30px;
+    line-height:30px;
+    margin:20px 0;
+
+    ul{
+      li{
+        float:left;
+        padding:0 20px;
+
+        a{
+          font-size:14px;
+          color:#2d2d2d;
+          font-weight:bold;
+        }
+        &.active{
+          border-bottom:2px solid #30b5fa;
+          a{
+            color:#30b5fa;
+          }
+        }
+      }
+    }
+  }
+  .order-recycle{
+    float:right;
+    margin:0 30px;
+    a{
+      color:#767676;
+    }
+  }
+  .order-search {
+    clear:both;
+    p{
+      width:250px;
+      height:25px;
+      padding:0;
+      float:left;
+      input{
+        text-indent:10px;
+        height:24px;
+        width:166px;
+        line-height:25px;
+        outline:none;
+        vertical-align:1px;
+        border:1px solid #ddd;
+      }
+      a{
+        width:78px;
+        height:25px;
+        text-align:center;
+        line-height:25px;
+        display:inline-block;
+        background:#30b5fa;
+        color:#fff;
+        border:1px solid #ddd;
+        border-left:none;
+      }
+    }
+    select{
+      float:left;
+      height:25px;
+      outline:none;
+      option{
+        height:25px;
+      }
+    }
+  }
+  .order-thead{
+    height:40px;
+    line-height:40px;
+    background:#f5f5f5;
+    margin:25px 0;
+    li{
+      float:left;
+      text-align:center;
+      &.order-dealtype{
+        select{
+          border:none;
+          outline:none;
+        }
+      }
+    }
+  }
+  .order-all{
+    width:90px;
+  }
+  .order-deatil{
+    width:326px;
+  }
+  .order-price{
+    width:62px;
+    text-align:center;
+  }
+  .order-num{
+    width:64px;
+    text-align:center;
+  }
+  .order-oper{
+    width:80px;
+    text-align:center;
+  }
+}
+.order-sta{
+  width:110px;
+}
+.order-dealtype{
+  width:100px;
+
+}
+.order-dealoper{
+  width:110px;
+}
+
+.order-list{
+  border:1px solid #ddd;
+  margin:10px 0;
+  .list-con-tit{
+    height:45px;
+    line-height:45px;
+    background:#f5f5f5;
+    padding:0 20px ;
+    li{
+      float:left;
+      margin-right:100px;
+      &:first-child{
+        margin-right:35px;
+      }
+      input{
+        vertical-align:-2px;
+      }
+
+    }
+  }
+  .list-contact{
+    img{
+      vertical-align:middle;
+    }
+  }
+  .list-delect{
+    float:right;
+  }
+  .list-con{
+
+    a{
+      display:block;
+      line-height:20px;
+    }
+    .list-con-main{
+      float:left;
+      ul{
+        overflow:hidden;
+        padding:18px 0 18px 20px;
+        border-top:1px solid #ddd;
+        &:first-child{
+          border:none;
+        }
+        li{
+          float:left;
+          &.list-con-img{
+            margin-right:10px;
+          }
+          img{
+            width:60px;
+            height:60px;
+          }
+          &.order-deatil{
+
+            .list-deatil-text{
+              color:#333;
+              font-weight:bold;
+            }
+            .list-deatil-back{
+              color:#629f19;
+              font-weight:bold;
+              margin:7px 0;
+            }
+            .list-deatil-like{
+              color:#c2c2c2;
+            }
+
+          }
+          .back-appraise{
+            display:inline-block;
+            width:68px;
+            height:24px;
+            line-height:24px;
+            border:1px solid #ddd;
+            color:#333;
+            font-weight:bold;
+            border-radius:3px;
+          }
+        }
+      }
+    }
+    >div{
+      float:left;
+      padding:18px 0 0;
+      border-right:1px solid #ddd;
+      min-height:123px;
+      &:last-child{
+        border:none;
+      }
+    }
+    .list-total{
+      text-align:center;
+      color:#333;
+      line-height:18px;
+      p{
+        font-weight:bold;
+      }
+    }
+    .list-dealtype{
+      text-align:center;
+      a{
+        display:block;
+        color:#333;
+        font-weight:bold;
+      }
+    }
+    .list-dealoper{
+      text-align:center;
+      a{
+        display:inline-block;
+        width:78px;
+        height:28px;
+        line-height:28px;
+        color:#333;
+        &.appraise{
+          border:1px solid #ddd;
+        }
+        &.paynow{
+          background:#fd5d5f;
+          color:#fff;
+          font-weight:bold;
+          border-radius:3px;
+        }
+        &.remind{
+          border:1px solid #fd5d5f;
+          border-radius:3px;
+          color:#fd5d5f;
+          font-weight:bold;
+        }
+      }
+    }
+  }
+}
+
+.order-page{
+  clear:both;
+  height:25px;
+  line-height:25px;
+  float:right;
+  margin:20px 0;
+  button{
+    float:left;
+    height:27px;
+    line-height:21px;
+    margin:0 10px;
+    i{
+      display:inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      vertical-align:-2px;
+    }
+    &.lastpage{
+      i{
+        border-width: 6px 10px 6px 0;
+        border-color: transparent #656565 transparent transparent;
+      }
+    }
+    &.nextpage{
+      i{
+        border-width:  6px 0 6px 10px;;
+        border-color: transparent  transparent transparent #656565;
+      }
+    }
+  }
+  p{
+    float:left;
+    margin:0 10px;
+  }
+  ul{
+    float:left;
+    li{
+      float:left;
+      a{
+        display:inline-block;
+        width:28px;
+        text-align:center;
+        border:1px solid #ddd;
+        margin:0 5px;
+        &.active{
+          color:#fff;
+          background:#3db1fa;
+        }
+      }
+    }
+  }
+
+  .jump-page{
+    float:left;
+    margin-left:5px;
+    input{
+      height:25px;
+      line-height:25px;
+      border:1px solid #ddd;
+      vertical-align:-2px;
+    }
+  }
+}
+.order-recommend{
+  clear:both;
+  .recom-title{
+    height:45px;
+    line-height:45px;
+    background:#f5f5f5;
+    overflow:hidden;
+    p{
+      width:113px;
+      float:left;
+      font-size:16px;
+      color:#30b5fa;
+      font-weight:bold;
+      border-bottom:1px solid #30b5fa;
+      text-indent:25px;
+    }
+    a{
+      float:right;
+      color:#333;
+      margin-right:20px;
+    }
+  }
+  .recom-con{
+    overflow:hidden;
+    .recom-list{
+      overflow:hidden;
+      li{
+        padding:10px;
+        width:200px;
+        float:left;
+        img{
+          width:160px;
+          margin:0 20px;
+        }
+        p{
+          margin:10px;
+          a{
+            color:#333;
+          }
+          .recom-price{
+            float:left;
+            color:#ff0003;
+            font-weight:bold;
+          }
+          .recom-appraise{
+            float:right;
+          }
+        }
+      }
+    }
+  }
+  .recom-page{
+    clear:both;
+    width:200px;
+    margin:20px auto;
+    ul{
+      li{
+        margin:0 5px;
+        float:left;
+        height:20px;
+        line-height:20px;
+        a{
+          display:inline-block;
+          width:10px;
+          height:10px;
+          background:#b5b5b5;
+          border-radius:5px;
+          &.active{
+            background:#30b5fa;
+          }
+        }
+      }
+    }
+    button{
+      margin-left:10px;
+    }
+  }
+}

@@ -9,6 +9,8 @@ var jshint = require('gulp-jshint');//js代码规范检查m
 var sassLint = require('gulp-sass-lint');//sass代码规范检查
 
 var svgSymbols = require('gulp-svg-symbols');//svg图标字体
+var path = require('path');
+
 
 
 gulp.task('sass', ()=> {
@@ -41,7 +43,16 @@ gulp.task('sasshint', ()=> {
 
 gulp.task("svg",function (){
    return gulp.src("./font-icon/**/*.svg")
-            .pipe(svgSymbols())
+            .pipe(svgSymbols({
+                transformData:function (svg, defaultData, options) {
+                    return {
+                        id:         defaultData.id,
+                        className:  defaultData.className,
+                        width:      svg.width + 'px',
+                        height:     svg.height + 'px'
+                      };
+                }
+            }))
             .pipe(gulp.dest("font/icons"));
 });
 

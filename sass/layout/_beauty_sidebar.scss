@@ -1,0 +1,243 @@
+
+/*服饰箱包导航start*/
+.nav-box{
+    width:100%;
+    height: 40px;
+    overflow: hidden;
+    clear: both;
+    border: {
+        bottom:2px;
+        style: solid;
+        color: #fe437a;
+    }
+    .top-nav{
+        display:block;
+        float:left;
+        li{
+            float: left;
+            height:40px;
+            font:{
+                size:16px;
+            }
+            color:#333;
+            line-height:40px;
+            cursor:pointer;
+            overflow:hidden;
+            &.all-goods{
+                width: 213px;
+                height: 45px;
+                display: block;
+                background-color: #ff729c;
+                text-align: left;
+                padding-left: 15px;
+                a{
+                    color: #fff;
+                    font:{
+                        size: 17px;
+                    }
+
+                }
+                z-index: 100;
+            }
+            &.main-nav{
+                padding: 0 0 0 80px;
+                a{
+                    color:#333;
+                    font: {
+                        size:16px;
+                    }
+                    &:hover{
+                        color:#ff729c !important;
+                    }
+                }
+            }
+        }
+    }
+}
+/*nav end*/
+
+//左侧菜单栏开始
+.sidebar-beauty{
+    width: 100%;
+    height:480px;
+    // overflow: hidden;
+    clear:both;
+    .beauty-menu{
+        width: 228px;
+        height:480px;
+        background-color: #ff92b1;
+        float: left;
+        font-family: Microsoft YaHei;
+        .beauty-ul {
+            position: relative;
+            width: 228px;
+            margin-top: -1px;
+            .beauty-list {
+                position: relative;
+                cursor: pointer;
+                &:hover {
+                    background-color: #ff427a;
+                    border: {
+                        left: 1px;
+                        style: solid;
+                        color: #ff92b1;
+                    }
+                    &:last-child {
+                        border-bottom: 1px solid #ff92b1;
+                    }
+                    .beauty-menu-list {
+                        border-bottom:0;
+                        .nav-icon {
+                            background-color: #fff;
+                        }
+                    }
+                    .beauty-same-pw{
+                        display: block;
+                    }
+                }
+                .beauty-menu-list {
+                    width: 202px;
+                    margin: 0 auto;
+                    position: relative;
+                    border: {
+                        bottom: 1px;
+                        style: solid;
+                        color: #febecf
+                    }
+                    padding: {
+                        top: 6px;
+                    }
+                    color: #fff;
+                    h2 {
+                        color: #fff;
+                        font: {
+                            size: 16px;
+                        }
+                        .nav-icon {
+                            height: 15px;
+                            width: 15px;
+                            display: inline-block;
+                            background-color: #fff;
+                        }
+                    }
+                    .nav-beauty {
+                        line-height: 18px;
+                        padding: 8px 22px 8px 16px;
+                        color: #fff;
+                        a {
+                            color: #fff;
+                            font-size: 12px;
+                            padding-right: 5px;
+                            &.mouth{
+                                padding-right:12px;
+                            }
+                            &.body-save{
+                                padding-right: 16px;
+                            }
+                        }
+                    }
+                    .arrow {
+                        position: absolute;
+                        z-index: 1;
+                        top: 45px;
+                        right: 8px;
+                        width: 5px;
+                        height: 8px;
+                        font: 400 9px/14px consolas;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+
+                }
+                .menu-last {
+                    border-bottom: 0 none;
+                }
+
+                //服饰箱包弹窗样式开始
+                .beauty-same-pw{
+                    width: 190px;
+                    height: 343px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 228px;
+                    top: 0;
+                    border:{
+                        right: 2px;
+                        bottom: 2px;
+                        style: solid;
+                        color: #ff427a;
+                    }
+                    z-index: 100;
+                    display: none;
+                    .beauty-mt{
+                        padding:20px;
+                        .beauty-list-top{
+
+                            .shop-same-list{
+                                margin-bottom: 10px;
+                                display: inline-block;
+                                a{
+                                    display: inline-block;
+                                    width:72px;
+                                    color: #333;
+                                    &:hover{
+                                        color:#ff427a;
+                                    }
+                                }
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    .same-pw-brand{
+                        margin:{
+                            top:10px;
+                            left: 20px;
+                        }
+
+                        .same-brand-pic{
+                            margin-bottom: 5px;
+                            .same-bimg{
+                                display: inline-block;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+                //服饰箱包弹窗样式结束
+            }
+        }
+    }
+}
+//左侧菜单栏结束
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
