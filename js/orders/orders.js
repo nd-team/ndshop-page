@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     var listLen = $('.order-list').length;
     for(var i=0;i<listLen; i++){
         var listHeight = $('.order-list').eq(i).children('.list-con').height();
@@ -26,5 +27,27 @@ $(document).ready(function(){
         }
         $('.order-page li a').removeClass('active')
         $('.order-page li').eq(current).children().addClass('active');
-    })
+    });
+
+//推荐：猜你喜欢page页
+    $('.recom-page button.next').click(function(){
+        var current = $('.recom-page li a.active').parent().index();
+        var reconLen = $('.recom-page li').length;
+        current++;
+        if(current >=reconLen){
+            current=0;
+        }
+        $('.recom-page li a').removeClass('active');
+        $('.recom-page li').eq(current).children('a').addClass('active');
+
+        $('.recom-con .recom-list').removeClass('show');
+        $('.recom-con .recom-list').eq(current).addClass('show');
+    });
+    $('.recom-page li a').click(function(){
+        var current = $(this).parent().index();
+        $('.recom-page li a').removeClass('active');
+        $(this).addClass('active');
+        $('.recom-con .recom-list').removeClass('show');
+        $('.recom-con .recom-list').eq(current).addClass('show');
+    });
 });

@@ -34,6 +34,7 @@
       margin:0;
       border:0;
       text-indent:5px;
+      font-size:12px;
     }
     button{
       width:56px;
@@ -41,6 +42,8 @@
       background:#fff;
       padding:0;
       color:#333;
+      font-size:12px;
+
     }
   }
   .shopping-cart{
@@ -49,13 +52,19 @@
     background:#fff;
     margin:24px 0;
     line-height:32px;
+    text-indent:10px;
     a{
       color:#666;
-      vertical-align:top;
+      vertical-align:middle;
+      .shopping{
+        width:20px;
+        height:20px;
+        vertical-align:-3px;
+      }
     }
   }
 }
-
+//左边侧栏
 #order-sidebar{
   font-family:'Microsoft YaHei';
   float:left;
@@ -74,7 +83,7 @@
     }
   }
 }
-
+//订单主题
 .order-main{
   font-family:'Microsoft YaHei';
   float:right;
@@ -162,7 +171,7 @@
     height:40px;
     line-height:40px;
     background:#f5f5f5;
-    margin:25px 0;
+    margin:25px 0 10px;
     li{
       float:left;
       text-align:center;
@@ -203,10 +212,32 @@
 .order-dealoper{
   width:110px;
 }
-
+.allselect{
+  color:#333;
+  padding:0 20px;
+  margin:10px 0;
+  height:30px;
+  line-height:30px;
+  float:left;
+  font-weight:bold;
+  input{
+    vertical-align:-2px;
+    margin-right:5px;
+  }
+  a{
+    display:inline-block;
+    color:#333;
+    height:20px;
+    padding:0 15px;
+    line-height:20px;
+    border:1px solid #ddd;
+    margin:0 15px;
+  }
+}
 .order-list{
   border:1px solid #ddd;
   margin:10px 0;
+  clear:both;
   .list-con-tit{
     height:45px;
     line-height:45px;
@@ -221,7 +252,6 @@
       input{
         vertical-align:-2px;
       }
-
     }
   }
   .list-contact{
@@ -231,9 +261,13 @@
   }
   .list-delect{
     float:right;
+    margin-right:30px;
+    svg{
+      width:16px;
+      height:18px;
+    }
   }
   .list-con{
-
     a{
       display:block;
       line-height:20px;
@@ -246,9 +280,15 @@
         border-top:1px solid #ddd;
         &:first-child{
           border:none;
+          padding-top:0;
         }
         li{
           float:left;
+          .order_money{
+            width:16px;
+            height:16px;
+            vertical-align:-3px;
+          }
           &.list-con-img{
             margin-right:10px;
           }
@@ -263,12 +303,31 @@
               font-weight:bold;
             }
             .list-deatil-back{
+              width:100px;
               color:#629f19;
               font-weight:bold;
               margin:7px 0;
+              svg{
+                width:16px;
+                height:16px;
+                vertical-align:-3px;
+              }
+              .icon-credit{
+                background:url("/images/orders/credit.png") no-repeat;
+                display:inline-block;
+                width:20px;
+                height:20px;
+                vertical-align:-8px;
+              }
             }
             .list-deatil-like{
+              width:80px;
               color:#c2c2c2;
+              svg{
+                width:20px;
+                height:16px;
+                vertical-align:-3px;
+              }
             }
 
           }
@@ -290,6 +349,7 @@
       padding:18px 0 0;
       border-right:1px solid #ddd;
       min-height:123px;
+
       &:last-child{
         border:none;
       }
@@ -304,6 +364,11 @@
     }
     .list-dealtype{
       text-align:center;
+      p{
+        color:#333;
+        font-weight:bold;
+        padding-top:5px;
+      }
       a{
         display:block;
         color:#333;
@@ -318,32 +383,41 @@
         height:28px;
         line-height:28px;
         color:#333;
+        //评价
         &.appraise{
           border:1px solid #ddd;
         }
+        //现在付款
         &.paynow{
           background:#fd5d5f;
           color:#fff;
           font-weight:bold;
           border-radius:3px;
         }
+        //提醒发货
         &.remind{
           border:1px solid #fd5d5f;
           border-radius:3px;
           color:#fd5d5f;
           font-weight:bold;
         }
+        //确定收货
+        &.receipt{
+          background:#33b5ff;
+          color:#fff;
+          font-weight:bold;
+          border-radius:3px;
+        }
       }
     }
   }
 }
-
+//订单分页
 .order-page{
-  clear:both;
   height:25px;
   line-height:25px;
   float:right;
-  margin:20px 0;
+  margin:20px 0 50px;
   button{
     float:left;
     height:27px;
@@ -402,8 +476,10 @@
     }
   }
 }
+//推荐：猜你喜欢
 .order-recommend{
   clear:both;
+  margin-top:30px;
   .recom-title{
     height:45px;
     line-height:45px;
@@ -426,14 +502,22 @@
   }
   .recom-con{
     overflow:hidden;
+
+
     .recom-list{
       overflow:hidden;
+      display:none;
+      &.show{
+        display:block;
+      }
       li{
         padding:10px;
         width:200px;
         float:left;
+        height:240px;
         img{
           width:160px;
+          height:160px;
           margin:0 20px;
         }
         p{
