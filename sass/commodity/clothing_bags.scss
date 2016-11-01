@@ -40,68 +40,9 @@
 
 }
 
-//中间banner开始
-.main-banner{
-  width: 670px;
-  height: 479px;
-  float: left;
-  position: relative;
-  .banner-pic{
-    position: relative;
-    li{
-      position: absolute;
-      height: 480px;
-      &:first-child{
-        z-index: 11;
-      }
-      &:nth-child(2){
-        z-index:10;
-      }
-      &:nth-child(3){
-        z-index:1;
-      }
-    }
-  }
-  .banner-yuan{
-    position:absolute;
-    left: 50%;
-    bottom: 20px;
-    margin-left:-56px;
-    z-index: 60;
-    li{
-      width: 8px;
-      height: 8px;
-      background-color: #888;
-      float: left;
-      border-radius:50%;
-      cursor:pointer;
-      margin: 0 8px;
-      &.curent{
-        background-color:rgba(0,0,0,0.2);
-      }
-    }
-  }
-
-}
-//中间banner结束
-
-/*右侧图片开始*/
-.main-right{
-  float: right;
-  width: 202px;
-  height: 480px;
-  .right-word{
-    clear: both;
-    height: 160px;
-  }
-}
-/*右侧图片结束*/
-
-
 //特色主题开始
 .featured-clothing{
-  width: 100%;
-  height: auto;
+  @include same-box;
   margin-top: 35px;
   .clothing-themes{
     overflow: hidden;
