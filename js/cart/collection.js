@@ -1,8 +1,16 @@
 $(document).ready(function(){
     $('.coll-filter .coll-proshop a').click(function(){
         $(this).addClass('active').siblings().removeClass('active');
+        var dataTitle = $(this).attr('data-title');
+        $('.coll-main .coll-tabs').hide();
+        $('.coll-'+dataTitle).show();
+        if(dataTitle=="shoplist"){
+            $('.sortfil-allselect').show();
+        }else{
+            $('.sortfil-allselect').hide();
+        }
     });
-    $('.coll-filter dl dd a').click(function(){
+    $('.coll-filter dl dd:not(".fr") a').click(function(){
         $(this).addClass('active').siblings().removeClass('active');
     });
     $('.coll-page li a').click(function(){
