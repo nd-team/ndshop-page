@@ -5,10 +5,12 @@ var sass = require('gulp-sass');//sass编译
 var cached = require('gulp-cached');//文件修改缓存
 var sourcemaps = require('gulp-sourcemaps');//调试sass
 var autoprefixer = require('gulp-autoprefixer');//浏览器兼容前缀
-var jshint = require('gulp-jshint');//js代码规范检查
+var jshint = require('gulp-jshint');//js代码规范检查m
 var sassLint = require('gulp-sass-lint');//sass代码规范检查
+
 var svgSymbols = require('gulp-svg-symbols');//svg图标字体
 var path = require('path');
+
 
 
 gulp.task('sass', ()=> {

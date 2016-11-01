@@ -1,0 +1,128 @@
+@import "../layout/_variables", "../layout/_mixin";
+.empty-cont {
+  width: 100%;
+  background: #F7F7F7;
+  padding: 24px 0 0 0;
+  .cart-empty{
+      height: 54px;
+      padding:163px 0 164px 376px;
+    .cart-text{
+      i{
+         width: 56px;
+         height: 54px;
+         background: #fc5e5f;
+         display: block;
+         float: left;
+
+      }
+      span{
+         line-height: 54px;
+         padding-left: 22px;
+      }
+      font:{
+          family: $main-sec-ff;
+          size: 14px;
+       }
+      color: #333;
+    }
+  }
+}
+/*guess you like*/
+.guess-like{
+    .guess-title{
+      margin:30px 0;
+       a{
+          color:#e4393c;
+         font:{
+           size: 14px;
+           weight: bold;
+         }
+          display: inline-block;
+          padding-bottom: 5px;
+          border-bottom: 2px solid #e4393c;
+
+       }
+    }
+  .guess-main{
+          height: 295px;
+          overflow: visible;
+    ul{
+       li{
+          float: left;
+         .g-item{
+             position: relative;
+             width: 258px;
+            /* padding: 8px 5px 20px 9px;*/
+            padding:8px 5px 20px 11px;
+
+             margin: -1px 0 0 -1px;
+             background: $white;
+             border: 1px dashed #cacaca;
+             overflow: hidden;
+           .g-img{
+              width: 147px;
+              margin: 0 auto;
+
+           }
+           .g-name{
+             height: 36px;
+             line-height: 18px;
+             margin: 5px 0;
+             overflow: hidden;
+             a{
+                font:{
+                   size: 14px;
+                  family:$main-sec-ff;
+
+                }
+               color: #333;
+             }
+           }
+           .g-price{
+              width: 100%;
+              text-align: left;
+              overflow: hidden;
+              margin: 5px 0 2px;
+             strong{
+               font:{
+                 size: 14px;
+                 family:$main-sec-ff;
+
+               }
+               color: #DC0000;
+             }
+           }
+           .g-button{
+              margin: 10px 0 0;
+              text-align: center;
+             i{
+                width: 24px;
+                height: 24px;
+                background: #31b5ff;
+                display: inline-block;
+                vertical-align: middle;
+               // float: left;
+                overflow: hidden;
+                margin-right: 8px;
+               }
+             a{
+               width: 190-30px;
+               height: 30px;
+               line-height: 30px;
+               text-align: center;
+               border: 1px solid #31b5ff;
+               color: #31b5ff;
+               padding: 0 20px;
+               display: inline-block;
+               border-radius: 3px;
+               font:{
+                 size: 14px;
+                 family:$main-sec-ff;
+               }
+             }
+           }
+         }
+       }
+    }
+  }
+}

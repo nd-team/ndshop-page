@@ -1,0 +1,313 @@
+@import "../layout/_variables", "../layout/_mixin";
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+.technological{
+  background:url("/images/cart/buzou01.png") no-repeat;
+  width: 484px;
+  padding-top: 23px;
+  overflow: hidden;
+  height: 42px;
+  float: right;
+  margin-top: 3px;
+  li{
+    width: 160px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    float: left;
+    color: #ff7777;
+    &.t1{
+       color: #e4cccc;
+    }
+    &.t3{
+      color: #d5d5d5;
+    }
+  }
+  }
+/*
+Fill in the check order information*/
+%receipt-inform {
+  padding: 20px 0 0 20px;
+  strong {
+    font: {
+      size: 14px;
+      family: 'SimSun';
+    }
+    color: #333;
+  }
+}
+
+.checkout{
+
+    .information-title{
+      height: 30px;
+         h2{
+           font:{
+             size: 16px;
+             family:$main-sec-ff;
+           }
+           color: #333;
+         }
+    }
+  .receiving{
+
+     width: 1100px;
+     height: 700px;
+    $border: 1px solid #ddd !global;
+    border: $border;
+    .receiving-all{
+       width: 1050px;
+      margin: 0 auto;
+     .receipt-title{
+      height: 94px;
+      border-bottom: 1px solid #ddd;
+       @extend  %receipt-inform;
+      p{
+        font:{
+          size: 12px;
+        }
+        color: #666;
+        padding: 25px 0 0 20px;
+      }
+
+      ul{
+        margin-top: 15px;
+        li{
+          width: 80px;
+          height: 30px;
+          border: 1px solid #ddd;
+          float: left;
+          margin-left: 10px;
+          text-align: center;
+          line-height: 30px;
+
+          a{
+           width: 80px;
+            height: 30px;
+            border: $border;
+            line-height: 30px;
+            display: block;
+            border: 0px;
+             &.r-now{
+              width: 80px;
+              height: 30px;
+              border: $border;
+              background: #33b5ff;
+              line-height: 30px;
+              display: block;
+              //border: 0px;
+              color: $white;
+              @include box-shadow(0 0 10px #e9e9e9);
+
+            }
+            &:active{
+              @extend .r-now;
+
+            }
+
+          }
+
+          a{
+            font{
+              size: 12px;
+              family: 'SimSun';
+            }
+
+            color: #666;
+
+          }
+
+        }
+      }
+
+      }
+
+
+    }
+    .receipt-title2{
+      @extend  %receipt-inform;
+      $float:left !global;
+
+      border-bottom: 1px solid $white;
+      .item-info{
+        height: 130px;
+        line-height: 20px;
+        position: relative;
+        padding: 30px 10px 1px 20px;
+        background: #FAFAFA;
+        margin-top: 10px;
+        .p-goods{
+             .p-img{
+               float: $float;
+               width: 99px;
+               height: 99px;
+               margin-right: 14px;
+             }
+          .p-msg{
+             float: $float;
+            width: 300px;
+            .p-cont{
+              width: 218px;
+              height: 40px;
+              line-height: 20px;
+              overflow: hidden;
+
+             a{
+              color:#727272;
+
+             }
+              font:{
+                size: 12px;
+                family:'SimSun' ;
+              }
+            }
+
+            /*join icon*/
+            .p-extend{
+               width: 89px;
+               margin-top: 6px;
+              span{
+
+                width: 220px;
+                min-height: 18px;
+                height: 18px;
+                line-height: 29px;
+                  i{
+                     display: inline-block;
+                     width: 17px;
+                    height: 16px;
+                    vertical-align: middle;
+                    overflow: hidden;
+                  }
+                a{
+                   color: #cfcfcf;
+                }
+              }
+            }
+          }
+
+          .p-color{
+            width: 118px;
+            text-align: left;
+            float: $float;
+            padding: 0px 0 10px;
+            span{
+
+                color: #727272;
+
+            }
+          }
+          .p-number{
+            width: 218px;
+            text-align: center;
+            float: $float;
+            padding: 0px 0 10px;
+            color: #727272;
+            }
+
+          .p-price{
+            width: 18px;
+            text-align: center;
+            color: #e12d2c;
+            float: $float;
+            padding: 0px 0 10px;
+            font-weight: 700;
+           }
+
+        }
+     }
+    }
+
+
+    .receipt-title3{
+        @extend %receipt-inform;
+        height: 158px;
+        margin-top: 11px;
+       border-bottom: 1px solid #ddd;
+      .mode-transportation{
+         button{
+           background:url("/images/cart/zaixian_bg.png") no-repeat;
+           width: 88px;
+           height: 38px;
+           border: 0;
+           display: block;
+           line-height: 38px;
+           color: $white;
+           margin: 16px 0 30px 15px;
+
+         }
+      }
+      .mode-note{
+            font:{
+              size: 12px;
+              family: 'SimSun';
+            }
+        color: #999;
+              p{
+                 color: #666;
+                margin-bottom: 12px;
+              }
+         input{
+           width: 458px;
+           height: 20px;
+           line-height: 20px;
+           border: 1px solid #999;
+           padding-left: 14px;
+         }
+      }
+    }
+     .receipt-title4{
+       @extend %receipt-inform;
+       p{
+          margin: 11px 0 0 30px;
+          color: #666;
+         a{
+            padding-left: 5px;
+            color: #33b5ff;
+         }
+       }
+     }
+
+  }
+}
+
+/*Total amount payable*/
+.total-amount{
+  width: 1100px;
+  height: 66px;
+  border: 1px solid #ddd;
+  margin-top: 22px;
+  background: #fafafa;
+  .cope-with{
+    text-align: right;
+    margin: 14px 30px 0 0;
+    font:{
+      size: 12px;
+      family: 'SimSun';
+
+    }
+    color: #666;
+     .total{
+        span{
+            color: #db0706;
+           font-weight: bold;
+           font-size: 14px;
+        }
+     }
+    .address{
+       margin-top: 16px;
+    }
+
+  }
+}
+
+.place-order{
+  background:url("/images/cart/提交bottom.png") no-repeat;
+  width: 139px;
+  height: 35px;
+  margin-top: 16px;
+  float: right;
+  cursor: pointer;
+}
