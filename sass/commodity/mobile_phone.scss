@@ -102,6 +102,9 @@
           }
         }
       }
+      .buy-last{
+        width: 222px;
+      }
     }
   }
 }
@@ -291,7 +294,7 @@
       float: left;
       &.computer-accessories-list{
         position: relative;
-        width: 240px;
+        width: 239px;
         height: 540px;
         .hot-activity{
           position: absolute;
