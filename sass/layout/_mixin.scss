@@ -41,10 +41,31 @@
 }
 
 
+@mixin sport-title{
+  float: left;
+  line-height: 42px;
+  color: #333333;
+  font: {
+    size: 24px;
+    family: "Microsoft YaHei";
+  }
+  padding-right: 5px;
+}
 
 
-
-
+@mixin title-red{
+  float: left;
+  color: #ee1616;
+  font:{
+    size: 10px;
+    family: "Microsoft YaHei";
+  }
+  padding-top: 10px;
+  line-height: 13px;
+  span{
+    display: block;
+  }
+}
 
 
 

@@ -1,0 +1,334 @@
+
+.header-ls {
+    width: 100%;
+    height:80px;
+    margin: {
+        top:17px;
+        bottom:30px;
+    }
+    .header-lg {
+        z-index: 12;
+        float: left;
+        width: 290px;
+        height: 62px;
+        line-height: 62px;
+        float: left;
+        .logo {
+            display: inline-block;
+            width: 185px;
+            height: 44px;
+            background-image: url('/images/head/logo.png');
+            background-repeat:no-repeat;
+            text-indent: -2000px;
+            padding-left: 12px;
+        }
+        .clothing-logo{
+            text-align: center;
+            color: #333;
+            font:{
+                size: 16px;
+                family:"Microsoft YaHei";
+            }
+            cursor: pointer;
+        }
+    }
+
+}
+
+/*nav start*/
+.nav-box{
+    width:100%;
+    height: 40px;
+    overflow: hidden;
+    clear: both;
+    border: {
+        bottom:2px;
+        style: solid;
+        color: #1e8bc4;
+    }
+    .top-nav{
+        display:block;
+        float:left;
+        li{
+            float: left;
+            height:40px;
+            font:{
+                size:16px;
+            }
+            color:#333;
+            line-height:40px;
+            cursor:pointer;
+            overflow:hidden;
+            &.all-goods{
+                width: 213px;
+                height: 45px;
+                display: block;
+                background-color: #1eaacd;
+                text-align: left;
+                padding-left: 15px;
+                a{
+                    color: #fff;
+                    font:{
+                        size: 17px;
+                    }
+
+                }
+                z-index: 100;
+            }
+            &.main-nav{
+                padding: 0 0 0 80px;
+                a{
+                    color:#333;
+                    font: {
+                        size:16px;
+                    }
+                    &:hover{
+                        color:#28b8db !important;
+                    }
+                }
+            }
+        }
+    }
+}
+/*nav end*/
+
+//左侧菜单栏开始
+.sidebar-sport{
+    width: 100%;
+    height:480px;
+    // overflow: hidden;
+    clear:both;
+    .sport-menu{
+        width: 228px;
+        height:481px;
+        background-color: #28b8db;
+        float: left;
+        font-family: "Microsoft YaHei";
+        margin-top: -2px;
+        .sport-ul {
+            position: relative;
+            width: 228px;
+            margin-top: -1px;
+            .sport-list {
+                position: relative;
+                cursor: pointer;
+                &:hover {
+                    background-color: #1e8bc4;
+                    border: {
+                        left: 1px;
+                        style: solid;
+                        color: #28b8db;
+                    }
+                    &:last-child {
+                        border-bottom: 1px solid #28b8db ;
+                    }
+                    .sport-menu-list {
+
+                        border-bottom:0;
+                        .nav-icon {
+                            background-color: #fff;
+                        }
+                    }
+                    .sport-same-pw{
+                        display: block;
+                    }
+                }
+                .sport-menu-list {
+                    width: 202px;
+                    margin: 0 auto;
+                    position: relative;
+                    border: {
+                        bottom: 1px;
+                        style: solid;
+                        color: #7dd4e8;
+                    }
+                    padding: {
+                        top: 6px;
+                    }
+                    color: #fff;
+                    h2 {
+                        color: #fff;
+                        font: {
+                            size: 16px;
+                        }
+                        .nav-icon {
+                            height: 15px;
+                            width: 15px;
+                            display: inline-block;
+                            background-color: #fff;
+                        }
+                    }
+                    .nav-sport {
+                        line-height: 18px;
+                        padding: 8px 22px 8px 16px;
+                        color: #fff;
+                        a {
+                            color: #fff;
+                            font-size: 12px;
+                            padding-right: 4px;
+                          &.sport-res{
+                            padding-right:14px;
+
+                          }
+                        }
+                    }
+                    .arrow {
+                        position: absolute;
+                        z-index: 1;
+                        top: 45px;
+                        right: 8px;
+                        width: 5px;
+                        height: 8px;
+                        font: 400 9px/14px consolas;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+
+                }
+                .menu-last {
+                    border-bottom: 0 none;
+                }
+
+                //运动健身弹窗样式开始
+                .sport-same-pw{
+                    width: 356px;
+                    height: 210px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 227px;
+                    top: 3px;
+                    border:{
+                        right: 2px;
+                        bottom: 2px;
+                        style: solid;
+                        color: #42b999;
+                    }
+                    z-index: 100;
+                    display: none;
+                    .sport-mt{
+                        overflow: hidden;
+                        padding:{
+                            top:20px;
+                            right: 10px;
+                            bottom: 15px;
+                            left:20px;
+                        }
+                        .sport-left{
+                            width: 174px;
+                            height: 174px;
+                            border-right:1px solid #ededed;
+                            float: left;
+                            .sport-text{
+                                height: 26px;
+                                a{
+                                    display: inline-block;
+                                    width: 85px;
+                                }
+                            }
+                        }
+                        .sport-right{
+                            float: left;
+                            margin-left: 20px;
+                            a{
+
+                                img{
+                                    width: 116px;
+                                    height: 186px;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+                //运动健身弹窗样式结束
+            }
+        }
+    }
+}
+//左侧菜单栏结束
+
+//中间banner开始
+.main-banner{
+    width: 670px;
+    height: 479px;
+    float: left;
+    position: relative;
+    .banner-pic{
+        position: relative;
+        li{
+            position: absolute;
+            height: 480px;
+            &:first-child{
+                z-index: 11;
+            }
+            &:nth-child(2){
+                z-index:10;
+            }
+            &:nth-child(3){
+                z-index:1;
+            }
+        }
+    }
+    .banner-yuan{
+        position:absolute;
+        left: 50%;
+        bottom: 20px;
+        margin-left:-56px;
+        z-index: 60;
+        li{
+            width: 8px;
+            height: 8px;
+            background-color: #888;
+            float: left;
+            border-radius:50%;
+            cursor:pointer;
+            margin: 0 8px;
+            &.current{
+                background-color:rgba(0,0,0,0.2);
+            }
+        }
+    }
+
+}
+//中间banner结束
+
+/*右侧图片开始*/
+.main-right{
+    float: right;
+    width: 202px;
+    height: 480px;
+    .right-word{
+        clear: both;
+        height: 160px;
+    }
+}
+/*右侧图片结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

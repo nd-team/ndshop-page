@@ -272,7 +272,7 @@
         .same-show-time{
           float: left;
           .same-list{
-            width: 330px;
+            width: 331px;
             .same-menu-box{
               height: 207px;
               font-family: $main-sec-ff;
@@ -398,23 +398,31 @@
           //shoes right picture start
 
             .shoe-pic{
+              height: 206px;
               .shoe-pic01{
                 display: inline-block;
-                width: 384px;
+                width: 378px;
+                height: 206px;
               }
               .shoe-pic02{
                 display: inline-block;
                 width: 182px;
+                height: 206px;
                 border-left:1px solid #ececec;
               }
 
               .shoe-pic-bottom{
                 float: left;
+                border-top:1px solid #ececec;
                 .shoe-wram{
                   display: block;
                   width: 186px;
                   height: 207px;
-                  border-right:1px solid #ececec;
+                  border: {
+                    right: 1px;
+                    style: solid;
+                    color: #ececec;
+                  }
                 }
                 .shoe-bd{
                   border-left:1px solid #ececec;
