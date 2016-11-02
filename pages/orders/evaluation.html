@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>待收货</title>
+    <title>评价页面</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
@@ -37,12 +37,15 @@
             </ul>
         </div>
     </div>
-    <div class="header-ls" id="coll-head">
+    <div class="header-ls" id="order-head">
         <div class="wrap cleafix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
             </div>
-
+            <div class="myshop">
+                <h3>我的商场</h3>
+                <a href="/index.html">返回首页</a>
+            </div>
             <ul class="topnav">
                 <li>
                     <a href="javascript:void(0)">首页</a>
@@ -57,7 +60,7 @@
 
             <div class="search-wrap">
                 <input type="text" class="search-strip" value="" placeholder="搜我想要的"/>
-                <button onclick="search('key');return false;" class="button">
+                <button class="button">
                     搜索
                 </button>
             </div>
@@ -111,24 +114,19 @@
         </div>
     </div>
     <div class="order-main clearfix">
-        <h3>我的订单</h3>
+        <h3>评价晒单</h3>
         <div class="order-nav clearfix">
             <ul>
-                <li >
-                    <a href="/pages/orders/allorders.html">全部订单</a>
+                <li class="active">
+                    <a href="javascript:void(0)" >待评价</a>
                 </li>
                 <li>
-                    <a href="/pages/orders/pay.html">待支付</a>
+                    <a href="javascript:void(0)">已评价</a>
                 </li>
                 <li >
-                    <a href="/pages/orders/ship.html">待发货</a>
+                    <a href="javascript:void(0)">追加评价</a>
                 </li>
-                <li >
-                    <a href="/pages/orders/receipt.html">待收货</a>
-                </li>
-                <li class="active">
-                    <a href="/pages/orders/evaluation.html">待评价</a>
-                </li>
+
             </ul>
             <div class="order-recycle">
                 <a href="javascript:void(0)">订单回收站</a>
@@ -137,14 +135,17 @@
         <div class="order-search clearfix">
             <p>
                 <input type="text" placeholder="商品名称/商品编号/订单号"><a href="javascript:void(0) ">订单搜索</a>
-
             </p>
             <select name="" id="">
                 <option value="">筛选更多</option>
             </select>
         </div>
         <ul class="order-thead">
-            <li class="order-all">全部订单</li>
+            <li class="order-all">
+                <select >
+                    <option value="">近一周的订单</option>
+                </select>
+            </li>
             <li class="order-deatil">订单详情</li>
             <li class="order-price">单价</li>
             <li class="order-num">数量</li>
@@ -159,7 +160,7 @@
         </ul>
         <div class="allselect">
             <input type="checkbox">全选
-            <a href="javascript:void(0)">确定收货</a>
+            <a href="javascript:void(0)">全部删除</a>
         </div>
         <div class="order-list">
             <div class="list-con-tit">
@@ -215,6 +216,7 @@
                 </div>
                 <div class="order-dealoper list-dealoper">
                     <a href="javascript:void(0)" class="appraise">评价</a>
+                    <a href="javascript:void(0)">再次购买</a>
                 </div>
             </div>
         </div>
@@ -288,14 +290,13 @@
                 </div>
                 <div class="order-dealoper list-dealoper">
                     <a href="javascript:void(0)" class="appraise">评价</a>
+                    <a href="javascript:void(0)">再次购买</a>
                 </div>
             </div>
-
         </div>
-
         <div class="allselect">
             <input type="checkbox">全选
-            <a href="javascript:void(0)">确定收货</a>
+            <a href="javascript:void(0)">全部删除</a>
         </div>
         <div class="order-page clearfix">
             <button class="lastpage"><i></i></button>
