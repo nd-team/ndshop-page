@@ -1,76 +1,515 @@
 @import "../layout/_variables", "../layout/_mixin";
 $border:1px solid #ddd;
 $border1:1px dashed #ddd;
-.logistics-details{
-       font:{
-          //family: 'SimHei ';
-          family:'黑体' ;
-          size: 14px;
-       }
-   .bread-path{
-        line-height: 24px;
-        margin: 30px 0 10px 0;
-        color: #828282;
-        a{
-            margin: 0 10px;
-          &:nth-of-type(3){
-               color: black;
+.logistics-details {
+  font: {
+    //family: 'SimHei ';
+    family: 'SimHei';
+    size: 14px;
+  }
+  .bread-path {
+    line-height: 24px;
+    margin: 0 0 10px 0;
+    color: #828282;
+    a {
+      margin: 0 10px;
+      &:nth-of-type(3) {
+        color: black;
+      }
+    }
+  }
+
+  .Product-delivery {
+    border: {
+      top: 3px solid #30bafb;
+      right: $border;
+      bottom: $border1;
+      left: $border;
+    }
+    height: 250px;
+    .log-list {
+      width: 285px;
+      border-right: $border;
+      float: left;
+      ul {
+        li {
+
+          &:nth-of-type(1) {
+            color: #6a6a6a;
+            text-align: center;
+            padding: 22px 0 48px 0;
+          }
+          &:nth-of-type(2) {
+            font: {
+              size: 26px;
+            }
+            color: #25bdff;
+            margin-left: 47px;
+            line-height: 68-26px;
+            i {
+              width: 58px;
+              height: 68px;
+              background: url("../../images/orders/outbound.png") no-repeat !important;
+              display: inline-block;
+              margin-right: 16px;
+
+            }
+
+          }
+          &:nth-of-type(3) {
+            button {
+              width: 100px;
+              height: 27px;
+              background: $white;
+              color: #fb5e5e;
+              border: 1px solid #fb5e5e;
+              border-radius: 3px;
+              margin-right: 27px;
+              cursor: pointer;
+            }
+            padding: 49px 0 20px 50px;
+          }
+
+        }
+      }
+    }
+
+    .order-cancellation{
+      margin-top: 197px;
+      text-align: right;
+       a{
+      margin-right:20px;
+      color: #303030;
+        }
+    }
+
+
+
+    /*order*/
+    .progressbar {
+      float: left;
+      width: 800px;
+
+     .pro-line{
+           width: 126px;
+           position: relative;
+           float: left;
+
+        .pro-line-crumbs{
+          width: 126px;
+          height: 10px;
+          background:transparent url(/images/orders/pro-line.png)  no-repeat scroll 0px 0px;
+          position: absolute;
+          top:75px;
+          margin-left:10px;
+        }
+
+      }
+
+        .pro-register{
+             width: 65px;
+             position: relative;
+             top:37px;
+             float: left;
+             height: 43px;
+
+           svg{
+              position: absolute;
+              top:35px;
+              left: 38px;
+              width:24px;
+              height: 24px;
+             fill:#c3c3c3;
+
+           }
+          .submitted{
+            @extend svg;
+            img{
+              width: 24px;
+              height: 24px;
+            }
+
+
+          }
+
+
+          ul{
+             width: 189px;
+             margin-left: -42px;
+             position: absolute;
+             z-index: 1;
+             text-align: center;
+            li{
+               &.pro-null{
+                   height: 36px;
+                   margin-bottom: 35px;
+                   font:{
+                      size: 12px;
+                   }
+               }
+              &.pro-text{
+                color: #333;
+                 font:{
+                    size: 14px;
+
+                 }
+                line-height: 25px;
+              }
+              &.pro-date{
+                 line-height: 15px;
+              }
+            }
           }
         }
-   }
 
-  .Product-delivery{
-    border-left:$border;
-    border-right:$border;
-    border-bottom: 1px dashed #ddd;
-    border-top: 3px solid #30bafb;
-    .log-list{
-         width: 285px;
-         border-right: 1px solid #ddd;
-      ul{
-         li{
-           
-           &:nth-of-type(1){
-             color: #6a6a6a;
-             text-align: center;
-             padding: 22px 0 48px 0;
-           }
-           &:nth-of-type(2){
-             font:{
-                size: 26px;
-             }
-             color: #25bdff;
-             margin-left: 47px;
-             line-height: 68-26px;
-             i{
-               width: 58px;
-               height: 68px;
-               background:url("../../images/orders/正在出库.png") no-repeat !important;
+      .pro-register2{
+        @extend .pro-register;
+        margin-left: 109px;
+        }
+       .pro-line2{
+        @extend .pro-line;
+        .pro-line-crumbs{
+          background:transparent url(/images/orders/pro-line.png)  no-repeat scroll -179px 0;
+          position: absolute;
+          margin-left: 10px;
+        }
+
+      }
+
+      .pro-register3{
+        @extend .pro-register;
+        margin-left: 109px;
+        .pro-text{color:#999 !important;}
+
+      }
+      .pro-line3{
+        @extend .pro-line;
+        .pro-line-crumbs{
+          background:transparent url(/images/orders/pro-line.png)  no-repeat scroll -359px 0;
+          position: absolute;
+          margin-left: 10px;
+        }
+
+      }
+
+      .pro-register4{
+        @extend .pro-register3;
+        margin-left: 109px;
+      }
+      .pro-line4{
+        @extend .pro-line3;
+              }
+
+      .pro-register5{
+        @extend .pro-register3;
+        margin-left: 109px;
+      }
+
+    }
+
+  }
+  /*express way*/
+
+  .express-way {
+   // padding-top: 15px;
+    width: 1100px;
+    height: auto;
+    display: inline-block;
+    border: {
+      top: $border1;
+      right: $border;
+      left: $border;
+      bottom: $border1;
+    }
+    margin-top: 20px;
+    .detail-cont {
+      float: left;
+      font: {
+        family: $main-sec-ff;
+        size: 12px;
+      }
+      color: #666;
+      width: 285px;
+      border-right: $border;
+      ul {
+        padding: 20px 0 101px 27px;
+        li {
+          padding-top: 9px;
+          label{
+             float:left;
+            width: 70px;
+          }
+        }
+      }
+    }
+
+    .detail-status {
+      float: left;
+      padding-top: 20px;
+      ul {
+        margin-left: 12px;
+        padding-left: 10px;
+        font-size: 12px;
+        li {
+          border-left: 1px solid #d9d9d9 !important;
+          height: auto;
+          min-height: 25px;
+          &::before {
+            content: '';
+            border: 3px solid $white;
+            background: #d9d9d9;
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 5px;
+            margin-left: -6px;
+            margin-right: 10px;
+          }
+          span {
+            font-weight: bold;
+            &.date {
+              margin-right: 8px;
+            }
+            &.delivery{
+              font-weight: 600;
+            }
+
+          }
+
+          &.last {
+            border: none;
+            color: #fe4300;
+            &::before {
+              content: '';
+              border: 3px solid #f8e9e4;
+              background: #fe4300;
+            }
+          }
+
+        }
+
+      }
+    }
+
+
+  }
+  /*consignee*/
+  .consignee{
+    margin-top: 20px;
+    font-size: 12px;
+    border: {
+      top: $border1;
+      right: $border;
+      left: $border1;
+
+    }
+    .cons-info1{
+       border-right: 1px solid #ddd;
+    }
+    .cons-info{
+      width: 273px;
+      border-left: $border;
+      background: url("/images/orders/line.png") no-repeat bottom;
+      font{
+        family:"SimHei";
+        size: 12px;
+         }
+      font-weight: 600;
+      padding-top: 11px;
+      color: #333;
+      float: left;
+     ul{
+        padding: 0 0 20px 20px;
+        li{
+           padding-top: 9px;
+           font-size: 12px;
+
+            .cons-title{
+              font-size: 14px;
+              margin:0 0 15-9px 0;
+            }
+
+           label{
+               width: 50px;
                display: inline-block;
-               margin-right: 16px;
+                float: left;
 
+
+           }
+           span{
+              width: 181px;
+              display: block;
+              margin-left:55px;
+             font-family:"SimHei";
+
+              &.address{
+               word-break:break-all;
+               display: block;
+               margin-left: 57px;
+               padding-right: 40px;
+               line-height: 1.9rem;
              }
 
            }
-           &:nth-of-type(3){
-             button {
-               width: 100px;
-               height: 27px;
-               background: $white;
-               color: #fb5e5e;
-               border: 1px solid #fb5e5e;
-               border-radius:3px;
-               margin-right: 27px;
-             }
-             padding: 49px 0 20px 50px;
-           }
-
          }
       }
     }
   }
-/*express way*/
-.express-way{
-
+.pic{
+   margin-top: 30px;
+   span:nth-last-child(odd){
+       float: right;
+   }
 }
+  .guess-like{
+     position: relative;
+     width: 1100px;
+     height: 356px;
+     background: $white;
+     font-size: 12px;
+     font-family:'SimHei';
+    margin-top: 30px;
+    .guess-title{
+      position: relative;
+      height: 45px;
+      line-height: 45px;
+      background-color: #f5f5f5;
+           a{
+              &:nth-of-type(odd){
+                 width: 113px;
+                 height: 90px;
+                border-bottom: 1px solid #6ac8ff;
+                color: #6ac8ff;
+                font:{
+                   size: 14px;
+                   weight: bold;
+                }
+                padding: 15px;
+              }
+             &:nth-of-type(even){
+                 float: right;
+                 color: #303030;
+                 margin-right: 9px;
+               span{
+                  margin-left: 8px;
+                  color: #b9b9b9;
+               }
+             }
+           }
+    }
+
+    .guess-content{
+       position: relative;
+       height: 345px;
+      .guess-item{
+         position: relative;
+         overflow: hidden;
+        .item-group{
+           position: relative;
+           padding: 10px 0px 10px 30px;
+          .guess-item{
+             position: relative;
+            float: left;
+            margin-right:49px;
+            width: 165px;
+            height: 270px;
+            .item-pic{
+              width: 147px;
+              margin: 20px auto 10px;
+            }
+            .item-text{
+               font:{
+                  family: $main-sec-ff;
+                  size: 12px;
+
+               }
+
+              p{
+                line-height: 18px;
+                a{
+                  color: #383838;
+                }
+                 strong{
+                    color: #c6120d;
+                 }
+                &:nth-of-type(even){
+                   a{
+                     color: #333333;
+                     float: right;
+                   }
+                  margin-top: 10px;
+                }
+                &:nth-of-type(odd){
+                   font-weight: bold;
+
+                }
+              }
+            }
+
+          }
+        }
+
+
+      }
+
+      .guess-button{
+        position: absolute;
+       //button:20px !important;
+       left: 42%;
+        width: 232px;
+        height: 10px;
+        .guess-pagination{
+          position: absolute;
+          width: 115px;
+          height: 18px;
+          a{
+            float: left;
+            margin-right: 6px;
+
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              background-color:#dcdcdc;
+             // font-size: 20px;
+              line-height: 7px;
+              border-radius:5px;
+
+
+            &.guess-current{
+               background-color: #33bbe3;
+            }
+          }
+        }
+        button{
+          width: 64px;
+          position: absolute;
+          left: 40%;
+          top:-8px;
+           .guess-reload-button{
+
+
+                color: #8b8b8b;
+
+               cursor: pointer;
+                   &:hover{
+                      color: #38b6f0;
+                   }
+
+           }
+
+        }
+
+      }
+
+
+
+
+
+
+    }
+
+
+  }
+
+
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/orders/allorders.css" />
     <link rel="stylesheet" href="/css/orders/logisticsdetails.css">
+    <script src="/js/common.js"></script>
 
 
 </head>
@@ -86,28 +87,345 @@
             <div class="log-list">
               <ul>
                   <li>订单号：123145647850</li>
-                  <li><i>1</i>正在出库</li>
-                  <li><button>催单</button><a href="javascript:void(0)"><img src="/images/orders/contactus.png"/></a></li>
+                  <li>
+                      <i>1</i>
+                      正在出库
+                  </li>
+                  <li>
+                      <button>催单</button>
+                      <a href="javascript:void(0)">
+                          <img src="/images/orders/contactus.png"/>
+                      </a>
+                  </li>
               </ul>
             </div>
 
+
             <div class="progressbar">
+                <div class="pro-register">
+               <i class="submitted">
+                   <img src="/images/orders/submitted.png" />
+               </i>
                 <ul>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
+                    <li class="pro-null">&nbsp;</li>
+                    <li class="pro-text">提交订单</li>
+                    <li class="pro-date">2016-10-20</li>
+                    <li class="pro-time">14:20:15</li>
                 </ul>
             </div>
 
+
+                <div class="pro-line">
+                    <div class="pro-line-crumbs"></div>
+                </div>
+
+
+                <div class="pro-register2">
+                    <i class="submitted">
+                        <img src="/images/orders/out-of-the-library.png" />
+                    </i>
+                    <ul>
+                        <li class="pro-null">&nbsp;</li>
+                        <li class="pro-text">正在出库</li>
+                  </ul>
+                </div>
+
+
+                <div class="pro-line2">
+                    <div class="pro-line-crumbs"></div>
+                </div>
+
+
+                <div class="pro-register3">
+                    <svg role="img" class="no-transport">
+                        <use xlink:href="#no-transport"></use>
+                    </svg>
+                    <ul>
+                        <li class="pro-null">&nbsp;</li>
+                        <li class="pro-text">运输中</li>
+
+                    </ul>
+                </div>
+
+
+                <div class="pro-line3">
+                    <div class="pro-line-crumbs"></div>
+                </div>
+
+
+                <div class="pro-register4">
+                    <svg role="img" class="no-delivery">
+                        <use xlink:href="#no-delivery"></use>
+                    </svg>
+                    <ul>
+                        <li class="pro-null">&nbsp;</li>
+                        <li class="pro-text">派送中</li>
+
+                    </ul>
+                </div>
+
+
+                <div class="pro-line4">
+                    <div class="pro-line-crumbs"></div>
+                </div>
+
+
+                <div class="pro-register5">
+                    <svg role="img" class="not-completed">
+                        <use xlink:href="#not-completed"></use>
+                    </svg>
+                    <ul>
+                        <li class="pro-null">&nbsp;</li>
+                        <li class="pro-text">完成</li>
+
+                    </ul>
+                </div>
+
+
             </div>
 
-        <!--快递方式-->
-          <div class="express-way">
-
-          </div>
+              <div class="order-cancellation">
+                   <a href="javascript:void(0)">取消订单</a>
+                   <a href="javascript:void(0)">投诉卖家</a>
+              </div>
 
         </div>
+
+        <!--快递方式-->
+
+          <div class="express-way">
+              <div class="detail-cont">
+                  <ul>
+                      <li>
+                         <label>
+                             运单号：
+                         </label>
+                          <strong>
+                              123145647850
+                          </strong>
+                      </li>
+                      <li>
+                          <label>物流公司：</label>
+                          <strong>
+                              韵达快递
+                          </strong>
+                      </li>
+                      <li>
+                          <label>客服电话：</label>
+                          <strong>
+                            1234567891
+                          </strong>
+                      </li>
+                  </ul>
+              </div>
+              <div class="detail-status">
+                   <ul>
+                       <li>
+                           <span class="date">2016-10-28</span>
+                           <span class="time">18:10:20</span>
+                           <span class="wek">周六</span>
+                           <span class="delivery">包裹正在揽件</span>
+                       </li>
+                       <li class="last">
+                           <span class="date">2016-10-28</span>
+                           <span class="time">18:10:20</span>
+                           <span class="wek">周六</span>
+                           <span class="delivery">百事快递 无锡高薪区二部件收件员 已揽件</span>
+                       </li>
+
+                   </ul>
+              </div>
+          </div>
+
+        <!--收货人信息-->
+        <div class="consignee">
+             <div class="cons-info">
+                 <ul>
+                     <li><span class="cons-title">收货人信息</span></li>
+                     <li><label>收货人:</label><span>张三</span>
+                     <li><label>地址:</label><span class="address">广东省广州市天河区棠东毓南路13号冠达商务中心E栋111室</span></li>
+                     <li><label>手机号:</label><span>123456789123</span></li>
+                 </ul>
+
+             </div>
+
+            <div class="cons-info">
+                <ul>
+                    <li><span class="cons-title">收货人信息</span></li>
+                    <li><label>收货人:</label><span>张三</span>
+                    <li><label>地址:</label><span class="address">广东省广州市天河区棠东毓南路13号冠达商务中心E栋111室</span></li>
+                    <li><label>手机号:</label><span>123456789123</span></li>
+                </ul>
+
+            </div>
+
+            <div class="cons-info">
+                <ul>
+                    <li><span class="cons-title">收货人信息</span></li>
+                    <li><label>收货人:</label><span>张三</span>
+                    <li><label>地址:</label><span class="address">广东省广州市天河区棠东毓南路13号冠达商务中心E栋111室</span></li>
+                    <li><label>手机号:</label><span>123456789123</span></li>
+                </ul>
+
+            </div>
+
+            <div class="cons-info cons-info1">
+                <ul>
+                    <li><span class="cons-title">收货人信息</span></li>
+                    <li><label>收货人:</label><span>张三</span>
+                    <li><label>地址:</label><span class="address">广东省广州市天河区棠东毓南路13号冠达商务中心E栋111室</span></li>
+                    <li><label>手机号:</label><span>123456789123</span></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="clearfix"></div>
+        <div class="pic">
+            <span><img src="/images/orders/pic1.png"/></span>
+            <span><img src="/images/orders/pic2.png"/></span>
+        </div>
+
+
+        <!--猜你喜欢-->
+        <div class="guess-like">
+              <div class="guess-title">
+                  <a href="javascript:void(0)">热卖单品</a>
+                  <a href="javascript:void(0)">更多<span>></span></a>
+              </div>
+              <div class="guess-content">
+                     <div class="guess-item">
+                          <div class="item-group">
+                                <div class="guess-item">
+                                         <div class="item-pic">
+                                             <a href="javascript:void(0)"><img src="/images/cart/shangpin09.png"/></a>
+                                         </div>
+                                         <div class="item-text">
+                                                 <p>
+                                                     <a href="javascript:void(0)">
+                                                         士力架全家桶 花生夹心巧克力 运动休闲零食品婚庆喜糖果
+                                                         </a>
+                                                 </p>
+                                                <p>
+                                                    <strong>¥2899</strong>
+                                                    <a href="javascript:void(0)">8149评价</a>
+                                                </p>
+                                         </div>
+                                </div>
+
+                              <div class="guess-item">
+                                  <div class="item-pic">
+                                      <a href="javascript:void(0)"><img src="/images/cart/shangpin09.png"/></a>
+                                  </div>
+                                  <div class="item-text">
+                                      <p>
+                                          <a href="javascript:void(0)">
+                                              士力架全家桶 花生夹心巧克力 运动休闲零食品婚庆喜糖果
+                                          </a>
+                                      </p>
+                                      <p>
+                                          <strong>¥2899</strong>
+                                          <a href="javascript:void(0)">8149评价</a>
+                                      </p>
+                                  </div>
+                              </div>
+
+
+                              <div class="guess-item">
+                                  <div class="item-pic">
+                                      <a href="javascript:void(0)"><img src="/images/cart/shangpin09.png"/></a>
+                                  </div>
+                                  <div class="item-text">
+                                      <p>
+                                          <a href="javascript:void(0)">
+                                              士力架全家桶 花生夹心巧克力 运动休闲零食品婚庆喜糖果
+                                          </a>
+                                      </p>
+                                      <p>
+                                          <strong>¥2899</strong>
+                                          <a href="javascript:void(0)">8149评价</a>
+                                      </p>
+                                  </div>
+                              </div>
+
+
+                              <div class="guess-item">
+                                  <div class="item-pic">
+                                      <a href="javascript:void(0)"><img src="/images/cart/shangpin09.png"/></a>
+                                  </div>
+                                  <div class="item-text">
+                                      <p>
+                                          <a href="javascript:void(0)">
+                                              士力架全家桶 花生夹心巧克力 运动休闲零食品婚庆喜糖果
+                                          </a>
+                                      </p>
+                                      <p>
+                                          <strong>¥2899</strong>
+                                          <a href="javascript:void(0)">8149评价</a>
+                                      </p>
+                                  </div>
+                              </div>
+
+
+                              <div class="guess-item">
+                                  <div class="item-pic">
+                                      <a href="javascript:void(0)"><img src="/images/cart/shangpin09.png"/></a>
+                                  </div>
+                                  <div class="item-text">
+                                      <p>
+                                          <a href="javascript:void(0)">
+                                              士力架全家桶 花生夹心巧克力 运动休闲零食品婚庆喜糖果
+                                          </a>
+                                      </p>
+                                      <p>
+                                          <strong>¥2899</strong>
+                                          <a href="javascript:void(0)">8149评价</a>
+                                      </p>
+                                  </div>
+                              </div>
+
+
+
+                          </div>
+                     </div>
+<br><br/>
+                  <div class="guess-button">
+                            <div class="guess-pagination">
+                                 <a href="javascript:void(0)" class="guess-current">
+
+                                 </a>
+                                <a href="javascript:void(0)" >
+
+                                </a>
+                                <a href="javascript:void(0)">
+
+                                </a>
+                                <a href="javascript:void(0)">
+
+                                </a>
+                                <a href="javascript:void(0)" >
+
+                                </a>
+                            </div>
+
+                      <button>
+                      <a href="javascript:void(0)" class="guess-reload-button">
+                           换一组
+                      </a>
+                      </button>
+                  </div>
+
+
+
+
+              </div>
+        </div>
+
+
+        </div>
+
 
     </div>
 

@@ -1,3 +1,73 @@
+.card {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.dianpu {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.fangdajing {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.gouwuche {
+  width: 500px;
+  height: 500px;
+}
+
+.next {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.next02 {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.right {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.search {
+  width: 200px;
+  height: 200px;
+}
+
+.nanxie {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.nanzhuang {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.neiyi {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.nvxie {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.nvzhuang {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
+.xiangbao {
+  width: 1000.636px;
+  height: 1000.678px;
+}
+
 .bangong {
   width: 1000.636px;
   height: 1000.678px;
@@ -28,211 +98,123 @@
   height: 1000.678px;
 }
 
-.nanxie {
-  width: 1000.636px;
-  height: 1000.678px;
-}
-
-.nanzhuang {
-  width: 1000.636px;
-  height: 1000.678px;
-}
-
-.neiyi {
-<<<<<<< HEAD
-=======
-  width: 1000.636px;
-  height: 1000.678px;
-}
-
-.nvxie {
->>>>>>> upstream/master
-  width: 1000.636px;
-  height: 1000.678px;
-}
-
-<<<<<<< HEAD
-.nvxie {
-=======
-.nvzhuang {
->>>>>>> upstream/master
-  width: 1000.636px;
-  height: 1000.678px;
-}
-
-<<<<<<< HEAD
-.nvzhuang {
-=======
-.xiangbao {
->>>>>>> upstream/master
-  width: 1000.636px;
-  height: 1000.678px;
-}
-
-<<<<<<< HEAD
-.xiangbao {
-=======
 .bag {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
-.bag {
-=======
 .basketball {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
-.basketball {
-=======
 .computer {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
-.computer {
-=======
 .index_family {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
-.index_family {
-=======
 .iphone {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
-.iphone {
-=======
 .makeup {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
-.makeup {
-=======
 .next-page {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
-.next-page {
-=======
 .next {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
-.next {
-=======
 .shopping {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
-}
-
-<<<<<<< HEAD
-.shopping {
-  width: 200px;
-  height: 200px;
 }
 
 .body {
-=======
-.shop {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
 .face {
-=======
-.shop {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
 .hot {
-=======
-.shop {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
 .pinpai {
-=======
-.body {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
 .xiangshui {
-=======
-.face {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
 .xifahufa {
-=======
-.hot {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
 .shop {
-=======
-.pinpai {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
 .shop {
-=======
-.xiangshui {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
 }
 
-<<<<<<< HEAD
 .shop {
-=======
-.xifahufa {
->>>>>>> upstream/master
   width: 1000.636px;
   height: 1000.678px;
+}
+
+.being-library {
+  width: 500px;
+  height: 500px;
+}
+
+.no-delivery {
+  width: 500px;
+  height: 500px;
+}
+
+.no-transport {
+  width: 500px;
+  height: 500px;
+}
+
+.no-transport2 {
+  width: 500px;
+  height: 500px;
+}
+
+.not-completed {
+  width: 500px;
+  height: 500px;
+}
+
+.not-single {
+  width: 500px;
+  height: 500px;
 }
 

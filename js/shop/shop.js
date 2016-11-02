@@ -27,6 +27,13 @@ window.onload = function(){
         }
     })
 
+    $('.right-option a').click(function() {
+        $(this).addClass('current').siblings().removeClass('current')
+    })
+    $(".listnum").first().addClass("present")
+    $('.menu a').not(".listnum3").click(function() {
+        $(this).addClass('present').siblings().removeClass('present')
+    })
 
 
     /*店铺banner*/
