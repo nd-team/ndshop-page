@@ -1,0 +1,167 @@
+@import "../layout/variables", "../layout/mixin";
+#user-head{
+  background:#33b6ff;
+  margin-top:0;
+  margin-bottom:30px;
+  .header-lg{
+    width:210px;
+    height:80px;
+    .logo{
+      margin:18px 0;
+      background:url("/images/orders/logo.png") no-repeat;
+    }
+  }
+  .myshop{
+    float:left;
+    color:#fff;
+    width:80px;
+    text-align:center;
+    padding:15px 0;
+    line-height:25px;
+    a{
+      color:#fff;
+      display:inline-block;
+      width:100%;
+      height:17px;
+      line-height:17px;
+      border:1px solid #fff;
+      border-radius:10px;
+
+    }
+  }
+  .topnav{
+    li{
+      float:left;
+      margin:0 40px;
+      height:80px;
+      line-height:80px;
+      a{
+        font-size:16px;
+        color:#fff;
+      }
+    }
+  }
+  .search-wrap{
+    margin:24px 0 0 85px;
+    height:32px;
+    input{
+      width:144px;
+      height:32px;
+      padding:0;
+      margin:0;
+      border:0;
+      text-indent:5px;
+      font-size:12px;
+    }
+    button{
+      width:56px;
+      height:32px;
+      background:#fff;
+      padding:0;
+      color:#333;
+      font-size:12px;
+
+    }
+  }
+  .shopping-cart{
+    width:140px;
+    height:32px;
+    background:#fff;
+    margin:24px 0;
+    line-height:32px;
+    text-indent:10px;
+    a{
+      color:#666;
+      vertical-align:middle;
+      .shopping{
+        width:20px;
+        height:20px;
+        vertical-align:-3px;
+      }
+    }
+  }
+}
+#user-sidebar{
+  float:left;
+  h3{
+    font-size:16px;
+    color:#363636;
+  }
+  .menu{
+    margin-left:16px;
+    a{
+      display:block;
+      margin:12px 0;
+      font-size:14px;
+      &.active{
+        color:#e13332;
+      }
+    }
+  }
+
+}
+.safety-con{
+  width:980px;
+  float:right;
+  color:#666;
+  h2{
+
+    font-size:12px;
+  }
+  .safelist{
+    height:50px;
+    padding:25px 0;
+    border-bottom:1px solid #ededed;
+    svg{
+      width:31px;
+      height:21px;
+      vertical-align:-2px;
+    }
+    dt{
+      float:left;
+      height:50px;
+      line-height:50px;
+      padding:0 28px;
+      border-right:1px solid #ededed;
+      strong{
+        font-family:'Microsoft YaHei';
+        font-size:18px;
+        color:#666;
+      }
+    }
+    dd{
+      float:left;
+      height:50px;
+      line-height:50px;
+      padding:0 30px;
+      width:700px;
+      p{
+        float:left;
+        &.red{
+          color:#ff0e0e;
+        }
+        span{
+          margin:0 25px 0 15px;
+        }
+      }
+
+      a{
+        float:right;
+        color:#30b5fa;
+        display:inline-block;
+        width:80px;
+        text-align:center;
+        height:25px;
+        line-height:25px;
+        margin-top:15px;
+        &.bg{
+          height:25px;
+          background:linear-gradient(#ddffd6,#b4f8a3);
+          color:#666;
+          border:1px solid #addaa3;
+          border-radius:3px;
+        }
+      }
+    }
+  }
+}
