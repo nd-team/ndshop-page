@@ -67,6 +67,91 @@
   }
 }
 
+@mixin food-title{
+  .food-title{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family:"Microsoft YaHei";
+    margin-bottom: 10px;
+    h3{
+      float: left;
+      font:{
+        size: 20px;
+      }
+      color: #FF7200;
+      padding-right: 10px;
+    }
+    span{
+      display: inline-block;
+      float: left;
+      font-size: 12px;
+      color: #999;
+      line-height: 28px;
+    }
+  }
+}
+
+@mixin global-title{
+  line-height: 42px;
+  color: #FF7200;
+  font:{
+    size: 20px;
+    family: "Microsoft YaHei";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

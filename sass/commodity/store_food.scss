@@ -1,0 +1,256 @@
+@import "../layout/food_sidebar","../layout/variables", "../layout/mixin";
+
+#content{
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+}
+
+
+//有品大牌部分样式开始
+.big-products{
+  @include same-box;
+  margin-top: 80px;
+  @include food-title;
+  .big-products-list{
+    @include same-box;
+    .big-photo{
+      width: 600px;
+      float: left;
+    }
+    .big-products-brand{
+      float: right;
+      width: 500px;
+      ul{
+        overflow: hidden;
+        li{
+          width: 166px;
+          height: 99px;
+          float: left;
+          &:nth-child(even){
+            background-color: #dddddd;
+          }
+          &:nth-child(odd){
+            background-color: #ededed;
+          }
+          overflow: hidden;
+          cursor: pointer;
+          &:hover{
+            background-color: #ef6548;
+            .same-products-style{
+              $white:#fff;
+              span{
+                color: $white;
+                &.dove-res{
+                  .arrow{
+                    color: $white ;
+                  }
+                }
+
+              }
+            }
+          }
+          .dove-pic{
+            float: left;
+            width: 71px;
+            height: 71px;
+            margin: {
+              top:20px;
+              left: 10px;
+              right: 5px;
+            }
+          }
+          .same-products-style{
+            float: left;
+            padding-top: 32px;
+            width: 70px;
+            span{
+              display: block;
+              color: #666666;
+              &.dove-title{
+                font:{
+                  size: 14px;
+                  family: $main-sec-ff;
+                }
+
+              }
+              &.dove-res{
+                word-wrap: break-word;
+                word-break: normal;
+                line-height: 18px;
+                font-size: 12px;
+                .arrow{
+                  color: #666;
+                  cursor: pointer;
+                  padding-left: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+//有品大牌部分样式结束
+
+//全球美食部分样式开始
+.global-cuisine{
+  @include same-box;
+  .cuisine-title{
+    @include global-title;
+    margin:{
+      top: 50px;
+      bottom: 10px;
+    }
+  }
+  .global-food{
+    @include same-box;
+    .global-food-first{
+      width: 288px;
+      height: 336px;
+      float: left;
+    }
+    .global-food-center{
+      width: 608px;
+      height: 336px;
+      background-color: #fff;
+      float: left;
+      .cuisine-show{
+        width: 100%;
+        li{
+          float: left;
+          width: 202px;
+          height: 168px;
+          border: {
+            right: 1px;
+            bottom: 1px;
+            style: solid;
+            color: #ededed;
+          }
+          &.global-border-no{
+            border-right:0;
+          }
+          &.no-bd{
+            border-bottom: 0;
+          }
+          .global-cuisine-photo{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: block;
+            padding-top: 8px;
+          }
+          .global-cuisine-text{
+            width: 186px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            line-height: 26px;
+            font: {
+              size: 12px;
+              family: "SimSun";
+            }
+            padding-left: 10px;
+            margin-top: 10px;
+          }
+          .cuisine-money{
+            display: block;
+            color: #e21414;
+            font:{
+              size: 14px;
+              family: $main-sec-ff;
+              weight: bold;
+            }
+            padding-left: 8px;
+          }
+        }
+      }
+    }
+    .good-time{
+      width: 203px;
+      height: 336px;
+      float: right;
+    }
+  }
+}
+//全球美食部分样式结束
+
+
+//坚果零食部分样式开始
+.nuts-snacks{
+  @include same-box;
+  margin-top: 30px;
+  .snacks-title{
+    @include global-title;
+    margin: {
+      bottom:5px;
+    }
+  }
+  .snacks-picture{
+    @include same-box;
+    .snacks-picture-list{
+      li{
+        float: left;
+        a{
+          display: block;
+          &.squirrels-pic{
+            width: 548px;
+            height: 399px;
+          }
+          &.squirrels-pic01{
+            width: 274px;
+            height: 399px;
+          }
+        }
+
+      }
+    }
+  }
+}
+//坚果零食部分样式结束
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//service
+.service{
+  background-color: #fafafa;
+  border-top:1px solid #e6e6e6;
+  margin-bottom: 0;
+}
+
+
+.service-center{
+  padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
