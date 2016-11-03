@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>全部订单</title>
+    <title>评价页面</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
@@ -114,24 +114,19 @@
         </div>
     </div>
     <div class="order-main clearfix">
-        <h3>我的订单</h3>
+        <h3>评价晒单</h3>
         <div class="order-nav clearfix">
             <ul>
                 <li class="active">
-                    <a href="/pages/orders/allorders.html">全部订单</a>
+                    <a href="javascript:void(0)" >待评价</a>
                 </li>
                 <li>
-                    <a href="/pages/orders/pay.html">待支付</a>
+                    <a href="javascript:void(0)">已评价</a>
                 </li>
                 <li >
-                    <a href="/pages/orders/ship.html">待发货</a>
+                    <a href="javascript:void(0)">追加评价</a>
                 </li>
-                <li >
-                    <a href="/pages/orders/receipt.html">待收货</a>
-                </li>
-                <li >
-                    <a href="/pages/orders/evaluation.html">待评价</a>
-                </li>
+
             </ul>
             <div class="order-recycle">
                 <a href="javascript:void(0)">订单回收站</a>
@@ -140,14 +135,17 @@
         <div class="order-search clearfix">
             <p>
                 <input type="text" placeholder="商品名称/商品编号/订单号"><a href="javascript:void(0) ">订单搜索</a>
-
             </p>
             <select name="" id="">
                 <option value="">筛选更多</option>
             </select>
         </div>
         <ul class="order-thead">
-            <li class="order-all">全部订单</li>
+            <li class="order-all">
+                <select >
+                    <option value="">近一周的订单</option>
+                </select>
+            </li>
             <li class="order-deatil">订单详情</li>
             <li class="order-price">单价</li>
             <li class="order-num">数量</li>
@@ -160,6 +158,10 @@
             </li>
             <li class="order-dealoper">交易操作</li>
         </ul>
+        <div class="allselect">
+            <input type="checkbox">全选
+            <a href="javascript:void(0)">全部删除</a>
+        </div>
         <div class="order-list">
             <div class="list-con-tit">
                 <ul>
@@ -170,15 +172,68 @@
                 <a href="javascript:void(0)" class="list-contact">
                     <img src="/images/orders/contactus.png" alt="">
                 </a>
-                <a href="javascript:void(0)" class="list-delect">
-                    <svg role="img" class="delete">
-                        <use xlink:href="#delete"></use>
-                    </svg>
-                </a>
             </div>
 
 
             <div class="list-con clearfix ">
+                <div class="list-con-main clearfix">
+                    <ul >
+                        <li class="list-con-img"><img src="/images/index/img10.jpg" alt=""></li>
+                        <li class="order-deatil ">
+                            <a href="javascript:void(0)" class="list-deatil-text">皮箱 皮箱 皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱</a>
+                            <a href="javascript:void(0)" class="list-deatil-back">
+                                <svg role="img" class="order_zhi">
+                                    <use xlink:href="#order_zhi"></use>
+                                </svg>
+                                <svg role="img" class="order_back">
+                                    <use xlink:href="#order_back"></use>
+                                </svg>
+                                退换
+                            </a>
+                            <a href="javascript:void(0)" class="list-deatil-like">
+                                <svg role="img" class="order_like">
+                                    <use xlink:href="#order_like"></use>
+                                </svg>
+                                找相识
+                            </a>
+                        </li>
+                        <li class="order-price">￥50.00</li>
+                        <li class="order-num">1</li>
+                        <li class="order-oper">
+                            <a href="javascript:void(0)">申请退款</a>
+                            <a href="javascript:void(0)">投诉卖家</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-sta list-total">
+                    <p>￥50.00</p>
+                    (含运费：￥0.00)
+                </div>
+                <div class="order-dealtype list-dealtype">
+                    <p>买家已发货</p>
+                    <a href="javascript:void(0)">订单详情</a>
+                    <a href="javascript:void(0)">物流详情</a>
+                </div>
+                <div class="order-dealoper list-dealoper">
+                    <a href="javascript:void(0)" class="appraise">评价</a>
+                    <a href="javascript:void(0)">再次购买</a>
+                </div>
+            </div>
+        </div>
+        <div class="order-list">
+            <div class="list-con-tit">
+                <ul>
+                    <li><input type="checkbox"> 2016-10-29</li>
+                    <li class="orderNo">订单号：<span>1234567890</span></li>
+                    <li class="shopname">店铺名</li>
+                </ul>
+                <a href="javascript:void(0)" class="list-contact">
+                    <img src="/images/orders/contactus.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="list-con clearfix">
                 <div class="list-con-main clearfix">
                     <ul >
                         <li class="list-con-img"><img src="/images/index/img10.jpg" alt=""></li>
@@ -205,54 +260,11 @@
                             <a href="javascript:void(0)">投诉卖家</a>
                         </li>
                     </ul>
-                </div>
-                <div class="order-sta list-total">
-                    <p>￥50.00</p>
-                    (含运费：￥0.00)
-                </div>
-                <div class="order-dealtype list-dealtype">
-                    <a href="javascript:void(0)">已完成</a>
-                    <a href="javascript:void(0)">未完成</a>
-                    <a href="javascript:void(0)">订单详情</a>
-                </div>
-                <div class="order-dealoper list-dealoper">
-                    <a href="javascript:void(0)" class="appraise">评价</a>
-                </div>
-            </div>
-        </div>
-        <div class="order-list">
-            <div class="list-con-tit">
-                <ul>
-                    <li><input type="checkbox"> 2016-10-29</li>
-                    <li class="orderNo">订单号：<span>1234567890</span></li>
-                    <li class="shopname">店铺名</li>
-                </ul>
-                <a href="javascript:void(0)" class="list-contact">
-                    <img src="/images/orders/contactus.png" alt="">
-                </a>
-                <a href="javascript:void(0)" class="list-delect">
-                    <svg role="img" class="delete">
-                        <use xlink:href="#delete"></use>
-                    </svg>
-                </a>
-            </div>
-
-
-            <div class="list-con clearfix">
-                <div class="list-con-main clearfix">
                     <ul >
                         <li class="list-con-img"><img src="/images/index/img10.jpg" alt=""></li>
                         <li class="order-deatil ">
                             <a href="javascript:void(0)" class="list-deatil-text">皮箱 皮箱 皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱</a>
-                            <a href="javascript:void(0)" class="list-deatil-back">
-                                <svg role="img" class="order_zhi">
-                                    <use xlink:href="#order_zhi"></use>
-                                </svg>
-                                <svg role="img" class="order_back">
-                                    <use xlink:href="#order_back"></use>
-                                </svg>
-                                退换
-                            </a>
+                            <a href="javascript:void(0)" class="list-deatil-back">退换</a>
                             <a href="javascript:void(0)" class="list-deatil-like">
                                 <svg role="img" class="order_like">
                                     <use xlink:href="#order_like"></use>
@@ -267,25 +279,6 @@
                             <a href="javascript:void(0)">投诉卖家</a>
                         </li>
                     </ul>
-                    <ul >
-                        <li class="list-con-img"><img src="/images/index/img10.jpg" alt=""></li>
-                        <li class="order-deatil ">
-                            <a href="javascript:void(0)" class="list-deatil-text">皮箱 皮箱 皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱</a>
-                            <a href="javascript:void(0)" class="list-deatil-back">
-                                <svg role="img" class="order_back">
-                                    <use xlink:href="#order_back"></use>
-                                </svg>
-                                退换
-                            </a>
-                            <a href="javascript:void(0)" class="list-deatil-like">找相识</a>
-                        </li>
-                        <li class="order-price">￥50.00</li>
-                        <li class="order-num">1</li>
-                        <li class="order-oper">
-                            <a href="javascript:void(0)">申请售后</a>
-                            <a href="javascript:void(0)">投诉卖家</a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="order-sta list-total">
                     <p>￥50.00</p>
@@ -296,129 +289,41 @@
                     <a href="javascript:void(0)">订单详情</a>
                 </div>
                 <div class="order-dealoper list-dealoper">
-                    <a href="javascript:void(0)" class="paynow">立即付款</a>
-                    <a href="javascript:void(0)" >再次购买</a>
-                    <a href="javascript:void(0)" >取消订单</a>
+                    <a href="javascript:void(0)" class="appraise">评价</a>
+                    <a href="javascript:void(0)">再次购买</a>
                 </div>
             </div>
-
         </div>
-        <div class="order-list">
-            <div class="list-con-tit">
-                <ul>
-                    <li><input type="checkbox"> 2016-10-29</li>
-                    <li class="orderNo">订单号：<span>1234567890</span></li>
-                    <li class="shopname">店铺名</li>
-                </ul>
-                <a href="javascript:void(0)" class="list-contact">
-                    <img src="/images/orders/contactus.png" alt="">
-                </a>
-                <a href="javascript:void(0)" class="list-delect">
-                    <svg role="img" class="delete">
-                        <use xlink:href="#delete"></use>
-                    </svg>
-                </a>
-            </div>
+        <div class="allselect">
+            <input type="checkbox">全选
+            <a href="javascript:void(0)">全部删除</a>
+        </div>
+        <div class="order-page clearfix">
+            <button class="lastpage"><i></i></button>
+            <ul >
+                <li >
+                    <a href="javascript:void(0)" class="active">1</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">2</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">3</a>
+                </li>
 
-
-            <div class="list-con clearfix">
-                <div class="list-con-main clearfix">
-                    <ul >
-                        <li class="list-con-img"><img src="/images/index/img10.jpg" alt=""></li>
-                        <li class="order-deatil ">
-                            <a href="javascript:void(0)" class="list-deatil-text">皮箱 皮箱 皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱</a>
-                            <a href="javascript:void(0)" class="list-deatil-back">
-                                <svg role="img" class="order_back">
-                                    <use xlink:href="#order_back"></use>
-                                </svg>
-                                退换
-                            </a>
-                            <a href="javascript:void(0)" class="list-deatil-like">找相识</a>
-                        </li>
-                        <li class="order-price">￥50.00</li>
-                        <li class="order-num">1</li>
-                        <li class="order-oper">
-                            <a href="javascript:void(0)">
-                                <svg role="img" class="order_money">
-                                    <use xlink:href="#order_money"></use>
-                                </svg>
-                                查看退款
-                            </a>
-                            <a href="javascript:void(0)">投诉卖家</a>
-                            <a href="javascript:void(0)" class="back-appraise">退款评价</a>
-                        </li>
-                    </ul>
-                    <ul >
-                        <li class="list-con-img"><img src="/images/index/img10.jpg" alt=""></li>
-                        <li class="order-deatil ">
-                            <a href="javascript:void(0)" class="list-deatil-text">皮箱 皮箱 皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱</a>
-                            <a href="javascript:void(0)" class="list-deatil-back">退换</a>
-                            <a href="javascript:void(0)" class="list-deatil-like">找相识</a>
-                        </li>
-                        <li class="order-price">￥50.00</li>
-                        <li class="order-num">1</li>
-                        <li class="order-oper">
-                            <a href="javascript:void(0)">查看退款</a>
-                            <a href="javascript:void(0)">投诉卖家</a>
-                        </li>
-                    </ul>
-                    <ul >
-                        <li class="list-con-img"><img src="/images/index/img10.jpg" alt=""></li>
-                        <li class="order-deatil ">
-                            <a href="javascript:void(0)" class="list-deatil-text">皮箱 皮箱 皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱皮箱</a>
-                            <a href="javascript:void(0)" class="list-deatil-back">退换</a>
-                            <a href="javascript:void(0)" class="list-deatil-like">找相识</a>
-                        </li>
-                        <li class="order-price">￥50.00</li>
-                        <li class="order-num">1</li>
-                        <li class="order-oper">
-                            <a href="javascript:void(0)">
-                                <svg role="img" class="order_money">
-                                    <use xlink:href="#order_money"></use>
-                                </svg>
-                                查看退款
-                            </a>
-                            <a href="javascript:void(0)">投诉卖家</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="order-sta list-total">
-                    <p>￥50.00</p>
-                    (含运费：￥0.00)
-                </div>
-                <div class="order-dealtype list-dealtype">
-                    <a href="javascript:void(0)">待付款</a>
-                    <a href="javascript:void(0)">订单详情</a>
-                </div>
-                <div class="order-dealoper list-dealoper">
-                </div>
+            </ul>
+            <button class="nextpage"><i></i></button>
+            <p> 共100页</p>
+            <div class="jump-page">
+                跳转到：第 <input type="text" size="1"> 页
             </div>
+            <button>GO</button>
         </div>
     </div>
 
 
-    <div class="order-page clearfix">
-        <button class="lastpage"><i></i></button>
-        <ul >
-            <li >
-                <a href="javascript:void(0)" class="active">1</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">2</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">3</a>
-            </li>
 
-        </ul>
-        <button class="nextpage"><i></i></button>
-        <p> 共100页</p>
-        <div class="jump-page">
-            跳转到：第 <input type="text" size="1"> 页
-        </div>
-        <button>GO</button>
-    </div>
-    <div class="order-recommend">
+    <div class="order-recommend ">
         <div class="recom-title">
             <p>猜你喜欢</p>
             <a href="javascript:void(0)">更多 &gt;</a>

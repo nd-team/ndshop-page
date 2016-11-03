@@ -1,0 +1,132 @@
+@import "../layout/variables", "../layout/mixin";
+#content{
+  .breadcrumb{
+    height:50px;
+    line-height:50px;
+    font-family:$main-sec-ff;
+    font-size:18px;
+    color:#999;
+    strong{
+      color:#0071b2;
+      font-size:20px;
+    }
+  }
+  .footprint-nav{
+    font-family:"simsun";
+    ul{
+      li{
+        float:left;
+        height:49px;
+        line-height:49px;
+        a{
+          width:110px;
+          display:inline-block;
+          text-align:center;
+          &.active{
+            font-size:16px;
+            color:#fff;
+            background:#33b5ff;
+            border-radius:25px;
+            font-weight:bold;
+          }
+        }
+      }
+    }
+  }
+  .line{
+    float:left;
+
+  }
+  .footprint-main{
+    width:100%;
+    color:#666;
+    position:relative;
+    .footline{
+      width:2px;
+      background:#ddd;
+      position:absolute;
+      left:9px;
+      top:30px;
+      z-index:-2;
+    }
+    .footline-blue{
+      background:#30b5fa;
+      width:2px;
+      height:200px;
+      z-index:-1;
+      position:absolute;
+      left:9px;
+      top:30px;
+
+    }
+    .footprint-list{
+      margin:40px 0;
+      .print-title{
+        height:50px;
+        line-height:50px;
+        .line-curr{
+          display:inline-block;
+          width:20px;
+          height:20px;
+          background:#30b5fa;
+          border-radius:10px;
+          margin-right:50px;
+
+        }
+        strong{
+          font-family:"Microsoft YaHei";
+          font-size:18px;
+        }
+        span{
+          color:#999;
+          margin:0 30px 0 26px;
+        }
+        a{
+          color:#999;
+        }
+      }
+      .print-con{
+        margin-left:50px;
+        li{
+          width:220px;
+          height:294px;
+          float:left;
+          text-align:center;
+          font-family:"Microsoft YaHei";
+          margin:0 10px;
+          .x{
+            float:right;
+            font-size:25px;
+            transform:rotate(90deg);
+            display:inline-block;
+            color:#999;
+          }
+          .pic{
+            clear:both;
+            width:220px;
+            height:220px;
+            display:table-cell;
+            vertical-align:bottom;
+          }
+          p{
+            font-size:18px;
+            color:#333;
+            margin-top:16px;
+          }
+        }
+      }
+    }
+  }
+  .footinfo{
+    clear:both;
+    font-size:16px;
+    color:#666;
+    width:300px;
+    margin:0 auto;
+    font-weight:bold;
+  }
+}
+
+
+
+
