@@ -191,8 +191,8 @@
 
                 //运动健身弹窗样式开始
                 .sport-same-pw{
-                    width: 356px;
-                    height: 210px;
+                    width: 186px;
+                    height: 290px;
                     background-color: #fff;
                     position: absolute;
                     left: 227px;
@@ -201,7 +201,7 @@
                         right: 2px;
                         bottom: 2px;
                         style: solid;
-                        color: #42b999;
+                        color: #1e8bc4;
                     }
                     z-index: 100;
                     display: none;
@@ -209,35 +209,23 @@
                         overflow: hidden;
                         padding:{
                             top:20px;
-                            right: 10px;
-                            bottom: 15px;
-                            left:20px;
+                            right: 8px;
+                            left:9px;
                         }
-                        .sport-left{
-                            width: 174px;
-                            height: 174px;
-                            border-right:1px solid #ededed;
-                            float: left;
-                            .sport-text{
-                                height: 26px;
-                                a{
-                                    display: inline-block;
-                                    width: 85px;
-                                }
-                            }
-                        }
-                        .sport-right{
-                            float: left;
-                            margin-left: 20px;
-                            a{
+                        .sport-text{
+                            height: 25px;
+                            width: 160px;
+                            margin: 0 auto;
 
-                                img{
-                                    width: 116px;
-                                    height: 186px;
-                                    display: block;
-                                    margin: 0 auto;
-                                }
+                            a{
+                                display: inline-block;
+                                width: 78px;
                             }
+                        }
+                        .sport-pic{
+                            width: 168px;
+                            height: 83px;
+
                         }
                     }
                 }

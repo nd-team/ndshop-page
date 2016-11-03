@@ -56,7 +56,7 @@
 //独家新品部分样式开始
 .exclusive-products{
   @include same-box;
-  margin-top: 50px;
+  margin-top: 30px;
   .new-products{
     @include same-box;
     margin-bottom: 5px;
@@ -285,7 +285,7 @@
     @include same-box;
     border-top: 1px solid #1e8bc4;
     li{
-
+      float: left;
       &.training-show-first{
         width: 332px;
         a{
@@ -316,7 +316,31 @@
       }
 
       &.training-show-third{
-        width: 385px;
+        width: 379px;
+
+        .third-pic01{
+          a{
+            display: inline-block;
+            &.third-pic02{
+              width: 184px;
+              border:{
+                top: 1px;
+                left: 1px;
+                style: solid;
+                color: #ededed;
+              }
+            }
+            &.third-pic03{
+              width: 184px;
+              height: 201px;
+              border:{
+                left: 1px;
+                style: solid;
+                color: #ededed;
+              }
+            }
+          }
+        }
       }
     }
   }
