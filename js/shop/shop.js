@@ -35,6 +35,31 @@ window.onload = function(){
         $(this).addClass('present').siblings().removeClass('present')
     })
 
+/*order*/
+
+        $('.guess-button button a.guess-reload-button').click(function () {
+            var current = $('.guess-pagination  a.guess-current').index();
+            var reconLen = $('.guess-pagination a').length;
+            current++;
+            if (current >= reconLen) {
+                current = 0;
+            }
+            $('.guess-pagination  a').removeClass('guess-current');
+            $('.guess-pagination a').eq(current).addClass('guess-current');
+
+            $('.guess-content .guess-item').removeClass('show');
+            $('.guess-content .guess-item').eq(current).addClass('show');
+        })
+        $('.guess-pagination a').click(function () {
+            var current = $(this).index();
+            $('.guess-pagination a').removeClass('guess-current');
+            $(this).addClass('guess-current');
+            $('.guess-content .guess-item').removeClass('show');
+            $('.guess-content .guess-item').eq(current).addClass('show');
+        })
+
+
+
 
     /*店铺banner*/
     $(".banner-shop").hover(function(){

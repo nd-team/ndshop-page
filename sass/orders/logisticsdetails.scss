@@ -1,12 +1,15 @@
 @import "../layout/_variables", "../layout/_mixin";
 $border:1px solid #ddd;
 $border1:1px dashed #ddd;
-.logistics-details {
+*{
   font: {
-    //family: 'SimHei ';
-    family: 'SimHei';
-    size: 14px;
+    family: $main-sec-ff;
+    size: 12px;
   }
+}
+
+.logistics-details {
+
   .bread-path {
     line-height: 24px;
     margin: 0 0 10px 0;
@@ -153,7 +156,8 @@ $border1:1px dashed #ddd;
                     size: 14px;
 
                  }
-                line-height: 25px;
+               // line-height: 25px;
+                padding-bottom: 9px;
               }
               &.pro-date{
                  line-height: 15px;
@@ -225,7 +229,7 @@ $border1:1px dashed #ddd;
     .detail-cont {
       float: left;
       font: {
-        family: $main-sec-ff;
+        //family: $main-sec-ff;
         size: 12px;
       }
       color: #666;
@@ -271,7 +275,7 @@ $border1:1px dashed #ddd;
               margin-right: 8px;
             }
             &.delivery{
-              font-weight: 600;
+             //font-weight: 600;
             }
 
           }
@@ -298,23 +302,29 @@ $border1:1px dashed #ddd;
     margin-top: 20px;
     font-size: 12px;
     border: {
-      top: $border1;
+     // top: $border1;
       right: $border;
       left: $border1;
-
     }
     .cons-info1{
-       border-right: 1px solid #ddd;
+       border: {
+         top: $border1;
+         right: 1px solid #ddd;
+       }
     }
     .cons-info{
       width: 273px;
-      border-left: $border;
+      border: {
+        top: $border1;
+        left:$border;
+
+      }
       background: url("/images/orders/line.png") no-repeat bottom;
       font{
-        family:"SimHei";
+       // family:"SimHei";
         size: 12px;
          }
-      font-weight: 600;
+      //font-weight: 600;
       padding-top: 11px;
       color: #333;
       float: left;
@@ -340,7 +350,7 @@ $border1:1px dashed #ddd;
               width: 181px;
               display: block;
               margin-left:55px;
-             font-family:"SimHei";
+            // font-family:"SimHei";
 
               &.address{
                word-break:break-all;
@@ -367,7 +377,7 @@ $border1:1px dashed #ddd;
      height: 356px;
      background: $white;
      font-size: 12px;
-     font-family:'SimHei';
+    // font-family:'SimHei';
     margin-top: 30px;
     .guess-title{
       position: relative;
@@ -401,14 +411,20 @@ $border1:1px dashed #ddd;
     .guess-content{
        position: relative;
        height: 345px;
+      .show{
+        display: block !important;
+      }
       .guess-item{
          position: relative;
          overflow: hidden;
+         display: none;
+
+         //display: none;
         .item-group{
            position: relative;
            padding: 10px 0px 10px 30px;
-          .guess-item{
-             position: relative;
+          .guess-item-base{
+            position: relative;
             float: left;
             margin-right:49px;
             width: 165px;
@@ -419,8 +435,7 @@ $border1:1px dashed #ddd;
             }
             .item-text{
                font:{
-                  family: $main-sec-ff;
-                  size: 12px;
+                 size: 12px;
 
                }
 

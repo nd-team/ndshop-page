@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="/css/orders/allorders.css" />
     <link rel="stylesheet" href="/css/orders/logisticsdetails.css">
     <link rel="stylesheet" href="/css/orders/orderdetails.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
-
+    <script src="/js/orders/orders.js"></script>
 
 </head>
 <body>
@@ -85,162 +86,162 @@
         </div>
 
         <!--订单详情-->
-           <div class="order-status">
-                <div class="order-bar">
-                     <ul>
-                         <li class="order-bar-active">
+        <div class="order-status">
+            <div class="order-bar">
+                <ul>
+                    <li class="order-bar-active">
                              <span class="order-bar-current">
                                  已付款详情
                              </span>
-                             <div class="order-point">
-                                 <i></i>
-                             </div>
-                         </li>
-                         <li>
+                        <div class="order-point">
+                            <i></i>
+                        </div>
+                    </li>
+                    <li>
                          <span>
                                  卖家发货
                              </span>
-                         </li>
-                         <li>
+                    </li>
+                    <li>
                          <span>
                                  确认收货
                              </span>
-                         </li>
-                     </ul>
+                    </li>
+                </ul>
 
-                </div>
+            </div>
 
-               <div class="state-frame">
-                   <h3>当前订单状态：您已付款；等待卖家发货</h3>
-                   <div class="status-text">
-                       <li>
+            <div class="state-frame">
+                <h3>当前订单状态：您已付款；等待卖家发货</h3>
+                <div class="status-text">
+                    <li>
                            <span>
                                卖家发货前，您支付的钱款将不会被打给卖家
                            </span>
-                       </li>
-                       <li>
+                    </li>
+                    <li>
                            <span>
                                付款24小时后如果卖家一直不发货，您可以联系卖家或
                            </span>
-                           <a href="javascript:void(0)">
-                               提醒卖家发货
-                           </a>
-                       </li>
-                       <li>
+                        <a href="javascript:void(0)">
+                            提醒卖家发货
+                        </a>
+                    </li>
+                    <li>
                             <span>
                                 如果卖家存在违背发货时间的承诺的情况（什么是<a href="javascript:void(0)">违背发货时间承诺</a>），你也不想再要货物，您可以<a href="javascript:void(0)">申请退款查看退款流程和规则</a>
                             </span>
-                       </li>
-                       <li>
+                    </li>
+                    <li>
                            <span>
                                对于卖家没有履行承诺的情况，如需投诉，您可以在退款成功后投诉维权
                            </span>
-                       </li>
-                   </div>
-
+                    </li>
                 </div>
 
-           </div>
-
-        <div class="detail-all">
-        <!--物流信息-->
-        <div class="logistics-inform">
-            <div class="log-title">
-            <h3>物流信息</h3>
             </div>
-            <table>
-            <tbody>
-               <tr>
-                   <th>发货方式：</th>
-                   <td>快递</td>
-               </tr>
-               <tr>
-                   <th>物流公司：</th>
-                   <td>韵达快递</td>
-               </tr>
-               <tr>
-                   <th>运单号码：</th>
-                   <td>123456461318763131</td>
-               </tr>
-               <tr>
-                   <th class="log-track">物流跟踪：</th>
-                   <td>
-                       <ul>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>18:21:17</span>
-                               <span>【无锡高新区二部】</span>
-                               <span>揽收成功</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:42</span>
-                               <span>到无锡市</span>
-                               <span>【无锡集散中心】</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:48</span>
-                               <span>无锡市</span>
-                               <span>【无锡集散中心】,正发往【苏州转运中心】</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>23:35:42</span>
-                               <span>到苏州市</span>
-                               <span>【苏州转运中心】</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:42</span>
-                               <span>苏州市</span>
-                               <span>【苏州转运中心】,正发往【广州夏良转运中心】</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:42</span>
-                               <span>到广州市</span>
-                               <span>【广州夏良转运中心】</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:42</span>
-                               <span>到广州市</span>
-                               <span>【广州夏良转运中心】</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:42</span>
-                               <span>广州市</span>
-                               <span>【广州夏良转运中心】，正发往【广州电脑城】</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:42</span>
-                               <span>到广州市</span>
-                               <span>【广州电脑城站】</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:42</span>
-                               <span>广州市</span>
-                               <span>【广州电脑城站】,</span>
-                               <span>【张杰】正在派件</span>
-                               <span>电话：12345678912</span>
-                           </li>
-                           <li>
-                               <span>2016-20-22</span>
-                               <span>21:12:42</span>
-                               <span>【已签收，签收人已妥投】</span>
-                           </li>
-                       </ul>
-                   </td>
-               </tr>
-            </tbody>
-            </table>
+
         </div>
 
-        <!--订单信息-->
+        <div class="detail-all">
+            <!--物流信息-->
+            <div class="logistics-inform">
+                <div class="log-title">
+                    <h3>物流信息</h3>
+                </div>
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>发货方式：</th>
+                        <td>快递</td>
+                    </tr>
+                    <tr>
+                        <th>物流公司：</th>
+                        <td>韵达快递</td>
+                    </tr>
+                    <tr>
+                        <th>运单号码：</th>
+                        <td>123456461318763131</td>
+                    </tr>
+                    <tr>
+                        <th class="log-track">物流跟踪：</th>
+                        <td>
+                            <ul>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>18:21:17</span>
+                                    <span>【无锡高新区二部】</span>
+                                    <span>揽收成功</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:42</span>
+                                    <span>到无锡市</span>
+                                    <span>【无锡集散中心】</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:48</span>
+                                    <span>无锡市</span>
+                                    <span>【无锡集散中心】,正发往【苏州转运中心】</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>23:35:42</span>
+                                    <span>到苏州市</span>
+                                    <span>【苏州转运中心】</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:42</span>
+                                    <span>苏州市</span>
+                                    <span>【苏州转运中心】,正发往【广州夏良转运中心】</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:42</span>
+                                    <span>到广州市</span>
+                                    <span>【广州夏良转运中心】</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:42</span>
+                                    <span>到广州市</span>
+                                    <span>【广州夏良转运中心】</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:42</span>
+                                    <span>广州市</span>
+                                    <span>【广州夏良转运中心】，正发往【广州电脑城】</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:42</span>
+                                    <span>到广州市</span>
+                                    <span>【广州电脑城站】</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:42</span>
+                                    <span>广州市</span>
+                                    <span>【广州电脑城站】,</span>
+                                    <span>【张杰】正在派件</span>
+                                    <span>电话：12345678912</span>
+                                </li>
+                                <li>
+                                    <span>2016-20-22</span>
+                                    <span>21:12:42</span>
+                                    <span>【已签收，签收人已妥投】</span>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--订单信息-->
             <div class="order-information">
                 <div class="ord-title">
                     <h3>订单信息</h3>
@@ -251,20 +252,20 @@
                 </div>
 
                 <div class="ord-content">
-                       <div class="ord-address">
-                           <dl>
-                               <dt>收货人：</dt>
-                               <dd>张三</dd>
-                           </dl>
-                           <dl>
-                               <dt>电话：</dt>
-                               <dd>12345678912</dd>
-                           </dl>
-                           <dl>
-                               <dt>收货地址：</dt>
-                               <dd>广州市天河区棠东与南路13号冠达商务中心E栋111室 5100</dd>
-                           </dl>
-                       </div>
+                    <div class="ord-address">
+                        <dl>
+                            <dt>收货人：</dt>
+                            <dd>张三</dd>
+                        </dl>
+                        <dl>
+                            <dt>电话：</dt>
+                            <dd>12345678912</dd>
+                        </dl>
+                        <dl>
+                            <dt>收货地址：</dt>
+                            <dd>广州市天河区棠东与南路13号冠达商务中心E栋111室 5100</dd>
+                        </dl>
+                    </div>
                     <div class="ord-list">
                         <dl>
                             <dt>送货方式：</dt>
@@ -277,31 +278,388 @@
 
                     </div>
                 </div>
-
+                <!--卖家信息-->
                 <div class="seller-information">
-                    <h3>卖家信息</h3>
-                </div>
-                <table>
-                    <tbody>
-                    <tr>
-                        <td><label>昵称：</label>张三<span></span></td>
-                        <td><label>真实姓名：</label><span>北京艾佳天城科技有限公司</span></td>
-                        <td><label>城市：</label><span>广东广州</span></td>
-                    </tr>
-                    <tr>
+                    <div class="seller-inform-base">
+                        <h3>卖家信息</h3>
 
-                        <td><label>联系电话：</label><span></span>韵达快递</td>
-                    </tr>
-                    </tbody>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <label>昵称：</label>
+                                    <span>张三</span>
+                                    <a href="javascript:void(0)"><img src="/images/orders/contactus.png"></a>
+                                </td>
+                                <td>
+                                    <label>真实姓名：</label>
+                                    <span>北京艾佳天城科技有限公司</span>
+                                </td>
+                                <td>
+                                    <label>城市：</label>
+                                    <span>广东广州</span>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <label>联系电话：</label>
+                                    <span>12345678912</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!--订单信息-->
+                <div class="seller-order">
+                    <div class="order-inform-base">
+                        <h3>订单信息</h3>
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <label>订单编号：</label>
+                                    <span>123456789123</span>
+                                </td>
+                                <td>
+                                    <label>支付宝交易号：</label>
+                                    <span>12645646131987761131313</span>
+                                </td>
+                                <td>
+                                    <label>创建时间：</label>
+                                    <span>2016-10-21 20：01：30</span>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <label>发货时间：</label>
+                                    <span>2016-10-21 20：01：30</span>
+                                </td>
+
+                                <td>
+                                    <label>付款时间：</label>
+                                    <span>2016-10-21 20：01：30</span>
+                                </td>
+
+                                <td>
+                                    <label>成交时间：</label>
+                                    <span>2016-10-21 20：01：30</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!--商品属性-->
+                <div class="commodity-attribute">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th>
+                                商品
+                            </th>
+                            <th>
+                                商品属性
+                            </th>
+                            <th>
+                                状态
+                            </th>
+                            <th>
+                                服务
+                            </th>
+                            <th>
+                                单价
+                            </th>
+                            <th>
+                                优惠
+                            </th>
+                            <th>
+                                商品总价
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="com-img">
+                                    <a href="javascript:void(0)">
+                                        <img src="/images/orders/order-images.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="com-text">
+                                    <a href="javascript:void(0)">
+                                        430不锈钢卡通勺子儿童叉勺子公司礼品定制高档插柄西餐具幼儿园
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <p>类别：钢化类</p>
+                                <p>颜色：黑色</p>
+                            </td>
+                            <td>
+
+                                <p>待收货</p>
+
+                            </td>
+                            <td>
+                                <div class="return-all">
+                                    <svg role="img" class="return">
+                                        <use xlink:href="#return"></use>
+                                    </svg>
+                                    <span class="return-text">退换</span>
+                                </div>
+                                <p class="return-quality">
+                                    <svg role="img" class="qa">
+                                        <use xlink:href="#qa"></use>
+                                    </svg>
+                                </p>
+                            </td>
+                            <td>
+                                256.00
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        店铺红包五元
+                                    </li>
+                                    <li>
+                                        活动立减201.00元
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        45.0
+                                    </li>
+                                    <li>
+                                        抢红包活动,抵扣0.8元
+                                    </li>
+                                    <li>
+                                        快递：9.90元
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
                     </table>
                 </div>
 
 
-       </div>
+                <!--计算总价-->
+                <div class="ord-total">
+                    订单总价:<strong>49.20</strong>元
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
+    <div class="order-recommend ">
+        <div class="recom-title">
+            <p>猜你喜欢</p>
+            <a href="javascript:void(0)">更多 &gt;</a>
+        </div>
+        <div class="recom-con">
+            <ul class="recom-list show">
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+            </ul>
+            <ul class="recom-list">
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+            </ul>
+            <ul class="recom-list">
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+            </ul>
+            <ul class="recom-list">
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="recom-page">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="active"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"></a>
+                </li>
+            </ul>
+            <button class="next">换一组</button>
+        </div>
     </div>
+
+
+
+
+
+
+</div>
+
 
 
 
