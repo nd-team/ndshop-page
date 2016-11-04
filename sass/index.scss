@@ -69,11 +69,8 @@
             font: {
               size: 16px;
             }
-            .nav-icon {
-              height: 15px;
-              width: 15px;
-              display: inline-block;
-              background-color: $white;
+            .index_family{
+              fill:$white;
             }
           }
           .samll-menu {
@@ -287,7 +284,7 @@
       position: absolute;
       height: 480px;
       &:first-child{
-        z-index: 11;
+        z-index: 20;
       }
       &:nth-child(2){
         z-index:10;
@@ -297,22 +294,22 @@
       }
     }
   }
-  .banner-yuan{
+  .banner-circle{
     position:absolute;
     left: 50%;
     bottom: 20px;
     margin-left:-56px;
     z-index: 60;
     li{
-      width: 8px;
-      height: 8px;
-      background-color: #888;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(0,0,0,0.3);
       float: left;
       border-radius:50%;
       cursor:pointer;
-      margin: 0 8px;
-      &.curent{
-        background-color:rgba(0,0,0,0.2);
+      margin: 0 6px;
+      &.current{
+        background-color:rgba(0,0,0,0.1);
       }
     }
   }
