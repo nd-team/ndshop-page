@@ -1,0 +1,396 @@
+@import "../layout/_variables", "../layout/_mixin";
+*{
+  font:{
+    family: $main-sec-ff;
+    size: 12px;
+  }
+  $b-ground: #f5f5f5 !global;
+}
+$wd   : 13px;
+$hi   : $wd;
+$c   : #00943b;
+//$d   : #ed0000;
+@mixin arrow-down-list( $width , $height , $top , $left,$c){
+  border: none;
+  background-color: $c;
+  height: $height;
+  width: $width;
+  top: $top;
+  left: $left;
+}
+@mixin arrow( $width , $height , $top , $left, $way,$c){
+  left: $left;
+  top: $top;
+  border-width:$height $width;
+  border-#{$way}-color:$c;
+}
+
+
+.evaluation-main{
+   h3{
+      height: 40px;
+      line-height: 40px;
+      color: #777777;
+      background: $b-ground;
+      padding-left: 20px;
+   }
+  .evaluation-list{
+     border: 1px solid #ddd;
+     margin: 20px 0;
+    .eva-list-title{
+       height: 45px;
+       line-height: 45px;
+       background: $b-ground;
+       padding-left: 20px;
+      ul{
+         li{
+            float: left;
+            margin-right: 40px;
+           .eva-ord{
+              color: #666;
+           }
+           .eva-num{
+              color: #333;
+           }
+           &.eva-time{
+              span{
+                 margin-right: 15px;
+                 color: #999;
+              }
+           }
+         }
+      }
+    }
+
+    .eva-cont{
+       .eva-cont-shop{
+          width: 288px;
+          height: 116px;
+          float: left;
+          padding: 20px 0 0;
+          border-right: 1px solid #ddd;
+         .fl{
+            float: left;
+         }
+         .eva-shop-img{
+           margin:0 14px 0 30px;
+         }
+         .eva-shop-name{
+              text-align: left;
+              width: 75px;
+              line-height: 25px;
+            .eva-shop-title{
+                font: {
+                size: 16px;
+              }
+            }
+           .eva-shop-grade{
+             color: #666;
+            }
+
+           .eva-shop-reputation{
+             // float: left;
+             height: 30px;
+             width: 125px;
+             float: left;
+             .eva-shop-icon{
+               position: relative;
+               padding-top: 6px;
+               width: 76px;
+               height: 8px;
+
+               .item-a{
+                 float: left;
+                 position: relative;
+                 display: block;
+                 height:8px;
+                 cursor: pointer;
+               }
+               .c1{
+                 width: 88%;
+                 background: #f65962;
+
+
+               }
+               .c2{
+                 width: 12%;
+                 background: #b8c1be;
+               }
+               .c3{
+                  width: 88%;
+                  float: left;
+                 i{
+
+                   position: absolute;
+                   z-index: 2;
+                   width: 18px;
+                   height: 17px;
+                   top:-1px;
+                   left: 68%;
+                   background:url(/images/orders/shop-logo-02.png) no-repeat right;
+                   display: inline-block;
+
+                 }
+
+               }
+
+             }
+             .c4{
+               color: #707070;
+               float: right;
+               margin-top:-18px;
+             }
+           }
+
+
+         }
+
+       }
+      /*right bar*/
+      .eva-cont-attitude{
+         margin: 20px 0 0 70px;
+         float: left;
+        // position: relative;
+
+        .arrow{
+          width: $wd;
+          height: $hi;
+          position: relative;
+          display: inline-block;
+          margin: $hi/3 $wd/3;
+          &:before,
+          &:after{
+            content:'';
+            border-color:transparent;
+            border-style:solid;
+            position: absolute;
+          }
+          .curve{
+            position: absolute;
+            overflow: hidden;
+            &:before{
+              content:'';
+              position:absolute;
+            }
+          }
+        }
+
+
+         .eva-att-fir{
+            position: relative;
+
+           .commodity-eva{
+              float: left;
+              margin-top: 13px;
+             label{
+                color: #999;
+             }
+             span{
+                color: #666;
+             }
+           }
+
+            span{
+
+            }
+           .eva-cont-all{
+              width: 181px;
+              height: 7px;
+              border-top: 1px solid #32b5fe;
+               border-left: 1px solid #56bbf3;
+              float: right;
+              position: absolute;
+              left:90px;
+             i{
+               height: 5px !important;
+               &::before {
+                 content: '';
+                 border: 1px solid #56bbf3;
+                 background: #56bbf3;
+                 display: inline-block;
+                 width: 4px;
+                 height: 4px;
+                 border-radius: 4px;
+                 margin-left: -4px;
+                 margin-right: 10px;
+
+
+               }
+
+             }
+          .eve-fir-cont{
+               width: 136px;
+               border:{
+                  top:0;
+                  bottom: 1px solid #32b5fe;
+                  left: 1px solid #32b5fe;
+                  right: 1px solid #32b5fe;
+               };
+               //border: 1px solid #32b5fe;
+               height: 22px;
+               line-height: 22px;
+               float: right;
+
+             .item-b{
+               float: left;
+               position: relative;
+               display: block;
+               height:22px;
+               cursor: pointer;
+             }
+             .ef-1{
+                 width: 76px;
+                 background: $white;
+                 text-align: center;
+                 span{
+                    color: #999;
+                 }
+              }
+              .ef-2{
+                 width: 60px;
+                 background: #32b5fe;
+
+               .arrow-down{
+                 &:before{ @include arrow-down-list(30%,50%,0,50% - 30%/2,#03a045); }
+                 &:after { @include arrow($wd/2,$hi/2,50%,0,top,#03a045);  }
+                 float: left;
+               }
+               .eve-fir-text{
+                    color: $white;
+
+               }
+             }
+
+             }
+           }
+         }
+         .eva-att-fir2{
+           .commodity-eva{
+             margin-top: 20px;
+            }
+            @extend .eva-att-fir;
+
+           .eva-cont-all{
+             position: absolute;
+             left:90px;
+             top:36px;
+           }
+         }
+         .eva-att-fir3{
+          .commodity-eva{
+            margin-top: 18px;
+          }
+          @extend .eva-att-fir;
+
+          .eva-cont-all{
+            position: absolute;
+            left:90px;
+            top:72px;
+
+            .ef-2{
+              .arrow-up{
+                &:before{ @include arrow-down-list(30%,50%,50%,50% - 30%/2,#e90000);  }
+                &:after { @include arrow($wd/2,$hi/2,-40%,0,bottom,#e90000); }
+                float: left;
+                }
+            }
+
+          }
+        }
+      }
+    }
+
+
+
+  }
+  /*shangpingdongtaipingjia*/
+  .dynamic-eva{
+    .dynamic-title{
+      button{
+        width: 158px;
+        height: 40px;
+        line-height: 40px;
+        font:{
+           size: 16px;
+        }
+        color: $white;
+        background: #33b6ff;
+        text-align: center;
+
+        border: 0;
+        border-radius: 5px 5px 0 0;
+        float: left;
+      }
+      .anonymous-eva{
+         float: right;
+         line-height: 40px;
+         margin: 0 18px 0;
+        font:{
+           size: 14px;
+        }
+        input{
+           width: 14px;
+           height: 14px;
+           margin-right:8px;
+        }
+        color: #2eb3ff;
+      }
+    }
+    .dynamic-cont{
+       border: 1px solid #ddd;
+      .dy-cont-title{
+         height: 46px;
+         line-height: 46px;
+        background: $b-ground;
+        ul{
+           li{
+              color: #666;
+              float: left;
+              text-align: center;
+              &:nth-of-type(odd){
+                width: 288px;
+
+              }
+           }
+        }
+
+      }
+      /*baby details*/
+      .baby-details{
+        .baby-det-left{
+           width: 288px;
+           border-right: 1px solid #dddddd;
+           padding: 28px 0;
+          ul{
+
+             li{
+                color: #666;
+               &.baby-det-img {
+                 width: 110px;
+                 height: 110px;
+                 margin: 0 auto;
+
+               }
+               &.baby-det-tit{
+                     width: 228px;
+                     margin: 0 auto;
+                     padding: 10px 0;
+                     line-height: 180%;
+                     text-align: center;
+                     a{
+                       color: #333;
+
+                     }
+                }
+
+
+             }
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
