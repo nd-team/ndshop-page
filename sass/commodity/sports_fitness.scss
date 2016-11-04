@@ -1,0 +1,369 @@
+@import "../layout/sports_sidebar","../layout/variables", "../layout/mixin";
+
+//精选品牌样式开始
+.sports-brand{
+  @include same-box;
+  margin-top: 70px;
+  .brand-selection{
+    @include same-box;
+    margin-bottom: 5px;
+    .sport-title{
+      @include sport-title;
+    }
+    .title-red{
+      @include title-red;
+    }
+  }
+
+  .sport-selection-pic{
+    @include same-box;
+    border-top: 1px solid #1e8bc4;
+    li{
+      float: left;
+      .sport-list{
+        display: inline-block;
+        width: 182px;
+        height: 345px;
+        border-right:1px solid #ededed;
+      }
+      .sport-last{
+        border-right:0;
+      }
+    }
+  }
+
+  .sport-brand-name{
+    @include same-box;
+    border-top: 1px solid #ededed;
+    li{
+      float: left;
+      line-height: 54px;
+      a{
+
+        display: inline-block;
+        padding: {
+          top: 15px;
+          right: 18px;
+          left: 35px;
+          bottom: 10px;
+        }
+      }
+    }
+  }
+}
+//精选品牌样式结束
+
+//独家新品部分样式开始
+.exclusive-products{
+  @include same-box;
+  margin-top: 30px;
+  .new-products{
+    @include same-box;
+    margin-bottom: 5px;
+    .exclusive-title{
+      @include sport-title;
+    }
+    .title-red{
+      @include title-red;
+    }
+  }
+  .exclusive-products-show{
+    @include same-box;
+    height: 430px;
+    .exclusive-products-left{
+      float: left;
+      li{
+        .products-pic-bottom{
+          float: left;
+          border: {
+            bottom: 1px;
+            style: solid;
+            color: #ededed;
+          }
+          height: 263px;
+          .new-products-pic02{
+            width: 178px;
+            border: {
+              right: 1px;
+              style: solid;
+              color: #ededed;
+            }
+            img{
+              width: 178px;
+            }
+          }
+          .border-no{
+            border-right:0;
+          }
+        }
+        a{
+          display: inline-block;
+          height: 263px;
+          &.new-products-pic01{
+            width: 365px;
+            float: left;
+          }
+
+          &.fish-umbrella{
+            width: 176px;
+            height: 172px;
+            img{
+              border: {
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 1px;
+                style: solid;
+                color: #ededed;
+              }
+              &.border-no{
+                border-right: 0;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    .exclusive-products-right{
+      float: right;
+      a{
+        display: block;
+        width: 184px;
+      }
+    }
+  }
+}
+//独家新品部分样式结束
+
+//运动鞋包服饰部分样式开始
+.sport-shoes{
+  @include same-box;
+  margin-top: 30px;
+  .shoes-bags{
+    @include same-box;
+    margin-bottom: 5px;
+    .shoes-title{
+      @include sport-title;
+    }
+    .title-red{
+      @include title-red;
+    }
+  }
+  
+  .shoes-bags-show{
+    @include same-box;
+    .shoes-bags-top{
+      border-top: 1px solid #1e8bc4;
+      li{
+        float: left;
+        height: 412px;
+        .shoes-bags-pic{
+          display: block;
+          height: 205px;
+          border: {
+            bottom: 1px;
+            style: solid;
+            color: #ededed;
+          }
+        }
+      }
+    }
+    .shoes-bags-bottom{
+      width: 100%;
+      border-top: 1px solid #ededed;
+      a{
+        display: inline-block;
+        &.shoes-bags-img01{
+          width: 331px;
+        }
+        &.shoes-bags-img02{
+          width: 184px;
+        }
+        &:nth-child(2){
+          width: 186px;
+          border-right: 1px solid #ededed;
+        }
+      }
+
+    }
+    .shoes-apparel-bottom{
+      width: 100%;
+      border-top: 1px solid #ededed;
+      a{
+        display: inline-block;
+        height: 205px;
+        &.shoes-apparel-img01{
+          width: 325px;
+        }
+        &.shoes-apparel-img02{
+          border: {
+            left: 1px;
+            style: solid;
+            color: #ededed;
+          }
+        }
+        &:nth-child(2){
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+//运动鞋包服饰部分样式结束
+
+//户外装备部分样式开始
+.outdoor-equipment{
+  @include same-box;
+  margin-top: 30px;
+  .sport-outdoor{
+    @include same-box;
+    margin-bottom: 5px;
+    .outdoor-title{
+      @include sport-title;
+    }
+    .title-red{
+      @include title-red;
+    }
+  }
+  .outdoor-show{
+    @include same-box;
+    border-top: 1px solid #1e8bc4;
+    li{
+      float: left;
+      &.outdoor-show-first{
+        width: 332px;
+        a{
+          display: block;
+        }
+      }
+      &.outdoor-show-second{
+        width: 576px;
+        .outdoor-equipment-top{
+          height: 206px;
+        }
+        .outdoor-equipment-center{
+          overflow: hidden;
+          .equipment-center-under{
+            float: left;
+            a{
+              display: block;
+
+              &.outdoor-under-pic{
+                border-top:1px solid #ededed;
+              }
+            }
+          }
+        }
+      }
+      &.outdoor-show-third{
+        width: 192px;
+        a{
+          display: block;
+        }
+      }
+    }
+  }
+}
+//户外装备部分样式结束
+
+//健身训练部分样式开始
+.fitness-training{
+  @include same-box;
+  margin-top: 30px;
+  .sport-training{
+    @include same-box;
+    margin-bottom: 5px;
+    .training-title{
+      @include sport-title;
+    }
+    .title-red{
+      @include title-red;
+    }
+  }
+  .fitness-training-show{
+    @include same-box;
+    border-top: 1px solid #1e8bc4;
+    li{
+      float: left;
+      &.training-show-first{
+        width: 332px;
+        a{
+          display: block;
+        }
+      }
+      &.training-show-second{
+        width: 389px;
+        overflow: hidden;
+        .training-second-top{
+          width: 100%;
+          height: 413px;
+          overflow: hidden;
+          p{
+            float: left;
+            &.training-second-pic01{
+              width: 187px;
+              .second-img{
+                border-bottom:1px solid #ededed;
+              }
+            }
+
+          }
+        }
+        .training-second-bottom{
+          height: 205px;
+        }
+      }
+
+      &.training-show-third{
+        width: 379px;
+
+        .third-pic01{
+          a{
+            display: inline-block;
+            &.third-pic02{
+              width: 184px;
+              border:{
+                top: 1px;
+                left: 1px;
+                style: solid;
+                color: #ededed;
+              }
+            }
+            &.third-pic03{
+              width: 184px;
+              height: 201px;
+              border:{
+                left: 1px;
+                style: solid;
+                color: #ededed;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//健身训练部分样式结束
+
+//service
+.service{
+  background-color: #fafafa;
+  border-top:1px solid #e6e6e6;
+  margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

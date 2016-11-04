@@ -1,340 +1,449 @@
 @import "../layout/mobile_sidebar","../layout/variables", "../layout/mixin";
 
-#content{
-  background-color: #f6f6f6;
-}
-
-//热销商品部分开始
-.household-hot{
+//今日热门部分样式开始
+.today-popular{
   width: 100%;
   height: auto;
-  margin-top: 26px;
   overflow: hidden;
-
-  .household-title{
-    line-height: 42px;
-    color: #fa546c;
-    font:{
-      size: 20px;
-      family: $main-sec-ff;
-    }
+  margin-top: 66px;
+  .today-title{
+    @include mobile-title;
   }
-
-  .household-show-pic{
-    border-top: 1px solid #d52740;
-    height: 330px;
-
-    li{
-      position: relative;
-      float: left;
-      .household-hot-picture{
-        width: 275px;
-        height: 330px;
-        display: block;
-      }
-
-      .household-hot-show{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 260px;
-        height: 105px;
-        background-color: rgba(0,0,0,0.4);
-        padding: {
-          top: 20px;
-          left: 15px;
-          bottom: 10px;
-        }
-        color: #fff;
-        font-size: 14px;
-        font-family: $main-sec-ff;
-        cursor: pointer;
-        h4{
-          line-height: 32px;
-          font: {
-            size: 20px;
-            weight: bold;
-          }
-        }
-        .household-hot-text{
-          padding-bottom: 10px;
-        }
-      }
-    }
-  }
-}
-//热销商品部分结束
-
-//品牌旗舰店部分开始开始
-.household-brand-store{
-  width: 100%;
-  height:auto;
-  overflow: hidden;
-  margin-top: 30px;
-  .brand-title{
-    line-height: 42px;
-    color: #f7536c;
-    font:{
-      size: 20px;
-      family: $main-sec-ff;
-    }
-  }
-  .household-brand-show{
+  .popular-tab{
     width: 100%;
-    height: auto;
-    border-top:1px solid #d52740;
-    background-color: #fff;
+    height: 39px;
+    border-top: 1px solid #1e856a;
+    background-color: #f1f3f2;
     overflow: hidden;
-    .brand-store-left{
+    .popular-tab-title{
       float: left;
-
-      .brand-show-top{
-        padding-top: 15px;
+      width: 275px;
+      text-align: center;
+      line-height: 39px;
+      font:{
+        size: 18px;
+        family: $main-sec-ff;
+      }
+      cursor: pointer;
+      &.popular-tab-current{
+        background-color: #43b999;
         a{
-          display: inline-block;
-          margin-right: 10px;
+          color: #fff;
         }
       }
+      a{
+        color: #43B999;
+      }
     }
+  }
+  
+  .popular-detail{
+    height: 295px;
+    overflow: hidden;
+    border: {
+      left: 1px;
+      bottom: 1px;
+      right: 1px;
+      style: solid;
+      color: #ededed;
+    }
+    li{
+      float: left;
+      width: 218px;
+      height: 295px;
+      cursor: pointer;
+      &.popular-detail-list{
+        border-left:1px solid #ededed;
+      }
+      &:hover{
+        .now-buy{
+          display: block;
+        }
+      }
+      .popular-detail-pic{
+        display: block;
+        margin: 30px auto 10px;
+        width: 170px;
+        height: 135px;
 
-    .brand-store-right{
-      float: right;
-      margin-top: 15px;
-      padding-right: 10px;
-      li{
-        margin-bottom: 5px;
+      }
+      .popular-detail-text{
+        width: 206px;
+        margin: 0 auto;
+        line-height: 20px;
+        color: #666;
+        span{
+          display: block;
+
+          &.money-red{
+            padding: 15px 0 7px;
+            color: red;
+            font:{
+              size: 16px;
+              weight: bold;
+              family: $main-sec-ff;
+            }
+          }
+        }
+      }
+      .now-buy{
+        width: 218px;
+        height: 40px;
+        background-color: #e6233f;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        display: none;
+        a{
+          color: #fff;
+          font:{
+            size: 14px;
+            family: $main-sec-ff;
+          }
+        }
+      }
+      .buy-last{
+        width: 222px;
       }
     }
   }
 }
-//品牌旗舰店部分开始结束
+//今日热门部分样式结束
 
-//品质生活部分样式开始
-.household-quality-life{
+//主题购部分样式开始
+.theme-purchase{
   width: 100%;
-  height: auto;
+  height: 100%;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 60px;
 
-  .quality-life-title{
-    line-height: 30px;
-    color: #f6546b;
-    font:{
-      size: 20px;
-      family: $main-sec-ff;
-    }
+  .theme-title{
+    @include mobile-title;
   }
 
-  .quality-life-same{
+  .mobile-theme{
     width: 100%;
-    overflow: hidden;
-    border-top: 1px solid #d52740;
-    border-bottom: 1px solid #ededed;
-    height: 517px;
-    margin-top: 10px;
-    .same-select{
+    height: 369px;
+    border-top:1px solid #208468;
+    li{
       float: left;
-      width: 209px;
+      a{
+        display: block;
+
+        &.theme-pic01{
+          width: 220px;
+        }
+        &.theme-pic02{
+          height: 183px;
+          width: 330px;
+        }
+      }
     }
+  }
+}
+//主题购部分样式结束
 
-    .same-life-brand{
+//品牌旗舰店部分样式开始
+.mobile-brand-store {
+  @include same-box;
+  margin-top: 50px;
+  .store-title {
+    @include mobile-title;
+  }
+  .mobile-brand-goods{
+    @include same-box;
+    .mobile-brand-same{
+      height: 385px;
+      border: 1px solid #ececec;
       float: left;
-      .same-life-pic{
-        width: 100%;
-        height: 334px;
-        overflow: hidden;
-        li{
-          float: left;
-          &.same-life-banner{
-            width: 419px;
-            position: relative;
-            .same-picture-auto{
-              width: 419px;
-              height: 334px;
-            }
-            .same-life-circle{
-              position: absolute;
-              left: 50%;
-              bottom: 10px;
-              width: 90px;
-              margin-left: -18px;
-              span{
-                width: 10px;
-                height: 10px;
-                background-color: rgba(0,0,0,.5);
-                display: inline-block;
-                border-radius: 50%;
-                cursor: pointer;
-                &.same-gray02{
-                  background-color: rgba(0,0,0,.2);
-                }
-                &.same-gray03{
-                  background-color: rgba(0,0,0,.1);
-                }
-              }
-
-            }
+      overflow: hidden;
+      .mobile-brand-pic{
+        float: left;
+        .brand-computers{
+          width: 238px;
+          border-bottom:1px solid #ececec;
+          &:last-child{
+            border-bottom: 0;
           }
-          &.same-life-banner02{
-            width: 175px;
-          }
-          &.same-life-banner03{
-            width: 297px;
-            a{
-              display: block;
+          a{
+            width: 115px;
+            height: 76px;
+            display: inline-block;
+            border: {
+              right: 1px;
+              style: solid;
+              color: #ececec;
             }
           }
         }
       }
       
-      .same-brand-rotation{
-        width: 891px;
-        height: 184px;
-        background-color: #fff;
-        position: relative;
+      .mobile-brand-r{
+        float: left;
+        .computer-pic{
+          width: 340px;
+          height: 365px;
+          display: block;
+        }
+        .computer-pic02{
+          width: 270px;
+          display: block;
+          padding-top: 20px;
+        }
+      }
+    }
 
+    .brand-same-right{
+      float: right;
+    }
+  }
+}
+//品牌旗舰店部分样式结束
 
-        .household-button{
-          .arrow-l{
-            display: block;
-            width: 20px;
-            height: 20px;
-            background: rgba(255, 255,255,255);
-            border:{
-              width: 0 0 2px 2px;
-              style: solid;
-              color:#555;
-            }
-            transform:rotateZ(45deg);
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            margin-top: -20px;
-            cursor: pointer;
+//手机配件样式开始
+.mobile-accessories{
+  @include same-box;
+  margin-top: 50px;
+  .mobile-accessories-title{
+  @include mobile-title;
+  }
+  .accessories-same{
+    @include same-box;
+    border-top:1px solid #208468;
+    .accessories-left{
+      position: relative;
+      float: left;
+      .accessories-banner{
+        width: 251px;
+        height: 432px;
+      }
+      .accessories-circle{
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        margin-left: -27px;
+        span{
+          width: 12px;
+          height: 14px;
+          display: inline-block;
+          padding-right: 2px;
+          background-color: rgba(0,0,0,.1);
+          border-radius: 50%;
+          cursor: pointer;
+          &.current-two{
+            background-color: rgba(0,0,0,.3);
           }
-
-          .arrow-r{
-            display: block;
-            width: 20px;
-            height: 20px;
-            background: rgba(255, 255,255,255);
-            border:{
-              width: 0 0 2px 2px;
-              style: solid;
-              color:#555;
-            }
-            transform:rotateZ(-135deg);
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            margin-top: -20px;
-            cursor: pointer;
+          &.current-three{
+            background-color: rgba(0,0,0,.5);
           }
         }
-        .household-auto-pic01{
-          margin-left: 50px;
-        }
-
-        .household-product-show{
-          width: 254px;
-          padding: 30px 0;
-          height: 130px;
+      }
+    }
+    .accessories-right{
+      float: left;
+      .accessories-picture{
+        width: 100%;
+        height: 215px;
+        border-bottom:1px solid #ececec;
+        .accessories-right-report{
+          width: 211px;
+          height: 215px;
+          border-right:1px solid #ececec;
           float: left;
-          .household-auto-pic{
+          .mobile-picture{
             display: block;
-            width: 132px;
-            height: 129px;
-            float: left;
-            vertical-align: middle;
+            width: 130px;
+            height: 110px;
+            margin: 0 auto;
+            padding-top: 20px;
           }
-          .household-auto-text{
-            float: left;
-            vertical-align: middle;
-            margin: 22px 0;
-            span{
-              display: block;
-              color: #333;
-              line-height: 18px;
+          p{
+            color: #666;
+            text-align: center;
+            line-height: 24px;
+            padding-top: 20px;
+          }
+          .mobile-money{
+            padding-left: 10px;
+            color: #DD1919;
+            font:{
+              size: 16px;
+              family: $main-sec-ff;
             }
-            strong{
-              line-height: 30px;
-              color: red;
-              font:{
-                family: $main-sec-ff;
-                size: 14px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+}
+//手机配件样式结束
+
+//电脑配件电脑整机办公室用具样式开始
+.computer-accessories{
+  @include same-box;
+  margin-top: 50px;
+  .computer-accessories-title{
+    @include mobile-title;
+  }
+  .computer-accessories-pic{
+    border-top:1px solid #208468;
+    height: 540px;
+    li{
+      float: left;
+      &.computer-accessories-list{
+        position: relative;
+        width: 239px;
+        height: 540px;
+        .hot-activity{
+          position: absolute;
+          left: 8%;
+          bottom:4%;
+          color: #fff;
+          font:{
+            size: 15px;
+            family: $main-sec-ff;
+          }
+          h4{
+            width: 240px;
+            line-height: 26px;
+          }
+          .hot-activity-text{
+            margin-top: 25px;
+            p{
+              line-height: 22px;
+              .circle{
+                width: 2px;
+                height:2px;
+                display: inline-block;
+                background-color: #fff;
+                vertical-align: 5px;
+              }
+              a{
+                color: #fff;
               }
             }
           }
 
         }
-
-        .household-auto-pic02{
-          margin: 0 20px;
-          .household-auto-pic{
-            margin-right: 32px;
-          }
-        }
-
-        .household-auto-circle{
+        .computer-accessories-dashed{
+          width: 240px;
+          display: block;
           position: absolute;
-          left: 50%;
-          bottom: 10px;
-          width: 90px;
-          margin-left: -15px;
-          span{
-            width: 10px;
-            height: 10px;
-            background-color: rgba(0,0,0,.5);
+          left: 0;
+          bottom: 18%;
+          border-bottom:1px dashed #fff;
+          margin-bottom: 10px;
+        }
+      }
+      &.computer-accessories-pic02{
+        width: 645px;
+        border-right:1px solid #ececec;
+        .computer-accessories-pic-top{
+          height: 270px;
+          border-bottom:1px solid #ececec;
+          a{
             display: inline-block;
-            border-radius: 50%;
-            cursor: pointer;
-            margin-right: 5px;
-            &.same-current02{
-              background-color: rgba(0,0,0,.2);
+            &:first-child{
+              width: 426px;
             }
-            &.same-current03{
-              background-color: rgba(0,0,0,.1);
+            &:last-child{
+              width: 210px;
+              border-left:1px solid #ececec;
             }
           }
 
         }
-      }
-    }
-  }
-
-  .quality-life-blue{
-    border-top: 1px solid #008d8e;
-  }
-  .quality-life-purpose{
-    border-top: 1px solid #322e47;
-
-    .same-life-brand{
-      .same-brand-rotation{
-        .household-auto-padding{
-          padding-top: 5px;
-          margin-left: 50px;
-          .household-auto-pic{
-            width: 110px;
-          }
-          .household-auto-text{
-            margin: 50px 0;
+        .computer-accessories-pic-bottoom{
+          height: 269px;
+          border-bottom:1px solid #ececec;
+          a{
+            display: inline-block;
+            width: 209px;
+            &:nth-child(2){
+              border-left:1px solid #ececec;
+            }
+            &:last-child{
+              border-left:1px solid #ececec;
+            }
           }
         }
       }
+      &.popularity-ranking{
+        width: 213px;
+        height: 540px;
+        border: {
+          right: 1px;
+          bottom: 1px;
+          style: solid;
+          color: #ececec;
+        }
+        .ranking-title{
+          height: 39px;
+          text-align: center;
+          line-height: 39px;
+          border-bottom:1px solid #ececec;
+          h4{
+            font:{
+              size: 14px;
+              family: $main-sec-ff;
+            }
+            color: #333;
+          }
+        }
+
+        .popularity-ranking-show{
+           li{
+             height: 93px;
+             width: 213px;
+             border-bottom:1px dashed #ececec;
+             overflow: hidden;
+             padding-top: 5px;
+             &:last-child{
+               border-bottom: 0;
+             }
+             .ranking-pic{
+               width: 90px;
+               height: 92px;
+               float: left;
+               margin: {
+                 left: 8px;
+                 right: 15px;
+               }
+             }
+             .ranking-text{
+               float: left;
+               margin-top: 10px;
+               line-height: 20px;
+               @include body;
+               span{
+                 display: block;
+
+                 &.ranking-money{
+                   line-height: 28px;
+                   color: #D40808;
+                   font:{
+                     size: 14px;
+                     family: $main-sec-ff;
+                   }
+                 }
+               }
+             }
+           }
+        }
+      }
     }
-
-
   }
 }
-
-//品质生活部分样式结束
+//电脑配件电脑整机办公室用具样式结束
 
 
 //service
 .service{
   background-color: #fafafa;
   border-top:1px solid #e6e6e6;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 
