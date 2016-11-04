@@ -10,7 +10,7 @@
 //有品大牌部分样式开始
 .big-products{
   @include same-box;
-  margin-top: 80px;
+  margin-top: 60px;
   @include food-title;
   .big-products-list{
     @include same-box;
@@ -101,8 +101,7 @@
   .cuisine-title{
     @include global-title;
     margin:{
-      top: 50px;
-      bottom: 10px;
+      top: 35px;
     }
   }
   .global-food{
@@ -191,6 +190,7 @@
   .snacks-picture{
     @include same-box;
     .snacks-picture-list{
+      overflow: hidden;
       li{
         float: left;
         a{
@@ -202,9 +202,141 @@
           &.squirrels-pic01{
             width: 274px;
             height: 399px;
+            &:last-child{
+              border-left: 1px solid #ededed;
+            }
           }
         }
 
+      }
+    }
+    .snacks-center{
+      width: 100%;
+      overflow: hidden;
+      .snacks-center-different{
+        height: 305px;
+        float: left;
+        border-bottom:1px solid #ededed;
+        a{
+          display: block;
+          &.different-first{
+            width: 274px;
+            height: 152px;
+            &:last-child{
+              border-top: 1px solid #ededed;
+            }
+          }
+          &.different-second{
+            width: 273px;
+            height: 305px;
+            border-left:1px solid #ededed;
+          }
+          &.different-third{
+            width: 274px;
+            border-left:1px solid #ededed;
+          }
+        }
+      }
+    }
+
+    .snacks-under{
+      width: 100%;
+      height: 136px;
+      background-color: #fff;
+      overflow: hidden;
+      position: relative;
+      .arrow-left{
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: rgba(255, 255,255,255);
+        border:{
+          width: 0 0 2px 2px;
+          style: solid;
+          color:#dddddd;
+        }
+        transform: rotate(60deg) skewX(15deg);
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        margin-top: -10px;
+        cursor: pointer;
+      }
+      .arrow-right{
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: rgba(255, 255,255,255);
+        border:{
+          width: 0 0 2px 2px;
+          style: solid;
+          color:#dddddd;
+        }
+        transform: rotate(230deg) skewX(15deg);
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -10px;
+        cursor: pointer;
+      }
+      .snacks-show-list{
+        width: 274px;
+        border-right:1px solid #ededed;
+        height: 136px;
+        float: left;
+        overflow: hidden;
+        .snacks-pic{
+          display: block;
+          height: 80px;
+          float: left;
+          margin: {
+            top: 35px;
+            left: 58px;
+            bottom: 10px;
+            right: 30px;
+          }
+        }
+        .snacks-pic02{
+          display: block;
+          height: 80px;
+          float: left;
+          margin: {
+            top: 35px;
+            left: 30px;
+            bottom: 10px;
+            right: 30px;
+          }
+        }
+        .snacks-text{
+          float: left;
+          width: 120px;
+          font:{
+            size: 12px;
+            family: "SimSun";
+          }
+          word-wrap: break-word;
+          word-break: normal;
+          margin-top: 30px;
+          cursor: pointer;
+          .text-title{
+            color: #666;
+          }
+          .snacks-price{
+            color: #999;
+            line-height: 30px;
+            .price-red{
+              color: #ff1a17;
+              text-decoration: underline;
+            }
+          }
+          .snacks-comment{
+            color: #76c2e2;
+            line-height: 30px;
+          }
+        }
+      }
+      .snacks-last{
+        border-right: 0;
       }
     }
   }
