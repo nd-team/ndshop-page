@@ -1,0 +1,242 @@
+@import "../layout/variables", "../layout/mixin";
+#user-head{
+  background:#33b6ff;
+  margin-top:0;
+  margin-bottom:30px;
+  .header-lg{
+    width:210px;
+    height:80px;
+    .logo{
+      margin:18px 0;
+      background:url("/images/orders/logo.png") no-repeat;
+    }
+  }
+  .myshop{
+    float:left;
+    color:#fff;
+    width:80px;
+    text-align:center;
+    padding:15px 0;
+    line-height:25px;
+    a{
+      color:#fff;
+      display:inline-block;
+      width:100%;
+      height:17px;
+      line-height:17px;
+      border:1px solid #fff;
+      border-radius:10px;
+
+    }
+  }
+  .topnav{
+    li{
+      float:left;
+      margin:0 40px;
+      height:80px;
+      line-height:80px;
+      a{
+        font-size:16px;
+        color:#fff;
+      }
+    }
+  }
+  .search-wrap{
+    margin:24px 0 0 85px;
+    height:32px;
+    input{
+      width:144px;
+      height:32px;
+      padding:0;
+      margin:0;
+      border:0;
+      text-indent:5px;
+      font-size:12px;
+    }
+    button{
+      width:56px;
+      height:32px;
+      background:#fff;
+      padding:0;
+      color:#333;
+      font-size:12px;
+
+    }
+  }
+  .shopping-cart{
+    width:140px;
+    height:32px;
+    background:#fff;
+    margin:24px 0;
+    line-height:32px;
+    text-indent:10px;
+    a{
+      color:#666;
+      vertical-align:middle;
+      .shopping{
+        width:20px;
+        height:20px;
+        vertical-align:-3px;
+      }
+    }
+  }
+}
+#user-sidebar{
+  font-family:"Microsoft YaHei";
+  float:left;
+  h3{
+    font-size:16px;
+    color:#363636;
+  }
+  .menu{
+    margin-left:16px;
+    a{
+      display:block;
+      margin:12px 0;
+      font-size:14px;
+      &.active{
+        color:#e13332;
+      }
+    }
+  }
+
+}
+.modifypass-con{
+  font-family:"Microsoft YaHei";
+  width:967px;
+  float:right;
+  color:#666;
+  padding:10px 0;
+  h2{
+    font-size:12px;
+  }
+  .bar{
+    width:500px;
+    margin:10px auto;
+    height:6px;
+    background:#e2e2e2;
+    border-radius:3px;
+    dl{
+      width:33.3%;
+      float:left;
+      height:6px;
+      background:#e2e2e2;
+      position:relative;
+      border-radius:3px;
+      &.current{
+        background:#ff7575;
+        dt{
+          background:#ff7575;
+        }
+        dd{
+          color:#ff7575;
+          display:block;
+        }
+      }
+      &.past{
+        border-radius:0;
+        background:#ffb3b3;
+        dt{
+          background:#ffb3b3;
+        }
+      }
+      dt{
+        text-align:center;
+        width:24px;
+        height:24px;
+        border-radius:50%;
+        line-height:24px;
+        background:#e2e2e2;
+        color:#fff;
+        font-weight:bold;
+        position:absolute;
+        top:-10px;
+        left:42%;
+      }
+      dd{
+        width:100%;
+        text-align:center;
+        margin:15px 0;
+        display:none;
+      }
+    }
+  }
+  .step{
+    display:none;
+    width:600px;
+    margin:50px auto;
+    dl{
+      overflow:hidden;
+      margin:20px 0;
+      line-height:30px;
+      dt{
+        float:left;
+        width:130px;
+        text-align:right;
+        i{
+          color:#ff0e0e;
+        }
+      }
+      dd{
+        float:left;
+        margin-left:10px;
+        input{
+          width:180px;
+          height:30px;
+          line-height:30px;
+          border:1px solid #ededed;
+        }
+        a{
+          &.phone-veri{
+            border:1px solid #ededed;
+            display:inline-block;
+            padding:0 10px;
+          }
+          &.another{
+            color:#fe1d1b;
+          }
+        }
+        span{
+          display:inline-block;
+          color:#9a9a9a;
+          &.code{
+            background:#000000;
+            width:80px;
+            height:30px;
+            text-align:center;
+          }
+        }
+      }
+    }
+    &.phone{
+      display:block;
+    }
+    &.finish{
+      font-family:"simsun";
+      font-size:14px;
+      font-weight:bold;
+      color:#6ccb31;
+      p{
+        margin:70px 180px;
+        i{
+          display:inline-block;
+          background:url("/images/user/gou.png") no-repeat;
+          width:35px;
+          height:25px;
+          vertical-align:middle;
+          margin-right:10px;
+        }
+      }
+    }
+  }
+  .submit{
+    width:70px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    color:#fff;
+    background:linear-gradient(#4dcd45,#27b120);
+    border:none;
+    margin-left:140px;
+  }
+}

@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>我的收藏</title>
+    <title>收货地址</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/cart/collection.css" />
+    <link rel="stylesheet" href="/css/user/consume.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
-    <script src="/js/cart/collection.js"></script>
 </head>
 <body>
 <header>
@@ -37,7 +36,7 @@
             </ul>
         </div>
     </div>
-    <div class="header-ls" id="coll-head">
+    <div class="header-ls" id="user-head">
         <div class="wrap cleafix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
@@ -81,78 +80,79 @@
 
 <!--内容-->
 <div id="content" class="clearfix wrap">
-    <div id="coll-sidebar" class="clearfix">
+    <div id="user-sidebar" class="clearfix">
+        <h3>设置</h3>
         <div class="menu">
-            <h3>订单中心</h3>
-            <div class="submenu">
-                <a href="javascript:void(0) ">我的订单</a>
-            </div>
+            <a href="/pages/user/info.html" >个人信息</a>
+            <a href="/pages/user/safety.html" >账户安全</a>
+            <a href="javascript:void(0) ">账户绑定</a>
+            <a href="javascript:void(0) ">账户级别</a>
+            <a href="javascript:void(0) " class="active">收货地址</a>
+            <a href="javascript:void(0) ">消费记录</a>
         </div>
-        <div class="menu">
-            <h3>购物中心</h3>
-            <div class="submenu">
-                <a href="javascript:void(0) ">我的购物车</a>
-                <a href="javascript:void(0) " class="active">我的收藏</a>
-                <a href="javascript:void(0) ">我的足迹</a>
+    </div>
+    <div class="consume-con">
+        <div class="consume-title">
+            近一年实际消费金额：
+            <span>￥</span><span>123456.00</span>
+        </div>
+        <div class="consume-main">
+            <div class="consume-filter">
+                <a href="javascript:void(0)" class="active">近三个月记录</a>
+                <a href="javascript:void(0)">近一年记录</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>订单号</th>
+                        <th>消费金额</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2016-11-4 11:30:10</td>
+                        <td>8820161104113010</td>
+                        <td>￥<span>200.00</span></td>
+                    </tr>
+                    <tr>
+                        <td>2016-11-4 11:30:10</td>
+                        <td>8820161104113010</td>
+                        <td>￥<span>200.00</span></td>
+                    </tr>
+                    <tr>
+                        <td>2016-11-4 11:30:10</td>
+                        <td>8820161104113010</td>
+                        <td>￥<span>200.00</span></td>
+                    </tr>
+                    <tr>
+                        <td>2016-11-4 11:30:10</td>
+                        <td>8820161104113010</td>
+                        <td>￥<span>200.00</span></td>
+                    </tr>
+                    <tr>
+                        <td>2016-11-4 11:30:10</td>
+                        <td>8820161104113010</td>
+                        <td>￥<span>200.00</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="consume-page">
+                <button>首页</button>
+                <button>上一页</button>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="active">1</a>
+                     </li>
+                    <li>
+                        <a href="javascript:void(0)">2</a>
+                    </li>
+                </ul>
+                <button>下一页</button>
+                <button>末页</button>
             </div>
         </div>
     </div>
-    <div class="coll-main clearfix">
-        <h3>我的收藏</h3>
-        <div class="coll-filter">
-            <div class="coll-proshop">
-                <a href="javascript:void(0) " class="active" data-title="prolist">收藏的商品</a>
-                <a href="javascript:void(0) " data-title="shoplist">收藏的店铺</a>
-            </div>
-            <div class="search">
-                <input type="text" placeholder="请输入商品名称" size="10"> <button>搜索</button>
-            </div>
-            <dl class="sortfil">
-                <dt >分类筛选：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">厨房小电（1）</a>
-                    <a href="javascript:void(0) ">厨房卫浴（1）</a>
-                </dd>
-                <dd class="fr sortfil-more">
-                    <a href="javascript:void(0) ">更多&gt;</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>全部商品<span>(2)</span>：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">降价</a>
-                    <a href="javascript:void(0) ">促销</a>
-                </dd>
-                <dd class="fr sortfil-allselect">
-                    <input type="checkbox"> 全选
-                    <a href="javascript:void(0) ">取消关注</a>
-                </dd>
-            </dl>
-        </div>
-        <ul class=" addpay">
-            <li>
-                <a href="javascript:void(0)"><input type="checkbox"> 全选</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">加入购物车</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">取消关注</a>
-            </li>
-        </ul>
-
-        <div class="coll-null coll-prolist coll-tabs">
-            <p>你没有关注什么东西耶~</p>
-            <a href="javascript:void(0) ">现在去看看&gt;</a>
-        </div>
-        <div class="coll-null coll-shoplist coll-tabs">
-            <p>你没有关注店铺耶~</p>
-            <a href="javascript:void(0) ">现在去看看&gt;</a>
-        </div>
-    </div>
-
 </div>
 
 <footer>

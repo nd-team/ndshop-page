@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>我的收藏</title>
+    <title>账户绑定</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/cart/collection.css" />
+    <link rel="stylesheet" href="/css/user/account_bind.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
-    <script src="/js/cart/collection.js"></script>
+    <script src="/js/user/user.js"></script>
+
 </head>
 <body>
 <header>
@@ -37,7 +38,7 @@
             </ul>
         </div>
     </div>
-    <div class="header-ls" id="coll-head">
+    <div class="header-ls" id="user-head">
         <div class="wrap cleafix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
@@ -81,78 +82,54 @@
 
 <!--内容-->
 <div id="content" class="clearfix wrap">
-    <div id="coll-sidebar" class="clearfix">
+    <div id="user-sidebar" class="clearfix">
+        <h3>设置</h3>
         <div class="menu">
-            <h3>订单中心</h3>
-            <div class="submenu">
-                <a href="javascript:void(0) ">我的订单</a>
+            <a href="/pages/user/info.html" >个人信息</a>
+            <a href="/pages/user/safety.html" >账户安全</a>
+            <a href="javascript:void(0) " class="active">账户绑定</a>
+            <a href="javascript:void(0) ">账户级别</a>
+            <a href="javascript:void(0) ">收货地址</a>
+            <a href="javascript:void(0) ">消费记录</a>
+        </div>
+    </div>
+    <div class="bind-con">
+        <h2>账户绑定</h2>
+        <div class="bind-list">
+            <i><img src="/images/user/QQ.png" alt=""></i>
+            绑定QQ账号
+            <span class="unbind">未绑定</span>
+            <a href="javascript:void(0)" class="bingding">绑定</a>
+            <div class="forbind">
+                <div class="list-left">
+                    <p> <strong>绑定后可以使用微博账号购物</strong></p>
+                    <a href="javascript:void(0)">立即绑定</a>
+                </div>
+                <div class="list-right">
+                    <img src="/images/user/logo.png" >
+                    <img src="/images/user/double_arrow.png" class="arrow">
+                    <img src="/images/user/QQ_big.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="menu">
-            <h3>购物中心</h3>
-            <div class="submenu">
-                <a href="javascript:void(0) ">我的购物车</a>
-                <a href="javascript:void(0) " class="active">我的收藏</a>
-                <a href="javascript:void(0) ">我的足迹</a>
+        <div class="bind-list">
+            <i><img src="/images/user/sina.png" alt=""></i>
+            绑定微博账号
+            <span class="unbind">未绑定</span>
+            <a href="javascript:void(0)" class="bingding">绑定</a>
+            <div class="forbind">
+                <div class="list-left">
+                    <p> <strong>绑定后可以使用微博账号购物</strong></p>
+                    <a href="javascript:void(0)">立即绑定</a>
+                </div>
+                <div class="list-right">
+                    <img src="/images/user/logo.png" >
+                    <img src="/images/user/double_arrow.png" class="arrow">
+                    <img src="/images/user/sina_big.png" alt="">
+                </div>
             </div>
         </div>
     </div>
-    <div class="coll-main clearfix">
-        <h3>我的收藏</h3>
-        <div class="coll-filter">
-            <div class="coll-proshop">
-                <a href="javascript:void(0) " class="active" data-title="prolist">收藏的商品</a>
-                <a href="javascript:void(0) " data-title="shoplist">收藏的店铺</a>
-            </div>
-            <div class="search">
-                <input type="text" placeholder="请输入商品名称" size="10"> <button>搜索</button>
-            </div>
-            <dl class="sortfil">
-                <dt >分类筛选：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">厨房小电（1）</a>
-                    <a href="javascript:void(0) ">厨房卫浴（1）</a>
-                </dd>
-                <dd class="fr sortfil-more">
-                    <a href="javascript:void(0) ">更多&gt;</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>全部商品<span>(2)</span>：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">降价</a>
-                    <a href="javascript:void(0) ">促销</a>
-                </dd>
-                <dd class="fr sortfil-allselect">
-                    <input type="checkbox"> 全选
-                    <a href="javascript:void(0) ">取消关注</a>
-                </dd>
-            </dl>
-        </div>
-        <ul class=" addpay">
-            <li>
-                <a href="javascript:void(0)"><input type="checkbox"> 全选</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">加入购物车</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">取消关注</a>
-            </li>
-        </ul>
-
-        <div class="coll-null coll-prolist coll-tabs">
-            <p>你没有关注什么东西耶~</p>
-            <a href="javascript:void(0) ">现在去看看&gt;</a>
-        </div>
-        <div class="coll-null coll-shoplist coll-tabs">
-            <p>你没有关注店铺耶~</p>
-            <a href="javascript:void(0) ">现在去看看&gt;</a>
-        </div>
-    </div>
-
 </div>
 
 <footer>
