@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>购物车</title>
+    <title>我的收藏</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/cart/collection.css" />
-    <link rel="stylesheet" href="/font/icons/myfont.css">
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/common.js"></script>
     <script src="/js/cart/collection.js"></script>
 </head>
 <body>
@@ -43,10 +43,9 @@
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
             </div>
             <div class="myshop">
-                <h2>我的商城</h2>
+                <h3>我的商场</h3>
                 <a href="/index.html">返回首页</a>
             </div>
-
             <ul class="topnav">
                 <li>
                     <a href="javascript:void(0)">首页</a>
@@ -60,15 +59,18 @@
             </ul>
 
             <div class="search-wrap">
-                <input type="text" class="search-strip" value="" />
-                <button onclick="search('key');return false;" class="button">
-                    <i></i>搜索
+                <input type="text" class="search-strip" value="" placeholder="搜我想要的"/>
+                <button class="button">
+                    搜索
                 </button>
             </div>
             <div class="shopping-cart">
-                <i class="shopping-cart-icon"></i>
-                <a class="my-cart">我的购物车</a>
-                <a>&gt;</a>
+                <a class="my-cart">
+                    <svg role="img" class="shopping">
+                        <use xlink:href="#shopping"></use>
+                    </svg>
+                    我的购物车 &gt;
+                </a>
             </div>
 
         </div>
@@ -90,7 +92,7 @@
             <h3>购物中心</h3>
             <div class="submenu">
                 <a href="javascript:void(0) ">我的购物车</a>
-                <a href="javascript:void(0) ">我的收藏</a>
+                <a href="javascript:void(0) " class="active">我的收藏</a>
                 <a href="javascript:void(0) ">我的足迹</a>
             </div>
         </div>
@@ -99,8 +101,8 @@
         <h3>我的收藏</h3>
         <div class="coll-filter">
             <div class="coll-proshop">
-                <a href="javascript:void(0) " class="active">收藏的商品</a>
-                <a href="javascript:void(0) ">收藏的店铺</a>
+                <a href="javascript:void(0) " class="active" data-title="prolist">收藏的商品</a>
+                <a href="javascript:void(0) " data-title="shoplist">收藏的店铺</a>
             </div>
             <div class="search">
                 <input type="text" placeholder="请输入商品名称" size="10"> <button>搜索</button>
@@ -112,6 +114,9 @@
                     <a href="javascript:void(0) ">厨房小电（1）</a>
                     <a href="javascript:void(0) ">厨房卫浴（1）</a>
                 </dd>
+                <dd class="fr sortfil-more">
+                    <a href="javascript:void(0) ">更多&gt;</a>
+                </dd>
             </dl>
             <dl>
                 <dt>全部商品<span>(2)</span>：</dt>
@@ -119,6 +124,10 @@
                     <a href="javascript:void(0) " class="active">全部</a>
                     <a href="javascript:void(0) ">降价</a>
                     <a href="javascript:void(0) ">促销</a>
+                </dd>
+                <dd class="fr sortfil-allselect">
+                    <input type="checkbox"> 全选
+                    <a href="javascript:void(0) ">取消关注</a>
                 </dd>
             </dl>
         </div>
@@ -133,7 +142,7 @@
                 <a href="javascript:void(0)">取消关注</a>
             </li>
         </ul>
-        <div class="coll-prolist">
+        <div class="coll-tabs coll-prolist">
             <ul class="prolist-con">
                 <li class="prolist-pic">
                     <img src="/images/shop/details/pic04.png" >
@@ -237,10 +246,157 @@
                 </li>
             </ul>
         </div>
+        <div class="coll-tabs coll-shoplist">
+            <div class="coll-shopcon">
+                <ul class="shop-head">
+                    <li class="top">
+                        <a href="javascript:void(0)" >置顶</a>
+                        <a href="javascript:void(0)" >取消关注</a>
+                    </li>
+                    <li><a href="javascript:void(0)" ><img src="/images/cart/360.png"></a></li>
+                    <li class="shop-title"><strong>360手机官方旗舰店</strong></li>
+                    <li class="attention">20000</li>
+                    <li class="bottom">
+                        <a href="javascript:void(0)" >进入店铺</a>
+                        <a href="javascript:void(0)" >联系客服</a>
+                    </li>
+                </ul>
+                <div class="shop-main">
+                    <a href="javascript:void(0)" class="lastpic">&lt;</a>
+                    <ul class="shop-main-prolist">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="/images/cart/img01.png">
+                                <p>￥1205.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="/images/cart/img02.png">
+                                <p>￥1205.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="/images/cart/img03.png">
+                                <p>￥1205.00</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <a href="javascript:void(0)" class="nextpic">&gt;</a>
+                    <div class="btn">
+                        <a href="javascript:void(0)" class="active"></a>
+                        <a href="javascript:void(0)" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="coll-shopcon">
+                <ul class="shop-head">
+                    <li class="top">
+                        <a href="javascript:void(0)" >置顶</a>
+                        <a href="javascript:void(0)" >取消关注</a>
+                    </li>
+                    <li><a href="javascript:void(0)" ><img src="/images/cart/timberland.png"></a></li>
+                    <li class="shop-title"><strong>TIMBERLAND手表旗舰店</strong></li>
+                    <li class="attention">20000</li>
+                    <li class="bottom">
+                        <a href="javascript:void(0)" >进入店铺</a>
+                        <a href="javascript:void(0)" >联系客服</a>
+                    </li>
+                </ul>
+                <div class="shop-main ">
+                   <p class="nothing">暂时没有活动</p>
+                    <ul class="ticket">
+                        <li class="ticket1">
+                            <strong>￥50</strong>
+                            <a href="javascript:void(0)" >立即领取</a>
+                            <p>消费满100元可用</p>
+                            <span>2016.09.13 - 2016.10.13</span>
+                        </li>
+                        <li class="ticket2">
+                            <strong>￥100</strong>
+                            <a href="javascript:void(0)" >立即领取</a>
+                            <p>消费满100元可用</p>
+                            <span>2016.09.13 - 2016.10.13</span>
+                        </li>
+                        <li class="ticket3">
+                            <strong>￥200</strong>
+                            <a href="javascript:void(0)" >立即领取</a>
+                            <p>消费满100元可用</p>
+                            <span>2016.09.13 - 2016.10.13</span>
+                        </li>
+                        <li class="ticket4">
+                            <strong>￥300</strong>
+                            <a href="javascript:void(0)" >立即领取</a>
+                            <p>消费满100元可用</p>
+                            <span>2016.09.13 - 2016.10.13</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coll-shopcon">
+                <ul class="shop-head">
+                    <li class="top">
+                        <a href="javascript:void(0)" >置顶</a>
+                        <a href="javascript:void(0)" >取消关注</a>
+                    </li>
+                    <li><a href="javascript:void(0)" ><img src="/images/cart/walch.png"></a></li>
+                    <li class="shop-title"><strong>威路士官方旗舰店</strong></li>
+                    <li class="attention">20000</li>
+                    <li class="bottom">
+                        <a href="javascript:void(0)" >进入店铺</a>
+                        <a href="javascript:void(0)" >联系客服</a>
+                    </li>
+                </ul>
+                <div class="shop-main">
+                    <ul class="profil">
+                        <li class="active">
+                            <a href="javascript:void(0)" >热销</a>
+                        </li>
+                        <li >
+                            <a href="javascript:void(0)">新品</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">活动</a>
+                        </li>
+                    </ul>
+                    <div class="clearfix">
+                        <a href="javascript:void(0)" class="lastpic">&lt;</a>
+                        <ul class="shop-main-prolist">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="/images/cart/img01.png">
+                                    <p>￥1205.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="/images/cart/img02.png">
+                                    <p>￥1205.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="/images/cart/img03.png">
+                                    <p>￥1205.00</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <a href="javascript:void(0)" class="nextpic">&gt;</a>
+                        <div class="btn">
+                            <a href="javascript:void(0)" class="active"></a>
+                            <a href="javascript:void(0)" ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="coll-page clearfix">
-        <button class="lastpage">&lt; 上一页</button>
+        <button class="lastpage"><i></i></button>
         <ul >
             <li >
                 <a href="javascript:void(0)" class="active">1</a>
@@ -253,12 +409,12 @@
             </li>
 
         </ul>
-        <button class="nextpage">下一页 &gt;</button>
+        <button class="nextpage"><i></i></button>
         <p> 共100页</p>
         <div class="jump-page">
             跳转到：第 <input type="text" size="1"> 页
         </div>
-        <button>确定</button>
+        <button>GO</button>
     </div>
 
 </div>

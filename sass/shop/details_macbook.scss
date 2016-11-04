@@ -104,7 +104,7 @@ svg{
         font-size:12px;
         color:#666;
         float:left;
-        text-align-last:justify; //两端对齐
+        text-align-last:justify; /*两端对齐*/
       }
       dd{
         line-height:23px;
@@ -188,6 +188,17 @@ svg{
 
       }
     }
+    .choice{
+      dd{
+        a{
+          &.active{
+            border:2px solid #ea0407;
+            background:url("/images/shop/details/gou.png") no-repeat 101% 105%;
+          }
+        }
+
+      }
+    }
     .add-cart{
       margin:20px 65px;
       a{
@@ -206,345 +217,334 @@ svg{
           vertical-align:-6px;
           margin-left:10px;
         }
-        p{
-          font-size:12px;
-          color:#666;
-          margin:26px 0 0;
-        }
       }
-      .choice{
-        dd{
-          a{
-            &.active{
-              border:2px solid #ea0407;
-              background:url("/images/shop/details/gou.png") no-repeat 101% 105%;
-            }
-          }
+      p{
+        font-size:12px;
+        color:#666;
+        margin:26px 0 0;
+      }
 
+    }
+
+
+  }
+  .prodetail{
+    margin:30px 0;
+    width:100%;
+    .pronav-tabs{
+      height:40px;
+      background:#f6f6f6;
+      border:1px solid #ddd;
+      border-bottom:1px solid #33b5ff;
+      li{
+        float:left;
+        width:115px;
+        text-align:center;
+        height:40px;
+        line-height:40px;
+        a{
+          display:inline-block;
+          width:115px;
+          height:40px;
+          &.active{
+            background:#33b5ff;
+            color:#fff;
+          }
         }
       }
     }
-
-    .prodetail{
-      margin:30px 0;
-      width:100%;
-      .pronav-tabs{
-        height:40px;
-        background:#f6f6f6;
-        border:1px solid #ddd;
-        border-bottom:1px solid #33b5ff;
-        li{
-          float:left;
-          width:115px;
-          text-align:center;
-          height:40px;
-          line-height:40px;
-          a{
-            display:inline-block;
-            width:115px;
-            height:40px;
-            &.active{
-              background:#33b5ff;
-              color:#fff;
-            }
-          }
-        }
-      }
-      .protabs{
-        display:none;
-      }
-      .pro-intro{
-
-        .sidebar{
-          width:244px;
-          margin:10px 0 0;
-          float:left;
-          font-family:$main-sec-ff;
-          h2{
-            height:40px;
-            line-height:40px;
-            text-indent:20px;
-            background:#f6f6f6;
-          }
-          .myshop{
-            border:1px solid #ddd;
-            h2{
-              font-size:16px;
-              color:#333;
-              border-bottom:1px solid #ddd;
-            }
-            .shopbtn{
-              height:78px;
-              line-height:78px;
-              text-align:center;
-              a{
-                width:94px;
-                height:40px;
-                line-height:40px;
-                text-align:center;
-                display:inline-block;
-                border:1px solid #ddd;
-                margin:0 8px;
-                font-size:14px;
-                background:#f6f6f6;
-
-                i{
-                  font-size:20px;
-                  color:#25b7dc;
-                  vertical-align:-3px;
-                  margin-right:5px;
-                }
-
-              }
-            }
-          }
-        }
-        .pro-intro-text{
-          width:837px;
-          padding:40px 0;
-          border-bottom:1px solid #ddd;
-          overflow:hidden;
-          float:right;
-          p{
-            float:left;
-            width:25%;
-            font-size:13px;
-            color:#666;
-            margin:6px 0;
-            font-family:$headline-ff;
-          }
-        }
-        .pro-intro-banner{
-          width:100%;
-          margin:20px 0;
-        }
-        .pro-intro-img{
-          text-align:center;
-          border:1px solid #ddd;
-          img{
-            margin:30px 0;
-          }
-        }
-      }
-      .pro-spec{
-        table{
-          width:100%;
-          margin:40px 0 0;
-          tr{
-            height:40px;
-            line-height:40px;
-            font-size:14px;
-            color:#666;
-            th{
-              border:1px solid #ddd;
-              background:#f6f6f6;
-              text-indent:20px;
-              font-weight:bold;
-            }
-            td{
-              border:1px solid #ddd;
-
-              &:nth-child(1){
-                text-align:center;
-                font-weight:bold;
-                width:20%;
-              }
-              &:nth-child(2){
-                text-indent:20px;
-              }
-            }
-          }
-        }
-      }
-      .pro-afterser{
-        margin:40px 0;
-        color:#666;
+    .protabs{
+      display:none;
+    }
+    .pro-intro{
+      .sidebar{
+        width:244px;
+        margin:10px 0 0;
+        float:left;
+        font-family:$main-sec-ff;
         h2{
           height:40px;
           line-height:40px;
-          font-size:14px;
-          background:#f3f3f3;
-          text-indent:30px;
+          text-indent:20px;
+          background:#f6f6f6;
         }
-        .afterser-text{
-          margin:40px 0;
-          padding:0 40px;
-          h3{
-            font-size:14px;
-            color:#41acf2;
+        .myshop{
+          border:1px solid #ddd;
+          h2{
+            font-size:16px;
+            color:#333;
+            border-bottom:1px solid #ddd;
           }
-          p{
-            margin:10px 0;
-            line-height:16px;
+          .shopbtn{
+            height:78px;
+            line-height:78px;
+            text-align:center;
+            a{
+              width:94px;
+              height:40px;
+              line-height:40px;
+              text-align:center;
+              display:inline-block;
+              border:1px solid #ddd;
+              margin:0 8px;
+              font-size:14px;
+              background:#f6f6f6;
+              i{
+                font-size:20px;
+                color:#25b7dc;
+                vertical-align:-3px;
+                margin-right:5px;
+              }
+
+            }
           }
         }
       }
-      .pro-rate{
-        margin:38px 0;
-        color:#666;
-        h3{
+      .pro-intro-text{
+        width:837px;
+        padding:40px 0;
+        border-bottom:1px solid #ddd;
+        overflow:hidden;
+        float:right;
+        p{
+          float:left;
+          width:25%;
+          font-size:13px;
+          color:#666;
+          margin:6px 0;
+          font-family:$headline-ff;
+        }
+      }
+      .pro-intro-banner{
+        width:100%;
+        margin:20px 0;
+      }
+      .pro-intro-img{
+        text-align:center;
+        border:1px solid #ddd;
+        img{
+          margin:30px 0;
+        }
+      }
+    }
+    .pro-spec{
+      table{
+        width:100%;
+        margin:40px 0 0;
+        tr{
           height:40px;
           line-height:40px;
-          background:#f3f3f3;
-          font-weight:inherit;
-          border-width:1px;
-          border-style:solid none;
-          border-color:#ddd;
-          text-indent:35px;
           font-size:14px;
-        }
-        .pro-rateinfo{
-          padding:30px;
-          .pro-rate-good{
-            width:200px;
-            color:#33b5ff;
-            font-size:25px;
-            font-family:$main-sec-ff;
-            text-align:center;
-            float:left;
-            span{
-              font-size:45px;
-            }
-            p{
-              color:#666;
-              font-size:12px;
-              margin:10px;
-            }
+          color:#666;
+          th{
+            border:1px solid #ddd;
+            background:#f6f6f6;
+            text-indent:20px;
+            font-weight:bold;
           }
-          .pro-rate-score{
-            width:230px;
-            float:left;
-            dl{
-              overflow:hidden;
-              dt{
-                width:60px;
-                height:20px;
-                line-height:20px;
-                float:left;
-              }
-              dd{
-                width:84px;
-                height:10px;
-                background:#f6f6f6;
-                float:left;
-                margin:5px;
-                span{
-                  display:inline-block;
-                  width:60px;
-                  height:10px;
-                  background:#33b5ff;
-                }
-              }
-            }
-          }
-          .pro-rate-imp{
-            width:500px;
-            float:left;
-            color:#999;
-            dt{
-              float:left;
-              width:65px;
+          td{
+            border:1px solid #ddd;
+
+            &:nth-child(1){
               text-align:center;
+              font-weight:bold;
+              width:20%;
+            }
+            &:nth-child(2){
+              text-indent:20px;
+            }
+          }
+        }
+      }
+    }
+    .pro-afterser{
+      margin:40px 0;
+      color:#666;
+      h2{
+        height:40px;
+        line-height:40px;
+        font-size:14px;
+        background:#f3f3f3;
+        text-indent:30px;
+      }
+      .afterser-text{
+        margin:40px 0;
+        padding:0 40px;
+        h3{
+          font-size:14px;
+          color:#41acf2;
+        }
+        p{
+          margin:10px 0;
+          line-height:16px;
+        }
+      }
+    }
+    .pro-rate{
+      margin:38px 0;
+      color:#666;
+      h3{
+        height:40px;
+        line-height:40px;
+        background:#f3f3f3;
+        font-weight:inherit;
+        border-width:1px;
+        border-style:solid none;
+        border-color:#ddd;
+        text-indent:35px;
+        font-size:14px;
+      }
+      .pro-rateinfo{
+        padding:30px;
+        .pro-rate-good{
+          width:200px;
+          color:#33b5ff;
+          font-size:25px;
+          font-family:$main-sec-ff;
+          text-align:center;
+          float:left;
+          span{
+            font-size:45px;
+          }
+          p{
+            color:#666;
+            font-size:12px;
+            margin:10px;
+          }
+        }
+        .pro-rate-score{
+          width:230px;
+          float:left;
+          dl{
+            overflow:hidden;
+            dt{
+              width:60px;
+              height:20px;
+              line-height:20px;
+              float:left;
             }
             dd{
+              width:84px;
+              height:10px;
+              background:#f6f6f6;
               float:left;
-              width:430px;
-              q{
-                background:#eef1ff;
-                padding:2px 5px;
-                margin:0 5px 10px 0;
-                float:left;
+              margin:5px;
+              span{
+                display:inline-block;
+                width:60px;
+                height:10px;
+                background:#33b5ff;
               }
             }
           }
         }
-        .pro-rate-tabs{
-          li{
+        .pro-rate-imp{
+          width:500px;
+          float:left;
+          color:#999;
+          dt{
             float:left;
-            height:30px;
-            line-height:30px;
-            background:#f6f6f6;
-            width:100px;
-            &:nth-child(1){
-              width:200px;
-            }
-
-            a{
-              display:inline-block;
-              text-align:center;
-              width:100%;
-              height:30px;
-            }
+            width:65px;
+            text-align:center;
           }
-        }
-        .pro-rate-list{
-          padding:20px 50px;
-          border-bottom:1px solid #ddd;
-          .member{
+          dd{
             float:left;
-            .headpic{
-              width:52px;
-              height:52px;
-              padding:0 10px;
-            }
-            .patestar{
-              margin:10px 0;
-            }
-            p{
-              margin:5px 0;
-            }
-          }
-          .ratecon{
-            float:left;
-            width:780px;
-            margin:0 30px;
-            p{
-              margin:10px;
-              line-height:16px;
-            }
+            width:430px;
             q{
               background:#eef1ff;
-              padding:3px 10px;
-            }
-            .ratepic{
-              img{
-                width:100px;
-              }
+              padding:2px 5px;
+              margin:0 5px 10px 0;
+              float:left;
             }
           }
         }
-        .rate-list-page{
-          width:350px;
-          margin:20px 0;
-          float:right;
-          button{
-            float:left;
-            width:50px;
-            height:24px;
-            line-height:20px;
-            font-size:12px;
-            padding:0;
-            margin:0 10px;
-            background:#ededed;
-            outline:none;
-            color:#666;
+      }
+      .pro-rate-tabs{
+        li{
+          float:left;
+          height:30px;
+          line-height:30px;
+          background:#f6f6f6;
+          width:100px;
+          &:nth-child(1){
+            width:200px;
           }
-          ul{
-            li{
-              float:left;
-              a{
-                display:inline-block;
-                width:28px;
-                height:24px;
-                text-align:center;
-                line-height:24px;
-                border:1px solid #ededed;
-                border-radius:1px;
-                margin:0 3px;
-                &.active{
-                  border:none;
-                  color:#3db1fa;
-                }
+
+          a{
+            display:inline-block;
+            text-align:center;
+            width:100%;
+            height:30px;
+          }
+        }
+      }
+      .pro-rate-list{
+        padding:20px 50px;
+        border-bottom:1px solid #ddd;
+        .member{
+          float:left;
+          .headpic{
+            width:52px;
+            height:52px;
+            padding:0 10px;
+          }
+          .patestar{
+            margin:10px 0;
+          }
+          p{
+            margin:5px 0;
+          }
+        }
+        .ratecon{
+          float:left;
+          width:780px;
+          margin:0 30px;
+          p{
+            margin:10px;
+            line-height:16px;
+          }
+          q{
+            background:#eef1ff;
+            padding:3px 10px;
+          }
+          .ratepic{
+            img{
+              width:100px;
+            }
+          }
+        }
+      }
+      .rate-list-page{
+        width:350px;
+        margin:20px 0;
+        float:right;
+        button{
+          float:left;
+          width:50px;
+          height:24px;
+          line-height:20px;
+          font-size:12px;
+          padding:0;
+          margin:0 10px;
+          background:#ededed;
+          outline:none;
+          color:#666;
+        }
+        ul{
+          li{
+            float:left;
+            a{
+              display:inline-block;
+              width:28px;
+              height:24px;
+              text-align:center;
+              line-height:24px;
+              border:1px solid #ededed;
+              border-radius:1px;
+              margin:0 3px;
+              &.active{
+                border:none;
+                color:#3db1fa;
               }
             }
           }
