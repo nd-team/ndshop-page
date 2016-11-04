@@ -101,67 +101,75 @@
   }
 
 }
-.safety-con{
-  width:950px;
+.bind-con{
+  font-family:"Microsoft YaHei";
+  width:967px;
   float:right;
   color:#666;
   h2{
     font-size:12px;
+    margin-top:10px ;
   }
-  .safelist{
-    height:50px;
-    padding:25px 0;
-    border-bottom:1px solid #ededed;
-    svg{
-      width:31px;
-      height:21px;
-      vertical-align:-2px;
-    }
-    dt{
-      float:left;
-      height:50px;
-      line-height:50px;
-      padding:0 28px;
-      border-right:1px solid #ededed;
-      strong{
-        font-family:'Microsoft YaHei';
-        font-size:18px;
-        color:#666;
+  .bind-list{
+    line-height:24px;
+    background:#f4f4f4;
+    padding:10px 30px;
+    margin:10px 0;
+    overflow:hidden;
+    i{
+      margin-right:5px;
+      img{
+        vertical-align:middle;
       }
     }
-    dd{
-      float:left;
-      height:50px;
-      line-height:50px;
-      padding:0 30px;
-      width:700px;
-      p{
+    .unbind{
+      color:#ffb20c;
+    }
+    .bingding{
+      float:right;
+      color:#fb5d5e;
+    }
+    .forbind{
+      margin-bottom:10px;
+      overflow:hidden;
+      display:none;
+      .list-left{
+        margin-left:30px;
         float:left;
-        &.red{
-          color:#ff0e0e;
+        p{
+          color:#3ca953;
+          font-size:18px;
+          margin:20px 0;
         }
-        span{
-          margin:0 25px 0 15px;
-        }
-      }
-
-      a{
-        float:right;
-        color:#30b5fa;
-        display:inline-block;
-        width:80px;
-        text-align:center;
-        height:25px;
-        line-height:25px;
-        margin-top:15px;
-        &.bg{
+        a{
+          display:inline-block;
+          width:80px;
           height:25px;
-          background:linear-gradient(#ddffd6,#b4f8a3);
-          color:#666;
-          border:1px solid #addaa3;
+          text-align:center;
+          line-height:25px;
+          background:linear-gradient(#deffd4,#b4f8a3);
+          border:1px solid #abdba1;
           border-radius:3px;
         }
       }
+      .list-right{
+        width:363px;
+        float:right;
+        margin-top:20px;
+        vertical-align:middle;
+        border-left:1px solid #ededed;
+        padding-left:27px;
+        img{
+          &.arrow{
+            width:50px;
+            height:30px;
+            margin:0 10px 10px;
+
+          }
+        }
+      }
+
     }
   }
+
 }

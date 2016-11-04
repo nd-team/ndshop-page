@@ -82,26 +82,27 @@
   }
 }
 #user-sidebar{
+  font-family:"Microsoft YaHei";
   float:left;
-    h3{
-      font-size:16px;
-      color:#363636;
-    }
-    .menu{
-      margin-left:16px;
-      a{
-        display:block;
-        margin:12px 0;
-        font-size:14px;
-        &.active{
-          color:#e13332;
-        }
+  h3{
+    font-size:16px;
+    color:#363636;
+  }
+  .menu{
+    margin-left:16px;
+    a{
+      display:block;
+      margin:12px 0;
+      font-size:14px;
+      &.active{
+        color:#e13332;
       }
     }
+  }
 
 }
 .info-con{
-  width:980px;
+  width:950px;
   float:right;
   .infonav{
     li{

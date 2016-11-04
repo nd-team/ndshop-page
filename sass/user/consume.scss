@@ -101,67 +101,86 @@
   }
 
 }
-.safety-con{
-  width:950px;
+.consume-con{
+  font-family:"Microsoft YaHei";
+  width:967px;
   float:right;
   color:#666;
-  h2{
-    font-size:12px;
-  }
-  .safelist{
-    height:50px;
-    padding:25px 0;
+  border-bottom:1px solid #ededed;
+  .consume-title{
+    font-size:14px;
+    height:66px;
+    line-height:66px;
     border-bottom:1px solid #ededed;
-    svg{
-      width:31px;
-      height:21px;
-      vertical-align:-2px;
+    text-indent:39px;
+    span{
+      color:#e13332;
+      font-weight:bold;
     }
-    dt{
-      float:left;
-      height:50px;
-      line-height:50px;
-      padding:0 28px;
-      border-right:1px solid #ededed;
-      strong{
-        font-family:'Microsoft YaHei';
-        font-size:18px;
-        color:#666;
-      }
-    }
-    dd{
-      float:left;
-      height:50px;
-      line-height:50px;
-      padding:0 30px;
-      width:700px;
-      p{
-        float:left;
-        &.red{
-          color:#ff0e0e;
-        }
-        span{
-          margin:0 25px 0 15px;
-        }
-      }
-
+  }
+  .consume-main{
+    .consume-filter{
+      margin:35px 39px 10px;
       a{
-        float:right;
-        color:#30b5fa;
+        margin-right:28px;
         display:inline-block;
-        width:80px;
+        padding:3px;
+        &.active{
+          color:#e43c3b;
+          font-weight:bold;
+          border-bottom:2px solid #e43c3b;
+        }
+      }
+    }
+    table{
+      width:890px;
+      margin:0 auto;
+      border:1px solid #ededed;
+      color:#333;
+      th{
+        background:#ededed;
         text-align:center;
-        height:25px;
-        line-height:25px;
-        margin-top:15px;
-        &.bg{
-          height:25px;
-          background:linear-gradient(#ddffd6,#b4f8a3);
-          color:#666;
-          border:1px solid #addaa3;
-          border-radius:3px;
+        width:33%;
+        height:30px;
+      }
+      tbody{
+        td{
+          text-align:center;
+          width:33%;
+          height:28px;
+          border:1px solid #ededed;
+        }
+      }
+    }
+
+    .consume-page{
+      margin:10px 40px 35px 0;
+      float:right;
+      button{
+        float:left;
+        margin:0 3px;
+        color:#999;
+        border:1px solid #999;
+        background:#fff;
+      }
+      ul{
+        float:left;
+        li{
+          float:left;
+          width:30px;
+          height:20px;
+          text-align:center;
+          line-height:20px;
+          a{
+            display:inline-block;
+            width:30px;
+            &.active{
+              color:#e43c3b;
+            }
+          }
         }
       }
     }
   }
+
 }
