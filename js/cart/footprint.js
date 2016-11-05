@@ -13,12 +13,11 @@ $(document).ready(function(){
         $('.footprint-main .footline-blue').animate({'height':wst},70);
 
     });
+
     $('.print-con .x').click(function(){
-        // $(this).parent().remove();
-        console.info($(this).parents('.print-con').children().length);
-        // if($(this).parents('.print-con').children('li').length==0){
-        //     $(this).parents('.footprint-list').remove()
-        // }
+
+        $(this).parent().remove()
+        
     });
     $('.print-title a').click(function(){
         $(this).parents('.footprint-list').remove();

@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>我的收藏</title>
+    <title>账户安全</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/cart/collection.css" />
+    <link rel="stylesheet" href="/css/user/safety.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
-    <script src="/js/cart/collection.js"></script>
+
 </head>
 <body>
 <header>
     <div class="header-top">
-        <div class="wrap clearfix">
+        <div class="wrap cleafix">
             <div class="top-add">
                 <span>运送至：<a href="javascript:void(0)">广州</a></span>
             </div>
@@ -37,8 +37,8 @@
             </ul>
         </div>
     </div>
-    <div class="header-ls" id="coll-head">
-        <div class="wrap cleafix">
+    <div class="header-ls" id="user-head">
+        <div class="wrap clearfix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
             </div>
@@ -81,78 +81,57 @@
 
 <!--内容-->
 <div id="content" class="clearfix wrap">
-    <div id="coll-sidebar" class="clearfix">
+    <div id="user-sidebar" class="clearfix">
+        <h3>设置</h3>
         <div class="menu">
-            <h3>订单中心</h3>
-            <div class="submenu">
-                <a href="javascript:void(0) ">我的订单</a>
-            </div>
-        </div>
-        <div class="menu">
-            <h3>购物中心</h3>
-            <div class="submenu">
-                <a href="javascript:void(0) ">我的购物车</a>
-                <a href="javascript:void(0) " class="active">我的收藏</a>
-                <a href="javascript:void(0) ">我的足迹</a>
-            </div>
+            <a href="/pages/user/info.html" >个人信息</a>
+            <a href="/pages/user/safety.html" class="active">账户安全</a>
+            <a href="javascript:void(0) ">账户绑定</a>
+            <a href="javascript:void(0) ">账户级别</a>
+            <a href="javascript:void(0) ">收货地址</a>
+            <a href="javascript:void(0) ">消费记录</a>
         </div>
     </div>
-    <div class="coll-main clearfix">
-        <h3>我的收藏</h3>
-        <div class="coll-filter">
-            <div class="coll-proshop">
-                <a href="javascript:void(0) " class="active" data-title="prolist">收藏的商品</a>
-                <a href="javascript:void(0) " data-title="shoplist">收藏的店铺</a>
-            </div>
-            <div class="search">
-                <input type="text" placeholder="请输入商品名称" size="10"> <button>搜索</button>
-            </div>
-            <dl class="sortfil">
-                <dt >分类筛选：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">厨房小电（1）</a>
-                    <a href="javascript:void(0) ">厨房卫浴（1）</a>
-                </dd>
-                <dd class="fr sortfil-more">
-                    <a href="javascript:void(0) ">更多&gt;</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>全部商品<span>(2)</span>：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">降价</a>
-                    <a href="javascript:void(0) ">促销</a>
-                </dd>
-                <dd class="fr sortfil-allselect">
-                    <input type="checkbox"> 全选
-                    <a href="javascript:void(0) ">取消关注</a>
-                </dd>
-            </dl>
-        </div>
-        <ul class=" addpay">
-            <li>
-                <a href="javascript:void(0)"><input type="checkbox"> 全选</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">加入购物车</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">取消关注</a>
-            </li>
-        </ul>
+    <div class="safety-con">
+        <h2>安全中心</h2>
+        <dl class="safelist">
+            <dt>
+                <svg role="img" class="bangong">
+                    <use xlink:href="#bangong"></use>
+                </svg>
+                <strong>登录密码:</strong>
+            </dt>
+            <dd>
+                <p class="red">互联网账户存在被盗风险，建议你定期更改密码以保护账号安全。</p>
+                <a href="/pages/user/modifypass.html">修改</a>
 
-        <div class="coll-null coll-prolist coll-tabs">
-            <p>你没有关注什么东西耶~</p>
-            <a href="javascript:void(0) ">现在去看看&gt;</a>
-        </div>
-        <div class="coll-null coll-shoplist coll-tabs">
-            <p>你没有关注店铺耶~</p>
-            <a href="javascript:void(0) ">现在去看看&gt;</a>
-        </div>
+            </dd>
+        </dl>
+        <dl class="safelist">
+            <dt>
+                <svg role="img" class="bangong">
+                    <use xlink:href="#bangong"></use>
+                </svg>
+                <strong>邮箱验证:</strong>
+            </dt>
+            <dd>
+                <p>验证后，可用于快速找回登录密码，接收账户余额变动提醒。</p>
+                <a href="javascript:void(0)" class="bg">立即验证</a>
+            </dd>
+        </dl>
+        <dl class="safelist">
+            <dt>
+                <svg role="img" class="bangong">
+                    <use xlink:href="#bangong"></use>
+                </svg>
+                <strong>手机验证:</strong>
+            </dt>
+            <dd>
+                <p >您验证的手机：<span>137****733</span> 若已丢失或停用，请立即更换，避免账户被盗。</p>
+                <a href="javascript:void(0)">修改</a>
+            </dd>
+        </dl>
     </div>
-
 </div>
 
 <footer>
