@@ -27,6 +27,7 @@
             style: solid;
             color: #33b5ff;
           }
+
           &:last-child {
             border-bottom: 1px solid #33b5ff;
           }
@@ -67,15 +68,12 @@
             font: {
               size: 16px;
             }
-            .index_family{
-              fill:$white;
-            }
           }
           .samll-menu {
             height: 40px;
             line-height: 20px;
             padding: {
-              left: 22px;
+              left: 28px;
               right: 16px;
               top:5px;
               bottom: 3px;
@@ -93,7 +91,7 @@
           .jiantou {
             position: absolute;
             z-index: 1;
-            top: 35px;
+            top: 48px;
             right: 8px;
             width: 5px;
             height: 8px;
@@ -115,7 +113,7 @@
           z-index: 100;
           border: {
             right: 2px;
-            bottom: 2px;
+            bottom: 1px;
             style: solid;
             color: #33b5ff;
           }
@@ -611,45 +609,9 @@
   line-height: 50px;
   margin-bottom: 60px;
     img{
-      margin: 0 10px;
-      cursor: pointer;
+      margin: 0 12px;
       display:inline-block;
       vertical-align: middle;
-      &.pic01{
-        height: 30px;
-        width: 137px;
-        display: inline-block;
-      }
-      &.pic02{
-        height: 40px;
-        width: 80px;
-        display: inline-block;
-      }
-      &.pic03{
-        height: 32px;
-        width: 130px;
-        display: inline-block;
-      }
-      &.pic04{
-        height: 38px;
-        width: 138px;
-        display: inline-block;
-      }
-      &.pic05{
-        height: 34px;
-        width: 135px;
-        display: inline-block;
-      }
-      &.pic06{
-        height: 47px;
-        width: 134px;
-        display: inline-block;
-      }
-      &.pic07{
-        height: 42px;
-        width: 138px;
-        display: inline-block;
-      }
     }
 }
 
