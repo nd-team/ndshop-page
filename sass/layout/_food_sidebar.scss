@@ -270,22 +270,22 @@
             }
         }
     }
-    .banner-yuan{
+    .banner-circle{
         position:absolute;
         left: 50%;
         bottom: 20px;
         margin-left:-56px;
         z-index: 60;
         li{
-            width: 8px;
-            height: 8px;
-            background-color: #888;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(0,0,0,0.3);
             float: left;
             border-radius:50%;
             cursor:pointer;
             margin: 0 8px;
-            &.curent{
-                background-color:rgba(0,0,0,0.2);
+            &.current{
+                background-color:rgba(0,0,0,0.1);
             }
         }
     }
