@@ -33,11 +33,11 @@ $(document).ready(function(){
         }
         banner_change()
     }
-    banner_change_time = setInterval(banner_change_self, 2000);
+    var banner_timer= setInterval(banner_change_self, 2000);
     $(".main-banner").on("mouseover", function() { //鼠标进入轮播区域时，自动切换暂停
-        clearInterval(banner_change_time);
+        clearInterval(banner_timer);
     })
     $(".main-banner").on("mouseout", function() { //鼠标离开轮播区域时，自动切换继续
-        banner_change_time = setInterval(banner_change_self, 2000);
+        banner_timer = setInterval(banner_change_self, 2000);
     })
 })
