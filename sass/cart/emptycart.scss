@@ -8,11 +8,12 @@
       padding:163px 0 164px 376px;
     .cart-text{
       i{
-         width: 56px;
-         height: 54px;
-         background: #fc5e5f;
+         width: 64px;
+         height: 64px;
+         background: url("/images/cart/gouwuche-kong.png") no-repeat;
          display: block;
          float: left;
+
 
       }
       span{
@@ -95,10 +96,10 @@
            .g-button{
               margin: 10px 0 0;
               text-align: center;
-             i{
+             svg{
                 width: 24px;
                 height: 24px;
-                background: #31b5ff;
+                //background: #31b5ff;
                 display: inline-block;
                 vertical-align: middle;
                // float: left;

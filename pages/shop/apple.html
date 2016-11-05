@@ -8,9 +8,10 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="/css/base.css" />
     <link rel="stylesheet" type="text/css" href="/css/shop/apple.css" />
-    <link rel="stylesheet" type="text/css" href="font/icons/myfont.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/common.js"></script>
     <script src="/js/shop/shop.js"></script>
+
 
 </head>
 <body>
@@ -72,7 +73,9 @@
     <div class="shop-summary">
         <div class="wrap">
         <p class=" shop-name">
-            <i class="shop-cart-icon"></i>
+            <svg role="img" class="dianpu">
+                <use xlink:href="#dianpu"></use>
+            </svg>
             <a class="shop-gold">熊本宝宝的旗舰店</a>
             <a class="shop-gat">关注店铺</a>
 
@@ -111,10 +114,14 @@
 
                  <div class="left-side-top">
                        <input type="text" class="left-search" value="">
-                       <button>
-                           <i class="mf-search"></i>
+                          <button>
+                           <!--<i class="mf-search"></i>-->
+                           <svg role="img" class="fangdajing">
+                               <use xlink:href="#fangdajing"></use>
+                           </svg>
                            搜索
                        </button>
+
                      <div class="left-search-hot">
                          <span>热门搜索:</span>
                          <a>iPod</a>
@@ -129,9 +136,6 @@
                          店内分类
                      </div>
 
-                     <script type="text/javascript">
-
-                     </script>
                      <!--左侧-->
                      <ul class="store-duty">
                          <li class="store-now"><a href="javascript:void(0)" class="inactive">Pro</a>
@@ -157,6 +161,8 @@
                   </div>
 
               </div>
+
+
              <!--右侧内容框-->
             <div class="right-side">
 
@@ -285,10 +291,12 @@
 
               </div>
                     <div class="clearfix"></div>
+
+
                 <!--分页-->
                   <div class="menu">
 
-                          <a href="javascript:void(0)" class="present">1</a>
+                          <a href="javascript:void(0)" class="listnum">1</a>
                           <a href="javascript:void(0)" class="listnum">2</a>
                           <a href="javascript:void(0)" class="listnum">3</a>
                           <a href="javascript:void(0)" class="listnum">4</a>

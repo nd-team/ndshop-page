@@ -10,14 +10,15 @@
     <link rel="stylesheet" type="text/css" href="/css/cart/settlement.css" />
     <script src="/js/shop/jquery.js"></script>
     <script src="/js/shop/shop.js"></script>
-    <script src="../../js/shop/shop.js"></script>
+    <script src="/js/shop/shop.js"></script>
+    <script src="/js/common.js"></script>
 
 
 </head>
 <body>
 <header>
     <div class="header-top">
-        <div class="wrap cleafix">
+        <div class="wrap clearfix">
             <div class="top-add">
                 <span>运送至：<a href="javascript:void(0)">广州</a></span>
             </div>
@@ -73,26 +74,36 @@
 
                  </script>
 
-
+         <style>
+            svg{
+                 width: 18px;
+                 height: 13px;
+             }
+         </style>
 
                  <div class="card-tab">
                      <ul class="card-tab-title">
-                         <li class="quick-pay">快捷支付</li>
+                         <li class="quick-pay">
+                             <svg role="img" class="card">
+                                 <use xlink:href="#card"></use>
+                             </svg>
+                             快捷支付
+                         </li>
                          <li>网银支付</li>
                      </ul>
                      <div class="bank-cd">
                          <div class="q-card" style="display:block;">
                              <ul>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/中国银行.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/中国工商银行.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/建设银行.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/招商银行.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/中国农业银行.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/交通银行.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/农村信用合作社.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/兴业银行.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/中国邮政.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/光大银行.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/BOC.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/ICBC.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/CCB.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/CMB.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/ABC.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/BCM.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/RURAL-CREDIT.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/CIB.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/PSBC.png"/></a></li>
+                                 <li><a href="javascript:void(0)"><img src="/images/cart/CEB.png"/></a></li>
                                  <li><button>更多银行</button></li>
                              </ul>
                          </div>
