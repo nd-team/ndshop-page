@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>消费记录</title>
+    <title>私信</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/user/consume.css" />
-    <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/common.js"></script>
+    <link rel="stylesheet" href="/css/news/news.css" />
+    <style>
+        .null{
+            float:left;
+            color:#333;
+            width:100px;
+            margin:160px 423px;
+            font-size:16px;
+            font-family:"Microsoft YaHei";
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -36,7 +44,7 @@
             </ul>
         </div>
     </div>
-    <div class="header-ls" id="user-head">
+    <div class="header-ls" id="news-head">
         <div class="wrap cleafix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
@@ -50,7 +58,7 @@
                     <a href="/index.html">首页</a>
                 </li>
                 <li>
-                    <a href="/pages/user/info.html">账户设置</a>
+                    <a href="/pages/user/">账户设置</a>
                 </li>
                 <li>
                     <a href="/pages/news/news_system.html">消息</a>
@@ -76,83 +84,19 @@
     </div>
 
 </header>
-<!--左侧菜单栏-->
 
 <!--内容-->
 <div id="content" class="clearfix wrap">
-    <div id="user-sidebar" class="clearfix">
-        <h3>设置</h3>
+    <!--左侧菜单栏-->
+    <div id="news-sidebar" class="clearfix">
+        <h3>消息</h3>
         <div class="menu">
-            <a href="/pages/user/info.html">个人信息</a>
-            <a href="/pages/user/safety.html">账户安全</a>
-            <a href="/pages/user/account_bind.html">账户绑定</a>
-            <a href="javascript:void(0) ">账户级别</a>
-            <a href="/pages/user/ship_address.html">收货地址</a>
-            <a href="/pages/user/consume.html" class="active">消费记录</a>
+            <a href="/pages/news/news_system.html" >系统消息</a>
+            <a href="/pages/news/news_private.html" class="active">私信</a>
+            <a href="/pages/news/news_setting.html">设置</a>
         </div>
     </div>
-    <div class="consume-con">
-        <div class="consume-title">
-            近一年实际消费金额：
-            <span>￥</span><span>123456.00</span>
-        </div>
-        <div class="consume-main">
-            <div class="consume-filter">
-                <a href="javascript:void(0)" class="active">近三个月记录</a>
-                <a href="javascript:void(0)">近一年记录</a>
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>时间</th>
-                        <th>订单号</th>
-                        <th>消费金额</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2016-11-4 11:30:10</td>
-                        <td>8820161104113010</td>
-                        <td>￥<span>200.00</span></td>
-                    </tr>
-                    <tr>
-                        <td>2016-11-4 11:30:10</td>
-                        <td>8820161104113010</td>
-                        <td>￥<span>200.00</span></td>
-                    </tr>
-                    <tr>
-                        <td>2016-11-4 11:30:10</td>
-                        <td>8820161104113010</td>
-                        <td>￥<span>200.00</span></td>
-                    </tr>
-                    <tr>
-                        <td>2016-11-4 11:30:10</td>
-                        <td>8820161104113010</td>
-                        <td>￥<span>200.00</span></td>
-                    </tr>
-                    <tr>
-                        <td>2016-11-4 11:30:10</td>
-                        <td>8820161104113010</td>
-                        <td>￥<span>200.00</span></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="consume-page">
-                <button>首页</button>
-                <button>上一页</button>
-                <ul>
-                    <li>
-                        <a href="javascript:void(0)" class="active">1</a>
-                     </li>
-                    <li>
-                        <a href="javascript:void(0)">2</a>
-                    </li>
-                </ul>
-                <button>下一页</button>
-                <button>末页</button>
-            </div>
-        </div>
-    </div>
+    <p class="null">暂无私信</p>
 </div>
 
 <footer>

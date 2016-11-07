@@ -23,5 +23,30 @@ $(document).ready(function(){
     //绑定
     $('.bind-con .bingding').click(function(){
         $(this).siblings('.forbind').show();
+    });
+
+    //收货地址
+    $('.address-list .set-default').click(function(){
+        $(this).parents('.address-list').siblings().find('.default').hide();
+        $(this).parents('.address-list').siblings().find('.set-default').show();
+        $(this).parents('.address-list').find('.default').addClass('show').show();
+        $(this).hide();
+    });
+    
+    //收货地址模态框
+    //打开模态框
+    $('.newaddress a').click(function(e){
+        $('body').css("overflow","hidden")
+        $('#modal').show();
+        $('#modalbg').show();
+        e.stopPropagation();
     })
+    $('#modal .modal-close').click(function(e){
+        $('body').css("overflow","auto")
+        $('#modal').hide();
+        $('#modalbg').hide();
+        e.stopPropagation();
+    });
+
+
 });
