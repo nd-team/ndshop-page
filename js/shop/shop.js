@@ -7,7 +7,29 @@ window.onload = function(){
         $('.card-tab-title li').click(function(){
             $(this).addClass('quick-pay').siblings().removeClass('quick-pay');
             $('.bank-cd>div:eq('+$(this).index()+')').show().siblings().hide();
-        })
+       })
+
+     /*未封装的函数*/
+            $('.return-goods').click(function(){
+                $('.return-goods,.refund-me').hide();
+                $('.will-return').show();
+
+            })
+            $('.refund-me').click(function(){
+                $('.return-goods,.refund-me').hide();
+                $('.will-return').show();
+                $('.ret-main>div:eq('+$(this).index()+')').show().siblings().hide();
+                $('.ret-tab a').eq(1).addClass('ret-active').siblings().removeClass('ret-active');
+
+            })
+            $('.ret-tab a').click(function(){
+                $(this).addClass('ret-active').siblings().removeClass('ret-active');
+                $('.ret-main>div:eq('+$(this).index()+')').show().siblings().hide();
+            })
+    /*未封装的函数*/
+
+
+
     })
 
 

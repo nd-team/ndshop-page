@@ -349,8 +349,11 @@ $c   : #00943b;
               text-align: center;
               &:nth-of-type(odd){
                 width: 288px;
-
               }
+             &.dy-describe{
+               margin-left: 70px;
+             }
+
            }
         }
 
@@ -359,8 +362,10 @@ $c   : #00943b;
       .baby-details{
         .baby-det-left{
            width: 288px;
+           height: 239px;
            border-right: 1px solid #dddddd;
            padding: 28px 0;
+           float: left;
           ul{
 
              li{
@@ -383,8 +388,87 @@ $c   : #00943b;
                      }
                 }
 
+               &.baby-det-text{
+                  width: 229px;
+                  text-align: center;
+                   margin:10px auto;
+                   line-height: 20px;
+                 a{
+                   color: #333;
+                 }
+               }
+
 
              }
+          }
+        }
+        .baby-det-right{
+           float: left;
+           padding: 15px 0 28px 40px;
+          /*暂写*/
+            .baby-list{
+              position:relative;
+              width:600px;
+              margin-bottom:5px;
+              height:24px;
+              ul{
+
+                 li{
+                   float:left;
+                   display:inline;
+                   height:19px;
+                   line-height:19px;
+                   //padding-bottom: 15px;
+                 //  margin:0 10px;
+                   strong{
+                     color:#ffa800;
+                     padding-left:10px;
+                   }
+                   span{
+                     float:left;
+                     display:inline;
+                     height:19px;
+                     line-height:19px;
+                     margin-left: -10px;
+                   }
+                    a{
+                      float:left;
+                      width:24px;
+                      cursor:pointer;
+                      text-indent:-9999px;
+                      background:url(/images/orders/start.png) no-repeat;
+                      &.on{
+                        background:url(/images/orders/start-on.png) no-repeat;
+
+                      }
+                    }
+                 }
+              }
+            }
+          /*暂写*/
+          .textinput{
+           margin: 10px 0;
+            textarea{
+              padding: 8px;
+              width: 710px;
+              height: 160px;
+              border: 1px solid #dedede;
+              outline:0;
+              display: block;
+              resize:vertical;
+            }
+          }
+          /*收起评价*/
+          .eva-fold{
+
+              button{
+                 width: 93px;
+                 height: 28px;
+                 color: #333;
+                 background: $white;
+                 border: 1px solid #ddd;
+                 cursor: pointer;
+              }
           }
         }
       }
@@ -392,5 +476,64 @@ $c   : #00943b;
     }
 
   }
+  /*Shop Dynamic Evaluation*/
+  .Shop-dynamic{
+     @extend .dynamic-eva;
+     margin: 20px 0;
+    }
 
+  #shop-start{
+    position:relative;
+    width:600px;
+    margin: 20px;
+    height:24px;
+    label{
+       float: left;
+       line-height: 22px;
+       color: #333;
+    }
+     strong{
+      color:#ffa800;
+      padding-left:10px;
+    }
+    span{
+      float:left;
+      display:inline;
+      height:19px;
+      line-height:19px;
+      margin-left: -10px;
+    }
+    ul{
+      float:left;
+      display:inline;
+      height:19px;
+      line-height:19px;
+      margin:0 10px;
+      li{
+        float:left;
+        width:24px;
+        cursor:pointer;
+        text-indent:-9999px;
+        background:url(/images/orders/start.png) no-repeat;
+        &.on{
+          background:url(/images/orders/start-on.png) no-repeat;
+
+        }
+      }
+    }
+  }
+
+.shop-comment{
+   button{
+      width: 93px;
+      height: 28px;
+      color: $white;
+      background: #33b6ff;
+      border: 0;
+      border-radius: 3px;
+      margin: 10px 0 20px 506px;
+      cursor: pointer;
+   }
 }
+
+  }
