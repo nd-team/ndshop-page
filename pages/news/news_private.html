@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>待付款</title>
+    <title>私信</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/news/news.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
+    <script src="/js/login/login.js"></script>
 </head>
 <body>
 <header>
@@ -47,13 +48,13 @@
             </div>
             <ul class="topnav">
                 <li>
-                    <a href="javascript:void(0)">首页</a>
+                    <a href="/index.html">首页</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">账户设置</a>
+                    <a href="/pages/user/">账户设置</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">消息</a>
+                    <a href="/pages/news/news_system.html">消息</a>
                 </li>
             </ul>
 
@@ -81,16 +82,155 @@
 <div id="content" class="clearfix wrap">
     <!--左侧菜单栏-->
     <div id="news-sidebar" class="clearfix">
-        <h3>设置</h3>
+        <h3>消息</h3>
         <div class="menu">
-            <a href="/pages/user/info.html" >系统信息</a>
-            <a href="/pages/user/safety.html" class="active">私信</a>
-            <a href="javascript:void(0) ">设置</a>
+            <a href="/pages/news/news_system.html" >系统消息</a>
+            <a href="/pages/news/news_private.html" class="active">私信</a>
+            <a href="/pages/news/news_setting.html">设置</a>
         </div>
     </div>
     <div class="news-private clearfix">
+        <div class="privatemain">
+            <div class="private-list">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <a href="javascript:void(0)" class="text">
+                    <h3>白雪</h3>
+                    <p>商城打折，帮我选购一双水晶鞋</p>
+                </a>
+                <div class="time">
+                    <p>今天12:26</p>
+                    <span class="newmes">2</span>
+                </div>
+            </div>
+            <div class="private-list">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <a href="javascript:void(0)" class="text">
+                    <h3>白雪</h3>
+                    <p>商城打折，帮我选购一双水晶鞋</p>
+                </a>
+                <div class="time">
+                    <p>今天12:26</p>
+                    <span class="newmes">1</span>
+                </div>
+            </div>
+            <div class="private-list">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <a href="javascript:void(0)" class="text">
+                    <h3>白雪</h3>
+                    <p>商城打折，帮我选购一双水晶鞋</p>
+                </a>
+                <div class="time">
+                    <p>昨天12:26</p>
+                    <span class="newmes">3</span>
+                </div>
+            </div>
+            <div class="private-list">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <a href="javascript:void(0)" class="text">
+                    <h3>白雪</h3>
+                    <p>商城打折，帮我选购一双水晶鞋</p>
+                </a>
+                <div class="time">
+                    <p>11月5号12:26</p>
+                    <span class="newmes">2</span>
+                </div>
+            </div>
+            <div class="private-list">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <a href="javascript:void(0)" class="text">
+                    <h3>白雪</h3>
+                    <p>商城打折，帮我选购一双水晶鞋</p>
+                </a>
+                <div class="time">
+                    <p>11月4日12:26</p>
+                </div>
+            </div>
+            <div class="private-list">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <a href="javascript:void(0)" class="text">
+                    <h3>白雪</h3>
+                    <p>商城打折，帮我选购一双水晶鞋</p>
+                </a>
+                <div class="time">
+                    <p>11月4日12:26</p>
+                </div>
+            </div>
+            <div class="private-list">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <a href="javascript:void(0)" class="text">
+                    <h3>白雪</h3>
+                    <p>商城打折，帮我选购一双水晶鞋</p>
+                </a>
+                <div class="time">
+                    <p>11月4日12:26</p>
+                </div>
+            </div>
+        </div>
+        <div class="newpages">
+            <button class="firstpage">首页</button>
+            <button class="lastpage">上一页</button>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="active">1</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">2</a>
+                </li>
+            </ul>
+            <button class="nextpage">下一页</button>
+            <button class="endpage">末页</button>
+        </div>
     </div>
-
+    <div class="news-list-con">
+        <div class="news-list-title">
+            <a href="javascript:void(0)" class="news-list-return">&lt;</a>
+            <h4>白雪</h4>
+        </div>
+        <div class="news-list-main">
+            <div class="buyer">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <div class="text">双十商城打几折？</div>
+            </div>
+            <div class="seller">
+                <div class="pic">
+                    <img src="/images/news/02.jpg" alt="">
+                </div>
+                <div class="text">打到你骨折！</div>
+            </div>
+            <div class="buyer">
+                <div class="pic">
+                    <img src="/images/news/01.jpg" alt="">
+                </div>
+                <div class="text">草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草草</div>
+            </div>
+            <div class="seller">
+                <div class="pic">
+                    <img src="/images/news/02.jpg" alt="">
+                </div>
+                <div class="text">你四不四想打架，我表哥是新疆银。你四不四想打架，我表哥是新疆银。你四不四想打架，我表哥是新疆银。你四不四想打架，我表哥是新疆银。你四不四想打架，我表哥是新疆银。你四不四想打架，我表哥是新疆银。</div>
+            </div>
+        </div>
+        <div class="news-list-input">
+            <input type="text">
+            <a href="javascript:void(0)">发送</a>
+        </div>
+    </div>
 </div>
 
 <footer>

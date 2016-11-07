@@ -37,7 +37,8 @@
   .step-con{
     padding:88px 0;
     .stepmain{
-      width:550px;
+      display:none;
+      width:630px;
       margin:0 auto;
       .stepfinish{
         width:300px;
@@ -49,7 +50,7 @@
         }
       }
       .stepinput{
-        margin:20px 0;
+        margin:20px 0 0;
         label{
           font-size:16px;
           width:130px;
@@ -57,10 +58,42 @@
           text-align:right;
           margin-right:20px;
         }
-        input{
+        input[type="text"]{
           width:250px;
           height:38px;
           border:1px solid #cbcbcb;
+          text-indent:10px;
+        }
+        input[type="password"]{
+          width:250px;
+          height:38px;
+          border:1px solid #cbcbcb;
+          text-indent:10px;
+        }
+        .code{
+          clear:both;
+          float:right;
+          line-height:40px;
+          height:40px;
+          .pic{
+            width:90px;
+            height:40px;
+            text-align:center;
+            background:#ccc;
+            float:left;
+            margin:0 20px;
+          }
+          p{
+            display:inline-block;
+            height:40px;
+            font-size:12px;
+          }
+          .othercode{
+            display:inline-block;
+            height:40px;
+            color:#ff0e0e;
+            margin-top:5px;
+          }
         }
         select{
           width:250px;
@@ -70,7 +103,7 @@
         span{
           color:#333;
         }
-        a{
+        .phone-code{
           display:inline-block;
           width:111px;
           height:40px;
@@ -81,9 +114,24 @@
           color:#fff;
           margin-left:10px;
         }
-
+      .phone-code-resent{
+        display:inline-block;
+        height:40px;
+        line-height:40px;
+        background:#d2d2d2;
+        padding:0 10px;
+        margin-left:10px ;
       }
-
+    }
+      .agress{
+        margin:10px 155px 0;
+        input{
+          vertical-align:-2px;
+        }
+        a{
+          color:#ff0e0e;
+        }
+      }
       .submit{
         width:90px;
         height:40px;
@@ -93,7 +141,30 @@
         background:#f45476;
         border:none;
         font-size:16px;
-        margin:30px 155px;
+        margin:20px 155px 0;
+      }
+      .switch{
+        margin:10px 155px;
+        a{
+          color:#ff4143;
+        }
+
+      }
+      &.step1{
+        display:block;
+      }
+      .stepfinish{
+        width:200px;
+        margin:0 auto;
+        color:#333;
+        text-align:center;
+        p{
+          color:#333;
+          margin:5px 0;
+        }
+      }
+      p{
+        font-size:16px;
       }
     }
   }
