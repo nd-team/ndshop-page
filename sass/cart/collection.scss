@@ -137,12 +137,21 @@
     .search{
       float:right;
       input{
+//<<<<<<< Updated upstream
         height:22px;
         width:125px;
         border:1px solid #ddd;
       }
       button{
         height:24px;
+//=======
+//        width:125px;
+//        height:23px;
+//        border:1px solid #ddd;
+//      }
+//      button{
+//        height:25px;
+//>>>>>>> Stashed changes
       }
     }
     dl{
@@ -175,6 +184,7 @@
             border-radius:2px;
           }
         }
+//<<<<<<< Updated upstream
         &.fr{
           float:right;
         }
@@ -185,6 +195,18 @@
         }
         &.sortfil-allselect{
           display:none;
+//=======
+//        &.sortfil_more{
+//          float:right;
+//          a{
+//            color:#666;
+//            border:1px solid #ddd;
+//          }
+//        }
+//        &.allselect{
+//          display:none;
+//          float:right;
+//>>>>>>> Stashed changes
           input{
             vertical-align:-2px;
           }

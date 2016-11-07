@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>收货地址</title>
+    <title>待付款</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/user/ship_address.css" />
+    <link rel="stylesheet" href="/css/news/news.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
-    <script src="/js/user/user.js"></script>
 </head>
 <body>
 <header>
     <div class="header-top">
-        <div class="wrap cleafix">
+        <div class="wrap clearfix">
             <div class="top-add">
                 <span>运送至：<a href="javascript:void(0)">广州</a></span>
             </div>
@@ -37,8 +36,8 @@
             </ul>
         </div>
     </div>
-    <div class="header-ls" id="user-head">
-        <div class="wrap clearfix">
+    <div class="header-ls" id="news-head">
+        <div class="wrap cleafix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
             </div>
@@ -77,198 +76,21 @@
     </div>
 
 </header>
-<!--左侧菜单栏-->
 
 <!--内容-->
 <div id="content" class="clearfix wrap">
-    <div id="user-sidebar" class="clearfix">
+    <!--左侧菜单栏-->
+    <div id="news-sidebar" class="clearfix">
         <h3>设置</h3>
         <div class="menu">
-            <a href="/pages/user/info.html" >个人信息</a>
-            <a href="/pages/user/safety.html" >账户安全</a>
-            <a href="javascript:void(0) ">账户绑定</a>
-            <a href="javascript:void(0) ">账户级别</a>
-            <a href="javascript:void(0) " class="active">收货地址</a>
-            <a href="javascript:void(0) ">消费记录</a>
+            <a href="/pages/user/info.html" >系统信息</a>
+            <a href="/pages/user/safety.html" class="active">私信</a>
+            <a href="javascript:void(0) ">设置</a>
         </div>
     </div>
-    <div class="address-con">
-        <h2>收货地址</h2>
-        <div class="newaddress">
-            <a href="javascript:void(0)">新增收货地址</a>
-            您已创建1个收货地址，最多可创建<span>20</span>个
-        </div>
-        <div class="address-list">
-            <div class="list-title">
-                <strong>辉少</strong>
-                <strong>广东</strong>
-                <p class="default show">默认地址</p>
-            </div>
-            <a href="javascript:void(0)" class="close">×</a>
-            <dl>
-                <dt>收货人：</dt>
-                <dd>瑞少</dd>
-            </dl>
-            <dl>
-                <dt>所在地区：</dt>
-                <dd>不吃鲨鱼的瑞</dd>
-            </dl>
-            <dl>
-                <dt>地址：</dt>
-                <dd>广东省广州市天河区棠下街道棠东毓南路13号中心</dd>
-            </dl>
-            <dl>
-                <dt>手机：</dt>
-                <dd>137****3733</dd>
-            </dl>
-            <dl>
-                <dt>固定电话：</dt>
-                <dd>0760-54879651</dd>
-            </dl>
-            <dl>
-                <dt>电子邮箱：</dt>
-                <dd>25147854@qq.com</dd>
-            </dl>
-            <div class="setting">
-                <a href="javascript:void(0)" class="set-default">设置为默认地址</a>
-                <a href="javascript:void(0)" class="edit">编辑</a>
-            </div>
-        </div>
-        <div class="address-list">
-            <div class="list-title">
-                <strong>辉少</strong>
-                <strong>广东</strong>
-                <p class="default">默认地址</p>
-            </div>
-            <a href="javascript:void(0)" class="close">×</a>
-            <dl>
-                <dt>收货人：</dt>
-                <dd>瑞少</dd>
-            </dl>
-            <dl>
-                <dt>所在地区：</dt>
-                <dd>不吃鲨鱼的瑞</dd>
-            </dl>
-            <dl>
-                <dt>地址：</dt>
-                <dd>广东省广州市天河区棠下街道棠东毓南路13号中心</dd>
-            </dl>
-            <dl>
-                <dt>手机：</dt>
-                <dd>137****3733</dd>
-            </dl>
-            <dl>
-                <dt>固定电话：</dt>
-                <dd>0760-54879651</dd>
-            </dl>
-            <dl>
-                <dt>电子邮箱：</dt>
-                <dd>25147854@qq.com</dd>
-            </dl>
-            <div class="setting">
-                <a href="javascript:void(0)" class="set-default show">设置为默认地址</a>
-                <a href="javascript:void(0)" class="edit">编辑</a>
-            </div>
-        </div>
-        <div class="address-list">
-            <div class="list-title">
-                <strong>辉少</strong>
-                <strong>广东</strong>
-                <p class="default">默认地址</p>
-            </div>
-            <a href="javascript:void(0)" class="close">×</a>
-            <dl>
-                <dt>收货人：</dt>
-                <dd>瑞少</dd>
-            </dl>
-            <dl>
-                <dt>所在地区：</dt>
-                <dd>不吃鲨鱼的瑞</dd>
-            </dl>
-            <dl>
-                <dt>地址：</dt>
-                <dd>广东省广州市天河区棠下街道棠东毓南路13号中心</dd>
-            </dl>
-            <dl>
-                <dt>手机：</dt>
-                <dd>137****3733</dd>
-            </dl>
-            <dl>
-                <dt>固定电话：</dt>
-                <dd>0760-54879651</dd>
-            </dl>
-            <dl>
-                <dt>电子邮箱：</dt>
-                <dd>25147854@qq.com</dd>
-            </dl>
-            <div class="setting">
-                <a href="javascript:void(0)" class="set-default show">设置为默认地址</a>
-                <a href="javascript:void(0)" class="edit">编辑</a>
-            </div>
-        </div>
-        <div class="newaddress">
-            <a href="javascript:void(0)">新增收货地址</a>
-            您已创建1个收货地址，最多可创建<span>20</span>个
-        </div>
+    <div class="news-private clearfix">
     </div>
-    <div id="modal">
-        <div class="modal-title">
-            编辑收货地址
-            <a href="javascript:void(0)" class="modal-close">×</a>
-        </div>
-        <div class="modal-body">
-            <dl>
-                <dt><i>*</i> <label>收货人:</label></dt>
-                <dd>
-                    <input type="text" value="辉少">
-                </dd>
-            </dl>
-            <dl>
-                <dt><i>*</i> <label>所在地区:</label></dt>
-                <dd>
-                    <select>
-                        <option>广东</option>
-                    </select>
-                    <select>
-                        <option>广州市</option>
-                    </select>
-                    <select>
-                        <option>天河区</option>
-                    </select>
-                </dd>
-            </dl>
-            <dl>
-                <dt><i>*</i> <label>详细地址:</label></dt>
-                <dd>
-                    <input type="text" value="东圃街道" class="w380">
-                </dd>
-            </dl>
-            <dl>
-                <dt>
-                    <label class="phone"><i>*</i> 手机号码:</label>
-                    <label>固定电话:</label>
-                </dt>
-                <dd>
-                    <input type="text" value="13000000000" > 或
-                    <input type="text" value="13111111111" >
-                </dd>
-            </dl>
-            <dl>
-                <dt> <label>邮箱:</label></dt>
-                <dd>
-                    <input type="text" value="123456789@qq.com" class="w380">
-                </dd>
-            </dl>
-            <dl>
-                <dt> <label>地址别名:</label></dt>
-                <dd>
-                    <input type="text" value="梦开始的地方" class="w380">
-                </dd>
-            </dl>
-            <button class="save">保存收货地址</button>
-        </div>
-    </div>
-    <div id="modalbg"></div>
+
 </div>
 
 <footer>
