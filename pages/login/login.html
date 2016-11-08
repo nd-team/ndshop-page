@@ -8,6 +8,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/login/login.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/common.js"></script>
     <script src="/js/login/login.js"></script>
 </head>
 <body>
@@ -24,11 +25,19 @@
             <div class="tabs-page account">
                 <form action="">
                     <div class="login-txt">
-                        <label for="username"><img src="/images/login/username.png" alt=""></label>
+                        <label for="username">
+                            <svg role="img" class="login_zhanghao">
+                                <use xlink:href="#login_zhanghao"></use>
+                            </svg>
+                        </label>
                         <input type="text" name="loginname" id="username" placeholder="手机/邮箱/用户名">
                     </div>
                     <div class="login-txt">
-                        <label for="userpassword"><img src="/images/login/username.png" alt=""></label>
+                        <label for="userpassword">
+                            <svg role="img" class="login_password">
+                                <use xlink:href="#login_password"></use>
+                            </svg>
+                        </label>
                         <input type="text" name="loginname" id="userpassword" placeholder="请输入密码">
                     </div>
                     <div class="auto-login">
@@ -38,26 +47,32 @@
 
                 </form>
                 <div class="links-text">
-                    <a href="javascript:void(0)" class="forger-fw">忘记密码？</a>
-                    <a href="javascript:void(0)" class="register">免费注册</a>
+                    <a href="/pages/login/findpassword.html" class="forger-fw">忘记密码？</a>
+                    <a href="/pages/login/register.html" class="register">免费注册</a>
                 </div>
                 <ul class="links-icon">
                     <li>
                         <a href="javascript:void(0)" class="register">
-                            <img src="/images/login/weixin.png" alt="">
+                            <svg role="img" class="weixin">
+                                <use xlink:href="#weixin"></use>
+                            </svg>
                             <p>微信</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)" class="register">
-                            <img src="/images/login/weixin.png" alt="">
-                            <p>微信</p>
+                            <svg role="img" class="qq">
+                                <use xlink:href="#qq"></use>
+                            </svg>
+                            <p>QQ</p>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)" class="register">
-                            <img src="/images/login/weixin.png" alt="">
-                            <p>微信</p>
+                            <svg role="img" class="weibo">
+                                <use xlink:href="#weibo"></use>
+                            </svg>
+                            <p>微博</p>
                         </a>
                     </li>
                 </ul>
