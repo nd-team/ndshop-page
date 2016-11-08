@@ -13,8 +13,9 @@ $(document).ready(function(){
     //注册和修改密码
     $('#step .stepmain .submit').click(function(){
         var dataTitle = $(this).attr('data-title');
-        console.info(dataTitle);
+        $('.step-pic img').hide();
         $('.stepmain').hide();
+        $('.step-pic img[title="'+dataTitle+'"]').show()
         $('.'+dataTitle).show();
     });
 

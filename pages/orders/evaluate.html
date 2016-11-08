@@ -15,7 +15,7 @@
 <body>
 <header>
     <div class="header-top">
-        <div class="wrap cleafix">
+        <div class="wrap clearfix">
             <div class="top-add">
                 <span>运送至：<a href="javascript:void(0)">广州</a></span>
             </div>
@@ -37,12 +37,15 @@
             </ul>
         </div>
     </div>
-    <div class="header-ls" id="coll-head">
+    <div class="header-ls" id="order-head">
         <div class="wrap cleafix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
             </div>
-
+            <div class="myshop">
+                <h3>我的商场</h3>
+                <a href="/index.html">返回首页</a>
+            </div>
             <ul class="topnav">
                 <li>
                     <a href="javascript:void(0)">首页</a>
@@ -57,16 +60,19 @@
 
             <div class="search-wrap">
                 <input type="text" class="search-strip" value="" placeholder="搜我想要的"/>
-                <button onclick="search('key');return false;" class="button">
+                <button class="button">
                     搜索
                 </button>
             </div>
             <div class="shopping-cart">
                 <a class="my-cart">
-                    <svg role="img" class="shopping">
-                        <use xlink:href="#shopping"></use>
+                    <svg role="img" class="shopping_white">
+                        <use xlink:href="#shopping_white"></use>
                     </svg>
-                    我的购物车 &gt;
+                    我的购物车
+                    <svg role="img" class="button_next">
+                        <use xlink:href="#button_next"></use>
+                    </svg>
                 </a>
             </div>
 
@@ -82,15 +88,15 @@
         <div class="menu">
             <h3>订单中心</h3>
             <div class="submenu">
-                <a href="javascript:void(0) ">我的订单</a>
+                <a href="/pages/orders/allorders.html">我的订单</a>
             </div>
         </div>
         <div class="menu">
             <h3>购物中心</h3>
             <div class="submenu">
-                <a href="javascript:void(0) ">我的购物车</a>
-                <a href="javascript:void(0) ">我的收藏</a>
-                <a href="javascript:void(0) ">我的足迹</a>
+                <a href="/pages/cart/cart.html">我的购物车</a>
+                <a href="/pages/cart/collection.html">我的收藏</a>
+                <a href="/pages/cart/footprint.html">我的足迹</a>
             </div>
         </div>
         <div class="menu">

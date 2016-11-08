@@ -65,12 +65,12 @@
         line-height:50px;
         .line-curr{
           display:inline-block;
-          width:20px;
-          height:20px;
-          background:#30b5fa;
-          border-radius:10px;
           margin-right:50px;
-
+          svg{
+            width:30px;
+            height:30px;
+            margin-left:-4px;
+          }
         }
         strong{
           font-family:"Microsoft YaHei";

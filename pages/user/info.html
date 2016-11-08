@@ -48,13 +48,13 @@
             </div>
             <ul class="topnav">
                 <li>
-                    <a href="/index.html">首页</a>
+                    <a href="javascript:void(0)">首页</a>
                 </li>
                 <li>
-                    <a href="/pages/user/info.html">账户设置</a>
+                    <a href="javascript:void(0)">账户设置</a>
                 </li>
                 <li>
-                    <a href="/pages/news/news_system.html">消息</a>
+                    <a href="javascript:void(0)">消息</a>
                 </li>
             </ul>
 
@@ -66,10 +66,13 @@
             </div>
             <div class="shopping-cart">
                 <a class="my-cart">
-                    <svg role="img" class="shopping">
-                        <use xlink:href="#shopping"></use>
+                    <svg role="img" class="shopping_white">
+                        <use xlink:href="#shopping_white"></use>
                     </svg>
-                    我的购物车 &gt;
+                    我的购物车
+                    <svg role="img" class="button_next">
+                        <use xlink:href="#button_next"></use>
+                    </svg>
                 </a>
             </div>
 
@@ -87,7 +90,6 @@
             <a href="/pages/user/info.html" class="active">个人信息</a>
             <a href="/pages/user/safety.html">账户安全</a>
             <a href="/pages/user/account_bind.html">账户绑定</a>
-            <a href="javascript:void(0) ">账户级别</a>
             <a href="/pages/user/ship_address.html">收货地址</a>
             <a href="/pages/user/consume.html">消费记录</a>
         </div>
@@ -192,7 +194,12 @@
         <div class="tabs avatar">
             <div class="fl">
                 <div class="avatar-upload">
-                    <label for="photo">请选择你要上传的照片</label>
+                    <label for="photo">
+                        <svg role="img" class="picture">
+                            <use xlink:href="#picture"></use>
+                        </svg>
+                        请选择你要上传的照片
+                    </label>
                     <form>
                         <input type="file" id="photo">
                     </form>
