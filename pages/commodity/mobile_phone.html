@@ -19,17 +19,31 @@
 				<ul class="header-top-r">
 					<li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
 					<li class="top_r">
-						<span class="top-line on-red">我的订单<a class="more-icon">&or;</a></span>
+						<span class="top-line on-red">我的订单
+                            <svg role="img" class="top_down">
+								<use xlink:href="#top_down"></use>
+							</svg>
+                        </span>
 					</li>
 					<li class="top_r">
-						<span class="top-line on-red">我的商城<a class="more-icon">&or;</a></span>
+						<span class="top-line on-red">我的商城
+                            <svg role="img" class="top_down">
+								<use xlink:href="#top_down"></use>
+							</svg>
+                        </span>
 					</li>
 					<li class="top_r">
 						<span class="top-line on-red">
-							<i class="phone-sc-icon"></i>手机商城
+							<svg role="img" class="iphone_gray">
+                                <use xlink:href="#iphone_gray"></use>
+                            </svg>
+                            手机商城
 						</span>
 					</li>
-					<li class="top_r"><span class="top-line on-red">客户服务<a class="more-icon">&or;</a></span>
+					<li class="top_r"><span class="top-line on-red">客户服务
+                        <svg role="img" class="top_down">
+                            <use xlink:href="#top_down"></use>
+                        </svg></span>
 					</li>
 				</ul>
 			</div>
@@ -38,9 +52,7 @@
 			<div class="wrap clearfix">
 				<div class="header-lg">
 					<a href="javascript:void(0)" class="logo" title="NdShop">NdShop</a>
-                    <span class="clothing-logo">手机数码</span>
 				</div>
-
 				<div class="search-wrap">
 					<input type="text" class="search-strip" value="" />
 					<button onclick="search('key');return false;" class="button">
@@ -48,9 +60,13 @@
 					</button>
 				</div>
 				<div class="shopping-cart">
-				  	<i class="shopping-cart-icon"></i>
-				  	<a class="my-cart">我的购物车</a>
-					<a>&gt;</a>
+					<svg role="img" class="shopping_white">
+						<use xlink:href="#shopping_white"></use>
+					</svg>
+					<a href="javascript:void(0)" class="my-cart">我的购物车</a>
+					<svg role="img" class="button_next">
+						<use xlink:href="#button_next"></use>
+					</svg>
 				</div>
 				<div class="search-hot">
 					<span>热门搜索:</span>
@@ -87,7 +103,9 @@
 						<li class="mobile-list">
 							<div class="mobile-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="foodstuff">
+										<use xlink:href="#foodstuff"></use>
+									</svg>
 									热门推荐
 								</h2>
 								<p class="nav-mobile">
@@ -145,7 +163,9 @@
 						<li class="mobile-list">
 							<div class="mobile-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="foodstuff">
+										<use xlink:href="#foodstuff"></use>
+									</svg>
 									手机通讯
 								</h2>
 								<p class="nav-mobile">
@@ -162,7 +182,9 @@
 						<li class="mobile-list">
 							<div class="mobile-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="foodstuff">
+										<use xlink:href="#foodstuff"></use>
+									</svg>
 									手机配件
 								</h2>
 								<p class="nav-mobile">
@@ -179,7 +201,9 @@
 						<li class="mobile-list">
 							<div class="mobile-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="foodstuff">
+										<use xlink:href="#foodstuff"></use>
+									</svg>
 									电脑整机
 								</h2>
 								<p class="nav-mobile">
@@ -196,7 +220,9 @@
 						<li class="mobile-list">
 							<div class="mobile-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="foodstuff">
+										<use xlink:href="#foodstuff"></use>
+									</svg>
 									电脑配件
 								</h2>
 								<p class="nav-mobile">
@@ -213,7 +239,9 @@
 						<li class="mobile-list">
 							<div class="mobile-menu-list menu-last">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="foodstuff">
+										<use xlink:href="#foodstuff"></use>
+									</svg>
 									办公室用具
 								</h2>
 								<p class="nav-mobile">
@@ -421,15 +449,23 @@
 				<div class="wrap">
 					<h3 class="mobile-accessories-title">手机配件</h3>
 					<div class="accessories-same">
-						<div class="accessories-left clearfix">
-							<div class="accessories-banner">
-								<a href="javascript:void(0)"><img src="/images/mobile/banner03.jpg" alt=""></a>
-							</div>
-							<div class="accessories-circle">
-								<span class="current"></span>
-								<span class="current-two"></span>
-								<span class="current-three"></span>
-							</div>
+						<div class="banners-left clearfix">
+							<ul class="slide">
+								<li>
+									<a href="javascript:void(0)"><img src="/images/mobile/banner03.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"><img src="/images/mobile/banner03.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"><img src="/images/mobile/banner03.jpg" alt=""></a>
+								</li>
+							</ul>
+							<ul class="circle">
+								<li class="current"></li>
+								<li class="current-two"></li>
+								<li class="current-three"></li>
+							</ul>
 						</div>
 						<div class="accessories-right">
 							<div class="accessories-picture">

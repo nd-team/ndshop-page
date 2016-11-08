@@ -19,28 +19,40 @@
 				<ul class="header-top-r">
 					<li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
 					<li class="top_r">
-						<span class="top-line on-red">我的订单<a class="more-icon">&or;</a></span>
+						<span class="top-line on-red">我的订单
+                            <svg role="img" class="top_down">
+								<use xlink:href="#top_down"></use>
+							</svg>
+                        </span>
 					</li>
 					<li class="top_r">
-						<span class="top-line on-red">我的商城<a class="more-icon">&or;</a></span>
+						<span class="top-line on-red">我的商城
+                            <svg role="img" class="top_down">
+								<use xlink:href="#top_down"></use>
+							</svg>
+                        </span>
 					</li>
 					<li class="top_r">
 						<span class="top-line on-red">
-							<i class="phone-sc-icon"></i>手机商城
+							<svg role="img" class="iphone_gray">
+                                <use xlink:href="#iphone_gray"></use>
+                            </svg>
+                            手机商城
 						</span>
 					</li>
-					<li class="top_r"><span class="top-line on-red">客户服务<a class="more-icon">&or;</a></span>
+					<li class="top_r"><span class="top-line on-red">客户服务
+                        <svg role="img" class="top_down">
+                            <use xlink:href="#top_down"></use>
+                        </svg></span>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="header-ls">
-			<div class="wrap cleafix">
+			<div class="wrap clearfix">
 				<div class="header-lg">
 					<a href="javascript:void(0)" class="logo" title="NdShop">NdShop</a>
-                    <span class="clothing-logo">家用电器</span>
 				</div>
-
 				<div class="search-wrap">
 					<input type="text" class="search-strip" value="" />
 					<button onclick="search('key');return false;" class="button">
@@ -48,9 +60,13 @@
 					</button>
 				</div>
 				<div class="shopping-cart">
-				  	<i class="shopping-cart-icon"></i>
-				  	<a class="my-cart">我的购物车</a>
-					<a>&gt;</a>
+					<svg role="img" class="shopping_white">
+						<use xlink:href="#shopping_white"></use>
+					</svg>
+					<a href="javascript:void(0)" class="my-cart">我的购物车</a>
+					<svg role="img" class="button_next">
+						<use xlink:href="#button_next"></use>
+					</svg>
 				</div>
 				<div class="search-hot">
 					<span>热门搜索:</span>
@@ -87,7 +103,9 @@
 						<li class="household-list">
 							<div class="household-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="household_tv">
+										<use xlink:href="#household_tv"></use>
+									</svg>
 									家用电器
 								</h2>
 								<p class="nav-household">
@@ -194,7 +212,9 @@
 						<li class="household-list">
 							<div class="household-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="household_cook">
+										<use xlink:href="#household_cook"></use>
+									</svg>
 									厨房电器
 								</h2>
 								<p class="nav-household">
@@ -299,7 +319,9 @@
 						<li class="household-list">
 							<div class="household-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="household_life">
+										<use xlink:href="#household_life"></use>
+									</svg>
 									生活电器
 								</h2>
 								<p class="nav-household">
@@ -404,7 +426,9 @@
 						<li class="household-list">
 							<div class="household-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="household_personal">
+										<use xlink:href="#household_personal"></use>
+									</svg>
 									个人护理
 								</h2>
 								<p class="nav-household">
@@ -509,7 +533,9 @@
 						<li class="household-list">
 							<div class="household-menu-list">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="household_office">
+										<use xlink:href="#household_office"></use>
+									</svg>
 									办公打印
 								</h2>
 								<p class="nav-household">
@@ -614,7 +640,9 @@
 						<li class="household-list">
 							<div class="household-menu-list menu-last">
 								<h2>
-									<i class="nav-icon"></i>
+									<svg role="img" class="household_electronic">
+										<use xlink:href="#household_electronic"></use>
+									</svg>
 									电子书·教育
 								</h2>
 								<p class="nav-household">
@@ -855,15 +883,23 @@
 						</div>
 						<div class="same-life-brand">
 							<ul class="same-life-pic clearfix">
-								<li class="same-life-banner">
-									<div class="same-picture-auto">
-										<a href="javascript:void(0)"><img src="/images/household/pinzhi02.jpg" alt=""></a>
-									</div>
-									<div class="same-life-circle">
-										<span class="same-gray01"></span>
-										<span class="same-gray02"></span>
-										<span class="same-gray03"></span>
-									</div>
+								<li class="banner-left">
+									<ul class="same-banner">
+										<li>
+											<a href="javascript:void(0)"><img src="/images/household/pinzhi02.jpg" alt=""></a>
+										</li>
+										<li>
+											<a href="javascript:void(0)"><img src="/images/household/pinzhi02.jpg" alt=""></a>
+										</li>
+										<li>
+											<a href="javascript:void(0)"><img src="/images/household/pinzhi02.jpg" alt=""></a>
+										</li>
+									</ul>
+									<ul class="same-circle">
+										<li class="current"></li>
+										<li class="same-gray02"></li>
+										<li class="same-gray03"></li>
+									</ul>
 								</li>
 								<li class="same-life-banner02">
 									<a href="javascript:void(0)"><img src="/images/household/pinzhi03.jpg" alt=""></a>

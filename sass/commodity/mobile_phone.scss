@@ -210,19 +210,29 @@
   .accessories-same{
     @include same-box;
     border-top:1px solid #208468;
-    .accessories-left{
+    .banners-left{
       position: relative;
+      height: 432px;
+      width: 251px;
       float: left;
-      .accessories-banner{
-        width: 251px;
-        height: 432px;
-      }
-      .accessories-circle{
+      overflow: hidden;
+      .slide{
+        position: absolute;
+        width: 400%;
+        left: 0;
+        top: 0;
+        li{
+          display: block;
+          float: left;
+          }
+        }
+
+      .circle{
         position: absolute;
         left: 50%;
         bottom: 5px;
         margin-left: -27px;
-        span{
+        li{
           width: 12px;
           height: 14px;
           display: inline-block;
@@ -230,6 +240,9 @@
           background-color: rgba(0,0,0,.1);
           border-radius: 50%;
           cursor: pointer;
+          &.current{
+            background-color: rgba(0,0,0,.1);
+          }
           &.current-two{
             background-color: rgba(0,0,0,.3);
           }
@@ -241,6 +254,7 @@
     }
     .accessories-right{
       float: left;
+      z-index: 1000;
       .accessories-picture{
         width: 100%;
         height: 215px;

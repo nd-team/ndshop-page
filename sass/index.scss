@@ -19,6 +19,7 @@
       .sidebar-list {
         position: relative;
         cursor: pointer;
+        height: 80px;
         &:hover {
           background-color: #FFF;
           border: {
@@ -26,6 +27,7 @@
             style: solid;
             color: #33b5ff;
           }
+
           &:last-child {
             border-bottom: 1px solid #33b5ff;
           }
@@ -44,10 +46,7 @@
             }
 
           }
-          .same-pw{
-            display: block;
-          }
-          //.house-elec-pw ,.gift-bags-pw,.beauty-care-pw,.phone-digital-pw,.store-food-pw,.sport-fitness-pw{
+          //.same-pw{
           //  display: block;
           //}
         }
@@ -69,12 +68,16 @@
             font: {
               size: 16px;
             }
-            .index_family{
-              fill:$white;
-            }
           }
           .samll-menu {
-            padding: 9px 28px 9px 16px;
+            height: 40px;
+            line-height: 20px;
+            padding: {
+              left: 28px;
+              right: 16px;
+              top:5px;
+              bottom: 3px;
+            }
 
             a {
               color: $white;
@@ -88,7 +91,7 @@
           .jiantou {
             position: absolute;
             z-index: 1;
-            top: 35px;
+            top: 48px;
             right: 8px;
             width: 5px;
             height: 8px;
@@ -107,7 +110,7 @@
           position: absolute;
           left: 227px;
           background-color: #fff;
-          z-index: 101;
+          z-index: 100;
           border: {
             right: 2px;
             bottom: 1px;
@@ -193,7 +196,7 @@
         //服饰鞋包弹窗开始
         .gift-bags-pw {
           height: 469px;
-          top: -80px;
+          top: -79px;
           .same-mt {
             .same-auto {
               .large-bags-ul {
@@ -207,7 +210,7 @@
         //个护美妆弹窗开始
         .beauty-care-pw {
           height: 316px;
-          top: -161px;
+          top: -159px;
           .same-mt {
             .same-auto {
               .large-beauty-ul {
@@ -223,7 +226,7 @@
         //手机数码弹窗开始
         .phone-digital-pw {
           height: 466px;
-          top: -242px;
+          top: -239px;
           .same-mt {
             .same-auto {
               .large-phone-ul {
@@ -237,7 +240,7 @@
         //百货食品弹窗开始
         .store-food-pw {
           height: 448px;
-          top: -323px;
+          top: -319px;
           .same-mt {
             .same-auto {
               .large-store-ul {
@@ -606,45 +609,9 @@
   line-height: 50px;
   margin-bottom: 60px;
     img{
-      margin: 0 10px;
-      cursor: pointer;
+      margin: 0 12px;
       display:inline-block;
       vertical-align: middle;
-      &.pic01{
-        height: 30px;
-        width: 137px;
-        display: inline-block;
-      }
-      &.pic02{
-        height: 40px;
-        width: 80px;
-        display: inline-block;
-      }
-      &.pic03{
-        height: 32px;
-        width: 130px;
-        display: inline-block;
-      }
-      &.pic04{
-        height: 38px;
-        width: 138px;
-        display: inline-block;
-      }
-      &.pic05{
-        height: 34px;
-        width: 135px;
-        display: inline-block;
-      }
-      &.pic06{
-        height: 47px;
-        width: 134px;
-        display: inline-block;
-      }
-      &.pic07{
-        height: 42px;
-        width: 138px;
-        display: inline-block;
-      }
     }
 }
 

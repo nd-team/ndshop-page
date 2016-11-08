@@ -100,8 +100,9 @@ a{
 
 //svg style
 svg{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
 }
 /*header-top start*/
 .header-top{
@@ -159,18 +160,23 @@ svg{
                 color: red;
                 cursor: pointer;
             }
-            .more-icon{
-                $height: 12px;
-                display:block;
-                height:$height;
-                line-height:$height;
-                float:right;
-                font-family: $main-sec-ff;
-                margin:{
-                    left:5px;
-                    top:8px;
-                }
+
+            .top_down{
+              width: 10px;
+              height: 10px;
             }
+            //.more-icon{
+            //    $height: 12px;
+            //    display:block;
+            //    height:$height;
+            //    line-height:$height;
+            //    float:right;
+            //    font-family: $main-sec-ff;
+            //    margin:{
+            //        left:5px;
+            //        top:8px;
+            //    }
+            //}
         }
     }
 }
@@ -259,29 +265,29 @@ svg{
 
     .shopping-cart {
         float: right;
-        width: 115px;
+        width: 140px;
         height: 40px;
         background-color: #fd5d5f;
-        margin-right: 135px;
+        margin-right: 120px;
         cursor: pointer;
 
         line-height: 40px;
 
-        .shopping-cart-icon{
-            width: 17px;
-            height: 13px;
-            display: inline-block;
-            vertical-align: middle;
-            // background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
+        .shopping_white{
+            width: 37px;
+            height:37px;
+            line-height: 40px;
+            vertical-align: -12px;
         }
         a{
-            color: $white;
-            &.my-cart{
-                font-size: 14px;
-                color: $white;
-                text-align: center;
-            }
-        }
+             color: $white;
+            font-size: 14px;
+             //&.my-cart{
+             //    font-size: 14px;
+             //    color: $white;
+             //    text-align: center;
+             //}
+         }
 
         }
 
