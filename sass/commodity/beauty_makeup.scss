@@ -15,58 +15,56 @@
 
   .hot-tabs{
 
-    span{
+    li{
       display: inline-block;
       width: 128px;
       height: 45px;
       line-height: 45px;
       text-align: center;
-      &.cur{
-        display: inline-block;
+      cursor: pointer;
+      font:{
+        size: 20px;
+        family: $main-sec-ff;
+      }
+      &.current{
         background-color: #ff729b;
         a{
           color: #fff;
         }
       }
-      &:hover{
-        @extend .cur;
-      }
       a{
         color: #ff729b;
-        font:{
-          size: 20px;
-          family: $main-sec-ff;
-        }
-        &:hover{
-          color: #fff;
-        }
       }
     }
   }
+  .tab-banner{
+    .hot-brand-banner{
+      width: 100%;
+      height:215px;
+      border-top:1px solid #ff8f18;
+      overflow: hidden;
+      display: none;
+      .hot-tab-pic{
+        float: left;
 
-  .hot-brand-banner{
-    width: 100%;
-    height:auto;
-    overflow: hidden;
-    border-top:1px solid #ff8f18;
-    .hot-tab-pic{
-      float: left;
-      vertical-align: bottom;
+        &:first-child{
+          margin-right: 5px;
+        }
+        .hot-pic{
+          display: block;
+          margin-top: 12px;
+          margin-right:1.5px;
 
-      &:first-child{
-        margin-right: 5px;
-      }
-      .hot-pic{
-        display: block;
-        margin-top: 12.5px;
-        margin-right:1.5px;
-
-        &:last-child{
-          margin-right: 0;
+          &:last-child{
+            margin-right: 0;
+          }
         }
       }
-    }
 
+    }
+    .tab-item{
+      display: block;
+    }
   }
 }
 

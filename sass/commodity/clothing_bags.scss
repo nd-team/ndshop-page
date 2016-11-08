@@ -88,74 +88,78 @@
       bottom: 20px;
     }
     .brand-tab{
-      span{
+      li{
         width: 128px;
         height: 45px;
         line-height: 45px;
         display: inline-block;
+        &.current{
+          background-color: #ff8f18;
+          a{
+            color: #fff;
+          }
+        }
         a{
-          @extend span;
+          @extend li;
           text-align: center;
           color: #fe8f19;
           font:{
             size:20px;
             family: $main-sec-ff;
           }
-          &.current{
-            color: #fff;
-            background-color: #ff8f18;
-            display: inline-block;
-          }
-          &:hover{
-            color: #fff;
-            background-color: #ff8f18;
-            display: inline-block;
-          }
 
         }
       }
 
     }
-    .brand-pic{
+    .tab-brand{
 
-      border: {
-        top:1px;
-        style: solid;
-        color: #fe8f19;
-      }
-      li{
-        position: relative;
-        float: left;
-        .brand-li01{
-          width: 183px;
-          height: 350px;
-          display: block;
+      .brand-pic{
+        height: 350px;
+        border: {
+          top:1px;
+          style: solid;
+          color: #fe8f19;
         }
-        .brand-text{
-          position: absolute;
-          bottom: 0;
-          width: 170px;
-          height: 47px;
-          background: rgba(255,255,255,0.5);
-          padding:{
-          top: 10px;
-          left: 12px;
-          }
-          cursor: pointer;
-          span{
+        overflow: hidden;
+        display: none;
+        li{
+          position: relative;
+          float: left;
+          .brand-li01{
+            width: 183px;
+            height: 350px;
             display: block;
-            font-family: $main-sec-ff;
-
-            &.brand-sale{
-              color: #333;
-              font-size: 18px;
+          }
+          .brand-text{
+            position: absolute;
+            bottom: 0;
+            width: 170px;
+            height: 47px;
+            background: rgba(255,255,255,0.5);
+            padding:{
+              top: 10px;
+              left: 12px;
             }
-            &.brand-member{
-              color: #df0000;
-              line-height: 20px;
+            cursor: pointer;
+            span{
+              display: block;
+              font-family: $main-sec-ff;
+
+              &.brand-sale{
+                color: #333;
+                font-size: 18px;
+              }
+              &.brand-member{
+                color: #df0000;
+                line-height: 20px;
+              }
             }
           }
         }
+      }
+      .tab-item{
+        display: block;
       }
     }
   }
