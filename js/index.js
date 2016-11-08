@@ -1,10 +1,11 @@
 
 $(document).ready(function(){
-    var i = 0;
-    var a = 1;
-    var all_li = $(".banner-pic li").length - 1;
-    var circleLi=$(".banner-circle li");
-    var key=0;/*控制图片张数*/
+    var i = 0,
+        a = 1,
+        all_li = $(".banner-pic li").length - 1,
+        circleLi=$(".banner-circle li"),
+        key=0;/*控制图片张数*/
+        
     circleLi.on("click",function(){
         i=key=$(this).index();
         banner_change();
@@ -59,9 +60,9 @@ $(document).ready(function(){
     })
 
     /*通用轮播-开始-无缝滚动式*/
-    var a_i = 0;
-    var circleList=$(".circle li");
-    var k = 0;
+    var a_i = 0,
+        circleList=$(".circle li"),
+        k = 0;
     circleList.on("click",function(){
         circleList=a_i=$(this).index();
         banner_run();
@@ -82,12 +83,12 @@ $(document).ready(function(){
 
    var banner_time = setInterval(banner_self, 2000); //自动切换
     function banner_self(_pages) {
-        var parents = $(_pages) //获取当前页面
-        var ul = parents.find(".slide"); //找到当前页面里的轮播
-        var li = ul.find("li"); //找到当前页面里轮播的li
-        var li_w = li.width(); //获取li的宽度
-        var li_length = li.length - 1; //获取li的数量
-        var left = (-li_w);
+        var parents = $(_pages), //获取当前页面
+             ul = parents.find(".slide"), //找到当前页面里的轮播
+             li = ul.find("li"), //找到当前页面里轮播的li
+             li_w = li.width(), //获取li的宽度
+             li_length = li.length - 1, //获取li的数量
+             left = (-li_w);
         li.animate({
             left: left + "px"
         }, function() {
