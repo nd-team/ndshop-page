@@ -2,7 +2,6 @@
 *{
   font:{
     family: $main-sec-ff;
-    size: 12px;
   }
 }
 tbody{
@@ -58,7 +57,6 @@ tr{
           height: 45px;
           line-height: 45px;
           display: block;
-          font-size: 14px;
         }
 
 
@@ -74,7 +72,6 @@ tr{
     margin-top: 20px;
     h3{
       margin-bottom: 24px;
-      font-size: 14px;
     }
     .status-text{
       li{
@@ -104,9 +101,6 @@ tr{
         text-align: center;
         color: $white;
         margin-left: 20px;
-        font:{
-           size: 16px;
-        }
       }
       border-bottom: 1px solid #ddd;
     }
@@ -203,17 +197,7 @@ tr{
       }
     }
 
-    .seller-order{
-      @extend .seller-information;
-      border-bottom: 1px solid $white;
-      .order-inform-base{
-        @extend  .seller-inform-base;
-      }
-    }
-
-
   }
-
   /*shangpingshuxing*/
   .commodity-attribute{
     table{

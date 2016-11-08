@@ -3,7 +3,12 @@ $border:1px solid #ddd;
 $border1:1px dashed #ddd;
 *{
   font: {
+
     family: $main-sec-ff;
+
+    //family: 'SimHei ';
+    family: 'SimHei';
+
     size: 12px;
   }
 }
@@ -413,6 +418,7 @@ $border1:1px dashed #ddd;
        height: 345px;
       .show{
         display: block !important;
+        height: 290px;
       }
       .guess-item{
          position: relative;
@@ -431,6 +437,7 @@ $border1:1px dashed #ddd;
             height: 270px;
             .item-pic{
               width: 147px;
+              height: 167px;
               margin: 20px auto 10px;
             }
             .item-text{
