@@ -306,6 +306,7 @@
         width:40px;
         height:40px;
         float:left;
+
         img{
           width:40px;
           border-radius:20px;
@@ -319,6 +320,15 @@
         background:#ddd;
         border-radius:20px;
         max-width:750px;
+        position:relative;
+        i{
+          display:inline-block;
+          width:20px;
+          height:20px;
+          background:url("/images/news/jian1.png") no-repeat;
+          position:absolute;
+          left:-15px;
+        }
       }
     }
     .seller{
@@ -341,6 +351,15 @@
         background:#59d2ff;
         border-radius:20px;
         max-width:750px;
+        position:relative;
+        i{
+          display:inline-block;
+          width:25px;
+          height:20px;
+          background:url("/images/news/jian2.png") no-repeat;
+          position:absolute;
+          right:-15px;
+        }
       }
     }
   }
