@@ -3,12 +3,7 @@ $border:1px solid #ddd;
 $border1:1px dashed #ddd;
 *{
   font: {
-
     family: $main-sec-ff;
-
-    //family: 'SimHei ';
-    family: 'SimHei';
-
     size: 12px;
   }
 }
@@ -220,7 +215,6 @@ $border1:1px dashed #ddd;
   /*express way*/
 
   .express-way {
-   // padding-top: 15px;
     width: 1100px;
     height: auto;
     display: inline-block;
@@ -234,8 +228,7 @@ $border1:1px dashed #ddd;
     .detail-cont {
       float: left;
       font: {
-        //family: $main-sec-ff;
-        size: 12px;
+         size: 12px;
       }
       color: #666;
       width: 285px;
@@ -280,8 +273,7 @@ $border1:1px dashed #ddd;
               margin-right: 8px;
             }
             &.delivery{
-             //font-weight: 600;
-            }
+              }
 
           }
 
@@ -307,7 +299,6 @@ $border1:1px dashed #ddd;
     margin-top: 20px;
     font-size: 12px;
     border: {
-     // top: $border1;
       right: $border;
       left: $border1;
     }
@@ -326,19 +317,16 @@ $border1:1px dashed #ddd;
       }
       background: url("/images/orders/line.png") no-repeat bottom;
       font{
-       // family:"SimHei";
-        size: 12px;
+          size: 12px;
          }
-      //font-weight: 600;
       padding-top: 11px;
       color: #333;
       float: left;
      ul{
-        padding: 0 0 20px 20px;
+        padding: 0 0 50px 20px;
         li{
            padding-top: 9px;
            font-size: 12px;
-
             .cons-title{
               font-size: 14px;
               margin:0 0 15-9px 0;
@@ -355,9 +343,7 @@ $border1:1px dashed #ddd;
               width: 181px;
               display: block;
               margin-left:55px;
-            // font-family:"SimHei";
-
-              &.address{
+               &.address{
                word-break:break-all;
                display: block;
                margin-left: 57px;
@@ -382,8 +368,7 @@ $border1:1px dashed #ddd;
      height: 356px;
      background: $white;
      font-size: 12px;
-    // font-family:'SimHei';
-    margin-top: 30px;
+     margin-top: 30px;
     .guess-title{
       position: relative;
       height: 45px;
@@ -424,8 +409,6 @@ $border1:1px dashed #ddd;
          position: relative;
          overflow: hidden;
          display: none;
-
-         //display: none;
         .item-group{
            position: relative;
            padding: 10px 0px 10px 30px;
@@ -476,8 +459,7 @@ $border1:1px dashed #ddd;
 
       .guess-button{
         position: absolute;
-       //button:20px !important;
-       left: 42%;
+        left: 42%;
         width: 232px;
         height: 10px;
         .guess-pagination{
@@ -487,12 +469,10 @@ $border1:1px dashed #ddd;
           a{
             float: left;
             margin-right: 6px;
-
               display: inline-block;
               width: 10px;
               height: 10px;
               background-color:#dcdcdc;
-             // font-size: 20px;
               line-height: 7px;
               border-radius:5px;
 
@@ -508,7 +488,6 @@ $border1:1px dashed #ddd;
           left: 40%;
           top:-8px;
            .guess-reload-button{
-
 
                 color: #8b8b8b;
 
