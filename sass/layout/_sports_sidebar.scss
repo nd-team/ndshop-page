@@ -107,6 +107,7 @@
             width: 228px;
             margin-top: -1px;
             .sport-list {
+                position: relative;
                 cursor: pointer;
                 &:hover {
                     background-color: #1e8bc4;
