@@ -173,11 +173,8 @@
                 border-radius: 50%;
                 cursor: pointer;
                 margin: 0 5px;
-                &.same-gray02{
+                &.current{
                   background-color: rgba(0,0,0,.2);
-                }
-                &.same-gray03{
-                  background-color: rgba(0,0,0,.1);
                 }
               }
 
