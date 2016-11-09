@@ -2,8 +2,8 @@
 $(document).ready(function () {
 
     var slide=$(".slide");
-    var circleLi=$(".circle li");
-    var slideLi=$(".slide li");/*把slide的li定义一个变量，然后通过变量来克隆*/
+    var circleLi=$(".same-circle li");
+    var slideLi=$(".same-banner li");/*把slide的li定义一个变量，然后通过变量来克隆*/
     // var W=$(window).width();
     var W = slideLi.width(); //获取li的宽度
     var li_length = slideLi.length - 1; //获取li的数量

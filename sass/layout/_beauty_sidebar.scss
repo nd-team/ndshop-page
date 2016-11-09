@@ -95,8 +95,6 @@
 .sidebar-beauty{
     width: 100%;
     height:480px;
-    // overflow: hidden;
-    clear:both;
     .beauty-menu{
         width: 228px;
         height:482px;
@@ -105,11 +103,9 @@
         font-family: "Microsoft YaHei";
         margin-top: -2px;
         .beauty-ul {
-            position: relative;
             width: 228px;
             margin-top: -1px;
             .beauty-list {
-                position: relative;
                 cursor: pointer;
                 &:hover {
                     background-color: #ff427a;
@@ -148,12 +144,6 @@
                         color: #fff;
                         font: {
                             size: 16px;
-                        }
-                        .nav-icon {
-                            height: 15px;
-                            width: 15px;
-                            display: inline-block;
-                            background-color: #fff;
                         }
                     }
                     .nav-beauty {
