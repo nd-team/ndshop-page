@@ -1,7 +1,6 @@
 /**
  * Created by ike on 2016/10/27.
  */
-
     /*结算切换*/
     $(function(){
         $('.card-tab-title li').click(function() {
@@ -15,8 +14,6 @@
             $(".state-frame").css("display", "none")
             $(".state-frame").eq($(this).index()).css("display", "block")
         })
-
-
             $('.return-goods').click(function(){
                 $('.return-goods,.refund-me').hide();
                 $('.will-return').show();
@@ -33,19 +30,15 @@
                 $(this).addClass('ret-active').siblings().removeClass('ret-active');
                 $('.ret-main>div:eq('+$(this).index()+')').show().siblings().hide();
             })
-
-        $('.add-comment,.baby-article').click(function(){
+            $('.add-comment,.baby-article').click(function(){
             $('.baby-details').find(".baby-det-right").eq(1).hide();
             $('.baby-details').find(".baby-det-right").eq(0).show();
         })
-        $('.eva-fold').click(function(){
+            $('.eva-fold').click(function(){
             $('.baby-details').find(".baby-det-right").eq(0).hide();
             $('.baby-details').find(".baby-det-right").eq(1).show();
         })
-
-
         /*order*/
-
         $('.guess-button button a.guess-reload-button').click(function () {
             var current = $('.guess-pagination  a.guess-current').index();
             var reconLen = $('.guess-pagination a').length;
@@ -66,26 +59,15 @@
             $('.guess-content .guess-item').removeClass('show');
             $('.guess-content .guess-item').eq(current).addClass('show');
         })
-
-
-
-
-
-
-
-
     /*店铺内页*/
     $('.inactive').click(function(){
         if($(this).siblings('ul').css('display')=='none'){
             $(this).parent('li').siblings('li').removeClass('store-inactive');
             $(this).addClass('store-inactive');
             $(this).siblings('ul').slideDown(100).children('li');
-
         }else{
             $(this).removeClass('store-inactive');
             $(this).siblings('ul').slideUp(100);
-
-
         }
     })
 
@@ -97,6 +79,10 @@
         $(this).addClass('present').siblings().removeClass('present')
     })
 
-
+/*information*/
+        $('.receipt-title a').click(function(){
+            $('.receipt-title a').removeClass('r-now');
+            $(this).addClass('r-now');
+        })
 
     })

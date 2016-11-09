@@ -1,4 +1,4 @@
-@import "../layout/_variables", "../layout/_mixin";
+@import "../layout/variables";
 @mixin box-shadow($shadow...) {
   -webkit-box-shadow:$shadow;
   box-shadow:$shadow;
@@ -97,7 +97,6 @@ Fill in the check order information*/
               background: #33b5ff;
               line-height: 30px;
               display: block;
-              //border: 0px;
               color: $white;
               @include box-shadow(0 0 10px #e9e9e9);
 
@@ -168,35 +167,33 @@ Fill in the check order information*/
             .p-extend{
                width: 89px;
                margin-top: 6px;
-              span{
-
+              p{
                 width: 220px;
                 min-height: 18px;
-                height: 18px;
+                height: 28px;
                 line-height: 29px;
                   i{
                      display: inline-block;
-                     width: 17px;
-                    height: 16px;
-                    vertical-align: middle;
-                    overflow: hidden;
-                  }
+                     width: 15px;
+                     height: 15px;
+                     float: left;
+                     vertical-align: middle;
+                     padding-top: 4px;
+                    }
                 a{
                    color: #cfcfcf;
+                   margin-left: 5px;
                 }
               }
             }
           }
-
           .p-color{
             width: 118px;
             text-align: left;
             float: $float;
             padding: 0px 0 10px;
             span{
-
                 color: #727272;
-
             }
           }
           .p-number{
@@ -206,7 +203,6 @@ Fill in the check order information*/
             padding: 0px 0 10px;
             color: #727272;
             }
-
           .p-price{
             width: 18px;
             text-align: center;
@@ -215,12 +211,9 @@ Fill in the check order information*/
             padding: 0px 0 10px;
             font-weight: 700;
            }
-
         }
      }
     }
-
-
     .receipt-title3{
         @extend %receipt-inform;
         height: 158px;
@@ -236,7 +229,6 @@ Fill in the check order information*/
            line-height: 38px;
            color: $white;
            margin: 16px 0 30px 15px;
-
          }
       }
       .mode-note{
@@ -247,7 +239,7 @@ Fill in the check order information*/
         color: #999;
               p{
                  color: #666;
-                margin-bottom: 12px;
+                 margin-bottom: 12px;
               }
          input{
            width: 458px;
@@ -269,10 +261,8 @@ Fill in the check order information*/
          }
        }
      }
-
   }
 }
-
 /*Total amount payable*/
 .total-amount{
   width: 1100px;
@@ -302,9 +292,8 @@ Fill in the check order information*/
 
   }
 }
-
 .place-order{
-  background:url("/images/cart/提交bottom.png") no-repeat;
+  background:url("/images/cart/bottom.png") no-repeat;
   width: 139px;
   height: 35px;
   margin-top: 16px;
