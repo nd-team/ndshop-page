@@ -1,4 +1,40 @@
 
+.header-ls {
+    width: 100%;
+    height:80px;
+    margin: {
+        top:17px;
+        bottom:30px;
+    }
+    .header-lg {
+        z-index: 12;
+        float: left;
+        width: 290px;
+        height: 62px;
+        line-height: 62px;
+        float: left;
+        .logo {
+            display: inline-block;
+            width: 185px;
+            height: 53px;
+            background-image: url('/images/head/logo.png');
+            background-repeat:no-repeat;
+            text-indent: -2000px;
+            padding-left: 12px;
+        }
+        .clothing-logo{
+            text-align: center;
+            color: #333;
+            font:{
+                size: 18px;
+                family: "Microsoft YaHei";
+            }
+            cursor: pointer;
+        }
+    }
+
+}
+
 /*服饰箱包导航start*/
 .nav-box{
     width:100%;
