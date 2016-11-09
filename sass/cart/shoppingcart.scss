@@ -9,10 +9,9 @@
        family: $main-sec-ff;
        size: 20px;
     }
-    i{
+    svg{
        width: 33px;
        height: 33px;
-       background: #0dbc77;
        display: block;
        float: left;
        margin:-5px 8px 0 22px;
@@ -138,10 +137,10 @@
         font-family: $main-sec-ff;
         margin-left:39px;
         cursor: pointer;
-        i{
+        svg{
           width: 24px;
           height: 24px;
-          background: #31b5ff;
+         // background: #31b5ff;
           display: inline-block;
           vertical-align: middle;
           overflow: hidden;

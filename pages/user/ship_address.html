@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="/css/user/ship_address.css" />
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
-    <script src="/js/user/ship_address.js"></script>
+    <script src="/js/user/user.js"></script>
 </head>
 <body>
 <header>
     <div class="header-top">
-        <div class="wrap cleafix">
+        <div class="wrap clearfix">
             <div class="top-add">
                 <span>运送至：<a href="javascript:void(0)">广州</a></span>
             </div>
@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="header-ls" id="user-head">
-        <div class="wrap clearfix">
+        <div class="wrap cleafix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
             </div>
@@ -66,10 +66,13 @@
             </div>
             <div class="shopping-cart">
                 <a class="my-cart">
-                    <svg role="img" class="shopping">
-                        <use xlink:href="#shopping"></use>
+                    <svg role="img" class="shopping_white">
+                        <use xlink:href="#shopping_white"></use>
                     </svg>
-                    我的购物车 &gt;
+                    我的购物车
+                    <svg role="img" class="button_next">
+                        <use xlink:href="#button_next"></use>
+                    </svg>
                 </a>
             </div>
 
@@ -84,12 +87,11 @@
     <div id="user-sidebar" class="clearfix">
         <h3>设置</h3>
         <div class="menu">
-            <a href="/pages/user/info.html" >个人信息</a>
-            <a href="/pages/user/safety.html" >账户安全</a>
-            <a href="javascript:void(0) ">账户绑定</a>
-            <a href="javascript:void(0) ">账户级别</a>
-            <a href="javascript:void(0) " class="active">收货地址</a>
-            <a href="javascript:void(0) ">消费记录</a>
+            <a href="/pages/user/info.html">个人信息</a>
+            <a href="/pages/user/safety.html">账户安全</a>
+            <a href="/pages/user/account_bind.html">账户绑定</a>
+            <a href="/pages/user/ship_address.html" class="active">收货地址</a>
+            <a href="/pages/user/consume.html">消费记录</a>
         </div>
     </div>
     <div class="address-con">
@@ -211,6 +213,64 @@
             您已创建1个收货地址，最多可创建<span>20</span>个
         </div>
     </div>
+    <div id="modal">
+        <div class="modal-title">
+            编辑收货地址
+            <a href="javascript:void(0)" class="modal-close">×</a>
+        </div>
+        <div class="modal-body">
+            <dl>
+                <dt><i>*</i> <label>收货人:</label></dt>
+                <dd>
+                    <input type="text" value="辉少">
+                </dd>
+            </dl>
+            <dl>
+                <dt><i>*</i> <label>所在地区:</label></dt>
+                <dd>
+                    <select>
+                        <option>广东</option>
+                    </select>
+                    <select>
+                        <option>广州市</option>
+                    </select>
+                    <select>
+                        <option>天河区</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i>*</i> <label>详细地址:</label></dt>
+                <dd>
+                    <input type="text" value="东圃街道" class="w380">
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <label class="phone"><i>*</i> 手机号码:</label>
+                    <label>固定电话:</label>
+                </dt>
+                <dd>
+                    <input type="text" value="13000000000" > 或
+                    <input type="text" value="13111111111" >
+                </dd>
+            </dl>
+            <dl>
+                <dt> <label>邮箱:</label></dt>
+                <dd>
+                    <input type="text" value="123456789@qq.com" class="w380">
+                </dd>
+            </dl>
+            <dl>
+                <dt> <label>地址别名:</label></dt>
+                <dd>
+                    <input type="text" value="梦开始的地方" class="w380">
+                </dd>
+            </dl>
+            <button class="save">保存收货地址</button>
+        </div>
+    </div>
+    <div id="modalbg"></div>
 </div>
 
 <footer>

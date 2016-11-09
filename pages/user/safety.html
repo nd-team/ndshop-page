@@ -15,7 +15,7 @@
 <body>
 <header>
     <div class="header-top">
-        <div class="wrap cleafix">
+        <div class="wrap clearfix">
             <div class="top-add">
                 <span>运送至：<a href="javascript:void(0)">广州</a></span>
             </div>
@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="header-ls" id="user-head">
-        <div class="wrap clearfix">
+        <div class="wrap cleafix">
             <div class="header-lg">
                 <a href="javascript:void(0)" class="logo" title="NdShop"></a>
             </div>
@@ -66,10 +66,13 @@
             </div>
             <div class="shopping-cart">
                 <a class="my-cart">
-                    <svg role="img" class="shopping">
-                        <use xlink:href="#shopping"></use>
+                    <svg role="img" class="shopping_white">
+                        <use xlink:href="#shopping_white"></use>
                     </svg>
-                    我的购物车 &gt;
+                    我的购物车
+                    <svg role="img" class="button_next">
+                        <use xlink:href="#button_next"></use>
+                    </svg>
                 </a>
             </div>
 
@@ -84,20 +87,19 @@
     <div id="user-sidebar" class="clearfix">
         <h3>设置</h3>
         <div class="menu">
-            <a href="/pages/user/info.html" >个人信息</a>
+            <a href="/pages/user/info.html">个人信息</a>
             <a href="/pages/user/safety.html" class="active">账户安全</a>
-            <a href="javascript:void(0) ">账户绑定</a>
-            <a href="javascript:void(0) ">账户级别</a>
-            <a href="javascript:void(0) ">收货地址</a>
-            <a href="javascript:void(0) ">消费记录</a>
+            <a href="/pages/user/account_bind.html">账户绑定</a>
+            <a href="/pages/user/ship_address.html">收货地址</a>
+            <a href="/pages/user/consume.html">消费记录</a>
         </div>
     </div>
     <div class="safety-con">
         <h2>安全中心</h2>
         <dl class="safelist">
             <dt>
-                <svg role="img" class="bangong">
-                    <use xlink:href="#bangong"></use>
+                <svg role="img" class="green_right">
+                    <use xlink:href="#green_right"></use>
                 </svg>
                 <strong>登录密码:</strong>
             </dt>
@@ -109,8 +111,8 @@
         </dl>
         <dl class="safelist">
             <dt>
-                <svg role="img" class="bangong">
-                    <use xlink:href="#bangong"></use>
+                <svg role="img" class="warning">
+                    <use xlink:href="#warning"></use>
                 </svg>
                 <strong>邮箱验证:</strong>
             </dt>
@@ -121,8 +123,8 @@
         </dl>
         <dl class="safelist">
             <dt>
-                <svg role="img" class="bangong">
-                    <use xlink:href="#bangong"></use>
+                <svg role="img" class="green_right">
+                    <use xlink:href="#green_right"></use>
                 </svg>
                 <strong>手机验证:</strong>
             </dt>

@@ -101,7 +101,7 @@ $ser-f: '宋体';
       .card-tab{
         width: 954px;
         margin-top: 22px;
-        /*所有银行*/
+        /*bank*/
         .bank-cd{
          margin-top: 40px;
           .q-card{
@@ -113,7 +113,7 @@ $ser-f: '宋体';
 
             ul {
               margin-left: 62px;
-              height: 200px;
+              height: 180px;
               overflow:hidden;
               li{
                 width: 150px;
@@ -203,7 +203,7 @@ $ser-f: '宋体';
     }
   }
 
-  /*其他支付方式*/
+  /*other pay*/
   .other-pay{
     @include box-shadow(0 2px 16px rgba(236,236,236,.9));
     width: 1100-55px;

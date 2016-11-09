@@ -56,7 +56,7 @@
     button{
       width:56px;
       height:32px;
-      background:#fff;
+      background:#ededed;
       padding:0;
       color:#333;
       font-size:12px;
@@ -66,17 +66,21 @@
   .shopping-cart{
     width:140px;
     height:32px;
-    background:#fff;
     margin:24px 0;
     line-height:32px;
-    text-indent:10px;
-    a{
-      color:#666;
+    background:#f85e66;
+    .my-cart{
       vertical-align:middle;
-      .shopping{
-        width:20px;
-        height:20px;
-        vertical-align:-3px;
+      color:#fff;
+      .shopping_white{
+        width:40px;
+        height:40px;
+        margin-top:-8px;
+        margin-right:-5px;
+      }
+      .button_next{
+        width:15px;
+        height:15px;
       }
     }
   }
@@ -254,21 +258,29 @@
           &:last-child{
             float:right;
           }
+          svg{
+            width:15px;
+            height:15px;
+            vertical-align:-2px;
+          }
         }
       }
       .prolist-btn{
-        height:16px;
-        line-height:16px;
         margin:10px 0;
+        border:1px solid #ededed;
+        height:30px;
+        line-height:30px;
         a{
           display:inline-block;
-          padding:5px;
+          width:102px;
+          text-align:center;
+
           &.addcart{
-            background:#fa3435;
-            color:#fff;
+            background:#f6f6f6;
+            border-right:1px solid #ededed;
           }
           &.attention{
-            background:#ebebeb;
+            background:#f6f6f6;
             float:right;
           }
         }
@@ -291,6 +303,10 @@
         overflow:hidden;
         a{
           display:inline-block;
+
+          svg{
+            vertical-align:-3px;
+          }
         }
         .top{
           opacity:0;
@@ -337,8 +353,33 @@
           bottom:0;
           a{
             width:119px;
-            &:first-child{
+            i{
+              display:inline-block;
+              width:18px;
+              height:18px;
+              vertical-align:-2px;
+            }
+            &.h-shop{
               border-right:1px solid #ddd;
+              i{
+                background:url("/font-icon/collection/collection_shop.svg") no-repeat;
+              }
+              &:hover{
+                i{
+                  background:url("/font-icon/collection/collection_shop_blue.svg") no-repeat;
+                }
+              }
+            }
+            &.h-talk{
+              i{
+                background:url("/font-icon/collection/collection_talk.svg") no-repeat;
+              }
+              &:hover{
+                i{
+                  background:url("/font-icon/collection/collection_talk_blue.svg") no-repeat;
+                }
+
+              }
             }
           }
 

@@ -1,22 +1,27 @@
 @import "../layout/_variables", "../layout/_mixin";
-i{
-  font-family:'myfont';
-}
 #content{
     .shop-summary{
            height:30px;
            background:#fbfbfb;
-           line-height: 30px;
+          // line-height: 30px;
       .shop-name{
           float: right;
-          width: 228px;
+          width: 235px;
           text-align: right;
+        svg{
+           float: left;
+           width: 23px;
+           height: 23px;
+           margin-top:3px;
+
+        }
         .shop-gold{
           font-size: 14px;
           font-family:$headline-ff;
           font-weight: bold;
           padding-right: 14px;
-        }
+          line-height: 30px;
+           }
         .shop-gat{
           color: white;
           text-align: center;
@@ -26,6 +31,7 @@ i{
           line-height: 20px;
           display:inline-block;
           background: #f25b50;
+          cursor: pointer;
         }
 
       }
@@ -127,16 +133,16 @@ i{
                  border: 0px;
                  border-radius: 5px;
                  cursor: pointer;
+
                   /*搜索*/
-                 .mf-search{
+                 .fangdajing{
                    display: block;
                    float: left;
                    font-size: 18px;
                    width: 20px;
                    height: 20px;
-                   font-family: 'myfont';
                    color: $white;
-                   padding: 0 9px 0 59px;
+                   padding: 5px 9px 0 59px;
                   }
                }
                .left-search-hot{
@@ -161,7 +167,7 @@ i{
                @extend .left-side-top;
                height: auto;
                margin-top: 8px;
-               padding:0 0 15px 8px;
+               padding:0 0 15px 0;
                .c-title{
                  color: #656565;
                  height:32px;
@@ -174,7 +180,7 @@ i{
                   li{
                     width:181px;
                     margin-top:10px;
-
+                    padding-left: 8px;
                     a{
                       padding-left: 39px;
                       color: #6d6d6d;
@@ -186,10 +192,10 @@ i{
                       position: relative;
                     }
                     .inactive{
-                      background:url(/images/off.png) no-repeat #f6f6f6 14px center;
+                      background:url(/images/cart/jiahao.png) no-repeat #f6f6f6 14px center;
                     }
                     .store-inactive{
-                      background:url(/images/on.png) no-repeat #f6f6f6 14px center;
+                      background:url(/images/cart/jianhao.png) no-repeat #f6f6f6 14px center;
                     }
                     ul{
                       display: none;
@@ -200,7 +206,7 @@ i{
                           color:#696969;
                           display:list-item;
                           list-style-type:square;
-                          margin-left:2.5em;
+                          margin-left:2.0em;
 
 
                        }
@@ -298,6 +304,9 @@ i{
                    color: #d5d5d5;
                    padding: 5px 7px;
                     &.pay-attention{ margin-left: 17px;}
+                    &:hover{
+                       color: #4bb7f5;
+                    }
                 }
               }
             }
@@ -324,12 +333,10 @@ i{
 
           }
         .present{
-          border: 1px solid #e8e8e8;
-          padding: 9px 11px;
-          background-color:#1dbdf7;
-          margin: 0 3px 0 0;
-          color: $white;
-        }
+           background:#1dbdf7;
+           color: $white;
+
+         }
 
         .listnum2{
           border: 1px solid #e8e8e8;

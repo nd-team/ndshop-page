@@ -66,10 +66,13 @@
             </div>
             <div class="shopping-cart">
                 <a class="my-cart">
-                    <svg role="img" class="shopping">
-                        <use xlink:href="#shopping"></use>
+                    <svg role="img" class="shopping_white">
+                        <use xlink:href="#shopping_white"></use>
                     </svg>
-                    我的购物车 &gt;
+                    我的购物车
+                    <svg role="img" class="button_next">
+                        <use xlink:href="#button_next"></use>
+                    </svg>
                 </a>
             </div>
 
@@ -81,38 +84,38 @@
 
 <!--内容-->
 <div id="content" class="clearfix wrap">
-<div id="order-sidebar" class="clearfix">
-    <div class="menu">
-        <h3>订单中心</h3>
-        <div class="submenu">
-            <a href="javascript:void(0) ">我的订单</a>
+    <div id="order-sidebar" class="clearfix">
+        <div class="menu">
+            <h3>订单中心</h3>
+            <div class="submenu">
+                <a href="/pages/orders/allorders.html">我的订单</a>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>购物中心</h3>
+            <div class="submenu">
+                <a href="/pages/cart/cart.html">我的购物车</a>
+                <a href="/pages/cart/collection.html">我的收藏</a>
+                <a href="/pages/cart/footprint.html">我的足迹</a>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>优惠中心</h3>
+            <div class="submenu">
+                <a href="javascript:void(0) ">我的优惠券</a>
+                <a href="javascript:void(0) ">商城积分</a>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>退款维权</h3>
+            <div class="submenu">
+                <a href="javascript:void(0) ">退款管理</a>
+                <a href="javascript:void(0) ">售后服务</a>
+                <a href="javascript:void(0) ">投诉管理</a>
+                <a href="javascript:void(0) ">咨询回复</a>
+            </div>
         </div>
     </div>
-    <div class="menu">
-        <h3>购物中心</h3>
-        <div class="submenu">
-            <a href="javascript:void(0) ">我的购物车</a>
-            <a href="javascript:void(0) ">我的收藏</a>
-            <a href="javascript:void(0) ">我的足迹</a>
-        </div>
-    </div>
-    <div class="menu">
-        <h3>优惠中心</h3>
-        <div class="submenu">
-            <a href="javascript:void(0) ">我的优惠券</a>
-            <a href="javascript:void(0) ">商城积分</a>
-        </div>
-    </div>
-    <div class="menu">
-        <h3>退款维权</h3>
-        <div class="submenu">
-            <a href="javascript:void(0) ">退款管理</a>
-            <a href="javascript:void(0) ">售后服务</a>
-            <a href="javascript:void(0) ">投诉管理</a>
-            <a href="javascript:void(0) ">咨询回复</a>
-        </div>
-    </div>
-</div>
 <div class="order-main clearfix">
     <h3>我的订单</h3>
     <div class="order-nav clearfix">
@@ -120,7 +123,7 @@
             <li >
                 <a href="/pages/orders/allorders.html">全部订单</a>
             </li>
-            <li>
+            <li >
                 <a href="/pages/orders/pay.html">待支付</a>
             </li>
             <li >

@@ -9,11 +9,10 @@
     <link rel="stylesheet" type="text/css" href="/css/base.css" />
     <link rel="stylesheet" type="text/css" href="/css/shop/apple.css" />
     <link rel="stylesheet" type="text/css" href="/css/shop/appleshop.css" />
-   <!-- <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/shop/superslide.2.1.js"></script>-->
-    <script src="../../js/shop/jquery.js"></script>
-    <script type="text/javascript" src="../../js/shop/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../../js/shop/shop.js"></script>
+    <script src="/js/shop/jquery.js"></script>
+    <script type="text/javascript" src="/js/shop/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/shop/shop.js"></script>
 
 
 </head>
@@ -75,9 +74,14 @@
 <div id="content" class="clearfix">
     <div class="shop-summary">
         <div class="wrap">
-        <p class=" shop-name">
-            <i class="shop-cart-icon"></i>
-            <a class="shop-gold">熊本宝宝的旗舰店</a>
+        <p class="shop-name">
+             <svg role="img" class="dianpu">
+                <use xlink:href="#dianpu"></use>
+            </svg>
+            <a class="shop-gold">
+
+                熊本宝宝的旗舰店
+            </a>
             <a class="shop-gat">关注店铺</a>
 
         </p>
@@ -116,22 +120,23 @@
             </ul>
         </div>
         <div class="hd"><ul></ul></div>
-        <span class="prev"></span>
-        <span class="next"></span>
+
+        <style>
+
+      .next{
+           size: 48px;
+      }
+        </style>
+
+        <div class="prev">
+
+        </div>
+        <div class="next">
+
+        </div>
+
+
     </div>
-    <!--  <div class="banner-shop">
-          <div class="bd">
-            <ul>
-                <li><a href="javascript:void(0)"><img src="/images/shop/market/banner01.jpg"></a></li>
-                <li><a href="javascript:void(0)"><img src="/images/shop/market/banner02.jpg"></a></li>
-
-            </ul>
-          </div>
-          <div class="hd"><ul></ul></div>
-          <span class="prev"></span>
-          <span class="next"></span>
-
-      </div>-->
 
 
     <!--热销产品-->

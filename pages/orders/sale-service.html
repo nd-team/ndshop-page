@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>用户评价</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/orders/allorders.css" />
+    <link rel="stylesheet" href="/css/orders/evaluation-all.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/common.js"></script>
+      <link rel="stylesheet" href="/css/orders/servers.css">
+    <script src="/js/shop/shop.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="wrap clearfix">
+            <div class="top-add">
+                <span>运送至：<a href="javascript:void(0)">广州</a></span>
+            </div>
+            <ul class="header-top-r">
+                <li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
+                <li class="top_r">
+                    <span class="top-line on-red">我的订单<a class="more-icon">&or;</a></span>
+                </li>
+                <li class="top_r">
+                    <span class="top-line on-red">我的商城<a class="more-icon">&or;</a></span>
+                </li>
+                <li class="top_r">
+						<span class="top-line on-red">
+							<i class="phone-sc-icon"></i>手机商城
+						</span>
+                </li>
+                <li class="top_r"><span class="top-line on-red">客户服务<a class="more-icon">&or;</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-ls" id="order-head">
+        <div class="wrap cleafix">
+            <div class="header-lg">
+                <a href="javascript:void(0)" class="logo" title="NdShop"></a>
+            </div>
+            <!--<div class="myshop">
+                <h3>我的商场</h3>
+                <a href="/index.html">返回首页</a>
+            </div>-->
+            <ul class="topnav">
+                <li>
+                    <a href="javascript:void(0)">首页</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">账户设置</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">消息</a>
+                </li>
+            </ul>
+
+            <div class="search-wrap">
+                <input type="text" class="search-strip" value="" placeholder="搜我想要的"/>
+                <button class="button">
+                    搜索
+                </button>
+            </div>
+            <div class="shopping-cart">
+                <a class="my-cart">
+                    <svg role="img" class="shopping">
+                        <use xlink:href="#shopping"></use>
+                    </svg>
+                    我的购物车 &gt;
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+
+<!--内容-->
+   <div id="content" class="clearfix wrap">
+       <div class="server-sale">
+
+           <div class="bread-path">
+               <a href="javascript:void(0)">首页</a>>
+               <a href="javascript:void(0)">订单中心</a>>
+               <a href="javascript:void(0)">售后服务</a>
+           </div>
+
+           <!--流程-->
+             <div class="Stepbar">
+                 <ul class="ser-bar">
+                     <li class="ser-step ser-step-cur">
+                         <span>1</span>
+                         <em>退款</em>
+                         <i></i>
+                     </li>
+                     <li class="ser-step">
+                         <span>2</span>
+                         <em>商家处理中</em>
+                         <i></i>
+                     </li>
+                     <li class="ser-step">
+                         <span>3</span>
+                         <em>退款完成</em>
+                         <i></i>
+                     </li>
+                 </ul>
+             </div>
+
+           <!--退款退货商品-->
+           <div class="refund-main">
+               <div class="refund-sub">
+
+                   <div class="refund-fir">
+                       <div class="ref-tit">
+                           退款/退货商品
+                       </div>
+                       <div class="ref-cont">
+                           <div class="box-core">
+                               <a href="javascript:void(0)" class="box-img">
+                                   <img src="/images/orders/box-img.jpg"/>
+                               </a>
+                               <p class="box-text">
+                                   <a href="javascript:void(0)">
+                                       秋冬季加绒运动裤女长裤宽松小脚哈伦裤子显瘦休闲裤收口学生卫裤
+                                   </a>
+                               </p>
+                           </div>
+
+                           <div class="box-business">
+                               <label>
+                                   商&nbsp;&nbsp;家:
+                               </label>
+
+                               <span>费兰斯图旗舰店</span>
+                           </div>
+                       </div>
+
+                   </div>
+
+
+                   <div class="refund-fir refund-sec">
+                       <div class="ref-tit">
+                           订单中心
+                           <a href="javascript:void(0)" class="ref-details">
+                               查看详情
+                           </a>
+                       </div>
+                       <div class="ref-list">
+                           <dl>
+                               <dt>订单编号:</dt>
+                               <dd>
+                                   <span class="list-ori">1234567811648541</span>
+                               </dd>
+                               <dt>运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费:</dt>
+                               <dd>
+                                   ￥0.00
+                               </dd>
+                               <dt>总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计:</dt>
+                               <dd>
+                                   <span class="list-red">￥16.90</span>
+                               </dd>
+                               <dt>成交时间:</dt>
+                               <dd>
+                                   2016-10-12 10:50:20
+                               </dd>
+                           </dl>
+
+
+                       </div>
+
+                   </div>
+
+               </div>
+
+               <div class="refund-rig" >
+                    <!--右边内容一-->
+                    <div class="rig-cont" >
+                          <a href="javascript:void(0)" class="return-goods">
+                              我要退
+                              <span>货</span>
+                          </a>
+                        <a href="javascript:void(0)" class="refund-me">
+                            我要退
+                            <span>款</span>
+                        </a>
+                    </div>
+                   <!--右边内容二-->
+                   <div class="will-return" style="display: none;">
+                       <div class="ret-tab">
+                           <a href="javascript:void (0)" class="ret-me ret-active">我要退货</a>
+                           <a href="javascript:void (0)" class="ret-me">我要退款</a>
+                       </div>
+                       <div class="ret-main">
+                             <div class="ret-goods goods-active" style="display:block;">
+                                 <form class="ret-form">
+                                    <div class="ret-cont">
+                                           <label>退款原因&nbsp;&nbsp;:</label>
+                                           <select class="flk">
+                                               <option>请选择退款原因</option>
+                                           </select>
+                                           <div class="be-careful">
+                                               <svg role="img" class="problem">
+                                                   <use xlink:href="#problem"></use>
+                                               </svg>
+                                               请选择退款原因
+                                           </div>
+                                    </div>
+                                     <div class="ret-cont">
+                                         <label>退款金额&nbsp;&nbsp;:</label>
+                                         <input type="text" class="more-ref flk" value="16.90">
+                                         <span class="more-money">最多￥16.90</span>
+                                     </div>
+                                     <div class="ret-cont">
+                                         <label>退款说明&nbsp;&nbsp;:</label>
+                                         <textarea class="flk"></textarea>
+                                     </div>
+                                     <div class="ret-cont">
+                                         <label>上传凭证&nbsp;&nbsp;:</label>
+                                         <button class="flk">上传图片</button>
+                                         <p class="ret-pic">每张图片大小不超过5M，最多三张，支持GIF、JPG、PNG、BMP</p>
+                                     </div>
+                                     <div class="ret-action">
+                                          <button>提交退款申请</button>
+                                     </div>
+                                 </form>
+                             </div>
+                             <div class="ret-goods" >
+                               <form class="ret-form">
+                                   <div class="ret-cont">
+                                       <label>是否收货&nbsp;&nbsp;:</label>
+                                            <div class="shop-me flk">
+                                                <div class="yet">
+                                                    <input type="radio" >
+                                                    <span>未收到货物</span>
+                                                </div>
+                                                <div class="already">
+                                                    <input type="radio" >
+                                                    <span>已收到货物</span>
+                                                </div>
+                                             </div>
+                                   </div>
+                                   <div class="ret-cont">
+                                       <label>退款原因&nbsp;&nbsp;:</label>
+                                       <select class="flk">
+                                           <option>请选择退款原因</option>
+                                       </select>
+                                       <div class="be-careful">
+                                           <svg role="img" class="problem">
+                                               <use xlink:href="#problem"></use>
+                                           </svg>
+                                           请选择退款原因
+                                       </div>
+                                   </div>
+                                   <div class="ret-cont">
+                                       <label>退款金额&nbsp;&nbsp;:</label>
+                                       <input type="text" class="more-ref flk" value="16.90">
+                                       <span class="more-money">最多￥16.90</span>
+                                   </div>
+                                   <div class="ret-cont">
+                                       <label>退款说明&nbsp;&nbsp;:</label>
+                                       <textarea class="flk"></textarea>
+                                   </div>
+                                   <div class="ret-cont">
+                                       <label>上传凭证&nbsp;&nbsp;:</label>
+                                       <button class="flk">上传图片</button>
+                                       <p class="ret-pic">每张图片大小不超过5M，最多三张，支持GIF、JPG、PNG、BMP</p>
+                                   </div>
+                                   <div class="ret-action">
+                                       <button>提交退款申请</button>
+                                   </div>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+
+           <!--常见问题-->
+           <div class="clearfix"></div>
+           <div class="common-pro">
+               <div class="pro-tit">
+                   <h3>常见问题</h3>
+                   <a href="javascript:void(0)">
+                       更多帮助
+                       <i></i>
+
+                   </a>
+               </div>
+               <div class="pro-main">
+                   <ol>
+                       <li>
+                           <dl>
+                               <dt>
+                                  1、申请退款我要怎么操作
+                               </dt>
+                               <dd>
+                                 答：在交易还未成功之前，您可以再根据您当前的实际情况申请退款，
+                                   <a href="javascript:void (0)">具体详情点此了解</a>
+                               </dd>
+                               <dt>
+                                   2、申请退款我要怎么操作
+                               </dt>
+                               <dd>
+                                   答：在交易还未成功之前，您可以再根据您当前的实际情况申请退款，
+                                   <a href="javascript:void (0)">具体详情点此了解</a>
+                               </dd>
+                               <dt>
+                                   3、交易退款成功后，在哪里可以查询退回的款项
+                               </dt>
+                               <dd>
+                                   答：退款成功后，交易款项将立即退回到您的支付宝账户，您可以登录支付宝账户查询余额或收支记录
+                                   <a href="javascript:void (0)">具体详情点此了解</a>
+                               </dd>
+                               <dt>
+                                   4、卖家拒绝退款给我怎么办
+                               </dt>
+                               <dd>
+                                   答：如果卖家还未发货，卖家在处理退款申请过程中无法操作拒绝退款，智能操作同意或确认发货，并且，卖家发货的行为需要得到买家的同意
+                               </dd>
+                           </dl>
+                       </li>
+                   </ol>
+               </div>
+           </div>
+
+
+
+   </div>
+
+
+
+
+
+
+<footer>
+    <!-- service shop start-->
+    <div class="service cleafix">
+        <div class="wrap">
+            <div class="service-top">
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/fly.png" alt="" /></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/earth.png" alt="" /></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/suifei.png" alt="" /></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/taobao.png" alt="" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="service-center">
+        <div class="wrap cleafix">
+            <dl class="shop-all">
+                <dt>购物指南</dt>
+                <dd><a href="javascript:void(0)">购物流程</a></dd>
+                <dd><a href="javascript:void(0)">会员介绍</a></dd>
+                <dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
+                <dd><a href="javascript:void(0)">常见问题</a></dd>
+                <dd><a href="javascript:void(0)">大家电</a></dd>
+                <dd><a href="javascript:void(0)">联系客服</a></dd>
+            </dl>
+            <dl class="shop-all">
+                <dt>配送方式</dt>
+                <dd><a href="javascript:void(0)">上门自提</a></dd>
+                <dd><a href="javascript:void(0)">211显示达</a></dd>
+                <dd><a href="javascript:void(0)">配送服务咨询</a></dd>
+                <dd><a href="javascript:void(0)">配送费收取标准</a></dd>
+                <dd><a href="javascript:void(0)">海外配送</a></dd>
+            </dl>
+            <dl class="shop-all">
+                <dt>支付方式</dt>
+                <dd><a href="javascript:void(0)">货到收款</a></dd>
+                <dd><a href="javascript:void(0)">在线支付</a></dd>
+                <dd><a href="javascript:void(0)">分期付款</a></dd>
+                <dd><a href="javascript:void(0)">邮局汇款</a></dd>
+                <dd><a href="javascript:void(0)">公司转账</a></dd>
+
+            </dl>
+            <dl class="shop-all">
+                <dt>售后服务</dt>
+                <dd><a href="javascript:void(0)">售后政策</a></dd>
+                <dd><a href="javascript:void(0)">价格保护</a></dd>
+                <dd><a href="javascript:void(0)">退款说明</a></dd>
+                <dd><a href="javascript:void(0)">返修、退换货</a></dd>
+                <dd><a href="javascript:void(0)">取消订单</a></dd>
+            </dl>
+            <dl>
+                <dt>特色服务</dt>
+                <dd><a href="javascript:void(0)">夺宝岛</a></dd>
+                <dd><a href="javascript:void(0)">DIY装机</a></dd>
+                <dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
+                <dd><a href="javascript:void(0)">常见问题</a></dd>
+                <dd><a href="javascript:void(0)">大家电</a></dd>
+            </dl>
+        </div>
+    </div>
+    <!-- service shop end-->
+
+    <!--under footer start-->
+    <div class="footer">
+        <div class="wrap">
+            <div class="foot-link">
+                <a href="javascript:void(0)">关于我们</a>|
+                <a href="javascript:void(0)">联系我们</a>|
+                <a href="javascript:void(0)">联系客服</a>|
+                <a href="javascript:void(0)">商家入驻</a>|
+                <a href="javascript:void(0)">营销中心</a>|
+                <a href="javascript:void(0)">手机商城</a>|
+                <a href="javascript:void(0)">友情链接</a>|
+                <a href="javascript:void(0)">销售联盟</a>|
+                <a href="javascript:void(0)">ENGLISH SITE</a>|
+                <a href="javascript:void(0)">CONTACT US</a>
+            </div>
+            <div class="autocation">
+                <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt="" /></a>
+            </div>
+        </div>
+
+    </div>
+    <!--under footer end-->
+</footer>
+<!--big footer end-->
+
+</body>
+</html>
