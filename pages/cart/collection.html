@@ -13,451 +13,343 @@
     <script src="/js/cart/collection.js"></script>
 </head>
 <body>
-<header>
-    <div class="header-top">
-        <div class="wrap clearfix">
-            <div class="top-add">
-                <span>运送至：<a href="javascript:void(0)">广州</a></span>
-            </div>
-            <ul class="header-top-r">
-                <li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
-                <li class="top_r">
-                    <span class="top-line on-red">我的订单<a class="more-icon">&or;</a></span>
-                </li>
-                <li class="top_r">
-                    <span class="top-line on-red">我的商城<a class="more-icon">&or;</a></span>
-                </li>
-                <li class="top_r">
+    <header>
+        <div class="header-top">
+            <div class="wrap clearfix">
+                <div class="top-add">
+                    <span>运送至：<a href="javascript:void(0)">广州</a></span>
+                </div>
+                <ul class="header-top-r">
+                    <li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
+                    <li class="top_r">
+						<span class="top-line on-red">我的订单
+                            <svg role="img" class="top_down">
+								<use xlink:href="#top_down"></use>
+							</svg>
+                        </span>
+                    </li>
+                    <li class="top_r">
+						<span class="top-line on-red">我的商城
+                            <svg role="img" class="top_down">
+								<use xlink:href="#top_down"></use>
+							</svg>
+                        </span>
+                    </li>
+                    <li class="top_r">
 						<span class="top-line on-red">
-							<i class="phone-sc-icon"></i>手机商城
+							<svg role="img" class="iphone_gray">
+                                <use xlink:href="#iphone_gray"></use>
+                            </svg>
+                            手机商城
 						</span>
-                </li>
-                <li class="top_r"><span class="top-line on-red">客户服务<a class="more-icon">&or;</a></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="header-ls" id="coll-head">
-        <div class="wrap cleafix">
-            <div class="header-lg">
-                <a href="/index.html" class="logo" title="NdShop"></a>
-            </div>
-            <div class="myshop">
-                <h3>我的商场</h3>
-                <a href="/index.html">返回首页</a>
-            </div>
-            <ul class="topnav">
-                <li>
-                    <a href="javascript:void(0)">首页</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">账户设置</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">消息</a>
-                </li>
-            </ul>
-
-            <div class="search-wrap">
-                <input type="text" class="search-strip" value="" placeholder="搜我想要的"/>
-                <button class="button">
-                    搜索
-                </button>
-            </div>
-            <div class="shopping-cart">
-                <a class="my-cart">
-                    <svg role="img" class="shopping_white">
-                        <use xlink:href="#shopping_white"></use>
-                    </svg>
-                    我的购物车
-                    <svg role="img" class="button_next">
-                        <use xlink:href="#button_next"></use>
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-    </div>
-
-</header>
-<!--左侧菜单栏-->
-
-<!--内容-->
-<div id="content" class="clearfix wrap">
-    <div id="coll-sidebar" class="clearfix">
-        <div class="menu">
-            <h3>订单中心</h3>
-            <div class="submenu">
-                <a href="/pages/cart/orderinformation.html">我的订单</a>
-            </div>
-        </div>
-        <div class="menu">
-            <h3>购物中心</h3>
-            <div class="submenu">
-                <a href="/pages/cart/cart.html">我的购物车</a>
-                <a href="/pages/cart/collection.html" class="active">我的收藏</a>
-                <a href="/pages/cart/footprint.html">我的足迹</a>
-            </div>
-        </div>
-    </div>
-    <div class="coll-main clearfix">
-        <h3>我的收藏</h3>
-        <div class="coll-filter">
-            <div class="coll-proshop">
-                <a href="javascript:void(0) " class="active" data-title="prolist">收藏的商品</a>
-                <a href="javascript:void(0) " data-title="shoplist">收藏的店铺</a>
-            </div>
-            <div class="search">
-                <input type="text" placeholder="请输入商品名称" size="10"> <button>搜索</button>
-            </div>
-            <dl class="sortfil">
-                <dt >分类筛选：</dt>
-                <dd >
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">厨房小电（1）</a>
-                    <a href="javascript:void(0) ">厨房卫浴（1）</a>
-                </dd>
-                <dd class="fr sortfil-more">
-                    <a href="javascript:void(0) ">更多&gt;</a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>全部商品<span>(2)</span>：</dt>
-                <dd>
-                    <a href="javascript:void(0) " class="active">全部</a>
-                    <a href="javascript:void(0) ">降价</a>
-                    <a href="javascript:void(0) ">促销</a>
-                </dd>
-                <dd class="fr sortfil-allselect">
-                    <input type="checkbox"> 全选
-                    <a href="javascript:void(0) ">取消关注</a>
-                </dd>
-            </dl>
-        </div>
-        <ul class=" addpay">
-            <li>
-                <a href="javascript:void(0)"><input type="checkbox"> 全选</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">加入购物车</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">取消关注</a>
-            </li>
-        </ul>
-        <div class="coll-tabs coll-prolist">
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>
-                        300人评价
-                        <svg role="img" class="collection_message">
-                            <use xlink:href="#collection_message"></use>
-                        </svg>
-                    </span>
-                    <span>
-                        <svg role="img" class="collection_good">
-                            <use xlink:href="#collection_good"></use>
-                        </svg>
-                        好评度94%
-                    </span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>
-                        300人评价
-                        <svg role="img" class="collection_message">
-                            <use xlink:href="#collection_message"></use>
-                        </svg>
-                    </span>
-                    <span>
-                        <svg role="img" class="collection_good">
-                            <use xlink:href="#collection_good"></use>
-                        </svg>
-                        好评度94%
-                    </span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>
-                        300人评价
-                        <svg role="img" class="collection_message">
-                            <use xlink:href="#collection_message"></use>
-                        </svg>
-                    </span>
-                    <span>
-                        <svg role="img" class="collection_good">
-                            <use xlink:href="#collection_good"></use>
-                        </svg>
-                        好评度94%
-                    </span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>
-                        300人评价
-                        <svg role="img" class="collection_message">
-                            <use xlink:href="#collection_message"></use>
-                        </svg>
-                    </span>
-                    <span>
-                        <svg role="img" class="collection_good">
-                            <use xlink:href="#collection_good"></use>
-                        </svg>
-                        好评度94%
-                    </span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>
-                        300人评价
-                        <svg role="img" class="collection_message">
-                            <use xlink:href="#collection_message"></use>
-                        </svg>
-                    </span>
-                    <span>
-                        <svg role="img" class="collection_good">
-                            <use xlink:href="#collection_good"></use>
-                        </svg>
-                        好评度94%
-                    </span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-            <ul class="prolist-con">
-                <li class="prolist-pic">
-                    <img src="/images/shop/details/pic04.png" >
-                </li>
-                <li class="prolist-tit">
-                    <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
-                </li>
-                <li class="prolist-price">￥235.00</li>
-                <li class="prolist-eva">
-                    <span>
-                        300人评价
-                        <svg role="img" class="collection_message">
-                            <use xlink:href="#collection_message"></use>
-                        </svg>
-                    </span>
-                    <span>
-                        <svg role="img" class="collection_good">
-                            <use xlink:href="#collection_good"></use>
-                        </svg>
-                        好评度94%
-                    </span>
-                </li>
-                <li class="prolist-btn">
-                    <a href="javascript:void(0)" class="addcart">加入购物车</a>
-                    <a href="javascript:void(0)" class="attention">取消关注</a>
-                </li>
-            </ul>
-        </div>
-        <div class="coll-tabs coll-shoplist">
-            <div class="coll-shopcon">
-                <ul class="shop-head">
-                    <li class="top">
-                        <a href="javascript:void(0)" >置顶</a>
-                        <a href="javascript:void(0)" >取消关注</a>
                     </li>
-                    <li><a href="javascript:void(0)" ><img src="/images/cart/360.png"></a></li>
-                    <li class="shop-title"><strong>360手机官方旗舰店</strong></li>
-                    <li class="attention">
-                        <svg role="img" class="collection_love">
-                            <use xlink:href="#collection_love"></use>
-                        </svg>
-                        20000
-                    </li>
-                    <li class="bottom">
-                        <a href="javascript:void(0)" class="h-shop">
-                            <i></i>
-                            进入店铺
-                        </a>
-                        <a href="javascript:void(0)" class="h-talk">
-                            <i></i>
-                            联系客服
-                        </a>
+                    <li class="top_r"><span class="top-line on-red">客户服务
+                        <svg role="img" class="top_down">
+                            <use xlink:href="#top_down"></use>
+                        </svg></span>
                     </li>
                 </ul>
-                <div class="shop-main">
-                    <a href="javascript:void(0)" class="lastpic">&lt;</a>
-                    <ul class="shop-main-prolist">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="/images/cart/img01.png">
-                                <p>￥1205.00</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="/images/cart/img02.png">
-                                <p>￥1205.00</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="/images/cart/img03.png">
-                                <p>￥1205.00</p>
-                            </a>
-                        </li>
+            </div>
+        </div>
+        <div class="header-ls" id="coll-head">
+            <div class="wrap clearfix">
+                <div class="header-lg">
+                    <a href="/index.html" class="logo" title="NdShop"></a>
+                </div>
+                <div class="myshop">
+                    <h3>我的商场</h3>
+                    <a href="/index.html">返回首页</a>
+                </div>
+                <ul class="topnav">
+                    <li>
+                        <a href="javascript:void(0)">首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">账户设置</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">消息</a>
+                    </li>
+                </ul>
 
-                    </ul>
-                    <a href="javascript:void(0)" class="nextpic">&gt;</a>
-                    <div class="btn">
-                        <a href="javascript:void(0)" class="active"></a>
-                        <a href="javascript:void(0)" ></a>
-                    </div>
+                <div class="search-wrap">
+                    <input type="text" class="search-strip" value="" placeholder="搜我想要的"/>
+                    <button class="button">
+                        搜索
+                    </button>
+                </div>
+                <div class="shopping-cart">
+                    <a class="my-cart">
+                        <svg role="img" class="shopping_white">
+                            <use xlink:href="#shopping_white"></use>
+                        </svg>
+                        我的购物车
+                        <svg role="img" class="button_next">
+                            <use xlink:href="#button_next"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!--左侧菜单栏-->
+
+    <!--内容-->
+    <div id="content" class="clearfix wrap">
+        <div id="coll-sidebar" class="clearfix">
+            <div class="menu">
+                <h3>订单中心</h3>
+                <div class="submenu">
+                    <a href="/pages/cart/orderinformation.html">我的订单</a>
                 </div>
             </div>
-            <div class="coll-shopcon">
-                <ul class="shop-head">
-                    <li class="top">
-                        <a href="javascript:void(0)" >置顶</a>
-                        <a href="javascript:void(0)" >取消关注</a>
-                    </li>
-                    <li><a href="javascript:void(0)" ><img src="/images/cart/timberland.png"></a></li>
-                    <li class="shop-title"><strong>TIMBERLAND手表旗舰店</strong></li>
-                    <li class="attention">
-                        <svg role="img" class="collection_love">
-                            <use xlink:href="#collection_love"></use>
-                        </svg>
-                        20000
-                    </li>
-                    <li class="bottom">
-                        <a href="javascript:void(0)" class="h-shop">
-                            <i></i>
-                            进入店铺
-                        </a>
-                        <a href="javascript:void(0)" class="h-talk">
-                            <i></i>
-                            联系客服
-                        </a>
-                    </li>
-                </ul>
-                <div class="shop-main ">
-                   <p class="nothing">暂时没有活动</p>
-                    <ul class="ticket">
-                        <li class="ticket1">
-                            <strong>￥50</strong>
-                            <a href="javascript:void(0)" >立即领取</a>
-                            <p>消费满100元可用</p>
-                            <span>2016.09.13 - 2016.10.13</span>
-                        </li>
-                        <li class="ticket2">
-                            <strong>￥100</strong>
-                            <a href="javascript:void(0)" >立即领取</a>
-                            <p>消费满100元可用</p>
-                            <span>2016.09.13 - 2016.10.13</span>
-                        </li>
-                        <li class="ticket3">
-                            <strong>￥200</strong>
-                            <a href="javascript:void(0)" >立即领取</a>
-                            <p>消费满100元可用</p>
-                            <span>2016.09.13 - 2016.10.13</span>
-                        </li>
-                        <li class="ticket4">
-                            <strong>￥300</strong>
-                            <a href="javascript:void(0)" >立即领取</a>
-                            <p>消费满100元可用</p>
-                            <span>2016.09.13 - 2016.10.13</span>
-                        </li>
-                    </ul>
+            <div class="menu">
+                <h3>购物中心</h3>
+                <div class="submenu">
+                    <a href="/pages/cart/cart.html">我的购物车</a>
+                    <a href="/pages/cart/collection.html" class="active">我的收藏</a>
+                    <a href="/pages/cart/footprint.html">我的足迹</a>
                 </div>
             </div>
-            <div class="coll-shopcon">
-                <ul class="shop-head">
-                    <li class="top">
-                        <a href="javascript:void(0)" >置顶</a>
-                        <a href="javascript:void(0)" >取消关注</a>
+        </div>
+        <div class="coll-main clearfix">
+            <h3>我的收藏</h3>
+            <div class="coll-filter">
+                <div class="coll-proshop">
+                    <a href="javascript:void(0) " class="active" data-title="prolist">收藏的商品</a>
+                    <a href="javascript:void(0) " data-title="shoplist">收藏的店铺</a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="请输入商品名称" size="10"> <button>搜索</button>
+                </div>
+                <dl class="sortfil">
+                    <dt >分类筛选：</dt>
+                    <dd >
+                        <a href="javascript:void(0) " class="active">全部</a>
+                        <a href="javascript:void(0) ">厨房小电（1）</a>
+                        <a href="javascript:void(0) ">厨房卫浴（1）</a>
+                    </dd>
+                    <dd class="fr sortfil-more">
+                        <a href="javascript:void(0) ">更多&gt;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>全部商品<span>(2)</span>：</dt>
+                    <dd>
+                        <a href="javascript:void(0) " class="active">全部</a>
+                        <a href="javascript:void(0) ">降价</a>
+                        <a href="javascript:void(0) ">促销</a>
+                    </dd>
+                    <dd class="fr sortfil-allselect">
+                        <input type="checkbox"> 全选
+                        <a href="javascript:void(0) ">取消关注</a>
+                    </dd>
+                </dl>
+            </div>
+            <ul class=" addpay">
+                <li>
+                    <a href="javascript:void(0)"><input type="checkbox"> 全选</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">加入购物车</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">取消关注</a>
+                </li>
+            </ul>
+            <div class="coll-tabs coll-prolist">
+                <ul class="prolist-con">
+                    <li class="prolist-pic">
+                        <img src="/images/shop/details/pic04.png" >
                     </li>
-                    <li><a href="javascript:void(0)" ><img src="/images/cart/walch.png"></a></li>
-                    <li class="shop-title"><strong>威路士官方旗舰店</strong></li>
-                    <li class="attention">
-                        <svg role="img" class="collection_love">
-                            <use xlink:href="#collection_love"></use>
-                        </svg>
-                        20000
+                    <li class="prolist-tit">
+                        <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
                     </li>
-                    <li class="bottom">
-                        <a href="javascript:void(0)" class="h-shop">
-                            <i></i>
-                            进入店铺
-                        </a>
-                        <a href="javascript:void(0)" class="h-talk">
-                            <i></i>
-                            联系客服
-                        </a>
+                    <li class="prolist-price">￥235.00</li>
+                    <li class="prolist-eva">
+                        <span>
+                            300人评价
+                            <svg role="img" class="collection_message">
+                                <use xlink:href="#collection_message"></use>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg role="img" class="collection_good">
+                                <use xlink:href="#collection_good"></use>
+                            </svg>
+                            好评度94%
+                        </span>
+                    </li>
+                    <li class="prolist-btn">
+                        <a href="javascript:void(0)" class="addcart">加入购物车</a>
+                        <a href="javascript:void(0)" class="attention">取消关注</a>
                     </li>
                 </ul>
-                <div class="shop-main">
-                    <ul class="profil">
-                        <li class="active">
-                            <a href="javascript:void(0)" >热销</a>
+                <ul class="prolist-con">
+                    <li class="prolist-pic">
+                        <img src="/images/shop/details/pic04.png" >
+                    </li>
+                    <li class="prolist-tit">
+                        <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
+                    </li>
+                    <li class="prolist-price">￥235.00</li>
+                    <li class="prolist-eva">
+                        <span>
+                            300人评价
+                            <svg role="img" class="collection_message">
+                                <use xlink:href="#collection_message"></use>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg role="img" class="collection_good">
+                                <use xlink:href="#collection_good"></use>
+                            </svg>
+                            好评度94%
+                        </span>
+                    </li>
+                    <li class="prolist-btn">
+                        <a href="javascript:void(0)" class="addcart">加入购物车</a>
+                        <a href="javascript:void(0)" class="attention">取消关注</a>
+                    </li>
+                </ul>
+                <ul class="prolist-con">
+                    <li class="prolist-pic">
+                        <img src="/images/shop/details/pic04.png" >
+                    </li>
+                    <li class="prolist-tit">
+                        <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
+                    </li>
+                    <li class="prolist-price">￥235.00</li>
+                    <li class="prolist-eva">
+                        <span>
+                            300人评价
+                            <svg role="img" class="collection_message">
+                                <use xlink:href="#collection_message"></use>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg role="img" class="collection_good">
+                                <use xlink:href="#collection_good"></use>
+                            </svg>
+                            好评度94%
+                        </span>
+                    </li>
+                    <li class="prolist-btn">
+                        <a href="javascript:void(0)" class="addcart">加入购物车</a>
+                        <a href="javascript:void(0)" class="attention">取消关注</a>
+                    </li>
+                </ul>
+                <ul class="prolist-con">
+                    <li class="prolist-pic">
+                        <img src="/images/shop/details/pic04.png" >
+                    </li>
+                    <li class="prolist-tit">
+                        <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
+                    </li>
+                    <li class="prolist-price">￥235.00</li>
+                    <li class="prolist-eva">
+                        <span>
+                            300人评价
+                            <svg role="img" class="collection_message">
+                                <use xlink:href="#collection_message"></use>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg role="img" class="collection_good">
+                                <use xlink:href="#collection_good"></use>
+                            </svg>
+                            好评度94%
+                        </span>
+                    </li>
+                    <li class="prolist-btn">
+                        <a href="javascript:void(0)" class="addcart">加入购物车</a>
+                        <a href="javascript:void(0)" class="attention">取消关注</a>
+                    </li>
+                </ul>
+                <ul class="prolist-con">
+                    <li class="prolist-pic">
+                        <img src="/images/shop/details/pic04.png" >
+                    </li>
+                    <li class="prolist-tit">
+                        <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
+                    </li>
+                    <li class="prolist-price">￥235.00</li>
+                    <li class="prolist-eva">
+                        <span>
+                            300人评价
+                            <svg role="img" class="collection_message">
+                                <use xlink:href="#collection_message"></use>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg role="img" class="collection_good">
+                                <use xlink:href="#collection_good"></use>
+                            </svg>
+                            好评度94%
+                        </span>
+                    </li>
+                    <li class="prolist-btn">
+                        <a href="javascript:void(0)" class="addcart">加入购物车</a>
+                        <a href="javascript:void(0)" class="attention">取消关注</a>
+                    </li>
+                </ul>
+                <ul class="prolist-con">
+                    <li class="prolist-pic">
+                        <img src="/images/shop/details/pic04.png" >
+                    </li>
+                    <li class="prolist-tit">
+                        <input type="checkbox"><a href="javascript:void(0)" >卓良 卓良 卓良卓良卓良卓良卓良卓良卓良卓良</a>
+                    </li>
+                    <li class="prolist-price">￥235.00</li>
+                    <li class="prolist-eva">
+                        <span>
+                            300人评价
+                            <svg role="img" class="collection_message">
+                                <use xlink:href="#collection_message"></use>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg role="img" class="collection_good">
+                                <use xlink:href="#collection_good"></use>
+                            </svg>
+                            好评度94%
+                        </span>
+                    </li>
+                    <li class="prolist-btn">
+                        <a href="javascript:void(0)" class="addcart">加入购物车</a>
+                        <a href="javascript:void(0)" class="attention">取消关注</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="coll-tabs coll-shoplist">
+                <div class="coll-shopcon">
+                    <ul class="shop-head">
+                        <li class="top">
+                            <a href="javascript:void(0)" >置顶</a>
+                            <a href="javascript:void(0)" >取消关注</a>
                         </li>
-                        <li >
-                            <a href="javascript:void(0)">新品</a>
+                        <li><a href="javascript:void(0)" ><img src="/images/cart/360.png"></a></li>
+                        <li class="shop-title"><strong>360手机官方旗舰店</strong></li>
+                        <li class="attention">
+                            <svg role="img" class="collection_love">
+                                <use xlink:href="#collection_love"></use>
+                            </svg>
+                            20000
                         </li>
-                        <li>
-                            <a href="javascript:void(0)">活动</a>
+                        <li class="bottom">
+                            <a href="javascript:void(0)" class="h-shop">
+                                <i></i>
+                                进入店铺
+                            </a>
+                            <a href="javascript:void(0)" class="h-talk">
+                                <i></i>
+                                联系客服
+                            </a>
                         </li>
                     </ul>
-                    <div class="clearfix">
+                    <div class="shop-main">
                         <a href="javascript:void(0)" class="lastpic">&lt;</a>
                         <ul class="shop-main-prolist">
                             <li>
@@ -487,120 +379,242 @@
                         </div>
                     </div>
                 </div>
+                <div class="coll-shopcon">
+                    <ul class="shop-head">
+                        <li class="top">
+                            <a href="javascript:void(0)" >置顶</a>
+                            <a href="javascript:void(0)" >取消关注</a>
+                        </li>
+                        <li><a href="javascript:void(0)" ><img src="/images/cart/timberland.png"></a></li>
+                        <li class="shop-title"><strong>TIMBERLAND手表旗舰店</strong></li>
+                        <li class="attention">
+                            <svg role="img" class="collection_love">
+                                <use xlink:href="#collection_love"></use>
+                            </svg>
+                            20000
+                        </li>
+                        <li class="bottom">
+                            <a href="javascript:void(0)" class="h-shop">
+                                <i></i>
+                                进入店铺
+                            </a>
+                            <a href="javascript:void(0)" class="h-talk">
+                                <i></i>
+                                联系客服
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="shop-main ">
+                       <p class="nothing">暂时没有活动</p>
+                        <ul class="ticket">
+                            <li class="ticket1">
+                                <strong>￥50</strong>
+                                <a href="javascript:void(0)" >立即领取</a>
+                                <p>消费满100元可用</p>
+                                <span>2016.09.13 - 2016.10.13</span>
+                            </li>
+                            <li class="ticket2">
+                                <strong>￥100</strong>
+                                <a href="javascript:void(0)" >立即领取</a>
+                                <p>消费满100元可用</p>
+                                <span>2016.09.13 - 2016.10.13</span>
+                            </li>
+                            <li class="ticket3">
+                                <strong>￥200</strong>
+                                <a href="javascript:void(0)" >立即领取</a>
+                                <p>消费满100元可用</p>
+                                <span>2016.09.13 - 2016.10.13</span>
+                            </li>
+                            <li class="ticket4">
+                                <strong>￥300</strong>
+                                <a href="javascript:void(0)" >立即领取</a>
+                                <p>消费满100元可用</p>
+                                <span>2016.09.13 - 2016.10.13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="coll-shopcon">
+                    <ul class="shop-head">
+                        <li class="top">
+                            <a href="javascript:void(0)" >置顶</a>
+                            <a href="javascript:void(0)" >取消关注</a>
+                        </li>
+                        <li><a href="javascript:void(0)" ><img src="/images/cart/walch.png"></a></li>
+                        <li class="shop-title"><strong>威路士官方旗舰店</strong></li>
+                        <li class="attention">
+                            <svg role="img" class="collection_love">
+                                <use xlink:href="#collection_love"></use>
+                            </svg>
+                            20000
+                        </li>
+                        <li class="bottom">
+                            <a href="javascript:void(0)" class="h-shop">
+                                <i></i>
+                                进入店铺
+                            </a>
+                            <a href="javascript:void(0)" class="h-talk">
+                                <i></i>
+                                联系客服
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="shop-main">
+                        <ul class="profil">
+                            <li class="active">
+                                <a href="javascript:void(0)" >热销</a>
+                            </li>
+                            <li >
+                                <a href="javascript:void(0)">新品</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">活动</a>
+                            </li>
+                        </ul>
+                        <div class="clearfix">
+                            <a href="javascript:void(0)" class="lastpic">&lt;</a>
+                            <ul class="shop-main-prolist">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="/images/cart/img01.png">
+                                        <p>￥1205.00</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="/images/cart/img02.png">
+                                        <p>￥1205.00</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="/images/cart/img03.png">
+                                        <p>￥1205.00</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <a href="javascript:void(0)" class="nextpic">&gt;</a>
+                            <div class="btn">
+                                <a href="javascript:void(0)" class="active"></a>
+                                <a href="javascript:void(0)" ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="coll-page clearfix">
-        <button class="lastpage"><i></i></button>
-        <ul >
-            <li >
-                <a href="javascript:void(0)" class="active">1</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">2</a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">3</a>
-            </li>
+        <div class="coll-page clearfix">
+            <button class="lastpage"><i></i></button>
+            <ul >
+                <li >
+                    <a href="javascript:void(0)" class="active">1</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">2</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">3</a>
+                </li>
 
-        </ul>
-        <button class="nextpage"><i></i></button>
-        <p> 共100页</p>
-        <div class="jump-page">
-            跳转到：第 <input type="text" size="1"> 页
+            </ul>
+            <button class="nextpage"><i></i></button>
+            <p> 共100页</p>
+            <div class="jump-page">
+                跳转到：第 <input type="text" size="1"> 页
+            </div>
+            <button>GO</button>
         </div>
-        <button>GO</button>
+
     </div>
 
-</div>
-
-<footer>
-    <!-- service shop start-->
-    <div class="service cleafix">
-        <div class="wrap">
-            <div class="service-top">
-                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/fly.png" alt="" /></a>
-                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/earth.png" alt="" /></a>
-                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/suifei.png" alt="" /></a>
-                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/taobao.png" alt="" /></a>
+    <footer>
+        <!-- service shop start-->
+        <div class="service cleafix">
+            <div class="wrap">
+                <div class="service-top">
+                    <a href="javascript:void(0)" class="service-pic"><img src="/images/head/fly.png" alt="" /></a>
+                    <a href="javascript:void(0)" class="service-pic"><img src="/images/head/earth.png" alt="" /></a>
+                    <a href="javascript:void(0)" class="service-pic"><img src="/images/head/suifei.png" alt="" /></a>
+                    <a href="javascript:void(0)" class="service-pic"><img src="/images/head/taobao.png" alt="" /></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="service-center">
-        <div class="wrap cleafix">
-            <dl class="shop-all">
-                <dt>购物指南</dt>
-                <dd><a href="javascript:void(0)">购物流程</a></dd>
-                <dd><a href="javascript:void(0)">会员介绍</a></dd>
-                <dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
-                <dd><a href="javascript:void(0)">常见问题</a></dd>
-                <dd><a href="javascript:void(0)">大家电</a></dd>
-                <dd><a href="javascript:void(0)">联系客服</a></dd>
-            </dl>
-            <dl class="shop-all">
-                <dt>配送方式</dt>
-                <dd><a href="javascript:void(0)">上门自提</a></dd>
-                <dd><a href="javascript:void(0)">211显示达</a></dd>
-                <dd><a href="javascript:void(0)">配送服务咨询</a></dd>
-                <dd><a href="javascript:void(0)">配送费收取标准</a></dd>
-                <dd><a href="javascript:void(0)">海外配送</a></dd>
-            </dl>
-            <dl class="shop-all">
-                <dt>支付方式</dt>
-                <dd><a href="javascript:void(0)">货到收款</a></dd>
-                <dd><a href="javascript:void(0)">在线支付</a></dd>
-                <dd><a href="javascript:void(0)">分期付款</a></dd>
-                <dd><a href="javascript:void(0)">邮局汇款</a></dd>
-                <dd><a href="javascript:void(0)">公司转账</a></dd>
+        <div class="service-center">
+            <div class="wrap cleafix">
+                <dl class="shop-all">
+                    <dt>购物指南</dt>
+                    <dd><a href="javascript:void(0)">购物流程</a></dd>
+                    <dd><a href="javascript:void(0)">会员介绍</a></dd>
+                    <dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
+                    <dd><a href="javascript:void(0)">常见问题</a></dd>
+                    <dd><a href="javascript:void(0)">大家电</a></dd>
+                    <dd><a href="javascript:void(0)">联系客服</a></dd>
+                </dl>
+                <dl class="shop-all">
+                    <dt>配送方式</dt>
+                    <dd><a href="javascript:void(0)">上门自提</a></dd>
+                    <dd><a href="javascript:void(0)">211显示达</a></dd>
+                    <dd><a href="javascript:void(0)">配送服务咨询</a></dd>
+                    <dd><a href="javascript:void(0)">配送费收取标准</a></dd>
+                    <dd><a href="javascript:void(0)">海外配送</a></dd>
+                </dl>
+                <dl class="shop-all">
+                    <dt>支付方式</dt>
+                    <dd><a href="javascript:void(0)">货到收款</a></dd>
+                    <dd><a href="javascript:void(0)">在线支付</a></dd>
+                    <dd><a href="javascript:void(0)">分期付款</a></dd>
+                    <dd><a href="javascript:void(0)">邮局汇款</a></dd>
+                    <dd><a href="javascript:void(0)">公司转账</a></dd>
 
-            </dl>
-            <dl class="shop-all">
-                <dt>售后服务</dt>
-                <dd><a href="javascript:void(0)">售后政策</a></dd>
-                <dd><a href="javascript:void(0)">价格保护</a></dd>
-                <dd><a href="javascript:void(0)">退款说明</a></dd>
-                <dd><a href="javascript:void(0)">返修、退换货</a></dd>
-                <dd><a href="javascript:void(0)">取消订单</a></dd>
-            </dl>
-            <dl>
-                <dt>特色服务</dt>
-                <dd><a href="javascript:void(0)">夺宝岛</a></dd>
-                <dd><a href="javascript:void(0)">DIY装机</a></dd>
-                <dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
-                <dd><a href="javascript:void(0)">常见问题</a></dd>
-                <dd><a href="javascript:void(0)">大家电</a></dd>
-            </dl>
-        </div>
-    </div>
-    <!-- service shop end-->
-
-    <!--under footer start-->
-    <div class="footer">
-        <div class="wrap">
-            <div class="foot-link">
-                <a href="javascript:void(0)">关于我们</a>|
-                <a href="javascript:void(0)">联系我们</a>|
-                <a href="javascript:void(0)">联系客服</a>|
-                <a href="javascript:void(0)">商家入驻</a>|
-                <a href="javascript:void(0)">营销中心</a>|
-                <a href="javascript:void(0)">手机商城</a>|
-                <a href="javascript:void(0)">友情链接</a>|
-                <a href="javascript:void(0)">销售联盟</a>|
-                <a href="javascript:void(0)">ENGLISH SITE</a>|
-                <a href="javascript:void(0)">CONTACT US</a>
-            </div>
-            <div class="autocation">
-                <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt="" /></a>
-                <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt="" /></a>
-                <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt="" /></a>
+                </dl>
+                <dl class="shop-all">
+                    <dt>售后服务</dt>
+                    <dd><a href="javascript:void(0)">售后政策</a></dd>
+                    <dd><a href="javascript:void(0)">价格保护</a></dd>
+                    <dd><a href="javascript:void(0)">退款说明</a></dd>
+                    <dd><a href="javascript:void(0)">返修、退换货</a></dd>
+                    <dd><a href="javascript:void(0)">取消订单</a></dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="javascript:void(0)">夺宝岛</a></dd>
+                    <dd><a href="javascript:void(0)">DIY装机</a></dd>
+                    <dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
+                    <dd><a href="javascript:void(0)">常见问题</a></dd>
+                    <dd><a href="javascript:void(0)">大家电</a></dd>
+                </dl>
             </div>
         </div>
+        <!-- service shop end-->
 
-    </div>
-    <!--under footer end-->
-</footer>
-<!--big footer end-->
+        <!--under footer start-->
+        <div class="footer">
+            <div class="wrap">
+                <div class="foot-link">
+                    <a href="javascript:void(0)">关于我们</a>|
+                    <a href="javascript:void(0)">联系我们</a>|
+                    <a href="javascript:void(0)">联系客服</a>|
+                    <a href="javascript:void(0)">商家入驻</a>|
+                    <a href="javascript:void(0)">营销中心</a>|
+                    <a href="javascript:void(0)">手机商城</a>|
+                    <a href="javascript:void(0)">友情链接</a>|
+                    <a href="javascript:void(0)">销售联盟</a>|
+                    <a href="javascript:void(0)">ENGLISH SITE</a>|
+                    <a href="javascript:void(0)">CONTACT US</a>
+                </div>
+                <div class="autocation">
+                    <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt="" /></a>
+                    <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt="" /></a>
+                    <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt="" /></a>
+                </div>
+            </div>
+
+        </div>
+        <!--under footer end-->
+    </footer>
+    <!--big footer end-->
 
 </body>
 </html>
