@@ -1,8 +1,8 @@
-@import "../layout/_variables", "../layout/_mixin";
+@import "../layout/variables";
 .cart-success{
   width: 100%;
   background: #F7F7F7;
-  padding: 24px 0 0 0;
+  padding: 24px 0 0;
   h2{
     color: #25975d;
        font:{
@@ -40,13 +40,13 @@
           color: #B6B6B6;
           padding-top: 5px;
         }
-    }
+     }
     }
     /*按钮*/
     .cart-button{
           margin-top: 26px;
            button{
-             border: 0px;
+             border: 0;
              margin: 0 0 11px 703px;
              cursor: pointer;
              font:{
@@ -67,13 +67,9 @@
                  margin-left: 20px;
              }
            }
-
-    }
-
+       }
   }
-
 }
-
 /*tuijiande */
 .cart-recommend{
   margin-bottom: 67px;
@@ -87,7 +83,6 @@
       weight: bold;
     }
     color: #333;
-
   }
   ul{
     width: 1100px;
@@ -109,12 +104,10 @@
             font:{
               size:14px;
               family: $main-sec-ff;
-
             }
            color: #333;
            line-height: 1.4em;
         }
-
         &:nth-of-type(even){
           padding: 8px 0 6px 0;
           font:{
@@ -124,23 +117,22 @@
           }
           color: #DC0000;
         }
-
       }
-
       button{
         width: 190px;
         height: 30px;
-        border: 1px solid ;
+        border: 1px solid;
         color: #33B5ff;
         background: $white;
-        font-size: 14px;
-        font-family: $main-sec-ff;
-        margin-left:39px;
-        cursor: pointer;
+        font:{
+          size: 14px;
+          family: $main-sec-ff;
+        }
+         margin-left:39px;
+         cursor: pointer;
         svg{
           width: 24px;
           height: 24px;
-         // background: #31b5ff;
           display: inline-block;
           vertical-align: middle;
           overflow: hidden;

@@ -1,20 +1,7 @@
-@import "../layout/_variables", "../layout/_mixin";
+@import "../layout/variables";
 $border:1px solid #ddd;
 $border1:1px dashed #ddd;
-*{
-  font: {
-
-    family: $main-sec-ff;
-
-    //family: 'SimHei ';
-    family: 'SimHei';
-
-    size: 12px;
-  }
-}
-
 .logistics-details {
-
   .bread-path {
     line-height: 24px;
     margin: 0 0 10px 0;
@@ -26,7 +13,6 @@ $border1:1px dashed #ddd;
       }
     }
   }
-
   .Product-delivery {
     border: {
       top: 3px solid #30bafb;
@@ -41,7 +27,6 @@ $border1:1px dashed #ddd;
       float: left;
       ul {
         li {
-
           &:nth-of-type(1) {
             color: #6a6a6a;
             text-align: center;
@@ -57,12 +42,11 @@ $border1:1px dashed #ddd;
             i {
               width: 58px;
               height: 68px;
-              background: url("../../images/orders/outbound.png") no-repeat !important;
+              background: url("/images/orders/outbound.png") no-repeat;
               display: inline-block;
               margin-right: 16px;
-
+              float: left;
             }
-
           }
           &:nth-of-type(3) {
             button {
@@ -77,11 +61,9 @@ $border1:1px dashed #ddd;
             }
             padding: 49px 0 20px 50px;
           }
-
         }
       }
     }
-
     .order-cancellation{
       margin-top: 197px;
       text-align: right;
@@ -90,19 +72,14 @@ $border1:1px dashed #ddd;
       color: #303030;
         }
     }
-
-
-
     /*order*/
     .progressbar {
       float: left;
       width: 800px;
-
      .pro-line{
            width: 126px;
            position: relative;
            float: left;
-
         .pro-line-crumbs{
           width: 126px;
           height: 10px;
@@ -111,16 +88,13 @@ $border1:1px dashed #ddd;
           top:75px;
           margin-left:10px;
         }
-
       }
-
-        .pro-register{
+      .pro-register{
              width: 65px;
              position: relative;
              top:37px;
              float: left;
              height: 43px;
-
            svg{
               position: absolute;
               top:35px;
@@ -128,7 +102,6 @@ $border1:1px dashed #ddd;
               width:24px;
               height: 24px;
              fill:#c3c3c3;
-
            }
           .submitted{
             @extend svg;
@@ -136,33 +109,19 @@ $border1:1px dashed #ddd;
               width: 24px;
               height: 24px;
             }
-
-
           }
-
-
           ul{
              width: 189px;
-             margin-left: -42px;
-             position: absolute;
+             margin: 75px 0 0 -42px;
              z-index: 1;
              text-align: center;
             li{
-               &.pro-null{
-                   height: 36px;
-                   margin-bottom: 35px;
-                   font:{
-                      size: 12px;
-                   }
-               }
               &.pro-text{
                 color: #333;
                  font:{
                     size: 14px;
-
                  }
-               // line-height: 25px;
-                padding-bottom: 9px;
+              padding-bottom: 9px;
               }
               &.pro-date{
                  line-height: 15px;
@@ -170,7 +129,6 @@ $border1:1px dashed #ddd;
             }
           }
         }
-
       .pro-register2{
         @extend .pro-register;
         margin-left: 109px;
@@ -179,48 +137,42 @@ $border1:1px dashed #ddd;
         @extend .pro-line;
         .pro-line-crumbs{
           background:transparent url(/images/orders/pro-line.png)  no-repeat scroll -179px 0;
-          position: absolute;
           margin-left: 10px;
         }
-
       }
-
       .pro-register3{
         @extend .pro-register;
         margin-left: 109px;
-        .pro-text{color:#999 !important;}
-
+        ul{
+           li{
+             &.pro-text{
+               color:#999;
+             }
+           }
+        }
       }
       .pro-line3{
         @extend .pro-line;
         .pro-line-crumbs{
           background:transparent url(/images/orders/pro-line.png)  no-repeat scroll -359px 0;
-          position: absolute;
           margin-left: 10px;
         }
-
       }
-
       .pro-register4{
         @extend .pro-register3;
         margin-left: 109px;
       }
       .pro-line4{
         @extend .pro-line3;
-              }
-
+      }
       .pro-register5{
         @extend .pro-register3;
         margin-left: 109px;
       }
-
     }
-
   }
   /*express way*/
-
   .express-way {
-   // padding-top: 15px;
     width: 1100px;
     height: auto;
     display: inline-block;
@@ -234,8 +186,7 @@ $border1:1px dashed #ddd;
     .detail-cont {
       float: left;
       font: {
-        //family: $main-sec-ff;
-        size: 12px;
+         size: 12px;
       }
       color: #666;
       width: 285px;
@@ -246,12 +197,11 @@ $border1:1px dashed #ddd;
           padding-top: 9px;
           label{
              float:left;
-            width: 70px;
+             width: 70px;
           }
         }
       }
     }
-
     .detail-status {
       float: left;
       padding-top: 20px;
@@ -260,7 +210,7 @@ $border1:1px dashed #ddd;
         padding-left: 10px;
         font-size: 12px;
         li {
-          border-left: 1px solid #d9d9d9 !important;
+          border-left: 1px solid #d9d9d9;
           height: auto;
           min-height: 25px;
           &::before {
@@ -271,8 +221,7 @@ $border1:1px dashed #ddd;
             width: 5px;
             height: 5px;
             border-radius: 5px;
-            margin-left: -6px;
-            margin-right: 10px;
+            margin: 0 10px 0 -6px;
           }
           span {
             font-weight: bold;
@@ -280,11 +229,8 @@ $border1:1px dashed #ddd;
               margin-right: 8px;
             }
             &.delivery{
-             //font-weight: 600;
-            }
-
+              }
           }
-
           &.last {
             border: none;
             color: #fe4300;
@@ -294,20 +240,15 @@ $border1:1px dashed #ddd;
               background: #fe4300;
             }
           }
-
         }
-
       }
     }
-
-
   }
   /*consignee*/
   .consignee{
     margin-top: 20px;
     font-size: 12px;
     border: {
-     // top: $border1;
       right: $border;
       left: $border1;
     }
@@ -322,70 +263,58 @@ $border1:1px dashed #ddd;
       border: {
         top: $border1;
         left:$border;
-
       }
       background: url("/images/orders/line.png") no-repeat bottom;
       font{
-       // family:"SimHei";
-        size: 12px;
+          size: 12px;
          }
-      //font-weight: 600;
       padding-top: 11px;
       color: #333;
       float: left;
      ul{
-        padding: 0 0 20px 20px;
+        padding: 0 0 50px 20px;
         li{
            padding-top: 9px;
            font-size: 12px;
-
             .cons-title{
               font-size: 14px;
               margin:0 0 15-9px 0;
             }
-
            label{
                width: 50px;
                display: inline-block;
                 float: left;
-
-
            }
            span{
               width: 181px;
               display: block;
               margin-left:55px;
-            // font-family:"SimHei";
-
-              &.address{
+               &.address{
                word-break:break-all;
                display: block;
                margin-left: 57px;
                padding-right: 40px;
                line-height: 1.9rem;
              }
-
            }
          }
       }
     }
   }
 .pic{
-   margin-top: 30px;
+   padding-top: 30px;
+   clear: both;
    span:nth-last-child(odd){
        float: right;
    }
 }
   .guess-like{
-     position: relative;
      width: 1100px;
      height: 356px;
      background: $white;
      font-size: 12px;
-    // font-family:'SimHei';
-    margin-top: 30px;
+     margin-top: 30px;
     .guess-title{
-      position: relative;
       height: 45px;
       line-height: 45px;
       background-color: #f5f5f5;
@@ -411,26 +340,19 @@ $border1:1px dashed #ddd;
                }
              }
            }
-    }
-
+        }
     .guess-content{
-       position: relative;
        height: 345px;
-      .show{
-        display: block !important;
-        height: 290px;
-      }
-      .guess-item{
-         position: relative;
-         overflow: hidden;
-         display: none;
-
-         //display: none;
+     .guess-item{
+        overflow: hidden;
+        display: none;
+        &.show{
+          display:block;
+          height: 310px;
+          }
         .item-group{
-           position: relative;
            padding: 10px 0px 10px 30px;
           .guess-item-base{
-            position: relative;
             float: left;
             margin-right:49px;
             width: 165px;
@@ -443,9 +365,7 @@ $border1:1px dashed #ddd;
             .item-text{
                font:{
                  size: 12px;
-
                }
-
               p{
                 line-height: 18px;
                 a{
@@ -463,40 +383,30 @@ $border1:1px dashed #ddd;
                 }
                 &:nth-of-type(odd){
                    font-weight: bold;
-
                 }
               }
             }
-
           }
         }
-
-
       }
-
       .guess-button{
-        position: absolute;
-       //button:20px !important;
-       left: 42%;
         width: 232px;
         height: 10px;
-        .guess-pagination{
-          position: absolute;
-          width: 115px;
-          height: 18px;
+        margin-left:1100-630px;
+         .guess-pagination{
+           width: 115px;
+           height: 18px;
+           float: left;
+           padding-top: 5px;
           a{
-            float: left;
-            margin-right: 6px;
-
+              float: left;
+              margin-right: 6px;
               display: inline-block;
               width: 10px;
               height: 10px;
               background-color:#dcdcdc;
-             // font-size: 20px;
               line-height: 7px;
               border-radius:5px;
-
-
             &.guess-current{
                background-color: #33bbe3;
             }
@@ -504,34 +414,16 @@ $border1:1px dashed #ddd;
         }
         button{
           width: 64px;
-          position: absolute;
-          left: 40%;
-          top:-8px;
+          margin-left: -25px;
            .guess-reload-button{
-
-
                 color: #8b8b8b;
-
-               cursor: pointer;
+                cursor: pointer;
                    &:hover{
                       color: #38b6f0;
-                   }
-
+               }
            }
-
         }
-
       }
-
-
-
-
-
-
     }
-
-
   }
-
-
 }
