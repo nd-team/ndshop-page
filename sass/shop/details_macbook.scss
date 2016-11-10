@@ -274,6 +274,11 @@ svg{
             font-size:16px;
             color:#333;
             border-bottom:1px solid #ddd;
+            svg{
+              width:16px;
+              height:16px;
+              vertical-align:-4px;
+            }
           }
           .shopbtn{
             height:78px;
@@ -289,13 +294,9 @@ svg{
               margin:0 8px;
               font-size:14px;
               background:#f6f6f6;
-              i{
-                font-size:20px;
-                color:#25b7dc;
+              svg{
                 vertical-align:-3px;
-                margin-right:5px;
               }
-
             }
           }
         }
@@ -490,6 +491,9 @@ svg{
           }
           .patestar{
             margin:10px 0;
+            svg{
+              width:15px;
+            }
           }
           p{
             margin:5px 0;

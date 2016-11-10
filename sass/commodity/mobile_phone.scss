@@ -9,104 +9,113 @@
   .today-title{
     @include mobile-title;
   }
-  .popular-tab{
+  .tab-area{
     width: 100%;
-    height: 39px;
-    border-top: 1px solid #1e856a;
-    background-color: #f1f3f2;
+    height: 337px;
     overflow: hidden;
-    .popular-tab-title{
-      float: left;
-      width: 275px;
-      text-align: center;
-      line-height: 39px;
-      font:{
-        size: 18px;
-        family: $main-sec-ff;
-      }
-      cursor: pointer;
-      &.popular-tab-current{
-        background-color: #43b999;
+
+    .popular-tab{
+      width: 100%;
+      height: 39px;
+      border-top: 1px solid #1e856a;
+      background-color: #f1f3f2;
+      overflow: hidden;
+      .popular-tab-title{
+        float: left;
+        width: 275px;
+        text-align: center;
+        line-height: 39px;
+        font:{
+          size: 18px;
+          family: $main-sec-ff;
+        }
+        cursor: pointer;
+        &.current{
+          background-color: #43b999;
+          a{
+            color: #fff;
+          }
+        }
         a{
-          color: #fff;
+          color: #43B999;
         }
       }
-      a{
-        color: #43B999;
-      }
     }
-  }
-  
-  .popular-detail{
-    height: 295px;
-    overflow: hidden;
-    border: {
-      left: 1px;
-      bottom: 1px;
-      right: 1px;
-      style: solid;
-      color: #ededed;
-    }
-    li{
-      float: left;
-      width: 218px;
-      height: 295px;
-      cursor: pointer;
-      &.popular-detail-list{
-        border-left:1px solid #ededed;
-      }
-      &:hover{
-        .now-buy{
-          display: block;
+    .tab_content{
+
+      .popular-detail{
+        height: 295px;
+        overflow: hidden;
+        border: {
+          left: 1px;
+          bottom: 1px;
+          right: 1px;
+          style: solid;
+          color: #ededed;
         }
-      }
-      .popular-detail-pic{
-        display: block;
-        margin: 30px auto 10px;
-        width: 170px;
-        height: 135px;
+        display: none;
+        li{
+          float: left;
+          width: 218px;
+          height: 295px;
+          cursor: pointer;
+          &.popular-detail-list{
+            border-left:1px solid #ededed;
+          }
+          .popular-detail-pic{
+            display: block;
+            margin: 30px auto 10px;
+            width: 170px;
+            height: 135px;
 
-      }
-      .popular-detail-text{
-        width: 206px;
-        margin: 0 auto;
-        line-height: 20px;
-        color: #666;
-        span{
-          display: block;
+          }
+          .popular-detail-text{
+            width: 206px;
+            margin: 0 auto;
+            line-height: 20px;
+            color: #666;
+            span{
+              display: block;
 
-          &.money-red{
-            padding: 15px 0 7px;
-            color: red;
-            font:{
-              size: 16px;
-              weight: bold;
-              family: $main-sec-ff;
+              &.money-red{
+                padding: 15px 0 7px;
+                color: red;
+                font:{
+                  size: 16px;
+                  weight: bold;
+                  family: $main-sec-ff;
+                }
+              }
             }
           }
-        }
-      }
-      .now-buy{
-        width: 218px;
-        height: 40px;
-        background-color: #e6233f;
-        text-align: center;
-        line-height: 40px;
-        cursor: pointer;
-        display: none;
-        a{
-          color: #fff;
-          font:{
-            size: 14px;
-            family: $main-sec-ff;
+          .now-buy{
+            width: 218px;
+            height: 40px;
+            background-color: #e6233f;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            display: none;
+            a{
+              color: #fff;
+              font:{
+                size: 14px;
+                family: $main-sec-ff;
+              }
+            }
+          }
+          .buy-last{
+            width: 222px;
           }
         }
       }
-      .buy-last{
-        width: 222px;
+      .tab_item{
+        display: block;
       }
     }
+
   }
+
 }
 //今日热门部分样式结束
 
@@ -210,19 +219,29 @@
   .accessories-same{
     @include same-box;
     border-top:1px solid #208468;
-    .accessories-left{
+    .banners-left{
       position: relative;
+      height: 432px;
+      width: 251px;
       float: left;
-      .accessories-banner{
-        width: 251px;
-        height: 432px;
-      }
-      .accessories-circle{
+      overflow: hidden;
+      .slide{
+        position: absolute;
+        width: 400%;
+        left: 0;
+        top: 0;
+        li{
+          display: block;
+          float: left;
+          }
+        }
+
+      .circle{
         position: absolute;
         left: 50%;
         bottom: 5px;
         margin-left: -27px;
-        span{
+        li{
           width: 12px;
           height: 14px;
           display: inline-block;
@@ -230,6 +249,9 @@
           background-color: rgba(0,0,0,.1);
           border-radius: 50%;
           cursor: pointer;
+          &.current{
+            background-color: rgba(0,0,0,.1);
+          }
           &.current-two{
             background-color: rgba(0,0,0,.3);
           }
@@ -241,6 +263,7 @@
     }
     .accessories-right{
       float: left;
+      z-index: 1000;
       .accessories-picture{
         width: 100%;
         height: 215px;
@@ -322,6 +345,9 @@
               }
               a{
                 color: #fff;
+                &:hover{
+                  color: #32b4ff;
+                }
               }
             }
           }

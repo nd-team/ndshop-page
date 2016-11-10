@@ -145,31 +145,36 @@
         overflow: hidden;
         li{
           float: left;
-          &.same-life-banner{
+          &.banner-left{
             width: 419px;
+            height: 334px;
             position: relative;
-            .same-picture-auto{
-              width: 419px;
-              height: 334px;
+            overflow:hidden;
+            .same-banner{
+              position:absolute;
+              left:0;
+              top:0;
+              width: 400%;
+              li{
+                float: left;
+              }
             }
-            .same-life-circle{
+            .same-circle{
               position: absolute;
               left: 50%;
               bottom: 10px;
               width: 90px;
               margin-left: -18px;
-              span{
+              li{
                 width: 10px;
                 height: 10px;
                 background-color: rgba(0,0,0,.5);
-                display: inline-block;
+                float: left;
                 border-radius: 50%;
                 cursor: pointer;
-                &.same-gray02{
+                margin: 0 5px;
+                &.current{
                   background-color: rgba(0,0,0,.2);
-                }
-                &.same-gray03{
-                  background-color: rgba(0,0,0,.1);
                 }
               }
 

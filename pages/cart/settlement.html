@@ -1,222 +1,239 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>收银台</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="/css/base.css" />
-    <link rel="stylesheet" type="text/css" href="/css/cart/settlement.css" />
+    <link rel="stylesheet" type="text/css" href="/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/cart/settlement.css"/>
     <script src="/js/shop/jquery.js"></script>
     <script src="/js/shop/shop.js"></script>
     <script src="/js/common.js"></script>
-
-
 </head>
 <body>
-<header>
-    <div class="header-top">
-        <div class="wrap clearfix">
-            <div class="top-add">
-                <span>运送至：<a href="javascript:void(0)">广州</a></span>
-            </div>
-            <ul class="header-top-r">
-                <li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
-                <li class="top_r">
-                    <span class="top-line on-red">我的订单<a class="more-icon">&or;</a></span>
-                </li>
-                <li class="top_r">
-                    <span class="top-line on-red">我的商城<a class="more-icon">&or;</a></span>
-                </li>
-                <li class="top_r">
-						<span class="top-line on-red">
-							<i class="phone-sc-icon"></i>手机商城
-						</span>
-                </li>
-                <li class="top_r"><span class="top-line on-red">客户服务<a class="more-icon">&or;</a></span>
-
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="header-ls">
-        <div class="wrap cleafix">
-            <div class="header-lg">
-                <a href="javascript:void(0)" class="logo" title="NdShop">NdShop</a>
-            </div>
-            <div class="cashier">
-                收银台
-            </div>
-            <div class="order-number">
-                <p><span>订单提交成功，请您尽快付款！订单号：24512348729</span><span>应付金额<b>18026.00</b>元</span></p>
-                <p>请您在提交订单后24小时内完成支付，否者订单会自动取消</p>
-            </div>
-
-        </div>
-    </div>
-
-</header>
-<!--内容-->
-<div class="intermediate">
-    <div class="wrap">
-
-        <div class="bank-card">
-             <p class="clearfix"></p>
-             <div class="bank-cont">
-
-               <div class="card-square"><span></span></div>
-                 <h2>银行卡</h2>
-
-
-                 <script type="text/javascript">
-
-                 </script>
-
-         <style>
-            svg{
-                 width: 18px;
-                 height: 13px;
-             }
-         </style>
-
-                 <div class="card-tab">
-                     <ul class="card-tab-title">
-                         <li class="quick-pay">
-                             <svg role="img" class="card">
-                                 <use xlink:href="#card"></use>
-                             </svg>
-                             快捷支付
-                         </li>
-                         <li>网银支付</li>
-                     </ul>
-                     <div class="bank-cd">
-                         <div class="q-card" style="display:block;">
-                             <ul>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/BOC.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/ICBC.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/CCB.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/CMB.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/ABC.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/BCM.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/RURAL-CREDIT.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/CIB.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/PSBC.png"/></a></li>
-                                 <li><a href="javascript:void(0)"><img src="/images/cart/CEB.png"/></a></li>
-                                 <li><button>更多银行</button></li>
-                             </ul>
-                         </div>
-                         <div class="q-card"><ul><li><a href="javascript:void(0)">123</a></li></ul></div>
-                     </div>
-                 </div>
-
-                     </div>
-                    <button class="pay-immediately">立即支付</button>
+    <header>
+        <div class="header-top">
+            <div class="wrap clearfix">
+                <div class="top-add">
+                    <span>运送至：<a href="javascript:void(0)">广州</a></span>
                 </div>
-                <!--其他支付方式-->
-      <div class="other-pay">
-            <div class="checked-cart">
-            <input type="checkbox">
-            <label></label>
+                <ul class="header-top-r">
+                    <li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
+                    <li class="top_r">
+                            <span class="top-line on-red">我的订单
+                                <svg role="img" class="top_down">
+                                    <use xlink:href="#top_down"></use>
+                                </svg>
+                            </span>
+                    </li>
+                    <li class="top_r">
+                            <span class="top-line on-red">我的商城
+                                <svg role="img" class="top_down">
+                                    <use xlink:href="#top_down"></use>
+                                </svg>
+                            </span>
+                    </li>
+                    <li class="top_r">
+                            <span class="top-line on-red">
+                                <svg role="img" class="iphone_gray">
+                                    <use xlink:href="#iphone_gray"></use>
+                                </svg>
+                                手机商城
+                            </span>
+                    </li>
+                    <li class="top_r"><span class="top-line on-red">客户服务
+                            <svg role="img" class="top_down">
+                                <use xlink:href="#top_down"></use>
+                            </svg></span>
+                    </li>
+                </ul>
             </div>
-            <a href="javascript:void(0)" class="mode">其他支付方式</a>
-            <div class="other">
-            <a href="javascript:void(0)">微信支付</a>|
-            <a href="javascript:void(0)">支付宝支付</a>|
-            <a href="javascript:void(0)">Apple Pay</a>
+        </div>
+        <div class="header-ls">
+            <div class="wrap clearfix">
+                <div class="header-lg">
+                    <a href="javascript:void(0)" class="logo" title="NdShop">NdShop</a>
+                </div>
+                <div class="cashier">
+                    收银台
+                </div>
+                <div class="order-number">
+                    <p><span>订单提交成功，请您尽快付款！订单号：24512348729</span><span>应付金额<b>18026.00</b>元</span></p>
+                    <p>请您在提交订单后24小时内完成支付，否者订单会自动取消</p>
+                </div>
+
             </div>
         </div>
 
-    </div>
-
-</div>
-
-<footer>
-    <!-- service shop start-->
-    <div class="service cleafix">
+    </header>
+    <!--内容-->
+    <div class="intermediate">
         <div class="wrap">
-            <div class="service-top">
-                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/fly.png" alt="" /> </a>
-                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/earth.png" alt="" /></a>
-                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/suifei.png" alt="" /></a>
-                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/taobao.png" alt="" /></a>
-            </div>
-        </div>
-    </div>
-    <div class="service-center">
-        <div class="wrap cleafix">
-            <dl class="shop-all">
-                <dt>购物指南</dt>
-                <dd><a href="javascript:void(0)">购物流程</a></dd>
-                <dd><a href="javascript:void(0)">会员介绍</a></dd>
-                <dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
-                <dd><a href="javascript:void(0)">常见问题</a></dd>
-                <dd><a href="javascript:void(0)">大家电</a></dd>
-                <dd><a href="javascript:void(0)">联系客服</a></dd>
-            </dl>
-            <dl class="shop-all">
-                <dt>配送方式</dt>
-                <dd><a href="javascript:void(0)">上门自提</a></dd>
-                <dd><a href="javascript:void(0)">211显示达</a></dd>
-                <dd><a href="javascript:void(0)">配送服务咨询</a></dd>
-                <dd><a href="javascript:void(0)">配送费收取标准</a></dd>
-                <dd><a href="javascript:void(0)">海外配送</a></dd>
-            </dl>
-            <dl class="shop-all">
-                <dt>支付方式</dt>
-                <dd><a href="javascript:void(0)">货到收款</a></dd>
-                <dd><a href="javascript:void(0)">在线支付</a></dd>
-                <dd><a href="javascript:void(0)">分期付款</a></dd>
-                <dd><a href="javascript:void(0)">邮局汇款</a></dd>
-                <dd><a href="javascript:void(0)">公司转账</a></dd>
 
-            </dl>
-            <dl class="shop-all">
-                <dt>售后服务</dt>
-                <dd><a href="javascript:void(0)">售后政策</a></dd>
-                <dd><a href="javascript:void(0)">价格保护</a></dd>
-                <dd><a href="javascript:void(0)">退款说明</a></dd>
-                <dd><a href="javascript:void(0)">返修、退换货</a></dd>
-                <dd><a href="javascript:void(0)">取消订单</a></dd>
-            </dl>
-            <dl>
-                <dt>特色服务</dt>
-                <dd><a href="javascript:void(0)">夺宝岛</a></dd>
-                <dd><a href="javascript:void(0)">DIY装机</a></dd>
-                <dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
-                <dd><a href="javascript:void(0)">常见问题</a></dd>
-                <dd><a href="javascript:void(0)">大家电</a></dd>
-            </dl>
-        </div>
-    </div>
-    <!-- service shop end-->
+            <div class="bank-card">
+                <p class="clearfix"></p>
+                <div class="bank-cont">
 
-    <!--under footer start-->
-    <div class="footer">
-        <div class="wrap">
-            <div class="foot-link">
-                <a href="javascript:void(0)">关于我们</a>|
-                <a href="javascript:void(0)">联系我们</a>|
-                <a href="javascript:void(0)">联系客服</a>|
-                <a href="javascript:void(0)">商家入驻</a>|
-                <a href="javascript:void(0)">营销中心</a>|
-                <a href="javascript:void(0)">手机商城</a>|
-                <a href="javascript:void(0)">友情链接</a>|
-                <a href="javascript:void(0)">销售联盟</a>|
-                <a href="javascript:void(0)">ENGLISH SITE</a>|
-                <a href="javascript:void(0)">CONTACT US</a>
+                    <div class="card-square"><span></span></div>
+                    <h2>银行卡</h2>
+
+
+                    <script type="text/javascript">
+
+                    </script>
+
+                    <style>
+                        svg {
+                            width: 18px;
+                            height: 13px;
+                        }
+                    </style>
+
+                    <div class="card-tab">
+                        <ul class="card-tab-title">
+                            <li class="quick-pay">
+                                <svg role="img" class="card">
+                                    <use xlink:href="#card"></use>
+                                </svg>
+                                快捷支付
+                            </li>
+                            <li>网银支付</li>
+                        </ul>
+                        <div class="bank-cd">
+                            <div class="q-card" style="display:block;">
+                                <ul>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/BOC.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/ICBC.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/CCB.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/CMB.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/ABC.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/BCM.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/RURAL-CREDIT.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/CIB.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/PSBC.png"/></a></li>
+                                    <li><a href="javascript:void(0)"><img src="/images/cart/CEB.png"/></a></li>
+                                    <li>
+                                        <button>更多银行</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="q-card">
+                                <ul>
+                                    <li><a href="javascript:void(0)">123</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="pay-immediately">立即支付</button>
             </div>
-            <div class="autocation">
-                <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt=""/></a>
-                <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt="" /></a>
-                <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt="" /></a>
+            <!--其他支付方式-->
+            <div class="other-pay">
+                <div class="checked-cart">
+                    <input type="checkbox">
+                    <label></label>
+                </div>
+                <a href="javascript:void(0)" class="mode">其他支付方式</a>
+                <div class="other">
+                    <a href="javascript:void(0)">微信支付</a>|
+                    <a href="javascript:void(0)">支付宝支付</a>|
+                    <a href="javascript:void(0)">Apple Pay</a>
+                </div>
             </div>
+
         </div>
 
     </div>
-    <!--under footer end-->
-</footer>
-<!--big footer end-->
+
+    <footer>
+        <!-- service shop start-->
+        <div class="service clearfix">
+            <div class="wrap">
+                <div class="service-top">
+                    <a href="javascript:void(0)" class="service-pic"><img src="/images/head/fly.png" alt=""/> </a>
+                    <a href="javascript:void(0)" class="service-pic"><img src="/images/head/earth.png" alt=""/></a>
+                    <a href="javascript:void(0)" class="service-pic"><img src="/images/head/suifei.png" alt=""/></a>
+                    <a href="javascript:void(0)" class="service-pic"><img src="/images/head/taobao.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <div class="service-center">
+            <div class="wrap clearfix">
+                <dl class="shop-all">
+                    <dt>购物指南</dt>
+                    <dd><a href="javascript:void(0)">购物流程</a></dd>
+                    <dd><a href="javascript:void(0)">会员介绍</a></dd>
+                    <dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
+                    <dd><a href="javascript:void(0)">常见问题</a></dd>
+                    <dd><a href="javascript:void(0)">大家电</a></dd>
+                    <dd><a href="javascript:void(0)">联系客服</a></dd>
+                </dl>
+                <dl class="shop-all">
+                    <dt>配送方式</dt>
+                    <dd><a href="javascript:void(0)">上门自提</a></dd>
+                    <dd><a href="javascript:void(0)">211显示达</a></dd>
+                    <dd><a href="javascript:void(0)">配送服务咨询</a></dd>
+                    <dd><a href="javascript:void(0)">配送费收取标准</a></dd>
+                    <dd><a href="javascript:void(0)">海外配送</a></dd>
+                </dl>
+                <dl class="shop-all">
+                    <dt>支付方式</dt>
+                    <dd><a href="javascript:void(0)">货到收款</a></dd>
+                    <dd><a href="javascript:void(0)">在线支付</a></dd>
+                    <dd><a href="javascript:void(0)">分期付款</a></dd>
+                    <dd><a href="javascript:void(0)">邮局汇款</a></dd>
+                    <dd><a href="javascript:void(0)">公司转账</a></dd>
+
+                </dl>
+                <dl class="shop-all">
+                    <dt>售后服务</dt>
+                    <dd><a href="javascript:void(0)">售后政策</a></dd>
+                    <dd><a href="javascript:void(0)">价格保护</a></dd>
+                    <dd><a href="javascript:void(0)">退款说明</a></dd>
+                    <dd><a href="javascript:void(0)">返修、退换货</a></dd>
+                    <dd><a href="javascript:void(0)">取消订单</a></dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="javascript:void(0)">夺宝岛</a></dd>
+                    <dd><a href="javascript:void(0)">DIY装机</a></dd>
+                    <dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
+                    <dd><a href="javascript:void(0)">常见问题</a></dd>
+                    <dd><a href="javascript:void(0)">大家电</a></dd>
+                </dl>
+            </div>
+        </div>
+        <!-- service shop end-->
+
+        <!--under footer start-->
+        <div class="footer">
+            <div class="wrap">
+                <div class="foot-link">
+                    <a href="javascript:void(0)">关于我们</a>|
+                    <a href="javascript:void(0)">联系我们</a>|
+                    <a href="javascript:void(0)">联系客服</a>|
+                    <a href="javascript:void(0)">商家入驻</a>|
+                    <a href="javascript:void(0)">营销中心</a>|
+                    <a href="javascript:void(0)">手机商城</a>|
+                    <a href="javascript:void(0)">友情链接</a>|
+                    <a href="javascript:void(0)">销售联盟</a>|
+                    <a href="javascript:void(0)">ENGLISH SITE</a>|
+                    <a href="javascript:void(0)">CONTACT US</a>
+                </div>
+                <div class="auto-cation">
+                    <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt=""/></a>
+                    <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt=""/></a>
+                    <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt=""/></a>
+                </div>
+            </div>
+
+        </div>
+        <!--under footer end-->
+    </footer>
+    <!--big footer end-->
 
 
 </body>

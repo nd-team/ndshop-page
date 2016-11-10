@@ -60,7 +60,7 @@ gulp.task('serve', ['sass'], ()=> {
 
     bs.init({
         server: './',
-        startPath:'index.html'
+        startPath:'contents.html'
     });
 
     gulp.watch('./sass/**/*.scss', ['sass']);

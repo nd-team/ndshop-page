@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>找回密码</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/login/step.css" />
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/login/login.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="/images/login/logo.png">
+            <div class="res-login">
+                <a href="/pages/login/register.html" class="register">注册</a> |
+                <a href="/pages/login/login.html" class="login">登录</a>
+            </div>
+        </div>
+
+    </header>
+    <div id="step">
+        <h2>用户注册</h2>
+        <div class="step-pic">
+            <img src="/images/login/buzou01.png" title="step1">
+            <img src="/images/login/buzou02.png" title="step2">
+            <img src="/images/login/buzou03.png" title="step3">
+            <img src="/images/login/buzou04.png" title="step4">
+        </div>
+        <div class="step-con">
+            <div class="stepmain step1">
+                <div class="stepinput">
+                    <label >手机号：</label>
+                    <input type="text" placeholder="请输入您的手机号码">
+                </div>
+                <div class="stepinput">
+                    <label >验证码：</label>
+                    <input type="text" placeholder="请输入验证码">
+                    <div class="code">
+                        <div class="pic"></div>
+                        <p>看不清？</p>
+                        <a href="javascript:void(0)" class="othercode">换一张</a>
+                    </div>
+
+                </div>
+                <div class="agress">
+                    <input type="checkbox"> 同意
+                    <a href="javascript:void(0)">《商城协议》</a>
+                </div>
+                <button class="submit" data-title="step2">下一步</button>
+                <div class="switch">
+                    <a href="javascript:void(0)">切换成企业账户注册</a>
+                </div>
+            </div>
+            <div class="stepmain step2">
+                <p>验证码已发送到您的手机，15分钟内输入有效，请勿泄露</p>
+                <div class="stepinput">
+                    <label >已验证手机：</label>
+                    <strong>137****1111</strong>
+                </div>
+                <div class="stepinput">
+                    <label >验证码：</label>
+                    <input type="text" placeholder="请输入您的验证码">
+                    <span href="javascript:void(0)" class="phone-code-resent">重新发送验证码40s</span>
+                </div>
+                <button class="submit" data-title="step3">下一步</button>
+            </div>
+            <div class="stepmain step3">
+                <div class="stepinput">
+                    <label >密码：</label>
+                    <input type="password" placeholder="请输入您的密码">
+                </div>
+                <div class="stepinput">
+                    <label >确定新密码：</label>
+                    <input type="password" placeholder="请再次输入你的密码">
+                </div>
+                <button class="submit" data-title="step4">下一步</button>
+            </div>
+            <div class="stepmain step4">
+                <div class="stepfinish">
+                    <p>注册成功!</p>
+                    请记住你的新密码。
+                    <a href="/index.html" class="return">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-link">
+            <a href="javascript:void(0)">关于我们</a>|
+            <a href="javascript:void(0)">联系我们</a>|
+            <a href="javascript:void(0)">联系客服</a>|
+            <a href="javascript:void(0)">商家入驻</a>|
+            <a href="javascript:void(0)">营销中心</a>|
+            <a href="javascript:void(0)">手机商城</a>|
+            <a href="javascript:void(0)">友情链接</a>|
+            <a href="javascript:void(0)">销售联盟</a>|
+            <a href="javascript:void(0)">ENGLISH SITE</a>|
+            <a href="javascript:void(0)">CONTACT US</a>
+        </div>
+        <div class="copyright">
+            Copyright &copy;2004-2016 12345.com 版权所有
+        </div>
+    </footer>
+</body>
+</html>

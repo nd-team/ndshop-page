@@ -133,6 +133,12 @@
         color:#0071b2;
       }
     }
+    .pro-follow{
+      svg{
+        vertical-align:-4px;
+        width:15px;
+      }
+    }
     .add-cart{
       display:block;
       width:198px;
@@ -142,6 +148,9 @@
       border:1px solid #ddd;
       color:#dd1212;
       margin:15px 7px;
+      svg{
+        vertical-align:-4px;
+      }
     }
 
   }

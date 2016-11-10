@@ -1,6 +1,5 @@
-@import "../layout/_variables", "../layout/_mixin";
+@import "../layout/variables";
 .server-sale{
-
   .bread-path {
     line-height: 24px;
     margin: 0 0 10px 0;
@@ -17,9 +16,7 @@
   }
   /*流程*/
   .Stepbar{
-       position: relative;
        background: #f5f5f5;
-      // height: 110px;
        margin: 0 0 20px 0;
        padding: 60px 30px;
     .ser-bar{
@@ -27,14 +24,11 @@
       width: 1032px;
       background-color: #c6c6c6;
       border-radius: 25px;
-
       .ser-step{
         width: 314px;
-         position: relative;
-         float: left;
-        background: url(/images/orders/step01.png) no-repeat center;
-         height: 34px;
-         margin-top: -12px;
+        height: 34px;
+        float: left;
+        margin-top: -12px;
          span{
             display: block;
             width: 34px;
@@ -42,6 +36,8 @@
             line-height: 34px;
             text-align: center;
             color: $white;
+            background-color: #c6c6c6;
+            border-radius: 20px;
             font:{
                size: 18px;
                weight: bold;
@@ -49,39 +45,40 @@
             margin-left: 140px;
          }
         em{
-          color: #808080;
-          font-style:normal;
-           position: relative;
-          float: left;
-          top:-30px;
-          margin-top: -35px;
-         // margin-left: -25px;
-          white-space: nowrap;
           width: 314px;
+          color: #808080;
+          float: left;
           text-align: center;
-          font-size: 14px;
+          white-space: nowrap;
+          font:{
+            size: 14px;
+            style:normal;
+          }
+          margin-top: -65px;
         }
-
       }
       .ser-step-cur{
          width: 314px;
-         background: url(/images/orders/step02.png) no-repeat center;
-        //padding-left: 157px;
-          em{
+         span{
+           width:30px;
+           height: 28px;
+           line-height: 28px;
+           background-color:#34b3ff;
+           border: 5px solid #c4cccf;
+        }
+         em{
              color: #45b4fc;
           }
-
         i{
           height: 4px;
           width: 314px;
           background-color: #45b4fc;
           display: block;
           overflow: hidden;
-          margin: -19px 0 0 3px;
+          margin: -23px 0 0 3px;
         }
       }
     }
-
   }
 /*退款退货商品*/
   .refund-main{
@@ -90,21 +87,23 @@
       float:left;
       width:217px;
       height:100%;
-      border-right:1px solid #ddd;
-      border-left:1px solid #ddd;
-      border-bottom:1px solid #ddd;
-     // padding-bottom:500px;
-     // margin-bottom:-500px;
+      border: {
+        right:1px solid #ddd;
+        left:1px solid #ddd;
+        bottom:1px solid #ddd;
+      };
       .refund-fir{
         .ref-tit{
           color: #333;
           background:#f9f9f9;
-          border-top:1px solid #ddd;
-          border-bottom:1px solid #ddd;
-          border-width:1px 0;
           height:32px;
           line-height:32px;
-          padding:0 0 0 8px;
+          border: {
+            top:1px solid #ddd;
+            bottom:1px solid #ddd;
+            width:1px 0;
+          };
+            padding:0 0 0 8px;
         }
         .ref-cont{
           .box-core{
@@ -123,7 +122,6 @@
           .box-text{
             padding:0 15px 0 0;
           }
-
         }
           .box-business{
             height: 36px;
@@ -132,52 +130,54 @@
             padding-top:2px;
             border-top:1px solid #ddd;
             label{
-             //letter-spacing:8px;
-              word-spacing:6px;
-             // width:63px;
-              color: #999;
-              padding-left: 16px;
+               word-spacing:6px;
+               color: #999;
+               padding-left: 16px;
             }
             span{
                color: #f58b0f;
             }
           }
         }
-
       }
-
       .refund-sec{
          .ref-details{
             float: right;
             padding: 0 10px 0 0;
          }
         .ref-list{
-           dl{
-             padding: 0 0 25px 16px;
-              dt{
-                 float: left;
-                 width: 57px;
-                 color: #999;
-                // padding: 2px 0;
-                padding: 10px 0 0;
+          padding: 0 0 15px 16px;
+          dl{
+            margin:10px 0;
+            overflow:hidden;
+            dt{
+              float: left;
+              width: 57px;
+              color: #999;
+              padding-right:5px;
+              position: relative;
+              text-align-last:justify;
+              &:after{
+                position: absolute;
+                right: -4px;
+                content:'\FF1A';
               }
-             dd{
-               overflow: hidden;
-               color: #999;
-               padding: 10px 0 0;
-               //color: #f58b0f;
-               //padding: 2px 0;
-               .list-red{
-                  color: #fb5e5e;
-               }
-               .list-ori{
-                 color: #f58b0f;
-               }
-             }
-           }
+            }
+            dd{
+              overflow: hidden;
+              color: #666;
+              float:left;
+              margin-left:5px;
+              .list-red{
+                color: #fb5e5e;
+              }
+              .list-ori{
+                color: #f58b0f;
+              }
+            }
+          }
         }
-      }
-
+       }
     }
    /*第一个右边内容*/
    .refund-rig{
@@ -190,24 +190,27 @@
         text-align: center;
         padding: 90px 0 0;
        a{
+           width: 244px;
+           height: 127-50px;
            color: #333;
-           font-size: 18px;
+           font:{
+             size: 18px;
+             align: center;
+           }
+           font-weight: bold;
            display: inline-block;
            vertical-align: top;
            background: #f7f5f6;
            border: 5px solid #ebe6e2;
            margin: 0 30px;
            padding-top: 50px;
-           width: 244px;
-           height: 127-50px;
-           font-weight: bold;
-           text-align: center;
            overflow: hidden;
-
        }
            span{
-             font-size: 18px;
-             font-weight: bold;
+             font:{
+               size: 18px;
+               weight: bold;
+             }
            }
      }
    }
@@ -247,7 +250,6 @@
            padding: 20px 0 0 10px;
            .ret-cont{
               margin-bottom: 20px;
-              position: relative;
               overflow: hidden;
              .flk{
                 margin-left: 14px;
@@ -264,8 +266,7 @@
              }
              select{
                 width: 190px;
-                //margin-left: 14px;
-               option{
+                option{
                   color: #333;
                   font-weight: bold;
                }
@@ -279,7 +280,6 @@
                 height: 24px;
                 line-height: 24px;
                 border: 1px solid #7f9eb8;
-               // margin-left: 14px;
              }
               .more-money{
                color: #666;
@@ -289,11 +289,9 @@
                  width: 646px;
                  height: 80px;
                  border: 1px solid #7f9eb8;
-                // margin-left: 15px;
                  resize:none;
              }
              button{
-               // margin-left: 15px;
                 width: 102px;
                 height: 25px;
                 color: #333;
@@ -305,7 +303,6 @@
                    left: 1px solid #ddd;
                    right: 1px solid #ddd;
                 }
-
                 font:{
                    size: 14px;
                    }
@@ -318,7 +315,6 @@
                 width: 250px;
                 margin-left: 82px;
                 .yet{
-                 // width: 65px;
                    input{
                    width: 15px;
                    height: 15px;
@@ -335,7 +331,6 @@
                     margin-left:5px;
                  }
                }
-
              }
            }
            .ret-action{
@@ -357,7 +352,7 @@
         height: 100%;
         min-height:284px;
         border-top: 1px solid #ddd;
-        margin: 30px 0 0;
+        margin: 20px 0 0;
      .pro-tit{
         padding: 20px 0 10px 16px;
         h3{
@@ -372,18 +367,18 @@
          i{
            width: 6px;
            height: 6px;
-           //background: rgba(255, 0,0,0.1);
-           border-color:#6a6a6a;
-           border-width: 0 0 2px 2px;
-           border-style: solid;
+           border:{
+             color:#6a6a6a;
+             width: 0 0 2px 2px;
+             style: solid;
+           };
            transform:rotateZ(-135deg);
            display: inline-block;
          }
        }
-
      }
      .pro-main{
-       ol{
+       ul{
          li{
            dl{
              dt{

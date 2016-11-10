@@ -1,15 +1,8 @@
-@import "../layout/_variables", "../layout/_mixin";
-*{
-  font:{
-    family: $main-sec-ff;
-    size: 12px;
-  }
-  $b-ground: #f5f5f5 !global;
-}
+@import "../layout/variables";
+$b-ground: #f5f5f5 !global;
 $wd   : 13px;
 $hi   : $wd;
 $c   : #00943b;
-//$d   : #ed0000;
 @mixin arrow-down-list( $width , $height , $top , $left,$c){
   border: none;
   background-color: $c;
@@ -24,8 +17,6 @@ $c   : #00943b;
   border-width:$height $width;
   border-#{$way}-color:$c;
 }
-
-
 .evaluation-main{
    h3{
       height: 40px;
@@ -61,7 +52,6 @@ $c   : #00943b;
          }
       }
     }
-
     .eva-cont{
        .eva-cont-shop{
           width: 288px;
@@ -87,30 +77,25 @@ $c   : #00943b;
            .eva-shop-grade{
              color: #666;
             }
-
            .eva-shop-reputation{
-             // float: left;
-             height: 30px;
-             width: 125px;
-             float: left;
+              width: 125px;
+              height: 30px;
+              float: left;
              .eva-shop-icon{
                position: relative;
-               padding-top: 6px;
                width: 76px;
                height: 8px;
-
+               padding-top: 6px;
                .item-a{
+                 height:8px;
                  float: left;
                  position: relative;
                  display: block;
-                 height:8px;
                  cursor: pointer;
                }
                .c1{
                  width: 88%;
                  background: #f65962;
-
-
                }
                .c2{
                  width: 12%;
@@ -120,20 +105,16 @@ $c   : #00943b;
                   width: 88%;
                   float: left;
                  i{
-
                    position: absolute;
                    z-index: 2;
                    width: 18px;
                    height: 17px;
-                   top:1px;
+                  top:1px;
                    left: 68%;
                    background:url(/images/orders/shop-logo-02.png) no-repeat right;
                    display: inline-block;
-
                  }
-
                }
-
              }
              .c4{
                color: #707070;
@@ -141,17 +122,12 @@ $c   : #00943b;
                margin-top:-18px;
              }
            }
-
-
          }
-
        }
       /*right bar*/
       .eva-cont-attitude{
          margin: 20px 0 0 70px;
          float: left;
-        // position: relative;
-
         .arrow{
           width: $wd;
           height: $hi;
@@ -161,12 +137,14 @@ $c   : #00943b;
           &:before,
           &:after{
             content:'';
-            border-color:transparent;
-            border-style:solid;
-            position: absolute;
+            border:{
+              color:transparent;
+              style:solid;
+            }
+             position: absolute;
           }
           .curve{
-            position: absolute;
+              position: absolute;
             overflow: hidden;
             &:before{
               content:'';
@@ -174,8 +152,6 @@ $c   : #00943b;
             }
           }
         }
-
-
          .eva-att-fir{
             position: relative;
 
@@ -189,10 +165,6 @@ $c   : #00943b;
                 color: #666;
              }
            }
-
-            span{
-
-            }
            .eva-cont-all{
               width: 178px;
               height: 7px;
@@ -200,7 +172,7 @@ $c   : #00943b;
                border-left: 1px solid #56bbf3;
               float: right;
               position: absolute;
-              left:95px;
+              left:97px;
              i{
                height: 5px !important;
                &::before {
@@ -211,28 +183,22 @@ $c   : #00943b;
                  width: 4px;
                  height: 4px;
                  border-radius: 4px;
-                 margin-left: -4px;
-                 margin-right: 10px;
-
-
+                 margin: 0 10px 0 -4px;
                }
-
              }
           .eve-fir-cont{
                width: 136px;
+               height: 20px;
+               line-height: 20px;
                border:{
                   top:0;
                   bottom: 1px solid #32b5fe;
                   left: 1px solid #32b5fe;
                   right: 1px solid #32b5fe;
                };
-               height: 20px;
-               line-height: 20px;
                float: right;
-
              .item-b{
                float: left;
-               position: relative;
                display: block;
                height:20px;
                cursor: pointer;
@@ -248,7 +214,6 @@ $c   : #00943b;
               .ef-2{
                  width: 60px;
                  background: #32b5fe;
-
                .arrow-down{
                  &:before{ @include arrow-down-list(30%,60%,0,50% - 30%/2,#03a045); }
                  &:after { @include arrow($wd/2.2,$hi/2.2,60%,10%,top,#03a045);  }
@@ -256,10 +221,8 @@ $c   : #00943b;
                }
                .eve-fir-text{
                     color: $white;
-
                }
-             }
-
+              }
              }
            }
          }
@@ -268,11 +231,10 @@ $c   : #00943b;
              margin-top: 20px;
             }
             @extend .eva-att-fir;
-
-           .eva-cont-all{
+            .eva-cont-all{
              position: absolute;
-             left:95px;
-             top:36px;
+             left:97px;
+             top:35px;
            }
          }
          .eva-att-fir3{
@@ -280,12 +242,10 @@ $c   : #00943b;
             margin-top: 18px;
           }
           @extend .eva-att-fir;
-
           .eva-cont-all{
             position: absolute;
-            left:95px;
-            top:72px;
-
+            left:97px;
+            top:67px;
             .ef-2{
               .arrow-up{
                 &:before{ @include arrow-down-list(30%,60%,30%,50% - 40%/2,#e90000);  }
@@ -293,14 +253,10 @@ $c   : #00943b;
                 float: left;
                 }
             }
-
           }
         }
       }
     }
-
-
-
   }
   /*shangpingdongtaipingjia*/
   .dynamic-eva{
@@ -315,7 +271,6 @@ $c   : #00943b;
         color: $white;
         background: #33b6ff;
         text-align: center;
-
         border: 0;
         border-radius: 5px 5px 0 0;
         float: left;
@@ -330,13 +285,15 @@ $c   : #00943b;
         input{
            width: 14px;
            height: 14px;
-           margin-right:8px;
-        }
+           float: left;
+           margin: 13px 8px 0 0;
+         }
         color: #2eb3ff;
       }
     }
     .dynamic-cont{
        border: 1px solid #ddd;
+       clear: both;
       .dy-cont-title{
          height: 46px;
          line-height: 46px;
@@ -352,10 +309,8 @@ $c   : #00943b;
              &.dy-describe{
                margin-left: 70px;
              }
-
            }
         }
-
       }
       /*baby details*/
       .baby-details{
@@ -366,14 +321,12 @@ $c   : #00943b;
            padding: 28px 0;
            float: left;
           ul{
-
              li{
                 color: #666;
                &.baby-det-img {
                  width: 110px;
                  height: 110px;
                  margin: 0 auto;
-
                }
                &.baby-det-tit{
                      width: 228px;
@@ -383,10 +336,8 @@ $c   : #00943b;
                      text-align: center;
                      a{
                        color: #333;
-
-                     }
+                   }
                 }
-
                &.baby-det-text{
                   width: 229px;
                   text-align: center;
@@ -396,8 +347,6 @@ $c   : #00943b;
                    color: #333;
                  }
                }
-
-
              }
           }
         }
@@ -412,15 +361,12 @@ $c   : #00943b;
               height:24px;
               float: left;
               ul{
-
                  li{
                    float:left;
                    display:inline;
                    height:19px;
                    line-height:19px;
-                   //padding-bottom: 15px;
-                 //  margin:0 10px;
-                   strong{
+                    strong{
                      color:#ffa800;
                      padding-left:10px;
                    }
@@ -439,13 +385,12 @@ $c   : #00943b;
                       background:url(/images/orders/start.png) no-repeat;
                       &.on{
                         background:url(/images/orders/start-on.png) no-repeat;
-
                       }
                     }
                  }
               }
             }
-          /*暂写*/
+          /*暂*/
           .textinput{
            margin: 10px 0;
             textarea{
@@ -460,7 +405,6 @@ $c   : #00943b;
           }
           /*收起评价*/
           .eva-fold{
-
               button{
                  width: 93px;
                  height: 28px;
@@ -481,73 +425,14 @@ $c   : #00943b;
           }
         }
       }
-
     }
-
   }
   /*Shop Dynamic Evaluation*/
   .Shop-dynamic{
      @extend .dynamic-eva;
      margin: 20px 0;
     }
-
-  /*#shop-start{
-    position:relative;
-    width:600px;
-    margin: 20px;
-    height:24px;
-    label{
-       float: left;
-       line-height: 22px;
-       color: #333;
-    }
-     strong{
-      color:#ffa800;
-      padding-left:10px;
-    }
-    span{
-      float:left;
-      display:inline;
-      height:19px;
-      line-height:19px;
-      margin-left: -10px;
-    }
-    ul{
-      float:left;
-      display:inline;
-      height:19px;
-      line-height:19px;
-      margin:0 10px;
-      li{
-        float:left;
-        width:24px;
-        cursor:pointer;
-        text-indent:-9999px;
-        background:url(/images/orders/start.png) no-repeat;
-        &.on{
-          background:url(/images/orders/start-on.png) no-repeat;
-
-        }
-      }
-    }
-  }
-
-.shop-comment{
-   button{
-      width: 93px;
-      height: 28px;
-      color: $white;
-      background: #33b6ff;
-      border: 0;
-      border-radius: 3px;
-      margin: 10px 0 20px 506px;
-      cursor: pointer;
-   }
-}
-
-  }*/
   .shop-start{
-    position:relative;
     width:600px;
     margin: 20px;
     height:24px;
@@ -557,7 +442,6 @@ $c   : #00943b;
       color: #333;
     }
    i{
-
      width: 24px;
      height: 24px;
      line-height: 24px;
@@ -574,10 +458,7 @@ $c   : #00943b;
        background: url(/images/orders/start-on.png) no-repeat;
      }
    }
-
-
   }
-
   .shop-comment{
     button{
       width: 93px;
@@ -590,5 +471,4 @@ $c   : #00943b;
       cursor: pointer;
     }
   }
-
 }

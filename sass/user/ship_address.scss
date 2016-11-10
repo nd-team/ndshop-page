@@ -1,8 +1,8 @@
 @import "../layout/variables", "../layout/mixin";
 #user-head{
   background:#33b6ff;
-  margin-top:0;
   margin-bottom:30px;
+  margin-top:0;
   .header-lg{
     width:210px;
     height:80px;
@@ -56,7 +56,7 @@
     button{
       width:56px;
       height:32px;
-      background:#fff;
+      background:#ededed;
       padding:0;
       color:#333;
       font-size:12px;
@@ -66,17 +66,21 @@
   .shopping-cart{
     width:140px;
     height:32px;
-    background:#fff;
     margin:24px 0;
     line-height:32px;
-    text-indent:10px;
-    a{
-      color:#666;
+    background:#f85e66;
+    .my-cart{
       vertical-align:middle;
-      .shopping{
-        width:20px;
-        height:20px;
-        vertical-align:-3px;
+      color:#fff;
+      .shopping_white{
+        width:40px;
+        height:40px;
+        margin-top:-8px;
+        margin-right:-5px;
+      }
+      .button_next{
+        width:15px;
+        height:15px;
       }
     }
   }
@@ -188,3 +192,81 @@
 
   }
 }
+#modalbg{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#e1e1e1;
+  opacity:0.5;
+  z-index:1000;
+  display:none;
+}
+#modal{
+  width:600px;
+  height:498px;
+  background:#fff;
+  position:fixed;
+  top:50%;
+  left:50%;
+  margin:-250px 0 0 -300px;
+  z-index:2000;
+  color:#666;
+  display:none;
+  .modal-title{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    text-indent:10px;
+    background:linear-gradient(#fff,#efefef);
+    .modal-close{
+      float:right;
+      font-size:16px;
+      margin-right:23px;
+      font-weight:bold;
+    }
+  }
+  .modal-body{
+    margin:20px 35px;
+    dl{
+      margin:15px 0;
+      dt{
+        i{
+          color:#ff0e0e;
+        }
+        label{
+          &.phone{
+            margin-right:135px;
+          }
+        }
+      }
+      dd{
+        color:#333;
+        margin:10px 0;
+        input[type="text"]{
+          border:1px solid #ededed;
+          height:25px;
+          outline:none;
+          text-indent:7px;
+          &.w380{
+            width:380px;
+          }
+        }
+        select{
+          border:1px solid #ededed;
+        }
+      }
+    }
+    .save{
+      width:110px;
+      height:30px;
+      text-align:center;
+      line-height:30px;
+      border:1px solid #ededed;
+      background:linear-gradient(#fff,#f2f2f2);
+      outline:none;
+    }
+  }
+}
+

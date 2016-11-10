@@ -100,8 +100,9 @@ a{
 
 //svg style
 svg{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
 }
 /*header-top start*/
 .header-top{
@@ -159,17 +160,10 @@ svg{
                 color: red;
                 cursor: pointer;
             }
-            .more-icon{
-                $height: 12px;
-                display:block;
-                height:$height;
-                line-height:$height;
-                float:right;
-                font-family: $main-sec-ff;
-                margin:{
-                    left:5px;
-                    top:8px;
-                }
+
+            .top_down{
+              width: 10px;
+              height: 10px;
             }
         }
     }
@@ -192,7 +186,7 @@ svg{
         .logo {
             display: inline-block;
             width: 185px;
-            height: 44px;
+            height: 53px;
             background-image: url('/images/head/logo.png');
             background-repeat:no-repeat;
             text-indent: -2000px;
@@ -259,33 +253,23 @@ svg{
 
     .shopping-cart {
         float: right;
-        width: 115px;
+        width: 140px;
         height: 40px;
         background-color: #fd5d5f;
-        margin-right: 135px;
+        margin-right: 120px;
         cursor: pointer;
-
         line-height: 40px;
-
-        .shopping-cart-icon{
-            width: 17px;
-            height: 13px;
-            display: inline-block;
-            vertical-align: middle;
-            // background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
+        .shopping_white{
+            width: 37px;
+            height:37px;
+            line-height: 40px;
+            vertical-align: -12px;
         }
-        a{
+        .my-cart{
             color: $white;
-            &.my-cart{
-                font-size: 14px;
-                color: $white;
-                text-align: center;
-            }
-        }
-
-        }
-
-
+            font-size: 14px;
+         }
+    }
     .search-hot {
         width: 514px;
         line-height: 20px;
@@ -372,6 +356,7 @@ svg{
 footer{
     width: 100%;
     height: 100%;
+  overflow: hidden;
 }
 
 //service start
@@ -449,19 +434,17 @@ footer{
                 style:solid;
                 color:#ccc;
             }
-           
             color:#666666;
             font:{
                 size:14px;
                 family:$main-sec-ff;
-                
             }
             a{
                 padding-right: 5px;
             }
         
         }
-        .autocation{
+        .auto-cation{
             margin-top: 25px;
             a{
                 margin: 0 14px;
