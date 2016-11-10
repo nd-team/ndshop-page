@@ -8,6 +8,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="/css/base.css" />
 	<link rel="stylesheet" href="/css/commodity/mobile_phone.css" />
+	<link rel="stylesheet" href="/css/commodity/swiper.min.css">
 </head>
 <body>
 	<header>
@@ -463,23 +464,24 @@
 				<div class="wrap">
 					<h3 class="mobile-accessories-title">手机配件</h3>
 					<div class="accessories-same">
-						<div class="banners-left clearfix">
-							<ul class="slide">
-								<li>
+						<div class="swiper-container clearfix" id="partner">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
 									<a href="javascript:void(0)"><img src="/images/mobile/banner03.jpg" alt=""></a>
-								</li>
-								<li>
+								</div>
+								<div class="swiper-slide">
 									<a href="javascript:void(0)"><img src="/images/mobile/banner03.jpg" alt=""></a>
-								</li>
-								<li>
+								</div>
+								<div class="swiper-slide">
 									<a href="javascript:void(0)"><img src="/images/mobile/banner03.jpg" alt=""></a>
-								</li>
-							</ul>
-							<ul class="circle">
-								<li class="current"></li>
-								<li class="current-two"></li>
-								<li class="current-three"></li>
-							</ul>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination">
+								<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+							</div>
 						</div>
 						<div class="accessories-right">
 							<div class="accessories-picture">
@@ -872,5 +874,16 @@
 	<script src="/js/common.js"></script>
 	<script src="/js/index.js"></script>
 	<script src="/js/same/index.js"></script>
+	<script src="/js/swiper/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('#partner', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			spaceBetween: 30,
+			autoplay:3000,
+			loop : true,
+			loopAdditionalSlides : 1,
+		});
+	</script>
 </body>
 </html>
