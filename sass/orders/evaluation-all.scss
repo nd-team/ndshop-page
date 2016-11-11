@@ -158,10 +158,10 @@ $c   : #00943b;
            .commodity-eva{
               float: left;
               margin-top: 13px;
-             label{
+             span:nth-of-type(even){
                 color: #999;
              }
-             span{
+             span:nth-of-type(odd){
                 color: #666;
              }
            }
@@ -436,7 +436,7 @@ $c   : #00943b;
     width:600px;
     margin: 20px;
     height:24px;
-    label{
+    span{
       float: left;
       line-height: 22px;
       color: #333;
@@ -450,7 +450,6 @@ $c   : #00943b;
      background: #ccc;
      color: #fff;
      text-align: center;
-     cursor:default;
      font-style: normal;
      background:url(/images/orders/start.png) no-repeat;
      cursor: pointer;

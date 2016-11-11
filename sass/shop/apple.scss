@@ -122,18 +122,16 @@
                  margin:10px 8px;
                }
                button{
-                 position: relative;
-                  text-align: left;
+                   text-align: left;
                   @extend .all;
                   margin:0 0 0 8px;
                  font-family:$main-sec-ff;
                  font-size: 14px;
                  background: #40bbff;
                  color: $white;
-                 border: 0px;
+                 border: 0;
                  border-radius: 5px;
                  cursor: pointer;
-
                   /*搜索*/
                  .fangdajing{
                    display: block;
@@ -147,7 +145,7 @@
                }
                .left-search-hot{
                  @extend .left-search;
-                 border: 0px;
+                 border: 0;
                  color: #a4a4a4;
                  family:$main-sec-ff;
                  span{
@@ -189,8 +187,7 @@
                       display: block;
                       height:30px;
                       line-height: 30px;
-                      position: relative;
-                    }
+                     }
                     .inactive{
                       background:url(/images/cart/jiahao.png) no-repeat #f6f6f6 14px center;
                     }
@@ -206,15 +203,13 @@
                           color:#696969;
                           display:list-item;
                           list-style-type:square;
-                          margin-left:2.0em;
+                          margin-left:26px;
                        }
                       }
                     }
                   }
                }
-
              }
-
 
            }
 /*right*/
@@ -316,9 +311,11 @@
         font-size: 80%;
         text-align: center;
         width: 420px;
+        height: 50px;
+        line-height: 50px;
         padding: 3px;
         margin:20px 0 20px 410px;
-
+        clear: both;
           .listnum{
             border: 1px solid #e8e8e8;
             padding: 9px 11px;
