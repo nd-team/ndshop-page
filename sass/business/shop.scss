@@ -3,22 +3,24 @@
   padding:0;
   font-size:12px;
   font-family:"Microsoft Yahei";
-  ul li{
-    list-style:none;
-  }
-  a{
-    text-decoration:none;
-  }
-  img{
-    border:none;
-  }
-  svg{
-    width: 18px;
-    height: 18px;
-    vertical-align: middle;
-  }
 }
-
+ul li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+img{
+  border:none;
+}
+svg{
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+body{
+  display:flex;
+}
 #leftsidebar{
   width:120px;
   position:fixed;
@@ -67,7 +69,7 @@
 }
 #content{
   margin:60px 0 0 150px;
-  width:1730px;
+  flex:1;
   .header{
     .header-info{
       color:#252525;
@@ -119,6 +121,7 @@
     }
   }
   .main{
+    width:98%;
     h1{
       color:#252525;
       font-size:22px;
@@ -137,6 +140,54 @@
         }
         a{
           color:#666;
+        }
+      }
+    }
+    .item{
+      border:1px solid #e5e5e5;
+      clear:both;
+      overflow:hidden;
+      .t-top{
+        h2{
+          height:20px;
+          line-height:20px;
+          border-left:3px solid #fb7806;
+          padding:3px 7px;
+          margin:10px;
+          float:left;
+        }
+        a{
+          display:inline-block;
+          width:16px;
+          height:16px;
+          text-align:center;
+          line-height:16px;
+          border-radius:50%;
+          background:#bfbfbf;
+          color:#fff;
+          float:right;
+          margin:15px;
+        }
+      }
+      .deal-btn{
+      clear:both;
+        text-align:center;
+        a{
+          display:inline-block;
+          width:70px;
+          height:24px;
+          line-height:24px;
+          color:#fff;
+          margin:10px;
+          &.a-blue{
+            background:#33b6ff;
+          }
+          &.a-green{
+            background:#5ecebd;
+          }
+          &.a-orange{
+            background:#fc863f;
+          }
         }
       }
     }
