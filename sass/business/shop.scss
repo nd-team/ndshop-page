@@ -18,7 +18,10 @@
     vertical-align: middle;
   }
 }
-
+.site{
+  display: flex;
+  flex-direction: column;
+}
 #leftsidebar{
   width:120px;
   position:fixed;
