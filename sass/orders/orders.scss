@@ -18,6 +18,7 @@ tr{
     height: 45px;
     background: #f5f5f5;
     ul{
+
       li{
         width: 30%;
         height: 45px;
@@ -29,41 +30,42 @@ tr{
         font:{
           size: 14px;
         }
+        cursor: pointer;
         color: #808080;
-        &.order-bar-active{
-          color: $white;
-
           .order-bar-current{
-
+            position: relative;
+            color: $white;
             width: 180px;
             height: 49px;
             line-height: 49px;
             background: url(/images/orders/order-bg.png) 0  no-repeat;
             display: inline-block;
-          }
-          .order-point{
-            width: 45px;
-            height: 10px;
-            margin: -16px auto;
-            i{
-              border-bottom: #33b6ff solid 17px;
-              border-left: transparent solid 12px;
-              border-right: transparent solid 12px;
+           &::after{
+              content:"";
+             border:{
+               bottom: #33b6ff solid 17px;
+               left: transparent solid 12px;
+               right: transparent solid 12px;
+             }
+              position:absolute;
+              z-index:2;
+              top:48px;
+              left:75px;
               overflow: hidden;
             }
           }
-        }
         span{
           height: 45px;
           line-height: 45px;
           display: block;
         }
-
-
-
       }
     }
-
+  }
+  .state-text{
+    height: 218px;
+    width: 100%;
+    overflow: hidden;
   }
   .state-frame{
     padding: 25px 20px 25px 30px;
@@ -82,15 +84,11 @@ tr{
       }
     }
   }
-
-
 }
-
 .detail-all{
   /*logistics information*/
   .logistics-inform{
     margin: 30px 0;
-
     .log-title{
       h3{
         width: 130px;
@@ -106,7 +104,6 @@ tr{
     }
     table{
       margin: 20px 0 0 20px;
-      //margin-left: 30px;
       line-height: 25px;
       color: #333;
       .log-track{
@@ -136,7 +133,6 @@ tr{
       }
       height: 30px;
       border-bottom: 1px solid #ddd;
-
     }
     .ord-content{
       position: relative;
@@ -148,7 +144,6 @@ tr{
         padding:20px 0 20px 20px;
         border-right: 1px solid #e6e6e6;
         float: left;
-
         dl{
           line-height: 35px;
           dt{
@@ -164,7 +159,6 @@ tr{
         float: left;
         dl{
           line-height: 35px;
-
           dt{
             float: left;
             width: 80px;
@@ -175,6 +169,9 @@ tr{
     }
     .seller-information{
       border-bottom: 1px solid #e6e6e6;
+      &:nth-of-type(odd){
+         border: 0;
+      }
       .seller-inform-base{
         padding:20px 0 20px 20px;
         h3{
@@ -196,7 +193,6 @@ tr{
         }
       }
     }
-
   }
   /*shangpingshuxing*/
   .commodity-attribute{
@@ -209,7 +205,6 @@ tr{
       tbody{
         text-align: center;
         tr{
-
           &:nth-of-type(odd){
             height: 45px;
             background: #f5f5f5;
@@ -219,15 +214,11 @@ tr{
               word-wrap:break-word;
               text-align: center;
               &:nth-of-type(1){
-                //width: 260px;
-                //text-align: center;
-              }
-
+               }
             }
           }
           td{
             height: 120px;
-            //line-height: 120px;
             width: 122px;
             text-align: center;
             border-right: 1px solid #e6e6e6;
@@ -248,16 +239,13 @@ tr{
               a{
                 color: #33b5ff;
               }
-
             }
             &:nth-of-type(2){
               $width1: 122px !global;
               width: $width1;
-
               p{
                 color: #999;
                 line-height: 25px;
-
               }
             }
             &:nth-of-type(3){
@@ -293,18 +281,10 @@ tr{
                 float: left;
                 margin-right: 5px;
               }
-              &.qa{
-
-              }
-            }
-
-
-
+           }
             .return-all{
               width: 55px;
               margin: 0 auto;
-
-
               .return-text{
                 float: left;
                 color: #6aa93b;
@@ -317,7 +297,6 @@ tr{
         }
       }
     }
-
   }
   /*total*/
   .ord-total{
@@ -335,6 +314,4 @@ tr{
       }
     }
   }
-
-
 }

@@ -56,10 +56,7 @@
     }
 
     }
-
   }
-
-
 
   .prev{
     position:absolute;
@@ -77,7 +74,6 @@
     transform:rotateZ(45deg);
     color: #bcbcbc;
 
-
   }
   .next{
     @extend .prev;
@@ -85,9 +81,6 @@
     left:auto;
     right:30px;
      }
-
-
-
 
 }
 .sells{
@@ -121,12 +114,11 @@
       height: 200px;
       display: block;
       float: left;
-      margin: 0px 0 100px 20px ;
+      margin: 0 0 100px 20px ;
       a{
         display:inline-block;border:2px solid #fff;
         &:hover{
-          //@include box-shadow(2px solid #EAEAEA);
-          @include box-shadow(0 2px 16px rgba(234,234,234,.9));
+         @include box-shadow(0 2px 16px rgba(234,234,234,.9));
         }
       }
     }
