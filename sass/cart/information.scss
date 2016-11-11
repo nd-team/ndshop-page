@@ -275,10 +275,21 @@ Fill in the check order information*/
   }
 }
 .place-order{
-  background:url("/images/cart/bottom.png") no-repeat;
-  width: 139px;
-  height: 35px;
-  margin-top: 16px;
-  float: right;
-  cursor: pointer;
+  //background:url("/images/cart/bottom.png") no-repeat;
+   margin-top: 16px;
+   float: right;
+   cursor: pointer;
+  button{
+    width: 139px;
+    height: 35px;
+    font:{
+       size: 14px;
+       weight: bold;
+    }
+    text-shadow: #524d5c 1px 1px 1px;
+    color: $white;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ff454c), to(#e10d02));
+    border: 0;
+    border-radius:5px;
+  }
 }

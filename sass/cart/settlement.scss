@@ -64,15 +64,12 @@ $ser-f: '宋体';
 
   .bank-card{
     height: 446px;
-    // border: 1px solid #32b4ff;
-
     @include box-shadow(0 2px 16px rgba(236,236,236,.9));
     .bank-cont{
       width: 1004px;
       height: 298px;
       border: 1px solid #32b4ff;
       margin: 22px auto ;
-      //margin-top: 22px;
       padding: 20px 0 20px 30px;
 
       .card-square {
@@ -105,12 +102,10 @@ $ser-f: '宋体';
         .bank-cd{
          margin-top: 40px;
           .q-card{
-           // display: block;
             border-top:0;
             min-height:100px;
             background-color:#fff;
             display:none;
-
             ul {
               margin-left: 62px;
               height: 180px;
@@ -162,7 +157,6 @@ $ser-f: '宋体';
             height:34px;
             float:left;
             margin:0 20px 0 0;
-            border:1px solid #d4d4d4;
             line-height:35px;
             text-align:center;
             cursor:pointer;
@@ -170,7 +164,6 @@ $ser-f: '宋体';
             font-family:$main-sec-ff;
             background: #f6f6f6;
             border:0px;
-
             &.quick-pay{
               @include underline(1px solid #d4d4d4);
               cursor:pointer;
@@ -178,12 +171,9 @@ $ser-f: '宋体';
               text-shadow:0 1px 0 $white;
               background:$white;
             }
-
           }
-
         }
       }
-
     }
     .pay-immediately{
       width: 150px;
@@ -206,7 +196,7 @@ $ser-f: '宋体';
   /*other pay*/
   .other-pay{
     @include box-shadow(0 2px 16px rgba(236,236,236,.9));
-    width: 1100-55px;
+    width: 1050px;
     height: 126px;
     margin-top: 40px;
     padding: 20px 0 0 55px;
@@ -216,22 +206,17 @@ $ser-f: '宋体';
       size: 18px;
     }
     .checked-cart{
-         position: relative;
          float: left;
          display: inline-block;
          width: 18px;
          height: 18px;
      input{
-          position: absolute;
-          z-index: 0;
          width: 18px;
          height: 18px;
-         left:-15px;
-         }
+         margin-top: 4px;
+        }
       label{
         background-position: 0 0px;
-        position: relative;
-        z-index: 1;
         float: left;
         width: 18px;
         height: 18px;
@@ -240,6 +225,7 @@ $ser-f: '宋体';
 
     .mode{
       color: #4d4d4d;
+      margin-left:5px;
     }
 
     .other{
