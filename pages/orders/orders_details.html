@@ -7,15 +7,12 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/orders/allorders.css" />
     <link rel="stylesheet" href="/css/orders/logistics.css">
     <link rel="stylesheet" href="/css/orders/orders.css">
     <script src="/js/common.js"></script>
     <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/orders/orders.js"></script>
     <script src="/js/shop/shop.js"></script>
-
-
 </head>
 <body>
 <header>
@@ -210,96 +207,92 @@
                 <div class="log-title">
                     <h3>物流信息</h3>
                 </div>
-                <table>
-                    <tbody>
-                    <tr>
-                        <th>发货方式：</th>
-                        <td>快递</td>
-                    </tr>
-                    <tr>
-                        <th>物流公司：</th>
-                        <td>韵达快递</td>
-                    </tr>
-                    <tr>
-                        <th>运单号码：</th>
-                        <td>123456461318763131</td>
-                    </tr>
-                    <tr>
-                        <th class="log-track">物流跟踪：</th>
-                        <td>
-                            <ul>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>18:21:17</span>
-                                    <span>【无锡高新区二部】</span>
-                                    <span>揽收成功</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:42</span>
-                                    <span>到无锡市</span>
-                                    <span>【无锡集散中心】</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:48</span>
-                                    <span>无锡市</span>
-                                    <span>【无锡集散中心】,正发往【苏州转运中心】</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>23:35:42</span>
-                                    <span>到苏州市</span>
-                                    <span>【苏州转运中心】</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:42</span>
-                                    <span>苏州市</span>
-                                    <span>【苏州转运中心】,正发往【广州夏良转运中心】</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:42</span>
-                                    <span>到广州市</span>
-                                    <span>【广州夏良转运中心】</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:42</span>
-                                    <span>到广州市</span>
-                                    <span>【广州夏良转运中心】</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:42</span>
-                                    <span>广州市</span>
-                                    <span>【广州夏良转运中心】，正发往【广州电脑城】</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:42</span>
-                                    <span>到广州市</span>
-                                    <span>【广州电脑城站】</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:42</span>
-                                    <span>广州市</span>
-                                    <span>【广州电脑城站】,</span>
-                                    <span>【张杰】正在派件</span>
-                                    <span>电话：12345678912</span>
-                                </li>
-                                <li>
-                                    <span>2016-20-22</span>
-                                    <span>21:12:42</span>
-                                    <span>【已签收，签收人已妥投】</span>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="cargo-inform">
+                    <p>
+                        <span>发货方式：</span>
+                        <span>快递</span>
+                    </p>
+                    <p>
+                        <span>物流公司：</span>
+                        <span>韵达快递</span>
+                    </p>
+                    <p>
+                        <span>运单号码：</span>
+                        <span>123456461318763131</span>
+                    </p>
+                         <div class="log-track">
+                             <span class="log-track-fir">物流跟踪：</span>
+                             <ul>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>18:21:17</span>
+                            <span>【无锡高新区二部】</span>
+                            <span>揽收成功</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:42</span>
+                            <span>到无锡市</span>
+                            <span>【无锡集散中心】</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:48</span>
+                            <span>无锡市</span>
+                            <span>【无锡集散中心】,正发往【苏州转运中心】</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>23:35:42</span>
+                            <span>到苏州市</span>
+                            <span>【苏州转运中心】</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:42</span>
+                            <span>苏州市</span>
+                            <span>【苏州转运中心】,正发往【广州夏良转运中心】</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:42</span>
+                            <span>到广州市</span>
+                            <span>【广州夏良转运中心】</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:42</span>
+                            <span>到广州市</span>
+                            <span>【广州夏良转运中心】</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:42</span>
+                            <span>广州市</span>
+                            <span>【广州夏良转运中心】，正发往【广州电脑城】</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:42</span>
+                            <span>到广州市</span>
+                            <span>【广州电脑城站】</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:42</span>
+                            <span>广州市</span>
+                            <span>【广州电脑城站】,</span>
+                            <span>【张杰】正在派件</span>
+                            <span>电话：12345678912</span>
+                        </li>
+                        <li>
+                            <span>2016-20-22</span>
+                            <span>21:12:42</span>
+                            <span>【已签收，签收人已妥投】</span>
+                        </li>
+                    </ul>
+                        </div>
+                </div>
             </div>
             <!--订单信息-->
             <div class="order-information">
@@ -341,135 +334,128 @@
                 <div class="seller-information">
                     <div class="seller-inform-base">
                         <h3>卖家信息</h3>
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <label>昵称：</label>
-                                    <span>张三</span>
-                                    <a href="javascript:void(0)"><img src="/images/orders/contactus.png"></a>
-                                </td>
-                                <td>
-                                    <label>真实姓名：</label>
-                                    <span>北京艾佳天城科技有限公司</span>
-                                </td>
-                                <td>
-                                    <label>城市：</label>
-                                    <span>广东广州</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>联系电话：</label>
-                                    <span>12345678912</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                         <div class="seller-list">
+                             <ul>
+                                 <li>
+                                     <strong>昵称：</strong>
+                                     <span>张三</span>
+                                     <a href="javascript:void(0)"><img src="/images/orders/contactus.png"></a>
+                                 </li>
+                                 <li>
+                                     <strong>真实姓名：</strong>
+                                     <span>北京艾佳天城科技有限公司</span>
+                                 </li>
+                                 <li>
+                                     <strong>城市：</strong>
+                                     <span>广东广州</span>
+                                 </li>
+                                 <li>
+                                     <strong>联系电话：</strong>
+                                     <span>12345678912</span>
+                                 </li>
+                             </ul>
+                         </div>
+                       </div>
                 </div>
                 <!--订单信息-->
                 <div class="seller-information">
                     <div class="seller-inform-base">
                         <h3>订单信息</h3>
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <label>订单编号：</label>
+                        <div class="seller-list">
+                            <ul>
+                                <li>
+                                    <span>订单编号：</span>
                                     <span>123456789123</span>
-                                </td>
-                                <td>
-                                    <label>支付宝交易号：</label>
+                                </li>
+                                <li>
+                                    <span>支付宝交易号：</span>
                                     <span>12645646131987761131313</span>
-                                </td>
-                                <td>
-                                    <label>创建时间：</label>
+                                </li>
+                                <li>
+                                    <span>创建时间：</span>
                                     <span>2016-10-21 20：01：30</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>发货时间：</label>
+                                </li>
+                                <li>
+                                    <span>发货时间：</span>
                                     <span>2016-10-21 20：01：30</span>
-                                </td>
-                                <td>
-                                    <label>付款时间：</label>
+                                </li>
+                                <li>
+                                    <span>付款时间：</span>
                                     <span>2016-10-21 20：01：30</span>
-                                </td>
-                                <td>
-                                    <label>成交时间：</label>
+                                </li>
+                                <li>
+                                    <span>成交时间：</span>
                                     <span>2016-10-21 20：01：30</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
                 </div>
                 <!--商品属性-->
                 <div class="commodity-attribute">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <th>
-                                商品
-                            </th>
-                            <th>
-                                商品属性
-                            </th>
-                            <th>
-                                状态
-                            </th>
-                            <th>
-                                服务
-                            </th>
-                            <th>
-                                单价
-                            </th>
-                            <th>
-                                优惠
-                            </th>
-                            <th>
-                                商品总价
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="com-img">
-                                    <a href="javascript:void(0)">
-                                        <img src="/images/orders/order-images.jpg"/>
-                                    </a>
-                                </div>
-                                <div class="com-text">
-                                    <a href="javascript:void(0)">
-                                        430不锈钢卡通勺子儿童叉勺子公司礼品定制高档插柄西餐具幼儿园
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                                <p>类别：钢化类</p>
-                                <p>颜色：黑色</p>
-                            </td>
-                            <td>
-                                <p>待收货</p>
-                            </td>
-                            <td>
-                                <div class="return-all">
+                    <div class="com-list">
+                          <div class="com-tit">
+                             <ul>
+                                  <li>
+                                       商品
+                                  </li>
+                                 <li>
+                                     商品属性
+                                 </li>
+                                 <li>
+                                     状态
+                                 </li>
+                                 <li>
+                                     服务
+                                 </li>
+                                 <li>
+                                     单价
+                                 </li>
+                                 <li>
+                                     优惠
+                                 </li>
+                                 <li>
+                                     商品总价
+                                 </li>
+                             </ul>
+                          </div>
+                        <div class="com-cont">
+                             <div class="com-cont-main">
+                                 <ul>
+                                     <li class="com-img">
+                                           <a href="javascript:void(0)">
+                                                 <img src="/images/orders/order-images.jpg"/>
+                                             </a>
+                                     </li>
+                                     <li class="com-text">
+                                             <a href="javascript:void(0)">
+                                                 430不锈钢卡通勺子儿童叉勺子公司礼品定制高档插柄西餐具幼儿园
+                                             </a>
+                                     </li>
+
+                                 </ul>
+                             </div>
+                             <div class="category">
+                                 <p>类别：钢化类</p>
+                                 <p>颜色：黑色</p>
+                             </div>
+                             <div class="collecting">
+                                <p>代收货</p>
+                             </div>
+                            <div class="return-all">
+                               <p>
                                     <svg role="img" class="return">
                                         <use xlink:href="#return"></use>
                                     </svg>
                                     <span class="return-text">退换</span>
-                                </div>
+                               </p>
                                 <p class="return-quality">
                                     <svg role="img" class="qa">
                                         <use xlink:href="#qa"></use>
                                     </svg>
                                 </p>
-                            </td>
-                            <td>
-                                256.00
-                            </td>
-                            <td>
+                            </div>
+                            <div class="discount">
                                 <ul>
                                     <li>
                                         店铺红包五元
@@ -478,23 +464,19 @@
                                         活动立减201.00元
                                     </li>
                                 </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>
-                                        45.0
-                                    </li>
-                                    <li>
-                                        抢红包活动,抵扣0.8元
-                                    </li>
-                                    <li>
-                                        快递：9.90元
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                            <div class="unit-Price">
+                                <p>256.00</p>
+                            </div>
+                            <div class="red">
+                                <p>45.00</p>
+                                <p>抢红包活动抵扣0.8元</p>
+                                <p>(快递 2.90元)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <!--计算总价-->
                 <div class="ord-total">
