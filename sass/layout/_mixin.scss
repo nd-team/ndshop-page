@@ -23,7 +23,12 @@
   }
   @include has-layout;
 }
-
+//index same style
+@mixin index-title{
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+}
 @mixin mobile-title{
   line-height: 42px;
   color: #43B999;

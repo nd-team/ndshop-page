@@ -219,47 +219,30 @@
   .accessories-same{
     @include same-box;
     border-top:1px solid #208468;
-    .banners-left{
+    .swiper-container{
       position: relative;
       height: 432px;
       width: 251px;
       float: left;
       overflow: hidden;
-      .slide{
+      .swiper-wrapper{
         position: absolute;
         width: 400%;
         left: 0;
         top: 0;
-        li{
+        .swiper-slide{
           display: block;
           float: left;
           }
-        }
-
-      .circle{
-        position: absolute;
-        left: 50%;
-        bottom: 5px;
-        margin-left: -27px;
-        li{
-          width: 12px;
-          height: 14px;
-          display: inline-block;
-          padding-right: 2px;
-          background-color: rgba(0,0,0,.1);
-          border-radius: 50%;
-          cursor: pointer;
-          &.current{
-            background-color: rgba(0,0,0,.1);
-          }
-          &.current-two{
-            background-color: rgba(0,0,0,.3);
-          }
-          &.current-three{
+        .swiper-pagination{
+          .swiper-pagination-bullet{
             background-color: rgba(0,0,0,.5);
           }
+          .swiper-pagination-bullet-active{
+            background-color: green !important;
+          }
         }
-      }
+        }
     }
     .accessories-right{
       float: left;
@@ -273,6 +256,7 @@
           height: 215px;
           border-right:1px solid #ececec;
           float: left;
+          cursor: pointer;
           .mobile-picture{
             display: block;
             width: 130px;
@@ -429,6 +413,7 @@
              &:last-child{
                border-bottom: 0;
              }
+             cursor: pointer;
              .ranking-pic{
                width: 90px;
                height: 92px;

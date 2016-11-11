@@ -107,6 +107,7 @@
             width: 228px;
             margin-top: -1px;
             .household-list {
+                position: relative;
                 cursor: pointer;
                 &:hover {
                     background-color: #ca142d;
