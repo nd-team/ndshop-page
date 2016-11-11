@@ -159,26 +159,6 @@
                 float: left;
               }
             }
-            //.same-circle{
-            //  position: absolute;
-            //  left: 50%;
-            //  bottom: 10px;
-            //  width: 90px;
-            //  margin-left: -18px;
-            //  li{
-            //    width: 10px;
-            //    height: 10px;
-            //    background-color: rgba(0,0,0,.5);
-            //    float: left;
-            //    border-radius: 50%;
-            //    cursor: pointer;
-            //    margin: 0 5px;
-            //    &.current{
-            //      background-color: rgba(0,0,0,.2);
-            //    }
-            //  }
-            //
-            //}
           }
           &.same-life-banner02{
             width: 175px;
@@ -191,43 +171,6 @@
           }
         }
       }
-      //.household-button{
-      //  .arrow-l{
-      //    display: block;
-      //    width: 20px;
-      //    height: 20px;
-      //    background: rgba(255, 255,255,255);
-      //    border:{
-      //      width: 0 0 2px 2px;
-      //      style: solid;
-      //      color:#555;
-      //    }
-      //    transform:rotateZ(45deg);
-      //    position: absolute;
-      //    left: 20px;
-      //    top: 50%;
-      //    margin-top: -20px;
-      //    cursor: pointer;
-      //  }
-      //
-      //  .arrow-r{
-      //    display: block;
-      //    width: 20px;
-      //    height: 20px;
-      //    background: rgba(255, 255,255,255);
-      //    border:{
-      //      width: 0 0 2px 2px;
-      //      style: solid;
-      //      color:#555;
-      //    }
-      //    transform:rotateZ(-135deg);
-      //    position: absolute;
-      //    right: 20px;
-      //    top: 50%;
-      //    margin-top: -20px;
-      //    cursor: pointer;
-      //  }
-      //}
       .swiper-container{
         width: 891px;
         height: 184px;
@@ -280,35 +223,9 @@
             }
 
           }
-          .swiper-button-next, .swiper-button-prev{
-            height: 28px;
+          .swiper-button-next.swiper-button-black, .swiper-container-rtl .swiper-button-prev.swiper-button-black{
+            height: 28px !important;
             margin-top: -14px;
-          }
-
-
-
-          .household-auto-circle{
-            position: absolute;
-            left: 50%;
-            bottom: 10px;
-            width: 90px;
-            margin-left: -15px;
-            span{
-              width: 10px;
-              height: 10px;
-              background-color: rgba(0,0,0,.5);
-              display: inline-block;
-              border-radius: 50%;
-              cursor: pointer;
-              margin-right: 5px;
-              &.same-current02{
-                background-color: rgba(0,0,0,.2);
-              }
-              &.same-current03{
-                background-color: rgba(0,0,0,.1);
-              }
-            }
-
           }
         }
 

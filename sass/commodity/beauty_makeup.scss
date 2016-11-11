@@ -208,41 +208,41 @@
     border-bottom:1px solid #ededed;
     position: relative;
     padding-top: 20px;
-
-    .arrow-left{
-      display: block;
-      width: 15px;
-      height: 15px;
-      background: rgba(255, 255,255,255);
-      border:{
-        width: 0 0 2px 2px;
-        style: solid;
-        color:#dddddd;
-      }
-      transform:rotateZ(45deg);
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      margin-top: -5px;
-      cursor: pointer;
-    }
-    .arrow-right{
-      display: block;
-      width: 15px;
-      height: 15px;
-      background: rgba(255, 255,255,255);
-      border:{
-        width: 0 0 2px 2px;
-        style: solid;
-        color:#dddddd;
-      }
-      transform:rotateZ(-135deg);
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      margin-top: -5px;
-      cursor: pointer;
-    }
+    cursor: pointer;
+    //.arrow-left{
+    //  display: block;
+    //  width: 15px;
+    //  height: 15px;
+    //  background: rgba(255, 255,255,255);
+    //  border:{
+    //    width: 0 0 2px 2px;
+    //    style: solid;
+    //    color:#dddddd;
+    //  }
+    //  transform:rotateZ(45deg);
+    //  position: absolute;
+    //  left: 10px;
+    //  top: 50%;
+    //  margin-top: -5px;
+    //  cursor: pointer;
+    //}
+    //.arrow-right{
+    //  display: block;
+    //  width: 15px;
+    //  height: 15px;
+    //  background: rgba(255, 255,255,255);
+    //  border:{
+    //    width: 0 0 2px 2px;
+    //    style: solid;
+    //    color:#dddddd;
+    //  }
+    //  transform:rotateZ(-135deg);
+    //  position: absolute;
+    //  right: 10px;
+    //  top: 50%;
+    //  margin-top: -5px;
+    //  cursor: pointer;
+    //}
     .luxury-product-pd{
       padding-left: 20px;
       width: 254px;
@@ -251,6 +251,7 @@
       width: 274px;
       .luxury-product-text{
         padding-left: 20px;
+        cursor: pointer;
       }
     }
     .luxury-product-introduction{

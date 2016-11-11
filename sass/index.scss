@@ -397,13 +397,9 @@
 }
 /*热销推荐部分结束*/
 
-
 /*家用电器部分样式开始*/
 .house-electrical{
-  width: 100%;
-  height:430px;
-  overflow: hidden;
-  display: inline-block;
+  @include index-title;
   margin-top: 20px;
   @at-root .cleafix:after{
       content:".";
@@ -614,13 +610,9 @@
     }
 }
 
-
 /*礼品箱包部分样式开始*/
 .gift-bags{
-  width: 100%;
-  height:430px;
-  overflow: hidden;
-  display: inline-block;
+  @include index-title;
   @at-root .cleafix:after{
       content:".";
       height:0;
@@ -901,10 +893,7 @@
 
 /*个人美妆部分样式开始*/
 .beauty-personal{
-  width: 100%;
-  height:430px;
-  overflow: hidden;
-  display: inline-block;
+  @include index-title;
   margin-top: 20px;
   .beauty-content{
     height: $height;
@@ -1111,11 +1100,7 @@
 
 /*手机通讯部分样式开始*/
 .mobile-report{
-  width: 100%;
-  height:430px;
-  overflow: hidden;
-  display: inline-block;
-
+  @include index-title;
   .mobile-content{
     height: $height;
     float: left;
@@ -1289,10 +1274,7 @@
 
 /*百货食品部分样式开始*/
 .store-food{
-  width: 100%;
-  height:430px;
-  overflow: hidden;
-  display: inline-block;
+  @include index-title;
   margin: {
     top:30px;
   }
@@ -1507,10 +1489,7 @@
 
 /*运动健身部分样式开始*/
 .sport-fitness{
-  width: 100%;
-  height:430px;
-  overflow: hidden;
-  display: inline-block;
+  @include index-title;
   margin: {
     top:60px;
   }
@@ -1725,28 +1704,4 @@
   }
 }
 /*运动健身部分样式结束*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
