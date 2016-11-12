@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>用户界面</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/orders/logistics.css">
-    <link rel="stylesheet" href="/css/orders/orders.css">
+    <link rel="stylesheet" href="/css/orders/header.css">
     <link rel="stylesheet" href="/css/orders/my.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
+    <script src="/js/orders/orders.js"></script>
 </head>
 <body>
 <header>
@@ -78,8 +79,8 @@
             </div>
             <div class="shopping-cart">
                 <a class="my-cart">
-                    <svg role="img" class="shopping">
-                        <use xlink:href="#shopping"></use>
+                    <svg role="img" class="shop_cart">
+                        <use xlink:href="#shop_cart"></use>
                     </svg>
                     我的购物车 &gt;
                 </a>
@@ -126,24 +127,422 @@
     <!--右边内容-->
     <div class="member-main clearfix">
            <div class="member-header">
-               <div class="me-he-fir">
-                  <span><img src="/images/orders/user.png"/></span>
-                  <span><img src="/images/orders/gold-member.png"/></span>
-                  <span>金牌会员</span>
-                   <div class="me-fir-bot">
-                       <a href="javascript:void(0)" class="portrait"></a>
-                       <p>
-                           <em>张三</em>
-                           <a href="javascript:void(0)">账户安全:</a>
-                           <span>
-                               <i></i>
-                               <i></i>
-                           </span>
-                       </p>
+               <div class="me-fir">
+                   <p class="me-he-local">
+                       <span><img src="/images/orders/user.png"/></span>
+                       <span><img src="/images/orders/gold-member.png"/></span>
+                       <span>金牌会员</span>
+                   </p>
+
+                   <div class="u-pic">
+                       <img src="/images/orders/portrait.png"/>
                    </div>
+                   <div class="u-text">
+                       <p>张三</p>
+                       <a href="javascript:void(0)">账户安全:</a>
+                       <span>
+                       <i></i>
+                       <i></i>
+                      </span>
+                 </div>
                </div>
-           </div>
+               <div class="me-sec">
+                   <ul>
+                       <li>
+                           <a href="javascript:void(0)">
+                               <i class="count-icon01"></i>
+                               待付款
+                           </a>
+                       </li>
+                       <li>
+                           <a href="javascript:void(0)">
+                               <i class="count-icon02"></i>
+                               待发货
+                           </a>
+                       </li>
+                       <li>
+                           <a href="javascript:void(0)">
+                               <i class="count-icon03"></i>
+                               待收货
+                           </a>
+                       </li>
+                       <li>
+                           <a href="javascript:void(0)">
+                               <i class="count-icon04"></i>
+                               待评价
+                           </a>
+                       </li>
+                       <li>
+                           <a href="javascript:void(0)">
+                               <i class="count-icon05"></i>
+                               退货
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="me-thr">
+                    <i>1</i>
+                    <a href="javascript:void(0)">消息</a>
+               </div>
+          </div>
+         <div class="ord-list">
+              <div class="ord-head">
+                  <h3>我的订单</h3>
+                  <a href="javascript:void(0)">查看全部订单</a>
+              </div>
+              <ul>
+                  <li class="ord-pic">
+                      <a href="javascript:void(0)">
+                          <img src="/images/orders/order-images.jpg"/>
+                      </a>
+                  </li>
+                  <li class="ord-port">
+                       运输中
+                  </li>
+                  <li class="ord-paid">
+                      <P>¥4.50</P>
+                      <P>已付</P>
+                  </li>
+                  <li class="ord-date">
+                      <P>2016-10-28</P>
+                      <p>08：45：45</p>
+                  </li>
+                  <li class="ord-log">
+                      <a href="javascript:void(0)">
+                          查看物流
+                      </a>
+                  </li>
+                  <li class="ord-det">
+                      <a href="javascript:void(0)">
+                          查看详情
+                      </a>
+                  </li>
+              </ul>
+             <ul>
+                 <li class="ord-pic">
+                     <a href="javascript:void(0)">
+                         <img src="/images/orders/order-images.jpg"/>
+                     </a>
+                 </li>
+                 <li class="ord-port">
+                     运输中
+                 </li>
+                 <li class="ord-paid">
+                     <P>¥4.50</P>
+                     <P>已付</P>
+                 </li>
+                 <li class="ord-date">
+                     <P>2016-10-28</P>
+                     <p>08：45：45</p>
+                 </li>
+                 <li class="ord-log">
+                     <a href="javascript:void(0)">
+                         查看物流
+                     </a>
+                 </li>
+                 <li class="ord-det">
+                     <a href="javascript:void(0)">
+                         查看详情
+                     </a>
+                 </li>
+             </ul>
+         </div>
+   </div>
+    <!--猜你喜欢-->
+    <div class="order-recommend ">
+        <div class="recom-title">
+            <p>猜你喜欢</p>
+            <a href="javascript:void(0)">更多 &gt;</a>
+        </div>
+        <div class="recom-con ">
+            <ul class="recom-list show">
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img11.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+            </ul>
+            <ul class="recom-list">
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img10.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+            </ul>
+            <ul class="recom-list">
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img12.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+            </ul>
+            <ul class="recom-list">
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="/images/index/img13.jpg">
+                    <p><a href="javascript:void(0)">Apple Ipone 7Apple Ipone 7Apple Ipone 7Apple Ipone </a></p>
+                    <p>
+                        <span class="recom-price">￥2899.00</span>
+                        <span class="recom-appraise">8140评价</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="recom-page">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="active"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"></a>
+                </li>
+            </ul>
+            <button class="next">下一组</button>
+        </div>
     </div>
+    <!--banner-->
+   <div class="ord-banner">
+        <div class="ord-top">
+          <a href="javascript:void(0)">
+           <img src="/images/orders/banner_top.jpg"/>
+          </a>
+        </div>
+       <div class="ord-bot">
+        <a href="javascript:void(0)">
+            <img src="/images/orders/banner_bottom.jpg"/>
+        </a>
+     </div>
+   </div>
 </div>
+
+
+<footer>
+    <!-- service shop start-->
+    <div class="service clearfix">
+        <div class="wrap">
+            <div class="service-top">
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/fly.png" alt=""/></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/earth.png" alt=""/></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/suifei.png" alt=""/></a>
+                <a href="javascript:void(0)" class="service-pic"><img src="/images/head/taobao.png" alt=""/></a>
+            </div>
+        </div>
+    </div>
+    <div class="service-center">
+        <div class="wrap clearfix">
+            <dl class="shop-all">
+                <dt>购物指南</dt>
+                <dd><a href="javascript:void(0)">购物流程</a></dd>
+                <dd><a href="javascript:void(0)">会员介绍</a></dd>
+                <dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
+                <dd><a href="javascript:void(0)">常见问题</a></dd>
+                <dd><a href="javascript:void(0)">大家电</a></dd>
+                <dd><a href="javascript:void(0)">联系客服</a></dd>
+            </dl>
+            <dl class="shop-all">
+                <dt>配送方式</dt>
+                <dd><a href="javascript:void(0)">上门自提</a></dd>
+                <dd><a href="javascript:void(0)">211显示达</a></dd>
+                <dd><a href="javascript:void(0)">配送服务咨询</a></dd>
+                <dd><a href="javascript:void(0)">配送费收取标准</a></dd>
+                <dd><a href="javascript:void(0)">海外配送</a></dd>
+            </dl>
+            <dl class="shop-all">
+                <dt>支付方式</dt>
+                <dd><a href="javascript:void(0)">货到收款</a></dd>
+                <dd><a href="javascript:void(0)">在线支付</a></dd>
+                <dd><a href="javascript:void(0)">分期付款</a></dd>
+                <dd><a href="javascript:void(0)">邮局汇款</a></dd>
+                <dd><a href="javascript:void(0)">公司转账</a></dd>
+
+            </dl>
+            <dl class="shop-all">
+                <dt>售后服务</dt>
+                <dd><a href="javascript:void(0)">售后政策</a></dd>
+                <dd><a href="javascript:void(0)">价格保护</a></dd>
+                <dd><a href="javascript:void(0)">退款说明</a></dd>
+                <dd><a href="javascript:void(0)">返修、退换货</a></dd>
+                <dd><a href="javascript:void(0)">取消订单</a></dd>
+            </dl>
+            <dl>
+                <dt>特色服务</dt>
+                <dd><a href="javascript:void(0)">夺宝岛</a></dd>
+                <dd><a href="javascript:void(0)">DIY装机</a></dd>
+                <dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
+                <dd><a href="javascript:void(0)">常见问题</a></dd>
+                <dd><a href="javascript:void(0)">大家电</a></dd>
+            </dl>
+        </div>
+    </div>
+    <!-- service shop end-->
+
+    <!--under footer start-->
+    <div class="footer">
+        <div class="wrap">
+            <div class="foot-link">
+                <a href="javascript:void(0)">关于我们</a>|
+                <a href="javascript:void(0)">联系我们</a>|
+                <a href="javascript:void(0)">联系客服</a>|
+                <a href="javascript:void(0)">商家入驻</a>|
+                <a href="javascript:void(0)">营销中心</a>|
+                <a href="javascript:void(0)">手机商城</a>|
+                <a href="javascript:void(0)">友情链接</a>|
+                <a href="javascript:void(0)">销售联盟</a>|
+                <a href="javascript:void(0)">ENGLISH SITE</a>|
+                <a href="javascript:void(0)">CONTACT US</a>
+            </div>
+            <div class="auto-cation">
+                <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt=""/></a>
+                <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt=""/></a>
+                <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt=""/></a>
+            </div>
+        </div>
+
+    </div>
+    <!--under footer end-->
+</footer>
+<!--big footer end-->
 </body>
 </html>
