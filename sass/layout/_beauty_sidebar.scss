@@ -106,6 +106,7 @@
             width: 228px;
             margin-top: -1px;
             .beauty-list {
+                position: relative;
                 cursor: pointer;
                 &:hover {
                     background-color: #ff427a;

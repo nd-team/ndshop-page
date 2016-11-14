@@ -107,6 +107,7 @@
             width: 228px;
             margin-top: -1px;
             .sport-list {
+                position: relative;
                 cursor: pointer;
                 &:hover {
                     background-color: #1e8bc4;
@@ -116,7 +117,7 @@
                         color: #28b8db;
                     }
                     &:last-child {
-                        border-bottom: 1px solid #28b8db ;
+                        border-bottom: 1px solid #28b8db;
                     }
                     .sport-menu-list {
 
