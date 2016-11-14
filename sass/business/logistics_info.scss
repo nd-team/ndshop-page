@@ -75,6 +75,7 @@ body{
   bottom:0;
   text-align:center;
   box-shadow: 1px 0 5px #b5b5b5;
+  overflow: hidden;
   ul{
     margin:40px 0;
     li{
@@ -132,7 +133,7 @@ body{
     }
   }
   .info-search{
-    width: 100%;
+    width: 92%;
     margin: 0 70px;
     font:{
       size: 14px;
@@ -145,12 +146,12 @@ body{
       }
     }
     .search-input{
-      width: 22%;
-      height: 28px;
+      width: 15%;
+      height:30px;
       border:1px solid #ddd;
     }
     .search-btn{
-      width: 9%;
+      width: 5%;
       height: 30px;
       display: inline-block;
       background-color: #ff903f;
@@ -161,6 +162,76 @@ body{
       font:{
         size: 14px;
         family: "Microsoft YaHei";
+      }
+      border-radius:10px;
+      box-shadow: 0 -10px 5px #ff7c52 inset;
+    }
+  }
+  .table-div {
+    width: 92%;
+    margin: 30px 70px;
+    height: auto;
+    border: 1px solid #ddd;
+    flex: 1;
+    .table-box {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      color: #444;
+      font-weight: normal;
+      border-collapse: separate;
+      border-spacing: 0;
+      thead {
+        tr {
+          th {
+            height: 40px;
+            background-color: #ededed;
+            border-bottom:1px solid #ddd;
+            border-right:1px solid #ddd;
+            font:{
+              size: 14px;
+              family: sans-serif;
+              weight: normal;
+            }
+            //font-family: sans-serif;
+            &:last-child{
+              border-right:0;
+            }
+          }
+        }
+      }
+
+      tbody{
+        tr{
+          &:last-child{
+            td{
+              border-bottom:0;
+            }
+
+          }
+          td{
+            height: 40px;
+            font:{
+              size: 12px;
+              family: sans-serif;
+            }
+            border-bottom:1px solid #ddd;
+            border-right:1px solid #ddd;
+            &:last-child{
+              border-right: 0;
+            }
+           .table-link{
+             width:187px;
+             display: inline-block;
+             overflow: hidden;
+             white-space: nowrap;
+             text-overflow: ellipsis;
+             color: #c72c2c;
+             text-decoration: underline;
+             font-family: sans-serif;
+            }
+          }
+        }
       }
     }
   }
@@ -175,7 +246,18 @@ body{
       line-height:24px;
       text-align:center;
       color:#d1d1d1;
+      &.home{
+        float: left;
+        width: 45px;
+        margin-right: 5px;
+      }
+      &.last-page{
+        float: left;
+        width: 45px;
+        margin-left: 5px;
+      }
     }
+    
     .last{
       float:left;
 
@@ -188,6 +270,7 @@ body{
         border-color: transparent #d2d1cf transparent transparent;
       }
     }
+    
     .next{
       float:left;
       width:65px;
