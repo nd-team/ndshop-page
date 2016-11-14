@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>物流管理</title>
     <link rel="stylesheet" href="/css/business/logistics.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
     <script src="/js/common.js"></script>
+    <script src="/js/business/business.js"></script>
 </head>
 <body>
     <div id="leftsidebar">
@@ -191,5 +193,235 @@
             <a href="javascript:void(0)" class="next">下一页 <i></i></a>
         </div>
     </div>
+    <div id="modal">
+        <div class="modal-title">
+            <h3>新增运费模板</h3>
+            <a href="javascript:void(0)" class="m-close">
+                <svg role="img" class="delete">
+                    <use xlink:href="#delete"></use>
+                </svg>
+            </a>
+        </div>
+        <form>
+            <dl class="moadl-input">
+                <dt> <label>模板名称：</label></dt>
+                <dd><input type="text" class="moadl-name"></dd>
+            </dl>
+            <dl class="moadl-input">
+                <dt> <label>宝贝地址：</label></dt>
+                <dd>
+                    <select name="" >
+                        <option value="">中国</option>
+                    </select>
+                    <select name="" >
+                        <option value="">广东省</option>
+                    </select>
+                    <select name="" >
+                        <option value="">广州市</option>
+                    </select>
+                    <select name="" >
+                        <option value="">天河区</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl class="moadl-input">
+                <dt> <label>发货时间：</label></dt>
+                <dd>
+                    <select name="" >
+                        <option value="">48小时</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl class="moadl-input">
+                <dt> <label>是否包邮：</label></dt>
+                <dd><input type="radio" name="postage" checked> 自定义邮费 <input type="radio" name="postage" class="ml-20"> 卖家承担邮费</dd>
+            </dl>
+            <dl class="moadl-input">
+                <dt> <label>计价方式：</label></dt>
+                <dd>按件数</dd>
+            </dl>
+            <dl class="moadl-input">
+                <dt> <label>运送方式：</label></dt>
+                <dd class="transport">
+                    <span class="default">除指定地区外，其余地区的运费采用“默认运费”</span>
+                    <p><input type="checkbox" name="transport" checked> 家装物流</p>
+                    <p><input type="checkbox" name="transport"> 快递</p>
+                    <table cellspacing="0">
+                        <thead>
+                            <tr>
+                                <td colspan="6">
+                                    默认运费：<input type="number" value="1">件内，
+                                    <input type="number" value="8.00"> 元，每增加
+                                    <input type="number" value="3"> 件，增加运费
+                                    <input type="number" value="2"> 元
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>运送到</td>
+                                <td>首件（件）</td>
+                                <td>首费（元）</td>
+                                <td>续件（件）</td>
+                                <td>续费（元）</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td class="edit">
+                                    <span>广东</span>
+                                    <a href="javascript:void(0)" >编辑</a>
+                                </td>
+                                <td>
+                                    <input type="text" value="1">
+                                </td>
+                                <td>
+                                    <input type="text" value="8.00">
+                                </td>
+                                <td>
+                                    <input type="text" value="3">
+                                </td>
+                                <td>
+                                    <input type="text" value="2.00">
+                                </td>
+                                <td class="del">
+                                    <a href="javascript:void(0)" >删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit">
+                                    <span>天津、山东、山西、云南、安徽、重庆、海南、湖南、四川</span>
+                                    <a href="javascript:void(0)" >编辑</a>
+                                </td>
+                                <td>
+                                    <input type="text" value="1">
+                                </td>
+                                <td>
+                                    <input type="text" value="8.00">
+                                </td>
+                                <td>
+                                    <input type="text" value="3">
+                                </td>
+                                <td>
+                                    <input type="text" value="2.00">
+                                </td>
+                                <td class="del">
+                                    <a href="javascript:void(0)" >删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edit">
+                                    <span>天津、山东、山西、云南、安徽、重庆、海南、湖南、四川</span>
+                                    <a href="javascript:void(0)" >编辑</a>
+                                </td>
+                                <td>
+                                    <input type="text" value="1">
+                                </td>
+                                <td>
+                                    <input type="text" value="8.00">
+                                </td>
+                                <td>
+                                    <input type="text" value="3">
+                                </td>
+                                <td>
+                                    <input type="text" value="2.00">
+                                </td>
+                                <td class="del">
+                                    <a href="javascript:void(0)" >删除</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <input type="checkbox">
+                                    <a href="javascript:void(0)">批量删除</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="checkbox"> 平邮
+                </dd>
+            </dl>
+        </form>
+        <button class="save">保存运费模板</button>
+        <div id="submodal">
+            <div class="submodal-title">
+                <strong>选择区域</strong>
+                <a href="javascript:void(0)" class="subclose">
+                    <svg role="img" class="delete">
+                        <use xlink:href="#delete"></use>
+                    </svg>
+                </a>
+            </div>
+            <ul class="submodal-con">
+                <li>
+                    <input type="checkbox"><label><strong>华东</strong></label>
+                    <input type="checkbox"><label>上海</label>
+                    <input type="checkbox"><label>江苏</label>
+                    <input type="checkbox"><label>浙江</label>
+                    <input type="checkbox"><label>安徽</label>
+                    <input type="checkbox"><label>江西</label>
+                </li>
+                <li>
+                    <input type="checkbox"><label><strong>华北</strong></label>
+                    <input type="checkbox"><label>北京</label>
+                    <input type="checkbox"><label>天津</label>
+                    <input type="checkbox"><label>山西</label>
+                    <input type="checkbox"><label>山东</label>
+                    <input type="checkbox"><label>河北</label>
+                    <input type="checkbox"><label>内蒙古</label>
+                </li>
+                <li>
+                    <input type="checkbox"><label><strong>华中</strong></label>
+                    <input type="checkbox"><label>湖南</label>
+                    <input type="checkbox"><label>湖北</label>
+                    <input type="checkbox"><label>河南</label>
+                </li>
+                <li>
+                    <input type="checkbox"><label><strong>华南</strong></label>
+                    <input type="checkbox"><label>广东</label>
+                    <input type="checkbox"><label>广西</label>
+                    <input type="checkbox"><label>福建</label>
+                    <input type="checkbox"><label>海南</label>
+                </li>
+                <li>
+                    <input type="checkbox"><label><strong>东北</strong></label>
+                    <input type="checkbox"><label>辽宁</label>
+                    <input type="checkbox"><label>吉林</label>
+                    <input type="checkbox"><label>黑龙江</label>
+                </li>
+                <li>
+                    <input type="checkbox"><label><strong>西北</strong></label>
+                    <input type="checkbox"><label>陕西</label>
+                    <input type="checkbox"><label>新疆</label>
+                    <input type="checkbox"><label>甘肃</label>
+                    <input type="checkbox"><label>宁夏</label>
+                    <input type="checkbox"><label>青海</label>
+                </li>
+                <li>
+                    <input type="checkbox"><label><strong>西南</strong></label>
+                    <input type="checkbox"><label>重庆</label>
+                    <input type="checkbox"><label>云南</label>
+                    <input type="checkbox"><label>贵州</label>
+                    <input type="checkbox"><label>西藏</label>
+                    <input type="checkbox"><label>四川</label>
+                </li>
+                <li>
+                    <input type="checkbox"><label><strong>港澳台</strong></label>
+                    <input type="checkbox"><label>香港</label>
+                    <input type="checkbox"><label>澳门</label>
+                    <input type="checkbox"><label>台湾</label>
+                </li>
+                <li>
+                    <input type="checkbox"><label><strong>海外</strong></label>
+                    <input type="checkbox"><label>海外</label>
+                </li>
+            </ul>
+            <div class="button">
+                <a href="javascript:void(0)">确定</a>
+                <a href="javascript:void(0)" class="subclose">取消</a>
+            </div>
+        </div>
+        <div id="submodalbg"></div>
+    </div>
+    <div id="modalbg"></div>
 </body>
 </html>
