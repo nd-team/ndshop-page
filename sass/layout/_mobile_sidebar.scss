@@ -107,6 +107,7 @@
             width: 228px;
             margin-top: -1px;
             .mobile-list {
+                position: relative;
                 cursor: pointer;
                 &:hover {
                     background-color: #208468;
@@ -120,7 +121,7 @@
                     }
                     .mobile-menu-list {
 
-                        border-bottom:0;
+                        border:0 !important;
                         .nav-icon {
                             background-color: #fff;
                         }

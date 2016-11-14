@@ -109,6 +109,7 @@
             width: 228px;
             margin-top: -1px;
             .clothing-list {
+                position: relative;
                 cursor: pointer;
                 &:hover {
                     background-color: #ff8f19;
