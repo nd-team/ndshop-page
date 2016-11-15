@@ -67,9 +67,40 @@ body{
     }
   }
 }
+
 #content{
   margin:60px 0 0 150px;
   flex:1;
+  .announcement{
+    width:90%;
+    height:60px;
+    background:#ff4445;
+    position:fixed;
+    top:0;
+    svg{
+      fill:#fff;
+      float:left;
+      margin:20px 15px;
+    }
+    .text{
+      float:left;
+      color:#fff;
+      margin:10px 5px;
+      line-height:20px;
+    }
+    a{
+      display:inline-block;
+      width:118px;
+      height:36px;
+      line-height:36px;
+      text-align:center;
+      background:#fff;
+      color:#ff0e0e;
+      border-radius:3px;
+      font-size:14px;
+      margin:10px;
+    }
+  }
   .header{
     .header-info{
       color:#252525;
@@ -347,6 +378,9 @@ body{
               svg{
                 height:16px;
                 vertical-align:-2px;
+              }
+              .data_up{
+                fill:#f00;
               }
               .data_down{
                 fill:#5fb876;
