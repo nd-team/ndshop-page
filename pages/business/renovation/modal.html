@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/business/renovation/modal.css">
+    <link rel="stylesheet" href="/modules/dist/css/wangEditor.min.css">
+    <script src="/js/common.js"></script>
+</head>
+<body>
+<div id="modal">
+    <div class="m-con m-nav">
+        <h2 class="m-con-title">导航</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)">设置</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-nav-main">
+            <ul class="m-nav-list">
+                <li>首页</li>
+                <li>
+                    <a href="javascript:void(0)">链接</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_up">
+                            <use xlink:href="#data_up"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_down">
+                            <use xlink:href="#data_down"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="del">
+                    <a href="javascript:void(0)">删除</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+        <div class="msg-add">
+            <p class="msg">
+                导航区域可放置店铺重要的信息，最多添加8项
+            </p>
+            <a href="javascript:void(0)" class="add">
+                <svg role="img" class="data_up">
+                    <use xlink:href="#data_up"></use>
+                </svg>
+                添加
+            </a>
+        </div>
+        <div class="add-module">
+            <h3>添加</h3>
+            <div class="add-m-main">
+                <div class="add-list">
+                    <form >
+                        <div class="add-list-input" >
+                            <label>名称：</label> <input type="text" value="双十一活动">
+                        </div>
+                        <div class="add-list-input">
+                            <label>链接：</label> <input type="text" value="www.taobao.com">
+                        </div>
+                    </form>
+                    <div class="add-m-msg">
+                        <p>导航区域可放置店铺重要信息，最多添加8项</p>
+                        <p>
+                            <svg role="img" class="data_down">
+                                <use xlink:href="#data_down"></use>
+                            </svg>有效连接
+                        </p>
+                    </div>
+                </div>
+                <div class="continue">
+                    <button>继续添加</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+
+    <div class="m-con m-sign">
+        <h2 class="m-con-title">店内招牌</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)">默认招牌</a></li>
+                <li><a href="javascript:void(0)">自定义招牌</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-sign-main">
+            <div class="m-sign-input default">
+                <dl>
+                    <dt>店铺名称：</dt>
+                    <dd>
+                        <p>
+                            <span>良品铺子小吃店</span>
+                            <a href="javascript:void(0)">修改</a>
+                        </p>
+                        <p>
+                            <span>是否显示店铺名称：</span> <input type="checkbox">
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>背景图：</dt>
+                    <dd>
+                        <input type="file">
+                        <a href="javascript:void(0)" class="default-img">使用默认图片</a>
+                        <p><img src="/images/business/renovation/pic.jpg" alt=""></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>高度：</dt>
+                    <dd>
+                        <input type="number" value="120">PX
+                        <span class="msg">宽度为950px，导航建议不超过120px，否则导航可能会异常哦！</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="m-sign-input customize">
+                <dl>
+                    <dt>自定义内容：</dt>
+                    <dd>
+                        <textarea id="textarea1">
+                            <p>请输入内容...</p>
+                        </textarea>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>高度：</dt>
+                    <dd>
+                        <input type="number" value="120">PX
+                        <span class="msg">宽度为950px，导航建议不超过120px，否则导航可能会异常哦！</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+    <div class="m-con m-rotation">
+        <h2 class="m-con-title">店内招牌</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)">设置</a></li>
+                <li><a href="javascript:void(0)">效果设置</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-rota-main">
+            <ul class="rote-title">
+                <li>图片地址：</li>
+                <li>链接地址：</li>
+                <li>操作：</li>
+            </ul>
+            <ul class="rote-list">
+            <li>
+                <input type="text">
+                <label for="rote-img01">
+                    <svg role="img" class="picture">
+                        <use xlink:href="#picture"></use>
+                    </svg>
+                </label>
+                <input type="file" id="rote-img01">
+            </li>
+            <li>
+                <input type="text">
+            </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_up">
+                            <use xlink:href="#data_up"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_down">
+                            <use xlink:href="#data_down"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </a>
+
+                </li>
+        </ul>
+            <ul class="rote-list">
+                <li>
+                    <input type="text">
+                    <label for="rote-img01">
+                        <svg role="img" class="picture">
+                            <use xlink:href="#picture"></use>
+                        </svg>
+                    </label>
+                    <input type="file" >
+                </li>
+                <li>
+                    <input type="text">
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_up">
+                            <use xlink:href="#data_up"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_down">
+                            <use xlink:href="#data_down"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </a>
+
+                </li>
+            </ul>
+            <ul class="rote-list">
+                <li>
+                    <input type="text">
+                    <label for="rote-img01">
+                        <svg role="img" class="picture">
+                            <use xlink:href="#picture"></use>
+                        </svg>
+                    </label>
+                    <input type="file" >
+                </li>
+                <li>
+                    <input type="text">
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_up">
+                            <use xlink:href="#data_up"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_down">
+                            <use xlink:href="#data_down"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </a>
+
+                </li>
+            </ul>
+            <ul class="rote-list">
+                <li>
+                    <input type="text">
+                    <label for="rote-img01">
+                        <svg role="img" class="picture">
+                            <use xlink:href="#picture"></use>
+                        </svg>
+                    </label>
+                    <input type="file">
+                </li>
+                <li>
+                    <input type="text">
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_up">
+                            <use xlink:href="#data_up"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_down">
+                            <use xlink:href="#data_down"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <a href="javascript:void(0)" class="add">
+            <svg role="img" class="data_up">
+                <use xlink:href="#data_up"></use>
+            </svg>
+            添加
+        </a>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+</div>
+<div id="modalbg"></div>
+</body>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/modules/dist/js/wangEditor.min.js"></script>
+<script type="text/javascript">
+    var editor = new wangEditor('textarea1');
+    editor.create();
+</script>
+</html>
