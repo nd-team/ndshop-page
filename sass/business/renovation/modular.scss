@@ -1,0 +1,265 @@
+*{
+  margin:0;
+  padding:0;
+  font-size:12px;
+  font-family:"Microsoft Yahei";
+}
+ul li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+img{
+  border:none;
+  width: 100%;
+}
+.clearfix{
+   clear: both;
+}
+body{
+  display:flex;
+}
+
+#leftsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  background:#444;
+  .title-pic{
+    text-align:center;
+    .sidebar-title{
+      height:25px;
+      background:url("/images/business/title.png");
+      width:127px;
+      line-height:25px;
+      margin:10px 0 7px;
+      color:#444;
+      font-size:14px;
+      font-weight:bold;
+    }
+    img{
+      width:87px;
+      height:87px;
+      border-radius:50%;
+    }
+  }
+  .nav{
+    text-align:center;
+    margin:15px 0;
+    li{
+      height:40px;
+      a{
+        color:#fff;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font-size:14px;
+        &.active{
+          color:#33b5ff;
+          background:#fff;
+        }
+      }
+    }
+  }
+}
+.subsidebar{
+  width:199px;
+  position:fixed;
+  top:50px;
+  left:120px;
+  bottom:0;
+  text-align:center;
+  border: 1px solid #e4e4e4;
+  p{
+    color: #b5b5b5;
+    margin: 30px 0 10px 0;
+   svg{
+     width: 14px;
+     height: 14px;
+     fill: #8394d7;
+     vertical-align:middle
+   }
+  }
+  ul{
+      li{
+        width:178px;
+        height:76px;
+        line-height: 76px;
+        margin: 10px;
+        border:1px solid #dee1e7;
+        background:#eaeef4;
+        //float:left;
+        text-align:center;
+        cursor:move;
+        //position:relative;
+        svg{
+          vertical-align:middle;
+          fill: #8e949f;
+           &.recommend{
+              width: 22px;
+              height: 23px;
+           }
+          &.ranking{
+             width: 30px;
+             height: 24px;
+          }
+          &.category{
+             width: 26px;
+             height: 22px;
+          }
+          &.banner{
+             width: 30px;
+             height: 21px;
+          }
+          &.rank{
+             width: 25px;
+             height: 25px;
+          }
+          &.search{
+            @extend .rank;
+          }
+          &.shop-signs{
+            width: 27px;
+            height: 24px;
+          }
+        }
+        span{
+          font:{
+             size: 14px;
+          }
+          color: #333;
+          vertical-align:middle;
+          margin-left: 17px;
+        }
+      }
+  }
+}
+#content{
+  margin-left:320px;
+  flex:1;
+  .menu{
+    height:50px;
+    line-height:48px;
+    font-family:'simsun';
+    float: left;
+     text-align:center;
+     display:table-cell;
+     vertical-align:middle;
+     ul{
+       li{
+          width: 43px;
+          text-align: center;
+          float: left;
+          margin-right: 60px;
+         &.current{
+           border-bottom: 2px solid #31b8f7;
+         }
+          a{
+             font:{
+                size: 16px;
+             }
+            color: #666;
+          }
+       }
+    }
+  }
+  .release{
+     float: right;
+     margin: 10px 135px 0 0;
+     span{
+        display: inline-block;
+        width: 118px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+        margin-right: 15px;
+        cursor: pointer;
+       font:{
+          size: 14px;
+       }
+        &:nth-of-type(1){
+            background:#33b6ff;
+          }
+       &:nth-of-type(2){
+         background:#fe5c58;
+       }
+     }
+  }
+  //具体内容
+  .cont-specific{
+    height: auto;
+    position: fixed;
+    background-color: #f2f2f2;
+    padding: 0 0 0 20px;
+    margin-top: 50px;
+    border-top: 1px solid #e4e4e4;
+    h3{
+      background-color: #92020e;
+      color: white;
+      padding-left: 12px;
+      span{
+        height: 28px;
+        line-height: 28px;
+      }
+    }
+    .layout{
+       nav{
+        height: 32px;
+        line-height: 32px;
+        background-color: #92020e;
+        margin-top: -3px;
+        padding-left: 191px;
+         ul{
+            li{
+              float: left;
+              margin-right: 40px;
+              a{
+                color: #d8b29a;
+                img{
+                   width: 100%;
+                }
+              }
+            }
+         }
+      }
+    }
+    .banner{
+       height: 300px;
+       h3{
+         margin-top: 20px;
+       }
+    }
+
+      width: 100%;
+      .left-slide{
+         float: left;
+         width: 186px;
+         margin-top: 20px;
+        .left-fir{
+          input{
+            height: 34px;
+            border: 1px solid #e4e4e4;
+          }
+          button{
+            width: 35px;
+            background-color: #92020e;
+            svg{
+               width: 13px;
+               height: 13px;
+               vertical-align:middle;
+               fill: white;
+            }
+          }
+        }
+
+    }
+  }
+
+}
