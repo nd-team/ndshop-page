@@ -1,4 +1,4 @@
-html,body,div,p,span,i,ul,ol,li,table,input,img,a,figure,nav,header,footer,thead,tbody,tr,th,td,button{
+html,body,div,p,span,i,ul,ol,li,table,input,img,a,figure,nav,header,footer,thead,tbody,tr,th,td,button,textarea{
   margin:0;
   padding:0;
   font-size:12px;
@@ -12,6 +12,14 @@ a{
 }
 input,img,button{
   border:none;
+}
+textarea{
+  resize: none;
+  padding: {
+    top: 5px;
+    left: 10px;
+  }
+  color: #666;
 }
 svg{
   width: 18px;
@@ -214,6 +222,7 @@ body{
       position: absolute;
       right: 0;
       top: 20%;
+      display: none;
       .triangle{
         width: 0;
         height: 0;
@@ -228,7 +237,7 @@ body{
         width: 738px;
         height: 525px;
         background-color: #fff;
-        box-shadow:0 0 8px rgba(0,0,0,.3);
+        box-shadow:0 0 20px rgba(0,0,0,.2);
         padding-top: 20px;
         .add-text{
           color: #444;
@@ -248,19 +257,24 @@ body{
                 color: #f00;
               }
             }
+            input{
+              color: #666;
+              padding-left: 10px;
+            }
             .input-add{
-              width: 15%;
+              width: 30%;
               height: 20px;
               border: 1px solid #ddd;
             }
             .input-street{
-              width: 36%;
+              width: 80%;
               height: 40px;
               border: 1px solid #ddd;
               vertical-align: top;
+
             }
             .input-remark{
-              width: 36%;
+              width: 80%;
               height: 50px;
               border: 1px solid #ddd;
               vertical-align: top;
