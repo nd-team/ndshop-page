@@ -119,6 +119,7 @@ img{
       }
     }
     .add-module{
+      display:none;
       width:94%;
       margin:20px auto;
       clear:both;
@@ -302,7 +303,7 @@ img{
 
     //轮播图
     &.m-rotation{
-      //display:none;
+      display:none;
       .m-rota-main{
         .rote-setting{
           ul{
@@ -525,12 +526,122 @@ img{
                 color:#e43c3b;
               }
             }
+          ul{
+            li{
+              float:left;
+              text-align:center;
+              margin:10px;
+              height:160px;
+              a{
+                border:1px solid #d6d6d6;
+                padding:5px;
+                display:block;
+                width:190px;
+                height:120px;
+                &.active{
+                  border:5px solid #ff5b5a;
+                  height:116px;
+                  background:url("/images/business/select.png") no-repeat right bottom;
+                }
+                p{
+                  position:relative;
+                  z-index:-1;
+                  svg{
+                    fill:#D4D4D4;
+                    vertical-align:middle;
+                  }
 
+                }
+              }
+              &.col3{
+                svg{
+                  width:60px;
+                  height:60px;
+                }
+              }
+              &.col4{
+                p{
+                  &:first-child{
+                    margin-top:15px;
+                  }
+                }
+                svg{
+                  width:44px;
+                  height:44px;
+                }
+              }
+              &.col5{
+                p{
+                  &:first-child{
+                    margin-top:25px;
+                  }
+                }
+                svg{
+                  width:35px;
+                  height:35px;
+                }
+              }
+              &.col6{
+                p{
+                  &:first-child{
+                    margin-top:30px;
+                  }
+                }
+                svg{
+                  width:28px;
+                  height:28px;
+                }
+              }
+            }
+          }
+          input[type="checkbox"]{
+            margin:0 15px 0 20px ;
+            &:first-child{
+              margin-left:0;
+            }
+          }
+            .msg{
+              background:#f5f5f5;
+              padding:10px 20px;
+              color:#afafaf;
+            }
           }
         }
       }
-      &.pro-recom,&.pro-search{
+      .recom-setting{
         display:none;
+      }
+      &.pro-ranking,&.pro-search{
+        display:none;
+      }
+    }
+    &.m-customize{
+      .m-customize-main{
+        dl{
+          overflow:hidden;
+          margin:20px 0;
+          line-height:26px;
+          dt{
+            float:left;
+            width:85px;
+            text-align:right;
+          }
+          dd{
+            float:left;
+            margin:0 10px;
+            input[type="radio"]{
+              margin:0 10px 0 30px;
+              vertical-align:-2px;
+              &:first-child{
+                margin-left:0;
+              }
+            }
+            input[type="text"]{
+              height:22px;
+              width:150px;
+            }
+          }
+        }
       }
     }
   }
