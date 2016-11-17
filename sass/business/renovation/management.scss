@@ -1,0 +1,376 @@
+*{
+  margin:0;
+  padding:0;
+  font-size:12px;
+  font-family:"Microsoft Yahei";
+}
+ul li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+img{
+  border:none;
+}
+.clearfix{
+  clear: both;
+}
+body{
+  display:flex;
+}
+#leftsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  background:#444;
+  .title-pic{
+    text-align:center;
+    .sidebar-title{
+      height:25px;
+      background:url("/images/business/title.png");
+      width:127px;
+      line-height:25px;
+      margin:10px 0 7px;
+      color:#444;
+      font-size:14px;
+      font-weight:bold;
+    }
+    img{
+      width:87px;
+      height:87px;
+      border-radius:50%;
+    }
+  }
+  .nav{
+    text-align:center;
+    margin:15px 0;
+    li{
+      height:40px;
+      a{
+        color:#fff;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font-size:14px;
+        &.active{
+          color:#33b5ff;
+          background:#fff;
+        }
+      }
+    }
+  }
+}
+.subsidebar{
+  width:120px;
+  position:fixed;
+  top:50px;
+  left:120px;
+  bottom:0;
+  text-align:center;
+   ul{
+    li{
+      width: 120px;
+      height: 60px;
+      line-height: 60px;
+      font:{
+        size: 14px;
+      }
+       &.current{
+         background-color: #33b6ff;
+         a{
+           color: white;
+         }
+      }
+      a{
+        color: #444;
+      }
+      i{
+        width: 5px;
+        height: 5px;
+        margin:0 0 3px 5px;
+        border:{
+          color:#6a6a6a;
+          width: 0 0 2px 2px;
+          style: solid;
+        };
+        transform:rotateZ(-47deg);
+        display: inline-block;
+      }
+    }
+  }
+}
+//内容
+#content{
+  margin-left:241px;
+  flex:1;
+  .menu{
+    width: 100%;
+    height:50px;
+    line-height:48px;
+    font-family:'simsun';
+    float: left;
+    display: flex;
+    justify-content: center;
+    ul{
+      li{
+        width: 43px;
+        text-align: center;
+        float: left;
+        margin-right: 60px;
+        &.current{
+          border-bottom: 2px solid #31b8f7;
+        }
+        a{
+          font:{
+            size: 16px;
+          }
+          color: #666;
+        }
+      }
+    }
+  }
+  .release{
+    float: right;
+    margin: -43px 135px 0 0;
+    span{
+      display: inline-block;
+      width: 118px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      color: white;
+      border-radius: 5px;
+      margin-right: 15px;
+      cursor: pointer;
+      font:{
+        size: 14px;
+      }
+      &:nth-of-type(1){
+        background:#33b6ff;
+      }
+      &:nth-of-type(2){
+        background:#fe5c58;
+      }
+    }
+  }
+  .vl-main{
+     .vl-toolbar{
+        height: 34px;
+        line-height: 34px;
+        background-color: #b0b0b0;
+       .vl-opts{
+         float: right;
+         margin-right: 65px;
+         .help{
+            color: #676767;
+            margin-right: 25px;
+           i{
+             vertical-align: middle;
+             margin-right: 5px;
+             }
+         }
+         .save{
+           width: 88px;
+           height: 25px;
+           line-height: 25px;
+           display: inline-block;
+           text-align: center;
+           color: white;
+           background: linear-gradient(#f1b344, #f4d98f);
+           border: 1px solid rgba(165,165,165,0.25);
+           margin-right: 20px;
+         }
+         .return{
+           color: #2bbaff;
+         }
+       }
+      }
+    .main-cont{
+        input[type='checkbox']{
+        }
+       .vl-check{
+         height: 54px;
+         line-height: 54px;
+         margin-left: 30px;
+         a{
+            color: #333;
+            margin: 0 10px 0 5px;
+         }
+         button{
+           width: 80px;
+           height: 24px;
+           color: #b1b1b1;
+           border: 1px solid #dcdcdc;
+           background-color: white;
+         }
+       }
+        table{
+        text-align: left;
+        width: 100%;
+        border-collapse:collapse;
+        clear: both;
+        .items-tb-hd{
+          background-color: #ededed;
+          border-top: 1px solid #e0e0e0;
+          tr{
+            height: 34px;
+            .shop-name{
+                 padding-left: 5.20%;
+             }
+            .t-price{
+              text-align: left;
+            }
+          }
+        }
+
+          .item-list{
+          .tab-text{
+            width: 244px;
+            height: 28px;
+            line-height: 28px;
+            padding-left: 5px;
+          }
+          .item-info{
+            td {
+              padding: 10px 0;
+              text-align: left;
+              min-height: 45px;
+              border-bottom: 1px solid #ddd;
+              &.title {
+                text-align: left;
+                padding-left: 21px;
+                .title-wrapper {
+                  b {
+                    vertical-align: 15px;
+                   /* display: table-cell;*/
+                    vertical-align: middle;
+                    padding-right: 18px;
+                  }
+                  a{
+                    display:inline-block;
+                    border:{
+                      style: solid;
+                      width: 5px 0 5px 8px;
+                      color: transparent transparent transparent #4f5251;
+                    }
+                    margin-right: 20px;
+                  }
+                }
+              }
+              &.td-move{
+                a{
+                margin-right: 20px;
+                  svg{
+                    width: 15px;
+                    height: 22px;
+                    fill: #d5d5d5;
+                    vertical-align: middle;
+                  }
+                }
+              }
+              &.td-switch{
+
+                 .switch{
+                height: 16px;
+                width: 42px;
+                border-radius: 40px;
+                background-color: #35b5fc;
+                vertical-align: middle;
+                position: relative;
+                .checkbox {
+                  height: 16px;
+                  width: 42px;
+                  position: absolute;
+                  left: 0;
+                  top:-8px;
+                  z-index: 10000;
+                  border-radius: 35px;
+                  background-color: #35b5fc;
+                }
+                .control {
+                  height: 15px;
+                  width: 15px;
+                  outline: 0;
+                  position: absolute;
+                  top: -8px;
+                  left: 2px;
+                  z-index: 10001;
+                  -webkit-appearance: none;
+                  border-radius: 15px;
+                  background-color: #efefef;
+                  *zoom: 1;
+                  transition: all 0.2s ease-in-out;
+                }
+                .control:checked {
+                  left: 25px;
+                }
+              }
+              }
+              &.delete{
+                 color: #4bbbf6;
+              }
+              &.input-box{
+                position: relative;
+              }
+              &.add-sub{
+                background: url(/images/business/renovation/line.png) 88px 10px no-repeat;
+                padding-left: 6.5%;
+                  .add-cat{
+                    display: inline-block;
+                    width: 250px;
+                    height: 28px;
+                    line-height: 28px;
+                    border: 1px solid #d2d2d2;
+                    background: white;
+                    color: #969696;
+                    span{
+                      padding: 0 6px 0 15px;
+                       em{
+                          font-style: normal;
+                          padding-left: 30px;
+                          background: url(/images/business/renovation/sub.png) left no-repeat;
+                       }
+                    }
+                }
+                  .tab-check{
+                    position: absolute;
+                    left: 20px;
+                    top:20px;
+                  }
+                }
+             }
+           }
+        }
+          .already-info{
+             .td-move{
+                a{
+                 &:nth-of-type(1){
+                   margin-left: 40px;
+                  }
+                }
+             }
+          }
+      }
+       .add-category{
+          width: 90px;
+          height: 27px;
+          line-height: 27px;
+          text-align: center;
+          color: white;
+          background-color: #2b2b2b;
+          margin: 11px 65px 0 0;
+          float: right;
+          .add{
+             width: 11px;
+             height: 11px;
+             fill: white;
+          }
+       }
+    }
+  }
+}

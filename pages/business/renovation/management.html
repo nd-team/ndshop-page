@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类管理</title>
+    <link rel="stylesheet" href="/css/business/renovation/management.css">
+    <script src="/js/common.js"></script>
+</head>
+<body>
+<div id="leftsidebar">
+    <figure class="title-pic">
+        <figcaption class="sidebar-title">瑞王府的店</figcaption>
+        <a href="javascript:void(0)"><img src="/images/business/renovation/shop-logo.jpg"/></a>
+    </figure>
+    <ul class="nav">
+        <li>
+            <a href="javascript:void(0)" class="active">店铺</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">订单管理</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">商品管理</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">物流管理</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">公告</a>
+
+        </li>
+    </ul>
+</div>
+<div class="subsidebar">
+    <ul>
+        <li class="current">
+            <a href="javascript:void(0)">
+                分类管理
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                商品管理
+            </a>
+            <i></i>
+        </li>
+    </ul>
+</div>
+<div id="content">
+    <div class="menu">
+        <ul>
+            <li class="current">
+                <a href="javascript:void(0)">模块</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">颜色</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">页头</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">页面</a>
+            </li>
+        </ul>
+    </div>
+    <div class="release">
+        <span>预览</span>
+        <span>确定发布</span>
+    </div>
+    <div class="vl-main clearfix">
+        <div class="vl-toolbar">
+            <div class="vl-opts">
+                <a href="javascript:void(0)" class="help">
+                    <i><img src="/images/business/renovation/help.png"/></i>
+                    <span>使用帮助</span>
+                </a>
+                <a href="javascript:void(0)" class="save">
+                    保存更改
+                </a>
+                <a href="javascript:void(0)" class="return">
+                    返回
+                </a>
+            </div>
+        </div>
+        <div class="main-cont">
+             <p class="vl-check">
+             <input type="checkbox">
+             <a href="javascript:void(0)">
+                 全选
+             </a>
+             <button>批量删除</button>
+             </p>
+            <table>
+                <colgroup>
+                    <col width="38%">
+                    <col width="25%">
+                    <col width="25%">
+                    <col width="auto">
+                </colgroup>
+                <thead class="items-tb-hd">
+                <tr>
+                    <th class="shop-name" scope="col">分类名称</th>
+                    <th class="t-price">移动</th>
+                    <th class="list">自动展开</th>
+                    <th class="edit">操作</th>
+                </tr>
+                </thead>
+                <tbody class="item-list">
+                    <tr class="item-info">
+                    <td class="title">
+                        <p class="title-wrapper">
+                            <b><input type="checkbox"></b>
+                            <a href="javascript:void(0)"></a>
+                            <input type="text" value="裤子" class="tab-text">
+                        </p>
+                    </td>
+                    <td class="td-move">
+                        <a href="javascript:void(0)" class="move-top no-move-top">
+                            <svg role="img" class="move-top">
+                                <use xlink:href="#move-top"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="move-up no-move-up">
+                            <svg role="img" class="move-up">
+                                <use xlink:href="#move-up"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="move-down">
+                            <svg role="img" class="move-down">
+                                <use xlink:href="#move-down"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="move-bottom">
+                            <svg role="img" class="move-bottom">
+                                <use xlink:href="#move-bottom"></use>
+                            </svg>
+                        </a>
+                    </td>
+                    <td class="td-switch">
+                        <span class="switch">
+                                    <input type="checkbox" id="control" class="control">
+                                    <label for="control" class="checkbox"></label>
+                        </span>
+                    </td>
+                    <td class="delete">
+                        <a href="javascript:void(0)">删除</a>
+                    </td>
+                    </tr>
+                    <tr class="item-info already-info">
+                        <td class="add-sub input-box">
+                             <b class="tab-check">
+                             <input type="checkbox">
+                             </b>
+                             <input type="text" value="裤子" class="tab-text">
+                         </td>
+                        <td class="td-move">
+                            <a href="javascript:void(0)" class="move-up no-move-up">
+                                <svg role="img" class="move-up">
+                                    <use xlink:href="#move-up"></use>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="move-down">
+                                <svg role="img" class="move-down">
+                                    <use xlink:href="#move-down"></use>
+                                </svg>
+                            </a>
+                        </td>
+                        <td class="td-switch">
+                        <span class="switch">
+                                    <input type="checkbox" class="control"> <!--id="control"-->
+                                    <label for="control" class="checkbox"></label>
+                        </span>
+                        </td>
+                        <td class="delete">
+                            <a href="javascript:void(0)">删除</a>
+                        </td>
+                    </tr>
+                    <tr class="item-info add-info">
+                        <td class="add-sub">
+                            <a href="javascript:void(0)" class="add-cat">
+                                <span>
+                                    <em>添加子分类</em>
+                                </span>
+                            </a>
+                        </td>
+                        <td class="td-move"></td>
+                        <td class="td-switch"></td>
+                        <td class="delete">
+                            <a href="javascript:void(0)">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="add-category">
+                <svg role="img" class="add">
+                    <use xlink:href="#add"></use>
+                </svg>
+                添加分类
+            </div>
+            <!-- <div class="table-title">
+                    <ul>
+                       <li>
+                           分类名称
+                       </li>
+                        <li>
+                            移动
+                        </li>
+                        <li>
+                            自动展开
+                        </li>
+                        <li>
+                            操作
+                        </li>
+                   </ul>
+             </div>
+            <div class="table-tbody">
+                <ul>
+                    <li>
+                       <ul>
+                           <li>
+                               <input type="checkbox">
+                           </li>
+                           <li class="down-up">
+                               <a href="javascript:void(0)"></a>
+                           </li>
+                           <li class="tab-text">
+                               <input type="text" value="裤子">
+                           </li>
+                           <li class="tab-move">
+                               <a href="javascript:void(0)" class="arrow up arr-up1"></a>
+                               <a href="javascript:void(0)" class="arrow up arr-up"></a>
+                               <a href="javascript:void(0)" class="arrow down arr-down"></a>
+                               <a href="javascript:void(0)" class="arrow down arr-down1"></a>
+                           </li>
+                           <li class="switch">
+                               <input type="checkbox" id="control" class="control">
+                               <label for="control" class="checkbox"></label>
+                           </li>
+                           <li class="del">
+                               <a href="javascript:void(0)">删除</a>
+                           </li>
+                       </ul>
+                    </li>
+                </ul>
+            </div>-->
+        </div>
+    </div>
+</div>
+</body>
+</html>
