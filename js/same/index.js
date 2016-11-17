@@ -25,6 +25,7 @@ $(document).ready(function(){
      $(".popular-tab").myTab({parent:".tab_content",index:0});
      $(".brand-tab").myTab({parent:".tab-brand",index:0});
      $(".hot-tabs").myTab({parent:".tab-banner",index:0});
+     $(".unfilled-orders").myTab({parent:".orders-content",index:0});
 
      /*鼠标经过效果*/
     $(".popular-detail li").hover(function() {
