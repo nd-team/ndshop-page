@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公告-列表</title>
+    <link rel="stylesheet" href="/css/business/announcement.css">
+</head>
+<body>
+    <div id="leftsidebar">
+        <figure class="title-pic">
+            <figcaption class="sidebar-title">瑞王府的店</figcaption>
+            <a href="javascript:void(0)"> <img src="/images/business/head-pic.png"></a>
+        </figure>
+        <ul class="nav">
+            <li>
+                <a href="shop.html">店铺</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">订单管理</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">商品管理</a>
+            </li>
+            <li>
+                <a href="logistics.html">物流管理</a>
+            </li>
+            <li>
+                <a href="announcement.html" class="active">公告</a>
+            </li>
+        </ul>
+    </div>
+    <div class="subsidebar">
+        <ul>
+            <li>
+                <a href="announcement.html" class="active">列表</a>
+            </li>
+            <li>
+                <a href="announcement_news.html">信息</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="search-crumbs">
+            <div class="info-search">
+                <label>关键词:</label>
+                <input type="text" class="search-input" placeholder="请输入关键字">
+                <a href="javascript:void(0)" class="search-btn">搜索</a>
+            </div>
+        </div>
+        <div class="post-box">
+            <div class="post-pic">
+                <a href="javascript:void(0)"><img src="/images/business/banner01.jpg" alt=""></a>
+                <a href="javascript:void(0)"><img src="/images/business/banner02.jpg" alt=""></a>
+            </div>
+            <ul class="post-text">
+                <li>
+                    <p class="red-text">【谨慎阅读】您在申请注册流程汇总点击同意前，应当认真阅读以下协议。请您务必谨慎阅读、充分理解协议中先关条款内容，其中包括开始看好股市两个及输卵管hi个is感受感受感受过寒暑假回公司</p>
+                    <span class="red-time">2016-11-21</span>
+                </li>
+                <li>
+                    <p class="red-text">【谨慎阅读】您在申请注册流程汇总点击同意前，应当认真阅读以下协议。请您务必谨慎阅读、充分理解协议中先关条款内容，其中包括开始看好股市两个及输卵管hi个is感受感受感受过寒暑假回公司</p>
+                    <span class="red-time">2016-11-21</span>
+                </li>
+                <li>
+                    <p class="red-text">【谨慎阅读】您在申请注册流程汇总点击同意前，应当认真阅读以下协议。请您务必谨慎阅读、充分理解协议中先关条款内容，其中包括开始看好股市两个及输卵管hi个is感受感受感受过寒暑假回公司</p>
+                    <span class="red-time">2016-11-21</span>
+                </li>
+                <li>
+                    <p>【谨慎阅读】您在申请注册流程汇总点击同意前，应当认真阅读以下协议。请您务必谨慎阅读、充分理解协议中先关条款内容，其中包括开始看好股市两个及输卵管hi个is感受感受感受过寒暑假回公司</p>
+                    <span>2016-11-21</span>
+                </li>
+                <li>
+                    <p>【谨慎阅读】您在申请注册流程汇总点击同意前，应当认真阅读以下协议。请您务必谨慎阅读、充分理解协议中先关条款内容，其中包括开始看好股市两个及输卵管hi个is感受感受感受过寒暑假回公司</p>
+                    <span>2016-11-21</span>
+                </li>
+                <li>
+                    <p>【谨慎阅读】您在申请注册流程汇总点击同意前，应当认真阅读以下协议。请您务必谨慎阅读、充分理解协议中先关条款内容，其中包括开始看好股市两个及输卵管hi个is感受感受感受过寒暑假回公司</p>
+                    <span>2016-11-21</span>
+                </li>
+                <li>
+                    <p>【谨慎阅读】您在申请注册流程汇总点击同意前，应当认真阅读以下协议。请您务必谨慎阅读、充分理解协议中先关条款内容，其中包括开始看好股市两个及输卵管hi个is感受感受感受过寒暑假回公司</p>
+                    <span>2016-11-21</span>
+                </li>
+                <li>
+                    <p>【谨慎阅读】您在申请注册流程汇总点击同意前，应当认真阅读以下协议。请您务必谨慎阅读、充分理解协议中先关条款内容，其中包括开始看好股市两个及输卵管hi个is感受感受感受过寒暑假回公司</p>
+                    <span>2016-11-21</span>
+                </li>
+            </ul>
+        </div>
+        <div class="page">
+            <a href="javascript:void(0)" class="home">首页</a>
+            <a href="javascript:void(0)" class="last"><i></i></a>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="active">1</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" class="next">下一页 <i></i></a>
+            <a href="javascript:void(0)" class="last-page">尾页</a>
+        </div>
+    </div>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //限制字符个数
+            $("p").each(function(){
+                var maxwidth=60;
+                if($(this).text().length>maxwidth){
+                    $(this).text($(this).text().substring(0,maxwidth));
+                    $(this).html($(this).html()+'...');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

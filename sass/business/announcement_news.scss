@@ -1,0 +1,322 @@
+html,body,div,p,span,i,ul,ol,li,table,input,img,a,figure,nav,header,footer,thead,tbody,tr,th,td{
+  margin:0;
+  padding:0;
+  font-size:12px;
+  font-family:"sans-serif";
+}
+ul li{
+  list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration:none;
+}
+input,img{
+  border:none;
+}
+i{
+  font-style: normal;
+}
+svg{
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+body{
+  display:flex;
+}
+#leftsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  background:#444;
+  .title-pic{
+    text-align:center;
+    .sidebar-title{
+      height:25px;
+      background:url("/images/business/title.png");
+      width:127px;
+      line-height:25px;
+      margin:10px 0 7px;
+      color:#444;
+      font-size:14px;
+      font-weight:bold;
+    }
+    img{
+      width:87px;
+      height:87px;
+      border-radius:50%;
+    }
+  }
+  .nav{
+    text-align:center;
+    margin:15px 0;
+    li{
+      height:40px;
+      a{
+        color:#fff;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font: {
+          size: 14px;
+          family: "Microsoft YaHei";
+        }
+        &.active{
+          color:#33b5ff;
+          background:#fff;
+        }
+      }
+    }
+  }
+}
+.subsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  left:120px;
+  bottom:0;
+  text-align:center;
+  box-shadow: 1px 0 5px #b5b5b5;
+  overflow: hidden;
+  ul{
+    margin:40px 0;
+    li{
+      height:40px;
+      a{
+        color:#333;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font: {
+          size: 14px;
+          family: "Microsoft YaHei";
+        }
+        &.active{
+          color:#fff;
+          background:#33b5ff;
+        }
+      }
+    }
+  }
+}
+#content{
+  margin-left:240px;
+  flex:1;
+  .news-box{
+    margin: 50px 70px;
+    .news-day{
+      width: 100%;
+      height: auto;
+      background-color: #fff;
+      box-shadow:0 0 20px rgba(0,0,0,.2);
+      margin-bottom: 50px;
+      .today-news{
+
+        li{
+          overflow: hidden;
+          &.text-padding{
+            padding-left: 26px;
+            padding-right: 23px;
+          }
+          h3{
+            color: #444;
+            line-height: 40px;
+            font:{
+              size: 16px;
+              family: "Microsoft YaHei";
+            }
+            padding: {
+              left: 10px;
+            }
+            i{
+              width: 5px;
+              height: 20px;
+              display: inline-block;
+              background-color: #35b5ff;
+              vertical-align: middle;
+              margin-right: 8px;
+            }
+          }
+          p{
+            line-height: 24px;
+            &.method{
+              color: #444;
+            }
+            &.plan{
+              color: #999;
+              float: left;
+            }
+          }
+          .time{
+            float: right;
+            color: #999;
+
+          }
+          .item{
+            width: 100px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background-color: #ededed;
+            display: block;
+            border: 1px solid #bfbfbf;
+            margin: 10px 0;
+            color: #444;
+          }
+          .detail{
+            display: none;
+            p{
+              &:first-child{
+                padding-top: 15px;
+              }
+              &:nth-child(2){
+                padding-top:30px;
+              }
+              &:nth-child(5){
+                padding-top:30px;
+              }
+            }
+            .put-away{
+              @extend .item;
+              float: right;
+              margin-top: 20px;
+            }
+          }
+
+        }
+      }
+      .news-list{
+        padding:{
+          left: 26px;
+          right: 28px;
+        }
+        li{
+          height: 50px;
+          line-height: 50px;
+          border-top: 1px solid #ddd;
+          overflow: hidden;
+          p{
+            float: left;
+            a{
+              color: #444;
+            }
+          }
+          span{
+            float: right;
+            color: #999;
+          }
+        }
+      }
+    }
+    .dispute-notice{
+      width: 100%;
+      height: auto;
+      background-color: #ffac76;
+      padding-bottom: 20px;
+      li{
+
+        &.text-padding{
+          padding-left: 26px;
+        }
+        h3{
+          color: #444;
+          line-height: 40px;
+          font:{
+            size: 16px;
+            family: "Microsoft YaHei";
+          }
+          padding: {
+            left: 10px;
+          }
+          i{
+            width: 5px;
+            height: 20px;
+            display: inline-block;
+            background-color: #ff2d2e;
+            vertical-align: middle;
+            margin-right: 8px;
+          }
+        }
+        p{
+          line-height: 24px;
+          a{
+            color: #444;
+          }
+        }
+      }
+    }
+  }
+  .page{
+    float:right;
+    margin-right:65px;
+    a{
+      display:inline-block;
+      width:24px;
+      height:24px;
+      border:1px solid #d1d1d1;
+      line-height:24px;
+      text-align:center;
+      color:#d1d1d1;
+      &.home{
+        float: left;
+        width: 45px;
+        margin-right: 5px;
+      }
+      &.last-page{
+        float: left;
+        width: 45px;
+        margin-left: 5px;
+      }
+    }
+    
+    .last{
+      float:left;
+
+      i{
+        display:inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 10px 5px 0;
+        border-color: transparent #d2d1cf transparent transparent;
+      }
+    }
+    
+    .next{
+      float:left;
+      width:65px;
+      i{
+        display:inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent #d2d1cf;
+      }
+    }
+    ul{
+      float:left;
+      margin:0 10px;
+      li{
+        float:left;
+        margin:0 5px;
+        a{
+          &.active{
+            background:#31b5fd;
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+}

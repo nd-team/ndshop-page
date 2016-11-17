@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物流管理- 发货</title>
+    <link rel="stylesheet" href="/css/business/ship_order.css">
+</head>
+<body>
+    <div id="leftsidebar">
+        <figure class="title-pic">
+            <figcaption class="sidebar-title">瑞王府的店</figcaption>
+            <a href="javascript:void(0)"> <img src="/images/business/head-pic.png"></a>
+        </figure>
+        <ul class="nav">
+            <li>
+                <a href="shop.html">店铺</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">订单管理</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">商品管理</a>
+            </li>
+            <li>
+                <a href="logistics.html" class="active">物流管理</a>
+            </li>
+            <li>
+                <a href="announcement.html">公告</a>
+            </li>
+        </ul>
+    </div>
+    <div class="subsidebar">
+        <ul>
+            <li>
+                <a href="logistics.html">物流工具</a>
+            </li>
+            <li>
+                <a href="transport.html" class="active">发货</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="bread-crumbs">
+            <a href="javascript:void(0)">物流管理</a>&gt;<a href="javascript:void(0)">物流工具</a>&gt;<a href="javascript:void(0)">发货</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="transport.html">等待发货的订单</a>
+                </li>
+                <li>
+                    <a href="ship_order.html" class="active">发货中的订单</a>
+                </li>
+                <li>
+                    <a href="shipped_order.html">已发货的订单</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="ship-tab">
+            <div class="orders-content">
+                <ul class="orders-detail">
+                    <li>
+                        <div class="demand">
+                            <p class="demand-input">
+                                <label>收件人名称：</label>
+                                <input type="text" class="name-input">
+                            </p>
+                            <p class="demand-input">
+                                <label>买家选择：</label>
+                                <select name="select" class="name-input">
+                                    <option value="0">快递</option>
+                                    <option value="0">01</option>
+                                    <option value="0">02</option>
+                                    <option value="0">03</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="demand">
+                            <p class="demand-input">
+                                <label>买家昵称：</label>
+                                <input type="text" class="name-input">
+                            </p>
+                            <p class="demand-input">
+                                <label>订单类型：</label>
+                                <select name="select" class="name-input">
+                                    <option value="0">全部</option>
+                                    <option value="0">01</option>
+                                    <option value="0">02</option>
+                                    <option value="0">03</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="demand">
+                            <p class="demand-input">
+                                <label>创建时间：</label>
+                                <input type="text" class="time-input">至
+                                <input type="text" class="time-input">
+                            </p>
+                            <p class="demand-input">
+                                <label>订单编号：</label>
+                                <input type="text" class="number-input">
+                            </p>
+                        </div>
+                        <div class="demand">
+                            <a href="javascript:void(0)" class="search-btn">搜索</a>
+                        </div>
+                    </li>
+                    <li class="table-div">
+                        <table class="table-box">
+                            <thead>
+                            <tr>
+                                <th>订单日期</th>
+                                <th>订单编号</th>
+                                <th>商品</th>
+                                <th>买家昵称</th>
+                                <th>收件人</th>
+                                <th>收件人地址</th>
+                                <th>备注</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-31</td>
+                                <td>201610315478</td>
+                                <td><a href="javascript:void(0)" class="table-link">多色蛋黄哥蛋黄液（4色）懒蛋蛋多色蛋黄哥蛋黄液（4色）懒蛋蛋</a></td>
+                                <td>不吃傻鱼的瑞</td>
+                                <td>孟瑞</td>
+                                <td>广东省广州市天河区棠下街道棠东毓南路13号冠达商务中心E栋1楼112办公室</td>
+                                <td>派送快递的时候请联系我</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="page">
+            <a href="javascript:void(0)" class="home">首页</a>
+            <a href="javascript:void(0)" class="last"><i></i></a>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="active">1</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" class="next">下一页 <i></i></a>
+            <a href="javascript:void(0)" class="last-page">尾页</a>
+        </div>
+    </div>
+</body>
+</html>

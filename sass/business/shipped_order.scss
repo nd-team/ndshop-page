@@ -59,6 +59,7 @@ body{
         text-align:center;
         line-height:40px;
         font-size:14px;
+        font-weight:bold;
         &.active{
           color:#33b5ff;
           background:#fff;
@@ -136,107 +137,143 @@ body{
       }
     }
   }
-  .info-search{
-    width: 92%;
+  .ship-tab{
     margin: 0 70px;
-    font:{
-      size: 14px;
-      family: "Microsoft YaHei";
-    }
-    label{
-      font:{
-        size: 14px;
-        family: "Microsoft YaHei";
-      }
-    }
-    .search-input{
-      width: 15%;
-      height:30px;
-      border:1px solid #ddd;
-    }
-    .search-btn{
-      width: 5%;
-      height: 30px;
-      display: inline-block;
-      background-color: #ff903f;
-      vertical-align: middle;
-      line-height: 30px;
-      text-align: center;
-      color: #fff;
-      font:{
-        size: 14px;
-        family: "Microsoft YaHei";
-      }
-      border-radius:10px;
-      box-shadow: 0 -10px 5px #ff7c52 inset;
-    }
-  }
-  .table-div {
-    margin: 30px 70px;
-    height: auto;
-    border: 1px solid #ddd;
-    flex: 1;
-    .table-box {
+
+    .orders-content{
       width: 100%;
       height: auto;
-      text-align: center;
-      color: #444;
-      font-weight: normal;
-      border-collapse: separate;
-      border-spacing: 0;
-      thead {
-        tr {
-          th {
-            height: 40px;
-            background-color: #ededed;
-            border-bottom:1px solid #ddd;
-            border-right:1px solid #ddd;
-            font:{
-              size: 14px;
-              family: sans-serif;
-              weight: normal;
-            }
-            //font-family: sans-serif;
+      .orders-detail{
+        width: 100%;
+        height: auto;
+        li{
+          width: 100%;
+          margin-top: 20px;
+          overflow: hidden;
+          .demand{
+            margin-left: 20px;
+            margin-right: 60px;
+            float: left;
             &:last-child{
-              border-right:0;
+              margin-right: 0;
+            }
+            .demand-input{
+              margin-bottom: 20px;
+              label{
+                display: inline-block;
+                width: 85px;
+                text-align: right;
+                font: {
+                  size: 14px;
+                  family: sans-serif;
+                }
+              }
+              .name-input{
+                width: 320px;
+                height: 24px;
+                border: 1px solid #ddd;
+                color: #666;
+              }
+              .time-input{
+                width: 98px;
+                height: 24px;
+                border: 1px solid #ddd;
+                margin-right: 5px;
+                &:last-child{
+                  margin-right: 0;
+                  margin-left: 5px;
+                }
+              }
+              .number-input{
+                width: 226px;
+                height: 24px;
+                border: 1px solid #ddd;
+              }
+            }
+            .search-btn{
+              width: 67px;
+              height: 67px;
+              display: block;
+              line-height: 67px;
+              text-align: center;
+              background-color: #34d2ff;
+              color: #fff;
+              border-radius: 10px;
+              font-size: 14px;
+              box-shadow: 0 -20px 15px #33b9ff inset;
             }
           }
         }
-      }
+        .table-div {
+           margin: 20px 0;
+           height: auto;
+           border: 1px solid #ddd;
+           flex: 1;
+           .table-box {
+             width: 100%;
+             height: auto;
+             text-align: center;
+             color: #444;
+             font-weight: normal;
+             border-collapse: separate;
+             border-spacing: 0;
+             thead {
+               tr {
+                 th {
+                   height: 40px;
+                   background-color: #ededed;
+                   border-bottom:1px solid #ddd;
+                   border-right:1px solid #ddd;
+                   font:{
+                     size: 14px;
+                     family: sans-serif;
+                     weight: normal;
+                   }
+                   //font-family: sans-serif;
+                   &:last-child{
+                     border-right:0;
+                   }
+                 }
+               }
+             }
 
-      tbody{
-        tr{
-          &:last-child{
-            td{
-              border-bottom:0;
-            }
+             tbody{
+               tr{
+                 &:last-child{
+                   td{
+                     border-bottom:0;
+                   }
 
-          }
-          td{
-            height: 40px;
-            font:{
-              size: 12px;
-              family: sans-serif;
-            }
-            border-bottom:1px solid #ddd;
-            border-right:1px solid #ddd;
-            &:last-child{
-              border-right: 0;
-            }
-           .table-link{
-             width:187px;
-             display: inline-block;
-             overflow: hidden;
-             white-space: nowrap;
-             text-overflow: ellipsis;
-             color: #c72c2c;
-             text-decoration: underline;
-             font-family: sans-serif;
-            }
-          }
-        }
+                 }
+                 td{
+                   height: 40px;
+                   font:{
+                     size: 12px;
+                     family: sans-serif;
+                   }
+                   border-bottom:1px solid #ddd;
+                   border-right:1px solid #ddd;
+                   &:last-child{
+                     border-right: 0;
+                   }
+                   .table-link{
+                     width:187px;
+                     display: inline-block;
+                     overflow: hidden;
+                     white-space: nowrap;
+                     text-overflow: ellipsis;
+                     color: #c72c2c;
+                     text-decoration: underline;
+                     font-family: sans-serif;
+                   }
+                 }
+               }
+             }
+           }
+         }
       }
     }
+
   }
   .page{
     float:right;

@@ -20,4 +20,11 @@ $(document).ready(function(){
         $('#submodal').hide();
         $('#submodalbg').hide();
     })
+
+    $('.edit').on('click', function(){
+        $('.edit-address').show();
+    });
+    $('.add-btn').on('click', function(){
+        $('.edit-address').hide();
+    });
 });
