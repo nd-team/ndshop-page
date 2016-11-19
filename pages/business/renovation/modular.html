@@ -32,13 +32,15 @@
     </ul>
 </div>
 <div class="subsidebar">
-    <p>
-        选择所需模块,拖至相应位置
-        <svg role="img" class="problem">
-            <use xlink:href="#problem"></use>
-        </svg>
-    </p>
-     <ul>
+    <!--模块-->
+    <!-- <div class="modular">
+        <p>
+         选择所需模块,拖至相应位置
+         <svg role="img" class="problem">
+             <use xlink:href="#problem"></use>
+         </svg>
+     </p>
+        <ul>
          <li>
              <svg role="img" class="recommend">
                  <use xlink:href="#recommend"></use>
@@ -82,7 +84,43 @@
              <span title="店铺招牌">店铺招牌</span>
          </li>
      </ul>
-</div>
+     </div>-->
+    <!--颜色 （还没有还图片）-->
+    <!-- <div class="color">
+           <div class="gray">
+           <p>当前模板可以选择整体配色方案</p>
+           <P>修改请应用所有页面</P>
+           </div>
+           <ul>
+               <li>
+                   <span class="current">
+                     <img src="/images/business/renovation/red.png"/>
+                   </span>
+                   <p>红色</p>
+               </li>
+               <li>
+                   <span>
+                     <img src="/images/business/renovation/blue.png"/>
+                   </span>
+                   <p>蓝色</p>
+               </li>
+               <li>
+                   <span>
+                     <img src="/images/business/renovation/black.png"/>
+                   </span>
+                   <p>黑白色</p>
+               </li>
+           </ul>
+           <p class="preparation">以后会陆续增加更多的颜色敬请期待吧</p>
+       </div>-->
+       <!--页头-->
+    <!--<div class="page-header">
+          <div class="header-bg">
+              <label>页头背景色：</label>
+               <input type="hidden" value="background">
+          </div>
+    </div>-->
+ </div>
 <div id="content">
    <div class="menu">
        <ul>
@@ -106,7 +144,7 @@
     </div>
     <div class="cont-specific">
           <div class="layout">
-                 <a href="javascript:void(0)" class="shop-signs">
+                 <a href="javascript:void(0)" class="shop-sign">
                      <img src="/images/business/renovation/pic.jpg"/>
                  </a>
                  <nav>
@@ -136,17 +174,463 @@
                   </li>
               </ul>
           </div>
+        <div class="le-ri">
           <div class="left-slide">
                <div class="left-fir">
-                   <input type="text">
+                  <p class="line">
+                   <input type="text" value="搜店内" class="shop">
                    <button>
                        <svg role="img" class="search-shop">
                            <use xlink:href="#search-shop"></use>
                        </svg>
                    </button>
+                  </p>
+                   <div class="fir-search">
+                       <h3>
+                       <span>店内搜索</span>
+                       </h3>
+                       <p>
+                       <label>关键字：</label>
+                       <input type="text">
+                       </p>
+                       <p>
+                           <label>价格：</label>
+                           <input type="text">
+                           到
+                           <input type="text">
+                       </p>
+                       <button>
+                           搜索
+                      </button>
+                   </div>
+                </div>
+               <div class="left-side-bottom">
+                  <h3>
+                      <span>店内分类</span>
+                  </h3>
+                  <ul class="store-duty">
+                      <li>
+                          <a href="javascript:void(0)" class="inactive">查看所有商品</a>
+                          <span>
+                              <a href="javascript:void(0)">按销量</a>
+                              <a href="javascript:void(0)">按新品</a>
+                              <a href="javascript:void(0)">按价格</a>
+                              <a href="javascript:void(0)">按收藏</a>
+                          </span>
+                      </li>
+                      <li class="store-now"><a href="javascript:void(0)" class="inactive">夏装秋上新</a>
+                          <ul>
+                              <li><a href="javascript:void(0)">新品推荐</a></li>
+                              <li><a href="javascript:void(0)">毛衣</a></li>
+                              <li><a href="javascript:void(0)">针织衫</a></li>
+                              <li><a href="javascript:void(0)">衬衫</a></li>
+                              <li><a href="javascript:void(0)">卫衣</a></li>
+                              <li><a href="javascript:void(0)">套装</a></li>
+                              <li><a href="javascript:void(0)">短外套</a></li>
+                              <li><a href="javascript:void(0)">蕾丝/雪纺衫</a></li>
+                          </ul>
+                      </li>
+                      <li class="store-now"><a href="javascript:void(0)" class="inactive">短袖T恤</a>
+                          <ul>
+                              <li><a href="javascript:void(0)">纯棉</a></li>
+                              <li><a href="javascript:void(0)">印花</a></li>
+                              <li><a href="javascript:void(0)">纯色</a></li>
+                              <li><a href="javascript:void(0)">红色</a></li>
+                              <li><a href="javascript:void(0)">白色</a></li>
+                              <li><a href="javascript:void(0)">橘色</a></li>
+                              <li><a href="javascript:void(0)">粉红色</a></li>
+                              <li><a href="javascript:void(0)">撞色</a></li>
+                          </ul>
+                      </li>
+                      <li class="store-now"><a href="javascript:void(0)" class="inactive">长T恤</a>
+                          <ul>
+                              <li><a href="javascript:void(0)">纯棉</a></li>
+                              <li><a href="javascript:void(0)">印花</a></li>
+                              <li><a href="javascript:void(0)">纯色</a></li>
+                              <li><a href="javascript:void(0)">红色</a></li>
+                              <li><a href="javascript:void(0)">白色</a></li>
+                              <li><a href="javascript:void(0)">橘色</a></li>
+                              <li><a href="javascript:void(0)">粉红色</a></li>
+                              <li><a href="javascript:void(0)">撞色</a></li>
+                          </ul>
+                      </li>
+                      <li class="store-now"><a href="javascript:void(0)" class="inactive">吊带背心</a>
+                          <ul>
+                              <li><a href="javascript:void(0)">纯棉</a></li>
+                              <li><a href="javascript:void(0)">印花</a></li>
+                              <li><a href="javascript:void(0)">纯色</a></li>
+                              <li><a href="javascript:void(0)">红色</a></li>
+                              <li><a href="javascript:void(0)">白色</a></li>
+                              <li><a href="javascript:void(0)">橘色</a></li>
+                              <li><a href="javascript:void(0)">粉红色</a></li>
+                              <li><a href="javascript:void(0)">撞色</a></li>
+                          </ul>
+                      </li>
+                      <li class="store-now"><a href="javascript:void(0)" class="inactive">连衣裙</a>
+                          <ul>
+                              <li><a href="javascript:void(0)">收腰裙</a></li>
+                              <li><a href="javascript:void(0)">直筒裙</a></li>
+                              <li><a href="javascript:void(0)">牛仔裙</a></li>
+                              <li><a href="javascript:void(0)">背带裙</a></li>
+                              <li><a href="javascript:void(0)">衬衫裙</a></li>
+                              <li><a href="javascript:void(0)">T恤裙</a></li>
+                              <li><a href="javascript:void(0)">无袖裙</a></li>
+                              <li><a href="javascript:void(0)">A字裙</a></li>
+                              <li><a href="javascript:void(0)">假两件裙</a></li>
+                          </ul>
+                      </li>
+                      <li class="store-now"><a href="javascript:void(0)" class="inactive">毛衣</a>
+                          <ul>
+                              <li><a href="javascript:void(0)">纯棉</a></li>
+                              <li><a href="javascript:void(0)">印花</a></li>
+                              <li><a href="javascript:void(0)">纯色</a></li>
+                              <li><a href="javascript:void(0)">红色</a></li>
+                              <li><a href="javascript:void(0)">白色</a></li>
+                              <li><a href="javascript:void(0)">橘色</a></li>
+                              <li><a href="javascript:void(0)">粉红色</a></li>
+                              <li><a href="javascript:void(0)">撞色</a></li>
+                          </ul>
+                      </li>
+                      <li class="store-now"><a href="javascript:void(0)" class="inactive">开衫/空调衫</a>
+                          <ul>
+                              <li><a href="javascript:void(0)">纯棉</a></li>
+                              <li><a href="javascript:void(0)">印花</a></li>
+                              <li><a href="javascript:void(0)">纯色</a></li>
+                              <li><a href="javascript:void(0)">红色</a></li>
+                              <li><a href="javascript:void(0)">白色</a></li>
+                              <li><a href="javascript:void(0)">橘色</a></li>
+                              <li><a href="javascript:void(0)">粉红色</a></li>
+                              <li><a href="javascript:void(0)">撞色</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+               <div class="shop-rank">
+                   <h3>
+                       <span>商品排行榜</span>
+                   </h3>
+                   <div class="shop-one">
+                       <a href="javascript:void(0)">
+                           <img src="/images/business/renovation/shop.png" height="160" width="160"/>
+                       </a>
+                       <div class="text-opacity">
+                            <span class="parent">透明度</span>
+                            <a href="javascript:void(0)" class="trans-text">戴丽丹妮可定制席梦思加厚记忆海绵床垫1.5/1.8m床双</a>
+                       </div>
+                       <p>
+                           <span>热销1563件</span>
+                           <span>￥9899.00</span>
+                       </p>
+                   </div>
+                   <div class="shop-one">
+                       <a href="javascript:void(0)">
+                           <img src="/images/business/renovation/shop.png" height="160" width="160"/>
+                       </a>
+                       <div class="text-opacity">
+                           <span class="parent">透明度</span>
+                           <a href="javascript:void(0)" class="trans-text">戴丽丹妮可定制席梦思加厚记忆海绵床垫1.5/1.8m床双</a>
+                       </div>
+                       <p>
+                           <span>热销1563件</span>
+                           <span>￥9899.00</span>
+                       </p>
+                   </div>
+                   <div class="shop-one">
+                       <a href="javascript:void(0)">
+                           <img src="/images/business/renovation/shop.png" height="160" width="160"/>
+                       </a>
+                       <div class="text-opacity">
+                           <span class="parent">透明度</span>
+                           <a href="javascript:void(0)" class="trans-text">戴丽丹妮可定制席梦思加厚记忆海绵床垫1.5/1.8m床双</a>
+                       </div>
+                       <p>
+                           <span>热销1563件</span>
+                           <span>￥9899.00</span>
+                       </p>
+                   </div>
+                   <div class="shop-one">
+                       <a href="javascript:void(0)">
+                           <img src="/images/business/renovation/shop.png" height="160" width="160"/>
+                       </a>
+                       <div class="text-opacity">
+                           <span class="parent">透明度</span>
+                           <a href="javascript:void(0)" class="trans-text">戴丽丹妮可定制席梦思加厚记忆海绵床垫1.5/1.8m床双</a>
+                       </div>
+                       <p>
+                           <span>热销1563件</span>
+                           <span>￥9899.00</span>
+                       </p>
+                   </div>
                </div>
           </div>
-    </div>
+          <div class="right-cont">
+            <div class="shop-skin-box">
+                 <h3>
+                     <span>商品推荐</span>
+                     <a href="javascript:void(0)" class="more">更多&gt;</a>
+                 </h3>
+                 <div class="item1line1">
+                      <dl class="item">
+                           <dt>
+                               <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                           </dt>
+                           <dd>
+                               <p>¥84.00</p>
+                               <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                               <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                           </dd>
+                      </dl>
+                      <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                      <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                      <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                      <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                 </div>
+                 <div class="item1line1">
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                 </div>
+                 <div class="item1line1">
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                 </div>
+                 <div class="item1line1">
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                     <dl class="item">
+                         <dt>
+                             <a href="javascript:void(0)"><img src="/images/business/renovation/recommend.jpg"/></a>
+                         </dt>
+                         <dd>
+                             <p>¥84.00</p>
+                             <p><a href="javascript:void(0)">2016秋冬新款韩版时尚显瘦长袖打底韩版学院风针织衫女套头上衣</a></p>
+                             <p>已有<a href="javascript:void(0)">67万+</a> 人评价</p>
+                         </dd>
+                     </dl>
+                 </div>
+             </div>
+          </div>
+        </div>
+         <footer>
+            <div class="wrap">
+                <div class="foot-link">
+                    <a href="javascript:void(0)">关于我们</a>|
+                    <a href="javascript:void(0)">联系我们</a>|
+                    <a href="javascript:void(0)">联系客服</a>|
+                    <a href="javascript:void(0)">商家入驻</a>|
+                    <a href="javascript:void(0)">营销中心</a>|
+                    <a href="javascript:void(0)">手机商城</a>|
+                    <a href="javascript:void(0)">友情链接</a>|
+                    <a href="javascript:void(0)">销售联盟</a>|
+                    <a href="javascript:void(0)">ENGLISH SITE</a>|
+                    <a href="javascript:void(0)">CONTACT US</a>
+                </div>
+                <div class="auto-cation">
+                    <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt=""/></a>
+                    <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt=""/></a>
+                    <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt=""/></a>
+                </div>
+            </div>
+            <!--under footer end-->
+        </footer>
+        <!--big footer end-->
+  </div>
 </div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<!--暂时写在页面中-->
+<script>
+    $(function(){
+        $(".text-opacity .parent").hide();
+        $(".shop-one").hover(function(){
+                    $(this).find(".parent").stop().fadeTo(500,0.5)
+                    $(this).find(".trans-text").show().stop().animate({bottom:'0'}, {duration: 500})
+                },
+        function(){
+            $(this).find(".parent").stop().fadeTo(300,0)
+            $(this).find(".trans-text").stop().animate({bottom:'54'}, {duration: "fast"})
+            $(this).find(".trans-text").animate({bottom:'-10'}, {duration: 0}).hide();
+        });
+        //2
+        $('.inactive').click(function(){
+            if($(this).siblings('span,ul').css('display')=='none'){
+                $(this).parent('span,li').siblings('a').removeClass('store-inactive');
+                $(this).addClass('store-inactive');
+                $(this).siblings('span,ul').slideDown(100).children('a');
+            }else{
+                $(this).removeClass('store-inactive');
+                $(this).siblings('span,ul').slideUp(100);
+            }
+        })
+    });
+</script>
 </body>
 </html>

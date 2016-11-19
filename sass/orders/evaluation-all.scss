@@ -249,7 +249,8 @@ $c   : #00943b;
             .ef-2{
               .arrow-up{
                 &:before{ @include arrow-down-list(30%,60%,30%,50% - 40%/2,#e90000);  }
-                &:after { @include arrow($wd/2.2,$hi/2.2,-40%,10%,bottom,#e90000); }
+                &:after { @include arrow($wd/2.2,$hi/2.2,-40%,10%,bottom,#e90000);
+                 }
                 float: left;
                 }
             }

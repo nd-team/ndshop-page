@@ -76,7 +76,7 @@
     })
     $(".listnum").first().addClass("present")
     $('.menu a').not(".listnum3").click(function() {
-        $(this).addClass('present').siblings().removeClass('present')
+        $(this).addClass('present').siblings().removeClass('present');
     })
 
 /*information*/
