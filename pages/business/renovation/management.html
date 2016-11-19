@@ -110,7 +110,7 @@
                     <td class="title">
                         <p class="title-wrapper">
                             <b><input type="checkbox"></b>
-                            <a href="javascript:void(0)"></a>
+                            <a href="javascript:void(0)" class="inactive"></a>
                             <input type="text" value="裤子" class="tab-text">
                         </p>
                     </td>
@@ -146,7 +146,7 @@
                         <a href="javascript:void(0)">删除</a>
                     </td>
                     </tr>
-                    <tr class="item-info already-info">
+                    <tr class="item-info already-info cat-sub">
                         <td class="add-sub input-box">
                              <b class="tab-check">
                              <input type="checkbox">
@@ -175,7 +175,7 @@
                             <a href="javascript:void(0)">删除</a>
                         </td>
                     </tr>
-                    <tr class="item-info add-info">
+                    <tr class="item-info add-info cat-sub">
                         <td class="add-sub">
                             <a href="javascript:void(0)" class="add-cat">
                                 <span>
@@ -246,5 +246,26 @@
         </div>
     </div>
 </div>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script>
+   $(function(){
+       $(".item-list").click(function () {
+           $(".item-list").removeClass("back-ground");
+           $(this).addClass('back-ground');
+       })
+  $(".cat-sub").hide();
+  $('.inactive').click(function(){
+       if(
+          $(".cat-sub").css('display')=='none') {
+          $('.title-wrapper').children('a').removeClass('store-inactive');
+          $(this).addClass('store-inactive');
+          $('.cat-sub').animate({height:'toggle'},"slow");
+       }else{
+          $(this).removeClass('store-inactive');
+          $('.cat-sub').slideUp(100);
+      }
+    });
+  })
+</script>
 </body>
 </html>

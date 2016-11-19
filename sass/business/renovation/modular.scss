@@ -75,7 +75,9 @@ body{
   bottom:0;
   text-align:center;
   border: 1px solid #e4e4e4;
-  p{
+  //模块
+  .modular{
+    p{
     color: #b5b5b5;
     margin: 30px 0 10px 0;
    svg{
@@ -85,7 +87,7 @@ body{
      vertical-align:middle
    }
   }
-  ul{
+    ul{
       li{
         width:178px;
         height:76px;
@@ -93,10 +95,8 @@ body{
         margin: 10px;
         border:1px solid #dee1e7;
         background:#eaeef4;
-        //float:left;
         text-align:center;
         cursor:move;
-        //position:relative;
         svg{
           vertical-align:middle;
           fill: #8e949f;
@@ -135,6 +135,73 @@ body{
           color: #333;
           vertical-align:middle;
           margin-left: 17px;
+        }
+      }
+  }
+  }
+  //颜色
+  .color{
+    .gray{
+      p{
+        font-size: 14px;
+        text-align: left;
+        padding: 0 0 5px 10px;
+        &:nth-of-type(1){
+          margin: 30px 0 5px 0;
+        }
+        &:nth-of-type(2){
+          font-size: 12px;
+          color: #9b9b9b;
+        }
+      }
+    }
+     ul{
+      li{
+        width: 76px;
+        float: left;
+        margin-top: 3px;
+        &:nth-of-type(odd){
+          margin-left:8px;
+        }
+        &:nth-of-type(even){
+           margin-left: 20px;
+        }
+       span{
+         display: inline-block;
+         width: 76px;
+         height: 77px;
+         border: 2px solid #c9cdce;
+         &.current{
+           border: 2px solid #fe0002;
+         }
+       }
+        p{
+          color: #696969;
+          font-size: 12px;
+          margin: 15px 0 19px 0;
+        }
+      }
+    }
+    .preparation{
+      font-size: 12px;
+      color: #b2b2b2;
+      line-height: 24px;
+      padding: 10px;
+      clear: both;
+    }
+  }
+  //页头
+  .page-header{
+       text-align: left;
+      .header-bg{
+        padding-top: 22px;
+        font-size: 12px;
+        color: #333;
+        label{
+
+        }
+        input{
+
         }
       }
   }
@@ -372,6 +439,29 @@ body{
           .shop-one{
              width: 163px;
              margin: 20px auto;
+            .text-opacity{
+              position:relative;
+              .parent{
+                width:160px;
+                height:36px;
+                overflow: hidden;
+                position: absolute;
+                background:#000;
+                bottom:2px;
+                left:0;
+              }
+              .trans-text{
+                position:absolute;
+                width:160px;
+                height:36px;
+                left:0;
+                bottom:-8px;
+                overflow:hidden;
+                color: white;
+                display:none;
+                padding-left:2px;
+              }
+            }
             p{
               margin-top: 6px;
               font:{
