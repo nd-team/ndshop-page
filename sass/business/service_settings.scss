@@ -18,6 +18,9 @@ svg{
   height: 18px;
   vertical-align: middle;
 }
+i{
+  font-style: normal;
+}
 body{
   display:flex;
 }
@@ -282,12 +285,15 @@ body{
               border: 1px solid #ddd;
               display: inline-block;
               vertical-align: middle;
-              margin-right: 5px;
+              margin-right: 10px;
               cursor: pointer;
+              .click{
+                display: none;
+                vertical-align: middle;
+                margin: 0 2px;
+              }
             }
-            .click{
-              display: none;
-            }
+
             &.all-check{
               height: 30px;
               background-color: #ededed;
