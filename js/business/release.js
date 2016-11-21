@@ -30,6 +30,37 @@ $(document).ready(function(){
         var val = $(this).text();
         $('.color .select-color').val(val);
         $('.color .select-color').siblings('input[type="checkbox"]').attr('checked',true);
-    })
+    });
+    //图片拖曳
+    var $srcImg = null;
+    // 开始拖动
+    $('.pic-list li .drop-img').bind('dragstart',function(){
+        $srcImg = $(this).parent();
+    });
+    // 拖动到.drop-left,.drop-right上方时触发的事件
+    $(".drop-left,.drop-right").bind("dragover", function(event) {
+        // 必须通过event.preventDefault()来设置允许拖放
+        event.preventDefault();
+    });
+    // 结束拖动放开鼠标的事件
+    $(".drop-left").bind("drop", function(event) {
+        event.preventDefault();
+        if($srcImg[0] != $(this).parent()[0]) {
+            $(this).parent().before($srcImg);
+        }
+    });
+    $(".drop-right").bind("drop", function(event) {
+        event.preventDefault();
+        if($srcImg[0] != $(this).parent()[0]) {
+            $(this).parent().after($srcImg);
+        }
+    });
 
-})
+    //图片视频切换
+    $('.tabs a').click(function(){
+        var dataTitle = $(this).attr('data-title');
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('.media-list').hide();
+        $('.'+dataTitle).show();
+    });
+});

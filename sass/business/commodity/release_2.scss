@@ -106,7 +106,7 @@ body{
     font-size:18px;
   }
   .step{
-    width:70%;
+    width:60%;
     margin:30px auto;
     img{
       width:100%;
@@ -187,6 +187,7 @@ body{
           line-height:30px;
           margin-bottom:20px;
           font-size:14px;
+          clear:both;
           &:last-child{
             margin-bottom:0;
           }
@@ -361,7 +362,7 @@ body{
                   position:absolute;
                   background:#fff;
                   border:1px solid #c9c9c9;
-                  z-index:999;
+                  z-index:10;
                   left:20px;
                   .color-style{
                     padding:12px 0;
@@ -524,7 +525,23 @@ body{
                   }
                 }
               }
-            &.t-img{
+
+              textarea{
+                width:80%;
+              }
+            }
+
+          }
+          &.specification{
+            overflow:visible;
+            margin-bottom:20px;
+          }
+          &.t-img{
+            dt{
+              margin-top:20px;
+            }
+            dd{
+              margin-top:20px;
               .tabs{
                 background:#ededed;
                 width:100%;
@@ -536,6 +553,11 @@ body{
                   width:50%;
                   float:left;
                   text-align:center;
+                  a{
+                    display:inline-block;
+                    width:100%;
+                    color:#666;
+                  }
                   &.active{
                     background:#ffb033;
                     a{
@@ -560,27 +582,41 @@ body{
                   margin:0 18px;
                 }
               }
-              .pic-list{
+              .media-list{
+                display:none;
                 height:300px;
                 overflow:auto;
+                &.picture{
+                  display:block;
+                }
                 ul{
                   li{
                     display:inline-block;
-                    width:203px;
-                    background:url("/images/business/pic_gary.png");
-                    background-size:100% 100%;
-                    border:1px solid #ededed;
                     height:266px;
-                    margin:20px 1%;
+                    margin:20px 0;
+                    .drop-left,.drop-right {
+                      width:30px;
+                      height: 266px;
+                      float: left;
+                    }
+                    .drop-img{
+                      width:203px;
+                      height:266px;
+                      float:left;
+                      background:url("/images/business/pic_gary.png");
+                      background-size:100% 100%;
+                      img{
+                        width:100%;
+                        height:266px;
+
+                      }
+                    }
                   }
                 }
 
               }
             }
-              textarea{
-                width:80%;
-              }
-            }
+
           }
         }
         .logi-list{

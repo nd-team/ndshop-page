@@ -107,7 +107,7 @@ body{
     font-size:18px;
   }
   .step{
-    width:70%;
+    width:60%;
     margin:30px auto;
     img{
       width:100%;
@@ -136,20 +136,22 @@ body{
   .crumbs-search{
     line-height:36px;
     overflow:hidden;
+    width:70%;
+    margin:0 auto;
     .crumbs{
       float:left;
       dt{
         float:left;
         font-size:16px;
         font-weight:bold;
-        width:70px;
+        width:50px;
         text-align:right;
         height:36px;
         margin-right:20px;
       }
       dd{
         float:left;
-        width:110px;
+        width:100px;
         text-align:center;
         height:36px;
         color:#fff;
@@ -167,7 +169,7 @@ body{
     }
     .search{
       float:right;
-      width:250px;
+      width:30%;
       border:1px solid #999999;
       height:36px;
       border-radius:18px;
@@ -175,7 +177,7 @@ body{
         height:32px;
         border:none;
         margin-left:10px;
-        width:200px;
+        width:70%;
         outline:none;
       }
       a{
@@ -247,7 +249,7 @@ body{
         overflow-y:auto;
         li{
           a{
-            font-size:20px;
+            font-size:16px;
             width:100%;
             display:inline-block;
             line-height:48px;
