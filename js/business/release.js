@@ -18,6 +18,18 @@ $(document).ready(function(){
     $('.t-con .spec .pro-option').click(function(){
         var dataTitle = $(this).find('option:selected').attr('data-title');
         $('.t-con .spec').find('.'+dataTitle).show();
+    });
+
+    //颜色选择
+    $('.color .select-color').click(function(){
+        $('.colorbox').show();
+        $('.color-style').css('z-index','99')
+    });
+    $('.color .colorbox p a').click(function(){
+        $('.colorbox').hide();
+        var val = $(this).text();
+        $('.color .select-color').val(val);
+        $('.color .select-color').siblings('input[type="checkbox"]').attr('checked',true);
     })
 
 })
