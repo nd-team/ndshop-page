@@ -3,7 +3,21 @@ $(document).ready(function(){
     //     $(this).addClass("cur")；
     //     $(this).siblings("input").click();
     // })
+    // $('.checkbox').on('click',function(){
+    //     $(this).attr("checked",this.checked);
+    //     // $(this).addClass("click").sibling("input").checked;
+    //
+    // })
+    $(".checkbox").on('click',function(){
+        if ($(this).hasClass("check")) {
+            $(this).removeClass("check");
+            return false;
+        }else{
+            $(this).addClass("check");
+            return false;
+        }
 
+    });
     $(function() {
         $("#checkAll").click(function() {
             $('input[name="subBox"]').attr("checked",this.checked);
@@ -25,4 +39,4 @@ $(document).ready(function(){
     // $("input[type=checkbox]:checked").each(function(){ //由于复选框一般选中的是多个,所以可以循环输出选中的值
     //     alert($(this).val());
     // });
-}
+})

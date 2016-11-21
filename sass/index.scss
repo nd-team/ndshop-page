@@ -37,6 +37,9 @@
             }
             h2 {
               color: #33b5ff;
+              svg{
+                fill: #33b5ff;
+              }
             }
             .samll-menu {
 
@@ -46,9 +49,6 @@
             }
 
           }
-          //.same-pw{
-          //  display: block;
-          //}
         }
         .sidebar-menu-list {
           width: 202px;
@@ -67,6 +67,9 @@
             color: $white;
             font: {
               size: 16px;
+            }
+            svg{
+              fill: white;
             }
           }
           .samll-menu {
@@ -1511,7 +1514,7 @@
           family:$main-sec-ff;
         }
       }
-    }
+    }F
     .sport-let{
       width: $width;
       background-color: #edfbfe;
