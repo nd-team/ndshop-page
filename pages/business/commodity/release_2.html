@@ -147,7 +147,7 @@
         <div class="t-tr">
             <div class="t-title">库存/规格</div>
             <div class="t-con">
-                <dl >
+                <dl class="specification">
                     <dt>产品规格：</dt>
                     <dd class="spec">
                         <p class="msg">错误填写商品属性，可能会引起商品搜索流量减少，影响您的正常销售，请认真准确填写！</p>
@@ -470,29 +470,87 @@
                         </p>
                     </dd>
                 </dl>
-                <dl>
+                <dl class="t-img">
                     <dt>产品图片：</dt>
-                    <dd class="spec t-img">
+                    <dd class="spec">
                         <ul class="tabs">
                             <li class="active">
-                                <a href="javascript:void(0)">本地图片</a>
+                                <a href="javascript:void(0)" data-title="picture">本地图片</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">上传视频</a>
+                                <a href="javascript:void(0)" data-title="video">上传视频</a>
                             </li>
                         </ul>
                         <p class="msg"><strong>!</strong> 拖动可调整图片视频顺序</p>
-                        <div class="pic-list">
+                        <div class="media-list picture">
                             <ul >
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"><img src="/images/business/head-pic.png" alt="" ></p>
+
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"><img src="/images/business/product.png" alt=""></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
                             </ul>
                         </div>
-
+                        <div class="media-list video">
+                            <ul >
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                            </ul>
+                        </div>
                     </dd>
                 </dl>
                 <dl >
@@ -582,7 +640,6 @@
                             </p>
                         </dd>
                     </dl>
-
                     <a href="/pages/business/commodity/release_3.html" class="finish">填写完成</a>
                 </div>
             </div>
