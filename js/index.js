@@ -29,7 +29,6 @@ $(document).ready(function(){
     function circles(){
         circleLi.eq(i).addClass('current').siblings().removeClass('current');
     }
-
     function banner_change_self() {
         i++;
         if (i > all_li) {
@@ -46,7 +45,6 @@ $(document).ready(function(){
     })
 
     // 鼠标弹窗效果
-
     $('.sidebar-list').on("mouseover",function (e) {
         $(this).find('.same-pw').show();
         e.stopPropagation();
