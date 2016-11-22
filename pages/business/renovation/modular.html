@@ -190,7 +190,7 @@
                      <img src="/images/business/renovation/pic.jpg"/>
                  </a>
                  <!--编辑删除-->
-               <div class="allbar">
+                 <div class="allbar">
                    <div class="bar">
                    </div>
                    <div class="barascrits">
@@ -208,7 +208,7 @@
                        </a>
                    </div>
                   </div>
-               <nav>
+                 <nav>
                      <ul>
                          <li>
                              <a href="javascript:void(0)">首页</a>
@@ -224,6 +224,24 @@
                          </li>
                     </ul>
                  </nav>
+                 <div class="allbar2">
+                   <div class="bar">
+                   </div>
+                   <div class="barascrits">
+                       <a href="javascript:void(0)">
+                           <svg role="img" class="edit">
+                               <use xlink:href="#edit"></use>
+                           </svg>
+                           编辑
+                       </a>
+                       <a href="javascript:void(0)">
+                           <svg role="img" class="ret-delete">
+                               <use xlink:href="#ret-delete"></use>
+                           </svg>
+                           删除
+                       </a>
+                   </div>
+               </div>
           </div>
            <div class="banner-tit">
                <h3>
@@ -238,6 +256,24 @@
                   <li>2</li>
               </ul>
             </div>
+                 <div class="allbar3">
+            <div class="bar">
+            </div>
+            <div class="barascrits">
+                <a href="javascript:void(0)">
+                    <svg role="img" class="edit">
+                        <use xlink:href="#edit"></use>
+                    </svg>
+                    编辑
+                </a>
+                <a href="javascript:void(0)">
+                    <svg role="img" class="ret-delete">
+                        <use xlink:href="#ret-delete"></use>
+                    </svg>
+                    删除
+                </a>
+            </div>
+        </div>
            <div class="le-ri">
           <div class="left-slide">
                <div class="left-fir">
@@ -645,7 +681,7 @@
           </div>
         </div>
            <!--编辑删除-->
-         <!--<div class="aaa"><div class="allbar">
+          <!--<div class="aaa"><div class="allbar">
              <div class="bar">
              </div>
              <div class="barascrits">
@@ -693,24 +729,29 @@
 <script src="/js/business/renovation/renovation.js"></script>
 <script>
     $(function(){
-        $('.shop-sign').hover(function(){
-            $('.allbar').stop(true).toggle();
-        });
-      /*$('.shop-sign').hover(function(){
-       if($('.allbar').is(":visible")){
+          $('.shop-sign').hover(function() {
+              $('.allbar').toggle();
+          })
+        $('nav').hover(function() {
+            $('.allbar2').toggle();
+        })
+        $('.banner-tit,.banner').hover(function() {
+            $('.allbar3').toggle();
+        })
+      })
+      /* if($('.allbar').is(":visible")){
        $('.allbar').hide();
        } else {
        $('.allbar').show();
        }
        });*/
-
-      /*  $(".shop-sign").mouseover(function (){
-            $(".allbar").show();
-        }).mouseout(function (){
-            $(".allbar").hide();
-        });*/
-
-    })
+   /* $(function() {
+        $('.cont-specific').each(function(index, element) {
+            $('.shop-sign').hover(function() {
+                $('.allbar').toggle();
+            });
+        });
+    });*/
 </script>
 </body>
 </html>

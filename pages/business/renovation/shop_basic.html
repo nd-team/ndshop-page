@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>店铺基本设置</title>
+    <link rel="stylesheet" href="/css/business/renovation/shop_basic.css">
+    <link href="http://g.tbcdn.cn/kissy/edge/2014.07.16/css/dpl/base-debug.css" rel="stylesheet"/>
+    <link href="http://g.tbcdn.cn/kg/editor-plugins/1.1.2/assets/editor.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="leftsidebar">
+    <figure class="title-pic">
+        <figcaption class="sidebar-title">瑞王府的店</figcaption>
+        <a href="javascript:void(0)"><img src="/images/business/renovation/shop-logo.jpg"/></a>
+    </figure>
+    <ul class="nav">
+        <li>
+            <a href="javascript:void(0)" class="active">店铺</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">订单管理</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">商品管理</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">物流管理</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">公告</a>
+
+        </li>
+    </ul>
+</div>
+<div class="subsidebar">
+    <ul>
+        <li class="current">
+            <a href="javascript:void(0)">
+               店铺基本设置
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="content">
+    <div class="basic-name">
+        <h3>基础信息</h3>
+        <span>保存</span>
+    </div>
+    <div class="info-tip">
+        您填写的信息将在店铺前台展示给买家，请认真填写！
+    </div>
+    <div class="basic-page">
+         <ul class="page-info">
+             <li>
+               <label class="item-name">
+                   <em>*</em>
+                    店铺名称：
+               </label>
+               <input type="text" value="良品铺子" class="text1">
+             </li>
+             <li>
+                 <span class="item-name">
+                     店铺标志：
+                 </span>
+                 <p class="shop-photo">
+                     <a href="javascript:void(0)"><img src="/images/business/renovation/page-bgimg.jpg" class="item-pic" /></a>
+                     <a href="javascript:void(0)" class="item-ref">更换图片</a>
+                     <span class="item-text">文件格式GIF、JPG、JPEG、PNG文件大小80K以内，建议尺寸80PX*80PX</span>
+                 </p>
+             </li>
+             <li>
+                 <label class="item-name">
+                     <em>*</em>
+                     店铺简介：
+                 </label>
+                 <p class="shop-photo">
+                 <textarea class="text1 sh-intro">敞开肚皮大吃特吃，不论男女老少，健康就是最重要的！美食就是无不可挡</textarea>
+                 <span class="item-text">店铺简介会假如到店铺索引中!</span>
+                 </p>
+             </li>
+             <li>
+                 <label class="item-name">
+                     <em>*</em>
+                     经营地址：
+                 </label>
+                 <p class="shop-photo">
+                    <select>
+                        <option value="">北京</option>
+                    </select>
+                     <select>
+                         <option value="">合肥</option>
+                     </select>
+                     <input type="text" class="text2" value="的福利都放假了的解放路尖峰时刻">
+                 </p>
+             </li>
+             <li>
+                 <span class="item-name">
+                     <em>*</em>
+                     经营地址：
+                 </span>
+                 <p class="source-item">
+                     <input type="radio">
+                     <label>线下批发市场</label>
+                     <input type="radio">
+                     <label>实体店拿货</label>
+                     <input type="radio">
+                     <label>阿里巴巴批发</label>
+                     <input type="radio">
+                     <label>分销/代销</label>
+                 </p>
+                 <p class="source-item">
+                     <input type="radio">
+                     <label>自己生产</label>
+                     <input type="radio">
+                     <label>代工生产</label>
+                     <input type="radio">
+                     <label>自由公司渠道</label>
+                     <input type="radio">
+                     <label>货源还未确定</label>
+                 </p>
+             </li>
+             <li>
+                 <span class="item-name">
+                     <em>*</em>
+                     店铺介绍：
+                 </span>
+
+               <div class="sh-edit">
+                        <textarea id="ks-editor-textarea" style='width:600px;height:400px'></textarea>
+                        <!--<button onclick="window.newEditor.destroy();">destroy</button>-->
+               </div>
+             </li>
+         </ul>
+         <div class="g-robot-e">
+              <div class="service-question">
+                   <h3>常见问题</h3>
+                   <ul>
+                       <li>
+                           <a href="javascript:void(0)">店铺名被占用怎么办</a>
+                       </li>
+                       <li>
+                           <a href="javascript:void(0)">如何设置店铺经营类目</a>
+                       </li>
+                       <li>
+                           <a href="javascript:void(0)">店铺所在地怎么更改</a>
+                       </li>
+                       <li>
+                           <a href="javascript:void(0)">商品所在地怎么更改</a>
+                       </li>
+                   </ul>
+               </div>
+             <span class="pro-doll"></span>
+         </div>
+    </div>
+</div>
+<script src="http://g.tbcdn.cn/kissy/edge/2014.07.16/seed-debug.js"></script>
+<script type="text/javascript" src="http://g.tbcdn.cn/kg/editor-plugins/1.1.2/mods.js"></script>
+<script>
+    (function () {
+        var S = KISSY;
+        window.EDITOR_VERSION = '1.1.2';
+        var isDebug = location.search.indexOf('debug') !== -1;
+        window.EDITOR_CFG = {
+            fromTextarea: '#ks-editor-textarea'
+        };
+        KISSY.config({
+            packages: [
+                {
+                    name: 'kg/editor-plugins/' + EDITOR_VERSION,
+                    path: isDebug ? '../lib' : 'http://g.tbcdn.cn/kg/editor-plugins/' + EDITOR_VERSION,
+                    ignorePackageNameInUri: true
+                }
+            ]
+        })
+    })();
+</script>
+<script src="/pages/business/renovation/kissyeditor2.0/demo/demo.js"></script>
+</body>
+</html>

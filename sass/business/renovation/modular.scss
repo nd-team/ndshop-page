@@ -355,10 +355,11 @@ body{
   //编辑删除
   .allbar{
     position:relative;
-    z-index: 102;
+    z-index: 1500000;
     top:-168px;
     cursor: pointer;
     display: none;
+    pointer-events: none;
     .bar{
       position: absolute;
       width: 100%;
@@ -396,6 +397,26 @@ body{
           margin:0 4px;
         }
       }
+    }
+  }
+   .allbar2{
+   @extend .allbar;
+   top:-32px;
+    .bar{
+      height: 32px;
+    }
+    .barascrits{
+      margin:5px 34px 0 0;
+    }
+  }
+   .allbar3{
+    @extend .allbar;
+    top:-305px;
+    .bar{
+      height: 305px;
+    }
+    .barascrits{
+      margin:9px 34px 0 0;
     }
   }
    //具体内容
