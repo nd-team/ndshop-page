@@ -133,13 +133,12 @@ body{
       }
     }
   }
-  .crumbs-search{
+  .crumbs{
     line-height:36px;
     overflow:hidden;
     width:70%;
     margin:0 auto;
-    .crumbs{
-      float:left;
+    dl{
       dt{
         float:left;
         font-size:16px;
@@ -201,29 +200,6 @@ body{
         }
       }
     }
-    .search{
-      float:right;
-      width:30%;
-      border:1px solid #999999;
-      height:36px;
-      border-radius:18px;
-      input{
-        height:32px;
-        border:none;
-        margin-left:10px;
-        width:70%;
-        outline:none;
-      }
-      a{
-        float:right;
-        margin-right:8px;
-        svg{
-          fill:#9a9a9a;
-          width:25px;
-          height:25px;
-        }
-      }
-    }
   }
   .category{
     width:70%;
@@ -231,8 +207,9 @@ body{
     overflow:hidden;
     li{
       text-align:center;
-      float:left;
-      width:25%;
+      //float:left;
+      display:inline-block;
+      width:24%;
       margin:14px 0;
       a{
         width:80%;
@@ -240,10 +217,21 @@ body{
         display:inline-block;
         background:#ededed;
         padding:7% 0;
+        &:hover{
+          padding:6% 0;
+          background:#cfcfcf;
+        }
+        &.active{
+          padding:6% 0;
+          border:1px solid #33b5ff;
+          background:#fff;
+          box-shadow:2px 2px 5px rgba(51,181,255,0.5);
+        }
       }
     }
   }
   .subcategory{
+    display:none;
     width:64%;
     background:#e9f8ff;
     border:1px solid #33b5ff;
@@ -283,28 +271,45 @@ body{
         overflow-y:auto;
         li{
           a{
-            font-size:16px;
             width:100%;
+            border-bottom:1px dashed #ededed;
             display:inline-block;
             line-height:48px;
             height:48px;
-            border-bottom:1px dashed #ededed;
-            color:#656565;
+            text-indent:5px;
+            &.active{
+              background:#ededed;
+            }
             span{
+              display:inline-block;
+              font-size:16px;
+              color:#656565;
+              width:90%;
+              overflow:hidden;
+              text-overflow:ellipsis;
+              white-space:nowrap;
+            }
+            i{
               font-size:20px;
               font-family:"simsun";
               color:#b4b4b4;
               float:right;
               margin-right:10px;
+              font-style:normal;
             }
           }
         }
       }
       &.left{
         float:left;
+        display:none;
       }
       &.right{
         float:right;
+        display:none;
+      }
+      &.disabled{
+        pointer-events: none;
       }
     }
     .btn{
@@ -320,13 +325,28 @@ body{
         height:60px;
         line-height:60px;
         margin:40px 0 20px;
+        &.disabled {
+          pointer-events: none;
+          position:relative;
+          &:after{
+            display:inline-block;
+            content:'';
+            background:#000;
+            opacity:0.3;
+            width:100%;
+            height:60px;
+            position:absolute;
+            top:0;
+            left:0;
+          }
+        }
       }
     }
   }
   //发布成功
   .success{
     width:250px;
-    margin:100px auto;
+    margin:280px auto;
     height:55px;
     img{
       vertical-align:-15px;

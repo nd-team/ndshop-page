@@ -13,22 +13,36 @@ $(document).ready(function(){
     var sub_tw = nw-90-42;
     $('.spec').width(sub_tw);
     
-    //面包屑导航
-    function crumbs(){
+    //面包屑导航、点击效果
+    function releaseClick(){
         $('.category a').click(function(){
+            $(this).addClass('active').parent().siblings().children().removeClass('active');
+            $('.subcategory').show();
+            $('.subcategory .left').show();
             var crumb1 = $(this).text();
             $('.crumbs dd').eq(0).text(crumb1).show().siblings('dd').hide();
+            $('.subcategory a').removeClass('active');
+            $('.btn a').addClass('disabled');
+            $('.subcategory .right').addClass('disabled')
         });
-        $('.subcategory .left .subcate-list a').click(function(){
-            var crumb2 = $(this).text().split('>')[0];
+        $('.subcategory .left a').click(function(){
+            $('.subcategory .right').show();
+            var crumb2 = $(this).children('span').text();
             $('.crumbs dd').eq(1).text(crumb2).show().next('dd').hide();
-        });
-        $('.subcategory .right .subcate-list a').click(function(){
-            var crumb3 = $(this).text();
+            $(this).addClass('active').parent().siblings().children().removeClass('active');
+            $('.subcategory .right a').removeClass('active');
+            $('.btn a').addClass('disabled');
+            $('.subcategory .right').removeClass('disabled')
+        })
+        $('.subcategory .right a').click(function(){
+            var crumb3 = $(this).children('span').text();
             $('.crumbs dd').eq(2).text(crumb3).show();
+            $(this).addClass('active').parent().siblings().children().removeClass('active');
+            $('.btn a').removeClass('disabled');
         });
-    };
-    crumbs();
+    }
+    releaseClick();
+
 
 
 
