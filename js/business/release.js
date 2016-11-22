@@ -12,9 +12,31 @@ $(document).ready(function(){
     $('.main-table .t-con').width(nw);
     var sub_tw = nw-90-42;
     $('.spec').width(sub_tw);
+    
+    //面包屑导航
+    function crumbs(){
+        $('.category a').click(function(){
+            var crumb1 = $(this).text();
+            $('.crumbs dd').eq(0).text(crumb1).show().siblings('dd').hide();
+        });
+        $('.subcategory .left .subcate-list a').click(function(){
+            var crumb2 = $(this).text().split('>')[0];
+            $('.crumbs dd').eq(1).text(crumb2).show().next('dd').hide();
+        });
+        $('.subcategory .right .subcate-list a').click(function(){
+            var crumb3 = $(this).text();
+            $('.crumbs dd').eq(2).text(crumb3).show();
+        });
+    };
+    crumbs();
+
+
+
+    
+    
+    
 
     //产品规则选择
-
     $('.t-con .spec .pro-option').click(function(){
         var dataTitle = $(this).find('option:selected').attr('data-title');
         $('.t-con .spec').find('.'+dataTitle).show();
@@ -34,7 +56,7 @@ $(document).ready(function(){
     //图片拖曳
     var $srcImg = null;
     // 开始拖动
-    $('.pic-list li .drop-img').bind('dragstart',function(){
+    $('.media-list li .drop-img').bind('dragstart',function(){
         $srcImg = $(this).parent();
     });
     // 拖动到.drop-left,.drop-right上方时触发的事件
@@ -64,3 +86,5 @@ $(document).ready(function(){
         $('.'+dataTitle).show();
     });
 });
+
+

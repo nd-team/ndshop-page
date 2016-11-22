@@ -302,8 +302,16 @@ body{
                     float:right;
                   }
                 }
-                .busi_warn{
-                  margin:0 10px 0 20px;
+                //.busi_warn{
+                //  margin:0 10px 0 20px;
+                //}
+                i{
+                  display:inline-block;
+                  width:25px;
+                  height:25px;
+                  background:url("/font-icon/business/busi_warn.svg");
+                  vertical-align:middle;
+                  margin:0 5px 0 23px;
                 }
                 a{
                   color:#e43c3b;
@@ -526,8 +534,8 @@ body{
                 }
               }
 
-              textarea{
-                width:80%;
+              #pro-textarea{
+                height:400px;
               }
             }
 
