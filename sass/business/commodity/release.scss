@@ -150,20 +150,54 @@ body{
         margin-right:20px;
       }
       dd{
+        display:none;
         float:left;
-        width:100px;
+        padding-right:20px;
         text-align:center;
+        min-width:60px;
         height:36px;
         color:#fff;
         font-weight:bold;
-        margin-left:-10px;
+        margin:0 3px;
         &.bg1{
-          background:url("/images/business/crumbs_bg1.png");
-          background-size:100% 100%;
+          background:#33b5ff;
+          position:relative;
+          &:before{
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 18px 15px 18px 0;
+            border-color: transparent #33b5ff transparent transparent;
+            position: absolute;
+            left: -15px;
+          }
+          &:after{
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 18px 15px 18px 0;
+            border-color: transparent #fff transparent transparent;
+            position: absolute;
+            right: 0;
+          }
         }
         &.bg2{
-          background:url("/images/business/crumbs_bg2.png");
-          background-size:100% 100%;
+          background:#33b5ff;
+          position:relative;
+          border-top-right-radius:10px;
+          border-bottom-right-radius:10px;
+          &:before{
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 18px 15px 18px 0;
+            border-color: transparent #33b5ff transparent transparent;
+            position: absolute;
+            left: -15px;
+          }
         }
       }
     }
@@ -229,8 +263,8 @@ body{
         a{
           margin-left:10px;
           svg{
-            width:40px;
-            height:40px;
+            width:30px;
+            height:30px;
             fill:#33b5ff;
           }
         }
