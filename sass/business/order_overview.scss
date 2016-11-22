@@ -240,15 +240,15 @@ body{
   }
 }
 footer{
-  width: 1000px;
-  border-top:1px solid #ddd;
   margin-left: 520px;
   flex: 0;
   flex: none;
   text-align: center;
   .foot-link{
-    margin: 20px 0;
+    width: 80%;
+    padding: 20px 0;
     color: #ddd;
+    border-top:1px solid #ddd;
     a{
       color: #666;
       padding-right:2px;
