@@ -188,6 +188,7 @@ body{
           margin-bottom:20px;
           font-size:14px;
           clear:both;
+          color:#666;
           &:last-child{
             margin-bottom:0;
           }
@@ -262,7 +263,6 @@ body{
                 display:none;
               }
               .msg{
-                color:#666;
                 line-height:16px;
               }
               .bg{
@@ -302,9 +302,6 @@ body{
                     float:right;
                   }
                 }
-                //.busi_warn{
-                //  margin:0 10px 0 20px;
-                //}
                 i{
                   display:inline-block;
                   width:25px;
@@ -533,7 +530,32 @@ body{
                   }
                 }
               }
+              .style{
+                ul{
+                  overflow:hidden;
+                  li{
+                    width:auto;
+                    float:left;
+                    margin:0 30px 20px 0;
+                    span{
+                      display:inline-block;
+                      width:60px;
+                      text-align:right;
+                      color:#666;
+                      margin-right:5px;
+                    }
+                    input{
+                      width:189px;
+                      border:1px solid #ededed;
+                      text-indent:10px;
 
+                    }
+                  }
+                }
+              }
+              select{
+                color:#666;
+              }
               #pro-textarea{
                 height:400px;
               }
