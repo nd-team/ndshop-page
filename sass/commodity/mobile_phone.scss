@@ -74,17 +74,17 @@
             margin: 0 auto;
             line-height: 20px;
             color: #666;
-            span{
+            a{
               display: block;
-
-              &.money-red{
-                padding: 15px 0 7px;
-                color: red;
-                font:{
-                  size: 16px;
-                  weight: bold;
-                  family: $main-sec-ff;
-                }
+            }
+           .money-red{
+             display: block;
+              padding: 15px 0 7px;
+              color: red;
+              font:{
+                size: 16px;
+                weight: bold;
+                family: $main-sec-ff;
               }
             }
           }
@@ -264,11 +264,15 @@
             margin: 0 auto;
             padding-top: 20px;
           }
-          p{
+          .right-text{
+            display: block;
             color: #666;
             text-align: center;
             line-height: 24px;
             padding-top: 20px;
+            &:hover{
+              color: #35b5ff;
+            }
           }
           .mobile-money{
             padding-left: 10px;
@@ -428,16 +432,15 @@
                margin-top: 10px;
                line-height: 20px;
                @include body;
-               span{
+               a{
                  display: block;
-
-                 &.ranking-money{
-                   line-height: 28px;
-                   color: #D40808;
-                   font:{
-                     size: 14px;
-                     family: $main-sec-ff;
-                   }
+               }
+               .ranking-money{
+                 line-height: 28px;
+                 color: #D40808;
+                 font:{
+                   size: 14px;
+                   family: $main-sec-ff;
                  }
                }
              }
