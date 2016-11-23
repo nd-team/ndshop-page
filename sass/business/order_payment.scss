@@ -44,7 +44,7 @@ svg{
     text-align:center;
     .sidebar-title{
       height:25px;
-      background:url("/images/business/title.png");
+      background:url("/images/business/title.png") no-repeat;
       width:127px;
       line-height:25px;
       margin:10px 0 7px;
@@ -460,31 +460,23 @@ svg{
                     width: 15%;
                     border-left: 1px solid #e5e5e5;
                     text-align: center;
-                    a{
-                      display: inline-block;
-                      margin-top: 35px;
-                      text-align: center;
-                      &.see-logistics{
 
+                    a{
+                      display: block;
+                      margin: 0 auto;
+                      &.see-logistics{
                         color: #333;
+                        line-height: 20px;
                       }
-                      &.see-refund{
-                        width: 66px;
+                      &.receipt{
+                        width: 74px;
                         height: 26px;
+                        border: 1px solid #f00;
                         line-height: 26px;
-                        background-color: #e9514c;
-                        color: #fff;
-                        border-radius: 5px;
-                        box-shadow: 0 -10px 5px #d12825 inset;
-                      }
-                      &.key-delivery{
-                        width: 66px;
-                        height: 26px;
-                        line-height: 26px;
-                        background-color: #04badf;
-                        color: #fff;
-                        border-radius: 5px;
-                        box-shadow: 0 -10px 5px #0e92dc inset;
+                        text-align: center;
+                        margin-top: 22px;
+                        color: #f00;
+                        border-radius: 3px;
                       }
                     }
                   }
