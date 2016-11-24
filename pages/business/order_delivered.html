@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>订单管理-所有订单</title>
-    <link rel="stylesheet" href="/css/business/order_payment.css">
+    <link rel="stylesheet" href="/css/business/order_delivered.css">
     <script src="/js/common.js"></script>
 </head>
 <body>
@@ -180,8 +180,8 @@
             <div class="all-article">
                 <ul class="all-order">
                     <li><a href="order_all.html">全部</a></li>
-                    <li class="current"><a href="order_payment.html">待付款</a></li>
-                    <li><a href="order_delivered.html">待发货</a></li>
+                    <li><a href="order_payment.html">待付款</a></li>
+                    <li class="current"><a href="order_delivered.html">待发货</a></li>
                     <li><a href="javascript:void(0)">已发货</a></li>
                     <li><a href="javascript:void(0)">已完成</a></li>
                     <li><a href="javascript:void(0)">已关闭</a></li>
@@ -197,7 +197,7 @@
                             <i class="checkbox">
                                 <input type="checkbox" class="click" name="subBox">
                             </i>全选
-                            <a href="javascript:void(0)" class="close">批量收款</a>
+                            <a href="javascript:void(0)" class="close">批量发货</a>
                             <a href="javascript:void(0)" class="close">批量关闭</a>
                         </div>
                         <div class="content-list">
@@ -240,15 +240,13 @@
                                         <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
+                                        <p>待发货</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
                                     <li class="order-assess">
                                     </li>
                                     <li class="order-view">
-                                        <a class="receipt" href="javascript:void(0)">收款</a>
-                                        <a class="see-logistics" href="javascript:void(0)">查看物流</a>
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
                                     </li>
                                 </ul>
                             </li>
@@ -275,241 +273,169 @@
                                         <span>1</span>
                                     </li>
                                     <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
-                                    </li>
-                                    <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
-                                        <a href="javascript:void(0)">详情</a>
-                                    </li>
-                                    <li class="order-assess">
-                                    </li>
-                                    <li class="order-view"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="details">
-                            <li class="all-list">
-                                <div class="check-show">
-                                    <p class="check-name">
-                                        <input type="checkbox" class="check-box">
-                                        <label>订单号:</label>
-                                        <span>515645135749845</span>
-                                    </p>
-                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
-                                </div>
-                                <ul class="order-pic">
-                                    <li class="pic-text">
-                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
-                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
-                                    </li>
-                                    <li class="order-money">
-                                        <span>￥50.00</span>
-                                    </li>
-                                    <li class="order-many">
-                                        <span>1</span>
-                                    </li>
-                                    <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
-                                    </li>
-                                    <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
-                                        <a href="javascript:void(0)">详情</a>
-                                    </li>
-                                    <li class="order-assess">
-                                    </li>
-                                    <li class="order-view"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="details">
-                            <li class="all-list">
-                                <div class="check-show">
-                                    <p class="check-name">
-                                        <input type="checkbox" class="check-box">
-                                        <label>订单号:</label>
-                                        <span>515645135749845</span>
-                                    </p>
-                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
-                                </div>
-                                <ul class="order-pic">
-                                    <li class="pic-text">
-                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
-                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
-                                    </li>
-                                    <li class="order-money">
-                                        <span>￥50.00</span>
-                                    </li>
-                                    <li class="order-many">
-                                        <span>1</span>
-                                    </li>
-                                    <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
-                                    </li>
-                                    <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
-                                        <a href="javascript:void(0)">详情</a>
-                                    </li>
-                                    <li class="order-assess">
-                                    </li>
-                                    <li class="order-view">
-                                        <a class="receipt" href="javascript:void(0)">收款</a>
-                                        <a class="see-logistics" href="javascript:void(0)">查看物流</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="details">
-                            <li class="all-list">
-                                <div class="check-show">
-                                    <p class="check-name">
-                                        <input type="checkbox" class="check-box">
-                                        <label>订单号:</label>
-                                        <span>515645135749845</span>
-                                    </p>
-                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
-                                </div>
-                                <ul class="order-pic">
-                                    <li class="pic-text">
-                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
-                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
-                                    </li>
-                                    <li class="order-money">
-                                        <span>￥50.00</span>
-                                    </li>
-                                    <li class="order-many">
-                                        <span>1</span>
-                                    </li>
-                                    <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
-                                    </li>
-                                    <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
-                                        <a href="javascript:void(0)">详情</a>
-                                    </li>
-                                    <li class="order-assess">
-                                    </li>
-                                    <li class="order-view">
-                                        <a class="receipt" href="javascript:void(0)">收款</a>
-                                        <a class="see-logistics" href="javascript:void(0)">查看物流</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="details">
-                            <li class="all-list">
-                                <div class="check-show">
-                                    <p class="check-name">
-                                        <input type="checkbox" class="check-box">
-                                        <label>订单号:</label>
-                                        <span>515645135749845</span>
-                                    </p>
-                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
-                                </div>
-                                <ul class="order-pic">
-                                    <li class="pic-text">
-                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
-                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
-                                    </li>
-                                    <li class="order-money">
-                                        <span>￥50.00</span>
-                                    </li>
-                                    <li class="order-many">
-                                        <span>1</span>
-                                    </li>
-                                    <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
-                                    </li>
-                                    <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
-                                        <a href="javascript:void(0)">详情</a>
-                                    </li>
-                                    <li class="order-assess">
-                                    </li>
-                                    <li class="order-view"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="details">
-                            <li class="all-list">
-                                <div class="check-show">
-                                    <p class="check-name">
-                                        <input type="checkbox" class="check-box">
-                                        <label>订单号:</label>
-                                        <span>515645135749845</span>
-                                    </p>
-                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
-                                </div>
-                                <ul class="order-pic">
-                                    <li class="pic-text">
-                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
-                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
-                                    </li>
-                                    <li class="order-money">
-                                        <span>￥50.00</span>
-                                    </li>
-                                    <li class="order-many">
-                                        <span>1</span>
-                                    </li>
-                                    <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
-                                    </li>
-                                    <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
-                                        <a href="javascript:void(0)">详情</a>
-                                    </li>
-                                    <li class="order-assess">
-                                    </li>
-                                    <li class="order-view"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="details">
-                            <li class="all-list">
-                                <div class="check-show">
-                                    <p class="check-name">
-                                        <input type="checkbox" class="check-box">
-                                        <label>订单号:</label>
-                                        <span>515645135749845</span>
-                                    </p>
-                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
-                                </div>
-                                <ul class="order-pic">
-                                    <li class="pic-text">
-                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
-                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
-                                    </li>
-                                    <li class="order-money">
-                                        <span>￥50.00</span>
-                                    </li>
-                                    <li class="order-many">
-                                        <span>1</span>
-                                    </li>
-                                    <li class="order-user">
-                                        <p>JANE</p>
+                                        <p>张三</p>
                                         <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
+                                        <p>待发货</p>
+                                        <p>货到付款</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
                                     <li class="order-assess">
                                     </li>
                                     <li class="order-view">
-                                        <a class="receipt" href="javascript:void(0)">收款</a>
-                                        <a class="see-logistics" href="javascript:void(0)">查看物流</a>
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="details">
+                            <li class="all-list">
+                                <div class="check-show">
+                                    <p class="check-name">
+                                        <input type="checkbox" class="check-box">
+                                        <label>订单号:</label>
+                                        <span>515645135749845</span>
+                                    </p>
+                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
+                                </div>
+                                <ul class="order-pic">
+                                    <li class="pic-text">
+                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
+                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
+                                    </li>
+                                    <li class="order-money">
+                                        <span>￥50.00</span>
+                                    </li>
+                                    <li class="order-many">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="order-user">
+                                        <p>张三</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
+                                    </li>
+                                    <li class="order-detail">
+                                        <p>待发货</p>
+                                        <p>货到付款</p>
+                                        <a href="javascript:void(0)">详情</a>
+                                    </li>
+                                    <li class="order-assess">
+                                    </li>
+                                    <li class="order-view">
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="details">
+                            <li class="all-list">
+                                <div class="check-show">
+                                    <p class="check-name">
+                                        <input type="checkbox" class="check-box">
+                                        <label>订单号:</label>
+                                        <span>515645135749845</span>
+                                    </p>
+                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
+                                </div>
+                                <ul class="order-pic">
+                                    <li class="pic-text">
+                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
+                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
+                                    </li>
+                                    <li class="order-money">
+                                        <span>￥50.00</span>
+                                    </li>
+                                    <li class="order-many">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="order-user">
+                                        <p>张三</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
+                                    </li>
+                                    <li class="order-detail">
+                                        <p>待发货</p>
+                                        <p>货到付款</p>
+                                        <a href="javascript:void(0)">详情</a>
+                                    </li>
+                                    <li class="order-assess">
+                                    </li>
+                                    <li class="order-view">
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="details">
+                            <li class="all-list">
+                                <div class="check-show">
+                                    <p class="check-name">
+                                        <input type="checkbox" class="check-box">
+                                        <label>订单号:</label>
+                                        <span>515645135749845</span>
+                                    </p>
+                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
+                                </div>
+                                <ul class="order-pic">
+                                    <li class="pic-text">
+                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
+                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
+                                    </li>
+                                    <li class="order-money">
+                                        <span>￥50.00</span>
+                                    </li>
+                                    <li class="order-many">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="order-user">
+                                        <p>张三</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
+                                    </li>
+                                    <li class="order-detail">
+                                        <p>待发货</p>
+                                        <p>货到付款</p>
+                                        <a href="javascript:void(0)">详情</a>
+                                    </li>
+                                    <li class="order-assess">
+                                    </li>
+                                    <li class="order-view">
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="details">
+                            <li class="all-list">
+                                <div class="check-show">
+                                    <p class="check-name">
+                                        <input type="checkbox" class="check-box">
+                                        <label>订单号:</label>
+                                        <span>515645135749845</span>
+                                    </p>
+                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
+                                </div>
+                                <ul class="order-pic">
+                                    <li class="pic-text">
+                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
+                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
+                                    </li>
+                                    <li class="order-money">
+                                        <span>￥50.00</span>
+                                    </li>
+                                    <li class="order-many">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="order-user">
+                                        <p>张三</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
+                                    </li>
+                                    <li class="order-detail">
+                                        <p>待发货</p>
+                                        <a href="javascript:void(0)">详情</a>
+                                    </li>
+                                    <li class="order-assess">
+                                    </li>
+                                    <li class="order-view">
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
                                     </li>
                                 </ul>
                             </li>
@@ -537,18 +463,92 @@
                                     </li>
                                     <li class="order-user">
                                         <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易中</p>
-                                        <p>待付款</p>
+                                        <p>待发货</p>
+                                        <p>货到付款</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
                                     <li class="order-assess">
                                     </li>
                                     <li class="order-view">
-                                        <a class="receipt" href="javascript:void(0)">收款</a>
-                                        <a class="see-logistics" href="javascript:void(0)">查看物流</a>
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="details">
+                            <li class="all-list">
+                                <div class="check-show">
+                                    <p class="check-name">
+                                        <input type="checkbox" class="check-box">
+                                        <label>订单号:</label>
+                                        <span>515645135749845</span>
+                                    </p>
+                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
+                                </div>
+                                <ul class="order-pic">
+                                    <li class="pic-text">
+                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
+                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
+                                    </li>
+                                    <li class="order-money">
+                                        <span>￥50.00</span>
+                                    </li>
+                                    <li class="order-many">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="order-user">
+                                        <p>JANE</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
+                                    </li>
+                                    <li class="order-detail">
+                                        <p>待发货</p>
+                                        <p>货到付款</p>
+                                        <a href="javascript:void(0)">详情</a>
+                                    </li>
+                                    <li class="order-assess">
+                                    </li>
+                                    <li class="order-view">
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="details">
+                            <li class="all-list">
+                                <div class="check-show">
+                                    <p class="check-name">
+                                        <input type="checkbox" class="check-box">
+                                        <label>订单号:</label>
+                                        <span>515645135749845</span>
+                                    </p>
+                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
+                                </div>
+                                <ul class="order-pic">
+                                    <li class="pic-text">
+                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
+                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
+                                    </li>
+                                    <li class="order-money">
+                                        <span>￥50.00</span>
+                                    </li>
+                                    <li class="order-many">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="order-user">
+                                        <p>JANE</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
+                                    </li>
+                                    <li class="order-detail">
+                                        <p>待发货</p>
+                                        <a href="javascript:void(0)">详情</a>
+                                    </li>
+                                    <li class="order-assess">
+                                    </li>
+                                    <li class="order-view">
+                                        <a class="key-delivery" href="javascript:void(0)">一键发货</a>
                                     </li>
                                 </ul>
                             </li>

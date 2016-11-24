@@ -181,7 +181,7 @@
                 <ul class="all-order">
                     <li class="current"><a href="order_all.html">全部</a></li>
                     <li><a href="order_payment.html">待付款</a></li>
-                    <li><a href="javascript:void(0)">待发货</a></li>
+                    <li><a href="order_delivered.html">待发货</a></li>
                     <li><a href="javascript:void(0)">已发货</a></li>
                     <li><a href="javascript:void(0)">已完成</a></li>
                     <li><a href="javascript:void(0)">已关闭</a></li>
@@ -586,6 +586,11 @@
         $(document).ready(function(){
             var H = $(".order-pic").height();
             $(".order-pic .order-view").css("height", H + "px");
+            $("select").focus(function(){
+
+                 $(this).css('border-color','red');
+
+            });
         })
     </script>
 </body>
