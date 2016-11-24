@@ -402,7 +402,7 @@ svg{
                     margin: 35px 0 0;
                     span{
                       display: inline-block;
-
+                      color: #999;
                     }
                   }
                   &.order-user{
@@ -439,21 +439,6 @@ svg{
                       color: #333;
                       text-align: center;
                       line-height: 20px;
-                      &.reviews{
-                        width: 72px;
-                        height: 26px;
-                        border: 1px solid #ddd;
-                        text-align: center;
-                        line-height: 26px;
-                        border-radius: 3px;
-                        margin: 0 auto;
-                      }
-                      &.see-red{
-                        color: red;
-                      }
-                      &.see-gray{
-                        color: #999;
-                      }
                     }
                   }
                   &.order-view{
@@ -464,10 +449,6 @@ svg{
                     a{
                       display: block;
                       margin: 0 auto;
-                      &.see-logistics{
-                        color: #333;
-                        line-height: 20px;
-                      }
                       &.key-delivery{
                         width: 66px;
                         height: 26px;
