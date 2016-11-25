@@ -464,28 +464,6 @@ svg{
                       display: inline-block;
                       margin-top: 35px;
                       text-align: center;
-                      &.see-logistics{
-
-                        color: #333;
-                      }
-                      &.see-refund{
-                        width: 66px;
-                        height: 26px;
-                        line-height: 26px;
-                        background-color: #e9514c;
-                        color: #fff;
-                        border-radius: 5px;
-                        box-shadow: 0 -10px 5px #d12825 inset;
-                      }
-                      &.key-delivery{
-                        width: 66px;
-                        height: 26px;
-                        line-height: 26px;
-                        background-color: #04badf;
-                        color: #fff;
-                        border-radius: 5px;
-                        box-shadow: 0 -10px 5px #0e92dc inset;
-                      }
                     }
                   }
                 }
