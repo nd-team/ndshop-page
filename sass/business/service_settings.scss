@@ -1,0 +1,438 @@
+html,body,div,p,span,i,ul,ol,li,table,input,img,a,figure,nav,header,footer,thead,tbody,tr,th,td,button{
+  margin:0;
+  padding:0;
+  font-size:12px;
+  font-family:"sans-serif";
+}
+ul li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+input,img,button{
+  border:none;
+}
+svg{
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+i{
+  font-style: normal;
+}
+body{
+  display:flex;
+}
+#leftsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  background:#444;
+  .title-pic{
+    text-align:center;
+    .sidebar-title{
+      height:25px;
+      background:url("/images/business/title.png");
+      width:127px;
+      line-height:25px;
+      margin:10px 0 7px;
+      color:#444;
+      font-size:14px;
+      font-weight:bold;
+    }
+    img{
+      width:87px;
+      height:87px;
+      border-radius:50%;
+    }
+  }
+  .nav{
+    text-align:center;
+    margin:15px 0;
+    li{
+      height:40px;
+      font-family:"Microsoft Yahei";
+      a{
+        color:#fff;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font-size:14px;
+        font-family:"Microsoft Yahei";
+        &.active{
+          color:#33b5ff;
+          background:#fff;
+        }
+      }
+    }
+  }
+}
+.subsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  left:120px;
+  bottom:0;
+  text-align:center;
+  box-shadow: 1px 0 5px #b5b5b5;
+  overflow: hidden;
+  ul{
+    margin:40px 0;
+    li{
+      height:40px;
+      font-family:"Microsoft Yahei";
+      a{
+        color:#333;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font-size:14px;
+        font-family:"Microsoft Yahei";
+        &.active{
+          color:#fff;
+          background:#33b5ff;
+        }
+      }
+    }
+  }
+}
+#content{
+  margin-left:240px;
+  flex:1;
+  .bread-crumbs{
+    color:#888;
+    background:#eee;
+    height:30px;
+    line-height:30px;
+    font-family:'simsun';
+    text-indent:30px;
+    border-bottom:1px solid #cecece;
+    flex: 1;
+    a{
+      color: #888;
+      font-family:'simsun';
+    }
+  }
+  nav{
+    margin:20px 70px;
+    overflow:hidden;
+    flex: 1;
+    ul{
+      li{
+        float:left;
+        margin-right:40px;
+        a{
+          display:inline-block;
+          width:120px;
+          height:40px;
+          text-align:center;
+          line-height:40px;
+          color:#444;
+          font-size:14px;
+          font-family:"Microsoft Yahei";
+          &.active{
+            color:#fff;
+            background:#33b5ff;
+            border-radius:20px;
+          }
+        }
+      }
+    }
+  }
+  .service-settings{
+    margin: 20px 62px 0;
+    .inquire{
+      width: 100%;
+      overflow: hidden;
+      .order-number{
+        float: left;
+        margin-right: 60px;
+        margin:{
+          left: 10px;
+          bottom: 20px;
+        }
+        font:{
+          size: 14px;
+          family: "Microsoft YaHei";
+        }
+        label{
+          font:{
+            size: 14px;
+            family: "Microsoft YaHei";
+          }
+        }
+        .search-input{
+          width: 220px;
+          height:30px;
+          border:1px solid #ddd;
+          font-size: 14px;
+        }
+        .search-btn{
+          width: 90px;
+          height: 30px;
+          display: inline-block;
+          background-color: #ff903f;
+          vertical-align: middle;
+          line-height: 30px;
+          text-align: center;
+          color: #fff;
+          font:{
+            size: 14px;
+            family: "Microsoft YaHei";
+          }
+          border-radius:10px;
+          box-shadow: 0 -10px 5px #ff7c52 inset;
+        }
+      }
+      .logistics-services{
+
+        float: left;
+        margin:{
+          left: 10px;
+          bottom: 20px;
+        }
+        font:{
+          size: 14px;
+          family: "Microsoft YaHei";
+        }
+        label{
+          font:{
+            size: 14px;
+            family: "Microsoft YaHei";
+          }
+        }
+        .search-input{
+          width: 220px;
+          height:30px;
+          border:1px solid #ddd;
+          font-size: 14px;
+        }
+        .search-btn{
+          width: 90px;
+          height: 30px;
+          display: inline-block;
+          background-color: #ff903f;
+          vertical-align: middle;
+          line-height: 30px;
+          text-align: center;
+          color: #fff;
+          font:{
+            size: 14px;
+            family: "Microsoft YaHei";
+          }
+          border-radius:10px;
+          box-shadow: 0 -10px 5px #ff7c52 inset;
+        }
+      }
+    }
+    .address-placard{
+      width: 100%;
+      height: 2em;
+      line-height: 2em;
+      background-color: #fff000;
+      font: {
+        color: #444;
+        size: 12px;
+      }
+      .placard{
+        display: inline-block;
+        width: 16px;
+        height: 13px;
+        background: url("/images/business/placard.png") no-repeat;
+        vertical-align: middle;
+        margin: 0 10px;
+      }
+    }
+    .logistics-compass{
+      width: 100%;
+      border: 1px solid #ddd;
+      margin:{
+        top: 12px;
+        bottom: 20px;
+      }
+      .compass-table{
+        width: 100%;
+        text-align: left;
+        border-collapse: separate;
+        border-spacing: 0;
+        tr{
+          th{
+            height: 30px;
+            padding-left: 15px;
+            font:{
+              size: 14px;
+            }
+            background-color: #ededed;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            &:last-child{
+              border-right: 0;
+            }
+          }
+          td{
+            padding-left: 15px;
+            .checkbox{
+              width: 17px;
+              height: 17px;
+              background-color: #fff;
+              border: 1px solid #ddd;
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 10px;
+              cursor: pointer;
+              .click{
+                display: none;
+                vertical-align: middle;
+                margin: 0 2px;
+              }
+            }
+
+            &.all-check{
+              height: 30px;
+              background-color: #ededed;
+
+              .batch-open{
+                width: 88px;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                display: inline-block;
+                background-color: #33b5ff;
+                color: #fff;
+                border-radius: 5px;
+                margin-left: 15px;
+              }
+            }
+            &.express-company{
+              height: 179px;
+              border-right:1px solid #ddd;
+              border-top: 1px solid #ddd;
+              &:last-child{
+                border-right: 0;
+              }
+              .company-pic{
+                width: 160px;
+                height: 80px;
+                vertical-align: middle;
+                margin-left: 15px;
+              }
+              p{
+                height: 59px;
+                line-height: 59px;
+                border-bottom: 1px solid #ddd;
+                padding-left: 15px;
+                color: #666;
+                font-size: 14px;
+                &:last-child{
+                  border-bottom: 0 !important;
+                }
+              }
+              span{
+                color: #666;
+                font-size:14px;
+                padding-right: 15px;
+              }
+              .cancel{
+                color: #2292D1;
+                font-size: 14px;
+              }
+              .providers{
+                display: inline-block;
+                width: 110px;
+                height: 34px;
+                background-color: #33b5ff;
+                line-height: 34px;
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 6px;
+              }
+            }
+            &.one{
+              width: 20%;
+            }
+            &.two{
+              width:50%;
+              padding-left: 0;
+            }
+            &.three{
+              width: 30%;
+              vertical-align: top;
+              padding-top: 23px;
+            }
+          }
+
+        }
+      }
+    }
+    .page{
+      float:right;
+      a{
+        display:inline-block;
+        width:24px;
+        height:24px;
+        border:1px solid #d1d1d1;
+        line-height:24px;
+        text-align:center;
+        color:#d1d1d1;
+        &.home{
+          float: left;
+          width: 45px;
+          margin-right: 5px;
+        }
+        &.last-page{
+          float: left;
+          width: 45px;
+          margin-left: 5px;
+        }
+      }
+
+      .last{
+        float:left;
+
+        i{
+          display:inline-block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 5px 10px 5px 0;
+          border-color: transparent #d2d1cf transparent transparent;
+        }
+      }
+
+      .next{
+        float:left;
+        width:65px;
+        i{
+          display:inline-block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 5px 0 5px 10px;
+          border-color: transparent transparent transparent #d2d1cf;
+        }
+      }
+      ul{
+        float:left;
+        margin:0 10px;
+        li{
+          float:left;
+          margin:0 5px;
+          a{
+            &.active{
+              background:#31b5fd;
+              color:#fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品管理</title>
+    <link rel="stylesheet" href="/css/business/commodity/release_2.css">
+    <link rel="stylesheet" href="/modules/editor/css/wangEditor.min.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/business/release.js"></script>
+    <script src="/modules/editor/js/wangEditor.min.js"></script>
+</head>
+<body>
+<div id="leftsidebar">
+    <figure class="title-pic">
+        <figcaption class="sidebar-title">瑞王府的店</figcaption>
+        <a href="javascript:void(0)"> <img src="/images/business/head-pic.png"></a>
+    </figure>
+    <ul class="nav">
+        <li>
+            <a href="/pages/business/shop.html" >店铺</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">订单管理</a>
+        </li>
+        <li>
+            <a href="/pages/business/commodity/selling.html" class="active">商品管理</a>
+        </li>
+        <li>
+            <a href="/pages/business/logistics.html" >物流管理</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">公告</a>
+
+        </li>
+    </ul>
+</div>
+<div class="subsidebar">
+    <ul>
+        <li>
+            <a href="javascript:void(0)" class="active">所有商品</a>
+        </li>
+    </ul>
+</div>
+<div id="content">
+    <h1>发布商品</h1>
+    <div class="step">
+        <img src="/images/business/step2.png" alt="">
+        <ul>
+            <li class="current">选择商品品类</li>
+            <li class="current">编辑基本信息</li>
+            <li>发布成功</li>
+        </ul>
+    </div>
+    <div class="main-table">
+        <div class="t-tr">
+            <div class="t-title">
+                类目
+            </div>
+            <div class="t-con">
+                <div class="crumbs">
+                    <p class="bg1">
+                        服饰箱包
+                    </p>
+                    <p class="bg1">
+                        男装
+                    </p>
+                    <p class="bg2">
+                        背心/马甲
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="t-tr">
+            <div class="t-title">分类</div>
+            <div class="t-con sort">
+                <dl>
+                    <dt>商品分组：</dt>
+                    <dd>
+                        <select ><option value=""></option></select>
+                        <span class="newgroup">
+                            <a href="javascript:void(0)">新建分组</a>
+                            <a href="javascript:void(0)">帮助</a>
+                        </span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商品类型：</dt>
+                    <dd>
+                        <p><input type="radio"> 全新</p>
+                        <p><input type="radio"> 二手</p>
+
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售货设置：</dt>
+                    <dd>
+                        <p><input type="radio"> 有现货</p>
+                        <p><input type="radio"> 预售</p>
+
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="t-tr">
+            <div class="t-title">商品信息</div>
+            <div class="t-con">
+                <dl>
+                    <dt>商品名称：</dt>
+                    <dd>
+                        <input type="text" class="name">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>价格：</dt>
+                    <dd class="price">
+                        <span>
+                            <strong>￥</strong>
+                            <input type="number" placeholder="原价">
+                        </span>
+                        <span>
+                            <strong>￥</strong>
+                            <input type="number" placeholder="打折价">
+                        </span>
+                        <i >(选填)</i>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>库存数量：</dt>
+                    <dd>
+                        <input type="number">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商家编码：</dt>
+                    <dd>
+                        <input type="text">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>产品条形码：</dt>
+                    <dd>
+                        <input type="text">
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="t-tr">
+            <div class="t-title">库存/规格</div>
+            <div class="t-con">
+                <dl class="specification">
+                    <dt>产品规格：</dt>
+                    <dd class="spec">
+                        <p class="msg">错误填写商品属性，可能会引起商品搜索流量减少，影响您的正常销售，请认真准确填写！</p>
+                        <section class="hide number">
+                            <p class="bg">
+                                <select class="pro-option">
+                                    <option value="" data-title="number">款号</option>
+                                    <option value="" data-title="brand">品牌</option>
+                                    <option value="" data-title="color">颜色</option>
+                                    <option value="" data-title="size">尺码</option>
+                                    <option value="" data-title="style">款式</option>
+                                    <option value="" data-title="netweight">净含量</option>
+                                </select>
+                            </p>
+                            <input type="text" >
+                        </section>
+                        <section class="hide brand">
+                            <p class="bg">
+                                <select class="pro-option">
+                                    <option value="" data-title="brand">品牌</option>
+                                    <option value="" data-title="number">款号</option>
+                                    <option value="" data-title="color">颜色</option>
+                                    <option value="" data-title="size">尺码</option>
+                                    <option value="" data-title="style">款式</option>
+                                    <option value="" data-title="netweight">净含量</option>
+                                </select>
+                            </p>
+                            <div class="search">
+                                <p>
+                                    <a href="javascript:void(0)">
+                                        <svg role="img" class="sell_search">
+                                            <use xlink:href="#sell_search"></use>
+                                        </svg>
+                                    </a>
+                                    <input type="text">
+                                </p>
+                                <i></i>
+                                <span class="msg">未找到需要的品牌</span>
+                                <a href="javascript:void(0)">点击申请</a>
+                            </div>
+                            <ul >
+                                <li>
+                                    <a href="javascript:void(0)" class="active">1010</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">1028</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">nike</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">only</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">helly</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">1010</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">1028</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">nike</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">only</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">helly</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">1010</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">1028</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">nike</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">only</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">helly</a>
+                                </li>
+                            </ul>
+                            <p class="bg more">
+                                <a href="javascript:void(0)">
+                                    <svg role="img" class="busi_3arrow">
+                                        <use xlink:href="#busi_3arrow"></use>
+                                    </svg>
+                                </a>
+                            </p>
+                        </section>
+                        <section class="hide color">
+                            <p class="bg">
+                                <select class="pro-option">
+                                    <option value="" data-title="color">颜色</option>
+                                    <option value="" data-title="brand">品牌</option>
+                                    <option value="" data-title="number">款号</option>
+                                    <option value="" data-title="size">尺码</option>
+                                    <option value="" data-title="style">款式</option>
+                                    <option value="" data-title="netweight">净含量</option>
+                                </select>
+                            </p>
+                            <p class="msg">选择标准标准颜色可增加搜索/导购机会，标准颜色还可填写颜色备注信息（偏深、偏亮等）</p>
+                            <div>
+                                <input type="checkbox">
+                                <input type="text" class="input1">
+                                <input type="text" class="input2" placeholder="备注（如偏深偏浅）">
+                                <a href="javascript:void(0)" class="upload-pic">上传图片</a>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <input type="text" class="input1 select-color" placeholder="选择或者输入主要颜色">
+                                <input type="text" class="input2" placeholder="备注（如偏深偏浅）">
+                                <a href="javascript:void(0)" class="upload-pic">上传图片</a>
+                                
+                            </div>
+                            <article class="colorbox">
+                                <ul class="color-style">
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="white"></i> 白色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="gray"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="gray"></i> 灰色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="red"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="yellow"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="black"></i> 黑色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="purple"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="green"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="red"></i> 红色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="gray"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="yellow"></i> 黄色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="purple"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="blue"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="green"></i> 绿色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="gray"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="blue"></i> 蓝色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="gray"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="purple"></i> 紫色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="gray"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="brown"></i> 棕色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="gray"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i  class="colorful"></i> 花色系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="gray"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" ><i class="transparent"></i> 透明系</a>
+                                        <p>
+                                            <span></span>
+                                            <a href="javascript:void(0)"><i class="gray"></i> 乳色系</a>
+                                            <a href="javascript:void(0)"><i class="black"></i> 白色系</a>
+                                            <a href="javascript:void(0)"><i class="white"></i> 米色系</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+                        <section class="hide size">
+                            <p class="bg">
+                                <select class="pro-option">
+                                    <option value="" data-title="size">尺码</option>
+                                    <option value="" data-title="brand">品牌</option>
+                                    <option value="" data-title="number">款号</option>
+                                    <option value="" data-title="color">颜色</option>
+                                    <option value="" data-title="style">款式</option>
+                                    <option value="" data-title="netweight">净含量</option>
+                                </select>
+                            </p>
+                            <div class="size-radio">
+                                <input type="radio">通用
+                                <input type="radio">中国码
+                                <input type="radio">欧码
+                                <input type="radio">英码
+                                <input type="radio">日码
+                                <input type="radio">均码
+                            </div>
+                            <ul class="size-checkbox">
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                                <li><input type="checkbox">165/80A</li>
+                            </ul>
+                            <input type="checkbox"> <input type="text" placeholder="自定义尺码">
+                        </section >
+                        <section class="hide style">
+                            <p class="bg">
+                                <select class="pro-option">
+                                    <option value="" data-title="style">款式</option>
+                                    <option value="" data-title="size">尺码</option>
+                                    <option value="" data-title="brand">品牌</option>
+                                    <option value="" data-title="number">款号</option>
+                                    <option value="" data-title="color">颜色</option>
+                                    <option value="" data-title="netweight">净含量</option>
+                                </select>
+                            </p>
+                            <ul>
+                                <li><span>袖长</span> <input type="text" placeholder="请选择或者输入"></li>
+                                <li><span>领型</span> <input type="text" placeholder="请选择或者输入"></li>
+                                <li><span>面料分类</span> <input type="text" placeholder="请选择或者输入"></li>
+                                <li><span>款式细节</span> <input type="text" placeholder="请选择或者输入"></li>
+                                <li><span>服饰工艺</span> <input type="text" placeholder="请选择或者输入"></li>
+                            </ul>
+                        </section>
+                        <section class="hide netweight">
+                            <p class="bg">
+                                <select class="pro-option">
+                                    <option value="" data-title="netweight">净含量</option>
+                                    <option value="" data-title="brand">品牌</option>
+                                    <option value="" data-title="number">款号</option>
+                                    <option value="" data-title="color">颜色</option>
+                                    <option value="" data-title="size">尺码</option>
+                                    <option value="" data-title="style">款式</option>
+                                </select>
+                            </p>
+                            <div class="search">
+                                <a href="javascript:void(0)">
+                                    <svg role="img" class="sell_search">
+                                        <use xlink:href="#sell_search"></use>
+                                    </svg>
+                                </a>
+                                <input type="text">
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="active">棉麻</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">羊毛</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="active">棉</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">莫代尔纤维</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">涤纶</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">棉麻</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">羊毛</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">棉</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">莫代尔纤维</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">涤纶</a>
+                                </li>
+                            </ul>
+                            <div class="status">
+                                <p><span>棉麻</span> <input type="text" placeholder="含量"> %</p>
+                                <p><span>棉麻</span> <input type="text" placeholder="含量"> %</p>
+                            </div>
+                        </section>
+                        <p class="bg">
+                            <select class="pro-option">
+                                <option value="" >请选择</option>
+                                <option value="" data-title="brand">品牌</option>
+                                <option value="" data-title="number">款号</option>
+                                <option value="" data-title="color">颜色</option>
+                                <option value="" data-title="size">尺码</option>
+                                <option value="" data-title="style">款式</option>
+                                <option value="" data-title="netweight">净含量</option>
+                            </select>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="t-img">
+                    <dt>产品图片：</dt>
+                    <dd class="spec">
+                        <ul class="tabs">
+                            <li class="active">
+                                <a href="javascript:void(0)" data-title="picture">本地图片</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" data-title="video">上传视频</a>
+                            </li>
+                        </ul>
+                        <p class="msg"><strong>!</strong> 拖动可调整图片视频顺序</p>
+                        <div class="media-list picture">
+                            <ul >
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"><img src="/images/business/head-pic.png" alt="" ></p>
+
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"><img src="/images/business/product.png" alt=""></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="media-list video">
+                            <ul >
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                                <li>
+                                    <p class="drop-left"></p>
+                                    <p class="drop-img" draggable="true"></p>
+                                    <p class="drop-right"></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+                <dl >
+                    <dt>产品描述：</dt>
+                    <dd class="spec">
+                        <textarea id="pro-textarea">
+                            <p>请输入内容...</p>
+                        </textarea>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="t-tr">
+            <div class="t-title">物流/其他</div>
+            <div class="t-con">
+                <ul class="logi-list">
+                    <li>
+                        <input type="checkbox"> 统一邮费
+                        <p><i>￥</i><input type="text" placeholder="请输入金额"></p>
+                    </li>
+                    <li>
+                        <input type="checkbox"> 运费模板
+                        <select><option >请选择模板</option></select>
+                        <a href="javascript:void(0)" class="new">新建</a>
+                        <a href="javascript:void(0)">如何设置合适费用模板</a>
+                    </li>
+                    <li class="module">
+                         运费模板 <input type="text">
+                    </li>
+                </ul>
+                <div class="logi-list">
+                    <dl>
+                        <dt>发票：</dt>
+                        <dd>
+                            <input type="checkbox"> 有
+                            <input type="checkbox"> 无
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>保修：</dt>
+                        <dd>
+                            <input type="checkbox"> 有
+                            <input type="checkbox"> 无
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>退换货承诺：</dt>
+                        <dd>
+                           <p> <input type="checkbox">
+                                退换货承诺：若存在质量问题或描述不符，本店将主动提供退换货服务并承担来回邮费
+                           </p>
+                            <p>
+                                <input type="checkbox">
+                                服务承诺：该类商品，必须支持【七天退货】服务，承诺更好服务可通过【交易合约】设置
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="logi-list">
+                    <dl>
+                        <dt>库存计数：</dt>
+                        <dd>
+                            <p> <input type="checkbox">
+                                拍下减库存
+                            </p>
+                            <p>
+                                <input type="checkbox">
+                                付款减库存
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>开始时间：</dt>
+                        <dd>
+                            <p> <input type="checkbox">
+                                立即开售
+                            </p>
+                            <p>
+                                <input type="checkbox">
+                                设定开售 <input type="text">
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>推荐商品：</dt>
+                        <dd>
+                            <p> <input type="checkbox">
+                                选择此商品会优先展示在搜索结果中
+                            </p>
+                        </dd>
+                    </dl>
+                    <a href="/pages/business/commodity/release_3.html" class="finish">填写完成</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    var editor = new wangEditor('pro-textarea');
+    editor.create();
+</script>

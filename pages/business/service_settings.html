@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物流管理-服务商设置 </title>
+    <link rel="stylesheet" href="/css/business/service_settings.css">
+</head>
+<body>
+    <div id="leftsidebar">
+        <figure class="title-pic">
+            <figcaption class="sidebar-title">瑞王府的店</figcaption>
+            <a href="javascript:void(0)"> <img src="/images/business/head-pic.png"></a>
+        </figure>
+        <ul class="nav">
+            <li>
+                <a href="shop.html">店铺</a>
+            </li>
+            <li>
+                <a href="order_overview.html">订单管理</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">商品管理</a>
+            </li>
+            <li>
+                <a href="logistics.html" class="active">物流管理</a>
+            </li>
+            <li>
+                <a href="announcement.html">公告</a>
+            </li>
+        </ul>
+    </div>
+    <div class="subsidebar">
+        <ul>
+            <li>
+                <a href="logistics.html" class="active">物流工具</a>
+            </li>
+            <li>
+                <a href="transport.html">发货</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="bread-crumbs">
+            <a href="javascript:void(0)">物流管理</a>&gt;<a href="javascript:void(0)">物流工具</a>&gt;<a href="javascript:void(0)">物流跟踪信息</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="logistics.html">运费模板</a>
+                </li>
+                <li>
+                    <a href="logistics_info.html">物流跟踪信息</a>
+                </li>
+                <li>
+                    <a href="address_library.html">地址库</a>
+                </li>
+                <li>
+                    <a href="service_settings.html" class="active">服务商设置</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="service-settings">
+            <ul class="inquire">
+                <li class="order-number">
+                    <label>订单编号:</label>
+                    <input type="text" class="search-input">
+                    <a href="javascript:void(0)" class="search-btn">搜索</a>
+                </li>
+                <li class="logistics-services">
+                    <label>物流服务:</label>
+                    <input type="text" class="search-input">
+                    <a href="javascript:void(0)" class="search-btn">搜索</a>
+                </li>
+            </ul>
+            <p class="address-placard"><i class="placard"></i>开通指定快递服务后，开通的服务商可被消费者下单时查看并选择</p>
+            <div class="logistics-compass">
+                <table class="compass-table">
+                    <tr class="list-first">
+                        <th>物流公司</th>
+                        <th>开通服务</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td class="all-check">
+                            <i class="checkbox">
+                                <input type="checkbox" class="click" id="all-click">
+                            </i>全选
+                            <a href="javascript:void(0)" class="batch-open">批量开通</a>
+                        </td>
+                        <td class="all-check"></td>
+                        <td class="all-check"></td>
+                    </tr>
+                    <tr>
+                        <td class="express-company one">
+                            <i class="checkbox">
+                                <input type="checkbox" class="click" name="subBox">
+                            </i>
+                            <img src="/images/business/sf.png" alt="" class="company-pic">
+                        </td>
+                        <td class="express-company two">
+                            <p>保障速递</p>
+                            <p>制定快递</p>
+                            <p>到货承诺</p>
+                        </td>
+                        <td class="express-company three">
+                            <span>已开通服务商</span>
+                            <a href="javascript:void(0)" class="cancel">取消</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="express-company one">
+                            <i class="checkbox">
+                                <input type="checkbox" class="click" name="subBox">
+                            </i>
+                            <img src="/images/business/ems.png" alt="" class="company-pic">
+                        </td>
+                        <td class="express-company two">
+                            <p>保障速递</p>
+                            <p>制定快递</p>
+                            <p>到货承诺</p>
+                        </td>
+                        <td class="express-company three">
+                            <a href="javascript:void(0)" class="providers">开通服务商</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="express-company one">
+                            <i class="checkbox">
+                                <input type="checkbox" class="click">
+                            </i>
+                            <img src="/images/business/yunda.png" alt="" class="company-pic">
+                        </td>
+                        <td class="express-company two">
+                            <p>保障速递</p>
+                            <p>制定快递</p>
+                            <p>到货承诺</p>
+                        </td>
+                        <td class="express-company three">
+                            <a href="javascript:void(0)" class="providers">开通服务商</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page">
+                <a href="javascript:void(0)" class="home">首页</a>
+                <a href="javascript:void(0)" class="last"><i></i></a>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="active">1</a>
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" class="next">下一页 <i></i></a>
+                <a href="javascript:void(0)" class="last-page">尾页</a>
+            </div>
+        </div>
+    </div>
+    <!--jquery-->
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/business/business_service.js"></script>
+</body>
+</html>

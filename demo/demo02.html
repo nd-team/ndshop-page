@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试一下</title>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+</head>
+<script>
+    $(function(){
+        $("#btn1").click(function() {
+            $("#test tbody").prepend('<tr><td></td><td></td><td></td></tr>');
+        });
+        $("#btn2").click(function() {
+            $("#test tbody").append('<tr><td></td><td></td><td></td></tr>');
+        });
+    });
+</script>
+<style>
+    a{
+        cursor: not-allowed;
+    }
+</style>
+<body>
+   <a href="javascript:void(0)">点击一下</a>
+   <!--<p id="test">每个浪漫的情节都值得纪念</p>-->
+   <button id="btn">单击一下</button>
+
+   <table id = "test">
+       <thead>
+       <tr><th>列1</th><th>列2</th><th>列3</th></tr>
+       </thead>
+       <tbody>
+       <tr><td>1</td><td>1</td><td>2</td></tr>
+       <tr><td>2</td><td>4</td><td>5</td></tr>
+       </tbody>
+   </table>
+   <input type="button" id="btn1" value="在开头增加">
+   <input type="button" id="btn2" value="在末尾增加">
+
+</body>
+</html>

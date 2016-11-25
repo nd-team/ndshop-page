@@ -1,0 +1,261 @@
+html,body,div,p,span,i,ul,ol,li,table,input,img,a,figure,nav,header,footer,thead,tbody,tr,th,td{
+  margin:0;
+  padding:0;
+  font-size:12px;
+  font-family:"sans-serif";
+}
+ul li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+input,img{
+  border:none;
+}
+i{
+  font-style: normal;
+}
+svg{
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+body{
+  display:flex;
+}
+#leftsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  background:#444;
+  .title-pic{
+    text-align:center;
+    .sidebar-title{
+      height:25px;
+      background:url("/images/business/title.png");
+      width:127px;
+      line-height:25px;
+      margin:10px 0 7px;
+      color:#444;
+      font-size:14px;
+      font-weight:bold;
+    }
+    img{
+      width:87px;
+      height:87px;
+      border-radius:50%;
+    }
+  }
+  .nav{
+    text-align:center;
+    margin:15px 0;
+    li{
+      height:40px;
+      a{
+        color:#fff;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font: {
+          size: 14px;
+          family: "Microsoft YaHei";
+        }
+        &.active{
+          color:#33b5ff;
+          background:#fff;
+        }
+      }
+    }
+  }
+}
+.subsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  left:120px;
+  bottom:0;
+  text-align:center;
+  box-shadow: 1px 0 5px #b5b5b5;
+  overflow: hidden;
+  ul{
+    margin:40px 0;
+    li{
+      height:40px;
+      a{
+        color:#333;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font: {
+          size: 14px;
+          family: "Microsoft YaHei";
+        }
+        &.active{
+          color:#fff;
+          background:#33b5ff;
+        }
+      }
+    }
+  }
+}
+#content{
+  margin-left:240px;
+  flex:1;
+  .search-crumbs{
+    width: 100%;
+    color:#888;
+    background:#f6f6f6;
+    height:70px;
+    line-height:70px;
+    font-family:'simsun';
+    border-bottom:1px solid #cecece;
+    .info-search{
+      margin-left:70px;
+      label{
+      color: #444;
+      font:{
+        size: 14px;
+        family: "Microsoft YaHei";
+      }
+    }
+      .search-input{
+        width: 20%;
+        height:30px;
+        border:1px solid #ddd;
+        padding-left: 10px;
+        margin-right: 10px;
+      }
+      .search-btn{
+        width: 90px;
+        height: 30px;
+        display: inline-block;
+        background-color: #33b5ff;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+        font:{
+          size: 14px;
+          family: "Microsoft YaHei";
+        }
+      }
+    }
+
+  }
+
+  .post-box {
+    margin: {
+      top: 20px;
+      left: 70px;
+    }
+    height: auto;
+    flex: 1;
+    .post-pic{
+      width: 100%;
+      margin-bottom: 25px;
+      a{
+       display: inline-block;
+        &:first-child{
+          margin-right: 15px;
+        }
+      }
+    }
+    .post-text{
+      margin-right: 70px;
+      li{
+        width: 100%;
+        height: 48px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 30px;
+        overflow: hidden;
+        color: #999;
+        p{
+          float: left;
+          width: 892px;
+          font-size: 14px;
+          padding-left: 20px;
+          &.red-text{
+            color: #f00;
+            background: url("/images/business/newpic.png") no-repeat 100% center;
+          }
+        }
+        span{
+          float: right;
+          padding-right: 20px;
+          &.red-time{
+            color: #f00;
+          }
+        }
+      }
+    }
+  }
+  .page{
+    float:right;
+    margin-right:65px;
+    a{
+      display:inline-block;
+      width:24px;
+      height:24px;
+      border:1px solid #d1d1d1;
+      line-height:24px;
+      text-align:center;
+      color:#d1d1d1;
+      &.home{
+        float: left;
+        width: 45px;
+        margin-right: 5px;
+      }
+      &.last-page{
+        float: left;
+        width: 45px;
+        margin-left: 5px;
+      }
+    }
+    
+    .last{
+      float:left;
+
+      i{
+        display:inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 10px 5px 0;
+        border-color: transparent #d2d1cf transparent transparent;
+      }
+    }
+    
+    .next{
+      float:left;
+      width:65px;
+      i{
+        display:inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent #d2d1cf;
+      }
+    }
+    ul{
+      float:left;
+      margin:0 10px;
+      li{
+        float:left;
+        margin:0 5px;
+        a{
+          &.active{
+            background:#31b5fd;
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+}

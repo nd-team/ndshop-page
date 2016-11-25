@@ -3,17 +3,16 @@
   padding:0;
   font-size:12px;
   font-family:"Microsoft Yahei";
-
 }
 ul{
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0 ;
 }
 h3{
-  margin: 0 !important;
+  margin: 0;
 }
 p{
-  margin: 0 !important;
+  margin: 0;
 }
 ul li{
   list-style:none;
@@ -34,6 +33,22 @@ img{
 body{
   display:flex;
 }
+//编辑器开始
+.ks-editor-status{
+  span{
+    display: none !important; //编辑源代码
+  }
+}
+.ks-editor-button-content{
+  color: #3366cc;
+}
+.ks-editor-toolbar-color-indicator{
+  display: none;
+}
+.ks-editor-toolbar-item{
+  margin-top: 8px;
+}
+//编辑器结束
 #leftsidebar{
   width:120px;
   position:fixed;
@@ -100,6 +115,7 @@ body{
         background-color: #33b6ff;
         a{
           color: white;
+          font-size: 14px;
         }
       }
     }
@@ -162,10 +178,11 @@ body{
         };
         .item-name{
           width: 120px;
-          margin-right: 10px;
-          text-align: right;
           height: 22px;
           line-height: 22px;
+          color: #333333;
+          margin-right: 10px;
+          text-align: right;
           float: left;
         }
          em{
@@ -185,8 +202,8 @@ body{
           line-height: 18px;
           display: block;
           margin-top: 18px;
+          padding: 2px 6px;
         }
-        //
            .shop-photo{
             float: left;
            }
@@ -207,7 +224,7 @@ body{
             background: linear-gradient(#00badd, #0f90e3);
             box-shadow:  0 2px 2px rgba(37, 32, 35, 0.78);
             border-radius: 10px;
-             margin-bottom: 15px;
+            margin-bottom: 15px;
           }
            .item-text{
             display: block;
@@ -230,7 +247,6 @@ body{
         }
         .source-item{
           display: block;
-         // float: left;
           height:40px;
          &:nth-of-type(2){
             padding-left: 130px;
@@ -267,9 +283,7 @@ body{
         right: 17px;
         padding: 12px 12px;
         background-color: #c0e9ff;
-        border: 1px solid #fbcfac;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
+        border: 1px solid #ffcbcb;
         border-radius: 5px;
         padding: 20px 10px;
         min-width: 257px;
@@ -282,7 +296,6 @@ body{
             width: 185px;
             overflow: hidden;
             padding: 15px 0 1px 8px;
-            background-position: -52px -18px;
             a{
               color: #f8505f;
               &:before{
@@ -293,16 +306,16 @@ body{
                 border-radius: 4px;
                 background-color:#23282b;
                 float: left;
-                margin: 5px 10px 0 0;
+                margin: 8px 10px 0 0;
               }
             }
           }
         }
-
       }
       .pro-doll{
         position: absolute;
         top:-25px;
+        left: 12px;
         display: block;
         width: 78px;
         height: 90px;
@@ -310,5 +323,35 @@ body{
         cursor: move;
       }
     }
+  }
+}
+footer{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 30px;
+  clear: both;
+  .wrap{
+    max-width: 1100px;
+    border-top: 1px solid #efefef;
+    margin:0 0 0 188px;
+  .foot-link{
+    padding-top: 40px;
+    color:#666666;
+    font:{
+      size:14px;
+    }
+    a{
+      padding-right: 5px;
+      color: #616161;
+    }
+
+  }
+  .auto-cation{
+    margin-top: 25px;
+    a{
+      margin: 0 14px;
+    }
+  }
   }
 }

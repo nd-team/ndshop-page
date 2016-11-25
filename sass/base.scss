@@ -259,16 +259,19 @@ svg{
         margin-right: 120px;
         cursor: pointer;
         line-height: 40px;
-        .shopping_white{
-            width: 37px;
-            height:37px;
-            line-height: 40px;
-            vertical-align: -12px;
+        .shopping01{
+            width: 30px;
+            height:26px;
+            vertical-align: middle;
+            fill: #fff;
         }
         .my-cart{
             color: $white;
             font-size: 14px;
          }
+        .button_next{
+            fill:#fff;
+        }
     }
     .search-hot {
         width: 514px;

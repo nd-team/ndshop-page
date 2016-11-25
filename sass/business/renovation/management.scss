@@ -19,6 +19,10 @@ img{
 body{
   display:flex;
 }
+html {
+  overflow-x:hidden;
+
+}
 #leftsidebar{
   width:120px;
   position:fixed;
@@ -108,57 +112,64 @@ body{
 #content{
   margin-left:241px;
   flex:1;
-  .menu{
-    width: 100%;
-    height:50px;
-    line-height:48px;
-    font-family:'simsun';
-    float: left;
-    display: flex;
-    justify-content: center;
-    ul{
-      li{
-        width: 43px;
-        text-align: center;
-        float: left;
-        margin-right: 60px;
-        &.current{
-          border-bottom: 2px solid #31b8f7;
-        }
-        a{
-          font:{
-            size: 16px;
+    .menu{
+      width: 100%;
+      height:50px;
+      line-height:48px;
+      font-family:'simsun';
+      float: left;
+      display: flex;
+      justify-content: center;
+      ul{
+        li{
+          width: 43px;
+          text-align: center;
+          float: left;
+          margin-right: 60px;
+          &.current{
+            border-bottom: 2px solid #31b8f7;
           }
-          color: #666;
+          a{
+            font:{
+              size: 16px;
+            }
+            color: #666;
+          }
         }
       }
     }
-  }
-  .release{
-    float: right;
-    margin: -43px 135px 0 0;
-    span{
-      display: inline-block;
-      width: 118px;
-      height: 36px;
-      line-height: 36px;
-      text-align: center;
-      color: white;
-      border-radius: 5px;
-      margin-right: 15px;
-      cursor: pointer;
-      font:{
-        size: 14px;
-      }
-      &:nth-of-type(1){
-        background:#33b6ff;
-      }
-      &:nth-of-type(2){
-        background:#fe5c58;
+    .release{
+      float: right;
+      display: flex;
+      width: 30%;
+      justify-content: left;
+      //
+      margin: -42px 0 0 0;
+      span{
+        display: inline-block;
+        width: 118px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+        margin-right: 15px;
+        cursor: pointer;
+        font:{
+          size: 14px;
+        }
+        &:nth-of-type(1){
+          background:#33b6ff;
+        }
+        &:nth-of-type(2){
+          background:#fe5c58;
+        }
       }
     }
-  }
   .vl-main{
+    position: relative;
+    background-color: #fff;
+    min-width: 950px;
      .vl-toolbar{
         height: 34px;
         line-height: 34px;
@@ -191,7 +202,8 @@ body{
        }
       }
     .main-cont{
-        input[type='checkbox']{
+         //overflow: hidden;
+         input[type='checkbox']{
         }
        .vl-check{
          height: 54px;
@@ -252,7 +264,7 @@ body{
                     vertical-align: middle;
                     padding-right: 18px;
                   }
-                  .inactive{
+                  .in-active{
                     display:inline-block;
                     border:{
                       style: solid;
@@ -262,7 +274,7 @@ body{
                     margin-right: 20px;
                   }
                   //
-                  .store-inactive{
+                  .now-inactive{
                       display:inline-block;
                       border:{
                       style: solid;
@@ -270,24 +282,107 @@ body{
                       color:#4f5251 transparent  transparent  transparent;
                     }
                   }
-
-                  //
                 }
               }
               &.td-move{
+                &:hover{
+                  a{
+                     svg{
+                        fill: #666764;
+                    }
+                    &.no-move-bottom{
+                      svg {
+                        fill: #d7d7d7;
+                      }
+                      &:hover{
+                        cursor: not-allowed;
+                        svg{
+                          fill:#d5d5d5;
+                        }
+                      }
+                    }
+                    &.no-move-top{
+                      @extend .no-move-bottom;
+                    }
+                   }
+                 }
                 a{
-                margin-right: 20px;
+                   margin-right: 20px;
                   svg{
-                    width: 15px;
+                    width: 17px;
                     height: 22px;
                     fill: #d5d5d5;
                     vertical-align: middle;
                   }
+                  &:hover{
+                    svg{
+                      fill:#3eb2ff;
+                    }
+                  }
                 }
               }
               &.td-switch{
-
                  .switch{
+                   width: 42px;
+                   height: 16px;
+                   position: relative;
+                   .control {
+                      width: 42px;
+                     height: 16px;
+                     border-radius: 40px;
+                     input {
+                       width: 15px;
+                       height: 15px;
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       z-index: 2;
+                       border: 0;
+                       background: 0 0;
+                       -webkit-appearance: none;
+                       outline: 0;
+                       &:before {
+                         content: '';
+                         width: 42px;
+                         height: 16px;
+                         background-color: #d5d9d5;
+                         border-radius: 40px;
+                         cursor: pointer;
+                         display: inline-block;
+                         vertical-align: middle;
+                         box-sizing: content-box;
+                         box-shadow: #dfdfdf 0 0 0 0 inset;
+                         transition: border .4s,box-shadow .4s;
+                         background-clip: content-box
+                       }
+                       &:checked{
+                          &:before{
+                         box-shadow: #33b6ff 0 0 0 14px inset;
+                         transition: border .4s, box-shadow .4s, background-color 1.2s;
+                         background-color: #33b6ff;
+                          }
+                         &:after {
+                           left: 27px;
+                         }
+
+                       }
+                       &:after {
+                         content: '';
+                         width:15px;
+                         height: 15px;
+                         position: absolute;
+                         top:65%;
+                         left: 0;
+                         -webkit-transform:translateY(-50%);
+                         border-radius: 100%;
+                         background-color: #ffffff;
+                         box-shadow: 0 0.01rem 0.03rem rgba(0,0,0,.4);
+                         transition: left .2s
+                       }
+                     }
+                   }
+                 }
+                /* .switch{
                 height: 16px;
                 width: 42px;
                 border-radius: 40px;
@@ -302,8 +397,8 @@ body{
                   top:-8px;
                   z-index: 10000;
                   border-radius: 35px;
-                  background-color: #35b5fc;
-                }
+                  background:red;
+                   }
                 .control {
                   height: 15px;
                   width: 15px;
@@ -318,11 +413,11 @@ body{
                   *zoom: 1;
                   transition: all 0.2s ease-in-out;
                 }
-                .control:checked {
-                  left: 25px;
+                 .control:checked{
+                   left: 25px;
+                   }
+                 }*/
                 }
-              }
-              }
               &.delete{
                  color: #4bbbf6;
               }
@@ -331,7 +426,7 @@ body{
               }
               &.add-sub{
                 background: url(/images/business/renovation/line.png) 88px 10px no-repeat;
-                padding-left: 6.5%;
+                padding-left: 110px;
                   .add-cat{
                     display: inline-block;
                     width: 250px;
@@ -359,7 +454,7 @@ body{
 
             }
           }
-         .already-info{
+          .already-info{
              .td-move{
                 a{
                  &:nth-of-type(1){
@@ -378,6 +473,7 @@ body{
           background-color: #2b2b2b;
           margin: 11px 65px 0 0;
           float: right;
+          cursor: pointer;
           .add{
              width: 11px;
              height: 11px;
