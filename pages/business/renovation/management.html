@@ -34,12 +34,12 @@
 <div class="subsidebar">
     <ul>
         <li class="current">
-            <a href="javascript:void(0)">
+            <a href="/pages/business/renovation/management.html">
                 分类管理
             </a>
         </li>
         <li>
-            <a href="javascript:void(0)">
+            <a href="/pages/business/renovation/baby_name.html">
                 商品管理
             </a>
             <i></i>
@@ -84,7 +84,7 @@
         </div>
         <div class="main-cont">
              <p class="vl-check">
-             <input type="checkbox">
+             <input type="checkbox" class="checkAll" >
              <a href="javascript:void(0)">
                  全选
              </a>
@@ -109,7 +109,7 @@
                     <tr class="item-info">
                     <td class="title">
                         <p class="title-wrapper">
-                            <b><input type="checkbox"></b>
+                            <b><input type="checkbox" name="item"></b>
                             <a href="javascript:void(0)" class="inactive"></a>
                             <input type="text" value="裤子" class="tab-text">
                         </p>
@@ -149,7 +149,7 @@
                     <tr class="item-info already-info cat-sub">
                         <td class="add-sub input-box">
                              <b class="tab-check">
-                             <input type="checkbox">
+                             <input type="checkbox" name="item">
                              </b>
                              <input type="text" value="裤子" class="tab-text">
                          </td>
@@ -247,25 +247,6 @@
     </div>
 </div>
 <script src="/js/jquery-2.1.1.min.js"></script>
-<script>
-   $(function(){
-       $(".item-list").click(function () {
-           $(".item-list").removeClass("back-ground");
-           $(this).addClass('back-ground');
-       })
-  $(".cat-sub").hide();
-  $('.inactive').click(function(){
-       if(
-          $(".cat-sub").css('display')=='none') {
-          $('.title-wrapper').children('a').removeClass('store-inactive');
-          $(this).addClass('store-inactive');
-          $('.cat-sub').animate({height:'toggle'},"slow");
-       }else{
-          $(this).removeClass('store-inactive');
-          $('.cat-sub').slideUp(100);
-      }
-    });
-  })
-</script>
+<script src="/js/business/renovation/renovation.js"></script>
 </body>
 </html>

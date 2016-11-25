@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>模块</title>
     <link rel="stylesheet" href="/css/business/renovation/modular.css">
-    <script src="/js/common.js"></script>
 </head>
 <body>
 <div id="leftsidebar">
@@ -33,7 +32,7 @@
 </div>
 <div class="subsidebar">
     <!--模块-->
-    <!-- <div class="modular">
+    <div class="modular">
         <p>
          选择所需模块,拖至相应位置
          <svg role="img" class="problem">
@@ -84,9 +83,9 @@
              <span title="店铺招牌">店铺招牌</span>
          </li>
      </ul>
-     </div>-->
-    <!--颜色 （还没有还图片）-->
-    <!-- <div class="color">
+     </div>
+    <!--颜色-->
+     <div class="color">
            <div class="gray">
            <p>当前模板可以选择整体配色方案</p>
            <P>修改请应用所有页面</P>
@@ -112,19 +111,62 @@
                </li>
            </ul>
            <p class="preparation">以后会陆续增加更多的颜色敬请期待吧</p>
-       </div>-->
-       <!--页头-->
-    <!--<div class="page-header">
+       </div>
+    <!--页头-->
+    <div class="page-header">
           <div class="header-bg">
-              <label>页头背景色：</label>
-               <input type="hidden" value="background">
+               <label>页头背景色：</label>
+               <input class="tm-picker-trigger">
+               <input type="checkbox" class="tm-pick-check">
+               <span>显示</span>
+               <p>点击颜色即可选择颜色，如不现颜色可以尝试删除背景图</p>
           </div>
-    </div>-->
+         <div class="page-bgimg">
+              <p>页头背景图:</p>
+              <a href="javascript:void(0)" class="replace-bg"><img src="/images/business/renovation/page-bgimg.jpg"/></a>
+              <span>
+                  <a href="javascript:void(0)" class="replace">更换图片</a>
+                  <a href="javascript:void(0)" class="delete">删除</a>
+              </span>
+             <p>文件格式：GIF,JPG,PNG</p>
+             <p>文件大小：200k以内</p>
+         </div>
+         <div class="settings-tip">
+             <p>以上设置默认只应用到当前页面</p>
+             <a href="javascript:void(0)" class="cur-page">重置当前页</a>
+             <a href="javascript:void(0)" class="all-page">应用到所有页面</a>
+         </div>
+    </div>
+    <!--页面-->
+    <div class="page-header">
+        <div class="header-bg">
+            <label>页面背景色：</label>
+            <input class="tm-picker-trigger">
+            <input type="checkbox" class="tm-pick-check">
+            <span>显示</span>
+            <p>点击颜色即可选择颜色，如不现颜色可以尝试删除背景图</p>
+        </div>
+        <div class="page-bgimg">
+            <p>页面背景图:</p>
+            <a href="javascript:void(0)" class="replace-bg"><img src="/images/business/renovation/page-bgimg.jpg"/></a>
+            <span>
+                  <a href="javascript:void(0)" class="replace">更换图片</a>
+                  <a href="javascript:void(0)" class="delete">删除</a>
+              </span>
+            <p>文件格式：GIF,JPG,PNG</p>
+            <p>文件大小：200k以内</p>
+        </div>
+        <div class="settings-tip">
+            <p>以上设置默认只应用到当前页面</p>
+            <a href="javascript:void(0)" class="cur-page">重置当前页</a>
+            <a href="javascript:void(0)" class="all-page">应用到所有页面</a>
+        </div>
+    </div>
  </div>
 <div id="content">
    <div class="menu">
        <ul>
-           <li class="current">
+           <li class="ret-current">
                <a href="javascript:void(0)">模块</a>
            </li>
            <li>
@@ -143,10 +185,29 @@
          <span>确定发布</span>
     </div>
     <div class="cont-specific">
-          <div class="layout">
+           <div class="layout">
                  <a href="javascript:void(0)" class="shop-sign">
                      <img src="/images/business/renovation/pic.jpg"/>
                  </a>
+                 <!--编辑删除-->
+                 <div class="allbar">
+                   <div class="bar">
+                   </div>
+                   <div class="barascrits">
+                       <a href="javascript:void(0)">
+                           <svg role="img" class="edit">
+                               <use xlink:href="#edit"></use>
+                           </svg>
+                           编辑
+                       </a>
+                       <a href="javascript:void(0)">
+                           <svg role="img" class="ret-delete">
+                               <use xlink:href="#ret-delete"></use>
+                           </svg>
+                           删除
+                       </a>
+                   </div>
+                  </div>
                  <nav>
                      <ul>
                          <li>
@@ -163,18 +224,57 @@
                          </li>
                     </ul>
                  </nav>
+                 <div class="allbar2">
+                   <div class="bar">
+                   </div>
+                   <div class="barascrits">
+                       <a href="javascript:void(0)">
+                           <svg role="img" class="edit">
+                               <use xlink:href="#edit"></use>
+                           </svg>
+                           编辑
+                       </a>
+                       <a href="javascript:void(0)">
+                           <svg role="img" class="ret-delete">
+                               <use xlink:href="#ret-delete"></use>
+                           </svg>
+                           删除
+                       </a>
+                   </div>
+               </div>
           </div>
-          <div class="banner clearfix">
-              <h3>
-                  <span>图片轮播</span>
-              </h3>
-              <ul>
-                  <li>
-                      <img src="/images/business/renovation/banner-pic.png"/>
-                  </li>
+           <div class="banner-tit">
+               <h3>
+                   <span>图片轮播</span>
+               </h3>
+           </div>
+           <div class="banner clearfix">
+             <a href="javascript:void(0)" class="ban-pic01"><img src="/images/business/renovation/banner-pic.png"/></a>
+               <a href="javascript:void(0)" class="ban-pic02"><img src="/images/business/renovation/banner-pic.png"/></a>
+             <ul>
+                  <li class="selected">1</li>
+                  <li>2</li>
               </ul>
-          </div>
-        <div class="le-ri">
+            </div>
+                 <div class="allbar3">
+            <div class="bar">
+            </div>
+            <div class="barascrits">
+                <a href="javascript:void(0)">
+                    <svg role="img" class="edit">
+                        <use xlink:href="#edit"></use>
+                    </svg>
+                    编辑
+                </a>
+                <a href="javascript:void(0)">
+                    <svg role="img" class="ret-delete">
+                        <use xlink:href="#ret-delete"></use>
+                    </svg>
+                    删除
+                </a>
+            </div>
+        </div>
+           <div class="le-ri">
           <div class="left-slide">
                <div class="left-fir">
                   <p class="line">
@@ -580,7 +680,26 @@
              </div>
           </div>
         </div>
-         <footer>
+           <!--编辑删除-->
+          <!--<div class="aaa"><div class="allbar">
+             <div class="bar">
+             </div>
+             <div class="barascrits">
+                 <a href="javascript:void(0)">
+                     <svg role="img" class="edit">
+                         <use xlink:href="#edit"></use>
+                     </svg>
+                     编辑
+                 </a>
+                 <a href="javascript:void(0)">
+                     <svg role="img" class="ret-delete">
+                         <use xlink:href="#ret-delete"></use>
+                     </svg>
+                     删除
+                 </a>
+             </div>
+         </div></div>-->
+        <footer>
             <div class="wrap">
                 <div class="foot-link">
                     <a href="javascript:void(0)">关于我们</a>|
@@ -606,31 +725,33 @@
   </div>
 </div>
 <script src="/js/jquery-2.1.1.min.js"></script>
-<!--暂时写在页面中-->
+<script src="/js/common.js"></script>
+<script src="/js/business/renovation/renovation.js"></script>
 <script>
     $(function(){
-        $(".text-opacity .parent").hide();
-        $(".shop-one").hover(function(){
-                    $(this).find(".parent").stop().fadeTo(500,0.5)
-                    $(this).find(".trans-text").show().stop().animate({bottom:'0'}, {duration: 500})
-                },
-        function(){
-            $(this).find(".parent").stop().fadeTo(300,0)
-            $(this).find(".trans-text").stop().animate({bottom:'54'}, {duration: "fast"})
-            $(this).find(".trans-text").animate({bottom:'-10'}, {duration: 0}).hide();
-        });
-        //2
-        $('.inactive').click(function(){
-            if($(this).siblings('span,ul').css('display')=='none'){
-                $(this).parent('span,li').siblings('a').removeClass('store-inactive');
-                $(this).addClass('store-inactive');
-                $(this).siblings('span,ul').slideDown(100).children('a');
-            }else{
-                $(this).removeClass('store-inactive');
-                $(this).siblings('span,ul').slideUp(100);
-            }
+          $('.shop-sign').hover(function() {
+              $('.allbar').toggle();
+          })
+        $('nav').hover(function() {
+            $('.allbar2').toggle();
         })
-    });
+        $('.banner-tit,.banner').hover(function() {
+            $('.allbar3').toggle();
+        })
+      })
+      /* if($('.allbar').is(":visible")){
+       $('.allbar').hide();
+       } else {
+       $('.allbar').show();
+       }
+       });*/
+   /* $(function() {
+        $('.cont-specific').each(function(index, element) {
+            $('.shop-sign').hover(function() {
+                $('.allbar').toggle();
+            });
+        });
+    });*/
 </script>
 </body>
 </html>

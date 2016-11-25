@@ -1,0 +1,314 @@
+*{
+  margin:0;
+  padding:0;
+  font-size:12px;
+  font-family:"Microsoft Yahei";
+
+}
+ul{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+h3{
+  margin: 0 !important;
+}
+p{
+  margin: 0 !important;
+}
+ul li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+em{
+  font-style: normal;
+}
+img{
+  border:none;
+  //width: 100%;
+}
+.clearfix{
+  clear: both;
+}
+body{
+  display:flex;
+}
+#leftsidebar{
+  width:120px;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  background:#444;
+  .title-pic{
+    text-align:center;
+    margin: 0;
+    .sidebar-title{
+      height:25px;
+      background:url("/images/business/title.png");
+      width:127px;
+      line-height:25px;
+      margin:10px 0 7px;
+      color:#444;
+      font-size:14px;
+      font-weight:bold;
+    }
+    img{
+      width:87px;
+      height:87px;
+      border-radius:50%;
+    }
+  }
+  .nav{
+    text-align:center;
+    li{
+      height:40px;
+      a{
+        color:#fff;
+        display:inline-block;
+        width:100%;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        font-size:14px;
+        &.active{
+          color:#33b5ff;
+          background:#fff;
+        }
+      }
+    }
+  }
+}
+.subsidebar{
+  width:120px;
+  position:fixed;
+  top:50px;
+  left:120px;
+  bottom:0;
+  text-align:center;
+  border: 1px solid #ddd;
+  ul{
+    li{
+      width: 120px;
+      height: 60px;
+      line-height: 60px;
+      font:{
+        size: 14px;
+      }
+      &.current{
+        background-color: #33b6ff;
+        a{
+          color: white;
+        }
+      }
+    }
+  }
+}
+#content {
+  margin-left: 240px;
+  flex: 1;
+  .basic-name{
+    width: 100%;
+    h3{
+      width: 78px;
+      font-size: 14px;
+      text-align: center;
+      display: block;
+      color: #696969;
+      padding: 16px 2px;
+      float: left;
+      border-bottom: 2px solid #0085D7;
+    }
+    span{
+      display: inline-block;
+      background-color: #ff5b59;
+      width: 118px;
+      height: 36px;
+      line-height: 36px;
+      float: right;
+      text-align: center;
+      color: white;
+      border-radius: 5px;
+      margin:7px 10% 0 0;
+      cursor: pointer;
+      font: {
+        size: 14px;
+      }
+    }
+  }
+  .info-tip{
+    height: 34px;
+    line-height: 34px;
+    color: #9c8c7d;
+    background-color: #fbeeba;
+    border-top: 1px solid #ddd;
+    padding-left: 48px;
+    margin-top: -50px;
+    clear: both;
+  }
+  //主页
+  .basic-page{
+    padding-left: 52px;
+    .page-info{
+      li{
+        width: 100%;
+        overflow: hidden;
+        margin: 0 0 8px 0;
+        padding-top: 19px;
+        textarea{
+          outline:none;
+          resize: none;
+        };
+        .item-name{
+          width: 120px;
+          margin-right: 10px;
+          text-align: right;
+          height: 22px;
+          line-height: 22px;
+          float: left;
+        }
+         em{
+          font-size: 16px;
+          vertical-align: middle;
+          color: #f00;
+        }
+        .text1{
+          float: left;
+          width: 201px;
+          height: 23px;
+          line-height: 23px;
+        }
+        .text2{
+          width: 360px;
+          height: 18px;
+          line-height: 18px;
+          display: block;
+          margin-top: 18px;
+        }
+        //
+           .shop-photo{
+            float: left;
+           }
+           .item-pic{
+              width: 80px;
+              height: 80px;
+              margin-bottom: 10px;
+              display: block;
+           }
+           .item-ref{
+            display:inline-block;
+            float: left;
+            width: 66px;
+            height: 27px;
+            line-height: 27px;
+            text-align:center;
+            color: white;
+            background: linear-gradient(#00badd, #0f90e3);
+            box-shadow:  0 2px 2px rgba(37, 32, 35, 0.78);
+            border-radius: 10px;
+             margin-bottom: 15px;
+          }
+           .item-text{
+            display: block;
+            float: left;
+            margin:8px 0 0 15px;
+            padding: 2px 10px 2px 6px;
+            color: #808d9e;
+            background: #bfe9ff;
+
+        }
+        //
+        .sh-intro{
+          width: 350px;
+          height: 47px;
+          padding: 7px 6px 15px;
+          width: 100%;
+        }
+        select{
+          width: 114px;
+        }
+        .source-item{
+          display: block;
+         // float: left;
+          height:40px;
+         &:nth-of-type(2){
+            padding-left: 130px;
+         }
+          input{
+            display: block;
+            float: left;
+            margin: 4px 13px 0 0;
+          }
+          label{
+            display: block;
+            float: left;
+            width: 80px;
+            height: 22px;
+            line-height: 22px;
+            margin: 0 20px 0 2px;
+          }
+        }
+        .sh-edit{
+          margin-left: 130px;
+        }
+      }
+    }
+    .g-robot-e{
+      position:relative;
+      bottom:728px;
+      left:80%;
+      width: 75px;
+      height: 84px;
+      z-index: 10002;
+      .service-question{
+        position: absolute;
+        bottom: 52px;
+        right: 17px;
+        padding: 12px 12px;
+        background-color: #c0e9ff;
+        border: 1px solid #fbcfac;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 20px 10px;
+        min-width: 257px;
+        h3{
+          width: 190px;
+          padding-left: 18px;
+        }
+        ul{
+          li{
+            width: 185px;
+            overflow: hidden;
+            padding: 15px 0 1px 8px;
+            background-position: -52px -18px;
+            a{
+              color: #f8505f;
+              &:before{
+                display: block;
+                content: '';
+                width: 4px;
+                height: 4px;
+                border-radius: 4px;
+                background-color:#23282b;
+                float: left;
+                margin: 5px 10px 0 0;
+              }
+            }
+          }
+        }
+
+      }
+      .pro-doll{
+        position: absolute;
+        top:-25px;
+        display: block;
+        width: 78px;
+        height: 90px;
+        background: url(/images/business/renovation/problem.png) no-repeat;
+        cursor: move;
+      }
+    }
+  }
+}
