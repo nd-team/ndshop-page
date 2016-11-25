@@ -6,44 +6,45 @@ KISSY.use('util, node', function (S, util, Node) {
         attachForm: true,
         baseZIndex: 10000
     }, window.EDITOR_CFG);
-    var plugins = ("source-area" +
-        ",code" +
-        ",separator" +
-        ",bold" +
-        ",italic," +
-        "font-family," +
-        "font-size," +
-        "strike-through," +
+    var plugins = (
+        "font-size," + //字体大小
+        "font-family," +//字体
+        "bold," +    //加粗
+        "italic," +
         "underline," +
-        "separator," +
+        "strike-through," +
+        //"separator," + //左横线
         "checkbox-source-area" +
-        ",image" +
-        ",link" +
-        ",fore-color" +
-        ",back-color" +
-         ",resize" +
+        ",fore-color" + //字体颜色
+        ",back-color" + //背景色
+       //  ",resize" +
         //",draft" +   页面下面字体(五分钟保存一次)
-        ",undo" +
-        ",indent" +
-        ",outdent" +
-        ",unordered-list" +
-        ",ordered-list" +
-        ",element-path" +
-        ",page-break" +
-        ",preview" +
-        ",maximize" +
-        ",remove-format" +
-        ",heading" +
-        ",justify-left" +
-        ",justify-center" +
-        ",justify-right" +
-        ",table" +
-        ",smiley" +
-        ",flash" +
-        ",xiami-music" +
-        ",video" +
+        //",element-path" + //body p
+        //",page-break" + //分页
+        //",preview" + //预览
+        //",maximize" + //全屏
+        //",remove-format" + //清除格式
+        //",heading" + //普通文本
+        ",justify-left" +  //左对齐
+        ",justify-center" + //居中对齐
+        ",justify-right" + //右对齐
+        //",table" +  //插入表格
+        //",smiley" +  //插入表情
+       ",unordered-list" + //设置无序列表
+       ",ordered-list" +  //设置有序列表
+        ",outdent" + //减少缩进量
+        ",indent" + //增加缩进量
+       ",separator" +  //右边线
+       ",link" + //插入链接
+       ",source-area" + //编辑源代码
+       //",code" +    //c语言图标
+       ",separator" +  //右边线
+        ",undo" + //撤销
+        ",image" + //插入图片
+        ",flash" + // 插入flash
+       // ",xiami-music" +  //插入音乐
+        //",video" +  // 插入视频
         ",drag-upload").split(",");
-
     var fullPlugins = [];
     util.each(plugins, function (p, i) {
         fullPlugins[i] = "kg/editor-plugins/" + window.EDITOR_VERSION + '/' + p;

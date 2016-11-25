@@ -48,7 +48,6 @@
             }
             $('.guess-pagination  a').removeClass('guess-current');
             $('.guess-pagination a').eq(current).addClass('guess-current');
-
             $('.guess-content .guess-item').removeClass('show');
             $('.guess-content .guess-item').eq(current).addClass('show');
         })

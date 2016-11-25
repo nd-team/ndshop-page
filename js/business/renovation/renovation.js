@@ -61,22 +61,35 @@ $(function(){
         }
     });
     //5伸缩与展开
-    $(".cat-sub").hide();
+    /*$(".cat-sub").hide();
     $('.inactive').click(function(){
        if(
-            $(".cat-sub").css('display')=='none') {
+            $('.cat-sub').css('display')=='none') {
             $(".title-wrapper a").toggleClass("store-inactive");
             $(".item-list .cat-sub").toggle('slow');
         }else{
             $(this).removeClass('store-inactive');
             $('.cat-sub').toggle('3000');
         }
-    });
+    });*/
     //颜色
    /* $(".item-list").click(function () {
         $(".item-list").removeClass("back-ground");
         $(this).addClass('back-ground');
     })*/
+    $(".cat-sub").hide();
+    $('.in-active').click(function(){
+        //$(".item-list").each(function(){
+        if(
+            $(this).parents('.item-list').find(".cat-sub").css('display')=='none') {
+            $(this).removeClass('now-inactive');
+            $(this).addClass('now-inactive');
+            $(this).parents('.item-list').find(".cat-sub").slideDown(100);
+        }else{
+            $(this).removeClass('now-inactive');
+            $(this).parents('.item-list').find(".cat-sub").slideUp(100);
+        }
+    });
 })
 //3banner自动切换
 function autoMove(){
