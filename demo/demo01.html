@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link href="http://g.tbcdn.cn/kissy/edge/2014.07.16/css/dpl/base-debug.css" rel="stylesheet"/>-->
+    <link href="http://g.tbcdn.cn/kg/editor-plugins/1.1.2/assets/editor.css" rel="stylesheet"/>
+    <style>
+        .div{
+            width:800px;
+        }
+    </style>
+</head>
+<body>
+<div class="div">
+    <textarea id="ks-editor-textarea"></textarea>
+</div>
+
+
+</body>
+</html>
+<script src="http://g.tbcdn.cn/kissy/edge/2014.07.16/seed-debug.js"></script>
+<script type="text/javascript" src="http://g.tbcdn.cn/kg/editor-plugins/1.1.2/mods.js"></script>
+<script>
+    (function () {
+        var S = KISSY;
+        window.EDITOR_VERSION = '1.1.2';
+        var isDebug = location.search.indexOf('debug') !== -1;
+        window.EDITOR_CFG = {
+            fromTextarea: '#ks-editor-textarea'
+        };
+        KISSY.config({
+            packages: [
+                {
+                    name: 'kg/editor-plugins/' + EDITOR_VERSION,
+                    path: isDebug ? '../lib' : 'http://g.tbcdn.cn/kg/editor-plugins/' + EDITOR_VERSION,
+                    ignorePackageNameInUri: true
+                }
+            ]
+        })
+    })();
+</script>
+<script src="/modules/plug-in/kissyeditor2.0/demo/demo.js"></script>

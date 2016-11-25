@@ -80,8 +80,8 @@
                 </div>
                 <div class="shopping-cart">
                     <a class="my-cart">
-                        <svg role="img" class="shopping_white">
-                            <use xlink:href="#shopping_white"></use>
+                        <svg role="img" class="shopping01">
+                            <use xlink:href="#shopping01"></use>
                         </svg>
                         我的购物车
                         <svg role="img" class="button_next">
@@ -94,29 +94,32 @@
         </div>
     </header>
     <!--内容-->
-    <div id="content" class="clearfix wrap">
+    <div id="content" class="clearfix">
         <!--左侧菜单栏-->
-        <div id="news-sidebar" class="clearfix">
-            <h3>消息</h3>
-            <div class="menu">
-                <a href="/pages/news/news_system.html" >系统消息</a>
-                <a href="/pages/news/news_private.html" >私信</a>
-                <a href="/pages/news/news_setting.html" class="active">设置</a>
+        <div class="wrap">
+
+            <div id="news-sidebar" class="clearfix">
+                <h3>消息</h3>
+                <div class="menu">
+                    <a href="/pages/news/news_system.html" >系统消息</a>
+                    <a href="/pages/news/news_private.html" >私信</a>
+                    <a href="/pages/news/news_setting.html" class="active">设置</a>
+                </div>
             </div>
-        </div>
-        <div class="news-setting">
-            <h3>私信设置</h3>
-            <div class="select">
-                <p>是否接收私信</p>
-                <p><input type="radio" name="private" checked> 接收私信</p>
-                <p><input type="radio" name="private" > 不接收私信</p>
+            <div class="news-setting">
+                <h3>私信设置</h3>
+                <div class="select">
+                    <p>是否接收私信</p>
+                    <p><input type="radio" name="private" checked> 接收私信</p>
+                    <p><input type="radio" name="private" > 不接收私信</p>
+                </div>
+                <div class="select">
+                    <p>是否接收系统消息</p>
+                    <p><input type="radio" name="system" checked> 接收系统消息</p>
+                    <p><input type="radio" name="system" > 不接收系统消息</p>
+                </div>
+                <button>保存</button>
             </div>
-            <div class="select">
-                <p>是否接收系统消息</p>
-                <p><input type="radio" name="system" checked> 接收系统消息</p>
-                <p><input type="radio" name="system" > 不接收系统消息</p>
-            </div>
-            <button>保存</button>
         </div>
     </div>
 

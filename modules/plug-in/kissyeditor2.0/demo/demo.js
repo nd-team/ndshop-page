@@ -18,7 +18,7 @@ KISSY.use('util, node', function (S, util, Node) {
         ",fore-color" + //字体颜色
         ",back-color" + //背景色
        //  ",resize" +
-        //",draft" +   页面下面字体(五分钟保存一次)
+       //  ",draft" +   //页面下面字体(五分钟保存一次)
         //",element-path" + //body p
         //",page-break" + //分页
         //",preview" + //预览
