@@ -1,7 +1,7 @@
 @import "../layout/variables", "../layout/mixin";
 #user-head{
   background:#33b6ff;
-  margin-bottom:30px;
+  margin-bottom:0;
   margin-top:0;
   .header-lg{
     width:210px;
@@ -72,12 +72,6 @@
     .my-cart{
       vertical-align:middle;
       color:#fff;
-      .shopping_white{
-        width:40px;
-        height:40px;
-        margin-top:-8px;
-        margin-right:-5px;
-      }
       .button_next{
         width:15px;
         height:15px;
@@ -85,87 +79,97 @@
     }
   }
 }
-#user-sidebar{
-  font-family:"Microsoft YaHei";
-  float:left;
-  h3{
-    font-size:16px;
-    color:#363636;
-  }
-  .menu{
-    margin-left:16px;
-    a{
-      display:block;
-      margin:12px 0;
-      font-size:14px;
-      &.active{
-        color:#e13332;
-      }
+#content{
+  padding:30px 0 60px 0;
+  background:#fafafa;
+  #user-sidebar{
+    font-family:"Microsoft YaHei";
+    float:left;
+    h3{
+      font-size:16px;
+      color:#363636;
     }
-  }
-
-}
-.safety-con{
-  width:950px;
-  float:right;
-  color:#666;
-  h2{
-    font-size:12px;
-  }
-  .safelist{
-    height:50px;
-    padding:25px 0;
-    border-bottom:1px solid #ededed;
-    svg{
-      width:31px;
-      height:25px;
-      vertical-align:-6px;
-    }
-    dt{
-      float:left;
-      height:50px;
-      line-height:50px;
-      padding:0 28px;
-      border-right:1px solid #ededed;
-      strong{
-        font-family:'Microsoft YaHei';
-        font-size:18px;
-        color:#666;
-      }
-    }
-    dd{
-      float:left;
-      height:50px;
-      line-height:50px;
-      padding:0 30px;
-      width:700px;
-      p{
-        float:left;
-        &.red{
-          color:#ff0e0e;
-        }
-        span{
-          margin:0 25px 0 15px;
-        }
-      }
-
+    .menu{
+      margin-left:16px;
       a{
-        float:right;
-        color:#30b5fa;
-        display:inline-block;
-        width:80px;
-        text-align:center;
-        height:25px;
-        line-height:25px;
-        margin-top:15px;
-        &.bg{
-          height:25px;
-          background:linear-gradient(#ddffd6,#b4f8a3);
-          color:#666;
-          border:1px solid #addaa3;
-          border-radius:3px;
+        display:block;
+        margin:12px 0;
+        font-size:14px;
+        &.active{
+          color:#e13332;
         }
       }
     }
+
+  }
+  .safety-con{
+    width:950px;
+    float:right;
+    color:#666;
+    background:#fff;
+    h2{
+      font-size:12px;
+    }
+    .safelist{
+      height:50px;
+      padding:25px 0;
+      border-bottom:1px solid #ededed;
+      svg{
+        width:31px;
+        height:25px;
+        vertical-align:-6px;
+      }
+      dt{
+        float:left;
+        height:50px;
+        line-height:50px;
+        padding:0 28px;
+        border-right:1px solid #ededed;
+        strong{
+          font-family:'Microsoft YaHei';
+          font-size:18px;
+          color:#666;
+        }
+      }
+      dd{
+        float:left;
+        height:50px;
+        line-height:50px;
+        padding:0 30px;
+        width:700px;
+        p{
+          float:left;
+          &.red{
+            color:#ff0e0e;
+          }
+          span{
+            margin:0 25px 0 15px;
+          }
+        }
+
+        a{
+          float:right;
+          color:#30b5fa;
+          display:inline-block;
+          width:80px;
+          text-align:center;
+          height:25px;
+          line-height:25px;
+          margin-top:15px;
+          &.bg{
+            height:25px;
+            background:linear-gradient(#ddffd6,#b4f8a3);
+            color:#666;
+            border:1px solid #addaa3;
+            border-radius:3px;
+          }
+        }
+      }
+    }
+  }
+}
+footer{
+  .service{
+    margin-top:0;
   }
 }

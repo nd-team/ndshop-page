@@ -1,7 +1,7 @@
 @import "../layout/variables", "../layout/mixin";
 #user-head{
   background:#33b6ff;
-  margin-bottom:30px;
+  margin-bottom:0;
   margin-top:0;
   .header-lg{
     width:210px;
@@ -72,12 +72,6 @@
     .my-cart{
       vertical-align:middle;
       color:#fff;
-      .shopping_white{
-        width:40px;
-        height:40px;
-        margin-top:-8px;
-        margin-right:-5px;
-      }
       .button_next{
         width:15px;
         height:15px;
@@ -105,78 +99,91 @@
   }
 
 }
-.bind-con{
-  font-family:"Microsoft YaHei";
-  width:967px;
-  float:right;
-  color:#666;
-  h2{
-    font-size:12px;
-    margin-top:10px ;
-  }
-  .bind-list{
-    line-height:24px;
-    background:#f4f4f4;
-    padding:10px 30px;
-    margin:10px 0;
-    overflow:hidden;
-    >svg{
-      width:25px;
-      height:25px;
+#content{
+  padding:30px 0 60px 0;
+  background:#fafafa;
+  .bind-con{
+    font-family:"Microsoft YaHei";
+    width:967px;
+    float:right;
+    color:#666;
+    box-shadow:0 1px 1px #ededed;
+    padding-bottom:30px;
+    background:#fff;
+    h2{
+      font-size:12px;
+      margin-top:10px ;
     }
-    .unbind{
-      color:#ffb20c;
-    }
-    .bingding{
-      float:right;
-      color:#fb5d5e;
-    }
-    .forbind{
-      margin-bottom:10px;
+    .bind-list{
+      line-height:24px;
+      background:#f4f4f4;
+      padding:10px 30px;
+      margin:10px 0;
       overflow:hidden;
-      display:none;
-      .list-left{
-        margin-left:30px;
-        float:left;
-        p{
-          color:#3ca953;
-          font-size:18px;
-          margin:20px 0;
-        }
-        a{
-          display:inline-block;
-          width:80px;
-          height:25px;
-          text-align:center;
-          line-height:25px;
-          background:linear-gradient(#deffd4,#b4f8a3);
-          border:1px solid #abdba1;
-          border-radius:3px;
-        }
+      >svg{
+        width:25px;
+        height:25px;
       }
-      .list-right{
-        width:363px;
+      .unbind{
+        color:#ffb20c;
+      }
+      .bingding{
         float:right;
-        margin-top:20px;
-        vertical-align:middle;
-        border-left:1px solid #ededed;
-        padding-left:27px;
-        img{
-          &.arrow{
-            width:50px;
-            height:30px;
-            margin:0 10px 10px;
-
+        color:#fb5d5e;
+      }
+      .forbind{
+        margin-bottom:10px;
+        overflow:hidden;
+        display:none;
+        .list-left{
+          margin-left:30px;
+          float:left;
+          p{
+            color:#3ca953;
+            font-size:18px;
+            margin:20px 0;
+          }
+          a{
+            display:inline-block;
+            width:80px;
+            height:25px;
+            text-align:center;
+            line-height:25px;
+            background:linear-gradient(#deffd4,#b4f8a3);
+            border:1px solid #abdba1;
+            border-radius:3px;
           }
         }
-        svg{
-          width:60px;
-          height:60px;
-         vertical-align:-8px;
+        .list-right{
+          width:363px;
+          float:right;
+          margin-top:20px;
+          vertical-align:middle;
+          border-left:1px solid #ededed;
+          padding-left:27px;
+          img{
+            &.arrow{
+              width:50px;
+              height:30px;
+              margin:0 10px 10px;
+
+            }
+          }
+          svg{
+            width:60px;
+            height:60px;
+            vertical-align:-8px;
+          }
         }
+
       }
-
     }
-  }
 
+  }
+}
+
+footer{
+  .service{
+    margin-top:0;
+  }
 }

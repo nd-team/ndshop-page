@@ -1,7 +1,7 @@
 @import "../layout/variables", "../layout/mixin";
 #user-head{
   background:#33b6ff;
-  margin-bottom:30px;
+  margin-bottom:0;
   margin-top:0;
   .header-lg{
     width:210px;
@@ -72,12 +72,6 @@
     .my-cart{
       vertical-align:middle;
       color:#fff;
-      .shopping_white{
-        width:40px;
-        height:40px;
-        margin-top:-8px;
-        margin-right:-5px;
-      }
       .button_next{
         width:15px;
         height:15px;
@@ -85,162 +79,174 @@
     }
   }
 }
-#user-sidebar{
-  font-family:"Microsoft YaHei";
-  float:left;
-  h3{
-    font-size:16px;
-    color:#363636;
-  }
-  .menu{
-    margin-left:16px;
-    a{
-      display:block;
-      margin:12px 0;
-      font-size:14px;
-      &.active{
-        color:#e13332;
+#content{
+  padding:30px 0 60px 0;
+  background:#fafafa;
+  #user-sidebar{
+    font-family:"Microsoft YaHei";
+    float:left;
+    h3{
+      font-size:16px;
+      color:#363636;
+    }
+    .menu{
+      margin-left:16px;
+      a{
+        display:block;
+        margin:12px 0;
+        font-size:14px;
+        &.active{
+          color:#e13332;
+        }
       }
+    }
+
+  }
+  .modifypass-con{
+    font-family:"Microsoft YaHei";
+    width:967px;
+    float:right;
+    color:#666;
+    padding:10px 0;
+    background:#fff;
+    box-shadow:0 1px 1px #ededed;
+    h2{
+      font-size:12px;
+    }
+    .bar{
+      width:500px;
+      margin:10px auto;
+      height:6px;
+      background:#e2e2e2;
+      border-radius:3px;
+      dl{
+        width:33.3%;
+        float:left;
+        height:6px;
+        background:#e2e2e2;
+        position:relative;
+        border-radius:3px;
+        &.current{
+          background:#ff7575;
+          dt{
+            background:#ff7575;
+          }
+          dd{
+            color:#ff7575;
+            display:block;
+          }
+        }
+        &.past{
+          border-radius:0;
+          background:#ffb3b3;
+          dt{
+            background:#ffb3b3;
+          }
+        }
+        dt{
+          text-align:center;
+          width:24px;
+          height:24px;
+          border-radius:50%;
+          line-height:24px;
+          background:#e2e2e2;
+          color:#fff;
+          font-weight:bold;
+          position:absolute;
+          top:-10px;
+          left:42%;
+        }
+        dd{
+          width:100%;
+          text-align:center;
+          margin:15px 0;
+          display:none;
+        }
+      }
+    }
+    .step{
+      display:none;
+      width:600px;
+      margin:50px auto;
+      dl{
+        overflow:hidden;
+        margin:20px 0;
+        line-height:30px;
+        dt{
+          float:left;
+          width:130px;
+          text-align:right;
+          i{
+            color:#ff0e0e;
+          }
+        }
+        dd{
+          float:left;
+          margin-left:10px;
+          input{
+            width:180px;
+            height:30px;
+            line-height:30px;
+            border:1px solid #ededed;
+          }
+          a{
+            &.phone-veri{
+              border:1px solid #ededed;
+              display:inline-block;
+              padding:0 10px;
+            }
+            &.another{
+              color:#fe1d1b;
+            }
+          }
+          span{
+            display:inline-block;
+            color:#9a9a9a;
+            &.code{
+              background:#000000;
+              width:80px;
+              height:30px;
+              text-align:center;
+            }
+          }
+        }
+      }
+      &.phone{
+        display:block;
+      }
+      &.finish{
+        font-family:"simsun";
+        font-size:14px;
+        font-weight:bold;
+        color:#6ccb31;
+        p{
+          margin:70px 180px;
+          i{
+            display:inline-block;
+            background:url("/images/user/gou.png") no-repeat;
+            width:35px;
+            height:25px;
+            vertical-align:middle;
+            margin-right:10px;
+          }
+        }
+      }
+    }
+    .submit{
+      width:70px;
+      height:30px;
+      text-align:center;
+      line-height:30px;
+      color:#fff;
+      background:linear-gradient(#4dcd45,#27b120);
+      border:none;
+      margin-left:140px;
     }
   }
 
 }
-.modifypass-con{
-  font-family:"Microsoft YaHei";
-  width:967px;
-  float:right;
-  color:#666;
-  padding:10px 0;
-  h2{
-    font-size:12px;
-  }
-  .bar{
-    width:500px;
-    margin:10px auto;
-    height:6px;
-    background:#e2e2e2;
-    border-radius:3px;
-    dl{
-      width:33.3%;
-      float:left;
-      height:6px;
-      background:#e2e2e2;
-      position:relative;
-      border-radius:3px;
-      &.current{
-        background:#ff7575;
-        dt{
-          background:#ff7575;
-        }
-        dd{
-          color:#ff7575;
-          display:block;
-        }
-      }
-      &.past{
-        border-radius:0;
-        background:#ffb3b3;
-        dt{
-          background:#ffb3b3;
-        }
-      }
-      dt{
-        text-align:center;
-        width:24px;
-        height:24px;
-        border-radius:50%;
-        line-height:24px;
-        background:#e2e2e2;
-        color:#fff;
-        font-weight:bold;
-        position:absolute;
-        top:-10px;
-        left:42%;
-      }
-      dd{
-        width:100%;
-        text-align:center;
-        margin:15px 0;
-        display:none;
-      }
-    }
-  }
-  .step{
-    display:none;
-    width:600px;
-    margin:50px auto;
-    dl{
-      overflow:hidden;
-      margin:20px 0;
-      line-height:30px;
-      dt{
-        float:left;
-        width:130px;
-        text-align:right;
-        i{
-          color:#ff0e0e;
-        }
-      }
-      dd{
-        float:left;
-        margin-left:10px;
-        input{
-          width:180px;
-          height:30px;
-          line-height:30px;
-          border:1px solid #ededed;
-        }
-        a{
-          &.phone-veri{
-            border:1px solid #ededed;
-            display:inline-block;
-            padding:0 10px;
-          }
-          &.another{
-            color:#fe1d1b;
-          }
-        }
-        span{
-          display:inline-block;
-          color:#9a9a9a;
-          &.code{
-            background:#000000;
-            width:80px;
-            height:30px;
-            text-align:center;
-          }
-        }
-      }
-    }
-    &.phone{
-      display:block;
-    }
-    &.finish{
-      font-family:"simsun";
-      font-size:14px;
-      font-weight:bold;
-      color:#6ccb31;
-      p{
-        margin:70px 180px;
-        i{
-          display:inline-block;
-          background:url("/images/user/gou.png") no-repeat;
-          width:35px;
-          height:25px;
-          vertical-align:middle;
-          margin-right:10px;
-        }
-      }
-    }
-  }
-  .submit{
-    width:70px;
-    height:30px;
-    text-align:center;
-    line-height:30px;
-    color:#fff;
-    background:linear-gradient(#4dcd45,#27b120);
-    border:none;
-    margin-left:140px;
+footer{
+  .service{
+    margin-top:0;
   }
 }
