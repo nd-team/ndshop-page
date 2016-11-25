@@ -212,6 +212,23 @@ body{
             }
           }
         }
+        .list-accord3{
+          @extend .list-accord;
+          ul{
+            li{
+              &.scroller1{
+                width: 1%;
+                background-color: #33b5ff;
+                border: 1px solid #33b5ff;
+              }
+              &.scroller2{
+                width: 63%;
+                background-color: #d6f0ff;
+                border: 1px solid #33b5ff;
+              }
+            }
+          }
+        }
        }
     }
   }
