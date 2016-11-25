@@ -438,20 +438,45 @@ svg{
                     margin: 25px 0 0;
                     a{
                       display: block;
-                      color: #333;
                       text-align: center;
                       line-height: 20px;
+                      margin-top: 10px;
+                      &.see-person{
+                        color: #333;
+                      }
+                      &.no-person{
+                        color: #999;
+                      }
                     }
                   }
                   &.order-view{
                     width: 15%;
                     border-left: 1px solid #e5e5e5;
-                    text-align: center;
+                    margin: 0 auto;
                     a{
-                      display: inline-block;
-                      margin-top: 35px;
+                      display: block;
+                      margin: 0 auto;
                       text-align: center;
-                      color: #333;
+                      &.confirm-refund{
+                        margin-top: 25px;
+                        width: 68px;
+                        height: 28px;
+                        line-height: 28px;
+                        background: url("/images/business/blue_refund.png") no-repeat;
+                        color: #fff;
+                      }
+                      &.see-logistics{
+                        color: #333;
+                        line-height: 22px;
+                      }
+                      &.see-refund{
+                        width: 68px;
+                        height: 28px;
+                        line-height: 28px;
+                        margin-top: 25px;
+                        background: url("/images/business/refund.png") no-repeat;
+                        color: #fff;
+                      }
                     }
                   }
                 }
@@ -484,68 +509,69 @@ svg{
       }
     }
     .page{
-      float:right;
-      //margin-right:60px;
-      a{
-        display:inline-block;
-        width:24px;
-        height:24px;
-        border:1px solid #d1d1d1;
-        line-height:24px;
-        text-align:center;
-        color:#d1d1d1;
-        &.home{
-          float: left;
-          width: 45px;
-          margin-right: 5px;
-        }
-        &.last-page{
-          float: left;
-          width: 45px;
-          margin-left: 5px;
-        }
-      }
+       float:right;
+       //margin-right:60px;
+       a{
+         display:inline-block;
+         width:24px;
+         height:24px;
+         border:1px solid #d1d1d1;
+         line-height:24px;
+         text-align:center;
+         color:#d1d1d1;
+         &.home{
+           float: left;
+           width: 45px;
+           margin-right: 5px;
+         }
+         &.last-page{
+           float: left;
+           width: 45px;
+           margin-left: 5px;
+         }
+       }
 
-      .last{
-        float:left;
+       .last{
+         float:left;
 
-        i{
-          display:inline-block;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 5px 10px 5px 0;
-          border-color: transparent #d2d1cf transparent transparent;
-        }
-      }
-      .next{
-        float:left;
-        width:65px;
-        i{
-          display:inline-block;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 5px 0 5px 10px;
-          border-color: transparent transparent transparent #d2d1cf;
-        }
-      }
-      ul{
-        float:left;
-        margin:0 10px;
-        li{
-          float:left;
-          margin:0 5px;
-          a{
-            &.active{
-              background:#31b5fd;
-              color:#fff;
-            }
-          }
-        }
-      }
-    }
+         i{
+           display:inline-block;
+           width: 0;
+           height: 0;
+           border-style: solid;
+           border-width: 5px 10px 5px 0;
+           border-color: transparent #d2d1cf transparent transparent;
+         }
+       }
+       .next{
+         float:left;
+         width:65px;
+         i{
+           display:inline-block;
+           width: 0;
+           height: 0;
+           border-style: solid;
+           border-width: 5px 0 5px 10px;
+           border-color: transparent transparent transparent #d2d1cf;
+         }
+       }
+       ul{
+         float:left;
+         margin:0 10px;
+         li{
+           float:left;
+           margin:0 5px;
+           a{
+             &.active{
+               background:#31b5fd;
+               color:#fff;
+             }
+           }
+         }
+       }
+     }
   }
+
 }
 footer{
   margin-left: 520px;

@@ -487,63 +487,85 @@ svg{
       }
     }
   }
-  .page{
-    float:right;
-    margin-right:60px;
-    a{
-      display:inline-block;
-      width:24px;
-      height:24px;
-      border:1px solid #d1d1d1;
-      line-height:24px;
-      text-align:center;
-      color:#d1d1d1;
-      &.home{
-        float: left;
-        width: 45px;
-        margin-right: 5px;
+  .page-content{
+    margin: 0 35px;
+    overflow: hidden;
+    .all-selected{
+      float: left;
+      .checkbox{
+        margin-left: 20px;
+        vertical-align: middle;
       }
-      &.last-page{
-        float: left;
-        width: 45px;
-        margin-left: 5px;
+      .close{
+        display: inline-block;
+        width: 79px;
+        height: 22px;
+        border: 1px solid #ddd;
+        color: #b2b2b2;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 3px;
+        margin-left: 10px;
       }
     }
-    
-    .last{
-      float:left;
+    .page{
+      float:right;
+      //margin-right:60px;
+      a{
+        display:inline-block;
+        width:24px;
+        height:24px;
+        border:1px solid #d1d1d1;
+        line-height:24px;
+        text-align:center;
+        color:#d1d1d1;
+        &.home{
+          float: left;
+          width: 45px;
+          margin-right: 5px;
+        }
+        &.last-page{
+          float: left;
+          width: 45px;
+          margin-left: 5px;
+        }
+      }
 
-      i{
-        display:inline-block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 5px 10px 5px 0;
-        border-color: transparent #d2d1cf transparent transparent;
-      }
-    }
-    .next{
-      float:left;
-      width:65px;
-      i{
-        display:inline-block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 5px 0 5px 10px;
-        border-color: transparent transparent transparent #d2d1cf;
-      }
-    }
-    ul{
-      float:left;
-      margin:0 10px;
-      li{
+      .last{
         float:left;
-        margin:0 5px;
-        a{
-          &.active{
-            background:#31b5fd;
-            color:#fff;
+
+        i{
+          display:inline-block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 5px 10px 5px 0;
+          border-color: transparent #d2d1cf transparent transparent;
+        }
+      }
+      .next{
+        float:left;
+        width:65px;
+        i{
+          display:inline-block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 5px 0 5px 10px;
+          border-color: transparent transparent transparent #d2d1cf;
+        }
+      }
+      ul{
+        float:left;
+        margin:0 10px;
+        li{
+          float:left;
+          margin:0 5px;
+          a{
+            &.active{
+              background:#31b5fd;
+              color:#fff;
+            }
           }
         }
       }
