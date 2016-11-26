@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>订单管理-所有订单</title>
-    <link rel="stylesheet" href="/css/business/order_all.css">
+    <title>订单管理-维权订单</title>
+    <link rel="stylesheet" href="/css/business/rights_all.css">
     <script src="/js/common.js"></script>
 </head>
 <body>
@@ -36,10 +36,10 @@
                 <a href="order_overview.html">订单概况</a>
             </li>
             <li>
-                <a href="order_all.html" class="active">所有订单</a>
+                <a href="order_all.html">所有订单</a>
             </li>
             <li>
-                <a href="rights_all.html">维权订单</a>
+                <a href="rights_all.html" class="active">维权订单</a>
             </li>
             <li>
                 <a href="order_overview.html">评价订单</a>
@@ -50,7 +50,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="order_all.html" class="active">全部订单</a>
+                    <a href="rights_all.html" class="active">全部订单</a>
                 </li>
                 <li>
                     <a href="order_payment.html">待确认付款订单</a>
@@ -179,14 +179,10 @@
             </ul>
             <div class="all-article">
                 <ul class="all-order">
-                    <li><a href="order_all.html">全部</a></li>
-                    <li><a href="order_payment.html">待付款</a></li>
-                    <li><a href="order_delivered.html">待发货</a></li>
-                    <li><a href="order_shipped.html">已发货</a></li>
-                    <li class="current"><a href="order_completed.html">已完成</a></li>
-                    <li><a href="order_closed.html">已关闭</a></li>
-                    <li><a href="order_refunding.html">退款中</a></li>
-                    <li><a href="javascript:void(0)">需要评价</a></li>
+                    <li><a href="rights_all.html">全部</a></li>
+                    <li class="current"><a href="rights_request_refund.html">申请退款</a></li>
+                    <li><a href="rights_refund_process.html">退款处理中</a></li>
+                    <li><a href="rights_refund_end.html">退款结束</a></li>
                     <li class="order-type">
                         <a href="javascript:void(0)"><i></i>订单类型和简介</a>
                     </li>
@@ -197,7 +193,8 @@
                             <i class="checkbox">
                                 <input type="checkbox" class="click" name="subBox">
                             </i>全选
-                            <a href="javascript:void(0)" class="close">批量关闭</a>
+                            <a href="javascript:void(0)" class="close">批量退款</a>
+                            <a href="javascript:void(0)" class="close">批量标志</a>
                         </div>
                         <div class="content-list">
                             <p class="list-title">
@@ -219,9 +216,6 @@
                                         <span>515645135749845</span>
                                     </p>
                                     <p class="time">下单时间：2016-08-18 00:00:00</p>
-                                    <svg role="img" class="dele-font">
-                                        <use xlink:href="#dele-font"></use>
-                                    </svg>
                                 </div>
                                 <ul class="order-pic">
                                     <li class="pic-text">
@@ -239,14 +233,52 @@
                                         <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易完成</p>
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
                                     <li class="order-assess">
-                                        <a class="reviews" href="javascript:void(0)">评价</a>
-                                        <a class="see-reviews" href="javascript:void(0)">查看对方评价</a>
                                     </li>
-                                    <li class="order-view"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="details">
+                            <li class="all-list">
+                                <div class="check-show">
+                                    <p class="check-name">
+                                        <input type="checkbox" class="check-box">
+                                        <label>订单号:</label>
+                                        <span>515645135749845</span>
+                                    </p>
+                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
+                                </div>
+                                <ul class="order-pic">
+                                    <li class="pic-text">
+                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
+                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
+                                    </li>
+                                    <li class="order-money">
+                                        <span>￥50.00</span>
+                                    </li>
+                                    <li class="order-many">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="order-user">
+                                        <p>张三</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
+                                    </li>
+                                    <li class="order-detail">
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
+                                        <a href="javascript:void(0)">详情</a>
+                                    </li>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -276,13 +308,14 @@
                                         <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易完成</p>
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
-                                    <li class="order-assess">
-                                        <a class="see-red" href="javascript:void(0)">双方已评价</a>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
                                     </li>
-                                    <li class="order-view"></li>
                                 </ul>
                             </li>
                         </ul>
@@ -312,14 +345,14 @@
                                         <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易完成</p>
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
-                                    <li class="order-assess">
-                                        <a class="reviews" href="javascript:void(0)">评价</a>
-                                        <a class="see-reviews" href="javascript:void(0)">查看对方评价</a>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
                                     </li>
-                                    <li class="order-view"></li>
                                 </ul>
                             </li>
                         </ul>
@@ -349,13 +382,51 @@
                                         <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易完成</p>
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
-                                    <li class="order-assess">
-                                        <a class="see-red" href="javascript:void(0)">双方已评价</a>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
                                     </li>
-                                    <li class="order-view"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="details">
+                            <li class="all-list">
+                                <div class="check-show">
+                                    <p class="check-name">
+                                        <input type="checkbox" class="check-box">
+                                        <label>订单号:</label>
+                                        <span>515645135749845</span>
+                                    </p>
+                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
+                                </div>
+                                <ul class="order-pic">
+                                    <li class="pic-text">
+                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
+                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
+                                    </li>
+                                    <li class="order-money">
+                                        <span>￥50.00</span>
+                                    </li>
+                                    <li class="order-many">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="order-user">
+                                        <p>张三</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
+                                    </li>
+                                    <li class="order-detail">
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
+                                        <a href="javascript:void(0)">详情</a>
+                                    </li>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -385,14 +456,14 @@
                                         <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易完成</p>
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
-                                    <li class="order-assess">
-                                        <a class="reviews" href="javascript:void(0)">评价</a>
-                                        <a class="see-reviews" href="javascript:void(0)">查看对方评价</a>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
                                     </li>
-                                    <li class="order-view"></li>
                                 </ul>
                             </li>
                         </ul>
@@ -422,13 +493,14 @@
                                         <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易完成</p>
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
-                                    <li class="order-assess">
-                                        <a class="see-red" href="javascript:void(0)">双方已评价</a>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
                                     </li>
-                                    <li class="order-view"></li>
                                 </ul>
                             </li>
                         </ul>
@@ -454,18 +526,18 @@
                                         <span>1</span>
                                     </li>
                                     <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
+                                        <p>张三</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易完成</p>
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
-                                    <li class="order-assess">
-                                        <a class="reviews" href="javascript:void(0)">评价</a>
-                                        <a class="see-reviews" href="javascript:void(0)">查看对方评价</a>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
                                     </li>
-                                    <li class="order-view"></li>
                                 </ul>
                             </li>
                         </ul>
@@ -491,53 +563,18 @@
                                         <span>1</span>
                                     </li>
                                     <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
+                                        <p>张三</p>
+                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/nomege.png" alt=""></a>
                                     </li>
                                     <li class="order-detail">
-                                        <p>交易完成</p>
+                                        <p>交易失败</p>
+                                        <p>申请退款退货中</p>
                                         <a href="javascript:void(0)">详情</a>
                                     </li>
-                                    <li class="order-assess">
-                                        <a class="see-red" href="javascript:void(0)">双方已评价</a>
+                                    <li class="order-assess"></li>
+                                    <li class="order-view">
+                                        <a class="see-refund" href="javascript:void(0)">确认退款</a>
                                     </li>
-                                    <li class="order-view"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="details">
-                            <li class="all-list">
-                                <div class="check-show">
-                                    <p class="check-name">
-                                        <input type="checkbox" class="check-box">
-                                        <label>订单号:</label>
-                                        <span>515645135749845</span>
-                                    </p>
-                                    <p class="time">下单时间：2016-08-18 00:00:00</p>
-                                </div>
-                                <ul class="order-pic">
-                                    <li class="pic-text">
-                                        <a class="picture" href="javascript:void(0)"><img src="/images/business/pic01.jpg" alt=""></a>
-                                        <p class="text-name">430不锈钢卡通勺子儿童勺叉子公司礼品定制高档插柄西餐具幼儿园</p>
-                                    </li>
-                                    <li class="order-money">
-                                        <span>￥50.00</span>
-                                    </li>
-                                    <li class="order-many">
-                                        <span>1</span>
-                                    </li>
-                                    <li class="order-user">
-                                        <p>JANE</p>
-                                        <a class="message-pic" href="javascript:void(0)"><img src="/images/business/message.png" alt=""></a>
-                                    </li>
-                                    <li class="order-detail">
-                                        <p>交易完成</p>
-                                        <a href="javascript:void(0)">详情</a>
-                                    </li>
-                                    <li class="order-assess">
-                                        <a class="see-red" href="javascript:void(0)">双方已评价</a>
-                                    </li>
-                                    <li class="order-view"></li>
                                 </ul>
                             </li>
                         </ul>
@@ -550,7 +587,8 @@
                 <i class="checkbox">
                     <input type="checkbox" class="click" name="subBox">
                 </i>全选
-                <a href="javascript:void(0)" class="close">批量关闭</a>
+                <a href="javascript:void(0)" class="close">批量退款</a>
+                <a href="javascript:void(0)" class="close">批量标志</a>
             </div>
             <div class="page">
                 <a href="javascript:void(0)" class="home">首页</a>
@@ -564,6 +602,7 @@
                 <a href="javascript:void(0)" class="last-page">尾页</a>
             </div>
         </div>
+
     </div>
     <footer>
         <div class="foot-link">
