@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>模块</title>
+    <!--<link href="http://g.tbcdn.cn/kissy/edge/2014.07.16/css/dpl/base-debug.css" rel="stylesheet"/>-->
+    <!--<link href="http://g.tbcdn.cn/kg/editor-plugins/1.1.2/assets/editor.css" rel="stylesheet"/>-->
     <link rel="stylesheet" href="/css/business/renovation/modular.css">
 </head>
 <body>
@@ -186,28 +188,26 @@
     </div>
     <div class="cont-specific">
            <div class="layout">
-                 <a href="javascript:void(0)" class="shop-sign">
-                     <img src="/images/business/renovation/pic.jpg"/>
-                 </a>
-                 <!--编辑删除-->
-                 <div class="allbar">
-                   <div class="bar">
+               <div class="shop-sign">
+                       <img src="/images/business/renovation/pic.jpg"/>
+                   <div class="mask">
+                       <div class="maskbg"></div>
+                       <div class="barascrits">
+                           <a href="javascript:void(0)" data-title="m-sign">
+                               <svg role="img" class="edit">
+                                   <use xlink:href="#edit"></use>
+                               </svg>
+                               编辑
+                           </a>
+                           <a href="javascript:void(0)">
+                               <svg role="img" class="ret-delete">
+                                   <use xlink:href="#ret-delete"></use>
+                               </svg>
+                               删除
+                           </a>
+                       </div>
                    </div>
-                   <div class="barascrits">
-                       <a href="javascript:void(0)">
-                           <svg role="img" class="edit">
-                               <use xlink:href="#edit"></use>
-                           </svg>
-                           编辑
-                       </a>
-                       <a href="javascript:void(0)">
-                           <svg role="img" class="ret-delete">
-                               <use xlink:href="#ret-delete"></use>
-                           </svg>
-                           删除
-                       </a>
-                   </div>
-                  </div>
+               </div>
                  <nav>
                      <ul>
                          <li>
@@ -223,12 +223,41 @@
                              <a href="javascript:void(0)">床垫馆</a>
                          </li>
                     </ul>
+                     <div class="mask">
+                         <div class="maskbg"></div>
+                         <div class="barascrits">
+                             <a href="javascript:void(0)" data-title="m-nav">
+                                 <svg role="img" class="edit">
+                                     <use xlink:href="#edit"></use>
+                                 </svg>
+                                 编辑
+                             </a>
+                             <a href="javascript:void(0)">
+                                 <svg role="img" class="ret-delete">
+                                     <use xlink:href="#ret-delete"></use>
+                                 </svg>
+                                 删除
+                             </a>
+                         </div>
+                     </div>
                  </nav>
-                 <div class="allbar2">
-                   <div class="bar">
-                   </div>
+          </div>
+           <div class="rotation">
+               <div class="title">
+                   <h3>图片轮播</h3>
+               </div>
+               <div class="banner clearfix">
+                   <a href="javascript:void(0)" class="ban-pic01"><img src="/images/business/renovation/banner-pic.png"/></a>
+                   <a href="javascript:void(0)" class="ban-pic02"><img src="/images/business/renovation/banner-pic.png"/></a>
+                   <ul>
+                       <li class="selected">1</li>
+                       <li>2</li>
+                   </ul>
+               </div>
+               <div class="mask">
+                   <div class="maskbg"></div>
                    <div class="barascrits">
-                       <a href="javascript:void(0)">
+                       <a href="javascript:void(0)" data-title="m-rotation" >
                            <svg role="img" class="edit">
                                <use xlink:href="#edit"></use>
                            </svg>
@@ -242,38 +271,7 @@
                        </a>
                    </div>
                </div>
-          </div>
-           <div class="banner-tit">
-               <h3>
-                   <span>图片轮播</span>
-               </h3>
            </div>
-           <div class="banner clearfix">
-             <a href="javascript:void(0)" class="ban-pic01"><img src="/images/business/renovation/banner-pic.png"/></a>
-               <a href="javascript:void(0)" class="ban-pic02"><img src="/images/business/renovation/banner-pic.png"/></a>
-             <ul>
-                  <li class="selected">1</li>
-                  <li>2</li>
-              </ul>
-            </div>
-                 <div class="allbar3">
-            <div class="bar">
-            </div>
-            <div class="barascrits">
-                <a href="javascript:void(0)">
-                    <svg role="img" class="edit">
-                        <use xlink:href="#edit"></use>
-                    </svg>
-                    编辑
-                </a>
-                <a href="javascript:void(0)">
-                    <svg role="img" class="ret-delete">
-                        <use xlink:href="#ret-delete"></use>
-                    </svg>
-                    删除
-                </a>
-            </div>
-        </div>
            <div class="le-ri">
           <div class="left-slide">
                <div class="left-fir">
@@ -286,9 +284,26 @@
                    </button>
                   </p>
                    <div class="fir-search">
-                       <h3>
-                       <span>店内搜索</span>
-                       </h3>
+                       <div class="title">
+                           <h3>店内搜索</h3>
+                           <div class="mask">
+                               <div class="maskbg"></div>
+                               <div class="barascrits">
+                                   <a href="javascript:void(0)" data-title="pro-search">
+                                       <svg role="img" class="edit">
+                                           <use xlink:href="#edit"></use>
+                                       </svg>
+                                       编辑
+                                   </a>
+                                   <a href="javascript:void(0)">
+                                       <svg role="img" class="ret-delete">
+                                           <use xlink:href="#ret-delete"></use>
+                                       </svg>
+                                       删除
+                                   </a>
+                               </div>
+                           </div>
+                       </div>
                        <p>
                        <label>关键字：</label>
                        <input type="text">
@@ -303,11 +318,29 @@
                            搜索
                       </button>
                    </div>
+
                 </div>
                <div class="left-side-bottom">
-                  <h3>
-                      <span>店内分类</span>
-                  </h3>
+                   <div class="title">
+                       <h3>店内分类</h3>
+                       <div class="mask">
+                           <div class="maskbg"></div>
+                           <div class="barascrits">
+                               <a href="javascript:void(0)" data-title="m-customize">
+                                   <svg role="img" class="edit">
+                                       <use xlink:href="#edit"></use>
+                                   </svg>
+                                   编辑
+                               </a>
+                               <a href="javascript:void(0)">
+                                   <svg role="img" class="ret-delete">
+                                       <use xlink:href="#ret-delete"></use>
+                                   </svg>
+                                   删除
+                               </a>
+                           </div>
+                       </div>
+                   </div>
                   <ul class="store-duty">
                       <li>
                           <a href="javascript:void(0)" class="inactive">查看所有商品</a>
@@ -406,9 +439,26 @@
                   </ul>
               </div>
                <div class="shop-rank">
-                   <h3>
-                       <span>商品排行榜</span>
-                   </h3>
+                   <div class="title">
+                       <h3>店内排行榜</h3>
+                       <div class="mask">
+                           <div class="maskbg"></div>
+                           <div class="barascrits">
+                               <a href="javascript:void(0)" data-title="pro-ranking">
+                                   <svg role="img" class="edit">
+                                       <use xlink:href="#edit"></use>
+                                   </svg>
+                                   编辑
+                               </a>
+                               <a href="javascript:void(0)">
+                                   <svg role="img" class="ret-delete">
+                                       <use xlink:href="#ret-delete"></use>
+                                   </svg>
+                                   删除
+                               </a>
+                           </div>
+                       </div>
+                   </div>
                    <div class="shop-one">
                        <a href="javascript:void(0)">
                            <img src="/images/business/renovation/shop.png" height="160" width="160"/>
@@ -465,10 +515,27 @@
           </div>
           <div class="right-cont">
             <div class="shop-skin-box">
-                 <h3>
-                     <span>商品推荐</span>
-                     <a href="javascript:void(0)" class="more">更多&gt;</a>
-                 </h3>
+                <div class="title">
+                    <h3>商品推荐 <a href="javascript:void(0)" class="more">更多&gt;</a></h3>
+
+                    <div class="mask">
+                        <div class="maskbg"></div>
+                        <div class="barascrits">
+                            <a href="javascript:void(0)" data-title="pro-recom">
+                                <svg role="img" class="edit">
+                                    <use xlink:href="#edit"></use>
+                                </svg>
+                                编辑
+                            </a>
+                            <a href="javascript:void(0)">
+                                <svg role="img" class="ret-delete">
+                                    <use xlink:href="#ret-delete"></use>
+                                </svg>
+                                删除
+                            </a>
+                        </div>
+                    </div>
+                </div>
                  <div class="item1line1">
                       <dl class="item">
                            <dt>
@@ -680,25 +747,6 @@
              </div>
           </div>
         </div>
-           <!--编辑删除-->
-          <!--<div class="aaa"><div class="allbar">
-             <div class="bar">
-             </div>
-             <div class="barascrits">
-                 <a href="javascript:void(0)">
-                     <svg role="img" class="edit">
-                         <use xlink:href="#edit"></use>
-                     </svg>
-                     编辑
-                 </a>
-                 <a href="javascript:void(0)">
-                     <svg role="img" class="ret-delete">
-                         <use xlink:href="#ret-delete"></use>
-                     </svg>
-                     删除
-                 </a>
-             </div>
-         </div></div>-->
         <footer>
             <div class="wrap">
                 <div class="foot-link">
@@ -724,34 +772,781 @@
         <!--big footer end-->
   </div>
 </div>
+<div id="modal">
+    <div class="m-con m-nav">
+        <h2 class="m-con-title">导航</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)">设置</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-nav-main">
+            <ul class="m-nav-list">
+                <li>首页</li>
+                <li>
+                    <a href="javascript:void(0)">链接</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_up">
+                            <use xlink:href="#data_up"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <svg role="img" class="data_down">
+                            <use xlink:href="#data_down"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="del">
+                    <a href="javascript:void(0)">删除</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+        <div class="msg-add">
+            <p class="msg">
+                导航区域可放置店铺重要的信息，最多添加8项
+            </p>
+            <a href="javascript:void(0)" class="add">
+                <svg role="img" class="business_add">
+                    <use xlink:href="#business_add"></use>
+                </svg>
+                添加
+            </a>
+        </div>
+        <div class="add-module">
+            <h3>添加</h3>
+            <div class="add-m-main">
+                <div class="add-nav-list">
+                    <form >
+                        <div class="add-list-input" >
+                            <label>名称：</label> <input type="text" value="双十一活动">
+                        </div>
+                        <div class="add-list-input">
+                            <label>链接：</label> <input type="text" value="www.taobao.com">
+                        </div>
+                    </form>
+                    <div class="add-m-msg">
+                        <p>导航区域可放置店铺重要信息，最多添加8项</p>
+                        <p>
+                            <strong class="correct">√</strong>
+                            有效连接
+                        </p>
+                    </div>
+                </div>
+                <div class="add-nav-list">
+                    <form >
+                        <div class="add-list-input" >
+                            <label>名称：</label> <input type="text" value="双十一活动">
+                        </div>
+                        <div class="add-list-input">
+                            <label>链接：</label> <input type="text" value="www.taobao.com">
+                        </div>
+                    </form>
+                    <div class="add-m-msg">
+                        <p>导航区域可放置店铺重要信息，最多添加8项</p>
+                        <p>
+                            <strong class="error">ｉ</strong>
+                            有效连接
+                        </p>
+                    </div>
+                </div>
+                <div class="continue">
+                    <button>继续添加</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+    <div class="m-con m-sign">
+        <h2 class="m-con-title">店内招牌</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)" data-tab="default">默认招牌</a></li>
+                <li><a href="javascript:void(0)" data-tab="customize">自定义招牌</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-sign-main">
+            <div class="m-sign-input default">
+                <dl>
+                    <dt>店铺名称：</dt>
+                    <dd>
+                        <p>
+                            <span>良品铺子小吃店</span>
+                            <a href="javascript:void(0)">修改</a>
+                        </p>
+                        <p>
+                            <span>是否显示店铺名称：</span> <input type="checkbox">
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>背景图：</dt>
+                    <dd>
+                        <input type="file">
+                        <a href="javascript:void(0)" class="default-img">使用默认图片</a>
+                        <p><img src="/images/business/renovation/pic.jpg" alt=""></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>高度：</dt>
+                    <dd>
+                        <input type="number" value="120">PX
+                        <span class="msg">宽度为950px，导航建议不超过120px，否则导航可能会异常哦！</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="m-sign-input customize">
+                <dl>
+                    <dt>自定义内容：</dt>
+                    <dd>
+                            <textarea id="textarea1">
+                                <p>请输入内容...</p>
+                            </textarea>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>高度：</dt>
+                    <dd>
+                        <input type="number" value="120">PX
+                        <span class="msg">宽度为950px，导航建议不超过120px，否则导航可能会异常哦！</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+    <div class="m-con m-rotation">
+        <h2 class="m-con-title">轮播图</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)" data-tab="rote-setting">设置</a></li>
+                <li><a href="javascript:void(0)" data-tab="rote-effectset">效果设置</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-rota-main ">
+            <div class="rote-setting">
+                <ul class="rote-title">
+                    <li>图片地址：</li>
+                    <li>链接地址：</li>
+                    <li>操作：</li>
+                </ul>
+                <div>
+                    <ul class="rote-list">
+                        <li>
+                            <input type="text">
+                            <label for="rote-img01">
+                                <svg role="img" class="picture">
+                                    <use xlink:href="#picture"></use>
+                                </svg>
+                            </label>
+                            <input type="file" id="rote-img01">
+                        </li>
+                        <li>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="r-listup">
+                                <svg role="img" class="data_up">
+                                    <use xlink:href="#data_up"></use>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="r-listdown">
+                                <svg role="img" class="data_down">
+                                    <use xlink:href="#data_down"></use>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="r-delete">
+                                <svg role="img" class="close">
+                                    <use xlink:href="#close"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="rote-list">
+                        <li>
+                            <input type="text">
+                            <label for="rote-img01">
+                                <svg role="img" class="picture">
+                                    <use xlink:href="#picture"></use>
+                                </svg>
+                            </label>
+                            <input type="file" >
+                        </li>
+                        <li>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="r-listup">
+                                <svg role="img" class="data_up">
+                                    <use xlink:href="#data_up"></use>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="r-listdown">
+                                <svg role="img" class="data_down">
+                                    <use xlink:href="#data_down"></use>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="r-delete">
+                                <svg role="img" class="close">
+                                    <use xlink:href="#close"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="rote-list">
+                        <li>
+                            <input type="text">
+                            <label for="rote-img01">
+                                <svg role="img" class="picture">
+                                    <use xlink:href="#picture"></use>
+                                </svg>
+                            </label>
+                            <input type="file" >
+                        </li>
+                        <li>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="r-listup">
+                                <svg role="img" class="data_up">
+                                    <use xlink:href="#data_up"></use>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="r-listdown">
+                                <svg role="img" class="data_down">
+                                    <use xlink:href="#data_down"></use>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="r-delete">
+                                <svg role="img" class="close">
+                                    <use xlink:href="#close"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="rote-list">
+                        <li>
+                            <input type="text">
+                            <label for="rote-img01">
+                                <svg role="img" class="picture">
+                                    <use xlink:href="#picture"></use>
+                                </svg>
+                            </label>
+                            <input type="file">
+                        </li>
+                        <li>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="r-listup">
+                                <svg role="img" class="data_up">
+                                    <use xlink:href="#data_up"></use>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="r-listdown">
+                                <svg role="img" class="data_down">
+                                    <use xlink:href="#data_down"></use>
+                                </svg>
+                            </a >
+                            <a href="javascript:void(0)" class="r-delete">
+                                <svg role="img" class="close">
+                                    <use xlink:href="#close"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="javascript:void(0)" class="add">
+                    <svg role="img" class="business_add">
+                        <use xlink:href="#business_add"></use>
+                    </svg>
+                    添加
+                </a>
+            </div>
+            <div class="rote-effectset">
+                <dl>
+                    <dt>店铺名称：</dt>
+                    <dd>
+                        <input type="radio"> 显示
+                        <input type="radio"> 不显示
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>高度：</dt>
+                    <dd>
+                        <input type="number">PX
+                        <span class="msg">请设置在100-600px之间</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>切换效果</dt>
+                    <dd>
+                        <select>
+                            <option >上下滚动</option>
+                            <option >渐变滚动</option>
+                        </select>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="add-module">
+            <h3>上传/选择图片</h3>
+            <div class="add-m-main">
+                <div class="add-m-head">
+                    <span>图片地址</span>
+                    <p class="search">
+                        <input type="text" placeholder="输入时间或名字">
+                        <button>搜索</button>
+                    </p>
+                </div>
+                <div class="add-m-con">
+                    <div class="add-m-tree">
+                        <p class="tree-search">
+                            <input type="text">
+                            <button>搜索</button>
+                            <button>创建分类</button>
+                        </p>
+                        <div  id="tree">
+                            <ul>
+                                <li data-jstree='{ "opened" : true }'>我的图片
+                                    <ul>
+                                        <li data-jstree='{ "selected" : true }'>裙子</li>
+                                        <li>上衣</li>
+                                        <li>裤子</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="add-m-img">
+                        <div class="img">
+                            <img src="/images/business/head-pic.png" alt="">
+                            <img src="/images/business/head-pic.png" alt="">
+                            <img src="/images/business/head-pic.png" alt="">
+                            <img src="/images/business/head-pic.png" alt="">
+                            <img src="/images/business/head-pic.png" alt="">
+                            <img src="/images/business/head-pic.png" alt="">
+                            <img src="/images/business/head-pic.png" alt="">
+                            <img src="/images/business/head-pic.png" alt="">
+                        </div>
+                        <div class="page">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="active">1</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">2</a>
+                                </li>
+                            </ul>
+                            <button>下一页 <i></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+    <div class="m-con m-pro pro-ranking">
+        <h2 class="m-con-title">商品排行</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)">设置</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-pro-main">
+            <dl>
+                <dt>显示标题：</dt>
+                <dd>
+                    <input type="radio" name="title-display" checked> 显示
+                    <input type="radio" name="title-display"> 不显示 <input type="text" value="商品排行榜">
+                </dd>
+            </dl>
+            <dl>
+                <dt>商品分类：</dt>
+                <dd>
+                    <select name="" id="">
+                        <option value="">所有分类</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt>关键字：</dt>
+                <dd>
+                    <input type="text">
+                </dd>
+            </dl>
+            <dl>
+                <dt>显示数量：</dt>
+                <dd>
+                    <select name="" >
+                        <option value="">五个商品</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt>默认显示：</dt>
+                <dd>
+                    <input type="radio" name="title-display" checked> 热销排行
+                    <input type="radio" name="title-display"> 热销搜索排行
+                    <p><input type="checkbox"> 显示最近30天销量数据</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+    <div class="m-con m-pro pro-search">
+        <h2 class="m-con-title">商品搜索</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)">设置</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-pro-main">
+            <dl>
+                <dt>显示标题：</dt>
+                <dd>
+                    <input type="radio" name="title-display" checked> 显示
+                    <input type="radio" name="title-display"> 不显示 <input type="text" value="搜店内">
+                </dd>
+            </dl>
+            <dl>
+                <dt>预设关键字：</dt>
+                <dd>
+                    <input type="text">
+                    <span class="pro-msg">预设在搜索框中，最长5个汉字，10个字母</span>
+                </dd>
+            </dl>
+            <dl>
+                <dt>推荐关键字：</dt>
+                <dd>
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <p class="pro-msg">搜索按钮后推荐，最长五个汉字、10个字母</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>是否显示：</dt>
+                <dd>
+                    <input type="checkbox"> 价格筛选
+                </dd>
+            </dl>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+    <div class="m-con m-pro pro-recom">
+        <h2 class="m-con-title">商品推荐</h2>
+        <div class="m-con-menu">
+            <ul>
+                <li class="active"><a href="javascript:void(0)" data-tab="recom-setting">设置</a></li>
+                <li><a href="javascript:void(0)" data-tab="recom-dis-set">显示设置</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="help">
+                <strong>?</strong> 使用帮助
+            </a>
+        </div>
+        <div class="m-pro-main">
+            <div class="recom-setting">
+                <dl>
+                    <dt>推荐方式：</dt>
+                    <dd>
+                        <input type="radio" name="remon" checked> <label class="red">自动推荐</label>
+                        <input type="radio" name="remon"> 手动设置推荐
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>自动推荐排序：</dt>
+                    <dd>
+                        <select>
+                            <option value="">人气指数</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>商品分类：</dt>
+                    <dd>
+                        <select>
+                            <option value="">所有商品</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>关键字：</dt>
+                    <dd>
+                        <input type="text">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>价格范围：</dt>
+                    <dd>
+                        <input type="number" > - <input type="number"> 元
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>显示数量：</dt>
+                    <dd>
+                        <select>
+                            <option value="">5个商品</option>
+                        </select>
+                    </dd>
+                </dl>
+            </div>
+            <div class="recom-dis-set">
+                <dl>
+                    <dt>显示标题：</dt>
+                    <dd>
+                        <input type="radio" name="title" checked> 不显示
+                        <input type="radio" name="title"> 显示 <input type="text" value="商品推荐">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>展示方式：</dt>
+                    <dd>
+                        <ul>
+                            <li class="col3">
+                                <a href="javascript:void(0)" >
+                                    <p>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                    </p>
+                                    <p>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                    </p>
+                                </a>
+                                一行展示3个商品
+                            </li>
+                            <li class="col4">
+                                <a href="javascript:void(0)" class="active">
+                                    <p>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                    </p>
+                                    <p>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                    </p>
+                                </a>
+                                一行展示4个商品
+                            </li>
+                            <li class="col5">
+                                <a href="javascript:void(0)">
+                                    <p>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+
+                                    </p>
+                                    <p>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                    </p>
+                                </a>
+                                一行展示5个商品
+                            </li>
+                            <li class="col6">
+                                <a href="javascript:void(0)">
+                                    <p>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                    </p>
+                                    <p>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                        <svg role="img" class="pro_list">
+                                            <use xlink:href="#pro_list"></use>
+                                        </svg>
+                                    </p>
+                                </a>
+                                一行展示6个商品
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>是否展示折扣：</dt>
+                    <dd>
+                        <input type="checkbox">折扣价
+                        <input type="checkbox">最近30天销售数据
+                        <input type="checkbox">累计评价数
+                        <input type="checkbox">评论
+                        <p class="msg">商品折扣价格显示与主搜索保持一致！</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+    <div class="m-con m-customize">
+        <h2 class="m-con-title">自定义内容区</h2>
+        <div class="m-customize-main">
+            <dl>
+                <dt>显示标题：</dt>
+                <dd>
+                    <input type="radio" name="title" checked> 不显示
+                    <input type="radio" name="title"> 显示 <input type="text" value="商品推荐">
+                </dd>
+            </dl>
+        </div>
+        <div class="m-btn">
+            <button class="save">保存</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+</div>
+<div id="modalbg"></div>
 <script src="/js/jquery-2.1.1.min.js"></script>
+<script src="http://g.tbcdn.cn/kissy/edge/2014.07.16/seed-debug.js"></script>
+<script type="text/javascript" src="http://g.tbcdn.cn/kg/editor-plugins/1.1.2/mods.js"></script>
+<script src="/modules/plug-in/kissyeditor2.0/demo/demo.js"></script>
 <script src="/js/common.js"></script>
 <script src="/js/business/renovation/renovation.js"></script>
 <script>
-    $(function(){
-          $('.shop-sign').hover(function() {
-              $('.allbar').toggle();
-          })
-        $('nav').hover(function() {
-            $('.allbar2').toggle();
+    (function () {
+        var S = KISSY;
+        window.EDITOR_VERSION = '1.1.2';
+        var isDebug = location.search.indexOf('debug') !== -1;
+        window.EDITOR_CFG = {
+            fromTextarea: '#ks-editor-textarea'
+        };
+        KISSY.config({
+            packages: [
+                {
+                    name: 'kg/editor-plugins/' + EDITOR_VERSION,
+                    path: isDebug ? '../lib' : 'http://g.tbcdn.cn/kg/editor-plugins/' + EDITOR_VERSION,
+                    ignorePackageNameInUri: true
+                }
+            ]
         })
-        $('.banner-tit,.banner').hover(function() {
-            $('.allbar3').toggle();
-        })
-      })
-      /* if($('.allbar').is(":visible")){
-       $('.allbar').hide();
-       } else {
-       $('.allbar').show();
-       }
-       });*/
-   /* $(function() {
-        $('.cont-specific').each(function(index, element) {
-            $('.shop-sign').hover(function() {
-                $('.allbar').toggle();
-            });
-        });
-    });*/
+    })();
 </script>
 </body>
 </html>

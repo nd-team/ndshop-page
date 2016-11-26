@@ -41,7 +41,7 @@ $(function(){
     $(".banner ul li").click(function(){
         var index=$(this).text()-1;
         n=index;
-        console.log(n);
+        // console.log(n);
         $(".banner a").filter(":visible").fadeOut(500).parent().children().eq(index).fadeIn(1000);
         $(this).addClass("selected");
         $(this).siblings().removeClass("selected");
@@ -100,3 +100,51 @@ function autoMove(){
     }
     $(".banner ul li").eq(n).trigger("click");
 }
+
+//模态框
+$('a[data-title]').click(function(){
+    var dataTitle = $(this).attr("data-title");
+    $('#modalbg').show();
+    $('#modal').show();
+    $('#modal .'+dataTitle).show();
+    $('body').css("overflow","hidden");
+});
+
+$('.m-btn .cancel').click(function(){
+    $(this).parents('.m-con').hide();
+
+    $('#modal').hide();
+    $('#modalbg').hide();
+    $('.add-module').hide();
+    $('body').css("overflow","auto");
+});
+//tab切换
+$('.m-con-menu a[data-tab]').click(function(){
+    var dataTab = $(this).attr('data-tab');
+    $(this).parent().addClass('active').siblings().removeClass('active');
+    $('.'+dataTab).show().siblings().hide();
+});
+
+$('a.add').click(function(){
+    $(this).parents('.m-con').find('.add-module').show();
+});
+$('.recom-dis-set ul li a').click(function(){
+    $(this).addClass('active').parent().siblings().children().removeClass('active');
+});
+$('#modal .rote-setting .rote-list .r-delete').click(function(){
+    $(this).parents('.rote-list').remove();
+});
+
+$('#modal .rote-setting .rote-list .r-listup').click(function(){
+    var ind = $(this).parents('.rote-list').index()
+    var curr=$(this).parents('.rote-list');
+    if(curr.prev()){
+        curr.prev().before(curr);
+    }
+
+});
+$('#modal .rote-setting .rote-list .r-listdown').click(function(){
+    var curr=$(this).parents('.rote-list');
+    if(curr.next())
+        curr.next().after(curr);
+});
