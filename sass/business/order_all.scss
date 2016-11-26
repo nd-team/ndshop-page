@@ -461,17 +461,23 @@ svg{
                     border-left: 1px solid #e5e5e5;
                     text-align: center;
                     a{
-                      display: inline-block;
-                      margin-top: 35px;
+                      display: block;
+                      margin: 0 auto;
                       text-align: center;
                       &.see-logistics{
-
+                        margin-top: 30px;
                         color: #333;
+                      }
+                      &.payment-logistics{
+                        margin-top: 0 !important;
+                        color:#333;
+                        line-height: 20px;
                       }
                       &.see-refund{
                         width: 68px;
                         height: 28px;
                         line-height: 28px;
+                        margin-top: 30px;
                         background: url("/images/business/refund.png") no-repeat;
                         color: #fff;
                       }
@@ -481,6 +487,21 @@ svg{
                         line-height: 28px;
                         background: url("/images/business/shipped.png") no-repeat;
                         color: #fff;
+                        margin-top: 30px;
+                      }
+                      &.receipt{
+                        width: 74px;
+                        height: 26px;
+                        border: 1px solid #f00;
+                        line-height: 26px;
+                        text-align: center;
+                        margin-top: 25px;
+                        color: #f00;
+                        border-radius: 3px;
+                      }
+                      &.restore-order{
+                        color: #333;
+                        margin-top: 30px;
                       }
                     }
                   }
