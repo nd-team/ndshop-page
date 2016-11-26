@@ -388,7 +388,7 @@ img{
         }
       }
       .add-module{
-        //display:none;
+        display:none;
         .add-m-main{
           padding:5px 10px;
           .add-m-head{
@@ -616,6 +616,7 @@ img{
       }
     }
     &.m-customize{
+      display:none;
       .m-customize-main{
         dl{
           overflow:hidden;
