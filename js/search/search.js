@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
 
     $('.brand-con li a:not(:last)').click(function(){
-        $(this).parent().addClass('active').siblings().removeClass('active')
+        $(this).addClass('active').parent().siblings().children().removeClass('active')
     });
 
     $('.sear-filter a').click(function(){

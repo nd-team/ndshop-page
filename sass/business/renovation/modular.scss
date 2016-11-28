@@ -777,7 +777,6 @@ a{
   margin-left:-30%;
   background:#fff;
   z-index:1100;
-
   //模态框公共部分
   .m-con{
     display:none;
@@ -1240,7 +1239,7 @@ a{
             float:left;
             margin:0 10px;
             input[type="radio"]{
-              margin:0 10px 0 30px;
+              margin:0 14px 0 40px;
               vertical-align:-2px;
               &:first-child{
                 margin-left:0;
@@ -1253,6 +1252,7 @@ a{
             input[type="text"]{
               height:22px;
               width:150px;
+              text-indent:5px;
             }
             input[type="number"]{
               height:22px;
@@ -1355,6 +1355,9 @@ a{
         }
         .recom-dis-set{
           display:none;
+          .msg{
+            width:205px;
+          }
         }
       }
       &.pro-ranking,&.pro-search{

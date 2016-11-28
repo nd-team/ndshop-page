@@ -177,6 +177,10 @@
                 padding:0 10px;
                 border:1px solid #ddd;
                 margin:3px 0;
+                &.active{
+                  background-color:#33b5ff;
+                  color:#fff;
+                }
               }
             }
           }

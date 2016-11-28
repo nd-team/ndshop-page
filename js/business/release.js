@@ -56,6 +56,29 @@ $(document).ready(function(){
         $('.t-con .spec').find('.'+dataTitle).show();
     });
 
+    //品牌、净含量点击
+    $('.brand ul li a').click(function(){
+        $(this).addClass('active').parent().siblings().children().removeClass('active')
+    });
+
+    $('.netweight ul li a').click(function(){
+        $(this).addClass('active');
+        var thisName = $(this).text();
+        var staLen = $('.netweight .status p').length;
+
+        for(var i=0; i<staLen; i++){
+            var staName = $('.netweight .status p').children('span').eq(i).text();
+            var has = false;
+
+        }
+        var elem = '<p><span>'+thisName+'</span><input type="text" placeholder="含量"> %</p>';
+        $('.netweight .status').append(elem);
+
+
+
+
+    });
+
     //颜色选择
     $('.color .select-color').click(function(){
         $('.colorbox').show();
@@ -67,6 +90,16 @@ $(document).ready(function(){
         $('.color .select-color').val(val);
         $('.color .select-color').siblings('input[type="checkbox"]').attr('checked',true);
     });
+
+    //款式选择
+    $('.style li >input').click(function(){
+        $(this).next('article').show().parent().siblings().children('article').hide();
+    });
+    $('.style li article .art-con a').click(function(){
+        var val = $(this).text();
+        $(this).parents('li').children('input').val(val);
+        $('.style li article').hide();
+    })
     //图片拖曳
     var $srcImg = null;
     // 开始拖动
