@@ -301,6 +301,7 @@ body{
                 background:#ededed;
                 padding:5px 12px;
                 margin:20px 0;
+                clear:both;
                 &.more{
                   text-align:center;
                 }
@@ -359,10 +360,14 @@ body{
                       display:inline-block;
                       width:80%;
                       color:#666666;
+                      &:hover{
+                        background-color:#ededed;
+                      }
                       &.active{
                         background:#1dbdf7;
                         color:#fff;
                       }
+
                     }
                   }
                 }
@@ -541,6 +546,9 @@ body{
                       width:80%;
                       color:#666;
                       padding:10px 0;
+                      &:hover{
+                        background-color:#ededed;
+                      }
                       &.active{
                         color:#fff;
                         background:#1dbdf7;
@@ -564,11 +572,11 @@ body{
               }
               .style{
                 ul{
-                  overflow:hidden;
                   li{
                     width:auto;
                     float:left;
                     margin:0 30px 20px 0;
+                    position:relative;
                     span{
                       display:inline-block;
                       width:60px;
@@ -581,6 +589,56 @@ body{
                       border:1px solid #ededed;
                       text-indent:10px;
 
+                    }
+                    article{
+                      position:absolute;
+                      left:60px;
+                      top:40px;
+                      background:#fff;
+                      z-index:10;
+                      width:240px;
+                      height:130px;
+                      text-align:center;
+                      border:1px solid #dcdcdc;
+                      padding:8px 3px;
+                      display:none;
+                      span{
+                        position:absolute;
+                        width:10px;
+                        height:10px;
+                        transform:rotate(45deg);
+                        top:-6px;
+                        background:#fff;
+                        border-top:1px solid #dcdcdc;
+                        border-left:1px solid #dcdcdc;
+                      }
+                      .search{
+                        border:1px solid #dcdcdc;
+                        border-radius:20px;
+                        width:220px;
+                        margin:0 auto;
+                        svg{
+                          fill:#c9c9c9;
+                        }
+                        input{
+                          border:none;
+                          width:180px;
+                        }
+                      }
+                      .art-con{
+                        height:90px;
+                        overflow-y:auto;
+                        margin-top:10px;
+                        a{
+                          display:inline-block;
+                          width:30%;
+                          color:#9a9a9a;
+                          line-height:24px;
+                          &.active{
+                            background:#ededed;
+                          }
+                        }
+                      }
                     }
                   }
                 }

@@ -6,6 +6,12 @@ $(document).ready(function(){
         $('.'+dataTitle).show()
     });
 
+    //用户信息兴趣爱好点击效果
+    $('.info-interest a').click(function(){
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+
+
     //修改密码
     $('.modifypass-con .submit').click(function(){
         var dataTitle=$(this).attr('data-title');
@@ -22,7 +28,7 @@ $(document).ready(function(){
     
     //绑定
     $('.bind-con .bingding').click(function(){
-        $(this).siblings('.forbind').show();
+        $(this).siblings('.forbind').show("slow");
     });
 
     //收货地址

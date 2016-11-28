@@ -69,14 +69,15 @@ body{
 }
 
 #content{
-  margin:60px 0 0 150px;
+  margin:70px 0 0 150px;
   flex:1;
   .announcement{
     width:90%;
     height:60px;
     background:#ff4445;
-    position:fixed;
+    position:absolute;
     top:0;
+    z-index:99;
     svg{
       fill:#fff;
       float:left;
@@ -106,6 +107,7 @@ body{
       color:#252525;
       .h1{
         font-size:20px;
+        display:inline-block;
       }
       span{
         padding:0 15px;
@@ -173,34 +175,41 @@ body{
           color:#666;
         }
       }
+      &.order-list{
+        overflow:hidden;
+        background-color:#f8f8f8;
+      }
+    }
+    .t-top{
+      overflow:hidden;
+      background:#f8f8f8;
+      h2{
+        height:16px;
+        line-height:16px;
+        border-left:3px solid #fb7806;
+        padding:3px 7px;
+        margin:10px;
+        float:left;
+      }
+      a{
+        display:inline-block;
+        width:16px;
+        height:16px;
+        text-align:center;
+        line-height:16px;
+        border-radius:50%;
+        background:#bfbfbf;
+        color:#fff;
+        float:right;
+        margin:15px;
+      }
     }
     .item-deal{
       border:1px solid #e5e5e5;
       clear:both;
       height:350px;
       margin:30px 0 40px;
-      .t-top{
-        h2{
-          height:20px;
-          line-height:20px;
-          border-left:3px solid #fb7806;
-          padding:3px 7px;
-          margin:10px;
-          float:left;
-        }
-        a{
-          display:inline-block;
-          width:16px;
-          height:16px;
-          text-align:center;
-          line-height:16px;
-          border-radius:50%;
-          background:#bfbfbf;
-          color:#fff;
-          float:right;
-          margin:15px;
-        }
-      }
+
       .deal-btn{
       clear:both;
         text-align:center;
@@ -215,7 +224,7 @@ body{
             background:#33b6ff;
           }
           &.a-green{
-            background:#5ecebd;
+            background:#62c87f;
           }
           &.a-orange{
             background:#fc863f;
@@ -269,28 +278,7 @@ body{
       clear:both;
       margin:30px 0 40px;
       overflow:hidden;
-      .t-top{
-        h2{
-          height:20px;
-          line-height:20px;
-          border-left:3px solid #fb7806;
-          padding:3px 7px;
-          margin:10px;
-          float:left;
-        }
-        a{
-          display:inline-block;
-          width:16px;
-          height:16px;
-          text-align:center;
-          line-height:16px;
-          border-radius:50%;
-          background:#bfbfbf;
-          color:#fff;
-          float:right;
-          margin:15px;
-        }
-      }
+
       .details-list{
         clear:both;
         height:52px;
@@ -359,7 +347,6 @@ body{
           background:#f5f5f5;
           padding:20px 15px;
           width:200px;
-          height:120px;
           float:left;
           margin:20px 3%;
           p{
@@ -372,6 +359,7 @@ body{
               font-size:22px;
               color:#33b5ff;
               font-weight:bold;
+              margin-bottom:25px;
             }
             span{
               float:right;

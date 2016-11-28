@@ -23,7 +23,6 @@
       .opt-con{
         float:left;
         width:960px;
-        height:36px;
         line-height:36px;
         li{
           float:left;
@@ -39,15 +38,36 @@
         line-height:89px;
       }
       .brand-con{
+        border-top:1px solid #ddd;
+        border-left:1px solid #ddd;
         li{
-          width:135px;
+          width:136px;
           height:40px;
-          text-align:center;
-          border:1px solid #ddd;
           line-height:40px;
+          text-align:center;
+          border-right:{
+            width:1px;
+            style:solid;
+            color:#ddd;
+
+          };
+          border-bottom:{
+            width:1px;
+            style:solid;
+            color:#ddd;
+
+          };
           padding:0;
-          &.active{
-            border:1px solid #ff0003;
+          a{
+            display:inline-block;
+            width:100%;
+            &.active{
+              border:2px solid #ff0003;
+              height:37px;
+              width:133px;
+              line-height:37px;
+              box-shadow:1px 1px 4px rgba(227,70,89,0.5);
+            }
           }
           img{
             vertical-align:middle;
@@ -151,8 +171,14 @@
       svg{
         vertical-align:-4px;
       }
+      &:hover{
+        background-color:#e12828;
+        color:#fff;
+      }
     }
-
+    &:hover{
+      box-shadow:5px 5px 1px rgba(229,229,229,0.5);
+    }
   }
   .sear-page{
     width:750px;
