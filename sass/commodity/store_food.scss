@@ -110,6 +110,51 @@
       width: 288px;
       height: 336px;
       float: left;
+      position: relative;
+      .food-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px 27px;
+        a{
+          display: inline-block;
+          padding: 6px 12px;
+          border: 2px solid #fff;
+          border-radius: 5px;
+          color: #fff;
+          font-family:$main-sec-ff;
+          &.smell-food:hover{
+            background-color: #fff;
+            color: #ee7a00;
+          }
+          &.rice-cereals:hover{
+            background-color: #fff;
+            color: #d2d668;
+          }
+          &.chinese-wines:hover{
+            background-color: #fff;
+            color: #fd565e;
+          }
+          &.personal-care:hover{
+            background-color: #fff;
+            color: #5f7ddf;
+          }
+          &.cleaning-supplies:hover{
+            background-color: #fff;
+            color: #ac955f;
+          }
+          &.kitchen-supplies:hover{
+            background-color: #fff;
+            color: #a65915;
+          }
+          &.baby-products:hover{
+            background-color: #fff;
+            color: #e077ba;
+          }
+        }
+
+
+      }
     }
     .global-food-center{
       width: 608px;
@@ -122,11 +167,18 @@
           float: left;
           width: 202px;
           height: 168px;
+          position: relative;
           border: {
             right: 1px;
             bottom: 1px;
             style: solid;
             color: #ededed;
+          }
+          overflow: hidden;
+          &:hover{
+            .add-shopping{
+              display: block;
+            }
           }
           &.global-border-no{
             border-right:0;
@@ -140,6 +192,13 @@
             margin: 0 auto;
             display: block;
             padding-top: 8px;
+            &:hover .item-img{
+              transform: translateY(-5px);
+            }
+            .item-img{
+              transition: transform 0.5s ease 0s;
+              transform: translateY(0);
+            }
           }
           .global-cuisine-text{
             display: inline-block;
@@ -164,6 +223,30 @@
               weight: bold;
             }
             padding-left: 8px;
+          }
+        }
+        .add-shopping{
+          position: absolute;
+          left: 0;
+          bottom:0;
+          width: 202px;
+          height: 50px;
+          background-color: #3ac1f9;
+          text-align: center;
+          line-height: 50px;
+          display: none;
+          .shopping01{
+            width: 22px;
+            height: 22px;
+            fill:#fff;
+            vertical-align: -4px;
+          }
+          .shopping-text{
+            color: #fff;
+            font:{
+              size: 18px;
+              family: $main-sec-ff;
+            }
           }
         }
       }
@@ -246,40 +329,6 @@
       background-color: #fff;
       overflow: hidden;
       position: relative;
-      .arrow-left{
-        display: block;
-        width: 15px;
-        height: 15px;
-        background: rgba(255, 255,255,255);
-        border:{
-          width: 0 0 2px 2px;
-          style: solid;
-          color:#dddddd;
-        }
-        transform: rotate(60deg) skewX(15deg);
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        margin-top: -10px;
-        cursor: pointer;
-      }
-      .arrow-right{
-        display: block;
-        width: 15px;
-        height: 15px;
-        background: rgba(255, 255,255,255);
-        border:{
-          width: 0 0 2px 2px;
-          style: solid;
-          color:#dddddd;
-        }
-        transform: rotate(230deg) skewX(15deg);
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        margin-top: -10px;
-        cursor: pointer;
-      }
       .snacks-show-list{
         width: 274px;
         border-right:1px solid #ededed;
