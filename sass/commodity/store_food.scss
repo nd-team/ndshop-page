@@ -123,32 +123,28 @@
           border-radius: 5px;
           color: #fff;
           font-family:$main-sec-ff;
+          &:hover{
+            background-color: $white;
+          }
           &.smell-food:hover{
-            background-color: #fff;
             color: #ee7a00;
           }
           &.rice-cereals:hover{
-            background-color: #fff;
             color: #d2d668;
           }
           &.chinese-wines:hover{
-            background-color: #fff;
             color: #fd565e;
           }
           &.personal-care:hover{
-            background-color: #fff;
             color: #5f7ddf;
           }
           &.cleaning-supplies:hover{
-            background-color: #fff;
             color: #ac955f;
           }
           &.kitchen-supplies:hover{
-            background-color: #fff;
             color: #a65915;
           }
           &.baby-products:hover{
-            background-color: #fff;
             color: #e077ba;
           }
         }

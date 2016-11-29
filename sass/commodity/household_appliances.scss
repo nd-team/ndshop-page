@@ -161,7 +161,26 @@
             }
           }
           &.same-life-banner02{
-            width: 175px;
+            //width: 175px;
+            .house-item{
+              display: block;
+              width: 165px;
+              height: 333px;
+              overflow: hidden;
+              background-color: #fff;
+              &:hover .nd-item-img{
+                transform: translateX(-10px);
+              }
+              .nd-item-img{
+                transition: transform 0.5s ease 0s;
+              }
+              @at-root .nd-item-img{
+                display: block;
+                width: 175px;
+                height: 333px;
+                overflow: hidden;
+              }
+            }
           }
           &.same-life-banner03{
             width: 297px;

@@ -45,7 +45,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     vertical-align: baseline;
-
 }
 html, body{
     //line-height: 1;
@@ -68,6 +67,7 @@ q, blockquote {
 }
 img{
     border: none;
+    max-width: 100%;
 }
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block;

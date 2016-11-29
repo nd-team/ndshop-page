@@ -755,13 +755,6 @@
       display: inline-block;
       .gift-same{
         float: left;
-        a{
-          img{
-            &:hover{
-              opacity: 0.8;
-            }
-          }
-        }
       }
       .gift-rpic{
         margin-top: 10px;
@@ -906,7 +899,9 @@
       img{
         width: 100px;
         height: 40px;
-        display: inline-block;
+        &:hover{
+          opacity: 0.8;
+        }
       }
     }
   }
@@ -1127,6 +1122,9 @@
   line-height:40px;
   margin-bottom: 60px;
   a{
+    &:hover{
+      opacity: 0.8;
+    }
     img{
       height: 40px;
       margin:{
@@ -1247,6 +1245,7 @@
           height: 210px;
           text-align: center;
           .picture{
+            display: block;
             @at-root .pic-bor{
               border-right: 1px solid #eee;
             }
@@ -1254,9 +1253,15 @@
             &:nth-child(4){
               border-right:0 none;
             }
+            &:hover .nd-item-img{
+              transform: translateX(-10px);
+            }
             img{
               height: 130px;
-              display: inline-block;
+              &.nd-item-img{
+                transition: transform 0.5s ease 0s;
+                transform: translateX(0);
+              }
             }
           }
           .pic-text02{
@@ -1302,14 +1307,17 @@
   .mobile-brand{
     width:$width;
     a{
-      display: inline-block;
+      display: block;
       margin:{
         bottom:15px;
+      }
+      &:hover .zoom-img{
+        transform: scale(1.05);
       }
       img{
         width:$width;
         height: 92px;
-        display: inline-block;
+        transition: transform 0.5s ease 0s;
       }
     }
   }
@@ -1412,13 +1420,13 @@
       float: left;
     }
     .store-rpic{
-
         margin-top: 10px;
         .xiang{
           width: 218px;
           height: 210px;
           text-align: center;
           .picture{
+            display: block;
             @at-root .pic-bor{
               border-right: 1px solid #eee;
             }
@@ -1426,12 +1434,18 @@
             &:nth-child(4){
               border-right:0 none;
             }
+            &:hover .nd-item-img{
+              transform: translateX(-10px);
+            }
             img{
               height: 118px;
-              display: inline-block;
               &.store-pic{
                 margin-top: 28px;
                 height: auto;
+              }
+              &.nd-item-img{
+                transition: transform 0.5s ease 0s;
+                transform: translateX(0);
               }
             }
           }
@@ -1512,9 +1526,15 @@
   .store-brand{
     width:$width;
     a{
-      display: inline-block;
+      display: block;
       margin:{
         bottom:15px;
+      }
+      &:hover img{
+        transform: scale(1.05);
+      }
+      img{
+        transition: transform 0.5s ease 0s;
       }
       &.store-img01{
         width:$width;
@@ -1645,6 +1665,7 @@
           height: 210px;
           text-align: center;
           .picture{
+            display: block;
             @at-root .pic-bor{
               border-right: 1px solid #eee;
             }
@@ -1652,9 +1673,15 @@
             &:nth-child(4){
               border-right:0 none;
             }
-            img{
+            &:hover .nd-item-img{
+              transform: translateX(-10px);
+            }
+            img {
               height: 120px;
-              display: inline-block;
+              &.nd-item-img {
+                transition: transform 0.5s ease 0s;
+                transform: translateX(0);
+              }
             }
           }
           .pic-text02{
@@ -1737,10 +1764,15 @@
         margin:{
           bottom:15px;
         }
+        &:hover img{
+          transform: scale(1.05);
+        }
         &.sport-img01{
           width:$width;
           height: 184px;
-          display: inline-block;
+        }
+        img{
+          transition: transform 0.5s ease 0s;
         }
       }
     }
