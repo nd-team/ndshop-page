@@ -167,7 +167,7 @@ html {
       }
     }
   .vl-main{
-    position: relative;
+   // position: relative;
     background-color: #fff;
     min-width: 950px;
      .vl-toolbar{
@@ -192,8 +192,9 @@ html {
            display: inline-block;
            text-align: center;
            color: white;
-           background: linear-gradient(#f1b344, #f4d98f);
-           border: 1px solid rgba(165,165,165,0.25);
+           //background: linear-gradient(#f1b344, #f4d98f);
+           //border: 1px solid rgba(165,165,165,0.25);
+           background: url("/images/business/renovation/save.png") no-repeat;
            margin-right: 20px;
          }
          .return{
@@ -239,10 +240,13 @@ html {
             }
           }
         }
-          .back-ground{
+          /*.back-ground{
             background-color: #ffefed;
-          }
+          }*/
           .item-list{
+            &:hover{
+              background: #ffefed;
+            }
             .tab-text{
             width: 244px;
             height: 28px;

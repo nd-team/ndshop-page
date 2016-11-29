@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物流管理- 发货</title>
+    <link rel="stylesheet" href="/css/business/order_management/all_evaluate.css">
+</head>
+<body>
+<div id="leftsidebar">
+    <figure class="title-pic">
+        <figcaption class="sidebar-title">瑞王府的店</figcaption>
+        <a href="javascript:void(0)"><img src="/images/business/renovation/shop-logo.jpg"></a>
+    </figure>
+    <ul class="nav">
+        <li>
+            <a href="/pages/business/shop.html" class="active">店铺</a>
+        </li>
+        <li>
+            <a href="/pages/business/order_overview.html">订单管理</a>
+        </li>
+        <li>
+            <a href="/pages/business/commodity/selling.html">商品管理</a>
+        </li>
+        <li>
+            <a href="/pages/business/logistics.html">物流管理</a>
+        </li>
+        <li>
+            <a href="/pages/business/announcement.html">公告</a>
+
+        </li>
+    </ul>
+</div>
+<div class="subsidebar">
+    <ul>
+        <li>
+            <a href="/pages/business/order_overview.html">订单概括</a>
+        </li>
+        <li>
+            <a href="/pages/business/order_all.html">所有订单</a>
+        </li>
+        <li>
+            <a href="/pages/business/rights_all.html">维权订单</a>
+        </li>
+        <li>
+            <a href="all_evaluate.html" class="active">评价订单</a>
+        </li>
+    </ul>
+</div>
+<div id="content">
+    <nav>
+        <ul>
+            <li>
+                <a href="all_evaluate.html" class="active">全部评论</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">好评</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">中评</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">差评</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="personal-rating">
+        <h4>
+            <i><img src="/images/business/order_management/shop.png"/></i>店铺半年内动态评分
+        </h4>
+        <div class="item">
+            <div class="t-top">
+                <h3>动态</h3>
+            </div>
+            <div class="graph">
+                <div class="list-accord">
+                     <p class="match">商品与描述相符：</p>
+                     <ul class="list-shop">
+                         <li class="scroller1">
+
+                         </li>
+                         <li class="scroller2">
+
+                         </li>
+                         <li class="scroller3">
+                             <p>4分</p>
+                             <p>99.8%</p>
+                         </li>
+                         <li class="scroller4">
+                             在同等级店铺中评分低于0.38%
+                         </li>
+                     </ul>
+                </div>
+                <div class="list-accord2">
+                    <p class="match">卖家服务态度：</p>
+                    <ul class="list-shop">
+                        <li class="scroller1">
+
+                        </li>
+                        <li class="scroller2">
+
+                        </li>
+                        <li class="scroller3">
+                            <p>暂时无人打分</p>
+                            <p>0.00%</p>
+                        </li>
+                        <li class="scroller4">
+                            在同等级店铺中评分低于0.38%
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-accord3">
+                    <p class="match">物流服务质量：</p>
+                    <ul class="list-shop">
+                        <li class="scroller1">
+
+                        </li>
+                        <li class="scroller2">
+
+                        </li>
+                        <li class="scroller3">
+                            <p>4分</p>
+                            <p>99.8%</p>
+                        </li>
+                        <li class="scroller4">
+                            在同等级店铺中评分低于0.38%
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item-table">
+            <div class="list-title">
+                <h3>店铺积累信用</h3>
+                <span>
+                    总评分：<em>50.00%</em>
+                </span>
+             </div>
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>最近7天</th>
+                    <th>最近一个月</th>
+                    <th>最近6个月</th>
+                    <th>总计</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><i><img src="/images/business/order_management/praise.png"/></i>好评</td>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>0</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td><i><img src="/images/business/order_management/comments.png"/></i>中评</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><i><img src="/images/business/order_management/bad.png"/></i>中评</td>
+                    <td>0</td>
+                    <td>200</td>
+                    <td>0</td>
+                    <td>300</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="item-evaluate" id="002">
+            <div class="brief">
+              <ul>
+                <li><a href="all_evaluate.html#001">买家的评价</a></li>
+                <li class="item-active"><a  href="seller_evaluate.html#002">卖家的评价</a></li>
+                <li><a href="service_evaluate.html#003">售后评价</a></li>
+             </ul>
+             <p>
+              <a href="javascript:void(0)">订单类型和简介</a>
+             </p>
+           </div>
+            <table>
+                <thead>
+                 <tr>
+                    <th class="align-c">
+                        <select>
+                          <option>评论</option>
+                          <option>好评</option>
+                          <option>中评</option>
+                          <option>差评</option>
+                       </select>
+                    </th>
+                     <th>
+                         <select>
+                             <option>评论</option>
+                             <option>有评论内容</option>
+                             <option>无评价内容</option>
+                             <option>有追加评论内容</option>
+                         </select>
+                     </th>
+                     <th class="align-t">评价人</th>
+                     <th class="align-c">商品信息</th>
+                     <th class="align-c">操作</th>
+                 </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td class="align-c"><img src="/images/business/order_management/praise.png"/></td>
+                      <td>
+                          点击看福利局的垃圾分类及收到了工具栏四大金刚辣就是得礼服及了圣诞节就是打飞机了司法局收到了放假了圣诞节浪费聚少离多加福禄寿既得利吉林省的
+                          解放路圣诞节的福利聚少离多附件来设计来设计类似京东傅雷家书两地分居的地方来设计js
+                          <p>[2016-11-24 15:20:30]</p>
+                      </td>
+                      <td class="align-t">
+                          买家：<a href="javascript:void(0)">jane</a>
+                      </td>
+                      <td>
+                          <a href="javascript:void(0)"> 黛丽丹呢可定制席梦思加厚记忆海绵床垫1.5/1.8m床双人榻榻米床鹿</a>
+                          <p>¥699.00</p>
+                      </td>
+                      <td class="align-c">
+                          <a href="javascript:void(0)">查看评价</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="align-c"><img src="/images/business/order_management/praise.png"/></td>
+                      <td>
+                          点击看福利局的垃圾分类及收到了工具栏四大金刚辣就是得礼服及了圣诞节就是打飞机了司法局收到了放假了圣诞节浪费聚少离多加福禄寿既得利吉林省的
+                          解放路圣诞节的福利聚少离多附件来设计来设计类似京东傅雷家书两地分居的地方来设计js
+                          <p>[2016-11-24 15:20:30]</p>
+                      </td>
+                      <td class="align-t">
+                          买家：<a href="javascript:void(0)">jane</a>
+                      </td>
+                      <td>
+                          <a href="javascript:void(0)"> 黛丽丹呢可定制席梦思加厚记忆海绵床垫1.5/1.8m床双人榻榻米床鹿</a>
+                          <p>¥699.00</p>
+                      </td>
+                      <td class="align-c">
+                          <span class="not-eva">未评价</span>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="align-c"><img src="/images/business/order_management/praise.png"/></td>
+                      <td>
+                          点击看福利局的垃圾分类及收到了工具栏四大金刚辣就是得礼服及了圣诞节就是打飞机了司法局收到了放假了圣诞节浪费聚少离多加福禄寿既得利吉林省的
+                          解放路圣诞节的福利聚少离多附件来设计来设计类似京东傅雷家书两地分居的地方来设计js
+                          <p>[2016-11-24 15:20:30]</p>
+                      </td>
+                      <td class="align-t">
+                          买家：<a href="javascript:void(0)">jane</a>
+                      </td>
+                      <td>
+                          <a href="javascript:void(0)"> 黛丽丹呢可定制席梦思加厚记忆海绵床垫1.5/1.8m床双人榻榻米床鹿</a>
+                          <p>¥699.00</p>
+                      </td>
+                      <td class="align-c">
+                          <a href="javascript:void(0)">查看评价</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="align-c"><img src="/images/business/order_management/praise.png"/></td>
+                      <td>
+                          点击看福利局的垃圾分类及收到了工具栏四大金刚辣就是得礼服及了圣诞节就是打飞机了司法局收到了放假了圣诞节浪费聚少离多加福禄寿既得利吉林省的
+                          解放路圣诞节的福利聚少离多附件来设计来设计类似京东傅雷家书两地分居的地方来设计js
+                          <p>[2016-11-24 15:20:30]</p>
+                      </td>
+                      <td class="align-t">
+                          买家：<a href="javascript:void(0)">jane</a>
+                      </td>
+                      <td>
+                          <a href="javascript:void(0)"> 黛丽丹呢可定制席梦思加厚记忆海绵床垫1.5/1.8m床双人榻榻米床鹿</a>
+                          <p>¥699.00</p>
+                      </td>
+                      <td class="align-c">
+                          <span class="not-eva">未评价</span>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="align-c"><img src="/images/business/order_management/praise.png"/></td>
+                      <td>
+                          点击看福利局的垃圾分类及收到了工具栏四大金刚辣就是得礼服及了圣诞节就是打飞机了司法局收到了放假了圣诞节浪费聚少离多加福禄寿既得利吉林省的
+                          解放路圣诞节的福利聚少离多附件来设计来设计类似京东傅雷家书两地分居的地方来设计js
+                          <p>[2016-11-24 15:20:30]</p>
+                      </td>
+                      <td class="align-t">
+                          买家：<a href="javascript:void(0)">jane</a>
+                      </td>
+                      <td>
+                          <a href="javascript:void(0)"> 黛丽丹呢可定制席梦思加厚记忆海绵床垫1.5/1.8m床双人榻榻米床鹿</a>
+                          <p>¥699.00</p>
+                      </td>
+                      <td class="align-c">
+                          <a href="javascript:void(0)">查看评价</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="align-c"><img src="/images/business/order_management/praise.png"/></td>
+                      <td>
+                          点击看福利局的垃圾分类及收到了工具栏四大金刚辣就是得礼服及了圣诞节就是打飞机了司法局收到了放假了圣诞节浪费聚少离多加福禄寿既得利吉林省的
+                          解放路圣诞节的福利聚少离多附件来设计来设计类似京东傅雷家书两地分居的地方来设计js
+                          <p>[2016-11-24 15:20:30]</p>
+                      </td>
+                      <td class="align-t">
+                          买家：<a href="javascript:void(0)">jane</a>
+                      </td>
+                      <td>
+                          <a href="javascript:void(0)"> 黛丽丹呢可定制席梦思加厚记忆海绵床垫1.5/1.8m床双人榻榻米床鹿</a>
+                          <p>¥699.00</p>
+                      </td>
+                      <td class="align-c">
+                          <a href="javascript:void(0)">查看评价</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="align-c"><img src="/images/business/order_management/praise.png"/></td>
+                      <td>
+                          点击看福利局的垃圾分类及收到了工具栏四大金刚辣就是得礼服及了圣诞节就是打飞机了司法局收到了放假了圣诞节浪费聚少离多加福禄寿既得利吉林省的
+                          解放路圣诞节的福利聚少离多附件来设计来设计类似京东傅雷家书两地分居的地方来设计js
+                          <p>[2016-11-24 15:20:30]</p>
+                      </td>
+                      <td class="align-t">
+                          买家：<a href="javascript:void(0)">jane</a>
+                      </td>
+                      <td>
+                          <a href="javascript:void(0)"> 黛丽丹呢可定制席梦思加厚记忆海绵床垫1.5/1.8m床双人榻榻米床鹿</a>
+                          <p>¥699.00</p>
+                      </td>
+                      <td class="align-c">
+                          <a href="javascript:void(0)">查看评价</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="align-c"><img src="/images/business/order_management/praise.png"/></td>
+                      <td>
+                          点击看福利局的垃圾分类及收到了工具栏四大金刚辣就是得礼服及了圣诞节就是打飞机了司法局收到了放假了圣诞节浪费聚少离多加福禄寿既得利吉林省的
+                          解放路圣诞节的福利聚少离多附件来设计来设计类似京东傅雷家书两地分居的地方来设计js
+                          <p>[2016-11-24 15:20:30]</p>
+                      </td>
+                      <td class="align-t">
+                          买家：<a href="javascript:void(0)">jane</a>
+                      </td>
+                      <td>
+                          <a href="javascript:void(0)"> 黛丽丹呢可定制席梦思加厚记忆海绵床垫1.5/1.8m床双人榻榻米床鹿</a>
+                          <p>¥699.00</p>
+                      </td>
+                      <td class="align-c">
+                          <a href="javascript:void(0)">查看评价</a>
+                      </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="menu">
+            <a href="javascript:void(0)">1</a>
+            <a href="javascript:void(0)" class="check-act">2</a>
+            <a href="javascript:void(0)">3</a>
+            <a href="javascript:void(0)">4</a>
+            <a href="javascript:void(0)">5</a>
+            <a href="javascript:void(0)">
+                <i></i>
+            </a>
+            <span class="jump">跳转到：</span>
+            <a href="javascript:void(0)">共15</a>
+            <a href="javascript:void(0)">GO</a>
+        </div>
+    </div>
+    <footer>
+        <div class="wrap">
+            <div class="foot-link">
+                <a href="javascript:void(0)">关于我们</a>|
+                <a href="javascript:void(0)">联系我们</a>|
+                <a href="javascript:void(0)">联系客服</a>|
+                <a href="javascript:void(0)">商家入驻</a>|
+                <a href="javascript:void(0)">营销中心</a>|
+                <a href="javascript:void(0)">手机商城</a>|
+                <a href="javascript:void(0)">友情链接</a>|
+                <a href="javascript:void(0)">销售联盟</a>|
+                <a href="javascript:void(0)">ENGLISH SITE</a>|
+                <a href="javascript:void(0)">CONTACT US</a>
+            </div>
+            <div class="auto-cation">
+                <a href="javascript:void(0)"><img src="/images/head/kexin.jpg" alt=""/></a>
+                <a href="javascript:void(0)"><img src="/images/head/jywz.jpg" alt=""/></a>
+                <a href="javascript:void(0)"><img src="/images/head/inter.jpg" alt=""/></a>
+            </div>
+        </div>
+        <!--under footer end-->
+    </footer>
+</div>
+</body>
+</html>

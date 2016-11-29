@@ -61,22 +61,12 @@ $(function(){
         }
     });
     //5伸缩与展开
-    /*$(".cat-sub").hide();
-    $('.inactive').click(function(){
-       if(
-            $('.cat-sub').css('display')=='none') {
-            $(".title-wrapper a").toggleClass("store-inactive");
-            $(".item-list .cat-sub").toggle('slow');
-        }else{
-            $(this).removeClass('store-inactive');
-            $('.cat-sub').toggle('3000');
-        }
-    });*/
     //颜色
-   /* $(".item-list").click(function () {
-        $(".item-list").removeClass("back-ground");
-        $(this).addClass('back-ground');
-    })*/
+    $(".item-list").hover(function () {
+       // $(this).addClass('back-ground').siblings().removeClass('back-ground');
+       /* $(".item-list").removeClass("back-ground");
+        $(this).addClass('back-ground');*/
+    });
     $(".cat-sub").hide();
     $('.in-active').click(function(){
         //$(".item-list").each(function(){
@@ -100,7 +90,10 @@ function autoMove(){
     }
     $(".banner ul li").eq(n).trigger("click");
 }
-
+//商品管理切换
+$('.subsidebar ul li ul li').click(function() {
+    $(this).addClass('current-er').siblings().removeClass('current-er');
+})
 //模态框
 $('a[data-title]').click(function(){
     var dataTitle = $(this).attr("data-title");

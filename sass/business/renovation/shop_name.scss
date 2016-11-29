@@ -23,8 +23,13 @@ colgroup{
 thead{
   display: table-header-group;
 }
+html {
+  overflow-x:hidden;
+
+}
 tbody{
    display: table-row-group;
+
 }
 body{
   display:flex;
@@ -82,7 +87,12 @@ body{
   left:120px;
   bottom:0;
   text-align:center;
-  border: 1px solid #ddd;
+ border: {
+   //left: 1px solid #ddd;
+   right:1px solid #ddd;
+   top:1px solid #ddd;
+   bottom: 1px solid #ddd;
+ };
   ul{
     li{
       width: 120px;
@@ -117,12 +127,13 @@ body{
           height: 27px;
           line-height: 27px;
           margin-top: 27px;
+          border-left:3px solid white;
           &.current-er{
-            border-left:3px solid #33b5ff;
+            border-left:3px solid #33b6ff;
+            a{
+              color: #33b6ff;
+            }
            }
-          &.already{
-             color: #33b5ff;
-          }
         }
       }
     }
@@ -131,25 +142,25 @@ body{
 #content {
   margin-left: 240px;
   flex: 1;
-  .menu {
+  .menu{
     width: 100%;
-    height: 50px;
-    line-height: 48px;
-    font-family: 'simsun';
+    height:50px;
+    line-height:48px;
+    font-family:'simsun';
     float: left;
     display: flex;
     justify-content: center;
-    ul {
-      li {
+    ul{
+      li{
         width: 43px;
         text-align: center;
         float: left;
         margin-right: 60px;
-        &.current {
+        &.current{
           border-bottom: 2px solid #31b8f7;
         }
-        a {
-          font: {
+        a{
+          font:{
             size: 16px;
           }
           color: #666;
@@ -157,10 +168,14 @@ body{
       }
     }
   }
-  .release {
+  .release{
     float: right;
-    margin: -43px 135px 0 0;
-    span {
+    display: flex;
+    width: 30%;
+    justify-content: left;
+    //
+    margin: -42px 0 0 0;
+    span{
       display: inline-block;
       width: 118px;
       height: 36px;
@@ -170,18 +185,19 @@ body{
       border-radius: 5px;
       margin-right: 15px;
       cursor: pointer;
-      font: {
+      font:{
         size: 14px;
       }
-      &:nth-of-type(1) {
-        background: #33b6ff;
+      &:nth-of-type(1){
+        background:#33b6ff;
       }
-      &:nth-of-type(2) {
-        background: #fe5c58;
+      &:nth-of-type(2){
+        background:#fe5c58;
       }
     }
   }
   .item-view{
+    min-width: 930px;
      .search{
        height: 32px;
        line-height: 32px;
@@ -207,7 +223,10 @@ body{
              input{
                width: 45px;
                height: 22px;
-               margin-right: 8px;
+               margin-right: 6px;
+               &:nth-of-type(2){
+                 margin-left: 6px;
+               }
              }
           }
            &:nth-of-type(3){
@@ -247,8 +266,9 @@ body{
            display: inline-block;
            text-align: center;
            color: white;
-           background: linear-gradient(#f1b344, #f4d98f);
-           border: 1px solid rgba(165,165,165,0.25);
+           background: url("/images/business/renovation/save.png") no-repeat;
+           //background: linear-gradient(#f1b344, #f4d98f);
+           //border: 1px solid rgba(165,165,165,0.25);
            margin-right: 20px;
          }
          .return{
@@ -331,20 +351,24 @@ body{
          text-align: center;
          width: 100%;
          border-collapse:collapse;
-         clear: both;
+        // clear: both;
+         margin-bottom: 30px;
          .items-tb-hd{
-          background-color: #ededed;
-          border-top: 1px solid #e0e0e0;
+           color: #666;
+           background-color: #ededed;
+           border-top: 1px solid #e0e0e0;
              tr{
                 height: 34px;
                .t-price{
                   text-align: left;
-               }
              }
+          }
         }
-
          .item-list{
             .item-info{
+              input[type='checkbox']{
+                vertical-align:-12px;
+              }
               td{
                 padding: 10px 0;
                 text-align: center;
@@ -356,24 +380,32 @@ body{
                .title-wrapper{
                       b{
                         vertical-align:15px;
-                        display: table-cell;
-                        vertical-align:middle;
                         padding-right: 18px;
+                        float: left;
                       }
                  .item-pic{
                      width: 44px;
                      height: 44px;
-                     display: table-cell;
+                     float: left;
+                    // display: table-cell;
                   }
                  .item-text{
-                   color: #4a4a4a;
-                   vertical-align:middle;
                    height: 30px;
+                   color: #333333;
+                   //float: left;
+                   //vertical-align:middle;
                    overflow:hidden;
-                   text-overflow:ellipsis;
-                   white-space:nowrap;
-                   display: table-cell;
-                   padding-left: 19px;
+                  /* text-overflow:ellipsis;
+                    white-space:nowrap;
+                    overflow:hidden;
+                    display: table-cell;
+                   */
+                   text-overflow: ellipsis;
+                   display:-webkit-box;
+                   -webkit-line-clamp:2;
+                  -webkit-box-orient:vertical;
+                  //
+                   padding:6px 10px 0 19px;
                    max-width: 270px;
                    /*word-break:break-all;
                    display:-webkit-box;
@@ -395,7 +427,7 @@ body{
                  &.categories{
                       a{
                         padding: 1px 0 1px 5px;
-                        color: #39baf4;
+                        color: #33b5ff;
                       }
                  }
                 &.edit{
@@ -404,7 +436,7 @@ body{
                     width: 77px;
                     height: 22px;
                     line-height: 22px;
-                    color: #585858;
+                    color: #666666;
                     background-color: white;
                     border: 1px solid #e0e0e0;
                     margin: 0 auto;
