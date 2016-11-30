@@ -30,6 +30,9 @@ img{
 .clearfix{
   clear: both;
 }
+html{
+  overflow-x:hidden;
+}
 body{
   display:flex;
 }
@@ -166,6 +169,7 @@ body{
   //主页
   .basic-page{
     padding-left: 52px;
+    min-width: 1080px;
     .page-info{
       li{
         width: 100%;
@@ -195,7 +199,9 @@ body{
           width: 201px;
           height: 23px;
           line-height: 23px;
-        }
+          color: #000;
+          font-size: 14px;
+          }
         .text2{
           width: 360px;
           height: 18px;
@@ -216,15 +222,17 @@ body{
            .item-ref{
             display:inline-block;
             float: left;
-            width: 66px;
-            height: 27px;
+            width: 68px;
+            height: 28px;
             line-height: 27px;
             text-align:center;
             color: white;
-            background: linear-gradient(#00badd, #0f90e3);
-            box-shadow:  0 2px 2px rgba(37, 32, 35, 0.78);
-            border-radius: 10px;
-            margin-bottom: 15px;
+            background: url("/images/business/renovation/ref-bg.png");
+             margin-top: 5px;
+             // background: linear-gradient(#00badd, #0f90e3);
+             // box-shadow:  0 2px 2px rgba(37, 32, 35, 0.78);
+             //border-radius: 10px;
+            //margin-bottom: 15px;
           }
            .item-text{
             display: block;
@@ -239,7 +247,7 @@ body{
         .sh-intro{
           width: 350px;
           height: 47px;
-          padding: 7px 6px 15px;
+          padding: 5px 6px 15px;
           width: 100%;
         }
         select{
@@ -266,13 +274,20 @@ body{
           }
         }
         .sh-edit{
+          width:600px;
+          //height:400px;
           margin-left: 130px;
+          textarea{
+            width:600px;
+            //height:400px
+          }
         }
       }
     }
     .g-robot-e{
-      position:relative;
-      bottom:728px;
+     // position:fixed;
+      position: relative;
+      top:-618px;
       left:80%;
       width: 75px;
       height: 84px;

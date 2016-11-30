@@ -60,23 +60,61 @@ $(function(){
             $(".checkAll").prop("checked",false);
         }
     });
+    //批量删除
+    $(".vl-check button").click(function() {
+        $("input[name='item']:checked").each(function() {
+            n = $(this).parents("tr").index();
+            $(".item-list").find("tr:eq("+n+")").remove();
+        })
+    })
+    //分类管理
+    //event.preventDefault(); //阻止默认行为
+    //$(".item-list").find("tr:nth-child(1)");
+    $(".add-sub").click(function(){
+        $(this).parents('.item-list').find(".already-info").eq(0).clone().insertBefore($(this).parent());
+        // $(this).parents('.item-list').find(".already-info").eq(0).clone(true).insertBefore($(this));
+        // $(this).parents('.item-list').find(".already-info").eq(0).insertBefore($(".add-info")).clone(1);
+        //$(".item-list").html($(this).clone(true)).show().click();
+        //$(this).parents('.item-list').find(".already-info").eq(0).clone().insertAfter($(".add-info"));
+        // $(this).parents('.item-list').children(".already-info").eq(0).clone().insertBefore($(".add-info"));
+        // $(".already-info").clone(true).appendTo('.item-list').show();
+        // $(".item-list").append($('.already-info').eq(0).clone());
+        /*$(".item-list").append(" <tr class='item-info already-info cat-sub'>" +
+         "<td class='add-sub input-box'>" +
+         "<b class='tab-check'>" +
+         "<input type='checkbox' name='item'> " +
+         "</b>" +
+         "<input type='text' value='裤子' class='tab-text'>"+
+         "</td>" +
+         "<td class='td-move'>"+
+         "<a href='javascript:void(0)' class='move-up no-move-up'>"+
+         "<svg role='img' class='move-up'>"+
+         "<use xlink:href='#move-up'></use>"+
+         "</svg>"+
+         "</a>"+
+         "<a href='javascript:void(0)' class='move-down'>"+
+         "<svg role='img' class='move-down'>"+
+         "<use xlink:href='#move-down'></use>"+
+         "</svg>"+
+         "</a>"+
+         "</td>"+
+         "<td class='td-switch'>"+
+         "<span class='switch'>"+
+         "<input type='checkbox' class='control'>"+
+         "<label for='control' class='checkbox'>"+
+         "</label>"+
+         "</span>"+
+         "</td>"+
+         "<td class='delete'>"+
+         "<a href='javascript:void(0)'>删除</a>"+
+         "</td>"+
+         "</tr>");*/
+    });
+    $(".add-category").click(function () {
+        $(".item-list").eq(0).clone().appendTo($("table"));
+    })
     //5伸缩与展开
-    /*$(".cat-sub").hide();
-    $('.inactive').click(function(){
-       if(
-            $('.cat-sub').css('display')=='none') {
-            $(".title-wrapper a").toggleClass("store-inactive");
-            $(".item-list .cat-sub").toggle('slow');
-        }else{
-            $(this).removeClass('store-inactive');
-            $('.cat-sub').toggle('3000');
-        }
-    });*/
     //颜色
-   /* $(".item-list").click(function () {
-        $(".item-list").removeClass("back-ground");
-        $(this).addClass('back-ground');
-    })*/
     $(".cat-sub").hide();
     $('.in-active').click(function(){
         //$(".item-list").each(function(){
@@ -100,7 +138,10 @@ function autoMove(){
     }
     $(".banner ul li").eq(n).trigger("click");
 }
-
+//商品管理切换
+$('.subsidebar ul li ul li').click(function() {
+    $(this).addClass('current-er').siblings().removeClass('current-er');
+})
 //模态框
 $('a[data-title]').click(function(){
     var dataTitle = $(this).attr("data-title");
