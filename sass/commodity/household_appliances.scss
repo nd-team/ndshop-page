@@ -93,6 +93,9 @@
         a{
           display: inline-block;
           margin-right: 10px;
+          &:hover{
+            opacity: 0.8;
+          }
         }
       }
     }
@@ -103,6 +106,11 @@
       padding-right: 10px;
       li{
         margin-bottom: 5px;
+        a{
+          &:hover{
+            opacity: 0.8;
+          }
+        }
       }
     }
   }
@@ -164,7 +172,7 @@
             //width: 175px;
             .house-item{
               display: block;
-              width: 165px;
+              width: 175px;
               height: 333px;
               overflow: hidden;
               background-color: #fff;
@@ -176,7 +184,7 @@
               }
               @at-root .nd-item-img{
                 display: block;
-                width: 175px;
+                width: 185px;
                 height: 333px;
                 overflow: hidden;
               }
@@ -186,6 +194,24 @@
             width: 297px;
             a{
               display: block;
+              &.life-img{
+                width: 297px;
+                height: 167px;
+                overflow: hidden;
+                background-color: #fff;
+              }
+              &:hover .life-item-img{
+                transform: translateX(-10px);
+              }
+              .life-item-img{
+                transition:transform 0.5s ease 0s;
+              }
+              @at-root .life-item-img{
+                display: block;
+                width: 297px;
+                height: 167px;
+                overflow: hidden;
+              }
             }
           }
         }

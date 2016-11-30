@@ -110,6 +110,7 @@ svg{
     height: 30px;
     background-color: #f3f3f3;
     line-height: 30px;
+    overflow: hidden;
     @include body;
     @at-root .wrap{
         width: $wrap-width;
@@ -120,7 +121,6 @@ svg{
     }
     .header-top-r{
         float: right;
-        display:block;
         width:auto;
         height:inherit;
         line-height:inherit;
@@ -131,7 +131,6 @@ svg{
             }
             @extend .header-top-r;
             cursor:pointer;
-            position:relative;
             &.top_r{
                 line-height: 30px;
                 .top-line{
