@@ -428,6 +428,8 @@ tr{
                  }
                }
                &:nth-of-type(5){
+                  font-weight:700;
+                  padding-top: 8px;
                  .evaluate{
                    display: inline-block;
                    width: 77px;
@@ -440,14 +442,15 @@ tr{
                  }
                  .not-eva{
                    color: #767676;
-                   font-weight: 700;
+                   //font-weight: 700;
                  }
                  em{
                    color: #4fbcfd;
+                  // font-weight:700;
                  }
                  a{
                    color: #75c7f7;
-                   font-weight:700;
+                  // font-weight:700;
                  }
                }
               }
