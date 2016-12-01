@@ -39,13 +39,15 @@
       float: left;
       line-height: 54px;
       a{
-
-        display: inline-block;
+        display: block;
         padding: {
           top: 15px;
           right: 18px;
           left: 35px;
           bottom: 10px;
+        }
+        &:hover{
+          opacity: 0.8;
         }
       }
     }
@@ -73,6 +75,8 @@
     .exclusive-products-left{
       float: left;
       li{
+        font-size: 0;
+        overflow: hidden;
         .products-pic-bottom{
           float: left;
           border: {
@@ -80,13 +84,22 @@
             style: solid;
             color: #ededed;
           }
-          height: 263px;
+          height: 262px;
           .new-products-pic02{
-            width: 178px;
+            width: 183px;
+            height: 262px;
             border: {
               right: 1px;
               style: solid;
               color: #ededed;
+            }
+            background-color: #fff;
+            overflow: hidden;
+            @at-root .nd-item-img{
+              display: block;
+              width: 178px;
+              height: 259px;
+              overflow: hidden;
             }
             img{
               width: 178px;
@@ -99,28 +112,33 @@
         a{
           display: inline-block;
           height: 263px;
+          overflow: hidden;
           &.new-products-pic01{
             width: 365px;
             float: left;
           }
-
           &.fish-umbrella{
-            width: 176px;
+            width: 182px;
             height: 172px;
-            img{
-              border: {
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 1px;
-                style: solid;
-                color: #ededed;
-              }
-              &.border-no{
-                border-right: 0;
-              }
+            border: {
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 1px;
+              style: solid;
+              color: #ededed;
             }
-
+            background-color: #fff;
+            text-align: center;
+            &.border-no{
+              border-right: 0;
+            }
+            img{
+              width: 181px;
+              height: 167px;
+              display: block;
+              overflow: hidden;
+            }
           }
         }
       }
@@ -155,34 +173,67 @@
     @include same-box;
     .shoes-bags-top{
       border-top: 1px solid #1e8bc4;
+      font-size: 0;
+      overflow: hidden;
       li{
         float: left;
-        height: 412px;
-        .shoes-bags-pic{
+        height: 413px;
+        font-size: 0;
+        overflow: hidden;
+        a{
           display: block;
-          height: 205px;
-          border: {
-            bottom: 1px;
-            style: solid;
-            color: #ededed;
+          overflow: hidden;
+          &.nd-shoes{
+          width: 332px;
+          height: 413px;
+        }
+          &.nd-sports{
+            width: 187px;
+          }
+          &.shoes-bags-one{
+            width: 202px;
+            height: 206px;
+            margin: 0 auto;
+            border: {
+              bottom: 1px;
+              style: solid;
+              color: #ededed;
+            }
+          }
+          &.shoes-bags-pic{
+            width: 193px;
+            height: 206px;
+            border: {
+              bottom: 1px;
+              style: solid;
+              color: #ededed;
+            }
           }
         }
+
       }
     }
     .shoes-bags-bottom{
       width: 100%;
+      height: 205px;
       border-top: 1px solid #ededed;
+      font-size: 0;
+      overflow: hidden;
       a{
         display: inline-block;
+        height: 205px;
         &.shoes-bags-img01{
           width: 331px;
         }
         &.shoes-bags-img02{
-          width: 184px;
-        }
-        &:nth-child(2){
           width: 186px;
           border-right: 1px solid #ededed;
+        }
+        &.shoes-bags-img03{
+          width: 202px;
+        }
+        &.shoes-bags-img04{
+          width: 379px;
         }
       }
 
@@ -190,21 +241,34 @@
     .shoes-apparel-bottom{
       width: 100%;
       border-top: 1px solid #ededed;
+      height: 205px;
+      font-size: 0;
+      overflow: hidden;
       a{
         display: inline-block;
         height: 205px;
         &.shoes-apparel-img01{
-          width: 325px;
+          width: 331px;
         }
         &.shoes-apparel-img02{
+          width: 186px;
           border: {
             left: 1px;
             style: solid;
             color: #ededed;
           }
         }
-        &:nth-child(2){
-          width: 180px;
+        &.shoes-apparel-img03{
+          width: 202px;
+          border: {
+            left: 1px;
+            right: 1px;
+            style: solid;
+            color: #ededed;
+          }
+        }
+        &.shoes-apparel-img04{
+          width: 378px;
         }
       }
     }
@@ -231,16 +295,31 @@
     border-top: 1px solid #1e8bc4;
     li{
       float: left;
+      font-size: 0;
       &.outdoor-show-first{
         width: 332px;
         a{
+          width: 332px;
           display: block;
+          overflow: hidden;
+          &.outdoor-pic01{
+            height: 413px;
+          }
+          &.outdoor-pic02{
+            height: 205px;
+          }
         }
       }
       &.outdoor-show-second{
         width: 576px;
         .outdoor-equipment-top{
           height: 206px;
+          .outdoor-pic03{
+            display: block;
+            width: 576px;
+            height: 206px;
+            overflow: hidden;
+          }
         }
         .outdoor-equipment-center{
           overflow: hidden;
@@ -248,9 +327,22 @@
             float: left;
             a{
               display: block;
-
+              overflow: hidden;
+              &.outdoor-pic04{
+                width: 186px;
+                height: 206px;
+                border: {
+                  right: 1px;
+                  style: solid;
+                  color: #ededed;
+                }
+              }
               &.outdoor-under-pic{
                 border-top:1px solid #ededed;
+              }
+              &.outdoor-pic05{
+                width: 202px;
+                height: 412px;
               }
             }
           }
@@ -260,6 +352,13 @@
         width: 192px;
         a{
           display: block;
+          width: 192px;
+          &.outdoor-pic06{
+            height: 206px;
+          }
+          &.outdoor-pic07{
+            height: 412px;
+          }
         }
       }
     }
@@ -286,10 +385,19 @@
     border-top: 1px solid #1e8bc4;
     li{
       float: left;
+      font-size: 0;
       &.training-show-first{
         width: 332px;
         a{
           display: block;
+          width: 332px;
+          overflow: hidden;
+          &.fitness-img01{
+            height: 413px;
+          }
+          &.fitness-img02{
+            height: 205px;
+          }
         }
       }
       &.training-show-second{
@@ -303,34 +411,67 @@
             float: left;
             &.training-second-pic01{
               width: 187px;
-              .second-img{
-                border-bottom:1px solid #ededed;
+              a{
+                display: block;
+                overflow: hidden;
+                &.second-img01{
+                  width: 187px;
+                  height: 413px;
+                }
+                &.second-img02{
+                  width: 202px;
+                  height: 206px;
+                  border-bottom:1px solid #ededed;
+                }
               }
+
             }
 
           }
         }
         .training-second-bottom{
           height: 205px;
+          .second-img03{
+            display: block;
+            width: 389px;
+            height: 205px;
+            overflow: hidden;
+          }
         }
       }
 
       &.training-show-third{
         width: 379px;
-
         .third-pic01{
+          font-size:0;
+          overflow: hidden;
           a{
             display: inline-block;
-            &.third-pic02{
-              width: 184px;
+            &.third-img01{
+              width: 185px;
+              height: 206px;
               border:{
-                top: 1px;
                 left: 1px;
                 style: solid;
                 color: #ededed;
               }
             }
-            &.third-pic03{
+            &.third-img02{
+              width: 192px;
+              height: 206px;
+              border:{
+                left: 1px;
+                style: solid;
+                color: #ededed;
+              }
+            }
+            &.top-border{
+              border-top: 1px solid #ededed;
+            }
+            &.third-img03{
+              width: 379px;
+            }
+            &.third-img04{
               width: 184px;
               height: 201px;
               border:{
